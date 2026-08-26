@@ -10,6 +10,7 @@ describe('lesson preview screen', () => {
 
     expect(screen.getByText(/Tanzimat Fermanı/)).toBeTruthy();
     expect(screen.getByLabelText(/Yanıt seçenekleri, statik önizleme/)).toBeTruthy();
+    expect(screen.getByLabelText(/Can göstergesi 5, statik önizleme/)).toBeTruthy();
     expect(screen.getByText(/seçim yapılmaz ve yanıt değerlendirilmez/)).toBeTruthy();
     expect(screen.getByRole('button', { name: 'Kontrol Et' }).props.accessibilityState).toEqual({
       disabled: true,

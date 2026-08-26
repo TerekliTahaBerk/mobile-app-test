@@ -25,9 +25,16 @@ export function LessonPreviewScreen({ onBack }: LessonPreviewScreenProps) {
         <View style={styles.hudProgress}>
           <ProgressBar accessibilityLabel="Ders önizleme ilerlemesi" value={lessonPreviewData.progress} />
         </View>
-        <AppText color="secondary" variant="labelM">
-          {lessonPreviewData.progressLabel}
-        </AppText>
+        <View
+          accessible
+          accessibilityLabel={`Can göstergesi ${lessonPreviewData.hearts}, statik önizleme`}
+          style={styles.heartPill}
+        >
+          <AppText variant="labelM">♥</AppText>
+          <AppText color="accent" variant="labelM">
+            {lessonPreviewData.hearts}
+          </AppText>
+        </View>
       </View>
 
       <ScrollView
@@ -112,6 +119,15 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     flexDirection: 'row',
     gap: theme.spacing.md,
+  },
+  heartPill: {
+    alignItems: 'center',
+    backgroundColor: theme.colors.reward.traceSoft,
+    borderRadius: theme.radii.pill,
+    flexDirection: 'row',
+    gap: theme.spacing.xs,
+    paddingHorizontal: theme.spacing.md,
+    paddingVertical: theme.spacing.sm,
   },
   hudProgress: {
     flex: 1,

@@ -1,5 +1,6 @@
 export type LessonPreviewViewModel = {
   helperText: string;
+  hearts: string;
   options: readonly {
     id: string;
     label: string;
@@ -15,6 +16,7 @@ export type LessonPreviewViewModel = {
 // Temporary presentation copy, not an exercise, answer, or curriculum schema.
 export const lessonPreviewData = {
   helperText: 'Bu ekran sunum amaçlıdır; seçim yapılmaz ve yanıt değerlendirilmez.',
+  hearts: '5',
   options: [
     { id: 'preview-a', label: 'Merkezî yönetimi tamamen kaldırmak', marker: 'A' },
     { id: 'preview-b', label: 'Hukuk önünde eşitlik anlayışını güçlendirmek', marker: 'B' },
