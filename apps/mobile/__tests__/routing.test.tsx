@@ -8,14 +8,21 @@ jest.mock('expo-router', () => ({
   useRouter: () => ({ push: mockPush }),
 }));
 
-describe('foundation route', () => {
-  it('renders and requests navigation to the second placeholder', async () => {
+describe('home route', () => {
+  beforeEach(() => {
+    mockPush.mockClear();
+  });
+
+  it('renders the branded path states and requests navigation to the lesson shell', async () => {
     await render(<IndexScreen />);
 
-    expect(screen.getByText('Mobil temel hazır')).toBeTruthy();
+    expect(screen.getByText('TEKRARLA')).toBeTruthy();
+    expect(screen.getByText('12 gün iz')).toBeTruthy();
+    expect(screen.getByText('Osmanlı’da Yenileşme')).toBeTruthy();
+    expect(screen.getByLabelText(/Kısa tekrar\. Kilitli\./)).toBeTruthy();
 
-    fireEvent.press(screen.getByRole('button', { name: 'Yönlendirmeyi dene' }));
+    fireEvent.press(screen.getByRole('button', { name: 'Buradan devam et' }));
 
-    expect(mockPush).toHaveBeenCalledWith('/foundation');
+    expect(mockPush).toHaveBeenCalledWith('/lesson-preview');
   });
 });

@@ -1,8 +1,8 @@
-# TYT Sosyal Learning Platform
+# TEKRARLA
 
 Mobile-first, gamified exam preparation for Turkish students. The pilot covers only TYT Sosyal Bilimler: Tarih, Coğrafya, Felsefe, and Din Kültürü ve Ahlak Bilgisi.
 
-The repository currently contains only the engineering foundation. Product screens, curriculum, learning logic, persistence, authentication, and backend integration have not been implemented.
+The repository currently contains the engineering foundation plus a TEKRARLA-aligned static navigation and design-system shell. Curriculum contracts, lesson behavior, persistence, authentication, and backend integration have not been implemented.
 
 ## Requirements
 
@@ -35,5 +35,4 @@ No environment variables are required for the foundation. Add a root `.env.examp
 - `docs`: product, architecture, domain boundaries, decisions, and execution plan
 - `AGENTS.md`: concise permanent engineering instructions
 
-Start with [docs/PRODUCT.md](docs/PRODUCT.md), [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md), and [docs/EXECUTION/MVP.md](docs/EXECUTION/MVP.md).
-
+Start with [docs/PRODUCT.md](docs/PRODUCT.md), [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md), [docs/BRAND_IDENTITY.md](docs/BRAND_IDENTITY.md), [docs/DESIGN_SYSTEM.md](docs/DESIGN_SYSTEM.md), and [docs/EXECUTION/MVP.md](docs/EXECUTION/MVP.md).

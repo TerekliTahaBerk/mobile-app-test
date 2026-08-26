@@ -1,13 +1,13 @@
 # Repository guide
 
-This repository is the system of record for the TYT Sosyal learning platform. Read [README.md](README.md) for commands and [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) before changing application boundaries.
+This repository is the system of record for the TEKRARLA working product. Read [README.md](README.md) for commands and [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) before changing application boundaries. Read [docs/BRAND_IDENTITY.md](docs/BRAND_IDENTITY.md) and [docs/DESIGN_SYSTEM.md](docs/DESIGN_SYSTEM.md) before changing user-facing visuals or copy.
 
 ## Permanent instructions
 
 - Keep the pilot limited to TYT Sosyal Bilimler unless product scope is explicitly changed.
 - Keep route files thin. Domain logic must not import React, React Native, Expo, or infrastructure adapters.
 - Prefer small, feature-oriented modules and application-owned UI primitives.
-- Keep XP, mastery, progress, and streak concepts separate.
+- Keep XP, mastery, progress, and İz/streak concepts separate.
 - Do not hardcode curriculum or exercise content into screens.
 - Add dependencies only for a demonstrated current need; use Expo-compatible versions for native packages.
 - User-facing copy is Turkish. Code, identifiers, documentation, and commits are English.
@@ -18,6 +18,7 @@ This repository is the system of record for the TYT Sosyal learning platform. Re
 
 - Product scope: [docs/PRODUCT.md](docs/PRODUCT.md)
 - Architecture: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
+- Brand identity: [docs/BRAND_IDENTITY.md](docs/BRAND_IDENTITY.md)
+- Design system: [docs/DESIGN_SYSTEM.md](docs/DESIGN_SYSTEM.md)
 - MVP sequence: [docs/EXECUTION/MVP.md](docs/EXECUTION/MVP.md)
 - Remaining domain documents: [docs/](docs/)
-
