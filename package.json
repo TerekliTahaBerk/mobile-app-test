@@ -1,0 +1,14 @@
+{
+  "name": "tyt-social-learning-platform",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm --workspace @tyt-social/mobile run start --",
+    "lint": "npm run lint --workspace @tyt-social/mobile",
+    "typecheck": "npm run typecheck --workspace @tyt-social/mobile",
+    "test": "npm run test --workspace @tyt-social/mobile"
+  }
+}
