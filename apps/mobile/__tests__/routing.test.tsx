@@ -1,28 +1,81 @@
 import { fireEvent, render, screen } from '@testing-library/react-native';
 
-import IndexScreen from '@/app/index';
+import GorevlerRoute from '@/app/gorevler';
+import IndexRoute from '@/app/index';
+import IzRoute from '@/app/iz';
+import LessonCompleteRoute from '@/app/lesson-complete';
+import LessonIntroRoute from '@/app/lesson-intro';
 
+const mockBack = jest.fn();
+const mockDismissTo = jest.fn();
 const mockPush = jest.fn();
+const mockReplace = jest.fn();
 
 jest.mock('expo-router', () => ({
-  useRouter: () => ({ push: mockPush }),
+  useRouter: () => ({
+    back: mockBack,
+    dismissTo: mockDismissTo,
+    push: mockPush,
+    replace: mockReplace,
+  }),
 }));
 
-describe('home route', () => {
+describe('routes', () => {
   beforeEach(() => {
+    mockBack.mockClear();
+    mockDismissTo.mockClear();
     mockPush.mockClear();
+    mockReplace.mockClear();
   });
 
-  it('renders the branded path states and requests navigation to the lesson shell', async () => {
-    await render(<IndexScreen />);
+  it('sends the home path CTA into the lesson intro', async () => {
+    await render(<IndexRoute />);
 
-    expect(screen.getByText('TEKRARLA')).toBeTruthy();
-    expect(screen.getByText('12 gün iz')).toBeTruthy();
-    expect(screen.getByText('Osmanlı’da Yenileşme')).toBeTruthy();
-    expect(screen.getByLabelText(/Kısa tekrar\. Kilitli\./)).toBeTruthy();
+    await fireEvent.press(screen.getByTestId('path-node-node-tanzimat-fermani'));
+    await fireEvent.press(screen.getByTestId('level-detail-cta'));
 
-    fireEvent.press(screen.getByRole('button', { name: 'Buradan devam et' }));
+    expect(mockPush).toHaveBeenCalledWith('/lesson-intro');
+  });
 
-    expect(mockPush).toHaveBeenCalledWith('/lesson-preview');
+  it('opens the quest board from the tab bar', async () => {
+    await render(<IndexRoute />);
+
+    await fireEvent.press(screen.getByTestId('tab-gorev'));
+
+    expect(mockPush).toHaveBeenCalledWith('/gorevler');
+  });
+
+  it('continues from the lesson intro into the lesson and back to the path', async () => {
+    await render(<LessonIntroRoute />);
+
+    await fireEvent.press(screen.getByTestId('lesson-intro-cta'));
+    expect(mockReplace).toHaveBeenCalledWith('/lesson');
+
+    await fireEvent.press(screen.getByTestId('lesson-intro-back'));
+    expect(mockBack).toHaveBeenCalledTimes(1);
+  });
+
+  it('collects the lesson reward and moves on to the İz celebration', async () => {
+    await render(<LessonCompleteRoute />);
+
+    await fireEvent.press(screen.getByTestId('lesson-complete-cta'));
+
+    expect(mockReplace).toHaveBeenCalledWith('/iz');
+  });
+
+  it('returns to the path from the İz celebration', async () => {
+    await render(<IzRoute />);
+
+    await fireEvent.press(screen.getByTestId('iz-continue'));
+
+    expect(mockDismissTo).toHaveBeenCalledWith('/');
+  });
+
+  it('closes the quest board back to where it came from', async () => {
+    await render(<GorevlerRoute />);
+
+    await fireEvent.press(screen.getByTestId('quests-close'));
+
+    expect(mockBack).toHaveBeenCalledTimes(1);
   });
 });

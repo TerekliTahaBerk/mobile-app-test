@@ -1,0 +1,104 @@
+import { Pressable, StyleSheet, View } from 'react-native';
+
+import { lessonPreviewData } from '@/modules/learning/model/lesson-preview-data';
+import { AppButton } from '@/shared/ui/components/app-button';
+import { AppText } from '@/shared/ui/components/app-text';
+import { BottomAction } from '@/shared/ui/components/bottom-action';
+import { BackGlyph } from '@/shared/ui/components/glyphs';
+import { Screen } from '@/shared/ui/components/screen';
+import { TraceMark } from '@/shared/ui/components/trace-mark';
+import { Cizgi } from '@/shared/ui/cizgi/cizgi';
+import { theme } from '@/shared/ui/theme/tokens';
+
+type LessonIntroScreenProps = {
+  onBack: () => void;
+  onContinue: () => void;
+};
+
+/**
+ * Design screen 02. A held beat before the drill starts: ÇİZGİ names what is
+ * coming and how close today's İz is.
+ */
+export function LessonIntroScreen({ onBack, onContinue }: LessonIntroScreenProps) {
+  const { intro } = lessonPreviewData;
+
+  return (
+    <Screen includeBottomInset={false} testID="lesson-intro-screen">
+      <Pressable
+        accessibilityLabel="Yola dön"
+        accessibilityRole="button"
+        onPress={onBack}
+        style={styles.backButton}
+        testID="lesson-intro-back"
+      >
+        <BackGlyph />
+      </Pressable>
+
+      <View style={styles.stage}>
+        <View style={styles.bubble}>
+          <AppText accessibilityRole="header" align="center" color="body" variant="bodyL">
+            {intro.prompt}
+          </AppText>
+          <View importantForAccessibility="no-hide-descendants" style={styles.bubbleTail} />
+        </View>
+
+        <Cizgi ground mood={intro.mood} width={196} />
+
+        <View accessible accessibilityLabel={intro.traceNote} style={styles.traceBlock}>
+          <TraceMark size="md" />
+          <AppText color="muted" variant="bodyS">
+            {intro.traceNote}
+          </AppText>
+        </View>
+      </View>
+
+      <BottomAction>
+        <AppButton label={intro.cta} onPress={onContinue} testID="lesson-intro-cta" />
+      </BottomAction>
+    </Screen>
+  );
+}
+
+const styles = StyleSheet.create({
+  backButton: {
+    alignItems: 'center',
+    height: theme.hitTarget,
+    justifyContent: 'center',
+    marginLeft: theme.spacing.sm,
+    width: theme.hitTarget,
+  },
+  bubble: {
+    backgroundColor: theme.colors.surface.default,
+    borderColor: theme.colors.border.subtle,
+    borderRadius: theme.radii.large,
+    borderWidth: 2,
+    marginBottom: theme.spacing.xxl + 6,
+    maxWidth: 308,
+    paddingHorizontal: theme.spacing.xl,
+    paddingVertical: theme.spacing.lg + 2,
+  },
+  bubbleTail: {
+    backgroundColor: theme.colors.surface.default,
+    borderBottomWidth: 2,
+    borderColor: theme.colors.border.subtle,
+    borderRightWidth: 2,
+    bottom: -9,
+    height: 15,
+    left: '50%',
+    marginLeft: -8,
+    position: 'absolute',
+    transform: [{ rotate: '45deg' }],
+    width: 15,
+  },
+  stage: {
+    alignItems: 'center',
+    flex: 1,
+    justifyContent: 'center',
+    paddingHorizontal: theme.spacing.xxxl,
+  },
+  traceBlock: {
+    alignItems: 'center',
+    gap: theme.spacing.md,
+    marginTop: theme.spacing.xxl + 2,
+  },
+});

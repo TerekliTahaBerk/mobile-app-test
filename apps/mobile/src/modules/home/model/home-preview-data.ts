@@ -1,110 +1,119 @@
-export type PathStepPreviewState =
+import type { CizgiMood } from '@/shared/ui/cizgi/cizgi-assets';
+import type { SubjectKey } from '@/shared/ui/theme/tokens';
+
+/**
+ * How a node on the learning path presents itself. These are view states only.
+ * Unlocking, review scheduling, and checkpoint rules are learning-system
+ * concerns and are not modelled here.
+ */
+export type PathNodeState =
   | 'available'
   | 'checkpoint'
   | 'complete'
   | 'current'
-  | 'locked';
+  | 'locked'
+  | 'review';
 
-export type PathStepPreview = {
+export type PathNode = {
+  /** Short accessible description of what the node contains. */
   detail: string;
   id: string;
-  index: string;
-  state: PathStepPreviewState;
+  state: PathNodeState;
+  /** Visible, non-colour status word — locked/current are never colour-only. */
   status: string;
   title: string;
 };
 
+export type CurrentLevelPreview = {
+  cta: string;
+  meta: string;
+  nodeId: string;
+  title: string;
+};
+
 export type HomePreviewViewModel = {
-  brandName: string;
-  companionName: string;
-  dailyGoal: {
-    completedSteps: number;
-    message: string;
-    progress: number;
-    totalSteps: number;
-  };
-  greeting: string;
-  mode: string;
-  nextStepTitle: string;
-  pathSteps: readonly PathStepPreview[];
-  stats: {
+  companion: { accessibilityLabel: string; mood: CizgiMood };
+  currentLevel: CurrentLevelPreview;
+  hud: {
+    gems: string;
+    hearts: string;
+    level: string;
+    mode: string;
     trace: string;
-    xp: string;
   };
-  subject: string;
-  subtitle: string;
+  nodes: readonly PathNode[];
   unit: {
     eyebrow: string;
-    progress: string;
+    subject: SubjectKey;
     title: string;
   };
 };
 
-// Presentation-only demo data. It is deliberately not a curriculum, exercise,
-// progress, XP, mastery, or persistence contract.
+// Presentation-only demo data taken from the approved design. It is
+// deliberately not a curriculum, exercise, XP, mastery, or persistence
+// contract, and must not be reused as one.
 export const homePreviewData = {
-  brandName: 'TEKRARLA',
-  companionName: 'ÇİZGİ',
-  dailyGoal: {
-    completedSteps: 2,
-    message: 'Bir kısa adım daha, bugünün izi tamam.',
-    progress: 2 / 3,
-    totalSteps: 3,
+  companion: { accessibilityLabel: 'ÇİZGİ seni yolda bekliyor', mood: 'happy' },
+  currentLevel: {
+    cta: 'BAŞLA',
+    meta: 'Ders 2 / 5 · +20 XP',
+    nodeId: 'node-tanzimat-fermani',
+    title: 'Tanzimat Fermanı',
   },
-  greeting: 'Hazırsan bir iz bırakalım.',
-  mode: 'TYT',
-  nextStepTitle: 'Tanzimat’a giriş',
-  pathSteps: [
+  hud: {
+    gems: '527',
+    hearts: '4',
+    level: '14',
+    mode: 'TYT',
+    trace: '13',
+  },
+  nodes: [
     {
-      detail: 'Kısa başlangıç tamamlandı',
-      id: 'preview-01',
-      index: '01',
+      detail: 'Bölüm 1 kontrol noktası',
+      id: 'node-bolum-1-kontrol',
+      state: 'checkpoint',
+      status: 'Tamamlandı',
+      title: 'Bölüm 1 rozeti',
+    },
+    {
+      detail: 'Değişimin ilk adımları',
+      id: 'node-degisimin-ilk-adimlari',
       state: 'complete',
       status: 'Tamamlandı',
       title: 'Değişimin ilk adımları',
     },
     {
-      detail: 'Yaklaşık 5 dakika',
-      id: 'preview-02',
-      index: '02',
+      detail: 'Lale Devri',
+      id: 'node-lale-devri',
+      state: 'complete',
+      status: 'Tamamlandı',
+      title: 'Lale Devri',
+    },
+    {
+      detail: 'Ders 2 / 5 · +20 XP',
+      id: 'node-tanzimat-fermani',
       state: 'current',
       status: 'Şimdi',
-      title: 'Tanzimat’a giriş',
+      title: 'Tanzimat Fermanı',
     },
     {
-      detail: 'Kısa karşılaştırma turu',
-      id: 'preview-03',
-      index: '03',
-      state: 'available',
-      status: 'Açık',
-      title: 'Fermanları karşılaştır',
-    },
-    {
-      detail: 'Önceki adımlardan sonra açılır',
-      id: 'preview-04',
-      index: '04',
+      detail: 'Önceki ders bitince açılır',
+      id: 'node-islahat-fermani',
       state: 'locked',
       status: 'Kilitli',
-      title: 'Kısa tekrar',
+      title: 'Islahat Fermanı',
     },
     {
-      detail: 'Ünite sonu kontrol noktası',
-      id: 'preview-05',
-      index: '05',
-      state: 'checkpoint',
-      status: 'Kontrol noktası',
-      title: 'Ünite sınavı',
+      detail: 'Önceki ders bitince açılır',
+      id: 'node-birinci-mesrutiyet',
+      state: 'locked',
+      status: 'Kilitli',
+      title: 'I. Meşrutiyet',
     },
   ],
-  stats: {
-    trace: '12 gün iz',
-    xp: '1.240 XP',
-  },
-  subject: 'Tarih',
-  subtitle: 'Sıradaki kısa adım hazır.',
   unit: {
-    eyebrow: 'ÜNİTE 3 · TARİH',
-    progress: '3 / 7',
-    title: 'Osmanlı’da Yenileşme',
+    eyebrow: 'BÖLÜM 2, ÜNİTE 3 · TARİH',
+    subject: 'history',
+    title: 'Osmanlı’da yenileşme',
   },
 } as const satisfies HomePreviewViewModel;

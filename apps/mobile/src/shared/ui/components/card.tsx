@@ -2,14 +2,39 @@ import { StyleSheet, View, type ViewProps } from 'react-native';
 
 import { theme } from '@/shared/ui/theme/tokens';
 
-export type CardVariant = 'default' | 'elevated' | 'outlined';
+export type CardVariant = 'elevated' | 'outlined' | 'plain' | 'tactile';
 
 type CardProps = ViewProps & {
+  /** Overrides the outline colour for state-tinted cards (correct, wrong, selected). */
+  borderColor?: string | undefined;
+  surfaceColor?: string | undefined;
   variant?: CardVariant;
 };
 
-export function Card({ style, variant = 'default', ...viewProps }: CardProps) {
-  return <View style={[styles.base, variantStyles[variant], style]} {...viewProps} />;
+/**
+ * The design's card language: a two-point outline, a warm surface, and — for
+ * anything that reads as touchable — a thickened bottom edge that gives the
+ * card physical weight without a shadow.
+ */
+export function Card({
+  borderColor,
+  style,
+  surfaceColor,
+  variant = 'outlined',
+  ...viewProps
+}: CardProps) {
+  return (
+    <View
+      style={[
+        styles.base,
+        variantStyles[variant],
+        borderColor ? { borderColor } : null,
+        surfaceColor ? { backgroundColor: surfaceColor } : null,
+        style,
+      ]}
+      {...viewProps}
+    />
+  );
 }
 
 const styles = StyleSheet.create({
@@ -21,16 +46,17 @@ const styles = StyleSheet.create({
 });
 
 const variantStyles = StyleSheet.create({
-  default: {
-    backgroundColor: theme.colors.surface.default,
-  },
   elevated: {
     ...theme.elevation.raised,
-    backgroundColor: theme.colors.surface.elevated,
   },
   outlined: {
     borderColor: theme.colors.border.subtle,
-    borderWidth: 1,
+    borderWidth: 2,
+  },
+  plain: {},
+  tactile: {
+    borderBottomWidth: theme.depth.cardBorder,
+    borderColor: theme.colors.border.subtle,
+    borderWidth: 2,
   },
 });
-

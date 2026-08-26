@@ -1,81 +1,56 @@
 import type { ReactNode } from 'react';
-import {
-  KeyboardAvoidingView,
-  Platform,
-  ScrollView,
-  StyleSheet,
-  View,
-  type StyleProp,
-  type ViewStyle,
-} from 'react-native';
+import { StyleSheet, View, type StyleProp, type ViewStyle } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { theme } from '@/shared/ui/theme/tokens';
 
+export type ScreenBackground = 'app' | 'flashcard' | 'lesson';
+
 type ScreenProps = {
+  background?: ScreenBackground;
   children: ReactNode;
-  contentContainerStyle?: StyleProp<ViewStyle>;
-  keyboardAvoiding?: boolean;
-  scroll?: boolean;
+  /**
+   * Screens that own a fixed bottom action region opt out of the bottom safe
+   * inset here and consume it inside `BottomAction` instead.
+   */
+  includeBottomInset?: boolean;
+  style?: StyleProp<ViewStyle>;
   testID?: string;
 };
 
+/**
+ * Owns safe areas and the page background. Screens keep their own horizontal
+ * rhythm so each composition can match the imported design exactly.
+ */
 export function Screen({
+  background = 'app',
   children,
-  contentContainerStyle,
-  keyboardAvoiding = false,
-  scroll = false,
+  includeBottomInset = true,
+  style,
   testID,
 }: ScreenProps) {
   return (
-    <SafeAreaView edges={['top', 'right', 'bottom', 'left']} style={styles.safeArea} testID={testID}>
-      <KeyboardAvoidingView
-        behavior={keyboardAvoiding && Platform.OS === 'ios' ? 'padding' : undefined}
-        enabled={keyboardAvoiding}
-        style={styles.keyboardArea}
-      >
-        {scroll ? (
-          <ScrollView
-            contentContainerStyle={[styles.contentBase, styles.scrollContent, contentContainerStyle]}
-            keyboardShouldPersistTaps="handled"
-            showsVerticalScrollIndicator={false}
-            style={styles.scrollView}
-          >
-            {children}
-          </ScrollView>
-        ) : (
-          <View style={[styles.contentBase, styles.staticContent, contentContainerStyle]}>{children}</View>
-        )}
-      </KeyboardAvoidingView>
+    <SafeAreaView
+      edges={includeBottomInset ? ['top', 'right', 'bottom', 'left'] : ['top', 'right', 'left']}
+      style={[styles.safeArea, backgroundStyles[background], style]}
+      testID={testID}
+    >
+      <View style={styles.content}>{children}</View>
     </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  contentBase: {
-    alignSelf: 'center',
-    maxWidth: 720,
-    paddingHorizontal: theme.spacing.xl,
-    width: '100%',
-  },
-  keyboardArea: {
+  content: {
     flex: 1,
   },
   safeArea: {
-    backgroundColor: theme.colors.background.app,
     flex: 1,
   },
-  scrollContent: {
-    flexGrow: 1,
-    paddingBottom: theme.spacing.xxl,
-    paddingTop: theme.spacing.lg,
-  },
-  scrollView: {
-    flex: 1,
-  },
-  staticContent: {
-    flex: 1,
-    paddingBottom: theme.spacing.xl,
-    paddingTop: theme.spacing.lg,
-  },
+});
+
+const backgroundStyles = StyleSheet.create({
+  app: { backgroundColor: theme.colors.background.app },
+  flashcard: { backgroundColor: theme.colors.background.flashcard },
+  lesson: { backgroundColor: theme.colors.background.lesson },
 });

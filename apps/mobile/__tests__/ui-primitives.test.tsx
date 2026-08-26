@@ -11,38 +11,38 @@ describe('design primitives', () => {
     await render(<AppButton disabled label="Devre dışı" onPress={onPress} />);
 
     const button = screen.getByRole('button', { name: 'Devre dışı' });
-    fireEvent.press(button);
+    await fireEvent.press(button);
 
     expect(button.props.accessibilityState).toEqual({ disabled: true });
     expect(onPress).not.toHaveBeenCalled();
   });
 
-  it('compresses the primary button face while pressed', async () => {
-    let observedPressedOffset: number | undefined;
+  it('compresses the tactile button face onto its structural depth while pressed', async () => {
+    let pressedOffset: number | undefined;
 
     await render(
       <AppButton
         label="Devam"
         onLongPress={() => {
-          const transform = StyleSheet.flatten(
+          const { transform } = StyleSheet.flatten(
             screen.getByTestId('primary-button-face').props.style,
-          ).transform;
-          observedPressedOffset = transform?.[0]?.translateY;
+          );
+          pressedOffset = transform?.[0]?.translateY;
         }}
         onPress={jest.fn()}
         testID="primary-button"
       />,
     );
 
-    const button = screen.getByTestId('primary-button');
     const face = screen.getByTestId('primary-button-face');
-
     expect(StyleSheet.flatten(face.props.style).transform).toBeUndefined();
 
-    await userEvent.setup().longPress(button);
+    await userEvent.setup().longPress(screen.getByTestId('primary-button'));
 
-    expect(observedPressedOffset).toBeGreaterThan(0);
-    expect(StyleSheet.flatten(screen.getByTestId('primary-button-face').props.style).transform).toBeUndefined();
+    expect(pressedOffset).toBeGreaterThan(0);
+    expect(
+      StyleSheet.flatten(screen.getByTestId('primary-button-face').props.style).transform,
+    ).toBeUndefined();
   });
 
   it('clamps progress and exposes an accessible percentage', async () => {

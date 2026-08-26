@@ -1,154 +1,321 @@
 import type { TextStyle, ViewStyle } from 'react-native';
 
-const lightColors = {
+/**
+ * Raw palette imported from the approved Claude Design project
+ * "TEKRARLA Ekranlar v2" (pastel pass). Components never read this object;
+ * they consume the semantic roles below.
+ */
+const palette = {
+  coral: '#F2794F',
+  coralDark: '#C2552F',
+  coralDeep: '#B9491F',
+  coralInk: '#E2683A',
+  coralTint: '#FFF3EC',
+  coralSoft: '#FFE7DB',
+  coral300: '#F9B79B',
+  coral400: '#F7A183',
+  coral200: '#FAC6B1',
+  coral100: '#FAD8C8',
+  coral050: '#FADCD0',
+
+  ink: '#2E2A26',
+  inkSoft: '#3A342F',
+  slate: '#5B534B',
+  stone: '#9C938B',
+  stoneSoft: '#ABA29A',
+  stoneDim: '#8A827A',
+  ash: '#C6BEB6',
+
+  paper: '#FFFCFA',
+  white: '#FFFFFF',
+  canvas: '#EFEAE4',
+  bone: '#F4EDE6',
+  linen: '#F5F0EA',
+  hairline: '#F3ECE5',
+  border: '#EFE7E0',
+  borderStrong: '#E4DBD2',
+
+  off: '#F0EAE3',
+  offDark: '#DBD3CA',
+  offInk: '#B6ADA4',
+
+  lockFace: '#EDE6DE',
+  lockShadow: '#DCD3CA',
+  lockGlyph: '#B4ABA1',
+
+  history: '#E0A876',
+  historyDark: '#C08850',
+  historySoft: '#FBE7D6',
+  historyInk: '#A9662F',
+  historyDeep: '#7A4A22',
+  unitBanner: '#F0D3B4',
+  unitBannerShadow: '#DDB98F',
+
+  geography: '#86C9A6',
+  geographySoft: '#DFF3E8',
+  geographyInk: '#34785A',
+
+  philosophy: '#A79BE6',
+  philosophySoft: '#EAE5FB',
+  philosophyTrack: '#E9E3FA',
+  philosophyInk: '#5C4CB0',
+  philosophyDim: '#BDB2DE',
+  philosophyCanvas: '#F8F5FF',
+
+  religion: '#8FBBE8',
+  religionSoft: '#E3EFFB',
+  religionInk: '#3A6D9E',
+
+  xp: '#F6CE7C',
+  xpDark: '#DDA93F',
+  xpSoft: '#FDF0D9',
+  xpInk: '#8A6314',
+  xpNumber: '#B98A24',
+
+  heart: '#F2857F',
+  heartInk: '#C4544E',
+
+  success: '#5FB78E',
+  successDark: '#3D8E68',
+  successSoft: '#EFF9F4',
+  successSurface: '#F3FAF6',
+  successInk: '#2F6E52',
+
+  tabActive: '#FFF1EA',
+  tabActiveBorder: '#FAD3C1',
+
+  event: '#C97BA8',
+  eventSoft: '#F3DDEB',
+  eventSurface: '#FDF4F9',
+  eventBorder: '#EFD6E6',
+  eventInk: '#A85C8A',
+  eventMuted: '#B98CA8',
+
+  danger: '#EF8078',
+  dangerBorder: '#F2A9A3',
+  dangerSoft: '#FDF1F0',
+  dangerSurface: '#FEF6F5',
+  dangerInk: '#C4544E',
+} as const;
+
+const colors = {
   background: {
-    app: '#FFF8F4',
-    subtle: '#FFEDE5',
+    app: palette.paper,
+    lesson: palette.white,
+    flashcard: palette.philosophyCanvas,
+    subtle: palette.linen,
+    canvas: palette.canvas,
+    scrim: 'rgba(46, 42, 38, 0.42)',
+    ground: palette.bone,
   },
   surface: {
-    default: '#FFFFFF',
-    elevated: '#FFFFFF',
-    soft: '#FFF3ED',
-    inverted: '#2B3A67',
+    default: palette.white,
+    soft: palette.coralTint,
+    recessed: palette.linen,
+    sheet: palette.white,
   },
   text: {
-    primary: '#241C18',
-    secondary: '#5F554F',
-    muted: '#766B65',
-    inverse: '#FFFFFF',
-    accent: '#B9391A',
+    primary: palette.ink,
+    body: palette.inkSoft,
+    secondary: palette.slate,
+    muted: palette.stone,
+    faint: palette.ash,
+    eyebrow: palette.stoneDim,
+    inverse: palette.white,
+    accent: palette.coralDeep,
+    accentStrong: palette.coralInk,
+    disabled: palette.offInk,
   },
   border: {
-    subtle: '#EFE1D9',
-    strong: '#D6C2B7',
-    accent: '#F4623A',
+    hairline: palette.hairline,
+    subtle: palette.border,
+    strong: palette.borderStrong,
+    accent: palette.coral,
   },
   action: {
+    primary: palette.coral,
+    primaryDepth: palette.coralDark,
+    primarySoft: palette.coralSoft,
+    primaryTint: palette.coralTint,
+    success: palette.success,
+    successDepth: palette.successDark,
+    danger: palette.danger,
+    dangerDepth: palette.dangerInk,
+    neutral: palette.white,
+    neutralDepth: palette.borderStrong,
+    disabled: palette.off,
+    disabledDepth: palette.offDark,
     ghost: 'transparent',
-    primary: '#F4623A',
-    primaryPressed: '#B9391A',
-    primarySoft: '#FFE7DE',
-    secondary: '#FFEDE5',
-    secondaryPressed: '#FFDBCD',
-    ghostPressed: '#FFEDE5',
-    disabled: '#DED5D0',
-    onPrimary: '#FFFFFF',
+    onPrimary: palette.white,
+    onDisabled: palette.offInk,
   },
   progress: {
-    track: '#EADFD8',
-    fill: '#F4623A',
+    track: palette.hairline,
+    fill: palette.xp,
+    gloss: 'rgba(255, 255, 255, 0.45)',
   },
   status: {
-    success: '#147A50',
-    successSurface: '#E5F6EE',
-    warning: '#8A5B00',
-    warningSurface: '#FFF3CF',
-    danger: '#B93838',
-    dangerSurface: '#FDE7E3',
+    success: palette.success,
+    successSoft: palette.successSoft,
+    successSurface: palette.successSurface,
+    successInk: palette.successInk,
+    danger: palette.danger,
+    dangerBorder: palette.dangerBorder,
+    dangerSoft: palette.dangerSoft,
+    dangerSurface: palette.dangerSurface,
+    dangerInk: palette.dangerInk,
   },
   reward: {
-    xp: '#2D7FF9',
-    xpSurface: '#EAF2FF',
-    trace: '#F4623A',
-    traceSoft: '#FFE7DE',
-    highlight: '#FFC53D',
+    xp: palette.xp,
+    xpDepth: palette.xpDark,
+    xpSoft: palette.xpSoft,
+    xpInk: palette.xpInk,
+    xpNumber: palette.xpNumber,
+    gem: palette.religion,
+    gemInk: palette.religionInk,
+    heart: palette.heart,
+    heartInk: palette.heartInk,
+  },
+  // İz is the learner-facing habit trace. The tapering bar set is its mark.
+  trace: {
+    strong: palette.coral,
+    mid: palette.coral400,
+    soft: palette.coral200,
+    faint: palette.coral050,
+    ring: palette.coral100,
+    surface: palette.coralTint,
+    border: palette.coral100,
+    ink: palette.coralInk,
+  },
+  event: {
+    accent: palette.event,
+    soft: palette.eventSoft,
+    surface: palette.eventSurface,
+    border: palette.eventBorder,
+    ink: palette.eventInk,
+    muted: palette.eventMuted,
+  },
+  navigation: {
+    surface: palette.white,
+    hairline: palette.hairline,
+    activeSurface: palette.tabActive,
+    activeBorder: palette.tabActiveBorder,
+  },
+  path: {
+    lockedFace: palette.lockFace,
+    lockedDepth: palette.lockShadow,
+    lockedGlyph: palette.lockGlyph,
+    currentFace: palette.coral,
+    currentDepth: palette.coralDark,
+    currentRing: palette.coral100,
+    checkpointFace: palette.xp,
+    checkpointDepth: palette.xpDark,
+    checkpointGlyph: palette.xpInk,
+    unitFace: palette.unitBanner,
+    unitDepth: palette.unitBannerShadow,
   },
   subject: {
     history: {
-      primary: '#B4552B',
-      dark: '#8A3E1D',
-      soft: '#F8E7DF',
+      primary: palette.history,
+      depth: palette.historyDark,
+      soft: palette.historySoft,
+      ink: palette.historyInk,
+      deep: palette.historyDeep,
     },
     geography: {
-      primary: '#1E9E6A',
-      dark: '#147A50',
-      soft: '#E5F6EE',
+      primary: palette.geography,
+      depth: palette.geographyInk,
+      soft: palette.geographySoft,
+      ink: palette.geographyInk,
+      deep: palette.geographyInk,
     },
     philosophy: {
-      primary: '#7C5CF5',
-      dark: '#5C3ED0',
-      soft: '#EEE9FF',
+      primary: palette.philosophy,
+      depth: palette.philosophyInk,
+      soft: palette.philosophySoft,
+      ink: palette.philosophyInk,
+      deep: palette.philosophyInk,
+      track: palette.philosophyTrack,
+      dim: palette.philosophyDim,
     },
     religion: {
-      primary: '#2D7FF9',
-      dark: '#185FC7',
-      soft: '#EAF2FF',
+      primary: palette.religion,
+      depth: palette.religionInk,
+      soft: palette.religionSoft,
+      ink: palette.religionInk,
+      deep: palette.religionInk,
     },
   },
 } as const;
 
+export type SubjectKey = keyof typeof colors.subject;
+
+/**
+ * Type roles mirror the design's `font:` shorthands. Display roles render in
+ * Baloo 2; interface and body roles render in Nunito.
+ */
 export const typography = {
-  display: {
-    fontSize: 36,
-    fontWeight: '800',
-    letterSpacing: -0.8,
-    lineHeight: 42,
-  },
-  headingXL: {
-    fontSize: 30,
-    fontWeight: '800',
-    letterSpacing: -0.5,
-    lineHeight: 36,
-  },
-  headingL: {
-    fontSize: 24,
-    fontWeight: '800',
-    letterSpacing: -0.3,
-    lineHeight: 30,
-  },
-  headingM: {
-    fontSize: 20,
-    fontWeight: '700',
-    lineHeight: 26,
-  },
-  bodyL: {
-    fontSize: 18,
-    fontWeight: '400',
-    lineHeight: 27,
-  },
-  bodyM: {
-    fontSize: 16,
-    fontWeight: '400',
-    lineHeight: 24,
-  },
-  bodyS: {
-    fontSize: 14,
-    fontWeight: '400',
-    lineHeight: 20,
-  },
-  labelL: {
-    fontSize: 16,
-    fontWeight: '700',
-    lineHeight: 20,
-  },
-  labelM: {
-    fontSize: 14,
-    fontWeight: '700',
-    lineHeight: 18,
-  },
-  caption: {
-    fontSize: 12,
-    fontWeight: '700',
-    letterSpacing: 0.7,
-    lineHeight: 16,
-  },
+  display: { fontSize: 96, fontWeight: '800', lineHeight: 100 },
+  headingXXL: { fontSize: 40, fontWeight: '800', lineHeight: 46 },
+  headingXL: { fontSize: 34, fontWeight: '800', lineHeight: 39 },
+  headingL: { fontSize: 26, fontWeight: '800', lineHeight: 32 },
+  headingM: { fontSize: 22, fontWeight: '800', lineHeight: 29 },
+  headingS: { fontSize: 19, fontWeight: '800', lineHeight: 23 },
+  headingXS: { fontSize: 17, fontWeight: '800', lineHeight: 20 },
+  numeric: { fontSize: 23, fontWeight: '800', lineHeight: 26 },
+
+  question: { fontSize: 19, fontWeight: '700', lineHeight: 27 },
+  bodyL: { fontSize: 17, fontWeight: '700', lineHeight: 25 },
+  bodyM: { fontSize: 16, fontWeight: '700', lineHeight: 21 },
+  bodyS: { fontSize: 13.5, fontWeight: '700', lineHeight: 20 },
+  prose: { fontSize: 15.5, fontWeight: '400', lineHeight: 25 },
+  proseS: { fontSize: 13.5, fontWeight: '600', lineHeight: 20 },
+
+  labelL: { fontSize: 16, fontWeight: '800', letterSpacing: 0.96, lineHeight: 20 },
+  labelM: { fontSize: 15, fontWeight: '800', lineHeight: 19 },
+  labelS: { fontSize: 13, fontWeight: '800', lineHeight: 17 },
+  caption: { fontSize: 12, fontWeight: '800', letterSpacing: 0.6, lineHeight: 16 },
+  eyebrow: { fontSize: 10.5, fontWeight: '800', letterSpacing: 1.5, lineHeight: 14 },
+  hud: { fontSize: 17, fontWeight: '900', lineHeight: 20 },
 } as const satisfies Record<string, TextStyle>;
 
+export type TypographyRole = keyof typeof typography;
+
 export const spacing = {
+  xxs: 2,
   xs: 4,
   sm: 8,
   md: 12,
   lg: 16,
-  xl: 24,
-  xxl: 32,
-  xxxl: 48,
+  xl: 20,
+  xxl: 24,
+  xxxl: 32,
+  huge: 40,
 } as const;
 
 export const radii = {
-  small: 12,
+  xs: 9,
+  small: 13,
   medium: 16,
-  large: 24,
+  large: 20,
+  xlarge: 26,
+  sheet: 30,
   pill: 999,
+} as const;
+
+/**
+ * The design expresses physical depth two ways: a solid offset shadow under a
+ * pressable face (buttons, path nodes) and a thickened bottom border on cards.
+ */
+export const depth = {
+  button: 5,
+  node: 8,
+  nodeSmall: 6,
+  panel: 6,
+  banner: 4,
+  cardBorder: 4,
+  cardBorderThick: 5,
+  cardBorderXL: 6,
 } as const;
 
 export const elevation = {
@@ -158,10 +325,6 @@ export const elevation = {
   },
 } as const satisfies Record<string, ViewStyle>;
 
-export const controlDepth = {
-  primary: 6,
-} as const;
-
 export const motion = {
   duration: {
     instant: 0,
@@ -169,25 +332,24 @@ export const motion = {
     standard: 220,
     slow: 360,
   },
-  easing: {
-    enter: [0.2, 0, 0, 1],
-    exit: [0.4, 0, 1, 1],
-  },
 } as const;
 
+/** Minimum comfortable one-handed touch target, in points. */
+export const hitTarget = 44;
+
 export const lightTheme = {
-  colors: lightColors,
-  controlDepth,
+  colors,
+  depth,
   elevation,
+  hitTarget,
   motion,
   radii,
   spacing,
   typography,
 } as const;
 
-// Milestone 2 ships one polished theme. Consumers use this semantic object so a
-// future provider can swap it without changing component-level color roles.
+// One polished light theme ships today. Consumers read semantic roles so a
+// future provider can swap the palette without touching component APIs.
 export const theme = lightTheme;
 
 export type AppTheme = typeof lightTheme;
-export type TypographyRole = keyof typeof typography;
