@@ -29,7 +29,6 @@ const palette = {
   paper: '#FFFCFA',
   white: '#FFFFFF',
   canvas: '#EFEAE4',
-  bone: '#F4EDE6',
   linen: '#F5F0EA',
   hairline: '#F3ECE5',
   border: '#EFE7E0',
@@ -84,6 +83,15 @@ const palette = {
   tabActive: '#FFF1EA',
   tabActiveBorder: '#FAD3C1',
 
+  portrait: '#CFEBDD',
+
+  campaign: '#E7EDFA',
+  campaignBorder: '#C9D6F2',
+  campaignAccent: '#3A5D9E',
+  campaignEyebrow: '#5A76B8',
+  campaignInk: '#2E3E66',
+  campaignMuted: '#8FA3CE',
+
   event: '#C97BA8',
   eventSoft: '#F3DDEB',
   eventSurface: '#FDF4F9',
@@ -106,7 +114,6 @@ const colors = {
     subtle: palette.linen,
     canvas: palette.canvas,
     scrim: 'rgba(46, 42, 38, 0.42)',
-    ground: palette.bone,
   },
   surface: {
     default: palette.white,
@@ -187,6 +194,19 @@ const colors = {
     border: palette.coral100,
     ink: palette.coralInk,
   },
+  // The seasonal campaign band on the Plus screen — the only cool-blue
+  // surface in an otherwise warm system.
+  campaign: {
+    surface: palette.campaign,
+    border: palette.campaignBorder,
+    accent: palette.campaignAccent,
+    eyebrow: palette.campaignEyebrow,
+    ink: palette.campaignInk,
+    muted: palette.campaignMuted,
+  },
+  profile: {
+    portrait: palette.portrait,
+  },
   event: {
     accent: palette.event,
     soft: palette.eventSoft,
@@ -255,7 +275,7 @@ export type SubjectKey = keyof typeof colors.subject;
  * Baloo 2; interface and body roles render in Nunito.
  */
 export const typography = {
-  display: { fontSize: 96, fontWeight: '800', lineHeight: 100 },
+  display: { fontSize: 96, fontWeight: '800', lineHeight: 96 },
   headingXXL: { fontSize: 40, fontWeight: '800', lineHeight: 46 },
   headingXL: { fontSize: 34, fontWeight: '800', lineHeight: 39 },
   headingL: { fontSize: 26, fontWeight: '800', lineHeight: 32 },

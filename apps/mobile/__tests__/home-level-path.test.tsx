@@ -4,7 +4,7 @@ import { HomeScreen } from '@/modules/home/ui/home-screen';
 
 describe('home level path', () => {
   it('presents the unit, the current level, and locked levels without relying on colour', async () => {
-    await render(<HomeScreen onOpenQuests={jest.fn()} onStartLevel={jest.fn()} />);
+    await render(<HomeScreen onSelectTab={jest.fn()} onStartLevel={jest.fn()} />);
 
     // Curriculum context, not a dashboard header.
     expect(screen.getByText('BÖLÜM 2, ÜNİTE 3 · TARİH')).toBeTruthy();
@@ -25,7 +25,7 @@ describe('home level path', () => {
   it('opens the level detail panel from the current node and starts the lesson', async () => {
     const onStartLevel = jest.fn();
 
-    await render(<HomeScreen onOpenQuests={jest.fn()} onStartLevel={onStartLevel} />);
+    await render(<HomeScreen onSelectTab={jest.fn()} onStartLevel={onStartLevel} />);
 
     expect(screen.queryByTestId('level-detail-panel')).toBeNull();
 
@@ -40,7 +40,7 @@ describe('home level path', () => {
   });
 
   it('closes the detail panel when the same node is tapped again', async () => {
-    await render(<HomeScreen onOpenQuests={jest.fn()} onStartLevel={jest.fn()} />);
+    await render(<HomeScreen onSelectTab={jest.fn()} onStartLevel={jest.fn()} />);
 
     await fireEvent.press(screen.getByTestId('path-node-node-tanzimat-fermani'));
     await fireEvent.press(screen.getByTestId('path-node-node-tanzimat-fermani'));
@@ -48,19 +48,24 @@ describe('home level path', () => {
     expect(screen.queryByTestId('level-detail-panel')).toBeNull();
   });
 
-  it('routes the quests tab and leaves unfinished tabs disabled', async () => {
-    const onOpenQuests = jest.fn();
+  it('marks the path tab selected and routes every other tab', async () => {
+    const onSelectTab = jest.fn();
 
-    await render(<HomeScreen onOpenQuests={onOpenQuests} onStartLevel={jest.fn()} />);
+    await render(<HomeScreen onSelectTab={onSelectTab} onStartLevel={jest.fn()} />);
 
-    await fireEvent.press(screen.getByTestId('tab-gorev'));
-    expect(onOpenQuests).toHaveBeenCalledTimes(1);
-
-    expect(screen.getByTestId('tab-lig').props.accessibilityState).toMatchObject({
-      disabled: true,
-    });
     expect(screen.getByTestId('tab-yol').props.accessibilityState).toMatchObject({
       selected: true,
     });
+
+    for (const tab of ['gorev', 'lig', 'magaza', 'profil']) {
+      await fireEvent.press(screen.getByTestId(`tab-${tab}`));
+    }
+
+    expect(onSelectTab.mock.calls.map(([tab]) => tab)).toEqual([
+      'gorev',
+      'lig',
+      'magaza',
+      'profil',
+    ]);
   });
 });

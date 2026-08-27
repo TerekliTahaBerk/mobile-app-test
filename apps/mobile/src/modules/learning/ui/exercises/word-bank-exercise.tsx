@@ -16,6 +16,8 @@ type WordBankExerciseProps = {
 };
 
 const MIN_ANSWER_LENGTH = 3;
+const CHIP_HEIGHT = theme.hitTarget + 2;
+const ROW_HEIGHT = 64;
 
 /**
  * Design screen 05. Words lift from the bank onto ruled answer lines and drop
@@ -56,9 +58,11 @@ export function WordBankExercise({ exercise, onAdvance }: WordBankExerciseProps)
             <View style={styles.hintChip}>
               <View style={styles.hintPlay} />
             </View>
-            <AppText color="body" style={styles.hintText} variant="bodyM">
-              {exercise.hint}
-            </AppText>
+            <View style={styles.hintUnderline}>
+              <AppText color="body" variant="bodyM">
+                {exercise.hint}
+              </AppText>
+            </View>
           </View>
         </CizgiSpeech>
 
@@ -73,7 +77,7 @@ export function WordBankExercise({ exercise, onAdvance }: WordBankExerciseProps)
           testID="word-bank-answer"
         >
           {[0, 1, 2].map((line) => (
-            <View key={line} style={styles.rule} />
+            <View key={line} style={styles.writingRow} />
           ))}
           <View style={styles.answerWords}>
             {answerIds.map((wordId) => (
@@ -161,18 +165,19 @@ function WordChip({ disabled = false, label, onPress, used = false }: WordChipPr
 
 const styles = StyleSheet.create({
   answerArea: {
-    justifyContent: 'space-between',
-    minHeight: 190,
     position: 'relative',
   },
+  // Chips are CHIP_HEIGHT tall and each writing row is ROW_HEIGHT, so the
+  // leading gap plus the row gap land every chip exactly on a rule.
   answerWords: {
+    columnGap: theme.spacing.sm + 1,
     flexDirection: 'row',
     flexWrap: 'wrap',
-    gap: theme.spacing.sm + 1,
     left: 0,
-    paddingTop: theme.spacing.sm,
+    paddingTop: ROW_HEIGHT - CHIP_HEIGHT,
     position: 'absolute',
     right: 0,
+    rowGap: ROW_HEIGHT - CHIP_HEIGHT,
     top: 0,
   },
   bank: {
@@ -188,7 +193,7 @@ const styles = StyleSheet.create({
     borderColor: theme.colors.border.strong,
     borderWidth: 2,
     justifyContent: 'center',
-    minHeight: theme.hitTarget + 2,
+    minHeight: CHIP_HEIGHT,
     paddingHorizontal: theme.spacing.lg - 1,
   },
   chipFaceUsed: {
@@ -222,15 +227,18 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     gap: theme.spacing.sm + 2,
   },
-  hintText: {
+  // The design underlines the prompt with a dotted rule. iOS only honours
+  // `borderStyle` when every side has a width, so this is a solid hairline.
+  hintUnderline: {
     borderBottomColor: theme.colors.border.strong,
     borderBottomWidth: 2,
-    borderStyle: 'dotted',
     flex: 1,
+    paddingBottom: theme.spacing.xs,
   },
-  rule: {
-    backgroundColor: theme.colors.border.hairline,
-    height: 2,
+  writingRow: {
+    borderBottomColor: theme.colors.border.hairline,
+    borderBottomWidth: 2,
+    height: ROW_HEIGHT,
   },
   scroll: {
     flex: 1,

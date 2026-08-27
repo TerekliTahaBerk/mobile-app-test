@@ -5,6 +5,9 @@ import IndexRoute from '@/app/index';
 import IzRoute from '@/app/iz';
 import LessonCompleteRoute from '@/app/lesson-complete';
 import LessonIntroRoute from '@/app/lesson-intro';
+import LigRoute from '@/app/lig';
+import MagazaRoute from '@/app/magaza';
+import ProfilRoute from '@/app/profil';
 
 const mockBack = jest.fn();
 const mockDismissTo = jest.fn();
@@ -37,14 +40,6 @@ describe('routes', () => {
     expect(mockPush).toHaveBeenCalledWith('/lesson-intro');
   });
 
-  it('opens the quest board from the tab bar', async () => {
-    await render(<IndexRoute />);
-
-    await fireEvent.press(screen.getByTestId('tab-gorev'));
-
-    expect(mockPush).toHaveBeenCalledWith('/gorevler');
-  });
-
   it('continues from the lesson intro into the lesson and back to the path', async () => {
     await render(<LessonIntroRoute />);
 
@@ -71,11 +66,54 @@ describe('routes', () => {
     expect(mockDismissTo).toHaveBeenCalledWith('/');
   });
 
-  it('closes the quest board back to where it came from', async () => {
+  it('closes the quest board back to the path', async () => {
     await render(<GorevlerRoute />);
 
     await fireEvent.press(screen.getByTestId('quests-close'));
 
-    expect(mockBack).toHaveBeenCalledTimes(1);
+    expect(mockReplace).toHaveBeenCalledWith('/');
+  });
+});
+
+describe('shell tabs', () => {
+  beforeEach(() => {
+    mockReplace.mockClear();
+  });
+
+  it('swaps sections rather than stacking them', async () => {
+    await render(<IndexRoute />);
+
+    await fireEvent.press(screen.getByTestId('tab-gorev'));
+    await fireEvent.press(screen.getByTestId('tab-magaza'));
+
+    expect(mockReplace.mock.calls.map(([route]) => route)).toEqual(['/gorevler', '/magaza']);
+  });
+
+  it('does not re-navigate when the active tab is tapped', async () => {
+    await render(<IndexRoute />);
+
+    await fireEvent.press(screen.getByTestId('tab-yol'));
+
+    expect(mockReplace).not.toHaveBeenCalled();
+  });
+
+  it('routes the league and profile tabs to their own entry points', async () => {
+    await render(<LigRoute />);
+    await fireEvent.press(screen.getByTestId('tab-profil'));
+    expect(mockReplace).toHaveBeenCalledWith('/profil');
+
+    mockReplace.mockClear();
+
+    await render(<ProfilRoute />);
+    await fireEvent.press(screen.getByTestId('tab-lig'));
+    expect(mockReplace).toHaveBeenCalledWith('/lig');
+  });
+
+  it('closes the store back to the path', async () => {
+    await render(<MagazaRoute />);
+
+    await fireEvent.press(screen.getByTestId('store-close'));
+
+    expect(mockReplace).toHaveBeenCalledWith('/');
   });
 });

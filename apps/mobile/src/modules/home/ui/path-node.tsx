@@ -3,6 +3,7 @@ import { StyleSheet, View } from 'react-native';
 import type { PathNode, PathNodeState } from '@/modules/home/model/home-preview-data';
 import { AppText, type AppTextColor } from '@/shared/ui/components/app-text';
 import { LockGlyph } from '@/shared/ui/components/glyphs';
+import { Pulse } from '@/shared/ui/motion/motion';
 import { TactilePressable } from '@/shared/ui/components/tactile-pressable';
 import { theme } from '@/shared/ui/theme/tokens';
 
@@ -49,7 +50,9 @@ export function PathNodeButton({ node, onPress }: PathNodeButtonProps) {
 
   return (
     <View style={styles.ringFrame}>
-      <View importantForAccessibility="no-hide-descendants" style={styles.ring} />
+      <Pulse style={styles.ringLayer}>
+        <View importantForAccessibility="no-hide-descendants" style={styles.ring} />
+      </Pulse>
       {face}
     </View>
   );
@@ -137,9 +140,11 @@ const styles = StyleSheet.create({
     borderTopColor: theme.colors.path.currentFace,
     borderWidth: 6,
     height: CURRENT_RING_SIZE,
+    width: CURRENT_RING_SIZE,
+  },
+  ringLayer: {
     position: 'absolute',
     top: -((CURRENT_RING_SIZE - NODE_SIZE) / 2),
-    width: CURRENT_RING_SIZE,
   },
   ringFrame: {
     alignItems: 'center',

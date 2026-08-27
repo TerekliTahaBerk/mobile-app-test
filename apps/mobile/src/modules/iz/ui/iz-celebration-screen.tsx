@@ -117,10 +117,13 @@ const styles = StyleSheet.create({
     paddingVertical: theme.spacing.xl,
   },
   count: {
-    gap: theme.spacing.xs,
+    alignItems: 'center',
   },
+  // Baloo's descent leaves a deep well under a 96pt numeral; the pull-up keeps
+  // the count and its unit reading as one block.
   countValue: {
     color: theme.colors.action.primary,
+    marginBottom: -theme.spacing.xl,
   },
   day: {
     alignItems: 'center',

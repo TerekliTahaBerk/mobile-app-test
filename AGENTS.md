@@ -21,4 +21,5 @@ This repository is the system of record for the TEKRARLA working product. Read [
 - Brand identity: [docs/BRAND_IDENTITY.md](docs/BRAND_IDENTITY.md)
 - Design system: [docs/DESIGN_SYSTEM.md](docs/DESIGN_SYSTEM.md)
 - MVP sequence: [docs/EXECUTION/MVP.md](docs/EXECUTION/MVP.md)
+- Release blockers: [docs/RELEASE_READINESS.md](docs/RELEASE_READINESS.md)
 - Remaining domain documents: [docs/](docs/)

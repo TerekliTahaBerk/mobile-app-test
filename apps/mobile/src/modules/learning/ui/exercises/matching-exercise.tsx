@@ -7,6 +7,7 @@ import { AppText } from '@/shared/ui/components/app-text';
 import { BottomAction } from '@/shared/ui/components/bottom-action';
 import { SubjectTag } from '@/shared/ui/components/subject-tag';
 import { TactilePressable } from '@/shared/ui/components/tactile-pressable';
+import { Shake } from '@/shared/ui/motion/motion';
 import { theme } from '@/shared/ui/theme/tokens';
 
 type MatchingExerciseProps = {
@@ -25,6 +26,7 @@ export function MatchingExercise({ exercise, onAdvance }: MatchingExerciseProps)
   const [selectedLeftId, setSelectedLeftId] = useState<string | null>(null);
   const [pairedLeftIds, setPairedLeftIds] = useState<readonly string[]>([]);
   const [wrongLeftId, setWrongLeftId] = useState<string | null>(null);
+  const [wrongAttempts, setWrongAttempts] = useState(0);
 
   const pairedRightIds = exercise.left
     .filter((item) => pairedLeftIds.includes(item.id))
@@ -46,6 +48,7 @@ export function MatchingExercise({ exercise, onAdvance }: MatchingExerciseProps)
     }
 
     setWrongLeftId(selectedLeftId);
+    setWrongAttempts((count) => count + 1);
     setSelectedLeftId(null);
   };
 
@@ -53,6 +56,7 @@ export function MatchingExercise({ exercise, onAdvance }: MatchingExerciseProps)
     setPairedLeftIds([]);
     setSelectedLeftId(null);
     setWrongLeftId(null);
+    setWrongAttempts(0);
   };
 
   return (
@@ -86,18 +90,19 @@ export function MatchingExercise({ exercise, onAdvance }: MatchingExerciseProps)
                     : 'idle';
 
               return (
-                <MatchTile
-                  disabled={paired}
-                  key={item.id}
-                  label={item.label}
-                  onPress={() => {
-                    setSelectedLeftId(item.id);
-                    setWrongLeftId(null);
-                  }}
-                  stateLabel={matchStateLabels[tone]}
-                  testID={`match-left-${item.id}`}
-                  tone={tone}
-                />
+                <Shake key={item.id} trigger={tone === 'wrong' ? wrongAttempts : 0}>
+                  <MatchTile
+                    disabled={paired}
+                    label={item.label}
+                    onPress={() => {
+                      setSelectedLeftId(item.id);
+                      setWrongLeftId(null);
+                    }}
+                    stateLabel={matchStateLabels[tone]}
+                    testID={`match-left-${item.id}`}
+                    tone={tone}
+                  />
+                </Shake>
               );
             })}
           </View>

@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { ScrollView, StyleSheet } from 'react-native';
+import { useRef, useState } from 'react';
+import { ScrollView, StyleSheet, type LayoutChangeEvent } from 'react-native';
 
 import { homePreviewData } from '@/modules/home/model/home-preview-data';
 import { BottomTabBar, type AppTabKey } from '@/modules/home/ui/bottom-tab-bar';
@@ -10,7 +10,7 @@ import { Screen } from '@/shared/ui/components/screen';
 import { theme } from '@/shared/ui/theme/tokens';
 
 type HomeScreenProps = {
-  onOpenQuests: () => void;
+  onSelectTab: (tab: AppTabKey) => void;
   onStartLevel: () => void;
 };
 
@@ -18,16 +18,23 @@ type HomeScreenProps = {
  * Home is the learning journey, not a dashboard. The learner should read one
  * thing off this screen: buradan devam et.
  */
-export function HomeScreen({ onOpenQuests, onStartLevel }: HomeScreenProps) {
+export function HomeScreen({ onSelectTab, onStartLevel }: HomeScreenProps) {
   const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null);
+  const scrollRef = useRef<ScrollView>(null);
+  const viewportHeight = useRef(0);
 
   const toggleNode = (nodeId: string) => {
     setSelectedNodeId((current) => (current === nodeId ? null : nodeId));
   };
 
-  const onSelectTab = (tab: AppTabKey) => {
-    if (tab === 'gorev') {
-      onOpenQuests();
+  /**
+   * On a short screen the detail panel can open below the fold, hiding its own
+   * CTA. Scroll just far enough to bring the whole panel into view.
+   */
+  const revealPanel = (panelBottom: number) => {
+    const target = panelBottom + theme.spacing.xxl - viewportHeight.current;
+    if (target > 0) {
+      scrollRef.current?.scrollTo({ animated: true, y: target });
     }
   };
 
@@ -38,6 +45,10 @@ export function HomeScreen({ onOpenQuests, onStartLevel }: HomeScreenProps) {
 
       <ScrollView
         contentContainerStyle={styles.pathContent}
+        onLayout={(event: LayoutChangeEvent) => {
+          viewportHeight.current = event.nativeEvent.layout.height;
+        }}
+        ref={scrollRef}
         showsVerticalScrollIndicator={false}
         style={styles.pathScroll}
       >
@@ -45,6 +56,7 @@ export function HomeScreen({ onOpenQuests, onStartLevel }: HomeScreenProps) {
           companion={homePreviewData.companion}
           level={homePreviewData.currentLevel}
           nodes={homePreviewData.nodes}
+          onPanelMeasured={revealPanel}
           onSelectNode={toggleNode}
           onStartLevel={onStartLevel}
           selectedNodeId={selectedNodeId}

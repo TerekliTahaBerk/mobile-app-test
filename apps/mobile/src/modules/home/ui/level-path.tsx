@@ -7,12 +7,15 @@ import { CURRENT_RING_SIZE, NODE_SIZE, PathNodeButton } from '@/modules/home/ui/
 import { AppText } from '@/shared/ui/components/app-text';
 import { TactilePressable } from '@/shared/ui/components/tactile-pressable';
 import { Cizgi } from '@/shared/ui/cizgi/cizgi';
+import { Bob, Pop } from '@/shared/ui/motion/motion';
 import { theme } from '@/shared/ui/theme/tokens';
 
 type LevelPathProps = {
   companion: HomePreviewViewModel['companion'];
   level: CurrentLevelPreview;
   nodes: readonly PathNode[];
+  /** Reports the panel's bottom edge so a short screen can scroll it into view. */
+  onPanelMeasured: (panelBottom: number) => void;
   onSelectNode: (nodeId: string) => void;
   onStartLevel: () => void;
   selectedNodeId: string | null;
@@ -31,6 +34,7 @@ export function LevelPath({
   companion,
   level,
   nodes,
+  onPanelMeasured,
   onSelectNode,
   onStartLevel,
   selectedNodeId,
@@ -49,13 +53,13 @@ export function LevelPath({
           <Fragment key={node.id}>
             <View style={styles.row}>
               {isCurrent ? (
-                <Cizgi
-                  accessibilityLabel={companion.accessibilityLabel}
-                  ground
-                  mood={companion.mood}
-                  style={styles.companion}
-                  width={COMPANION_WIDTH}
-                />
+                <Bob style={styles.companion}>
+                  <Cizgi
+                    accessibilityLabel={companion.accessibilityLabel}
+                    mood={companion.mood}
+                    width={COMPANION_WIDTH}
+                  />
+                </Bob>
               ) : null}
 
               <View style={[styles.nodeSlot, { transform: [{ translateX: offset }] }]}>
@@ -66,7 +70,16 @@ export function LevelPath({
               </View>
             </View>
 
-            {isSelected ? <LevelDetailPanel level={level} onStart={onStartLevel} /> : null}
+            {isSelected ? (
+              <Pop
+                onLayout={({ nativeEvent }) =>
+                  onPanelMeasured(nativeEvent.layout.y + nativeEvent.layout.height)
+                }
+                style={styles.panel}
+              >
+                <LevelDetailPanel level={level} onStart={onStartLevel} />
+              </Pop>
+            ) : null}
           </Fragment>
         );
       })}
@@ -85,22 +98,23 @@ type StartCalloutProps = {
  */
 function StartCallout({ onPress, title }: StartCalloutProps) {
   return (
-    <TactilePressable
-      accessibilityElementsHidden
-      accessibilityLabel={`${title} dersine başla`}
-      accessibilityRole="button"
-      depth={0}
-      depthColor="transparent"
-      faceStyle={styles.calloutFace}
-      importantForAccessibility="no-hide-descendants"
-      onPress={onPress}
-      radius={theme.radii.small + 1}
-      style={styles.callout}
-    >
-      <AppText color="accent" variant="labelS">
-        BAŞLA
-      </AppText>
-    </TactilePressable>
+    <Pop style={styles.callout}>
+      <TactilePressable
+        accessibilityElementsHidden
+        accessibilityLabel={`${title} dersine başla`}
+        accessibilityRole="button"
+        depth={0}
+        depthColor="transparent"
+        faceStyle={styles.calloutFace}
+        importantForAccessibility="no-hide-descendants"
+        onPress={onPress}
+        radius={theme.radii.small + 1}
+      >
+        <AppText color="accent" variant="labelS">
+          BAŞLA
+        </AppText>
+      </TactilePressable>
+    </Pop>
   );
 }
 
@@ -138,6 +152,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     position: 'relative',
     width: NODE_SIZE,
+  },
+  panel: {
+    alignSelf: 'stretch',
   },
   path: {
     alignItems: 'center',

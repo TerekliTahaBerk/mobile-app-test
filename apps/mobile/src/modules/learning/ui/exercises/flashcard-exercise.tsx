@@ -9,8 +9,11 @@ import { SubjectTag } from '@/shared/ui/components/subject-tag';
 import { theme } from '@/shared/ui/theme/tokens';
 
 type FlashcardExerciseProps = {
+  /** Owned by the lesson so the HUD can report deck position. */
+  cardIndex: number;
   exercise: FlashcardPreview;
   onAdvance: () => void;
+  onCardIndexChange: (index: number) => void;
 };
 
 /**
@@ -18,8 +21,12 @@ type FlashcardExerciseProps = {
  * it. The self-report is not recorded — review scheduling belongs to the
  * learning system.
  */
-export function FlashcardExercise({ exercise, onAdvance }: FlashcardExerciseProps) {
-  const [cardIndex, setCardIndex] = useState(0);
+export function FlashcardExercise({
+  cardIndex,
+  exercise,
+  onAdvance,
+  onCardIndexChange,
+}: FlashcardExerciseProps) {
   const [turned, setTurned] = useState(false);
 
   const card = exercise.cards[cardIndex];
@@ -33,7 +40,7 @@ export function FlashcardExercise({ exercise, onAdvance }: FlashcardExerciseProp
       return;
     }
     setTurned(false);
-    setCardIndex((index) => index + 1);
+    onCardIndexChange(cardIndex + 1);
   };
 
   return (

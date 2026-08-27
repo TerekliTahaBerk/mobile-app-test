@@ -6,13 +6,23 @@
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "tekrarla",
-    "userInterfaceStyle": "automatic",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#FFFCFA",
+    "primaryColor": "#F2794F",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "bundleIdentifier": "com.tekrarla.app",
+      "buildNumber": "1",
+      "supportsTablet": false,
+      "infoPlist": {
+        "CFBundleDisplayName": "TEKRARLA",
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
+      "package": "com.tekrarla.app",
+      "versionCode": 1,
       "adaptiveIcon": {
-        "backgroundColor": "#FFF8F4",
+        "backgroundColor": "#FFE7DB",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
@@ -28,9 +38,9 @@
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#FFF8F4",
+          "backgroundColor": "#FFFCFA",
           "image": "./assets/images/splash-icon.png",
-          "imageWidth": 76
+          "imageWidth": 180
         }
       ]
     ],

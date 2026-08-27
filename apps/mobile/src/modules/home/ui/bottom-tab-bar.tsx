@@ -15,22 +15,17 @@ type BottomTabBarProps = {
 type TabDefinition = {
   key: AppTabKey;
   label: string;
-  ready: boolean;
 };
 
 const TABS: readonly TabDefinition[] = [
-  { key: 'yol', label: 'Yol', ready: true },
-  { key: 'gorev', label: 'Görev', ready: true },
-  { key: 'lig', label: 'Lig', ready: false },
-  { key: 'magaza', label: 'Mağaza', ready: false },
-  { key: 'profil', label: 'Profil', ready: false },
+  { key: 'yol', label: 'Yol' },
+  { key: 'gorev', label: 'Görev' },
+  { key: 'lig', label: 'Lig' },
+  { key: 'magaza', label: 'Mağaza' },
+  { key: 'profil', label: 'Profil' },
 ];
 
-/**
- * The persistent shell navigation from the design. Lig, Mağaza, and Profil are
- * shown because they anchor the composition, but they are not yet navigable
- * and say so to assistive technology rather than leading nowhere quietly.
- */
+/** The persistent shell navigation from the design. */
 export function BottomTabBar({ activeTab, onSelectTab }: BottomTabBarProps) {
   const insets = useSafeAreaInsets();
 
@@ -41,11 +36,9 @@ export function BottomTabBar({ activeTab, onSelectTab }: BottomTabBarProps) {
 
         return (
           <Pressable
-            accessibilityHint={tab.ready ? undefined : 'Bu bölüm henüz hazır değil'}
             accessibilityLabel={tab.label}
             accessibilityRole="tab"
-            accessibilityState={{ disabled: !tab.ready, selected: isActive }}
-            disabled={!tab.ready}
+            accessibilityState={{ selected: isActive }}
             key={tab.key}
             onPress={() => onSelectTab(tab.key)}
             style={[styles.tab, isActive && styles.tabActive]}

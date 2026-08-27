@@ -6,6 +6,7 @@ import { AppText } from '@/shared/ui/components/app-text';
 import { BottomAction } from '@/shared/ui/components/bottom-action';
 import { TraceMark } from '@/shared/ui/components/trace-mark';
 import { Cizgi } from '@/shared/ui/cizgi/cizgi';
+import { Bob } from '@/shared/ui/motion/motion';
 import { Screen } from '@/shared/ui/components/screen';
 import { theme } from '@/shared/ui/theme/tokens';
 
@@ -29,7 +30,9 @@ export function LessonCompleteScreen({ onCollect }: LessonCompleteScreenProps) {
         showsVerticalScrollIndicator={false}
         style={styles.scroll}
       >
-        <Cizgi ground mood={complete.mood} width={206} />
+        <Bob duration={2400}>
+          <Cizgi mood={complete.mood} width={206} />
+        </Bob>
 
         <View style={styles.heading}>
           <AppText accessibilityRole="header" align="center" color="accentStrong" variant="headingXL">

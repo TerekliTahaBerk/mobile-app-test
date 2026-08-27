@@ -15,7 +15,7 @@ type ScreenProps = {
    */
   includeBottomInset?: boolean;
   style?: StyleProp<ViewStyle>;
-  testID?: string;
+  testID?: string | undefined;
 };
 
 /**

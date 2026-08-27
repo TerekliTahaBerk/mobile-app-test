@@ -8,6 +8,7 @@ import { BackGlyph } from '@/shared/ui/components/glyphs';
 import { Screen } from '@/shared/ui/components/screen';
 import { TraceMark } from '@/shared/ui/components/trace-mark';
 import { Cizgi } from '@/shared/ui/cizgi/cizgi';
+import { Bob } from '@/shared/ui/motion/motion';
 import { theme } from '@/shared/ui/theme/tokens';
 
 type LessonIntroScreenProps = {
@@ -42,7 +43,9 @@ export function LessonIntroScreen({ onBack, onContinue }: LessonIntroScreenProps
           <View importantForAccessibility="no-hide-descendants" style={styles.bubbleTail} />
         </View>
 
-        <Cizgi ground mood={intro.mood} width={196} />
+        <Bob duration={3000}>
+          <Cizgi mood={intro.mood} width={196} />
+        </Bob>
 
         <View accessible accessibilityLabel={intro.traceNote} style={styles.traceBlock}>
           <TraceMark size="md" />

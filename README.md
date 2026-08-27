@@ -2,7 +2,7 @@
 
 Mobile-first, gamified exam preparation for Turkish students. The pilot covers only TYT Sosyal Bilimler: Tarih, Coğrafya, Felsefe, and Din Kültürü ve Ahlak Bilgisi.
 
-The repository currently contains the engineering foundation plus a TEKRARLA-aligned static navigation and design-system shell. Curriculum contracts, lesson behavior, persistence, authentication, and backend integration have not been implemented.
+The repository contains the engineering foundation and a complete native implementation of the approved Claude Design project, covering every screen. All of its data is presentation-only fixture state: curriculum content, lesson behaviour, persistence, authentication, and backend integration have not been implemented, so the app is **not releasable**. See [docs/RELEASE_READINESS.md](docs/RELEASE_READINESS.md) for the blocker list.
 
 ## Requirements
 
@@ -35,4 +35,4 @@ No environment variables are required for the foundation. Add a root `.env.examp
 - `docs`: product, architecture, domain boundaries, decisions, and execution plan
 - `AGENTS.md`: concise permanent engineering instructions
 
-Start with [docs/PRODUCT.md](docs/PRODUCT.md), [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md), [docs/BRAND_IDENTITY.md](docs/BRAND_IDENTITY.md), [docs/DESIGN_SYSTEM.md](docs/DESIGN_SYSTEM.md), and [docs/EXECUTION/MVP.md](docs/EXECUTION/MVP.md).
+Start with [docs/RELEASE_READINESS.md](docs/RELEASE_READINESS.md), [docs/PRODUCT.md](docs/PRODUCT.md), [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md), [docs/BRAND_IDENTITY.md](docs/BRAND_IDENTITY.md), [docs/DESIGN_SYSTEM.md](docs/DESIGN_SYSTEM.md), and [docs/EXECUTION/MVP.md](docs/EXECUTION/MVP.md).

@@ -25,6 +25,7 @@ type LessonScreenProps = {
  */
 export function LessonScreen({ onComplete, onExit }: LessonScreenProps) {
   const [stepIndex, setStepIndex] = useState(0);
+  const [cardIndex, setCardIndex] = useState(0);
   const [exitVisible, setExitVisible] = useState(false);
 
   const exercise = lessonPreviewData.exercises[stepIndex];
@@ -40,7 +41,7 @@ export function LessonScreen({ onComplete, onExit }: LessonScreenProps) {
     setStepIndex((index) => index + 1);
   };
 
-  const chrome = chromeFor(exercise, stepIndex, lessonPreviewData.exercises.length);
+  const chrome = chromeFor(exercise, stepIndex, lessonPreviewData.exercises.length, cardIndex);
 
   return (
     <Screen background={chrome.background} includeBottomInset={false} testID="lesson-screen">
@@ -55,7 +56,12 @@ export function LessonScreen({ onComplete, onExit }: LessonScreenProps) {
         trackColor={chrome.trackColor}
       />
 
-      <ExerciseStep exercise={exercise} onAdvance={advance} />
+      <ExerciseStep
+        cardIndex={cardIndex}
+        exercise={exercise}
+        onAdvance={advance}
+        onCardIndexChange={setCardIndex}
+      />
 
       <ExitConfirmSheet
         exit={lessonPreviewData.exit}
@@ -71,12 +77,19 @@ export function LessonScreen({ onComplete, onExit }: LessonScreenProps) {
 }
 
 type ExerciseStepProps = {
+  cardIndex: number;
   exercise: LessonExercisePreview;
   onAdvance: () => void;
+  onCardIndexChange: (index: number) => void;
 };
 
 /** One renderer per exercise shape — composition instead of one universal component. */
-function ExerciseStep({ exercise, onAdvance }: ExerciseStepProps) {
+function ExerciseStep({
+  cardIndex,
+  exercise,
+  onAdvance,
+  onCardIndexChange,
+}: ExerciseStepProps) {
   switch (exercise.kind) {
     case 'multipleChoice':
       return <MultipleChoiceExercise exercise={exercise} onAdvance={onAdvance} />;
@@ -85,7 +98,14 @@ function ExerciseStep({ exercise, onAdvance }: ExerciseStepProps) {
     case 'matching':
       return <MatchingExercise exercise={exercise} onAdvance={onAdvance} />;
     case 'flashcard':
-      return <FlashcardExercise exercise={exercise} onAdvance={onAdvance} />;
+      return (
+        <FlashcardExercise
+          cardIndex={cardIndex}
+          exercise={exercise}
+          onAdvance={onAdvance}
+          onCardIndexChange={onCardIndexChange}
+        />
+      );
   }
 }
 
@@ -108,17 +128,19 @@ function chromeFor(
   exercise: LessonExercisePreview,
   stepIndex: number,
   stepCount: number,
+  cardIndex: number,
 ): LessonChrome {
   const sequenceProgress = (stepIndex + 1) / stepCount;
 
   if (exercise.kind === 'flashcard') {
     return {
       background: 'flashcard',
-      counter: `${stepIndex + 1}/${exercise.deckSize}`,
+      counter: `${cardIndex + 1}/${exercise.deckSize}`,
       counterColor: theme.colors.subject.philosophy.ink,
       fillColor: theme.colors.subject.philosophy.primary,
       glyphColor: theme.colors.subject.philosophy.dim,
-      progress: sequenceProgress,
+      // The deck tracks its own cards rather than the lesson's step count.
+      progress: (cardIndex + 1) / exercise.deckSize,
       trackColor: theme.colors.subject.philosophy.track,
     };
   }

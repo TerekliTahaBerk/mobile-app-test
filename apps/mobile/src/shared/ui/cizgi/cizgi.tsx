@@ -5,27 +5,34 @@ import {
   cizgiAssets,
   type CizgiMood,
 } from '@/shared/ui/cizgi/cizgi-assets';
-import { theme } from '@/shared/ui/theme/tokens';
 
-type CizgiProps = {
+type CizgiSizeProps =
+  | { height: number; width?: never }
+  | { height?: never; width: number };
+
+type CizgiProps = CizgiSizeProps & {
   /**
    * Screen-reader label. ÇİZGİ is decorative in most compositions, so the
    * default hides the image; pass a label only where the pose carries meaning.
    */
   accessibilityLabel?: string | undefined;
-  /** Draws the design's soft ground ellipse under the character. */
-  ground?: boolean;
   mood: CizgiMood;
   style?: StyleProp<ViewStyle>;
-  width: number;
 };
 
 /**
- * Renders one ÇİZGİ pose at a fixed width, keeping the artwork's own aspect
- * ratio so the character is never stretched.
+ * Renders one ÇİZGİ pose at a fixed width *or* a fixed height, deriving the
+ * other axis from the artwork's own ratio so the character is never stretched.
+ * Size by height inside a fixed-height band; size by width everywhere else.
+ *
+ * The design draws a separate ground ellipse under the character; the artwork
+ * shipped here already carries its own contact shadow, so adding a second one
+ * only cuts across the shoes.
  */
-export function Cizgi({ accessibilityLabel, ground = false, mood, style, width }: CizgiProps) {
-  const height = Math.round(width / cizgiAspectRatios[mood]);
+export function Cizgi({ accessibilityLabel, height, mood, style, width }: CizgiProps) {
+  const ratio = cizgiAspectRatios[mood];
+  const resolvedWidth = width ?? Math.round((height ?? 0) * ratio);
+  const resolvedHeight = height ?? Math.round((width ?? 0) / ratio);
   const isDecorative = accessibilityLabel === undefined;
 
   return (
@@ -37,14 +44,8 @@ export function Cizgi({ accessibilityLabel, ground = false, mood, style, width }
         importantForAccessibility={isDecorative ? 'no-hide-descendants' : 'yes'}
         resizeMode="contain"
         source={cizgiAssets[mood]}
-        style={{ height, width }}
+        style={{ height: resolvedHeight, width: resolvedWidth }}
       />
-      {ground ? (
-        <View
-          importantForAccessibility="no-hide-descendants"
-          style={[styles.ground, { width: Math.round(width * 0.72) }]}
-        />
-      ) : null}
     </View>
   );
 }
@@ -52,11 +53,5 @@ export function Cizgi({ accessibilityLabel, ground = false, mood, style, width }
 const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
-  },
-  ground: {
-    backgroundColor: theme.colors.background.ground,
-    borderRadius: theme.radii.pill,
-    height: 12,
-    marginTop: -6,
   },
 });
