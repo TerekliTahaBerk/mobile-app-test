@@ -11,7 +11,7 @@ export default function LessonCompleteRoute() {
     <LessonCompleteScreen
       onCollect={() => {
         discard();
-        router.dismissTo('/');
+        router.replace('/iz');
       }}
     />
   );

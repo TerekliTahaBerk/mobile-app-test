@@ -14,15 +14,33 @@
 export type AppMode = 'designPreview' | 'productionPilot';
 
 export type FeatureFlags = {
+  /** Fictional gem balance. Hidden until an economy exists. */
+  gemsEconomy: boolean;
+  /** Attempts/hearts economy. Studying is never blocked in the pilot. */
+  heartsEconomy: boolean;
   /** Weekly league standings. Needs a real leaderboard service. */
   league: boolean;
   /** TEKRARLA Plus. Needs real in-app purchases. */
   plus: boolean;
+  /** Presentation-only quest board. */
+  quests: boolean;
 };
 
 const FLAGS_BY_MODE: Record<AppMode, FeatureFlags> = {
-  designPreview: { league: true, plus: true },
-  productionPilot: { league: false, plus: false },
+  designPreview: {
+    gemsEconomy: true,
+    heartsEconomy: true,
+    league: true,
+    plus: true,
+    quests: true,
+  },
+  productionPilot: {
+    gemsEconomy: false,
+    heartsEconomy: false,
+    league: false,
+    plus: false,
+    quests: false,
+  },
 };
 
 /**
@@ -30,7 +48,13 @@ const FLAGS_BY_MODE: Record<AppMode, FeatureFlags> = {
  * reviewable. Anything else — including every release build — is a production
  * pilot.
  */
-export const APP_MODE: AppMode = __DEV__ ? 'designPreview' : 'productionPilot';
+const requestedMode = process.env.EXPO_PUBLIC_APP_MODE;
+export const APP_MODE: AppMode =
+  requestedMode === 'productionPilot' || requestedMode === 'designPreview'
+    ? requestedMode
+    : __DEV__
+      ? 'designPreview'
+      : 'productionPilot';
 
 export const FEATURES: FeatureFlags = FLAGS_BY_MODE[APP_MODE];
 

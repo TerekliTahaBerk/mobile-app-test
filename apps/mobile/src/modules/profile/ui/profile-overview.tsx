@@ -11,8 +11,55 @@ import { TactilePressable } from '@/shared/ui/components/tactile-pressable';
 import { TraceMark } from '@/shared/ui/components/trace-mark';
 import { theme } from '@/shared/ui/theme/tokens';
 
+export type LocalProfileStats = {
+  completedLevels: number;
+  iz: number;
+  lessonsCompleted: number;
+  reviewsCompleted: number;
+  totalXp: number;
+};
+
 /** The "Profil" segment of design screen 12. */
-export function ProfileOverview() {
+export function ProfileOverview({ localStats }: { localStats?: LocalProfileStats | undefined }) {
+  if (localStats !== undefined) {
+    const stats: readonly ProfileStat[] = [
+      { icon: 'gem', id: 'local-xp', label: 'Toplam XP', value: String(localStats.totalXp) },
+      { icon: 'trace', id: 'local-iz', label: 'Günlük İz', value: String(localStats.iz) },
+      { icon: 'net', id: 'local-lessons', label: 'Tamamlanan ders', value: String(localStats.lessonsCompleted) },
+      { icon: 'league', id: 'local-reviews', label: 'Tamamlanan tekrar', value: String(localStats.reviewsCompleted) },
+    ];
+
+    return (
+      <View style={styles.container}>
+        <View accessible style={styles.identity}>
+          <AppText accessibilityRole="header" variant="headingL">Bu cihazdaki ilerleme</AppText>
+          <AppText color="muted" variant="proseS">
+            Hesapsız pilot · kayıtlar yalnızca bu cihazda
+          </AppText>
+        </View>
+        <View style={styles.statGrid}>
+          {stats.map((stat) => (
+            <View
+              accessible
+              accessibilityLabel={`${stat.label}: ${stat.value}`}
+              key={stat.id}
+              style={styles.statCard}
+            >
+              <StatIcon icon={stat.icon} />
+              <View style={styles.statCopy}>
+                <AppText numberOfLines={1} variant="headingXS">{stat.value}</AppText>
+                <AppText color="muted" style={styles.countLabel} variant="bodyS">{stat.label}</AppText>
+              </View>
+            </View>
+          ))}
+        </View>
+        <AppText color="muted" variant="bodyS">
+          {`${localStats.completedLevels} gerçek yol seviyesi tamamlandı.`}
+        </AppText>
+      </View>
+    );
+  }
+
   const { badges, counts, identity, overviewTitle, stats } = profilePreviewData;
 
   return (

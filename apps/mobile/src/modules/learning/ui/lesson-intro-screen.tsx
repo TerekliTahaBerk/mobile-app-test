@@ -3,6 +3,7 @@ import { Pressable, StyleSheet, View } from 'react-native';
 import { getContentIndex } from '@/modules/curriculum/content/content-source';
 import type { LessonId } from '@/modules/curriculum/domain/content-types';
 import { lessonPreviewData } from '@/modules/learning/model/lesson-preview-data';
+import { APP_MODE } from '@/shared/config/app-config';
 import { AppButton } from '@/shared/ui/components/app-button';
 import { AppText } from '@/shared/ui/components/app-text';
 import { BottomAction } from '@/shared/ui/components/bottom-action';
@@ -30,6 +31,10 @@ export function LessonIntroScreen({ lessonId, onBack, onContinue }: LessonIntroS
   const lesson = index.getLesson(lessonId);
   const topic = index.getTopic(lesson.topicId);
   const unit = index.getUnit(topic.unitId);
+  const traceNote =
+    APP_MODE === 'productionPilot'
+      ? 'Bu dersi tamamlamak bugünün İz’ine yazılır.'
+      : lessonPreviewData.intro.traceNote;
 
   return (
     <Screen includeBottomInset={false} testID="lesson-intro-screen">
@@ -55,10 +60,10 @@ export function LessonIntroScreen({ lessonId, onBack, onContinue }: LessonIntroS
           <Cizgi mood="pose" width={196} />
         </Bob>
 
-        <View accessible accessibilityLabel={lessonPreviewData.intro.traceNote} style={styles.traceBlock}>
+        <View accessible accessibilityLabel={traceNote} style={styles.traceBlock}>
           <TraceMark size="md" />
           <AppText color="muted" variant="bodyS">
-            {lessonPreviewData.intro.traceNote}
+            {traceNote}
           </AppText>
         </View>
       </View>

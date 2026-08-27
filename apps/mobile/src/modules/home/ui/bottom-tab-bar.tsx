@@ -22,7 +22,7 @@ type TabDefinition = {
 
 const TABS: readonly TabDefinition[] = [
   { enabled: true, key: 'yol', label: 'Yol' },
-  { enabled: true, key: 'gorev', label: 'Görev' },
+  { enabled: FEATURES.quests, key: 'gorev', label: 'Görev' },
   { enabled: FEATURES.league, key: 'lig', label: 'Lig' },
   { enabled: FEATURES.plus, key: 'magaza', label: 'Mağaza' },
   { enabled: true, key: 'profil', label: 'Profil' },

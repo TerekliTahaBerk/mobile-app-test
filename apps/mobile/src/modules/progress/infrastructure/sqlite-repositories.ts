@@ -356,14 +356,9 @@ async function completeSessionAtomically(
   );
 
   if (existing?.status === 'completed') {
-    const already = await txn.getFirstAsync<{ total: number | null }>(
-      'SELECT SUM(amount) AS total FROM xp_transactions WHERE session_id = ?',
-      [input.session.sessionId],
-    );
-
     return {
       alreadyCompleted: true,
-      awardedXp: already?.total ?? 0,
+      awardedXp: 0,
       firstCompletionAwarded: false,
     };
   }
@@ -491,7 +486,7 @@ async function completeSessionAtomically(
       if (evidence.correct) {
         // Only a clean answer clears the mistake; scraping through on a retry
         // leaves it open so the learner sees it again.
-        if (evidence.strength === 'strong') {
+        if (input.session.kind === 'review' && evidence.strength === 'strong') {
           await txn.runAsync(
             `UPDATE mistakes SET status = 'resolved', resolved_at = ?
              WHERE skill_id = ? AND status = 'unresolved'`,
@@ -567,6 +562,17 @@ export function createSqliteRepositories(db: SQLiteDatabase): ProgressRepositori
   };
 
   const sessions: SessionRepository = {
+    completionCounts: async () => {
+      const rows = await db.getAllAsync<{ count: number; kind: string }>(
+        `SELECT kind, COUNT(*) AS count FROM sessions
+         WHERE status = 'completed' GROUP BY kind`,
+      );
+
+      return {
+        lessons: rows.find((row) => row.kind === 'lesson')?.count ?? 0,
+        reviews: rows.find((row) => row.kind === 'review')?.count ?? 0,
+      };
+    },
     findActive: async () => {
       const row = await db.getFirstAsync<SessionRow>(
         `SELECT * FROM sessions WHERE status = 'active' ORDER BY updated_at DESC LIMIT 1`,

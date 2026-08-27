@@ -1,140 +1,87 @@
 # Release readiness
 
-This document tracks what stands between the current build and a public
-release on the App Store and Google Play. It is the honest checklist, not an
-aspirational one.
+This is the honest checklist for App Store and Google Play release.
 
-**Current state: not releasable.** The interface is complete, and one real
-lesson now runs end to end on a validated content bundle and a deterministic
-learning engine. But the curriculum is a single topic, none of it has been
-academically reviewed, and **nothing persists** — close the app and the session,
-its XP, and its answers are gone.
+**Current state: not releasable.** The local-first product loop is real and
+durable, but the curriculum is one engineering-written draft topic, production
+observability is absent, and store/legal work is incomplete.
 
-## What is ready
+## Ready
 
 | Area | State |
 | --- | --- |
-| Screens | All 13 frames of *TEKRARLA Ekranlar v2*, plus not-found and crash screens |
-| Design system | Semantic tokens, primitives, brand typography, ÇİZGİ registry |
-| Motion | Four keyframes on built-in `Animated`, Reduce Motion honoured |
-| Navigation | Expo Router, five-tab shell, deep-link scheme, unknown-route handling |
-| Crash containment | `AppErrorBoundary` at the root with a branded recovery screen |
-| Launch assets | Icon, adaptive icon, monochrome icon, splash, favicon — all from brand art |
-| App config | Bundle identifiers, versioning, orientation, light-only UI style; `expo-doctor` 21/21 |
-| Build config | `eas.json` with development, preview, and production profiles |
-| Content contract | Versioned bundle, stable IDs, runtime validation with actionable errors |
-| Learning engine | Pure deterministic session reducer, evaluator registry, domain events, attempt model, v1 XP policy |
-| Real vertical slice | One Tarih lesson (`Kurultay`, five exercises) wired through the approved screens |
-| Feature gating | League and Plus off in a production pilot |
-| Quality gates | Lint, strict typecheck, 65 tests, dependency check, all green |
-| Device QA | iPhone 17 Pro (402 pt) and iPhone SE (375 pt), iOS 26.5 |
+| Native product shell | Approved screens, semantic design system, navigation, crash containment |
+| Content contract | Versioned bundle, stable IDs, semantic validation, one draft Tarih lesson |
+| Learning engine | Pure deterministic reducer, evaluators, attempts, events, XP policy |
+| Polished vertical slice | Home → lesson/review → completion → İz → Home |
+| Persistence | `expo-sqlite`, explicit migrations, foreign keys, WAL, startup gate |
+| Durable sessions | Versioned snapshot, content compatibility check, mid-lesson resume |
+| Atomic completion | Exclusive transaction across every learner-state write |
+| XP | Auditable ledger; 10 correct, 20 lesson, 25 first path completion; idempotent source keys |
+| Path | Real node persists `available/started/completed`; preview nodes stay locked |
+| İz | Durable local dates, current-zone recording, yesterday grace, real weekly strip |
+| Mastery v1 | Beta evidence prior 1/3, policy version 1, scored evidence only |
+| Review | Deterministic 1/3/7/14/30-day ladder and existing exercise UI |
+| Mistakes | One unresolved remediation record per skill; successful review can resolve it |
+| Recommendation | mistake → review → resume → new lesson, deterministic ties |
+| Account model | Explicit device-local/accountless pilot; no fake account infrastructure |
+| Fake-feature gating | League, Plus, quests, hearts, and gems off in production pilot |
+| Automated quality | Lint, strict typecheck, domain/UI/SQLite contract tests |
 
 ## Blockers
 
-These must be resolved before the app can ship. Each names who has to decide.
+### 1. Complete, human-reviewed TYT Sosyal content — product + academic
 
-### 1. The curriculum is one topic, and it is unreviewed — **product + academic**
+The shipped Kurultay lesson is `draft`, written by engineering, and exists only
+to prove the pipeline. Production requires original material approved by a
+human subject-matter reviewer across Tarih, Coğrafya, Felsefe, and Din Kültürü.
+This is the largest release blocker.
 
-The content *contract* is done and the pipeline works, but the shipped bundle
-holds a single Tarih lesson written by engineering to prove it. Every record is
-`reviewStatus: 'draft'`, and `docs/PRODUCT.md` requires production material to
-be original and academically reviewed. This remains the largest single blocker
-and it is not an engineering task.
+### 2. Production observability — engineering + product
 
-Needs: an authoritative TYT Sosyal curriculum source, an author, a subject-matter
-reviewer who can move records to `approved`, and a licensing position on the
-material. The validator already refuses malformed content; it does not and
-cannot judge whether content is *correct*.
+There is no crash reporter, analytics, production funnel instrumentation, or
+remote configuration. `AppErrorBoundary` contains crashes but cannot report
+them. Milestone 8 owns this work and must preserve the small privacy surface.
 
-### 2. No mastery or review — **engineering, partly gated on product**
+### 3. Native acceptance and accessibility hardening — engineering
 
-Evaluation, attempts, domain events, and XP now exist and are deterministic.
-What is missing is everything that needs history: mastery estimation, review
-scheduling, and next-activity recommendation.
+Automated tests exercise a real Node SQLite engine, not a mocked query layer,
+but the Expo native binding still requires recorded iOS restart/resume QA and
+Android coverage. VoiceOver, largest Dynamic Type, and release-build
+performance passes remain.
 
-The v1 review ladder (1/3/7/14/30 days) is decided and documented. The mastery
-formula, confidence input, and the priority between new lessons, due review,
-and mistakes are still open.
+### 4. Store, privacy, and legal — product + legal
 
-### 3. Nothing persists — **engineering**
+- Confirm a controlled bundle identifier/domain; `com.tekrarla.app` is a placeholder.
+- Publish the privacy policy and complete App Privacy/data-safety declarations.
+- Decide age rating and the treatment of minors under KVKK and applicable law.
+- Produce store descriptions, screenshots, keywords, and support URLs.
+- Confirm trademark clearance for TEKRARLA and ÇİZGİ.
+- Confirm commercial ownership/licensing and production-resolution ÇİZGİ art.
 
-Close the app and the lesson session, its XP, and its attempts are gone.
-Milestone 6 (SQLite migrations and repositories) has not started. Until it
-does, İz, XP totals, and level progression cannot be real regardless of what
-the screens display — and the first-path-level XP bonus cannot be awarded at
-all, because nothing knows whether a level has been completed before.
+### 5. Device-only progress disclosure — product
 
-### 4. İz is presentational — **engineering**
+The pilot has no account recovery or cross-device sync. Pilot onboarding and
+store/privacy copy must clearly state that deleting the app or losing the device
+loses progress. Cloud sync is not a prerequisite unless product changes the v1
+account decision.
 
-The İz counter, week strip, and "izin kesilmesin" copy imply a habit streak the
-app does not compute. The v1 rules are now decided and recorded in
-`docs/GAMIFICATION.md` — device timezone, one lesson or due-review session per
-qualifying day, no repair, no retroactive rewrites. Implementation waits on
-persistence.
+### 6. Plus and League — product decision
 
-### 5. No account or sync — **product + engineering**
+Both are disabled in production. Shipping either requires real billing or a
+real leaderboard backend plus their own compliance and abuse work. They are not
+release blockers while they remain hidden.
 
-Milestone 9. Decide whether v1 ships device-local (no account, no recovery if
-the phone is lost) or requires sign-in. This changes the store listing, the
-privacy policy, and the onboarding flow.
+## Smaller submission items
 
-### 6. Store compliance — **product + legal**
+- Re-render ÇİZGİ from the original 3D source for large 3× placements.
+- Confirm launch art, final app icon, and naming.
+- Define offline/support copy and local-data reset/support procedures.
+- Run final iOS and Android store-build smoke tests.
 
-Not started, and none of it is code:
+## Next engineering milestone
 
-- Apple Developer and Google Play accounts, and the real bundle identifier.
-  `com.tekrarla.app` is a placeholder — confirm the domain you control.
-- Privacy policy URL. Required by both stores even when collecting nothing.
-- Data-safety and App Privacy declarations.
-- Age rating. The pilot targets students; if under-13 users are in scope,
-  COPPA and KVKK obligations follow and change what may be collected.
-- Store listing: description, keywords, screenshots, preview video.
-- Trademark clearance for TEKRARLA and ÇİZGİ, still open in
-  `docs/BRAND_IDENTITY.md`.
-- Licensing and ownership of the ÇİZGİ artwork for commercial use.
+**Milestone 8 — Analytics + Feature Flags / Production Observability.**
 
-### 7. Plus and the league are gated off, not finished — **product**
-
-Both screens remain in the codebase and reachable while designing, but
-`FEATURES.plus` and `FEATURES.league` are **false in a production pilot**: their
-tabs disappear and their routes redirect home. That stops a pilot advertising a
-purchase that cannot be made, or a ranking that is fiction — it does not make
-either feature exist.
-
-Deciding to ship them means real in-app purchases and a real leaderboard
-service, both out of scope until a later phase.
-
-### 8. No observability — **engineering**
-
-Milestone 8. There is no crash reporter, no analytics, and no feature flags.
-`AppErrorBoundary` already exposes an `onError` hook for a reporter to attach
-to. Shipping without crash reporting means shipping blind.
-
-## Smaller items before submission
-
-- Mascot resolution: source art is ~140 pt wide and is displayed up to 206 pt,
-  so it is soft on a 3× display. Needs re-rendering from the original 3D
-  source, not a different export.
-- Dark theme: the app declares `userInterfaceStyle: "light"` because only a
-  light theme exists. The design lists "koyu tema" as a future direction.
-- The design's own next list, still unbuilt: LGS mode on the path, the
-  out-of-hearts and İz-protection screens, and drag-and-drop matching.
-- Accessibility: states are text-labelled and targets clear 44 pt, but the app
-  has not been run end-to-end under VoiceOver or at the largest Dynamic Type
-  setting.
-- Offline behaviour: undefined, because there is no network layer yet.
-
-## Suggested order
-
-1. ~~Milestone 3 — content contract~~ **done**.
-2. ~~Milestone 4 — deterministic session reducer~~ **done**.
-3. **Release Phase 2** — Milestone 6 persistence, then real XP totals, İz, and
-   mastery/review on top of the existing event stream.
-4. Author and academically review real curriculum breadth.
-5. Decide the account model; add crash reporting.
-6. Decide whether Plus and Lig ship at all.
-7. Store compliance and submission.
-
-Steps 3 and 4 are what turn this from a working prototype into a product. The
-interface and the engine are done and are no longer the constraint; content
-breadth and durable progress are.
+This does not make the app release-ready by itself; academic content and store
+hardening remain independent blockers.

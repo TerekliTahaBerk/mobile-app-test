@@ -5,7 +5,7 @@ import type { CizgiMood } from '@/shared/ui/cizgi/cizgi-assets';
  * is counted, stored, or evaluated here, and the timezone and grace rules that
  * a real İz needs have not been decided.
  */
-export type IzDayState = 'done' | 'today' | 'upcoming';
+export type IzDayState = 'done' | 'missed' | 'pending' | 'today' | 'upcoming';
 
 export type IzPreviewViewModel = {
   count: string;
@@ -35,3 +35,41 @@ export const izPreviewData = {
     { id: 'iz-pe', label: 'Pe', longLabel: 'Perşembe', state: 'upcoming' },
   ],
 } as const satisfies IzPreviewViewModel;
+
+export function buildDurableIzViewModel(
+  current: number,
+  week: readonly {
+    date: string;
+    state: 'future' | 'missed' | 'pending' | 'qualified' | 'today';
+  }[],
+): IzPreviewViewModel {
+  return {
+    count: String(current),
+    cta: 'DEVAM ET',
+    footnote: 'Bir ders veya zamanı gelen tekrar tamamladığın yerel gün İz’e yazılır.',
+    mood: 'proud',
+    shareLabel: 'İzi paylaş',
+    unit: 'günlük iz',
+    week: week.map((day) => ({
+      id: day.date,
+      label: weekday(day.date, 'short'),
+      longLabel: weekday(day.date, 'long'),
+      state:
+        day.state === 'qualified'
+          ? 'done'
+          : day.state === 'today'
+            ? 'today'
+            : day.state === 'future'
+              ? 'upcoming'
+              : day.state === 'missed'
+                ? 'missed'
+                : 'pending',
+    })),
+  };
+}
+
+function weekday(date: string, width: 'long' | 'short'): string {
+  return new Intl.DateTimeFormat('tr-TR', { timeZone: 'UTC', weekday: width }).format(
+    new Date(`${date}T12:00:00.000Z`),
+  );
+}

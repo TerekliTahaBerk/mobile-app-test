@@ -18,15 +18,19 @@ type PathHudProps = {
 export function PathHud({ hud }: PathHudProps) {
   return (
     <View style={styles.row}>
-      <View accessible accessibilityLabel={`${hud.mode} seviye ${hud.level}`} style={styles.stat}>
+      <View
+        accessible
+        accessibilityLabel={hud.level === undefined ? hud.mode : `${hud.mode} seviye ${hud.level}`}
+        style={styles.stat}
+      >
         <View style={styles.modeChip}>
           <AppText style={styles.modeChipText} variant="eyebrow">
             {hud.mode}
           </AppText>
         </View>
-        <AppText color="muted" variant="hud">
-          {hud.level}
-        </AppText>
+        {hud.level === undefined ? null : (
+          <AppText color="muted" variant="hud">{hud.level}</AppText>
+        )}
       </View>
 
       <View accessible accessibilityLabel={`${hud.trace} günlük iz`} style={styles.stat}>
@@ -36,19 +40,26 @@ export function PathHud({ hud }: PathHudProps) {
         </AppText>
       </View>
 
-      <View accessible accessibilityLabel={`${hud.gems} elmas`} style={styles.stat}>
-        <GemGlyph />
-        <AppText color="gem" variant="hud">
-          {hud.gems}
-        </AppText>
-      </View>
+      {hud.xp === undefined ? null : (
+        <View accessible accessibilityLabel={hud.xp} style={styles.stat}>
+          <View style={styles.xpDot} />
+          <AppText color="gem" variant="hud">{hud.xp}</AppText>
+        </View>
+      )}
 
-      <View accessible accessibilityLabel={`${hud.hearts} can`} style={styles.stat}>
-        <HeartGlyph />
-        <AppText color="heart" variant="hud">
-          {hud.hearts}
-        </AppText>
-      </View>
+      {hud.gems === undefined ? null : (
+        <View accessible accessibilityLabel={`${hud.gems} elmas`} style={styles.stat}>
+          <GemGlyph />
+          <AppText color="gem" variant="hud">{hud.gems}</AppText>
+        </View>
+      )}
+
+      {hud.hearts === undefined ? null : (
+        <View accessible accessibilityLabel={`${hud.hearts} can`} style={styles.stat}>
+          <HeartGlyph />
+          <AppText color="heart" variant="hud">{hud.hearts}</AppText>
+        </View>
+      )}
     </View>
   );
 }
@@ -81,5 +92,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     gap: theme.spacing.sm,
     minHeight: theme.hitTarget - 12,
+  },
+  xpDot: {
+    backgroundColor: theme.colors.reward.xp,
+    borderRadius: theme.radii.pill,
+    height: 14,
+    width: 14,
   },
 });

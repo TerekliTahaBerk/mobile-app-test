@@ -13,14 +13,15 @@ type HomeScreenProps = {
   onSelectTab: (tab: AppTabKey) => void;
   /** Called with the real lesson behind the selected level. */
   onStartLevel: (lessonId: string, pathNodeId: string) => void;
+  viewModel?: ReturnType<typeof buildHomeViewModel>;
 };
 
 /**
  * Home is the learning journey, not a dashboard. The learner should read one
  * thing off this screen: buradan devam et.
  */
-export function HomeScreen({ onSelectTab, onStartLevel }: HomeScreenProps) {
-  const home = buildHomeViewModel();
+export function HomeScreen({ onSelectTab, onStartLevel, viewModel }: HomeScreenProps) {
+  const home = viewModel ?? buildHomeViewModel();
   const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null);
   const scrollRef = useRef<ScrollView>(null);
   const viewportHeight = useRef(0);

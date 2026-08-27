@@ -24,7 +24,7 @@ type StatTone = { border: string; figure: string; label: string; surface: string
  * The İz line is still preview copy — İz is not computed yet.
  */
 export function LessonCompleteScreen({ onCollect }: LessonCompleteScreenProps) {
-  const { lesson, summary } = useLessonSession();
+  const { completionResult, lesson, summary } = useLessonSession();
 
   if (lesson === null || summary === null) {
     return null;
@@ -44,7 +44,7 @@ export function LessonCompleteScreen({ onCollect }: LessonCompleteScreenProps) {
         label: theme.colors.reward.xpInk,
         surface: theme.colors.reward.xpSoft,
       },
-      value: `${summary.xpEarned}`,
+      value: `${completionResult?.awardedXp ?? summary.xpEarned}`,
     },
     {
       id: 'stat-accuracy',
@@ -83,7 +83,7 @@ export function LessonCompleteScreen({ onCollect }: LessonCompleteScreenProps) {
 
         <View style={styles.heading}>
           <AppText accessibilityRole="header" align="center" color="accentStrong" variant="headingXL">
-            Ders tamamlandı!
+            {lesson.kind === 'review' ? 'Tekrar tamamlandı!' : 'Ders tamamlandı!'}
           </AppText>
           <AppText align="center" color="muted" variant="bodyM">
             {`${unit.title} · ${lesson.deps.lesson.title}`}

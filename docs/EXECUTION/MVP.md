@@ -13,15 +13,18 @@ All of its data is presentation-only preview state under each module's `model/` 
 
 3. **Content contract — COMPLETE** — stable curriculum/exercise contracts, stable IDs, a versioned bundle, runtime validation with actionable errors, and one tiny original demo lesson marked `draft`.
 4. **Deterministic lesson session — COMPLETE** — pure reducer, evaluator registry, domain events, attempt model, v1 XP policy, and four exercise types connected in memory.
-5. **Polished vertical slice — NEXT** — path to lesson to completion to XP/progress and back, including error states. One real lesson already runs end to end; what remains is durable progress behind it. Reduced-motion support already ships.
-6. **Durable offline progress** — SQLite migrations and repositories for attempts, sessions, XP, and progress.
-7. **Basic mastery and review** — documented deterministic mastery, mistake records, due review, and next-activity rules.
-8. **Analytics and feature flags** — typed funnel events and lightweight configuration flags.
+5. **Polished vertical slice — COMPLETE** — real path to lesson/review to atomic completion, İz, XP/progress and back, including recoverable storage errors.
+6. **Durable offline progress — COMPLETE** — SQLite migrations and repositories for attempts, resumable sessions, ledger XP, path, daily activity, mastery, review, and mistakes.
+7. **Basic mastery and review — COMPLETE** — Beta-evidence mastery v1, deterministic scheduling, mistake remediation, review assembly, and next-activity recommendation.
+8. **Analytics + Feature Flags / Production Observability — NEXT** — typed funnel events, crash reporting, production diagnostics, and lightweight configuration with privacy review.
 9. **Backend synchronization** — Supabase, RLS, outbox sync, conflict rules, and optional authentication.
 10. **Pilot hardening** — end-to-end flows, accessibility and performance checks, content QA, privacy review, and production diagnostics.
 
-**Release Phase 1 — COMPLETE.** Milestones 3 and 4. The app now carries real curriculum contracts, a validated content bundle, and a deterministic pure-TypeScript lesson engine, with one Tarih lesson (`Kurultay`, five exercises) wired end to end through the approved screens. That lesson's evaluation, XP, and completion figures are computed, not fixtures.
+**Release Phase 1 — COMPLETE.** Milestones 3 and 4. The app carries real curriculum contracts, a validated content bundle, and a deterministic pure-TypeScript lesson engine, with one Tarih lesson (`Kurultay`, five exercises) wired end to end through the approved screens.
 
-Everything else on the home path, the İz counter, the HUD totals, hearts, and the quest board remain explicitly tagged preview data. **Nothing persists**: a restart discards the session and its XP. League and TEKRARLA Plus are gated off in a production pilot.
+**Release Phase 2 — COMPLETE.** Milestones 5, 6, and 7. The production pilot is accountless and local-first. SQLite preserves active sessions, attempts, ledger XP, real path state, İz, mastery, review schedules, and mistakes. Home uses the deterministic recommendation order `mistake → review → resume → new lesson`. League, Plus, quests, hearts, and gems remain available only in design preview and are hidden in production.
 
-Milestones 1 and 2 are complete. Milestone 5 is next; Milestone 6 (durable progress) is the blocker for anything gamification-facing. Product scope and north star are maintained in [../PRODUCT.md](../PRODUCT.md).
+Milestones 1–7 are complete. Milestone 8 is next. The app is not release-ready:
+human-reviewed curriculum breadth, observability, native/accessibility hardening,
+and store/legal work remain. Product scope and north star are maintained in
+[../PRODUCT.md](../PRODUCT.md).

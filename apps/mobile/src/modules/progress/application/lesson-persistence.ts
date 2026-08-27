@@ -1,4 +1,4 @@
-import { CONTENT_SCHEMA_VERSION } from '@/modules/curriculum/domain/content-types';
+import { getContentIndex } from '@/modules/curriculum/content/content-source';
 import type { LessonSession } from '@/modules/learning/domain/lesson-session';
 import type {
   ProgressRepositories,
@@ -24,7 +24,7 @@ import { toLocalDate } from '@/shared/time/local-date';
  */
 
 /** Identifies the content a snapshot was taken against. */
-export const CONTENT_VERSION = String(CONTENT_SCHEMA_VERSION);
+export const CONTENT_VERSION = getContentIndex().bundle.contentVersion;
 
 export function sessionIdFor(session: LessonSession): string {
   return `${session.lessonId}:${session.startedAt ?? 'unstarted'}`;
@@ -77,10 +77,50 @@ export function restoreSession(stored: StoredSession): LessonSession | null {
   }
 
   try {
-    return JSON.parse(stored.snapshot) as LessonSession;
+    const candidate: unknown = JSON.parse(stored.snapshot);
+    if (!isLessonSessionSnapshot(candidate, stored)) {
+      return null;
+    }
+
+    const index = getContentIndex();
+    index.getLesson(candidate.lessonId);
+    for (const exerciseId of candidate.exerciseIds) {
+      index.getExercise(exerciseId);
+    }
+
+    return candidate;
   } catch {
     return null;
   }
+}
+
+function isLessonSessionSnapshot(
+  value: unknown,
+  stored: StoredSession,
+): value is LessonSession {
+  if (typeof value !== 'object' || value === null) {
+    return false;
+  }
+
+  const session = value as Partial<LessonSession>;
+  const validStatus = ['notStarted', 'active', 'completed', 'abandoned'].includes(
+    String(session.status),
+  );
+  const validPhase = ['answering', 'feedback', 'finished'].includes(String(session.phase));
+
+  return (
+    session.lessonId === stored.lessonId &&
+    Array.isArray(session.exerciseIds) &&
+    session.exerciseIds.length > 0 &&
+    session.exerciseIds.every((id) => typeof id === 'string') &&
+    Array.isArray(session.attempts) &&
+    typeof session.currentIndex === 'number' &&
+    session.currentIndex >= 0 &&
+    session.currentIndex < session.exerciseIds.length &&
+    typeof session.xpEarned === 'number' &&
+    validStatus &&
+    validPhase
+  );
 }
 
 export function toStoredAttempts(session: LessonSession): readonly StoredAttempt[] {
@@ -100,27 +140,21 @@ export function toStoredAttempts(session: LessonSession): readonly StoredAttempt
 }
 
 /**
- * One piece of evidence per scored exercise, taken from its final attempt.
- *
- * A first-attempt correct answer is strong evidence; getting there on a retry
- * is weak. Unscored exercises (flashcards) teach but do not measure, so they
- * produce no evidence at all.
+ * One piece of evidence per scored attempt. A miss remains negative evidence
+ * even when a later retry succeeds; collapsing to the final answer would hide
+ * exactly the weakness mastery and mistake remediation need to remember.
+ * Unscored flashcards produce no evidence.
  */
 export function toEvidence(session: LessonSession): SessionCompletionInput['evidence'] {
-  const finalByExercise = new Map<string, (typeof session.attempts)[number]>();
-  for (const attempt of session.attempts) {
-    if (attempt.scored) {
-      finalByExercise.set(attempt.exerciseId, attempt);
-    }
-  }
-
-  return [...finalByExercise.values()].map((attempt) => ({
-    correct: attempt.correct,
-    exerciseId: attempt.exerciseId,
-    observedAtIso: attempt.occurredAt,
-    skillIds: attempt.skillIds,
-    strength: attempt.attemptNumber === 1 && attempt.correct ? 'strong' : 'weak',
-  }));
+  return session.attempts
+    .filter((attempt) => attempt.scored)
+    .map((attempt) => ({
+      correct: attempt.correct,
+      exerciseId: attempt.exerciseId,
+      observedAtIso: attempt.occurredAt,
+      skillIds: attempt.skillIds,
+      strength: attempt.attemptNumber === 1 && attempt.correct ? 'strong' : 'weak',
+    }));
 }
 
 export function buildCompletionInput(

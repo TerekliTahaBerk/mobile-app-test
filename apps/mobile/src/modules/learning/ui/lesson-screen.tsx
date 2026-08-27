@@ -12,7 +12,9 @@ import { WordBankExercise } from '@/modules/learning/ui/exercises/word-bank-exer
 import { lessonChromeFor } from '@/modules/learning/ui/lesson-chrome';
 import { LessonHeader } from '@/modules/learning/ui/lesson-header';
 import { lessonPreviewData } from '@/modules/learning/model/lesson-preview-data';
+import { FEATURES } from '@/shared/config/app-config';
 import { Screen } from '@/shared/ui/components/screen';
+import { MessageScreen } from '@/shared/ui/feedback/message-screen';
 
 type LessonScreenProps = {
   onComplete: () => void;
@@ -25,7 +27,16 @@ type LessonScreenProps = {
  * session status the engine returns.
  */
 export function LessonScreen({ onComplete, onExit }: LessonScreenProps) {
-  const { continueAfterFeedback, discard, lesson, submitAnswer } = useLessonSession();
+  const {
+    abandon,
+    continueAfterFeedback,
+    discard,
+    lesson,
+    persistenceError,
+    persistenceStatus,
+    retryPersistence,
+    submitAnswer,
+  } = useLessonSession();
   const [cardIndex, setCardIndex] = useState(0);
   const [exitVisible, setExitVisible] = useState(false);
 
@@ -33,10 +44,34 @@ export function LessonScreen({ onComplete, onExit }: LessonScreenProps) {
   const isCompleted = session?.status === 'completed';
 
   useEffect(() => {
-    if (isCompleted) {
+    if (isCompleted && (persistenceStatus === 'saved' || persistenceStatus === 'idle')) {
       onComplete();
     }
-  }, [isCompleted, onComplete]);
+  }, [isCompleted, onComplete, persistenceStatus]);
+
+  if (persistenceStatus === 'failed') {
+    return (
+      <MessageScreen
+        action={{ label: 'TEKRAR DENE', onPress: retryPersistence }}
+        body="Dersin cihazına yazılamadı. Bu ekranda kal; yeniden deneyince kaldığın yer korunacak."
+        detail={__DEV__ ? persistenceError?.message : undefined}
+        heading="İlerlemen kaydedilemedi"
+        mood="sad"
+        testID="lesson-persistence-failed"
+      />
+    );
+  }
+
+  if (isCompleted && persistenceStatus === 'saving') {
+    return (
+      <MessageScreen
+        body="XP, İz ve ders ilerlemen birlikte kaydediliyor."
+        heading="İlerlemen kaydediliyor"
+        mood="proud"
+        testID="lesson-persistence-saving"
+      />
+    );
+  }
 
   if (lesson === null || session === null || isCompleted) {
     return null;
@@ -78,7 +113,7 @@ export function LessonScreen({ onComplete, onExit }: LessonScreenProps) {
         counterColor={chrome.counterColor}
         fillColor={chrome.fillColor}
         glyphColor={chrome.glyphColor}
-        hearts={chrome.hearts}
+        hearts={FEATURES.heartsEconomy ? chrome.hearts : undefined}
         onClose={() => setExitVisible(true)}
         progress={chrome.progress}
         trackColor={chrome.trackColor}
@@ -94,6 +129,7 @@ export function LessonScreen({ onComplete, onExit }: LessonScreenProps) {
         exit={lessonPreviewData.exit}
         onConfirm={() => {
           setExitVisible(false);
+          abandon();
           discard();
           onExit();
         }}

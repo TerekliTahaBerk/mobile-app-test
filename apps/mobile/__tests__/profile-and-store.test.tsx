@@ -37,6 +37,28 @@ describe('profile and league', () => {
       selected: true,
     });
   });
+
+  it('shows only real accountless local stats when production data is supplied', async () => {
+    await render(
+      <ProfileScreen
+        activeTab="profil"
+        initialTab="profile"
+        localStats={{
+          completedLevels: 1,
+          iz: 2,
+          lessonsCompleted: 3,
+          reviewsCompleted: 1,
+          totalXp: 85,
+        }}
+        onSelectTab={jest.fn()}
+      />,
+    );
+
+    expect(screen.getByText('Bu cihazdaki ilerleme')).toBeTruthy();
+    expect(screen.getByLabelText('Toplam XP: 85')).toBeTruthy();
+    expect(screen.queryByText('Elif Yılmaz')).toBeNull();
+    expect(screen.queryByTestId('profile-tab-league')).toBeNull();
+  });
 });
 
 describe('store', () => {

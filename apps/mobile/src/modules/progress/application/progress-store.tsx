@@ -11,6 +11,7 @@ import {
 import type { ProgressRepositories } from '@/modules/progress/application/repositories';
 import { openDatabase } from '@/modules/progress/infrastructure/database';
 import { createSqliteRepositories } from '@/modules/progress/infrastructure/sqlite-repositories';
+import { MessageScreen } from '@/shared/ui/feedback/message-screen';
 
 /**
  * Composition root for durable progress.
@@ -46,13 +47,10 @@ export function ProgressProvider({ children, repositories }: ProgressProviderPro
 
   useEffect(() => {
     if (repositories !== undefined) {
-      setState({ repositories, status: 'ready' });
-
       return;
     }
 
     let cancelled = false;
-    setState({ status: 'initializing' });
 
     openDatabase()
       .then((db) => {
@@ -75,6 +73,7 @@ export function ProgressProvider({ children, repositories }: ProgressProviderPro
   }, [attempt, repositories]);
 
   const retry = useCallback(() => {
+    setState({ status: 'initializing' });
     setAttempt((value) => value + 1);
   }, []);
 
@@ -83,6 +82,37 @@ export function ProgressProvider({ children, repositories }: ProgressProviderPro
   return (
     <ProgressStoreContext.Provider value={value}>{children}</ProgressStoreContext.Provider>
   );
+}
+
+/** Prevents learner-state screens from flashing fixture or zero values before SQLite is ready. */
+export function ProgressStartupGate({ children }: { children: ReactNode }) {
+  const storage = useProgressStorage();
+
+  if (storage.status === 'initializing') {
+    return (
+      <MessageScreen
+        body="Bu cihazdaki ilerlemen hazırlanıyor."
+        heading="Yolun hazırlanıyor"
+        mood="thinking"
+        testID="progress-initializing"
+      />
+    );
+  }
+
+  if (storage.status === 'failed') {
+    return (
+      <MessageScreen
+        action={{ label: 'TEKRAR DENE', onPress: storage.retry }}
+        body="İlerlemen açılamadı. Hiçbir kayıt silinmedi; tekrar deneyebilirsin."
+        detail={__DEV__ ? storage.error.message : undefined}
+        heading="İlerleme açılamadı"
+        mood="sad"
+        testID="progress-failed"
+      />
+    );
+  }
+
+  return children;
 }
 
 export function useProgressStorage(): ProgressStoreValue {

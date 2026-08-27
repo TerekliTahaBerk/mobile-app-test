@@ -1,7 +1,17 @@
-import { createContext, useCallback, useContext, useMemo, useState, type ReactNode } from 'react';
+import {
+  createContext,
+  useCallback,
+  useContext,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+  type ReactNode,
+} from 'react';
 
 import { getContentIndex } from '@/modules/curriculum/content/content-source';
-import type { LessonId, PathNodeId } from '@/modules/curriculum/domain/content-types';
+import type { LessonId, PathNodeId, SkillId } from '@/modules/curriculum/domain/content-types';
+import { isScoredKind } from '@/modules/curriculum/domain/content-types';
 import type { ExerciseAnswer } from '@/modules/learning/domain/answers';
 import type { DomainEvent } from '@/modules/learning/domain/events';
 import {
@@ -12,67 +22,189 @@ import {
   type LessonSession,
   type LessonSummary,
 } from '@/modules/learning/domain/lesson-session';
+import { XP_POLICY_V1 } from '@/modules/learning/domain/xp-policy';
+import {
+  createLessonPersistence,
+  restoreSession,
+  type LessonPersistence,
+} from '@/modules/progress/application/lesson-persistence';
+import type {
+  ProgressRepositories,
+  SessionCompletionResult,
+} from '@/modules/progress/application/repositories';
+import type { SessionKind, StoredSession } from '@/modules/progress/domain/progress-types';
+import { MessageScreen } from '@/shared/ui/feedback/message-screen';
+import { systemClock, type Clock as ProgressClock } from '@/shared/time/clock';
 
-/**
- * The bridge between the pure lesson engine and React.
- *
- * This is the only place that owns a live session. It holds the engine's state
- * in memory for the length of the flow — lesson intro, exercises, completion —
- * so the completion screen can report what actually happened rather than a
- * fixture. Nothing is written to disk; a restart loses the session, which is
- * expected until Milestone 6.
- *
- * The engine itself stays pure: this file supplies the clock and keeps the
- * reducer's output, and never reimplements a rule.
- */
-
+/** The bridge between the pure lesson engine, React, and durable storage. */
 export type ActiveLesson = {
   deps: LessonEngineDeps;
+  kind: SessionKind;
   session: LessonSession;
 };
 
+export type PersistenceStatus = 'failed' | 'idle' | 'saved' | 'saving';
+
 type LessonSessionStore = {
-  /** Events emitted so far, oldest first. Nothing consumes them yet. */
+  readonly completionResult: SessionCompletionResult | null;
   readonly events: readonly DomainEvent[];
   readonly lesson: ActiveLesson | null;
+  readonly persistenceError: Error | null;
+  readonly persistenceStatus: PersistenceStatus;
   abandon: () => void;
   begin: (lessonId: LessonId, pathNodeId?: PathNodeId) => void;
+  beginReview: (skillId: SkillId) => void;
   continueAfterFeedback: () => void;
   discard: () => void;
+  retryPersistence: () => void;
+  resume: (sessionId: string) => Promise<boolean>;
   submitAnswer: (answer: ExerciseAnswer) => void;
   readonly summary: LessonSummary | null;
 };
 
 const LessonSessionContext = createContext<LessonSessionStore | null>(null);
 
-/** Injectable so tests can drive the engine on a fixed clock. */
+/** Legacy/test-friendly ISO clock used by existing UI tests. */
 export type Clock = () => string;
-
-const systemClock: Clock = () => new Date().toISOString();
+const systemIsoClock: Clock = () => new Date().toISOString();
 
 type LessonSessionProviderProps = {
   children: ReactNode;
   clock?: Clock;
+  progressClock?: ProgressClock;
+  /** Omitted in pure UI tests; production always supplies SQLite repositories. */
+  repositories?: ProgressRepositories;
 };
 
-export function LessonSessionProvider({ children, clock = systemClock }: LessonSessionProviderProps) {
+const REVIEW_XP_POLICY = {
+  ...XP_POLICY_V1,
+  firstPathLevelCompletion: 0,
+  lessonCompletion: 0,
+} as const;
+
+export function LessonSessionProvider({
+  children,
+  clock = systemIsoClock,
+  progressClock = systemClock,
+  repositories,
+}: LessonSessionProviderProps) {
   const [lesson, setLesson] = useState<ActiveLesson | null>(null);
+  const lessonRef = useRef<ActiveLesson | null>(null);
   const [events, setEvents] = useState<readonly DomainEvent[]>([]);
+  const [hydrated, setHydrated] = useState(repositories === undefined);
+  const [persistenceStatus, setPersistenceStatus] = useState<PersistenceStatus>('idle');
+  const [persistenceError, setPersistenceError] = useState<Error | null>(null);
+  const [completionResult, setCompletionResult] = useState<SessionCompletionResult | null>(null);
+  const writeQueue = useRef<Promise<void>>(Promise.resolve());
+
+  const persistence = useMemo<LessonPersistence | null>(
+    () =>
+      repositories === undefined
+        ? null
+        : createLessonPersistence(repositories, progressClock),
+    [progressClock, repositories],
+  );
+
+  const installLesson = useCallback((next: ActiveLesson | null) => {
+    lessonRef.current = next;
+    setLesson(next);
+  }, []);
+
+  useEffect(() => {
+    if (repositories === undefined) {
+      return;
+    }
+
+    let cancelled = false;
+    repositories.sessions
+      .findActive()
+      .then(async (stored) => {
+        if (cancelled || stored === null) {
+          return;
+        }
+
+        const restored = restoreSession(stored);
+        if (restored === null) {
+          await repositories.sessions.markStale(
+            stored.sessionId,
+            new Date(progressClock.now()).toISOString(),
+          );
+          return;
+        }
+
+        if (!cancelled) {
+          installLesson({
+            deps: depsForStoredSession(stored, restored),
+            kind: stored.kind,
+            session: restored,
+          });
+        }
+      })
+      .catch((cause: unknown) => {
+        if (!cancelled) {
+          setPersistenceError(asError(cause));
+          setPersistenceStatus('failed');
+        }
+      })
+      .finally(() => {
+        if (!cancelled) {
+          setHydrated(true);
+        }
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [installLesson, progressClock, repositories]);
+
+  const enqueuePersistence = useCallback(
+    (active: ActiveLesson) => {
+      if (persistence === null) {
+        return;
+      }
+
+      if (active.session.status === 'completed') {
+        // Set this before the queued write starts so navigation cannot observe
+        // a completed domain session while SQLite is still pending.
+        setPersistenceStatus('saving');
+      }
+
+      const run = async () => {
+        setPersistenceError(null);
+        if (active.session.status === 'completed') {
+          const result = await persistence.complete(active.session, active.kind);
+          setCompletionResult(result);
+          setPersistenceStatus('saved');
+          return;
+        }
+
+        await persistence.saveProgress(active.session, active.kind);
+        setPersistenceStatus('idle');
+      };
+
+      const operation = writeQueue.current.then(run);
+      writeQueue.current = operation.catch((cause: unknown) => {
+        setPersistenceError(asError(cause));
+        setPersistenceStatus('failed');
+      });
+    },
+    [persistence],
+  );
 
   const dispatch = useCallback(
     (command: Parameters<typeof reduceLessonSession>[1]) => {
-      setLesson((current) => {
-        if (current === null) {
-          return current;
-        }
+      const current = lessonRef.current;
+      if (current === null) {
+        return;
+      }
 
-        const result = reduceLessonSession(current.session, command, current.deps);
-        setEvents((previous) => [...previous, ...result.events]);
-
-        return { ...current, session: result.session };
-      });
+      const result = reduceLessonSession(current.session, command, current.deps);
+      const next = { ...current, session: result.session };
+      setEvents((previous) => [...previous, ...result.events]);
+      installLesson(next);
+      enqueuePersistence(next);
     },
-    [],
+    [enqueuePersistence, installLesson],
   );
 
   const begin = useCallback(
@@ -83,36 +215,165 @@ export function LessonSessionProvider({ children, clock = systemClock }: LessonS
         lesson: index.getLesson(lessonId),
         ...(pathNodeId === undefined ? {} : { pathNodeId }),
       };
-      const started = reduceLessonSession(
-        createLessonSession(deps),
-        { at: clock(), type: 'startLesson' },
-        deps,
-      );
-
-      setEvents(started.events);
-      setLesson({ deps, session: started.session });
+      start(deps, 'lesson', clock, installLesson, setEvents, enqueuePersistence);
+      setCompletionResult(null);
     },
-    [clock],
+    [clock, enqueuePersistence, installLesson],
+  );
+
+  const beginReview = useCallback(
+    (skillId: SkillId) => {
+      const index = getContentIndex();
+      const exercises = index.bundle.exercises
+        .filter((exercise) => isScoredKind(exercise.kind) && exercise.skillIds.includes(skillId))
+        .sort((a, b) => a.id.localeCompare(b.id))
+        .slice(0, 3);
+
+      if (exercises.length === 0) {
+        throw new Error(`Tekrar için alıştırma bulunamadı: "${skillId}".`);
+      }
+
+      const lesson = index.bundle.lessons.find((candidate) =>
+        candidate.exerciseIds.includes(exercises[0]!.id),
+      );
+      if (lesson === undefined) {
+        throw new Error(`Tekrar alıştırmasının dersi bulunamadı: "${exercises[0]!.id}".`);
+      }
+
+      const deps: LessonEngineDeps = { exercises, lesson, xpPolicy: REVIEW_XP_POLICY };
+      start(deps, 'review', clock, installLesson, setEvents, enqueuePersistence);
+      setCompletionResult(null);
+    },
+    [clock, enqueuePersistence, installLesson],
+  );
+
+  const retryPersistence = useCallback(() => {
+    const current = lessonRef.current;
+    if (current !== null) {
+      setPersistenceStatus(current.session.status === 'completed' ? 'saving' : 'idle');
+      enqueuePersistence(current);
+    }
+  }, [enqueuePersistence]);
+
+  const resume = useCallback(
+    async (sessionId: string) => {
+      if (repositories === undefined) {
+        return lessonRef.current !== null;
+      }
+
+      const stored = await repositories.sessions.get(sessionId);
+      if (stored === null || stored.status !== 'active') {
+        return false;
+      }
+
+      const restored = restoreSession(stored);
+      if (restored === null) {
+        await repositories.sessions.markStale(
+          sessionId,
+          new Date(progressClock.now()).toISOString(),
+        );
+        return false;
+      }
+
+      installLesson({
+        deps: depsForStoredSession(stored, restored),
+        kind: stored.kind,
+        session: restored,
+      });
+      setEvents([]);
+      setCompletionResult(null);
+      setPersistenceError(null);
+      setPersistenceStatus('idle');
+      return true;
+    },
+    [installLesson, progressClock, repositories],
   );
 
   const value = useMemo<LessonSessionStore>(
     () => ({
       abandon: () => dispatch({ at: clock(), type: 'abandonLesson' }),
       begin,
+      beginReview,
+      completionResult,
       continueAfterFeedback: () => dispatch({ at: clock(), type: 'continueAfterFeedback' }),
       discard: () => {
-        setLesson(null);
+        installLesson(null);
         setEvents([]);
+        setCompletionResult(null);
+        setPersistenceError(null);
+        setPersistenceStatus('idle');
       },
       events,
       lesson,
+      persistenceError,
+      persistenceStatus,
+      retryPersistence,
+      resume,
       submitAnswer: (answer) => dispatch({ answer, at: clock(), type: 'submitAnswer' }),
       summary: lesson === null ? null : summarizeLessonSession(lesson.session),
     }),
-    [begin, clock, dispatch, events, lesson],
+    [
+      begin,
+      beginReview,
+      clock,
+      completionResult,
+      dispatch,
+      events,
+      installLesson,
+      lesson,
+      persistenceError,
+      persistenceStatus,
+      retryPersistence,
+      resume,
+    ],
   );
 
+  if (!hydrated) {
+    return (
+      <MessageScreen
+        body="Yarım kalan çalışman kontrol ediliyor."
+        heading="Dersin hazırlanıyor"
+        mood="thinking"
+        testID="session-restoring"
+      />
+    );
+  }
+
   return <LessonSessionContext.Provider value={value}>{children}</LessonSessionContext.Provider>;
+}
+
+function start(
+  deps: LessonEngineDeps,
+  kind: SessionKind,
+  clock: Clock,
+  installLesson: (lesson: ActiveLesson) => void,
+  setEvents: (events: readonly DomainEvent[]) => void,
+  persist: (lesson: ActiveLesson) => void,
+) {
+  const result = reduceLessonSession(
+    createLessonSession(deps),
+    { at: clock(), type: 'startLesson' },
+    deps,
+  );
+  const active = { deps, kind, session: result.session };
+  setEvents(result.events);
+  installLesson(active);
+  persist(active);
+}
+
+function depsForStoredSession(stored: StoredSession, session: LessonSession): LessonEngineDeps {
+  const index = getContentIndex();
+
+  return {
+    exercises: session.exerciseIds.map((exerciseId) => index.getExercise(exerciseId)),
+    lesson: index.getLesson(stored.lessonId),
+    ...(stored.pathNodeId === undefined ? {} : { pathNodeId: stored.pathNodeId }),
+    ...(stored.kind === 'review' ? { xpPolicy: REVIEW_XP_POLICY } : {}),
+  };
+}
+
+function asError(cause: unknown): Error {
+  return cause instanceof Error ? cause : new Error(String(cause));
 }
 
 export function useLessonSession(): LessonSessionStore {

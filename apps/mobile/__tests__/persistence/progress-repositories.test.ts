@@ -139,7 +139,7 @@ describe('progress repositories', () => {
 
     expect(second).toEqual({
       alreadyCompleted: true,
-      awardedXp: 55,
+      awardedXp: 0,
       firstCompletionAwarded: false,
     });
     await expect(repositories.xp.total()).resolves.toBe(55);
@@ -162,6 +162,23 @@ describe('progress repositories', () => {
     const progress = await repositories.progress.get(PATH_NODE_ID);
     expect(progress?.completionCount).toBe(2);
     expect(progress?.firstCompletedAt).toBe(COMPLETED_AT);
+  });
+
+  it('keeps one İz date while counting multiple qualifying sessions and preserves its first timezone', async () => {
+    const repositories = await setup();
+
+    await repositories.completion.completeSession(completion('s1'));
+    await repositories.completion.completeSession(
+      completion('s2', { timeZone: 'Europe/London' }),
+    );
+
+    await expect(repositories.dailyActivity.listQualifyingDates()).resolves.toEqual([
+      '2026-08-27',
+    ]);
+    await expect(repositories.dailyActivity.get('2026-08-27')).resolves.toMatchObject({
+      qualifyingSessions: 2,
+      timeZone: 'Europe/Istanbul',
+    });
   });
 
   it('gives a review drill per-exercise XP only', async () => {
@@ -192,6 +209,7 @@ describe('progress repositories', () => {
 
     await repositories.completion.completeSession(
       completion('s2', {
+        session: session('s2', { kind: 'review' }),
         evidence: [
           {
             correct: true,

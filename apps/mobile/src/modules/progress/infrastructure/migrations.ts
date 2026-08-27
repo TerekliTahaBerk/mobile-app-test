@@ -151,10 +151,11 @@ export async function migrateToLatest(db: SQLiteDatabase): Promise<number> {
     try {
       await db.withTransactionAsync(async () => {
         await migration.up(db);
+        // Keep the schema and its version marker in the same commit. If either
+        // fails, the whole migration rolls back and the next launch can retry.
+        // PRAGMA cannot be parameterised; this value is a module literal.
+        await db.execAsync(`PRAGMA user_version = ${migration.version};`);
       });
-      // PRAGMA cannot be parameterised, and the value is a literal from this
-      // module rather than anything external.
-      await db.execAsync(`PRAGMA user_version = ${migration.version};`);
       version = migration.version;
     } catch (cause) {
       throw new MigrationError(migration, cause);

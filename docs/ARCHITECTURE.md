@@ -25,16 +25,31 @@ platform adapter --------------------> implementation
 - Domain code cannot import React, React Native, Expo Router, Supabase, or UI components.
 - Content and curriculum data cannot be embedded in screens.
 
-State remains local by default. An active lesson uses a deterministic
+State is device-local and accountless in the production pilot. An active lesson uses a deterministic
 feature-scoped reducer in `modules/learning/domain`, bridged to React by a
-single provider in `modules/learning/application`. Durable state will sit behind
-repository interfaces. No global state library is justified yet.
+single provider in `modules/learning/application`. Narrow application-owned
+repository interfaces sit in `modules/progress/application`; direct
+`expo-sqlite` adapters live in `modules/progress/infrastructure`. No domain
+module imports SQLite, React, React Native, or Expo. No global state library is
+justified.
 
 Curriculum content is a compiled-in versioned bundle validated at load
 (`modules/curriculum`). The loader is the seam that changes when content later
 arrives over the network.
 
-Supabase and PostgreSQL are the intended backend, but authentication and backend integration are deferred until the local vertical slice is proven. SQLite is the intended structured local store and is also deferred.
+SQLite (`tekrarla.db`) is the authoritative local learner store. Explicit,
+ordered migrations use `PRAGMA user_version`; foreign keys and WAL are enabled
+at open. The app renders learner-state screens only after migration and active
+session recovery complete. A later sync adapter may implement the same inward
+repository contracts, but authentication, Supabase, and cloud sync are not part
+of this pilot.
+
+Lesson completion is the critical transaction boundary. Session completion,
+attempts, XP ledger entries, path progression, daily activity, mastery evidence,
+review scheduling, and mistakes commit in one exclusive transaction. Unique
+source keys make XP awards idempotent. Active snapshots are versioned and carry
+the content version; an incompatible snapshot is marked stale and the current
+lesson starts cleanly, while already committed history is preserved.
 
 See [DECISIONS/0001-mobile-foundation.md](DECISIONS/0001-mobile-foundation.md) for the accepted foundation decision and [SECURITY.md](SECURITY.md) for trust boundaries.
-
+See [DECISIONS/0003-local-first-sqlite-progress.md](DECISIONS/0003-local-first-sqlite-progress.md) for the persistence decision.

@@ -51,7 +51,7 @@ export function computeIz(
   return { current, todayQualified };
 }
 
-export type IzDayState = 'future' | 'pending' | 'qualified' | 'today';
+export type IzDayState = 'future' | 'missed' | 'pending' | 'qualified' | 'today';
 
 /**
  * The week strip around today, oldest first. `today` is the current day once it
@@ -87,7 +87,7 @@ export function buildIzWeek(
           ? 'future'
           : qualified
             ? 'qualified'
-            : 'pending',
+            : 'missed',
     });
 
     cursor = nextDay(cursor);

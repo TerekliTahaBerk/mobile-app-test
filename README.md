@@ -2,7 +2,12 @@
 
 Mobile-first, gamified exam preparation for Turkish students. The pilot covers only TYT Sosyal Bilimler: Tarih, Coğrafya, Felsefe, and Din Kültürü ve Ahlak Bilgisi.
 
-The repository contains the engineering foundation and a complete native implementation of the approved Claude Design project, covering every screen. All of its data is presentation-only fixture state: curriculum content, lesson behaviour, persistence, authentication, and backend integration have not been implemented, so the app is **not releasable**. See [docs/RELEASE_READINESS.md](docs/RELEASE_READINESS.md) for the blocker list.
+The repository contains the native product foundation, one validated draft
+Tarih lesson, a deterministic learning engine, and device-local SQLite progress
+covering XP, İz, mastery, review, mistakes, and session resume. The app is still
+**not releasable**: the curriculum is one unreviewed draft topic, production
+observability and store/legal work remain, and unfinished commercial/social
+features stay gated. See [docs/RELEASE_READINESS.md](docs/RELEASE_READINESS.md).
 
 ## Requirements
 
@@ -27,7 +32,9 @@ npm test
 
 `npm run dev` starts Expo for `apps/mobile`. Pass Expo arguments after `--`, for example `npm run dev -- --offline`.
 
-No environment variables are required for the foundation. Add a root `.env.example` only when a milestone introduces configuration.
+No secrets or backend configuration are required. Development defaults to the
+approved design preview; run with `EXPO_PUBLIC_APP_MODE=productionPilot` to QA
+the accountless durable pilot flow in a development build.
 
 ## Repository map
 

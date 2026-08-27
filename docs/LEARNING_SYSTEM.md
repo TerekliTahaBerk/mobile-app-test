@@ -24,22 +24,56 @@ An `Attempt` records the exercise, lesson, skills, submitted answer, correctness
 
 `LessonStarted`, `AnswerSubmitted`, `AnswerCorrect`, `AnswerIncorrect`, `AttemptRecorded`, `ExerciseCompleted`, `SkillEvidenceObserved`, `MistakeRecorded`, `XpEarned`, `LessonCompleted`, `LessonAbandoned`.
 
-Events carry stable IDs and nothing else. They are the seam that persistence, analytics, mastery, and review scheduling will consume. **Nothing subscribes to them yet** — no persistence, no analytics vendor.
+Events carry stable IDs and nothing else. The application persistence seam
+translates the completed deterministic session into attempts, XP, path,
+mastery, review, mistake, and daily-activity records. There is still no
+analytics vendor.
 
-## Planned v1 review schedule
+## Durable sessions
 
-When spaced review is implemented, the intervals after a successful review are:
+Active lesson and review sessions are stored as versioned JSON snapshots plus
+queryable metadata. Every answer/advance is serialized behind the previous
+write. On launch, a compatible active snapshot restores its exercise index,
+attempts, XP, and phase. A content-version or snapshot-version mismatch is
+marked stale and never guessed at or allowed to crash the app.
+
+## Mastery v1
+
+Each skill stores Beta evidence with prior `alpha = 1`, `beta = 3` and policy
+version 1. Estimated mastery is `alpha / (alpha + beta)`, clamped to `[0, 1]`.
+A first-attempt correct scored answer adds 1 to alpha; a weaker correct answer
+adds 0.5; an incorrect scored answer adds 1 to beta. Flashcards add no mastery
+evidence. XP and mastery remain independent.
+
+## Review schedule
+
+The deterministic ladder is:
 
 ```text
 1 day → 3 days → 7 days → 14 days → 30 days
 ```
 
-A miss returns the item to the start of the ladder. Mastery stays deterministic and policy-based, computed from recorded attempts rather than stored as an opaque score.
+A strong success schedules the interval at the current stage and advances one
+stage, capped at 30 days. A weak/retry success stays at its stage and returns in
+one day. A miss drops one stage, never below zero, and returns in one day.
+Review times are instants; İz uses local calendar dates.
+
+Due review sessions reuse the existing lesson renderers and select up to three
+scored exercises for the chosen skill in stable ID order. They award only 10 XP
+per correct scored exercise: no lesson-completion or path bonus.
+
+## Recommendation
+
+The pure recommendation policy chooses, in order: due unresolved mistake,
+due/overdue review, active resumable session, then the next available real path
+node. Ties use oldest due/created time and stable ID. The returned reason is
+`mistake`, `review`, `resume`, or `newLesson`.
 
 **Neither mastery nor review is implemented.** They are Release Phase 2. The event stream and the attempt model exist so that phase can be built without reshaping the engine.
 
 ## Open
 
-The v1 mastery formula, confidence input, and the recommendation priority between new lessons, due review, and mistakes remain undecided.
+Mastery v1 intentionally has no decay. Curriculum breadth and human academic
+review remain the limiting learning-system work.
 
 Curriculum references are defined in [CURRICULUM_MODEL.md](CURRICULUM_MODEL.md); exercise content boundaries are in [CONTENT_MODEL.md](CONTENT_MODEL.md).

@@ -1,6 +1,17 @@
 import { buildIzWeek, computeIz } from '@/modules/progress/domain/iz-policy';
 
 describe('İz', () => {
+  it('counts today-only and yesterday-only activity', () => {
+    expect(computeIz(['2026-08-27'], '2026-08-27')).toEqual({
+      current: 1,
+      todayQualified: true,
+    });
+    expect(computeIz(['2026-08-26'], '2026-08-27')).toEqual({
+      current: 1,
+      todayQualified: false,
+    });
+  });
+
   it('counts consecutive qualifying days ending today', () => {
     expect(computeIz(['2026-08-25', '2026-08-26', '2026-08-27'], '2026-08-27')).toEqual({
       current: 3,
@@ -30,6 +41,15 @@ describe('İz', () => {
 
   it('counts across a month boundary', () => {
     expect(computeIz(['2026-07-31', '2026-08-01'], '2026-08-01').current).toBe(2);
+  });
+
+  it('counts five days across a year boundary', () => {
+    expect(
+      computeIz(
+        ['2025-12-29', '2025-12-30', '2025-12-31', '2026-01-01', '2026-01-02'],
+        '2026-01-02',
+      ).current,
+    ).toBe(5);
   });
 
   it('marks today pending until it qualifies', () => {

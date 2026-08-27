@@ -5,6 +5,8 @@ import { BottomTabBar, type AppTabKey } from '@/modules/home/ui/bottom-tab-bar';
 import { profilePreviewData } from '@/modules/profile/model/profile-preview-data';
 import { LeagueBoard } from '@/modules/profile/ui/league-board';
 import { ProfileOverview } from '@/modules/profile/ui/profile-overview';
+import type { LocalProfileStats } from '@/modules/profile/ui/profile-overview';
+import { FEATURES } from '@/shared/config/app-config';
 import { AppText } from '@/shared/ui/components/app-text';
 import { Screen } from '@/shared/ui/components/screen';
 import { TactilePressable } from '@/shared/ui/components/tactile-pressable';
@@ -18,6 +20,7 @@ const PORTRAIT_HEIGHT = 172;
 type ProfileScreenProps = {
   activeTab: AppTabKey;
   initialTab: ProfileTab;
+  localStats?: LocalProfileStats | undefined;
   onSelectTab: (tab: AppTabKey) => void;
 };
 
@@ -28,9 +31,10 @@ type ProfileScreenProps = {
  *
  * Everything is preview copy — see the module's model for what this is not.
  */
-export function ProfileScreen({ activeTab, initialTab, onSelectTab }: ProfileScreenProps) {
+export function ProfileScreen({ activeTab, initialTab, localStats, onSelectTab }: ProfileScreenProps) {
   const [tab, setTab] = useState<ProfileTab>(initialTab);
-  const isProfile = tab === 'profile';
+  const leagueAvailable = FEATURES.league && localStats === undefined;
+  const isProfile = !leagueAvailable || tab === 'profile';
 
   return (
     <Screen includeBottomInset={false} testID="profile-screen">
@@ -40,7 +44,7 @@ export function ProfileScreen({ activeTab, initialTab, onSelectTab }: ProfileScr
         </View>
       ) : null}
 
-      <View accessibilityRole="tablist" style={styles.segments}>
+      {leagueAvailable ? <View accessibilityRole="tablist" style={styles.segments}>
         <SegmentButton
           label={profilePreviewData.tabs.profile}
           onPress={() => setTab('profile')}
@@ -53,14 +57,14 @@ export function ProfileScreen({ activeTab, initialTab, onSelectTab }: ProfileScr
           selected={!isProfile}
           testID="profile-tab-league"
         />
-      </View>
+      </View> : null}
 
       <ScrollView
         contentContainerStyle={styles.content}
         showsVerticalScrollIndicator={false}
         style={styles.scroll}
       >
-        {isProfile ? <ProfileOverview /> : <LeagueBoard />}
+        {isProfile ? <ProfileOverview localStats={localStats} /> : <LeagueBoard />}
       </ScrollView>
 
       <BottomTabBar activeTab={activeTab} onSelectTab={onSelectTab} />

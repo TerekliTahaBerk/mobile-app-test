@@ -46,7 +46,7 @@ export function LevelPath({
     <View style={styles.path}>
       {nodes.map((node, index) => {
         const offset = Math.round((WEAVE[index % WEAVE.length] ?? 0) * scale);
-        const isCurrent = node.state === 'current';
+        const isCurrent = node.state === 'current' || node.state === 'review';
         const isSelected = selectedNodeId === node.id;
 
         return (
@@ -64,7 +64,11 @@ export function LevelPath({
 
               <View style={[styles.nodeSlot, { transform: [{ translateX: offset }] }]}>
                 {isCurrent && !isSelected ? (
-                  <StartCallout onPress={() => onSelectNode(node.id)} title={node.title} />
+                  <StartCallout
+                    label={level.cta}
+                    onPress={() => onSelectNode(node.id)}
+                    title={node.title}
+                  />
                 ) : null}
                 <PathNodeButton node={node} onPress={() => onSelectNode(node.id)} />
               </View>
@@ -95,6 +99,7 @@ export function LevelPath({
 }
 
 type StartCalloutProps = {
+  label: string;
   onPress: () => void;
   title: string;
 };
@@ -103,7 +108,7 @@ type StartCalloutProps = {
  * The nudge beside the current node. It repeats the node's own action, so it
  * is hidden from assistive technology to avoid announcing the level twice.
  */
-function StartCallout({ onPress, title }: StartCalloutProps) {
+function StartCallout({ label, onPress, title }: StartCalloutProps) {
   return (
     <Pop style={styles.callout}>
       <TactilePressable
@@ -118,7 +123,7 @@ function StartCallout({ onPress, title }: StartCalloutProps) {
         radius={theme.radii.small + 1}
       >
         <AppText color="accent" variant="labelS">
-          BAŞLA
+          {label}
         </AppText>
       </TactilePressable>
     </Pop>

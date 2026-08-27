@@ -29,6 +29,7 @@ export type ProgressRepository = {
 };
 
 export type SessionRepository = {
+  completionCounts: () => Promise<{ lessons: number; reviews: number }>;
   findActive: () => Promise<StoredSession | null>;
   get: (sessionId: string) => Promise<StoredSession | null>;
   markStale: (sessionId: string, atIso: string) => Promise<void>;

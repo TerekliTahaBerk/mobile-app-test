@@ -10,6 +10,7 @@ import { Cizgi } from '@/shared/ui/cizgi/cizgi';
 import { theme } from '@/shared/ui/theme/tokens';
 
 type IzCelebrationScreenProps = {
+  data?: typeof izPreviewData | import('@/modules/iz/model/iz-preview-data').IzPreviewViewModel;
   onContinue: () => void;
   onShare?: (() => void) | undefined;
 };
@@ -18,7 +19,7 @@ type IzCelebrationScreenProps = {
  * Design screen 10. The week strip is the İz made visible. Each day states its
  * own status in words, so the row never depends on colour alone.
  */
-export function IzCelebrationScreen({ onContinue, onShare }: IzCelebrationScreenProps) {
+export function IzCelebrationScreen({ data = izPreviewData, onContinue, onShare }: IzCelebrationScreenProps) {
   return (
     <Screen includeBottomInset={false} testID="iz-celebration-screen">
       <ScrollView
@@ -26,21 +27,21 @@ export function IzCelebrationScreen({ onContinue, onShare }: IzCelebrationScreen
         showsVerticalScrollIndicator={false}
         style={styles.scroll}
       >
-        <Cizgi mood={izPreviewData.mood} width={150} />
+        <Cizgi mood={data.mood} width={150} />
         <TraceMark size="lg" />
 
         <View accessible accessibilityRole="header" style={styles.count}>
           <AppText align="center" style={styles.countValue} variant="display">
-            {izPreviewData.count}
+            {data.count}
           </AppText>
           <AppText align="center" color="accentStrong" variant="headingM">
-            {izPreviewData.unit}
+            {data.unit}
           </AppText>
         </View>
 
         <View style={styles.weekCard}>
           <View style={styles.weekRow}>
-            {izPreviewData.week.map((day) => {
+            {data.week.map((day) => {
               const visual = dayVisuals[day.state];
 
               return (
@@ -54,11 +55,11 @@ export function IzCelebrationScreen({ onContinue, onShare }: IzCelebrationScreen
                     {day.label}
                   </AppText>
                   <View style={[styles.dayDot, { backgroundColor: visual.dot }]}>
-                    {day.state === 'upcoming' ? null : (
+                    {day.state === 'done' || day.state === 'today' ? (
                       <AppText color="inverse" variant="labelS">
                         ✓
                       </AppText>
-                    )}
+                    ) : null}
                   </View>
                 </View>
               );
@@ -67,16 +68,16 @@ export function IzCelebrationScreen({ onContinue, onShare }: IzCelebrationScreen
 
           <View style={styles.footnote}>
             <AppText align="center" color="secondary" variant="proseS">
-              {izPreviewData.footnote}
+              {data.footnote}
             </AppText>
           </View>
         </View>
       </ScrollView>
 
       <BottomAction>
-        <AppButton label={izPreviewData.cta} onPress={onContinue} testID="iz-continue" />
+        <AppButton label={data.cta} onPress={onContinue} testID="iz-continue" />
         {onShare === undefined ? null : (
-          <AppButton label={izPreviewData.shareLabel} onPress={onShare} variant="ghost" />
+          <AppButton label={data.shareLabel} onPress={onShare} variant="ghost" />
         )}
       </BottomAction>
     </Screen>
@@ -94,6 +95,16 @@ const dayVisuals: Record<IzDayState, DayVisual> = {
     dot: theme.colors.trace.strong,
     labelColor: 'accentStrong',
     spoken: 'tamamlandı',
+  },
+  pending: {
+    dot: theme.colors.action.disabled,
+    labelColor: 'muted',
+    spoken: 'bugün henüz tamamlanmadı',
+  },
+  missed: {
+    dot: theme.colors.action.disabled,
+    labelColor: 'faint',
+    spoken: 'tamamlanmadı',
   },
   today: {
     dot: theme.colors.subject.religion.primary,

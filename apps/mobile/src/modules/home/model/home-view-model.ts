@@ -4,6 +4,8 @@ import {
   KURULTAY_PATH_NODE_ID,
 } from '@/modules/curriculum/content/tyt-social-draft-bundle';
 import type { LessonId, PathNodeId } from '@/modules/curriculum/domain/content-types';
+import type { PathProgress } from '@/modules/progress/domain/progress-types';
+import type { Recommendation } from '@/modules/progress/domain/recommendation-policy';
 import type { CizgiMood } from '@/shared/ui/cizgi/cizgi-assets';
 import type { SubjectKey } from '@/shared/ui/theme/tokens';
 
@@ -49,7 +51,14 @@ export type CurrentLevelView = {
 export type HomeViewModel = {
   companion: { accessibilityLabel: string; mood: CizgiMood };
   currentLevel: CurrentLevelView;
-  hud: { gems: string; hearts: string; level: string; mode: string; trace: string };
+  hud: {
+    readonly gems?: string;
+    readonly hearts?: string;
+    readonly level?: string;
+    mode: string;
+    trace: string;
+    readonly xp?: string;
+  };
   nodes: readonly PathNodeView[];
   unit: { eyebrow: string; subject: SubjectKey; title: string };
 };
@@ -151,5 +160,75 @@ export function buildHomeViewModel(): HomeViewModel {
       subject: 'history',
       title: unit.title,
     },
+  };
+}
+
+export type DurableHomeInput = {
+  iz: number;
+  progress: PathProgress | null;
+  recommendation: Recommendation;
+  totalXp: number;
+};
+
+/** Production home state: only the shipped node is real; every other node is locked preview. */
+export function buildDurableHomeViewModel(input: DurableHomeInput): HomeViewModel {
+  const base = buildHomeViewModel();
+  const real = base.nodes.find((node) => node.source === 'real');
+  if (real?.lessonId === undefined) {
+    throw new Error('Gerçek yol düğümü görünüm modelinde bulunamadı.');
+  }
+
+  const reviewSkillId =
+    input.recommendation.kind === 'review' || input.recommendation.kind === 'mistake'
+      ? input.recommendation.skillId
+      : null;
+  const reviewSkill = reviewSkillId === null ? null : getContentIndex().getSkill(reviewSkillId);
+  const isResume = input.recommendation.kind === 'resume';
+  const isReview = reviewSkill !== null;
+  const isCompleted = input.progress?.status === 'completed';
+
+  const state: PathNodeState = isReview
+    ? 'review'
+    : isResume
+      ? 'current'
+      : isCompleted
+        ? 'complete'
+        : 'current';
+  const title = isReview
+    ? input.recommendation.reason === 'mistake'
+      ? 'Yanlışını temizle'
+      : 'Tekrar zamanı'
+    : real.title;
+  const detail = isReview ? reviewSkill.title : real.detail;
+  const status = isReview
+    ? 'Tekrar'
+    : isResume
+      ? 'Devam et'
+      : isCompleted
+        ? 'Tamamlandı'
+        : input.progress?.status === 'started'
+          ? 'Başlandı'
+          : 'Şimdi';
+
+  const durableReal: PathNodeView = { ...real, detail, state, status, title };
+  const lockedPreview = [...PREVIEW_NODES_BEFORE, ...PREVIEW_NODES_AFTER].map<PathNodeView>(
+    (node) => ({
+      ...node,
+      detail: 'İçerik önizlemesi · henüz yayında değil',
+      state: 'locked',
+      status: 'Önizleme',
+    }),
+  );
+
+  return {
+    ...base,
+    currentLevel: {
+      cta: isReview ? 'TEKRARA BAŞLA' : isResume ? 'DEVAM ET' : isCompleted ? 'TEKRARLA' : 'BAŞLA',
+      meta: detail,
+      nodeId: real.id,
+      title,
+    },
+    hud: { mode: 'TYT', trace: String(input.iz), xp: `${input.totalXp} XP` },
+    nodes: [lockedPreview[0]!, lockedPreview[1]!, lockedPreview[2]!, durableReal, lockedPreview[3]!, lockedPreview[4]!],
   };
 }
