@@ -1,0 +1,119 @@
+import type {
+  LessonId,
+  PathNodeId,
+  SkillId,
+} from '@/modules/curriculum/domain/content-types';
+import type {
+  DailyActivity,
+  Mistake,
+  PathProgress,
+  ReviewItem,
+  SkillMastery,
+  StoredAttempt,
+  StoredSession,
+  XpTransaction,
+} from '@/modules/progress/domain/progress-types';
+import type { LocalDate } from '@/shared/time/local-date';
+
+/**
+ * Repository contracts, defined by the application and implemented by
+ * infrastructure. Dependencies point inward: nothing here knows that SQLite
+ * exists, which is what keeps a later cloud-sync adapter possible without
+ * reshaping the domain.
+ */
+
+export type ProgressRepository = {
+  getAll: () => Promise<readonly PathProgress[]>;
+  get: (pathNodeId: PathNodeId) => Promise<PathProgress | null>;
+  markStarted: (pathNodeId: PathNodeId, atIso: string) => Promise<void>;
+};
+
+export type SessionRepository = {
+  findActive: () => Promise<StoredSession | null>;
+  get: (sessionId: string) => Promise<StoredSession | null>;
+  markStale: (sessionId: string, atIso: string) => Promise<void>;
+  save: (session: StoredSession) => Promise<void>;
+};
+
+export type AttemptRepository = {
+  listForSession: (sessionId: string) => Promise<readonly StoredAttempt[]>;
+};
+
+export type XpRepository = {
+  /** The ledger is authoritative; this is its sum. */
+  total: () => Promise<number>;
+  list: () => Promise<readonly XpTransaction[]>;
+};
+
+export type MasteryRepository = {
+  get: (skillId: SkillId) => Promise<SkillMastery | null>;
+  getMany: (skillIds: readonly SkillId[]) => Promise<readonly SkillMastery[]>;
+};
+
+export type ReviewRepository = {
+  get: (skillId: SkillId) => Promise<ReviewItem | null>;
+  listAll: () => Promise<readonly ReviewItem[]>;
+  listDue: (atIso: string) => Promise<readonly ReviewItem[]>;
+};
+
+export type MistakeRepository = {
+  listUnresolved: () => Promise<readonly Mistake[]>;
+  resolveForSkill: (skillId: SkillId, atIso: string) => Promise<void>;
+};
+
+export type DailyActivityRepository = {
+  listQualifyingDates: () => Promise<readonly LocalDate[]>;
+  get: (localDate: LocalDate) => Promise<DailyActivity | null>;
+};
+
+/**
+ * The one write that must be all-or-nothing.
+ *
+ * Completing a session touches the session, its attempts, three kinds of XP,
+ * path progression, the day's activity, mastery, review schedules, and
+ * mistakes. A partially persisted completion — XP without attempts, a completed
+ * node without a session, an İz day without a completed session — is worse than
+ * a failed one, so infrastructure commits it in a single exclusive transaction.
+ */
+export type SessionCompletionInput = {
+  attempts: readonly StoredAttempt[];
+  /** Evidence per scored attempt, already reduced to what the policies need. */
+  evidence: readonly {
+    correct: boolean;
+    exerciseId: string;
+    observedAtIso: string;
+    skillIds: readonly SkillId[];
+    strength: 'strong' | 'weak';
+  }[];
+  completedAtIso: string;
+  correctScoredCount: number;
+  lessonId: LessonId;
+  localDate: LocalDate;
+  readonly pathNodeId?: PathNodeId;
+  session: StoredSession;
+  timeZone: string;
+};
+
+export type SessionCompletionResult = {
+  /** XP actually written, after idempotency filtering. */
+  awardedXp: number;
+  firstCompletionAwarded: boolean;
+  /** True when the completion had already been committed by an earlier attempt. */
+  alreadyCompleted: boolean;
+};
+
+export type CompletionRepository = {
+  completeSession: (input: SessionCompletionInput) => Promise<SessionCompletionResult>;
+};
+
+export type ProgressRepositories = {
+  attempts: AttemptRepository;
+  completion: CompletionRepository;
+  dailyActivity: DailyActivityRepository;
+  mastery: MasteryRepository;
+  mistakes: MistakeRepository;
+  progress: ProgressRepository;
+  review: ReviewRepository;
+  sessions: SessionRepository;
+  xp: XpRepository;
+};
