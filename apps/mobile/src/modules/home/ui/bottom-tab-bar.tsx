@@ -1,6 +1,7 @@
 import { Pressable, StyleSheet, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
+import { FEATURES } from '@/shared/config/app-config';
 import { AppText } from '@/shared/ui/components/app-text';
 import { TraceMark } from '@/shared/ui/components/trace-mark';
 import { theme } from '@/shared/ui/theme/tokens';
@@ -13,25 +14,30 @@ type BottomTabBarProps = {
 };
 
 type TabDefinition = {
+  /** Tabs behind an unfinished feature are hidden rather than disabled. */
+  enabled: boolean;
   key: AppTabKey;
   label: string;
 };
 
 const TABS: readonly TabDefinition[] = [
-  { key: 'yol', label: 'Yol' },
-  { key: 'gorev', label: 'Görev' },
-  { key: 'lig', label: 'Lig' },
-  { key: 'magaza', label: 'Mağaza' },
-  { key: 'profil', label: 'Profil' },
+  { enabled: true, key: 'yol', label: 'Yol' },
+  { enabled: true, key: 'gorev', label: 'Görev' },
+  { enabled: FEATURES.league, key: 'lig', label: 'Lig' },
+  { enabled: FEATURES.plus, key: 'magaza', label: 'Mağaza' },
+  { enabled: true, key: 'profil', label: 'Profil' },
 ];
 
-/** The persistent shell navigation from the design. */
+/**
+ * The persistent shell navigation from the design. In a production pilot the
+ * Lig and Mağaza tabs are absent, because neither feature works yet.
+ */
 export function BottomTabBar({ activeTab, onSelectTab }: BottomTabBarProps) {
   const insets = useSafeAreaInsets();
 
   return (
     <View style={[styles.bar, { paddingBottom: Math.max(insets.bottom, theme.spacing.sm) }]}>
-      {TABS.map((tab) => {
+      {TABS.filter((tab) => tab.enabled).map((tab) => {
         const isActive = tab.key === activeTab;
 
         return (

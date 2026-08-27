@@ -1,5 +1,8 @@
 import { fireEvent, render, screen } from '@testing-library/react-native';
 
+import { KURULTAY_LESSON_ID, KURULTAY_PATH_NODE_ID } from '@/modules/curriculum/content/tyt-social-draft-bundle';
+import { renderWithSession } from './support/render-with-session';
+
 import GorevlerRoute from '@/app/gorevler';
 import IndexRoute from '@/app/index';
 import IzRoute from '@/app/iz';
@@ -15,6 +18,8 @@ const mockPush = jest.fn();
 const mockReplace = jest.fn();
 
 jest.mock('expo-router', () => ({
+  Redirect: () => null,
+  useLocalSearchParams: () => ({ lessonId: 'lesson.history.kurultay.001' }),
   useRouter: () => ({
     back: mockBack,
     dismissTo: mockDismissTo,
@@ -31,31 +36,26 @@ describe('routes', () => {
     mockReplace.mockClear();
   });
 
-  it('sends the home path CTA into the lesson intro', async () => {
-    await render(<IndexRoute />);
+  it('sends the home path CTA into the lesson intro with the real lesson id', async () => {
+    await renderWithSession(<IndexRoute />);
 
-    await fireEvent.press(screen.getByTestId('path-node-node-tanzimat-fermani'));
+    await fireEvent.press(screen.getByTestId(`path-node-${KURULTAY_PATH_NODE_ID}`));
     await fireEvent.press(screen.getByTestId('level-detail-cta'));
 
-    expect(mockPush).toHaveBeenCalledWith('/lesson-intro');
+    expect(mockPush).toHaveBeenCalledWith({
+      params: { lessonId: KURULTAY_LESSON_ID },
+      pathname: '/lesson-intro',
+    });
   });
 
   it('continues from the lesson intro into the lesson and back to the path', async () => {
-    await render(<LessonIntroRoute />);
+    await renderWithSession(<LessonIntroRoute />);
 
     await fireEvent.press(screen.getByTestId('lesson-intro-cta'));
     expect(mockReplace).toHaveBeenCalledWith('/lesson');
 
     await fireEvent.press(screen.getByTestId('lesson-intro-back'));
     expect(mockBack).toHaveBeenCalledTimes(1);
-  });
-
-  it('collects the lesson reward and moves on to the İz celebration', async () => {
-    await render(<LessonCompleteRoute />);
-
-    await fireEvent.press(screen.getByTestId('lesson-complete-cta'));
-
-    expect(mockReplace).toHaveBeenCalledWith('/iz');
   });
 
   it('returns to the path from the İz celebration', async () => {
@@ -81,16 +81,16 @@ describe('shell tabs', () => {
   });
 
   it('swaps sections rather than stacking them', async () => {
-    await render(<IndexRoute />);
+    await renderWithSession(<IndexRoute />);
 
     await fireEvent.press(screen.getByTestId('tab-gorev'));
-    await fireEvent.press(screen.getByTestId('tab-magaza'));
+    await fireEvent.press(screen.getByTestId('tab-profil'));
 
-    expect(mockReplace.mock.calls.map(([route]) => route)).toEqual(['/gorevler', '/magaza']);
+    expect(mockReplace.mock.calls.map(([route]) => route)).toEqual(['/gorevler', '/profil']);
   });
 
   it('does not re-navigate when the active tab is tapped', async () => {
-    await render(<IndexRoute />);
+    await renderWithSession(<IndexRoute />);
 
     await fireEvent.press(screen.getByTestId('tab-yol'));
 

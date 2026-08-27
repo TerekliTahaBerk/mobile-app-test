@@ -1,17 +1,18 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
-import {
-  lessonPreviewData,
-  type LessonExercisePreview,
-} from '@/modules/learning/model/lesson-preview-data';
+import { getContentIndex } from '@/modules/curriculum/content/content-source';
+import type { ExerciseDefinition } from '@/modules/curriculum/domain/content-types';
+import { useLessonSession } from '@/modules/learning/application/lesson-session-store';
+import { subjectThemeFor, type ExerciseViewProps } from '@/modules/learning/ui/exercise-view';
 import { ExitConfirmSheet } from '@/modules/learning/ui/exit-confirm-sheet';
 import { FlashcardExercise } from '@/modules/learning/ui/exercises/flashcard-exercise';
 import { MatchingExercise } from '@/modules/learning/ui/exercises/matching-exercise';
 import { MultipleChoiceExercise } from '@/modules/learning/ui/exercises/multiple-choice-exercise';
 import { WordBankExercise } from '@/modules/learning/ui/exercises/word-bank-exercise';
+import { lessonChromeFor } from '@/modules/learning/ui/lesson-chrome';
 import { LessonHeader } from '@/modules/learning/ui/lesson-header';
-import { Screen, type ScreenBackground } from '@/shared/ui/components/screen';
-import { theme } from '@/shared/ui/theme/tokens';
+import { lessonPreviewData } from '@/modules/learning/model/lesson-preview-data';
+import { Screen } from '@/shared/ui/components/screen';
 
 type LessonScreenProps = {
   onComplete: () => void;
@@ -19,29 +20,56 @@ type LessonScreenProps = {
 };
 
 /**
- * Walks the preview lesson through the imported design's exercise screens.
- * The step order is presentation sequencing only — there is no recommendation,
- * evaluation, or session engine behind it.
+ * Runs the active lesson. The screen holds no learning rules: it renders the
+ * exercise the engine says is current, hands answers back, and reacts to the
+ * session status the engine returns.
  */
 export function LessonScreen({ onComplete, onExit }: LessonScreenProps) {
-  const [stepIndex, setStepIndex] = useState(0);
+  const { continueAfterFeedback, discard, lesson, submitAnswer } = useLessonSession();
   const [cardIndex, setCardIndex] = useState(0);
   const [exitVisible, setExitVisible] = useState(false);
 
-  const exercise = lessonPreviewData.exercises[stepIndex];
+  const session = lesson?.session ?? null;
+  const isCompleted = session?.status === 'completed';
+
+  useEffect(() => {
+    if (isCompleted) {
+      onComplete();
+    }
+  }, [isCompleted, onComplete]);
+
+  if (lesson === null || session === null || isCompleted) {
+    return null;
+  }
+
+  const exercise = lesson.deps.exercises[session.currentIndex];
   if (exercise === undefined) {
     return null;
   }
 
-  const advance = () => {
-    if (stepIndex + 1 >= lessonPreviewData.exercises.length) {
-      onComplete();
-      return;
-    }
-    setStepIndex((index) => index + 1);
-  };
+  const index = getContentIndex();
+  const topic = index.getTopic(lesson.deps.lesson.topicId);
+  const subject = subjectThemeFor(index.getSubjectOfUnit(topic.unitId).id);
+  const evaluation =
+    session.lastEvaluation?.exerciseId === exercise.id ? session.lastEvaluation : null;
 
-  const chrome = chromeFor(exercise, stepIndex, lessonPreviewData.exercises.length, cardIndex);
+  const chrome = lessonChromeFor({
+    cardIndex,
+    exercise,
+    exerciseCount: session.exerciseIds.length,
+    stepIndex: session.currentIndex,
+  });
+
+  const viewProps: ExerciseViewProps<ExerciseDefinition> = {
+    evaluation,
+    exercise,
+    onContinue: () => {
+      setCardIndex(0);
+      continueAfterFeedback();
+    },
+    onSubmit: submitAnswer,
+    subject,
+  };
 
   return (
     <Screen background={chrome.background} includeBottomInset={false} testID="lesson-screen">
@@ -58,15 +86,15 @@ export function LessonScreen({ onComplete, onExit }: LessonScreenProps) {
 
       <ExerciseStep
         cardIndex={cardIndex}
-        exercise={exercise}
-        onAdvance={advance}
         onCardIndexChange={setCardIndex}
+        viewProps={viewProps}
       />
 
       <ExitConfirmSheet
         exit={lessonPreviewData.exit}
         onConfirm={() => {
           setExitVisible(false);
+          discard();
           onExit();
         }}
         onStay={() => setExitVisible(false)}
@@ -78,77 +106,35 @@ export function LessonScreen({ onComplete, onExit }: LessonScreenProps) {
 
 type ExerciseStepProps = {
   cardIndex: number;
-  exercise: LessonExercisePreview;
-  onAdvance: () => void;
   onCardIndexChange: (index: number) => void;
-};
-
-/** One renderer per exercise shape — composition instead of one universal component. */
-function ExerciseStep({
-  cardIndex,
-  exercise,
-  onAdvance,
-  onCardIndexChange,
-}: ExerciseStepProps) {
-  switch (exercise.kind) {
-    case 'multipleChoice':
-      return <MultipleChoiceExercise exercise={exercise} onAdvance={onAdvance} />;
-    case 'wordBank':
-      return <WordBankExercise exercise={exercise} onAdvance={onAdvance} />;
-    case 'matching':
-      return <MatchingExercise exercise={exercise} onAdvance={onAdvance} />;
-    case 'flashcard':
-      return (
-        <FlashcardExercise
-          cardIndex={cardIndex}
-          exercise={exercise}
-          onAdvance={onAdvance}
-          onCardIndexChange={onCardIndexChange}
-        />
-      );
-  }
-}
-
-type LessonChrome = {
-  background: ScreenBackground;
-  counter?: string | undefined;
-  counterColor?: string | undefined;
-  fillColor?: string | undefined;
-  glyphColor?: string | undefined;
-  hearts?: string | undefined;
-  progress: number;
-  trackColor?: string | undefined;
+  viewProps: ExerciseViewProps<ExerciseDefinition>;
 };
 
 /**
- * The flashcard deck runs in the philosophy palette and tracks cards instead of
- * hearts, exactly as the design shows.
+ * One renderer per exercise kind. The lesson engine never branches on kind;
+ * this is the only place that does, and it only chooses a component.
  */
-function chromeFor(
-  exercise: LessonExercisePreview,
-  stepIndex: number,
-  stepCount: number,
-  cardIndex: number,
-): LessonChrome {
-  const sequenceProgress = (stepIndex + 1) / stepCount;
+function ExerciseStep({ cardIndex, onCardIndexChange, viewProps }: ExerciseStepProps) {
+  const { exercise } = viewProps;
 
-  if (exercise.kind === 'flashcard') {
-    return {
-      background: 'flashcard',
-      counter: `${cardIndex + 1}/${exercise.deckSize}`,
-      counterColor: theme.colors.subject.philosophy.ink,
-      fillColor: theme.colors.subject.philosophy.primary,
-      glyphColor: theme.colors.subject.philosophy.dim,
-      // The deck tracks its own cards rather than the lesson's step count.
-      progress: (cardIndex + 1) / exercise.deckSize,
-      trackColor: theme.colors.subject.philosophy.track,
-    };
+  switch (exercise.kind) {
+    case 'multipleChoice':
+      return <MultipleChoiceExercise {...viewProps} exercise={exercise} />;
+    case 'fillBlank':
+      return <WordBankExercise {...viewProps} exercise={exercise} />;
+    case 'matching':
+      return <MatchingExercise {...viewProps} exercise={exercise} />;
+    case 'flashcard':
+      return (
+        <FlashcardExercise
+          {...viewProps}
+          cardIndex={cardIndex}
+          exercise={exercise}
+          onCardIndexChange={onCardIndexChange}
+        />
+      );
+    case 'ordering':
+      // Contracted but unrendered; content validation blocks it from a lesson.
+      return null;
   }
-
-  return {
-    background: 'lesson',
-    hearts: lessonPreviewData.hearts,
-    progress:
-      exercise.kind === 'matching' ? sequenceProgress : exercise.progress,
-  };
 }

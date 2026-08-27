@@ -1,27 +1,74 @@
 import { ScrollView, StyleSheet, View } from 'react-native';
 
-import { lessonPreviewData } from '@/modules/learning/model/lesson-preview-data';
+import { getContentIndex } from '@/modules/curriculum/content/content-source';
+import { useLessonSession } from '@/modules/learning/application/lesson-session-store';
 import { AppButton } from '@/shared/ui/components/app-button';
 import { AppText } from '@/shared/ui/components/app-text';
 import { BottomAction } from '@/shared/ui/components/bottom-action';
-import { TraceMark } from '@/shared/ui/components/trace-mark';
+import { Screen } from '@/shared/ui/components/screen';
 import { Cizgi } from '@/shared/ui/cizgi/cizgi';
 import { Bob } from '@/shared/ui/motion/motion';
-import { Screen } from '@/shared/ui/components/screen';
 import { theme } from '@/shared/ui/theme/tokens';
 
 type LessonCompleteScreenProps = {
   onCollect: () => void;
 };
 
+type StatTone = { border: string; figure: string; label: string; surface: string };
+
 /**
- * Design screen 09. The celebration reports what the session produced — XP,
- * accuracy, time — and closes with the İz the learner added today.
+ * Design screen 09. Every number here now comes from the finished session: XP
+ * the engine awarded, accuracy over the exercises it actually scored, and the
+ * real lesson title.
  *
- * Every number here is preview copy. Nothing is computed.
+ * The İz line is still preview copy — İz is not computed yet.
  */
 export function LessonCompleteScreen({ onCollect }: LessonCompleteScreenProps) {
-  const { complete } = lessonPreviewData;
+  const { lesson, summary } = useLessonSession();
+
+  if (lesson === null || summary === null) {
+    return null;
+  }
+
+  const index = getContentIndex();
+  const topic = index.getTopic(lesson.deps.lesson.topicId);
+  const unit = index.getUnit(topic.unitId);
+
+  const stats: readonly { id: string; label: string; tone: StatTone; value: string }[] = [
+    {
+      id: 'stat-xp',
+      label: 'KAZANILAN XP',
+      tone: {
+        border: theme.colors.reward.xp,
+        figure: theme.colors.reward.xpNumber,
+        label: theme.colors.reward.xpInk,
+        surface: theme.colors.reward.xpSoft,
+      },
+      value: `${summary.xpEarned}`,
+    },
+    {
+      id: 'stat-accuracy',
+      label: 'İSABET',
+      tone: {
+        border: theme.colors.subject.geography.primary,
+        figure: theme.colors.subject.geography.ink,
+        label: theme.colors.subject.geography.deep,
+        surface: theme.colors.subject.geography.soft,
+      },
+      value: `%${summary.accuracyPercent}`,
+    },
+    {
+      id: 'stat-correct',
+      label: 'DOĞRU',
+      tone: {
+        border: theme.colors.subject.religion.primary,
+        figure: theme.colors.subject.religion.ink,
+        label: theme.colors.subject.religion.deep,
+        surface: theme.colors.subject.religion.soft,
+      },
+      value: `${summary.correctCount}/${summary.scoredCount}`,
+    },
+  ];
 
   return (
     <Screen includeBottomInset={false} testID="lesson-complete-screen">
@@ -31,67 +78,57 @@ export function LessonCompleteScreen({ onCollect }: LessonCompleteScreenProps) {
         style={styles.scroll}
       >
         <Bob duration={2400}>
-          <Cizgi mood={complete.mood} width={206} />
+          <Cizgi mood="cheer" width={206} />
         </Bob>
 
         <View style={styles.heading}>
           <AppText accessibilityRole="header" align="center" color="accentStrong" variant="headingXL">
-            {complete.heading}
+            Ders tamamlandı!
           </AppText>
           <AppText align="center" color="muted" variant="bodyM">
-            {complete.subheading}
+            {`${unit.title} · ${lesson.deps.lesson.title}`}
           </AppText>
         </View>
 
         <View style={styles.stats}>
-          {complete.stats.map((stat) => {
-            const tone =
-              stat.subject === 'xp'
-                ? {
-                    border: theme.colors.reward.xp,
-                    surface: theme.colors.reward.xpSoft,
-                    figure: theme.colors.reward.xpNumber,
-                    label: theme.colors.reward.xpInk,
-                  }
-                : {
-                    border: theme.colors.subject[stat.subject].primary,
-                    surface: theme.colors.subject[stat.subject].soft,
-                    figure: theme.colors.subject[stat.subject].ink,
-                    label: theme.colors.subject[stat.subject].deep,
-                  };
-
-            return (
-              <View
-                accessible
-                accessibilityLabel={`${stat.label}: ${stat.value}`}
-                key={stat.id}
-                style={[styles.stat, { borderColor: tone.border }]}
-              >
-                <View style={[styles.statHeader, { backgroundColor: tone.surface }]}>
-                  <AppText align="center" style={[styles.statLabel, { color: tone.label }]} variant="eyebrow">
-                    {stat.label}
-                  </AppText>
-                </View>
-                <View style={styles.statBody}>
-                  <AppText align="center" style={{ color: tone.figure }} variant="numeric">
-                    {stat.value}
-                  </AppText>
-                </View>
+          {stats.map((stat) => (
+            <View
+              accessible
+              accessibilityLabel={`${stat.label}: ${stat.value}`}
+              key={stat.id}
+              style={[styles.stat, { borderColor: stat.tone.border }]}
+            >
+              <View style={[styles.statHeader, { backgroundColor: stat.tone.surface }]}>
+                <AppText
+                  align="center"
+                  style={[styles.statLabel, { color: stat.tone.label }]}
+                  variant="eyebrow"
+                >
+                  {stat.label}
+                </AppText>
               </View>
-            );
-          })}
+              <View style={styles.statBody}>
+                <AppText align="center" style={{ color: stat.tone.figure }} variant="numeric">
+                  {stat.value}
+                </AppText>
+              </View>
+            </View>
+          ))}
         </View>
 
-        <View accessible accessibilityLabel={complete.traceNote} style={styles.traceCard}>
-          <TraceMark size="sm" />
+        <View
+          accessible
+          accessibilityLabel={`${summary.exerciseCount} alıştırma tamamlandı`}
+          style={styles.traceCard}
+        >
           <AppText color="secondary" style={styles.traceCopy} variant="bodyS">
-            {complete.traceNote}
+            {`${summary.exerciseCount} alıştırma tamamlandı · ${summary.scoredCount} tanesi puanlandı`}
           </AppText>
         </View>
       </ScrollView>
 
       <BottomAction>
-        <AppButton label={complete.cta} onPress={onCollect} testID="lesson-complete-cta" />
+        <AppButton label="XP’Yİ AL" onPress={onCollect} testID="lesson-complete-cta" />
       </BottomAction>
     </Screen>
   );

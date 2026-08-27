@@ -1,6 +1,6 @@
 import { StyleSheet, View } from 'react-native';
 
-import type { PathNode, PathNodeState } from '@/modules/home/model/home-preview-data';
+import type { PathNodeView, PathNodeState } from '@/modules/home/model/home-view-model';
 import { AppText, type AppTextColor } from '@/shared/ui/components/app-text';
 import { LockGlyph } from '@/shared/ui/components/glyphs';
 import { Pulse } from '@/shared/ui/motion/motion';
@@ -12,7 +12,7 @@ export const CHECKPOINT_SIZE = 52;
 export const CURRENT_RING_SIZE = 108;
 
 type PathNodeButtonProps = {
-  node: PathNode;
+  node: PathNodeView;
   onPress: () => void;
 };
 
@@ -23,12 +23,21 @@ type PathNodeButtonProps = {
 export function PathNodeButton({ node, onPress }: PathNodeButtonProps) {
   const visual = visuals[node.state];
   const isCurrent = node.state === 'current';
-  const isLocked = node.state === 'locked';
+  // Preview levels keep the composition but open nothing — only a node backed
+  // by real content has a lesson to start.
+  const isOpenable = node.source === 'real' && node.lessonId !== undefined;
+  const isLocked = node.state === 'locked' || !isOpenable;
   const size = node.state === 'checkpoint' ? CHECKPOINT_SIZE : NODE_SIZE;
 
   const face = (
     <TactilePressable
-      accessibilityHint={isLocked ? undefined : 'Bu dersin bilgilerini açar'}
+      accessibilityHint={
+        isOpenable
+          ? 'Bu dersin bilgilerini açar'
+          : node.state === 'locked'
+            ? undefined
+            : 'Önizleme içeriği'
+      }
       accessibilityLabel={`${node.title}. ${node.status}. ${node.detail}`}
       accessibilityRole="button"
       accessibilityState={{ disabled: isLocked }}

@@ -1,12 +1,12 @@
 import { Pressable, StyleSheet, View } from 'react-native';
 
-import type { HomePreviewViewModel } from '@/modules/home/model/home-preview-data';
+import type { HomeViewModel } from '@/modules/home/model/home-view-model';
 import { AppText } from '@/shared/ui/components/app-text';
 import { theme } from '@/shared/ui/theme/tokens';
 
 type UnitBannerProps = {
   onOpenUnitIndex?: (() => void) | undefined;
-  unit: HomePreviewViewModel['unit'];
+  unit: HomeViewModel['unit'];
 };
 
 /**

@@ -1,12 +1,12 @@
 import { StyleSheet, View } from 'react-native';
 
-import type { CurrentLevelPreview } from '@/modules/home/model/home-preview-data';
+import type { CurrentLevelView } from '@/modules/home/model/home-view-model';
 import { AppText } from '@/shared/ui/components/app-text';
 import { TactilePressable } from '@/shared/ui/components/tactile-pressable';
 import { theme } from '@/shared/ui/theme/tokens';
 
 type LevelDetailPanelProps = {
-  level: CurrentLevelPreview;
+  level: CurrentLevelView;
   onStart: () => void;
 };
 

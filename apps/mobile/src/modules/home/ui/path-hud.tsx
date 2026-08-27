@@ -1,13 +1,13 @@
 import { StyleSheet, View } from 'react-native';
 
-import type { HomePreviewViewModel } from '@/modules/home/model/home-preview-data';
+import type { HomeViewModel } from '@/modules/home/model/home-view-model';
 import { AppText } from '@/shared/ui/components/app-text';
 import { GemGlyph, HeartGlyph } from '@/shared/ui/components/glyphs';
 import { TraceMark } from '@/shared/ui/components/trace-mark';
 import { theme } from '@/shared/ui/theme/tokens';
 
 type PathHudProps = {
-  hud: HomePreviewViewModel['hud'];
+  hud: HomeViewModel['hud'];
 };
 
 /**

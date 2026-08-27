@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import { StyleSheet, useWindowDimensions, View } from 'react-native';
 
-import type { CurrentLevelPreview, HomePreviewViewModel, PathNode } from '@/modules/home/model/home-preview-data';
+import type { CurrentLevelView, HomeViewModel, PathNodeView } from '@/modules/home/model/home-view-model';
 import { LevelDetailPanel } from '@/modules/home/ui/level-detail-panel';
 import { CURRENT_RING_SIZE, NODE_SIZE, PathNodeButton } from '@/modules/home/ui/path-node';
 import { AppText } from '@/shared/ui/components/app-text';
@@ -11,13 +11,13 @@ import { Bob, Pop } from '@/shared/ui/motion/motion';
 import { theme } from '@/shared/ui/theme/tokens';
 
 type LevelPathProps = {
-  companion: HomePreviewViewModel['companion'];
-  level: CurrentLevelPreview;
-  nodes: readonly PathNode[];
+  companion: HomeViewModel['companion'];
+  level: CurrentLevelView;
+  nodes: readonly PathNodeView[];
   /** Reports the panel's bottom edge so a short screen can scroll it into view. */
   onPanelMeasured: (panelBottom: number) => void;
   onSelectNode: (nodeId: string) => void;
-  onStartLevel: () => void;
+  onStartLevel: (lessonId: string, pathNodeId: string) => void;
   selectedNodeId: string | null;
 };
 
@@ -77,7 +77,14 @@ export function LevelPath({
                 }
                 style={styles.panel}
               >
-                <LevelDetailPanel level={level} onStart={onStartLevel} />
+                <LevelDetailPanel
+                  level={level}
+                  onStart={() => {
+                    if (node.lessonId !== undefined) {
+                      onStartLevel(node.lessonId, node.id);
+                    }
+                  }}
+                />
               </Pop>
             ) : null}
           </Fragment>

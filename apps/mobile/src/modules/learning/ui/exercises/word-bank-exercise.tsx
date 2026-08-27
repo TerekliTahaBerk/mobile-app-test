@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { ScrollView, StyleSheet, View } from 'react-native';
 
-import type { WordBankPreview } from '@/modules/learning/model/lesson-preview-data';
+import type { FillBlankExercise } from '@/modules/curriculum/domain/content-types';
+import type { ExerciseViewProps } from '@/modules/learning/ui/exercise-view';
 import { FeedbackPanel, feedbackSurface } from '@/modules/learning/ui/feedback-panel';
 import { AppButton } from '@/shared/ui/components/app-button';
 import { AppText } from '@/shared/ui/components/app-text';
@@ -10,36 +11,28 @@ import { TactilePressable } from '@/shared/ui/components/tactile-pressable';
 import { CizgiSpeech } from '@/shared/ui/cizgi/cizgi-speech';
 import { theme } from '@/shared/ui/theme/tokens';
 
-type WordBankExerciseProps = {
-  exercise: WordBankPreview;
-  onAdvance: () => void;
-};
-
-const MIN_ANSWER_LENGTH = 3;
 const CHIP_HEIGHT = theme.hitTarget + 2;
 const ROW_HEIGHT = 64;
 
 /**
  * Design screen 05. Words lift from the bank onto ruled answer lines and drop
- * back when tapped again. The solution list is preview copy, not an evaluation
- * contract.
+ * back when tapped again; the engine decides whether the sentence is right.
  */
-export function WordBankExercise({ exercise, onAdvance }: WordBankExerciseProps) {
+export function WordBankExercise({
+  evaluation,
+  exercise,
+  onContinue,
+  onSubmit,
+}: ExerciseViewProps<FillBlankExercise>) {
   const [answerIds, setAnswerIds] = useState<readonly string[]>([]);
-  const [checked, setChecked] = useState(false);
 
-  const labelFor = (wordId: string) =>
-    exercise.bank.find((word) => word.id === wordId)?.label ?? '';
-
-  const isCorrect =
-    answerIds.map(labelFor).join(' ') === exercise.solution.join(' ');
+  const checked = evaluation !== null;
+  const isCorrect = evaluation?.correct === true;
   const feedback = checked ? (isCorrect ? 'correct' : 'wrong') : null;
-  const canCheck = answerIds.length >= MIN_ANSWER_LENGTH;
+  const canCheck = answerIds.length > 0;
 
-  const reset = () => {
-    setAnswerIds([]);
-    setChecked(false);
-  };
+  const labelFor = (tokenId: string) =>
+    exercise.bank.find((token) => token.id === tokenId)?.label ?? '';
 
   return (
     <>
@@ -53,7 +46,7 @@ export function WordBankExercise({ exercise, onAdvance }: WordBankExerciseProps)
           {exercise.title}
         </AppText>
 
-        <CizgiSpeech mood={exercise.mood} width={70}>
+        <CizgiSpeech mood="idle" width={70}>
           <View style={styles.hintRow}>
             <View style={styles.hintChip}>
               <View style={styles.hintPlay} />
@@ -80,27 +73,27 @@ export function WordBankExercise({ exercise, onAdvance }: WordBankExerciseProps)
             <View key={line} style={styles.writingRow} />
           ))}
           <View style={styles.answerWords}>
-            {answerIds.map((wordId) => (
+            {answerIds.map((tokenId) => (
               <WordChip
                 disabled={checked}
-                key={wordId}
-                label={labelFor(wordId)}
-                onPress={() => setAnswerIds((ids) => ids.filter((id) => id !== wordId))}
+                key={tokenId}
+                label={labelFor(tokenId)}
+                onPress={() => setAnswerIds((ids) => ids.filter((id) => id !== tokenId))}
               />
             ))}
           </View>
         </View>
 
         <View style={styles.bank} testID="word-bank-options">
-          {exercise.bank.map((word) => {
-            const used = answerIds.includes(word.id);
+          {exercise.bank.map((token) => {
+            const used = answerIds.includes(token.id);
 
             return (
               <WordChip
                 disabled={used || checked}
-                key={word.id}
-                label={word.label}
-                onPress={() => setAnswerIds((ids) => [...ids, word.id])}
+                key={token.id}
+                label={token.label}
+                onPress={() => setAnswerIds((ids) => [...ids, token.id])}
                 used={used}
               />
             );
@@ -111,7 +104,7 @@ export function WordBankExercise({ exercise, onAdvance }: WordBankExerciseProps)
       <BottomAction surfaceColor={feedback ? feedbackSurface[feedback] : undefined}>
         {feedback ? (
           <FeedbackPanel
-            detail={exercise.solution.join(' ')}
+            detail={isCorrect ? exercise.explanation : (evaluation?.correctAnswerSummary ?? '')}
             kind={feedback}
             title={isCorrect ? 'Harika!' : 'Doğrusu şöyle'}
           />
@@ -121,12 +114,11 @@ export function WordBankExercise({ exercise, onAdvance }: WordBankExerciseProps)
           disabled={!canCheck}
           label={checked ? 'DEVAM ET' : 'KONTROL ET'}
           onPress={() => {
-            if (!checked) {
-              setChecked(true);
+            if (checked) {
+              onContinue();
               return;
             }
-            reset();
-            onAdvance();
+            onSubmit({ kind: 'fillBlank', tokenIds: answerIds });
           }}
           testID="word-bank-action"
           variant={checked ? (isCorrect ? 'success' : 'danger') : 'primary'}
@@ -235,12 +227,12 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingBottom: theme.spacing.xs,
   },
+  scroll: {
+    flex: 1,
+  },
   writingRow: {
     borderBottomColor: theme.colors.border.hairline,
     borderBottomWidth: 2,
     height: ROW_HEIGHT,
-  },
-  scroll: {
-    flex: 1,
   },
 });

@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { ScrollView, StyleSheet, View } from 'react-native';
 
-import type { MultipleChoicePreview } from '@/modules/learning/model/lesson-preview-data';
+import type { MultipleChoiceExercise as MultipleChoiceDefinition } from '@/modules/curriculum/domain/content-types';
+import type { ExerciseViewProps } from '@/modules/learning/ui/exercise-view';
 import { AnswerCard, type AnswerTone } from '@/modules/learning/ui/answer-card';
 import { FeedbackPanel, feedbackSurface } from '@/modules/learning/ui/feedback-panel';
 import { AppButton } from '@/shared/ui/components/app-button';
@@ -11,42 +12,42 @@ import { SubjectTag } from '@/shared/ui/components/subject-tag';
 import { CizgiSpeech } from '@/shared/ui/cizgi/cizgi-speech';
 import { theme } from '@/shared/ui/theme/tokens';
 
-type MultipleChoiceExerciseProps = {
-  exercise: MultipleChoicePreview;
-  onAdvance: () => void;
-};
+/** A/B/C/D markers are presentation, not content. */
+const MARKERS = ['A', 'B', 'C', 'D', 'E'] as const;
 
 /**
- * Design screen 04. Selecting arms the CTA, checking reveals the verdict and
- * the correct option.
- *
- * The "correct" flag is preview copy from the design, not an evaluation
- * contract: nothing here scores, awards XP, or records an attempt.
+ * Design screen 04. Selecting arms the CTA; checking hands the answer to the
+ * lesson engine and renders the verdict it returns.
  */
-export function MultipleChoiceExercise({ exercise, onAdvance }: MultipleChoiceExerciseProps) {
+export function MultipleChoiceExercise({
+  evaluation,
+  exercise,
+  onContinue,
+  onSubmit,
+  subject,
+}: ExerciseViewProps<MultipleChoiceDefinition>) {
   const [selectedId, setSelectedId] = useState<string | null>(null);
-  const [checked, setChecked] = useState(false);
 
-  const selected = exercise.options.find((option) => option.id === selectedId);
-  const isCorrect = checked && selected?.correct === true;
+  const checked = evaluation !== null;
+  const isCorrect = evaluation?.correct === true;
   const feedback = checked ? (isCorrect ? 'correct' : 'wrong') : null;
 
-  const toneFor = (optionId: string, correct: boolean): AnswerTone => {
+  const toneFor = (optionId: string): AnswerTone => {
     if (!checked) {
       return optionId === selectedId ? 'selected' : 'idle';
     }
-    if (correct) {
+    if (optionId === exercise.correctOptionId) {
       return 'correct';
     }
 
     return optionId === selectedId ? 'wrong' : 'idle';
   };
 
-  const stateLabelFor = (optionId: string, correct: boolean) => {
+  const stateLabelFor = (optionId: string) => {
     if (!checked) {
       return optionId === selectedId ? 'Seçili' : undefined;
     }
-    if (correct) {
+    if (optionId === exercise.correctOptionId) {
       return 'Doğru yanıt';
     }
 
@@ -61,25 +62,25 @@ export function MultipleChoiceExercise({ exercise, onAdvance }: MultipleChoiceEx
         showsVerticalScrollIndicator={false}
         style={styles.scroll}
       >
-        <SubjectTag label={exercise.tag} subject={exercise.subject} />
+        <SubjectTag label={exercise.tag} subject={subject} />
 
-        <CizgiSpeech mood={exercise.mood} width={74}>
+        <CizgiSpeech mood="thinking" width={74}>
           <AppText accessibilityRole="header" variant="headingS">
             {exercise.prompt}
           </AppText>
         </CizgiSpeech>
 
         <View style={styles.options}>
-          {exercise.options.map((option) => (
+          {exercise.options.map((option, index) => (
             <AnswerCard
               disabled={checked}
               key={option.id}
               label={option.label}
-              marker={option.key}
+              marker={MARKERS[index] ?? `${index + 1}`}
               onPress={() => setSelectedId(option.id)}
-              stateLabel={stateLabelFor(option.id, option.correct)}
-              testID={`mc-option-${option.key}`}
-              tone={toneFor(option.id, option.correct)}
+              stateLabel={stateLabelFor(option.id)}
+              testID={`mc-option-${MARKERS[index] ?? index}`}
+              tone={toneFor(option.id)}
             />
           ))}
         </View>
@@ -90,14 +91,22 @@ export function MultipleChoiceExercise({ exercise, onAdvance }: MultipleChoiceEx
           <FeedbackPanel
             detail={exercise.explanation}
             kind={feedback}
-            title={isCorrect ? 'Doğru!' : exercise.wrongTitle}
+            title={isCorrect ? 'Doğru!' : `Doğrusu: ${evaluation?.correctAnswerSummary ?? ''}`}
           />
         ) : null}
 
         <AppButton
           disabled={selectedId === null}
           label={checked ? 'DEVAM ET' : 'KONTROL ET'}
-          onPress={() => (checked ? onAdvance() : setChecked(true))}
+          onPress={() => {
+            if (checked) {
+              onContinue();
+              return;
+            }
+            if (selectedId !== null) {
+              onSubmit({ kind: 'multipleChoice', optionId: selectedId });
+            }
+          }}
           testID="mc-action"
           variant={checked ? (isCorrect ? 'success' : 'danger') : 'primary'}
         />

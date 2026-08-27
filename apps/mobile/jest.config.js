@@ -16,5 +16,7 @@ module.exports = {
     ...rest,
   },
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
+  // Only *.test.* files are suites, so __tests__/support can hold helpers.
+  testMatch: ['**/?(*.)+(test).[jt]s?(x)'],
   testPathIgnorePatterns: ['/node_modules/', '/dist/'],
 };

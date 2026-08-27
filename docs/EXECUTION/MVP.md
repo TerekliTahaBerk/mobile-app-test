@@ -11,13 +11,17 @@ Each milestone must remain independently verifiable. Do not start a later milest
 
 All of its data is presentation-only preview state under each module's `model/` directory. It adds no curriculum, evaluation, XP, mastery, İz, league, or persistence logic, and — importantly — the Plus screen has no billing integration and collects nothing. Monetization, league mechanics, and social features remain undecided.
 
-3. **Content contract — NEXT** — stable curriculum/exercise types, validation, and one tiny original demo lesson.
-4. **Deterministic lesson session** — pure reducer, exercise registry, immediate feedback, and three exercise types in memory.
-5. **Polished vertical slice** — path to lesson to completion to XP/progress and back, including error states. Reduced-motion support already ships.
+3. **Content contract — COMPLETE** — stable curriculum/exercise contracts, stable IDs, a versioned bundle, runtime validation with actionable errors, and one tiny original demo lesson marked `draft`.
+4. **Deterministic lesson session — COMPLETE** — pure reducer, evaluator registry, domain events, attempt model, v1 XP policy, and four exercise types connected in memory.
+5. **Polished vertical slice — NEXT** — path to lesson to completion to XP/progress and back, including error states. One real lesson already runs end to end; what remains is durable progress behind it. Reduced-motion support already ships.
 6. **Durable offline progress** — SQLite migrations and repositories for attempts, sessions, XP, and progress.
 7. **Basic mastery and review** — documented deterministic mastery, mistake records, due review, and next-activity rules.
 8. **Analytics and feature flags** — typed funnel events and lightweight configuration flags.
 9. **Backend synchronization** — Supabase, RLS, outbox sync, conflict rules, and optional authentication.
 10. **Pilot hardening** — end-to-end flows, accessibility and performance checks, content QA, privacy review, and production diagnostics.
 
-Milestones 1 and 2 are complete. Every home, lesson, İz, quest, and onboarding value in the shipped screens is presentation-only preview data living under each module's `model/` directory; none of it may be reused as a curriculum, exercise, gamification, or persistence contract. Milestone 3 is not yet approved. Product scope and north star are maintained in [../PRODUCT.md](../PRODUCT.md).
+**Release Phase 1 — COMPLETE.** Milestones 3 and 4. The app now carries real curriculum contracts, a validated content bundle, and a deterministic pure-TypeScript lesson engine, with one Tarih lesson (`Kurultay`, five exercises) wired end to end through the approved screens. That lesson's evaluation, XP, and completion figures are computed, not fixtures.
+
+Everything else on the home path, the İz counter, the HUD totals, hearts, and the quest board remain explicitly tagged preview data. **Nothing persists**: a restart discards the session and its XP. League and TEKRARLA Plus are gated off in a production pilot.
+
+Milestones 1 and 2 are complete. Milestone 5 is next; Milestone 6 (durable progress) is the blocker for anything gamification-facing. Product scope and north star are maintained in [../PRODUCT.md](../PRODUCT.md).

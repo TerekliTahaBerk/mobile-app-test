@@ -1,7 +1,8 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { ScrollView, StyleSheet, View } from 'react-native';
 
-import type { MatchingPreview } from '@/modules/learning/model/lesson-preview-data';
+import type { MatchingExercise as MatchingDefinition } from '@/modules/curriculum/domain/content-types';
+import type { ExerciseViewProps } from '@/modules/learning/ui/exercise-view';
 import { AppButton } from '@/shared/ui/components/app-button';
 import { AppText } from '@/shared/ui/components/app-text';
 import { BottomAction } from '@/shared/ui/components/bottom-action';
@@ -10,52 +11,60 @@ import { TactilePressable } from '@/shared/ui/components/tactile-pressable';
 import { Shake } from '@/shared/ui/motion/motion';
 import { theme } from '@/shared/ui/theme/tokens';
 
-type MatchingExerciseProps = {
-  exercise: MatchingPreview;
-  onAdvance: () => void;
-};
-
 type MatchTone = 'idle' | 'paired' | 'selected' | 'wrong';
 
 /**
- * Design screen 06. Pick an event on the left, then its year on the right.
- * A wrong pairing simply clears; matching is a low-stakes drill, so it costs
- * nothing.
+ * Design screen 06. Pick a term on the left, then its meaning on the right.
+ * Pairing is resolved locally so a wrong tap can shake and clear without
+ * spending an attempt; the finished board is what the engine evaluates.
  */
-export function MatchingExercise({ exercise, onAdvance }: MatchingExerciseProps) {
-  const [selectedLeftId, setSelectedLeftId] = useState<string | null>(null);
-  const [pairedLeftIds, setPairedLeftIds] = useState<readonly string[]>([]);
-  const [wrongLeftId, setWrongLeftId] = useState<string | null>(null);
+export function MatchingExercise({
+  evaluation,
+  exercise,
+  onContinue,
+  onSubmit,
+  subject,
+}: ExerciseViewProps<MatchingDefinition>) {
+  const [pairedIds, setPairedIds] = useState<readonly string[]>([]);
+  const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [wrongId, setWrongId] = useState<string | null>(null);
   const [wrongAttempts, setWrongAttempts] = useState(0);
 
-  const pairedRightIds = exercise.left
-    .filter((item) => pairedLeftIds.includes(item.id))
-    .map((item) => item.matchId);
-  const allMatched = pairedLeftIds.length === exercise.left.length;
-  const progress = `${pairedLeftIds.length}/${exercise.left.length} eşleşti · ${exercise.subtitle}`;
+  /** Sorted so the right column never sits pre-aligned with the left. */
+  const rightLabels = useMemo(
+    () => exercise.pairs.map((pair) => pair.right).slice().sort((a, b) => a.localeCompare(b, 'tr')),
+    [exercise.pairs],
+  );
 
-  const pickRight = (rightId: string) => {
-    if (selectedLeftId === null || pairedRightIds.includes(rightId)) {
+  const checked = evaluation !== null;
+  const pairedLabels = exercise.pairs
+    .filter((pair) => pairedIds.includes(pair.id))
+    .map((pair) => pair.right);
+  const allMatched = pairedIds.length === exercise.pairs.length;
+  const progress = `${pairedIds.length}/${exercise.pairs.length} eşleşti · ${exercise.subtitle}`;
+
+  const pickRight = (label: string) => {
+    if (selectedId === null || pairedLabels.includes(label)) {
       return;
     }
 
-    const selected = exercise.left.find((item) => item.id === selectedLeftId);
-    if (selected?.matchId === rightId) {
-      setPairedLeftIds((ids) => [...ids, selected.id]);
-      setSelectedLeftId(null);
-      setWrongLeftId(null);
+    const selected = exercise.pairs.find((pair) => pair.id === selectedId);
+    if (selected?.right === label) {
+      setPairedIds((ids) => [...ids, selected.id]);
+      setSelectedId(null);
+      setWrongId(null);
       return;
     }
 
-    setWrongLeftId(selectedLeftId);
+    setWrongId(selectedId);
     setWrongAttempts((count) => count + 1);
-    setSelectedLeftId(null);
+    setSelectedId(null);
   };
 
   const reshuffle = () => {
-    setPairedLeftIds([]);
-    setSelectedLeftId(null);
-    setWrongLeftId(null);
+    setPairedIds([]);
+    setSelectedId(null);
+    setWrongId(null);
     setWrongAttempts(0);
   };
 
@@ -66,7 +75,7 @@ export function MatchingExercise({ exercise, onAdvance }: MatchingExerciseProps)
         showsVerticalScrollIndicator={false}
         style={styles.scroll}
       >
-        <SubjectTag label={exercise.tag} subject={exercise.subject} />
+        <SubjectTag label={exercise.tag} subject={subject} />
 
         <View style={styles.heading}>
           <AppText accessibilityRole="header" variant="headingM">
@@ -79,27 +88,27 @@ export function MatchingExercise({ exercise, onAdvance }: MatchingExerciseProps)
 
         <View style={styles.board}>
           <View style={styles.column}>
-            {exercise.left.map((item) => {
-              const paired = pairedLeftIds.includes(item.id);
+            {exercise.pairs.map((pair) => {
+              const paired = pairedIds.includes(pair.id);
               const tone: MatchTone = paired
                 ? 'paired'
-                : wrongLeftId === item.id
+                : wrongId === pair.id
                   ? 'wrong'
-                  : selectedLeftId === item.id
+                  : selectedId === pair.id
                     ? 'selected'
                     : 'idle';
 
               return (
-                <Shake key={item.id} trigger={tone === 'wrong' ? wrongAttempts : 0}>
+                <Shake key={pair.id} trigger={tone === 'wrong' ? wrongAttempts : 0}>
                   <MatchTile
-                    disabled={paired}
-                    label={item.label}
+                    disabled={paired || checked}
+                    label={pair.left}
                     onPress={() => {
-                      setSelectedLeftId(item.id);
-                      setWrongLeftId(null);
+                      setSelectedId(pair.id);
+                      setWrongId(null);
                     }}
                     stateLabel={matchStateLabels[tone]}
-                    testID={`match-left-${item.id}`}
+                    testID={`match-left-${pair.id}`}
                     tone={tone}
                   />
                 </Shake>
@@ -108,18 +117,18 @@ export function MatchingExercise({ exercise, onAdvance }: MatchingExerciseProps)
           </View>
 
           <View style={styles.column}>
-            {exercise.right.map((item) => {
-              const paired = pairedRightIds.includes(item.id);
+            {rightLabels.map((label) => {
+              const paired = pairedLabels.includes(label);
 
               return (
                 <MatchTile
                   compact
-                  disabled={paired}
-                  key={item.id}
-                  label={item.label}
-                  onPress={() => pickRight(item.id)}
+                  disabled={paired || checked}
+                  key={label}
+                  label={label}
+                  onPress={() => pickRight(label)}
                   stateLabel={paired ? matchStateLabels.paired : undefined}
-                  testID={`match-right-${item.id}`}
+                  testID={`match-right-${label}`}
                   tone={paired ? 'paired' : 'idle'}
                 />
               );
@@ -128,8 +137,8 @@ export function MatchingExercise({ exercise, onAdvance }: MatchingExerciseProps)
         </View>
       </ScrollView>
 
-      <BottomAction surfaceColor={allMatched ? theme.colors.status.successSurface : undefined}>
-        {allMatched ? (
+      <BottomAction surfaceColor={checked ? theme.colors.status.successSurface : undefined}>
+        {checked ? (
           <View accessible accessibilityLiveRegion="polite" style={styles.doneRow}>
             <View style={styles.doneBadge}>
               <AppText color="inverse" variant="labelM">
@@ -143,18 +152,34 @@ export function MatchingExercise({ exercise, onAdvance }: MatchingExerciseProps)
         ) : null}
 
         <AppButton
-          label={allMatched ? 'DEVAM ET' : 'TEKRAR KARIŞTIR'}
+          disabled={!allMatched && !checked}
+          label={checked ? 'DEVAM ET' : 'KONTROL ET'}
           onPress={() => {
-            if (allMatched) {
-              reshuffle();
-              onAdvance();
+            if (checked) {
+              onContinue();
               return;
             }
-            reshuffle();
+            onSubmit({
+              kind: 'matching',
+              pairs: Object.fromEntries(
+                exercise.pairs
+                  .filter((pair) => pairedIds.includes(pair.id))
+                  .map((pair) => [pair.id, pair.right]),
+              ),
+            });
           }}
           testID="matching-action"
-          variant={allMatched ? 'success' : 'primary'}
+          variant={checked ? 'success' : 'primary'}
         />
+
+        {allMatched || checked ? null : (
+          <AppButton
+            label="TEKRAR KARIŞTIR"
+            onPress={reshuffle}
+            testID="matching-reshuffle"
+            variant="ghost"
+          />
+        )}
       </BottomAction>
     </>
   );
@@ -197,11 +222,7 @@ function MatchTile({
       onPress={onPress}
       testID={testID}
     >
-      <AppText
-        align={compact ? 'center' : 'left'}
-        style={{ color: visual.text }}
-        variant={compact ? 'headingM' : 'labelS'}
-      >
+      <AppText align={compact ? 'center' : 'left'} style={{ color: visual.text }} variant="labelS">
         {label}
       </AppText>
     </TactilePressable>

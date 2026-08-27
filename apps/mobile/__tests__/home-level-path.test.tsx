@@ -1,71 +1,68 @@
-import { fireEvent, render, screen } from '@testing-library/react-native';
+import { fireEvent, screen } from '@testing-library/react-native';
 
+import { KURULTAY_LESSON_ID, KURULTAY_PATH_NODE_ID } from '@/modules/curriculum/content/tyt-social-draft-bundle';
 import { HomeScreen } from '@/modules/home/ui/home-screen';
+import { renderWithSession } from './support/render-with-session';
 
 describe('home level path', () => {
-  it('presents the unit, the current level, and locked levels without relying on colour', async () => {
-    await render(<HomeScreen onSelectTab={jest.fn()} onStartLevel={jest.fn()} />);
+  it('presents the real unit and the real current level from the content bundle', async () => {
+    await renderWithSession(<HomeScreen onSelectTab={jest.fn()} onStartLevel={jest.fn()} />);
 
-    // Curriculum context, not a dashboard header.
-    expect(screen.getByText('BÖLÜM 2, ÜNİTE 3 · TARİH')).toBeTruthy();
-    expect(screen.getByText('Osmanlı’da yenileşme')).toBeTruthy();
+    expect(screen.getByText('İlk Türk Devletleri')).toBeTruthy();
+    expect(screen.getByText('ÜNİTE 1 · TARİH')).toBeTruthy();
 
-    // The current level is identifiable and says so in words.
-    expect(screen.getByLabelText(/Tanzimat Fermanı\. Şimdi\./)).toBeTruthy();
-
-    // Locked levels state their status and are not actionable.
-    const locked = screen.getByLabelText(/Islahat Fermanı\. Kilitli\./);
-    expect(locked.props.accessibilityState).toMatchObject({ disabled: true });
-
-    // İz is the habit marker, never an English "streak".
-    expect(screen.getByLabelText('13 günlük iz')).toBeTruthy();
-    expect(screen.queryByText(/streak/i)).toBeNull();
+    // Title, exercise count and duration all come from the lesson record.
+    expect(screen.getByLabelText(/Kurultay\. Şimdi\. 5 alıştırma · ~4 dk/)).toBeTruthy();
   });
 
-  it('opens the level detail panel from the current node and starts the lesson', async () => {
+  it('keeps preview levels visible but unopenable, and says so', async () => {
+    await renderWithSession(<HomeScreen onSelectTab={jest.fn()} onStartLevel={jest.fn()} />);
+
+    const previewLevel = screen.getByTestId('path-node-preview.first-turkish-states.01');
+    expect(previewLevel.props.accessibilityState).toMatchObject({ disabled: true });
+
+    const locked = screen.getByLabelText(/Töre\. Kilitli\./);
+    expect(locked.props.accessibilityState).toMatchObject({ disabled: true });
+  });
+
+  it('starts the real lesson from the level detail panel', async () => {
     const onStartLevel = jest.fn();
 
-    await render(<HomeScreen onSelectTab={jest.fn()} onStartLevel={onStartLevel} />);
+    await renderWithSession(<HomeScreen onSelectTab={jest.fn()} onStartLevel={onStartLevel} />);
 
     expect(screen.queryByTestId('level-detail-panel')).toBeNull();
 
-    await fireEvent.press(screen.getByTestId('path-node-node-tanzimat-fermani'));
+    await fireEvent.press(screen.getByTestId(`path-node-${KURULTAY_PATH_NODE_ID}`));
 
     expect(screen.getByTestId('level-detail-panel')).toBeTruthy();
-    expect(screen.getByText('Ders 2 / 5 · +20 XP')).toBeTruthy();
+    expect(screen.getByText('5 alıştırma · ~4 dk')).toBeTruthy();
 
     await fireEvent.press(screen.getByTestId('level-detail-cta'));
 
-    expect(onStartLevel).toHaveBeenCalledTimes(1);
+    expect(onStartLevel).toHaveBeenCalledWith(KURULTAY_LESSON_ID, KURULTAY_PATH_NODE_ID);
   });
 
   it('closes the detail panel when the same node is tapped again', async () => {
-    await render(<HomeScreen onSelectTab={jest.fn()} onStartLevel={jest.fn()} />);
+    await renderWithSession(<HomeScreen onSelectTab={jest.fn()} onStartLevel={jest.fn()} />);
 
-    await fireEvent.press(screen.getByTestId('path-node-node-tanzimat-fermani'));
-    await fireEvent.press(screen.getByTestId('path-node-node-tanzimat-fermani'));
+    await fireEvent.press(screen.getByTestId(`path-node-${KURULTAY_PATH_NODE_ID}`));
+    await fireEvent.press(screen.getByTestId(`path-node-${KURULTAY_PATH_NODE_ID}`));
 
     expect(screen.queryByTestId('level-detail-panel')).toBeNull();
   });
 
-  it('marks the path tab selected and routes every other tab', async () => {
+  it('marks the path tab selected and routes every other enabled tab', async () => {
     const onSelectTab = jest.fn();
 
-    await render(<HomeScreen onSelectTab={onSelectTab} onStartLevel={jest.fn()} />);
+    await renderWithSession(<HomeScreen onSelectTab={onSelectTab} onStartLevel={jest.fn()} />);
 
     expect(screen.getByTestId('tab-yol').props.accessibilityState).toMatchObject({
       selected: true,
     });
 
-    for (const tab of ['gorev', 'lig', 'magaza', 'profil']) {
-      await fireEvent.press(screen.getByTestId(`tab-${tab}`));
-    }
+    await fireEvent.press(screen.getByTestId('tab-gorev'));
+    await fireEvent.press(screen.getByTestId('tab-profil'));
 
-    expect(onSelectTab.mock.calls.map(([tab]) => tab)).toEqual([
-      'gorev',
-      'lig',
-      'magaza',
-      'profil',
-    ]);
+    expect(onSelectTab.mock.calls.map(([tab]) => tab)).toEqual(['gorev', 'profil']);
   });
 });

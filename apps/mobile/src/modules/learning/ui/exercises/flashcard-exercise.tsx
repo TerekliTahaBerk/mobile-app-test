@@ -1,44 +1,55 @@
 import { useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 
-import type { FlashcardPreview } from '@/modules/learning/model/lesson-preview-data';
+import type { FlashcardExercise as FlashcardDefinition } from '@/modules/curriculum/domain/content-types';
+import type { ExerciseViewProps } from '@/modules/learning/ui/exercise-view';
 import { AppButton } from '@/shared/ui/components/app-button';
 import { AppText } from '@/shared/ui/components/app-text';
 import { BottomAction } from '@/shared/ui/components/bottom-action';
 import { SubjectTag } from '@/shared/ui/components/subject-tag';
 import { theme } from '@/shared/ui/theme/tokens';
 
-type FlashcardExerciseProps = {
+type FlashcardExerciseProps = ExerciseViewProps<FlashcardDefinition> & {
   /** Owned by the lesson so the HUD can report deck position. */
   cardIndex: number;
-  exercise: FlashcardPreview;
-  onAdvance: () => void;
   onCardIndexChange: (index: number) => void;
 };
 
 /**
- * Design screen 07. Tap the card to turn it over, then say whether you knew
- * it. The self-report is not recorded — review scheduling belongs to the
- * learning system.
+ * Design screen 07. Tap to turn the card over, then say whether you knew it.
+ * Recall is self-reported: the deck is evidence for the skill, never a verdict,
+ * so working through it submits once at the end and is never marked wrong.
  */
 export function FlashcardExercise({
   cardIndex,
+  evaluation,
   exercise,
-  onAdvance,
   onCardIndexChange,
+  onContinue,
+  onSubmit,
+  subject,
 }: FlashcardExerciseProps) {
   const [turned, setTurned] = useState(false);
+  const [missed, setMissed] = useState(false);
 
   const card = exercise.cards[cardIndex];
   if (card === undefined) {
     return null;
   }
 
-  const next = () => {
+  const checked = evaluation !== null;
+
+  const report = (knew: boolean) => {
+    if (!knew) {
+      setMissed(true);
+    }
+
     if (cardIndex + 1 >= exercise.cards.length) {
-      onAdvance();
+      // The deck is done; hand a single self-report to the engine.
+      onSubmit({ kind: 'flashcard', selfReport: !knew || missed ? 'unknown' : 'known' });
       return;
     }
+
     setTurned(false);
     onCardIndexChange(cardIndex + 1);
   };
@@ -50,7 +61,7 @@ export function FlashcardExercise({
         showsVerticalScrollIndicator={false}
         style={styles.scroll}
       >
-        <SubjectTag label={exercise.tag} subject={exercise.subject} />
+        <SubjectTag label={exercise.tag} subject={subject} />
 
         <Pressable
           accessibilityHint="Kartın diğer yüzünü gösterir"
@@ -66,24 +77,28 @@ export function FlashcardExercise({
       </ScrollView>
 
       <BottomAction>
-        <View style={styles.verdictRow}>
-          <AppButton
-            fullWidth={false}
-            label="Bilmiyordum"
-            onPress={next}
-            style={styles.verdictButton}
-            testID="flashcard-unknown"
-            variant="neutral"
-          />
-          <AppButton
-            fullWidth={false}
-            label="Biliyordum"
-            onPress={next}
-            style={styles.verdictButton}
-            testID="flashcard-known"
-            variant="success"
-          />
-        </View>
+        {checked ? (
+          <AppButton label="DEVAM ET" onPress={onContinue} testID="flashcard-continue" />
+        ) : (
+          <View style={styles.verdictRow}>
+            <AppButton
+              fullWidth={false}
+              label="Bilmiyordum"
+              onPress={() => report(false)}
+              style={styles.verdictButton}
+              testID="flashcard-unknown"
+              variant="neutral"
+            />
+            <AppButton
+              fullWidth={false}
+              label="Biliyordum"
+              onPress={() => report(true)}
+              style={styles.verdictButton}
+              testID="flashcard-known"
+              variant="success"
+            />
+          </View>
+        )}
       </BottomAction>
     </>
   );
@@ -105,7 +120,7 @@ function CardFront({ front }: { front: string }) {
   );
 }
 
-function CardBack({ card }: { card: FlashcardPreview['cards'][number] }) {
+function CardBack({ card }: { card: FlashcardDefinition['cards'][number] }) {
   return (
     <View style={[styles.card, styles.cardBack]}>
       <AppText style={styles.backEyebrow} variant="eyebrow">

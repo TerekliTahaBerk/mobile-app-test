@@ -1,5 +1,7 @@
 import { Pressable, StyleSheet, View } from 'react-native';
 
+import { getContentIndex } from '@/modules/curriculum/content/content-source';
+import type { LessonId } from '@/modules/curriculum/domain/content-types';
 import { lessonPreviewData } from '@/modules/learning/model/lesson-preview-data';
 import { AppButton } from '@/shared/ui/components/app-button';
 import { AppText } from '@/shared/ui/components/app-text';
@@ -12,16 +14,22 @@ import { Bob } from '@/shared/ui/motion/motion';
 import { theme } from '@/shared/ui/theme/tokens';
 
 type LessonIntroScreenProps = {
+  lessonId: LessonId;
   onBack: () => void;
   onContinue: () => void;
 };
 
 /**
- * Design screen 02. A held beat before the drill starts: ÇİZGİ names what is
- * coming and how close today's İz is.
+ * Design screen 02. A held beat before the drill starts: ÇİZGİ names the real
+ * lesson that is about to open.
+ *
+ * The İz line stays preview copy — there is no İz calculation yet.
  */
-export function LessonIntroScreen({ onBack, onContinue }: LessonIntroScreenProps) {
-  const { intro } = lessonPreviewData;
+export function LessonIntroScreen({ lessonId, onBack, onContinue }: LessonIntroScreenProps) {
+  const index = getContentIndex();
+  const lesson = index.getLesson(lessonId);
+  const topic = index.getTopic(lesson.topicId);
+  const unit = index.getUnit(topic.unitId);
 
   return (
     <Screen includeBottomInset={false} testID="lesson-intro-screen">
@@ -38,25 +46,29 @@ export function LessonIntroScreen({ onBack, onContinue }: LessonIntroScreenProps
       <View style={styles.stage}>
         <View style={styles.bubble}>
           <AppText accessibilityRole="header" align="center" color="body" variant="bodyL">
-            {intro.prompt}
+            {`Hazır mısın? ${unit.title} · ${lesson.title}`}
           </AppText>
           <View importantForAccessibility="no-hide-descendants" style={styles.bubbleTail} />
         </View>
 
         <Bob duration={3000}>
-          <Cizgi mood={intro.mood} width={196} />
+          <Cizgi mood="pose" width={196} />
         </Bob>
 
-        <View accessible accessibilityLabel={intro.traceNote} style={styles.traceBlock}>
+        <View accessible accessibilityLabel={lessonPreviewData.intro.traceNote} style={styles.traceBlock}>
           <TraceMark size="md" />
           <AppText color="muted" variant="bodyS">
-            {intro.traceNote}
+            {lessonPreviewData.intro.traceNote}
           </AppText>
         </View>
       </View>
 
       <BottomAction>
-        <AppButton label={intro.cta} onPress={onContinue} testID="lesson-intro-cta" />
+        <AppButton
+          label={lessonPreviewData.intro.cta}
+          onPress={onContinue}
+          testID="lesson-intro-cta"
+        />
       </BottomAction>
     </Screen>
   );

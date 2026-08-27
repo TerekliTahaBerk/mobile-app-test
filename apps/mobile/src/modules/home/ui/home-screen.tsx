@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import { ScrollView, StyleSheet, type LayoutChangeEvent } from 'react-native';
 
-import { homePreviewData } from '@/modules/home/model/home-preview-data';
+import { buildHomeViewModel } from '@/modules/home/model/home-view-model';
 import { BottomTabBar, type AppTabKey } from '@/modules/home/ui/bottom-tab-bar';
 import { LevelPath } from '@/modules/home/ui/level-path';
 import { PathHud } from '@/modules/home/ui/path-hud';
@@ -11,7 +11,8 @@ import { theme } from '@/shared/ui/theme/tokens';
 
 type HomeScreenProps = {
   onSelectTab: (tab: AppTabKey) => void;
-  onStartLevel: () => void;
+  /** Called with the real lesson behind the selected level. */
+  onStartLevel: (lessonId: string, pathNodeId: string) => void;
 };
 
 /**
@@ -19,6 +20,7 @@ type HomeScreenProps = {
  * thing off this screen: buradan devam et.
  */
 export function HomeScreen({ onSelectTab, onStartLevel }: HomeScreenProps) {
+  const home = buildHomeViewModel();
   const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null);
   const scrollRef = useRef<ScrollView>(null);
   const viewportHeight = useRef(0);
@@ -40,8 +42,8 @@ export function HomeScreen({ onSelectTab, onStartLevel }: HomeScreenProps) {
 
   return (
     <Screen includeBottomInset={false} testID="home-screen">
-      <PathHud hud={homePreviewData.hud} />
-      <UnitBanner unit={homePreviewData.unit} />
+      <PathHud hud={home.hud} />
+      <UnitBanner unit={home.unit} />
 
       <ScrollView
         contentContainerStyle={styles.pathContent}
@@ -53,9 +55,9 @@ export function HomeScreen({ onSelectTab, onStartLevel }: HomeScreenProps) {
         style={styles.pathScroll}
       >
         <LevelPath
-          companion={homePreviewData.companion}
-          level={homePreviewData.currentLevel}
-          nodes={homePreviewData.nodes}
+          companion={home.companion}
+          level={home.currentLevel}
+          nodes={home.nodes}
           onPanelMeasured={revealPanel}
           onSelectNode={toggleNode}
           onStartLevel={onStartLevel}
