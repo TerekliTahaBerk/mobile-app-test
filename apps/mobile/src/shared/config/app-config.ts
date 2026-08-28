@@ -50,6 +50,7 @@ export const APP_MODE: AppMode =
       : 'productionPilot';
 
 export const FEATURES: FeatureFlags = FLAGS_BY_MODE[APP_MODE];
+export const APP_CONFIG = Object.freeze({ features: FEATURES, mode: APP_MODE });
 
 /** Test seam: resolve flags for a named mode without touching `__DEV__`. */
 export function featuresForMode(mode: AppMode): FeatureFlags {

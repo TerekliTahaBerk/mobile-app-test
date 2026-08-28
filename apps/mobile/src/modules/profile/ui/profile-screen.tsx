@@ -4,18 +4,18 @@ import type { Badge } from '@/modules/progress/domain/badge-policy';
 import type { ProfileViewModel } from '@/modules/profile/model/profile-view-model';
 import { AppText } from '@/shared/ui/components/app-text';
 import { Card } from '@/shared/ui/components/card';
-import { ChevronIcon, LockIcon, StarIcon, StreakIcon } from '@/shared/ui/components/icons';
+import { ChevronIcon, LockIcon, StarIcon, StreakIcon, TargetIcon } from '@/shared/ui/components/icons';
 import { Screen } from '@/shared/ui/components/screen';
+import { TactilePressable } from '@/shared/ui/components/tactile-pressable';
 import { BottomTabBar, type AppTabKey } from '@/shared/ui/navigation/bottom-tab-bar';
 import { theme } from '@/shared/ui/theme/tokens';
 
 type ProfileScreenProps = {
-  onOpenLeagueHistory: () => void;
-  onOpenPremium: () => void;
+  onOpenLeagueHistory?: (() => void) | undefined;
+  onOpenPremium?: (() => void) | undefined;
   onOpenSettings: () => void;
+  onOpenTopicPerformance: () => void;
   onSelectTab: (tab: AppTabKey) => void;
-  /** Shown on the Premium row when the entitlement is already held. */
-  premiumActive: boolean;
   viewModel: ProfileViewModel;
 };
 
@@ -28,10 +28,15 @@ export function ProfileScreen({
   onOpenLeagueHistory,
   onOpenPremium,
   onOpenSettings,
+  onOpenTopicPerformance,
   onSelectTab,
-  premiumActive,
   viewModel,
 }: ProfileScreenProps) {
+  const needsPractice = viewModel.topicPerformance.filter(
+    (topic) => topic.band === 'needsPractice',
+  ).length;
+  const strong = viewModel.topicPerformance.filter((topic) => topic.band === 'strong').length;
+
   return (
     <Screen includeBottomInset={false} testID="profile-screen">
       <ScrollView contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
@@ -82,6 +87,57 @@ export function ProfileScreen({
         </View>
 
         <AppText accessibilityRole="header" style={styles.sectionTitle} variant="headingS">
+          Konu performansın
+        </AppText>
+        <TactilePressable
+          accessibilityLabel="Konu performansı detayını aç"
+          accessibilityRole="button"
+          depthColor={theme.colors.action.primaryDepth}
+          faceStyle={styles.performanceFace}
+          onPress={onOpenTopicPerformance}
+          style={styles.performanceEntry}
+          testID="profile-topic-performance"
+        >
+          <View style={styles.performanceHeader}>
+            <View style={styles.performanceIcon}>
+              <TargetIcon color={theme.colors.status.successInk} size={24} />
+            </View>
+            <View style={styles.performanceHeading}>
+              <AppText variant="headingXS">
+                {viewModel.topicPerformance.length === 0
+                  ? 'İlk verini oluşturalım'
+                  : `${viewModel.topicPerformance.length} ana konu izleniyor`}
+              </AppText>
+              <AppText color="secondary" variant="proseS">
+                Doğru ve yanlışlarını ana konu ile alt konu düzeyinde incele.
+              </AppText>
+            </View>
+            <ChevronIcon color={theme.colors.text.accentStrong} />
+          </View>
+          {viewModel.topicPerformance.length === 0 ? null : (
+            <View style={styles.performanceMetrics}>
+              <View style={styles.performanceMetric}>
+                <AppText color="danger" variant="numeric">
+                  {needsPractice}
+                </AppText>
+                <AppText color="secondary" variant="caption">
+                  Tekrar gerekli
+                </AppText>
+              </View>
+              <View style={styles.performanceDivider} />
+              <View style={styles.performanceMetric}>
+                <AppText color="success" variant="numeric">
+                  {strong}
+                </AppText>
+                <AppText color="secondary" variant="caption">
+                  Güçlü konu
+                </AppText>
+              </View>
+            </View>
+          )}
+        </TactilePressable>
+
+        <AppText accessibilityRole="header" style={styles.sectionTitle} variant="headingS">
           Başarılarım
         </AppText>
         <View style={styles.badgeGrid}>
@@ -91,12 +147,12 @@ export function ProfileScreen({
         </View>
 
         <Card style={styles.menu} variant="outlined">
-          <MenuRow label="Lig Geçmişim" onPress={onOpenLeagueHistory} />
-          <MenuRow
-            badge={premiumActive ? '∞ can' : undefined}
-            label="Premium"
-            onPress={onOpenPremium}
-          />
+          {onOpenLeagueHistory === undefined ? null : (
+            <MenuRow label="Lig Geçmişim" onPress={onOpenLeagueHistory} />
+          )}
+          {onOpenPremium === undefined ? null : (
+            <MenuRow label="Premium" onPress={onOpenPremium} />
+          )}
           <MenuRow label="Ayarlar" last onPress={onOpenSettings} />
         </Card>
       </ScrollView>
@@ -263,6 +319,51 @@ const styles = StyleSheet.create({
   },
   name: {
     marginTop: theme.spacing.md + 1,
+  },
+  performanceDivider: {
+    alignSelf: 'stretch',
+    backgroundColor: theme.colors.border.subtle,
+    width: 1,
+  },
+  performanceEntry: {
+    marginHorizontal: theme.spacing.xl,
+    marginTop: theme.spacing.md,
+  },
+  performanceFace: {
+    backgroundColor: theme.colors.surface.default,
+    borderColor: theme.colors.border.accent,
+    borderRadius: theme.radii.large,
+    borderWidth: 2,
+    padding: theme.spacing.lg,
+  },
+  performanceHeader: {
+    alignItems: 'center',
+    flexDirection: 'row',
+    gap: theme.spacing.md,
+  },
+  performanceHeading: {
+    flex: 1,
+    gap: theme.spacing.xs,
+  },
+  performanceIcon: {
+    alignItems: 'center',
+    backgroundColor: theme.colors.status.successSoft,
+    borderRadius: theme.radii.medium,
+    height: 46,
+    justifyContent: 'center',
+    width: 46,
+  },
+  performanceMetric: {
+    alignItems: 'center',
+    flex: 1,
+  },
+  performanceMetrics: {
+    borderTopColor: theme.colors.border.hairline,
+    borderTopWidth: 1,
+    flexDirection: 'row',
+    gap: theme.spacing.lg,
+    marginTop: theme.spacing.lg,
+    paddingTop: theme.spacing.lg,
   },
   scroll: {
     paddingBottom: theme.spacing.xxl,

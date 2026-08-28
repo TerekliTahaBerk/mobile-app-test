@@ -2,7 +2,15 @@
 
 Learning flows must be measurable through a replaceable, typed analytics interface. Event calls should observe application or domain outcomes instead of being scattered through presentation components.
 
-The initial funnel will eventually include app open, lesson start, exercise view, answer submission, feedback, lesson completion, and return activity. Event schemas should carry a version and stable curriculum/content identifiers. They must not include raw answers, free-form student text, names, email addresses, or other personal data by default.
+The internal seam is implemented in
+`apps/mobile/src/shared/observability/observability.ts`. It defines typed events
+for onboarding, lesson/review start and completion, resume, answer outcomes, and
+path unlocks. Payloads carry stable curriculum IDs and aggregate outcomes; they
+do not carry raw answers, free-form student text, names, email addresses, device
+identifiers, or account identity. `AppErrorBoundary`, non-critical splash work,
+and preview-only hearts persistence report through the same error seam.
 
-Milestone 1 adds no provider or event implementation. Provider selection, consent requirements, identity strategy, retention, and deletion policy remain open and require privacy review.
-
+The default adapter is no-op, so production analytics and crash reporting are
+**not active**. Provider selection, credentials, consent requirements, retention,
+deletion policy, and privacy review remain external release work. Installing a
+provider means supplying one `ObservabilityAdapter`; domain code does not change.

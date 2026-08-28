@@ -60,7 +60,12 @@ describe('recommendation', () => {
         reviewItems: [],
         unresolvedMistakes: [],
       }),
-    ).toEqual({ kind: 'resume', reason: 'resume', sessionId: 's1' });
+    ).toEqual({
+      kind: 'resume',
+      lessonId: 'lesson.test.001',
+      reason: 'resume',
+      sessionId: 's1',
+    });
   });
 
   it('prefers a due review over resuming', () => {

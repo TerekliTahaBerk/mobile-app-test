@@ -15,7 +15,13 @@ export type RecommendationReason = 'mistake' | 'newLesson' | 'resume' | 'review'
 export type Recommendation =
   | { kind: 'mistake'; reason: 'mistake'; skillId: SkillId }
   | { lessonId: LessonId; pathNodeId?: PathNodeId; reason: 'newLesson'; kind: 'lesson' }
-  | { reason: 'resume'; kind: 'resume'; sessionId: string }
+  | {
+      kind: 'resume';
+      lessonId: LessonId;
+      pathNodeId?: PathNodeId;
+      reason: 'resume';
+      sessionId: string;
+    }
   | { kind: 'review'; reason: 'review'; skillId: SkillId }
   | { kind: 'none'; reason: 'newLesson' };
 
@@ -65,7 +71,13 @@ export function recommendNext({
   }
 
   if (activeSession !== null && activeSession.status === 'active') {
-    return { kind: 'resume', reason: 'resume', sessionId: activeSession.sessionId };
+    return {
+      kind: 'resume',
+      lessonId: activeSession.lessonId,
+      ...(activeSession.pathNodeId === undefined ? {} : { pathNodeId: activeSession.pathNodeId }),
+      reason: 'resume',
+      sessionId: activeSession.sessionId,
+    };
   }
 
   if (nextLesson !== null) {

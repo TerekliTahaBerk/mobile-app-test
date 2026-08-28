@@ -29,6 +29,7 @@ type HomeScreenProps = {
   onOpenLeague: () => void;
   onOpenSubject: (subjectId: string) => void;
   onSelectTab: (tab: AppTabKey) => void;
+  showExamToggle?: boolean | undefined;
   viewModel: HomeViewModel;
 };
 
@@ -44,6 +45,7 @@ export function HomeScreen({
   onOpenLeague,
   onOpenSubject,
   onSelectTab,
+  showExamToggle = true,
   viewModel,
 }: HomeScreenProps) {
   return (
@@ -86,7 +88,7 @@ export function HomeScreen({
           <ContinueBanner card={viewModel.continueCard} onPress={onContinue} />
         )}
 
-        <View style={styles.examToggle}>
+        {showExamToggle ? <View style={styles.examToggle}>
           <SegmentedToggle
             accessibilityLabel="Sınav seçimi"
             onChange={onChangeExam}
@@ -96,7 +98,7 @@ export function HomeScreen({
             ]}
             value={exam}
           />
-        </View>
+        </View> : null}
 
         <AppText accessibilityRole="header" style={styles.sectionTitle} variant="headingM">
           Dersler
@@ -165,7 +167,7 @@ function ContinueBanner({
       </View>
       <View style={styles.continueBody}>
         <AppText color="onDarkFaint" style={styles.continueEyebrow} variant="eyebrow">
-          KALDIĞIN YERDEN
+          {card.eyebrow}
         </AppText>
         <AppText color="inverse" variant="headingXS">
           {card.subjectTitle}
@@ -176,7 +178,7 @@ function ContinueBanner({
       </View>
       <View style={styles.continueAction}>
         <AppText color="inverse" variant="labelM">
-          Devam
+          {card.actionLabel}
         </AppText>
       </View>
     </Pressable>

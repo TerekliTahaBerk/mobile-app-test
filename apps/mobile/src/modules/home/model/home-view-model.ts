@@ -1,4 +1,4 @@
-import type { LessonId, PathNodeId } from '@/modules/curriculum/domain/content-types';
+import type { LessonId, PathNodeId, SkillId } from '@/modules/curriculum/domain/content-types';
 import { subjectTheme, type SubjectTheme } from '@/shared/ui/theme/subject-theme';
 
 /**
@@ -8,10 +8,14 @@ import { subjectTheme, type SubjectTheme } from '@/shared/ui/theme/subject-theme
  */
 
 export type ContinueCard = {
-  lessonId: LessonId;
-  pathNodeId: PathNodeId;
+  action:
+    | { kind: 'lesson'; lessonId: LessonId; pathNodeId: PathNodeId }
+    | { kind: 'resume'; sessionId: string }
+    | { kind: 'review'; skillId: SkillId };
+  actionLabel: string;
   /** "İlk ve Orta Çağlarda Türk Dünyası · %60" */
   detail: string;
+  eyebrow: string;
   subjectTitle: string;
 };
 
@@ -42,9 +46,14 @@ export type HomeViewModel = {
 /** The Ana Sayfa fixture used by the design preview. */
 export const homePreviewData: HomeViewModel = {
   continueCard: {
+    action: {
+      kind: 'lesson',
+      lessonId: 'lesson.history.chronology.001',
+      pathNodeId: 'path.history.first-turkish-states.03',
+    },
+    actionLabel: 'Devam',
     detail: 'İlk ve Orta Çağlarda Türk Dünyası · %60',
-    lessonId: 'lesson.history.chronology.001',
-    pathNodeId: 'path.history.first-turkish-states.03',
+    eyebrow: 'KALDIĞIN YERDEN',
     subjectTitle: 'TYT Tarih',
   },
   greeting: 'Merhaba, Ege',

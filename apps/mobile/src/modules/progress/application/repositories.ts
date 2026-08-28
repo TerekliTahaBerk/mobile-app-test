@@ -39,7 +39,18 @@ export type SessionRepository = {
 };
 
 export type AttemptRepository = {
+  listAllScored: () => Promise<readonly StoredAttempt[]>;
   listForSession: (sessionId: string) => Promise<readonly StoredAttempt[]>;
+};
+
+/** Atomically snapshots an active session and every attempt observed so far. */
+export type SessionProgressRepository = {
+  save: (session: StoredSession, attempts: readonly StoredAttempt[]) => Promise<void>;
+};
+
+export type LearnerStatisticsRepository = {
+  /** Derived from durable scored attempts and completed sessions. */
+  read: () => Promise<{ correctAnswers: number; perfectRounds: number }>;
 };
 
 export type XpRepository = {
@@ -133,6 +144,8 @@ export type ProgressRepositories = {
   mistakes: MistakeRepository;
   progress: ProgressRepository;
   review: ReviewRepository;
+  sessionProgress: SessionProgressRepository;
   sessions: SessionRepository;
+  statistics: LearnerStatisticsRepository;
   xp: XpRepository;
 };

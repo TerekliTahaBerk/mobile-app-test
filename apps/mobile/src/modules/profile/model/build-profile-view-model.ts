@@ -2,6 +2,7 @@ import { describeProfile, initialFor } from '@/modules/learner/domain/learner-pr
 import type { ProfileViewModel } from '@/modules/profile/model/profile-view-model';
 import type { ProgressDashboard } from '@/modules/progress/application/use-progress-dashboard';
 import { evaluateBadges } from '@/modules/progress/domain/badge-policy';
+import type { MainTopicPerformance } from '@/modules/progress/domain/topic-performance';
 
 export function buildProfileViewModel(dashboard: ProgressDashboard): ProfileViewModel {
   const profile = dashboard.profile;
@@ -41,5 +42,56 @@ export function buildProfileViewModel(dashboard: ProgressDashboard): ProfileView
     ],
     streak: dashboard.streak.current,
     totalXp: dashboard.totalXp,
+    topicPerformance: dashboard.topicPerformance.map(toTopicViewModel),
   };
+}
+
+function toTopicViewModel(topic: MainTopicPerformance): ProfileViewModel['topicPerformance'][number] {
+  return {
+    accuracy: topic.accuracy,
+    accuracyLabel: `%${Math.round(topic.accuracy * 100)} doğruluk`,
+    band: topic.band,
+    correctAnswers: topic.correctAnswers,
+    detail: `${topic.correctAnswers} doğru · ${topic.wrongAnswers} yanlış`,
+    id: topic.id,
+    nextReviewLabel: reviewLabel(topic.nextReviewAt),
+    statusLabel: bandLabel(topic.band),
+    subtopics: topic.subtopics.map((subtopic) => ({
+      accuracy: subtopic.accuracy,
+      accuracyLabel: `%${Math.round(subtopic.accuracy * 100)}`,
+      band: subtopic.band,
+      correctAnswers: subtopic.correctAnswers,
+      detail: `${subtopic.correctAnswers} doğru · ${subtopic.wrongAnswers} yanlış`,
+      id: subtopic.id,
+      nextReviewLabel: reviewLabel(subtopic.nextReviewAt),
+      statusLabel: bandLabel(subtopic.band),
+      title: subtopic.title,
+      totalAttempts: subtopic.totalAttempts,
+      wrongAnswers: subtopic.wrongAnswers,
+    })),
+    title: topic.title,
+    totalAttempts: topic.totalAttempts,
+    wrongAnswers: topic.wrongAnswers,
+  };
+}
+
+function reviewLabel(atIso: string | null): string | null {
+  if (atIso === null) {
+    return null;
+  }
+  return `Sonraki tekrar ${new Intl.DateTimeFormat('tr-TR', {
+    day: 'numeric',
+    month: 'short',
+  }).format(new Date(atIso))}`;
+}
+
+function bandLabel(band: MainTopicPerformance['band']): string {
+  switch (band) {
+    case 'strong':
+      return 'Güçlü';
+    case 'needsPractice':
+      return 'Tekrar gerekli';
+    case 'developing':
+      return 'Gelişiyor';
+  }
 }

@@ -60,6 +60,7 @@ function LearnShell({ viewModel }: { viewModel: LearnViewModel }) {
       onChangeExam={setExam}
       onOpenSubject={(subjectId) => router.push(`/ogren/${subjectId}`)}
       onSelectTab={onSelectTab}
+      showExamToggle={APP_MODE === 'designPreview'}
       viewModel={viewModel}
     />
   );

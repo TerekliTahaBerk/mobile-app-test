@@ -3,15 +3,16 @@
 This is the honest checklist for App Store and Google Play release.
 
 **Current state: not releasable.** The local-first product loop is real and
-durable, but the curriculum is one engineering-written draft topic, production
-observability is absent, and store/legal work is incomplete.
+durable, but the 10-lesson Tarih path is engineering-written draft material,
+production observability has no deployed provider, and store/legal work is incomplete.
 
 ## Ready
 
 | Area | State |
 | --- | --- |
 | Native product shell | Approved screens, semantic design system, navigation, crash containment |
-| Content contract | Versioned bundle, stable IDs, semantic validation, one draft Tarih lesson |
+| Content contract | Versioned bundle, stable IDs, semantic validation, 10 draft Tarih lessons across 3 units |
+| First launch | SQLite-ready profile gate, durable onboarding completion, recoverable write failure |
 | Learning engine | Pure deterministic reducer, evaluators, attempts, events, XP policy |
 | Polished vertical slice | Home → lesson/review → completion → İz → Home |
 | Persistence | `expo-sqlite`, explicit migrations, foreign keys, WAL, startup gate |
@@ -24,9 +25,12 @@ observability is absent, and store/legal work is incomplete.
 | Review | Deterministic 1/3/7/14/30-day ladder and existing exercise UI |
 | Mistakes | One unresolved remediation record per skill; successful review can resolve it |
 | Recommendation | mistake → review → resume → new lesson, deterministic ties |
+| Profile metrics | Correct answers and perfect rounds derived from durable attempts; earnable badges |
 | Account model | Explicit device-local/accountless pilot; no fake account infrastructure |
 | Fake-feature gating | League, Plus, quests, hearts, and gems off in production pilot |
+| Observability foundation | Typed privacy-conscious events, error/diagnostic seams, no-op adapter |
 | Automated quality | Lint, strict typecheck, domain/UI/SQLite contract tests |
+| CI | GitHub Actions runs install, lint, strict typecheck, and tests on pushes/PRs |
 
 ## Blockers
 
@@ -39,9 +43,11 @@ This is the largest release blocker.
 
 ### 2. Production observability — engineering + product
 
-There is no crash reporter, analytics, production funnel instrumentation, or
-remote configuration. `AppErrorBoundary` contains crashes but cannot report
-them. Milestone 8 owns this work and must preserve the small privacy surface.
+Typed analytics, error-reporting, diagnostics, and build configuration seams
+exist, and key onboarding/lesson/review/path events are instrumented. The active
+adapter is deliberately no-op: no crash/analytics provider, credentials,
+consent policy, retention policy, or remote configuration is deployed. Do not
+claim production monitoring until those external decisions are complete.
 
 ### 3. Native acceptance and accessibility hardening — engineering
 
@@ -56,8 +62,9 @@ performance passes remain.
 - Publish the privacy policy and complete App Privacy/data-safety declarations.
 - Decide age rating and the treatment of minors under KVKK and applicable law.
 - Produce store descriptions, screenshots, keywords, and support URLs.
-- Confirm trademark clearance for TEKRARLA and ÇİZGİ.
-- Confirm commercial ownership/licensing and production-resolution ÇİZGİ art.
+- Confirm trademark clearance for the Online Dershanem working name; `tekrarla`
+  remains a technical identifier, not the cleared commercial name.
+- Confirm commercial ownership/licensing and production-resolution Dino art.
 
 ### 5. Device-only progress disclosure — product
 
@@ -74,14 +81,18 @@ release blockers while they remain hidden.
 
 ## Smaller submission items
 
-- Re-render ÇİZGİ from the original 3D source for large 3× placements.
+- Track the current npm audit result: 11 moderate, 0 high, 0 critical findings,
+  all in the Expo config/build-tool chain through `xcode`/`uuid`. Expo Doctor
+  passes 21/21 checks; npm's offered remediation is an incompatible Expo 57 →
+  46 downgrade, so resolution must come through an Expo-compatible upstream
+  update rather than a forced audit fix.
+- Replace the placeholder with production-resolution Dino art for large 3× placements.
 - Confirm launch art, final app icon, and naming.
 - Define offline/support copy and local-data reset/support procedures.
 - Run final iOS and Android store-build smoke tests.
 
-## Next engineering milestone
+## Next hardening work
 
-**Milestone 8 — Analytics + Feature Flags / Production Observability.**
-
-This does not make the app release-ready by itself; academic content and store
-hardening remain independent blockers.
+Select and privacy-review the production observability provider, then perform
+recorded iOS/Android restart, accessibility, and store-build acceptance passes.
+None of that replaces the independent academic-content and store/legal blockers.

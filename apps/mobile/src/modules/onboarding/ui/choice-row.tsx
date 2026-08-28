@@ -10,6 +10,7 @@ type ChoiceRowProps = {
   /** Optional leading badge — the exam initials or the goal's round count. */
   badge?: ReactNode;
   detail?: string | undefined;
+  disabled?: boolean | undefined;
   label: string;
   onPress: () => void;
   selected: boolean;
@@ -22,6 +23,7 @@ type ChoiceRowProps = {
 export function ChoiceRow({
   badge,
   detail,
+  disabled = false,
   label,
   onPress,
   selected,
@@ -32,14 +34,21 @@ export function ChoiceRow({
     <TactilePressable
       accessibilityLabel={detail === undefined ? label : `${label}. ${detail}`}
       accessibilityRole="radio"
-      accessibilityState={{ selected }}
+      accessibilityState={{ disabled, selected }}
+      disabled={disabled}
       depth={theme.depth.cardBorder}
       depthColor={selected ? theme.colors.action.primary : theme.colors.border.subtle}
       onPress={onPress}
       radius={theme.radii.large + 2}
       testID={testID}
     >
-      <View style={[styles.face, selected ? styles.faceSelected : null]}>
+      <View
+        style={[
+          styles.face,
+          selected ? styles.faceSelected : null,
+          disabled ? styles.faceDisabled : null,
+        ]}
+      >
         {badge === undefined ? null : (
           <View style={[styles.badge, selected ? styles.badgeSelected : null]}>{badge}</View>
         )}
@@ -104,6 +113,9 @@ const styles = StyleSheet.create({
   faceSelected: {
     backgroundColor: theme.colors.surface.soft,
     borderColor: theme.colors.action.primary,
+  },
+  faceDisabled: {
+    opacity: 0.55,
   },
   radio: {
     alignItems: 'center',

@@ -35,11 +35,12 @@ import { TactilePressable } from '@/shared/ui/components/tactile-pressable';
 import { Dino } from '@/shared/ui/dino/dino';
 import { DinoSpeech } from '@/shared/ui/dino/dino-speech';
 import { theme } from '@/shared/ui/theme/tokens';
+import { trackEvent } from '@/shared/observability/observability';
 
 type OnboardingScreenProps = {
   /** Injected so the year choices do not depend on a clock inside the view. */
   currentYear: number;
-  onFinish: (profile: LearnerProfile) => void;
+  onFinish: (profile: LearnerProfile) => Promise<void> | void;
   /** There is no account system yet; the sign-in affordance is not offered. */
   onSignIn?: (() => void) | undefined;
 };
@@ -53,6 +54,8 @@ type Stage = { kind: 'question'; index: number } | { kind: 'summary' } | { kind:
  */
 export function OnboardingScreen({ currentYear, onFinish, onSignIn }: OnboardingScreenProps) {
   const [draft, setDraft] = useState<OnboardingDraft>({ remindersEnabled: true });
+  const [finishError, setFinishError] = useState<Error | null>(null);
+  const [isFinishing, setIsFinishing] = useState(false);
   const [stage, setStage] = useState<Stage>({ kind: 'welcome' });
 
   const steps = useMemo(() => applicableSteps(draft), [draft]);
@@ -74,13 +77,16 @@ export function OnboardingScreen({ currentYear, onFinish, onSignIn }: Onboarding
             Soru çöz, seriyi{'\n'}bozma.
           </AppText>
           <AppText align="center" color="onDark" style={styles.welcomeBody} variant="prose">
-            TYT, AYT ve LGS konuları kısa turlar halinde. Günde 5 dakika yeter.
+            TYT Sosyal Bilimler konuları kısa turlar halinde. Günde 5 dakika yeter.
           </AppText>
         </View>
         <BottomAction>
           <AppButton
             label="Başla"
-            onPress={() => setStage({ index: 0, kind: 'question' })}
+            onPress={() => {
+              trackEvent('onboarding_started', {});
+              setStage({ index: 0, kind: 'question' });
+            }}
             testID="onboarding-start"
             variant="inverse"
           />
@@ -138,9 +144,23 @@ export function OnboardingScreen({ currentYear, onFinish, onSignIn }: Onboarding
           </View>
         </View>
         <BottomAction>
+          {finishError === null ? null : (
+            <AppText align="center" color="danger" testID="onboarding-save-error" variant="proseS">
+              Profilin kaydedilemedi. Bağlantı gerekmiyor; tekrar deneyebilirsin.
+            </AppText>
+          )}
           <AppButton
-            label="Başla"
-            onPress={() => onFinish(completeOnboarding(draft, new Date().toISOString()))}
+            disabled={isFinishing}
+            label={isFinishing ? 'Kaydediliyor' : finishError === null ? 'Başla' : 'Tekrar dene'}
+            onPress={() => {
+              setFinishError(null);
+              setIsFinishing(true);
+              Promise.resolve(onFinish(completeOnboarding(draft, new Date().toISOString())))
+                .catch((cause: unknown) => {
+                  setFinishError(cause instanceof Error ? cause : new Error(String(cause)));
+                })
+                .finally(() => setIsFinishing(false));
+            }}
             testID="onboarding-finish"
           />
         </BottomAction>
@@ -228,7 +248,7 @@ function StepQuestion({ currentYear, draft, onPatch, step }: StepQuestionProps) 
           <View style={styles.choices}>
             <ChoiceRow
               badge={<AppText color="success" variant="labelS">YKS</AppText>}
-              detail="TYT + AYT · Lise 11–12 ve mezun"
+              detail="Pilot: TYT Sosyal Bilimler"
               label="YKS"
               onPress={() => onPatch({ exam: 'yks' })}
               selected={draft.exam === 'yks'}
@@ -236,9 +256,10 @@ function StepQuestion({ currentYear, draft, onPatch, step }: StepQuestionProps) 
             />
             <ChoiceRow
               badge={<AppText color="secondary" variant="labelS">LGS</AppText>}
-              detail="8. sınıf"
+              detail="Bu pilotta henüz yok"
+              disabled
               label="LGS"
-              onPress={() => onPatch({ exam: 'lgs', track: undefined })}
+              onPress={() => undefined}
               selected={draft.exam === 'lgs'}
               testID="onboarding-exam-lgs"
             />

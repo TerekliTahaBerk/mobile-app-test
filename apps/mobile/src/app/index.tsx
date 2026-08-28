@@ -52,21 +52,48 @@ function DurableHomeRoute() {
 
 function HomeShell({ viewModel }: { viewModel: HomeViewModel }) {
   const router = useRouter();
-  const { begin } = useLessonSession();
+  const { begin, beginReview, resume } = useLessonSession();
   const onSelectTab = useTabNavigation('anasayfa');
   const [exam, setExam] = useState<ExamFilter>('tyt');
+  const [actionError, setActionError] = useState<Error | null>(null);
+
+  if (actionError !== null) {
+    return (
+      <MessageScreen
+        action={{ label: 'Tekrar dene', onPress: () => setActionError(null) }}
+        body="Çalışma hazırlanamadı. Kayıtların silinmedi; tekrar deneyebilirsin."
+        detail={__DEV__ ? actionError.message : undefined}
+        heading="Çalışma açılamadı"
+        testID="home-action-failed"
+        tone="dimmed"
+      />
+    );
+  }
 
   return (
     <HomeScreen
       exam={exam}
       onChangeExam={setExam}
       onContinue={(card) => {
-        begin(card.lessonId, card.pathNodeId);
-        router.push('/lesson');
+        const open = async () => {
+          if (card.action.kind === 'lesson') {
+            begin(card.action.lessonId, card.action.pathNodeId);
+          } else if (card.action.kind === 'review') {
+            beginReview(card.action.skillId);
+          } else if (!(await resume(card.action.sessionId))) {
+            throw new Error('Etkin çalışma artık bulunamıyor.');
+          }
+          router.push('/lesson');
+        };
+
+        void open().catch((cause: unknown) => {
+          setActionError(cause instanceof Error ? cause : new Error(String(cause)));
+        });
       }}
       onOpenLeague={() => router.replace('/lig')}
       onOpenSubject={(subjectId) => router.push(`/ogren/${subjectId}`)}
       onSelectTab={onSelectTab}
+      showExamToggle={APP_MODE === 'designPreview'}
       viewModel={viewModel}
     />
   );

@@ -194,12 +194,7 @@ export function createLessonPersistence(
     saveProgress: async (session, kind) => {
       const atIso = new Date(clock.now()).toISOString();
       const stored = toStoredSession(session, kind, atIso);
-
-      await repositories.sessions.save(stored);
-
-      if (stored.pathNodeId !== undefined && stored.status === 'active') {
-        await repositories.progress.markStarted(stored.pathNodeId, stored.startedAt);
-      }
+      await repositories.sessionProgress.save(stored, toStoredAttempts(session));
     },
   };
 }

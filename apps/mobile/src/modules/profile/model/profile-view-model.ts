@@ -1,4 +1,5 @@
 import type { Badge } from '@/modules/progress/domain/badge-policy';
+import type { TopicPerformanceBand } from '@/modules/progress/domain/topic-performance';
 
 export type ProfileStat = {
   id: string;
@@ -16,4 +17,20 @@ export type ProfileViewModel = {
   stats: readonly ProfileStat[];
   streak: number;
   totalXp: number;
+  topicPerformance: readonly ProfileTopicPerformance[];
+};
+
+export type ProfileTopicPerformance = {
+  accuracy: number;
+  accuracyLabel: string;
+  band: TopicPerformanceBand;
+  correctAnswers: number;
+  detail: string;
+  id: string;
+  nextReviewLabel: string | null;
+  statusLabel: string;
+  subtopics: readonly Omit<ProfileTopicPerformance, 'subtopics'>[];
+  title: string;
+  totalAttempts: number;
+  wrongAnswers: number;
 };

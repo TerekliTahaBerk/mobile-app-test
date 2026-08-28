@@ -1,4 +1,4 @@
-import { useRouter } from 'expo-router';
+import { useLocalSearchParams, useRouter } from 'expo-router';
 
 import { useHearts } from '@/modules/hearts/application/hearts-store';
 import { useLessonSession } from '@/modules/learning/application/lesson-session-store';
@@ -7,8 +7,26 @@ import { MessageScreen } from '@/shared/ui/feedback/message-screen';
 
 export default function LessonRoute() {
   const router = useRouter();
-  const { abandon, lesson } = useLessonSession();
+  const params = useLocalSearchParams<{
+    beforeAccuracy?: string;
+    returnTo?: string;
+    topicId?: string;
+  }>();
+  const { lesson, persistenceError, persistenceStatus, retryPersistence } = useLessonSession();
   const hearts = useHearts();
+
+  if (persistenceStatus === 'failed') {
+    return (
+      <MessageScreen
+        action={{ label: 'Tekrar dene', onPress: retryPersistence }}
+        body="Çalışmanın son durumu kaydedilemedi. Aynı yerden güvenle tekrar deneyebilirsin."
+        detail={__DEV__ ? persistenceError?.message : undefined}
+        heading="Çalışma kaydedilemedi"
+        testID="lesson-persistence-failed"
+        tone="dimmed"
+      />
+    );
+  }
 
   if (lesson === null) {
     return (
@@ -25,9 +43,22 @@ export default function LessonRoute() {
   return (
     <LessonScreen
       hearts={hearts.unlimited ? null : hearts.hearts}
-      onComplete={() => router.replace('/lesson-complete')}
+      onComplete={() =>
+        router.replace({
+          pathname: '/lesson-complete',
+          params:
+            params.returnTo === 'topicPerformance'
+              ? {
+                  beforeAccuracy: params.beforeAccuracy ?? '',
+                  returnTo: params.returnTo,
+                  topicId: params.topicId ?? '',
+                }
+              : {},
+        })
+      }
       onExit={() => {
-        abandon();
+        // Leaving the screen is not abandoning learner state. The active
+        // snapshot remains resumable from Home and across an app restart.
         router.dismissTo('/');
       }}
       onWrongAnswer={() => {

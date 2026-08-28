@@ -80,4 +80,17 @@ describe('unit path progression', () => {
   it('returns nothing when there is no openable step left', () => {
     expect(nextOpenStep([])).toBeNull();
   });
+
+  it('unlocks the first node of a later unit only after the previous unit checkpoint', () => {
+    const subject = index.bundle.subjects.find((candidate) => candidate.id === 'tyt.history')!;
+    const firstTwoUnits = subject.unitIds.slice(0, 2);
+    const completedFirstUnit = index.getUnitPath(firstTwoUnits[0]!).map((node) => node.id);
+    const paths = firstTwoUnits.map((unitId) =>
+      buildUnitPath(unitId, index.getUnitPath(unitId), completed(...completedFirstUnit)),
+    );
+
+    expect(paths[0]?.completion).toBe(1);
+    expect(paths[1]?.steps[0]?.status).toBe('current');
+    expect(nextOpenStep(paths)?.node.id).toBe('path.history.first-turkish-states.01');
+  });
 });

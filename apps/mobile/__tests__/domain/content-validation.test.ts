@@ -101,6 +101,21 @@ describe('content bundle validation', () => {
     expect(codesFrom(bundle)).toContain('emptyCollection');
   });
 
+  it('rejects a question whose skills cross main-topic boundaries', () => {
+    const bundle = mutableCopy(tytDraftBundle);
+    const firstExercise = bundle.exercises.find((exercise) => exercise.skillIds.length > 0)!;
+    const firstSkill = bundle.skills.find((skill) => skill.id === firstExercise.skillIds[0])!;
+    const firstTopic = bundle.topics.find((topic) => topic.id === firstSkill.topicId)!;
+    const otherSkill = bundle.skills.find((skill) => {
+      const topic = bundle.topics.find((candidate) => candidate.id === skill.topicId);
+      return topic?.unitId !== firstTopic.unitId;
+    })!;
+
+    edit<{ skillIds: string[] }>(firstExercise).skillIds = [firstSkill.id, otherSkill.id];
+
+    expect(codesFrom(bundle)).toContain('invalidTaxonomy');
+  });
+
   it('keeps a contracted-but-unrendered exercise kind out of a lesson', () => {
     // Every kind in the contract has a renderer today. The guard exists for the
     // next one: a kind may be authored and stored before a screen exists, but

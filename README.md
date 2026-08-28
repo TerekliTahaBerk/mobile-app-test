@@ -1,13 +1,20 @@
-# TEKRARLA
+# Online Dershanem
 
-Mobile-first, gamified exam preparation for Turkish students. The pilot covers only TYT Sosyal Bilimler: Tarih, Coğrafya, Felsefe, and Din Kültürü ve Ahlak Bilgisi.
+Mobile-first, gamified exam preparation for Turkish students. Online Dershanem
+is the working product name; `tekrarla` remains in technical identifiers until
+commercial name and trademark clearance are complete.
 
-The repository contains the native product foundation, one validated draft
-Tarih lesson, a deterministic learning engine, and device-local SQLite progress
-covering XP, İz, mastery, review, mistakes, and session resume. The app is still
-**not releasable**: the curriculum is one unreviewed draft topic, production
-observability and store/legal work remain, and unfinished commercial/social
-features stay gated. See [docs/RELEASE_READINESS.md](docs/RELEASE_READINESS.md).
+The production pilot is limited to TYT Sosyal Bilimler. The compiled draft
+bundle currently makes only Tarih usable: 10 lessons across 3 units and 10 path
+nodes. All authored material remains engineering-written `draft` content.
+Catalogue-only subjects are not shown as available in the production pilot.
+
+The repository contains the native product foundation, deterministic learning
+engine, first-launch onboarding, and device-local SQLite progress covering XP,
+İz, mastery, review, mistakes, resumable sessions, and derived profile metrics.
+The app is still **not releasable**: human academic review and broad curriculum,
+production analytics/crash-provider deployment, native/accessibility QA, and
+store/legal work remain. See [docs/RELEASE_READINESS.md](docs/RELEASE_READINESS.md).
 
 ## Requirements
 

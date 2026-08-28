@@ -24,6 +24,7 @@ import type {
   DailyActivityRepository,
   HeartsRepository,
   LearnerProfileRepository,
+  LearnerStatisticsRepository,
   MasteryRepository,
   MistakeRepository,
   ProgressRepositories,
@@ -31,6 +32,7 @@ import type {
   ReviewRepository,
   SessionCompletionInput,
   SessionCompletionResult,
+  SessionProgressRepository,
   SessionRepository,
   XpRepository,
 } from '@/modules/progress/application/repositories';
@@ -285,6 +287,25 @@ async function upsertSession(txn: Queryable, session: StoredSession): Promise<vo
   );
 }
 
+async function insertAttempt(txn: Queryable, attempt: StoredAttempt): Promise<void> {
+  await txn.runAsync(
+    `INSERT OR IGNORE INTO attempts (
+       id, session_id, lesson_id, exercise_id, answer, correct, scored, attempt_number, occurred_at
+     ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+    [
+      attempt.id,
+      attempt.sessionId,
+      attempt.lessonId,
+      attempt.exerciseId,
+      attempt.answer,
+      attempt.correct ? 1 : 0,
+      attempt.scored ? 1 : 0,
+      attempt.attemptNumber,
+      attempt.occurredAt,
+    ],
+  );
+}
+
 /**
  * Writes one XP movement, returning the amount actually credited.
  *
@@ -384,22 +405,7 @@ async function completeSessionAtomically(
   });
 
   for (const attempt of input.attempts) {
-    await txn.runAsync(
-      `INSERT OR IGNORE INTO attempts (
-         id, session_id, lesson_id, exercise_id, answer, correct, scored, attempt_number, occurred_at
-       ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
-      [
-        attempt.id,
-        attempt.sessionId,
-        attempt.lessonId,
-        attempt.exerciseId,
-        attempt.answer,
-        attempt.correct ? 1 : 0,
-        attempt.scored ? 1 : 0,
-        attempt.attemptNumber,
-        attempt.occurredAt,
-      ],
-    );
+    await insertAttempt(txn, attempt);
   }
 
   let awardedXp = 0;
@@ -613,6 +619,13 @@ export function createSqliteRepositories(db: SQLiteDatabase): ProgressRepositori
   };
 
   const attempts: AttemptRepository = {
+    listAllScored: async () => {
+      const rows = await db.getAllAsync<AttemptRow>(
+        'SELECT * FROM attempts WHERE scored = 1 ORDER BY occurred_at, id',
+      );
+
+      return rows.map(toAttempt);
+    },
     listForSession: async (sessionId) => {
       const rows = await db.getAllAsync<AttemptRow>(
         'SELECT * FROM attempts WHERE session_id = ? ORDER BY occurred_at, attempt_number',
@@ -620,6 +633,55 @@ export function createSqliteRepositories(db: SQLiteDatabase): ProgressRepositori
       );
 
       return rows.map(toAttempt);
+    },
+  };
+
+  const sessionProgress: SessionProgressRepository = {
+    save: async (session, observedAttempts) => {
+      await db.withExclusiveTransactionAsync(async (txn) => {
+        await upsertSession(txn, session);
+        for (const attempt of observedAttempts) {
+          await insertAttempt(txn, attempt);
+        }
+        if (session.pathNodeId !== undefined && session.status === 'active') {
+          await txn.runAsync(
+            `INSERT INTO path_progress (path_node_id, status, first_started_at, completion_count)
+             VALUES (?, 'started', ?, 0)
+             ON CONFLICT (path_node_id) DO UPDATE SET
+               first_started_at = COALESCE(path_progress.first_started_at, excluded.first_started_at),
+               status = CASE WHEN path_progress.status = 'completed' THEN 'completed' ELSE 'started' END`,
+            [session.pathNodeId, session.startedAt],
+          );
+        }
+      });
+    },
+  };
+
+  const statistics: LearnerStatisticsRepository = {
+    read: async () => {
+      const correct = await db.getFirstAsync<{ count: number }>(
+        `SELECT COUNT(*) AS count FROM attempts WHERE scored = 1 AND correct = 1`,
+      );
+      const perfect = await db.getFirstAsync<{ count: number }>(
+        `SELECT COUNT(*) AS count
+         FROM sessions AS session
+         WHERE session.status = 'completed'
+           AND EXISTS (
+             SELECT 1 FROM attempts AS attempt
+             WHERE attempt.session_id = session.session_id AND attempt.scored = 1
+           )
+           AND NOT EXISTS (
+             SELECT 1 FROM attempts AS attempt
+             WHERE attempt.session_id = session.session_id
+               AND attempt.scored = 1
+               AND attempt.correct = 0
+           )`,
+      );
+
+      return {
+        correctAnswers: correct?.count ?? 0,
+        perfectRounds: perfect?.count ?? 0,
+      };
     },
   };
 
@@ -816,7 +878,9 @@ export function createSqliteRepositories(db: SQLiteDatabase): ProgressRepositori
     profile,
     progress,
     review,
+    sessionProgress,
     sessions,
+    statistics,
     xp,
   };
 }
@@ -863,4 +927,3 @@ function toLearnerProfile(row: LearnerProfileRow): LearnerProfile {
     ...(row.track === null ? {} : { track: row.track as StudyTrack }),
   };
 }
-

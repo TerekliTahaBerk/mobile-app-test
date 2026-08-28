@@ -1,6 +1,7 @@
 import { Component, type ErrorInfo, type ReactNode } from 'react';
 
 import { MessageScreen } from '@/shared/ui/feedback/message-screen';
+import { reportError } from '@/shared/observability/observability';
 
 type AppErrorBoundaryProps = {
   children: ReactNode;
@@ -32,6 +33,7 @@ export class AppErrorBoundary extends Component<AppErrorBoundaryProps, AppErrorB
 
   componentDidCatch(error: Error, info: ErrorInfo) {
     console.error('[Online Dershanem] Beklenmeyen bir hata yakalandı:', error, info.componentStack);
+    reportError(error, { componentStack: info.componentStack });
     this.props.onError?.(error, info);
   }
 

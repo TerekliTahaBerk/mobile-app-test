@@ -1,4 +1,4 @@
-import { useRouter } from 'expo-router';
+import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useEffect } from 'react';
 
 import { getContentIndex } from '@/modules/curriculum/content/content-source';
@@ -16,6 +16,11 @@ import { MessageScreen } from '@/shared/ui/feedback/message-screen';
 
 export default function LessonCompleteRoute() {
   const router = useRouter();
+  const params = useLocalSearchParams<{
+    beforeAccuracy?: string;
+    returnTo?: string;
+    topicId?: string;
+  }>();
   const { discard, lesson, persistenceStatus, retryPersistence, summary } = useLessonSession();
   const dashboard = useProgressDashboard();
   const refresh = dashboard.status === 'loading' ? null : dashboard.refresh;
@@ -67,13 +72,35 @@ export default function LessonCompleteRoute() {
   };
 
   const streak = viewModel.streak;
-  const leave = () => {
+  const leaveHome = () => {
     discard();
     // The streak screen is a milestone moment, not a per-round interstitial.
     router.replace(isStreakMilestone(streak) ? '/seri' : '/');
   };
 
-  return <LessonCompleteScreen onBackToHome={leave} onNextRound={leave} viewModel={viewModel} />;
+  const leaveNext = () => {
+    if (params.returnTo !== 'topicPerformance') {
+      leaveHome();
+      return;
+    }
+    discard();
+    router.replace({
+      pathname: '/konu-performansi',
+      params: {
+        beforeAccuracy: params.beforeAccuracy ?? '',
+        topicId: params.topicId ?? '',
+      },
+    });
+  };
+
+  return (
+    <LessonCompleteScreen
+      nextActionLabel={params.returnTo === 'topicPerformance' ? 'Performansı gör' : undefined}
+      onBackToHome={leaveHome}
+      onNextRound={leaveNext}
+      viewModel={viewModel}
+    />
+  );
 }
 
 /**

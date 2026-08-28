@@ -12,7 +12,9 @@ export function buildLearnViewModel(
 ): LearnViewModel {
   return {
     hearts,
-    rows: (dashboard.byExam.get(examId) ?? []).map(toRow),
+    rows: (dashboard.byExam.get(examId) ?? [])
+      .filter((entry) => entry.totalUnits > 0)
+      .map(toRow),
     streak: dashboard.streak.current,
   };
 }

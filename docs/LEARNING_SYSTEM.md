@@ -20,6 +20,19 @@ Evaluation is registered per exercise kind in `evaluator-registry.ts`, never bra
 
 An `Attempt` records the exercise, lesson, skills, submitted answer, correctness, attempt number, whether it was scored, and the injected timestamp. Only the final attempt on each exercise counts toward the lesson summary, so a retry does not inflate the mistake count. No free-form learner text is captured.
 
+Every observed attempt is inserted into SQLite together with its active session
+snapshot immediately after the answer/advance transition, in one transaction.
+Lesson completion remains the boundary for XP, mastery, review scheduling, and
+open mistake remediation; abandoning or crashing mid-lesson does not erase the
+raw answer history.
+
+The profile derives main-topic and subtopic performance directly from scored
+attempts and the current content taxonomy. It shows raw correct/wrong counts and
+accuracy rather than presenting these summaries as mastery. Three attempts at
+75% or better are labelled strong; two or more below 50% are labelled as needing
+practice; smaller or mixed samples remain developing. The dashboard refreshes
+whenever the profile regains focus.
+
 ## Domain events
 
 `LessonStarted`, `AnswerSubmitted`, `AnswerCorrect`, `AnswerIncorrect`, `AttemptRecorded`, `ExerciseCompleted`, `SkillEvidenceObserved`, `MistakeRecorded`, `XpEarned`, `LessonCompleted`, `LessonAbandoned`.
@@ -68,8 +81,6 @@ The pure recommendation policy chooses, in order: due unresolved mistake,
 due/overdue review, active resumable session, then the next available real path
 node. Ties use oldest due/created time and stable ID. The returned reason is
 `mistake`, `review`, `resume`, or `newLesson`.
-
-**Neither mastery nor review is implemented.** They are Release Phase 2. The event stream and the attempt model exist so that phase can be built without reshaping the engine.
 
 ## Open
 

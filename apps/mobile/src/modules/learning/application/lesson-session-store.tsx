@@ -10,7 +10,12 @@ import {
 } from 'react';
 
 import { getContentIndex } from '@/modules/curriculum/content/content-source';
-import type { LessonId, PathNodeId, SkillId } from '@/modules/curriculum/domain/content-types';
+import type {
+  LessonId,
+  PathNodeId,
+  SkillId,
+  TopicId,
+} from '@/modules/curriculum/domain/content-types';
 import { isScoredKind } from '@/modules/curriculum/domain/content-types';
 import type { ExerciseAnswer } from '@/modules/learning/domain/answers';
 import type { DomainEvent } from '@/modules/learning/domain/events';
@@ -23,6 +28,7 @@ import {
   type LessonSummary,
 } from '@/modules/learning/domain/lesson-session';
 import { XP_POLICY_V1 } from '@/modules/learning/domain/xp-policy';
+import { assembleTargetedPractice } from '@/modules/learning/domain/targeted-practice';
 import {
   createLessonPersistence,
   restoreSession,
@@ -34,6 +40,7 @@ import type {
 } from '@/modules/progress/application/repositories';
 import type { SessionKind, StoredSession } from '@/modules/progress/domain/progress-types';
 import { MessageScreen } from '@/shared/ui/feedback/message-screen';
+import { trackEvent } from '@/shared/observability/observability';
 import { systemClock, type Clock as ProgressClock } from '@/shared/time/clock';
 
 /** The bridge between the pure lesson engine, React, and durable storage. */
@@ -54,6 +61,7 @@ type LessonSessionStore = {
   abandon: () => void;
   begin: (lessonId: LessonId, pathNodeId?: PathNodeId) => void;
   beginReview: (skillId: SkillId) => void;
+  beginTopicPractice: (topicId: TopicId) => Promise<number>;
   continueAfterFeedback: () => void;
   discard: () => void;
   retryPersistence: () => void;
@@ -174,6 +182,24 @@ export function LessonSessionProvider({
         if (active.session.status === 'completed') {
           const result = await persistence.complete(active.session, active.kind);
           setCompletionResult(result);
+          if (result.firstCompletionAwarded && active.session.pathNodeId !== undefined) {
+            const completed = new Set(
+              (await repositories?.progress.getAll())
+                ?.filter((row) => row.status === 'completed')
+                .map((row) => row.pathNodeId) ?? [],
+            );
+            for (const node of getContentIndex().bundle.pathNodes) {
+              if (
+                node.prerequisiteIds.includes(active.session.pathNodeId) &&
+                node.prerequisiteIds.every((id) => completed.has(id))
+              ) {
+                trackEvent('path_node_unlocked', {
+                  pathNodeId: node.id,
+                  prerequisiteId: active.session.pathNodeId,
+                });
+              }
+            }
+          }
           setPersistenceStatus('saved');
           return;
         }
@@ -188,7 +214,7 @@ export function LessonSessionProvider({
         setPersistenceStatus('failed');
       });
     },
-    [persistence],
+    [persistence, repositories],
   );
 
   const dispatch = useCallback(
@@ -202,6 +228,7 @@ export function LessonSessionProvider({
       const next = { ...current, session: result.session };
       setEvents((previous) => [...previous, ...result.events]);
       installLesson(next);
+      trackDomainEvents(result.events, current);
       enqueuePersistence(next);
     },
     [enqueuePersistence, installLesson],
@@ -242,9 +269,31 @@ export function LessonSessionProvider({
 
       const deps: LessonEngineDeps = { exercises, lesson, xpPolicy: REVIEW_XP_POLICY };
       start(deps, 'review', clock, installLesson, setEvents, enqueuePersistence);
+      trackEvent('review_started', { lessonId: lesson.id, skillId });
       setCompletionResult(null);
     },
     [clock, enqueuePersistence, installLesson],
+  );
+
+  const beginTopicPractice = useCallback(
+    async (topicId: TopicId) => {
+      const attempts = (await repositories?.attempts.listAllScored()) ?? [];
+      const practice = assembleTargetedPractice(topicId, getContentIndex(), 5, attempts);
+      const deps: LessonEngineDeps = {
+        exercises: practice.exercises,
+        lesson: practice.lesson,
+        xpPolicy: REVIEW_XP_POLICY,
+      };
+      start(deps, 'review', clock, installLesson, setEvents, enqueuePersistence);
+      trackEvent('topic_practice_started', {
+        lessonId: practice.lesson.id,
+        questionCount: practice.exercises.length,
+        topicId,
+      });
+      setCompletionResult(null);
+      return practice.exercises.length;
+    },
+    [clock, enqueuePersistence, installLesson, repositories],
   );
 
   const retryPersistence = useCallback(() => {
@@ -284,6 +333,11 @@ export function LessonSessionProvider({
       setCompletionResult(null);
       setPersistenceError(null);
       setPersistenceStatus('idle');
+      trackEvent('lesson_resumed', {
+        lessonId: stored.lessonId,
+        sessionId,
+        sessionKind: stored.kind,
+      });
       return true;
     },
     [installLesson, progressClock, repositories],
@@ -294,6 +348,7 @@ export function LessonSessionProvider({
       abandon: () => dispatch({ at: clock(), type: 'abandonLesson' }),
       begin,
       beginReview,
+      beginTopicPractice,
       completionResult,
       continueAfterFeedback: () => dispatch({ at: clock(), type: 'continueAfterFeedback' }),
       discard: () => {
@@ -315,6 +370,7 @@ export function LessonSessionProvider({
     [
       begin,
       beginReview,
+      beginTopicPractice,
       clock,
       completionResult,
       dispatch,
@@ -356,9 +412,43 @@ function start(
     deps,
   );
   const active = { deps, kind, session: result.session };
+  trackEvent('lesson_started', {
+    lessonId: deps.lesson.id,
+    ...(deps.pathNodeId === undefined ? {} : { pathNodeId: deps.pathNodeId }),
+    sessionKind: kind,
+  });
   setEvents(result.events);
   installLesson(active);
   persist(active);
+}
+
+function trackDomainEvents(events: readonly DomainEvent[], active: ActiveLesson): void {
+  for (const event of events) {
+    if (event.type === 'AnswerSubmitted') {
+      trackEvent('exercise_answered', {
+        attemptNumber: event.attemptNumber,
+        correct: event.correct,
+        exerciseId: event.exerciseId,
+        lessonId: active.session.lessonId,
+        sessionKind: active.kind,
+      });
+    }
+    if (event.type === 'LessonCompleted') {
+      trackEvent('lesson_completed', {
+        correctCount: event.correctCount,
+        lessonId: event.lessonId,
+        scoredCount: event.scoredCount,
+        sessionKind: active.kind,
+      });
+      if (active.kind === 'review') {
+        trackEvent('review_completed', {
+          correctCount: event.correctCount,
+          lessonId: event.lessonId,
+          scoredCount: event.scoredCount,
+        });
+      }
+    }
+  }
 }
 
 function depsForStoredSession(stored: StoredSession, session: LessonSession): LessonEngineDeps {

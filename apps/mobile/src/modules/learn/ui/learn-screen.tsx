@@ -16,6 +16,7 @@ type LearnScreenProps = {
   onChangeExam: (exam: ExamFilter) => void;
   onOpenSubject: (subjectId: string) => void;
   onSelectTab: (tab: AppTabKey) => void;
+  showExamToggle?: boolean | undefined;
   viewModel: LearnViewModel;
 };
 
@@ -29,6 +30,7 @@ export function LearnScreen({
   onChangeExam,
   onOpenSubject,
   onSelectTab,
+  showExamToggle = true,
   viewModel,
 }: LearnScreenProps) {
   const [leadRow, ...restRows] = viewModel.rows;
@@ -44,7 +46,7 @@ export function LearnScreen({
           <HudChip compact kind="hearts" value={viewModel.hearts} />
         </View>
 
-        <View style={styles.examToggle}>
+        {showExamToggle ? <View style={styles.examToggle}>
           <SegmentedToggle
             accessibilityLabel="Sınav seçimi"
             onChange={onChangeExam}
@@ -54,7 +56,7 @@ export function LearnScreen({
             ]}
             value={exam}
           />
-        </View>
+        </View> : null}
 
         {viewModel.rows.length === 0 ? (
           <View style={styles.empty}>

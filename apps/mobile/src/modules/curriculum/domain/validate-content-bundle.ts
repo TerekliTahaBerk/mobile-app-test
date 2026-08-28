@@ -31,6 +31,7 @@ export type ContentIssueCode =
   | 'duplicateId'
   | 'emptyCollection'
   | 'invalidAnswer'
+  | 'invalidTaxonomy'
   | 'schemaVersionMismatch'
   | 'unsupportedExerciseKind';
 
@@ -171,6 +172,21 @@ export function validateContentBundle(bundle: ContentBundle): readonly ContentIs
     exercise.skillIds.forEach((id, j) =>
       ref(ids.skill, id, `${at}.skillIds[${j}]`, 'kazanım'),
     );
+
+    const unitIds = new Set(
+      exercise.skillIds.flatMap((skillId) => {
+        const skill = bundle.skills.find((candidate) => candidate.id === skillId);
+        const topic = bundle.topics.find((candidate) => candidate.id === skill?.topicId);
+        return topic === undefined ? [] : [topic.unitId];
+      }),
+    );
+    if (unitIds.size > 1) {
+      add(
+        'invalidTaxonomy',
+        `${at}.skillIds`,
+        'Bir alıştırmanın kazanımları tek bir ana konuya (üniteye) ait olmalı.',
+      );
+    }
 
     validateExerciseAnswerability(exercise, at, add);
   });

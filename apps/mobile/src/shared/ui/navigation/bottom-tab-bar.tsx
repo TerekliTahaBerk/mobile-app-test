@@ -2,6 +2,7 @@ import { Pressable, StyleSheet, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { AppText } from '@/shared/ui/components/app-text';
+import { FEATURES } from '@/shared/config/app-config';
 import {
   HomeIcon,
   LeagueIcon,
@@ -25,16 +26,16 @@ const TABS: readonly { key: AppTabKey; label: string }[] = [
 ];
 
 /**
- * The persistent shell navigation. All four tabs are always present: hiding a
- * tab because the feature behind it is unfinished would rearrange the app
- * under the learner, so an unfinished tab explains itself instead.
+ * The persistent shell navigation. Design preview keeps the approved league
+ * tab; production omits it because there is no real leaderboard to enter.
  */
 export function BottomTabBar({ activeTab, onSelectTab }: BottomTabBarProps) {
   const insets = useSafeAreaInsets();
+  const tabs = FEATURES.league ? TABS : TABS.filter((tab) => tab.key !== 'lig');
 
   return (
     <View style={[styles.bar, { paddingBottom: Math.max(insets.bottom, theme.spacing.xxl) }]}>
-      {TABS.map((tab) => {
+      {tabs.map((tab) => {
         const isActive = tab.key === activeTab;
         const tint = isActive ? theme.colors.navigation.active : theme.colors.navigation.inactive;
 

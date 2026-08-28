@@ -19,6 +19,10 @@ import { useRepositories } from '@/modules/progress/application/progress-store';
 import { levelForXp, type LevelStatus } from '@/modules/progress/domain/level-policy';
 import type { PathProgress } from '@/modules/progress/domain/progress-types';
 import {
+  buildTopicPerformance,
+  type MainTopicPerformance,
+} from '@/modules/progress/domain/topic-performance';
+import {
   recommendNext,
   type Recommendation,
 } from '@/modules/progress/domain/recommendation-policy';
@@ -60,6 +64,7 @@ export type ProgressDashboard = {
   streak: { current: number; todayQualified: boolean };
   subjects: ReadonlyMap<SubjectId, SubjectProgress>;
   totalXp: number;
+  topicPerformance: readonly MainTopicPerformance[];
   week: readonly StreakDay[];
 };
 
@@ -105,6 +110,8 @@ export function useProgressDashboard(clock: Clock = systemClock): ProgressDashbo
         repositories.sessions.completionCounts(),
         repositories.profile.read(),
         repositories.xp.list(),
+        repositories.statistics.read(),
+        repositories.attempts.listAllScored(),
       ])
         .then(
           ([
@@ -117,6 +124,8 @@ export function useProgressDashboard(clock: Clock = systemClock): ProgressDashbo
             counts,
             profile,
             ledger,
+            statistics,
+            attempts,
           ]) => {
             if (cancelled) {
               return;
@@ -164,13 +173,11 @@ export function useProgressDashboard(clock: Clock = systemClock): ProgressDashbo
                 byExam,
                 completedNodes: progressRows.filter((row) => row.status === 'completed').length,
                 completedSessions: counts,
-                correctAnswers: ledger.filter(
-                  (entry) => entry.reason === 'exerciseCorrect',
-                ).length,
+                correctAnswers: statistics.correctAnswers,
                 level: levelForXp(totalXp),
                 nextStep,
                 pathProgress,
-                perfectRounds: 0,
+                perfectRounds: statistics.perfectRounds,
                 profile,
                 recommendation: recommendNext({
                   activeSession,
@@ -185,6 +192,7 @@ export function useProgressDashboard(clock: Clock = systemClock): ProgressDashbo
                 streak,
                 subjects,
                 totalXp,
+                topicPerformance: buildTopicPerformance(attempts, index, reviewItems),
                 week: buildStreakWeek(dates, today),
               },
               status: 'ready',

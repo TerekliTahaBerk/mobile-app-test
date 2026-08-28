@@ -1,6 +1,7 @@
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect, useState, type ReactNode } from 'react';
 
+import { reportError } from '@/shared/observability/observability';
 import { useAppTypographyReady } from '@/shared/ui/theme/typography-provider';
 
 /**
@@ -9,8 +10,9 @@ import { useAppTypographyReady } from '@/shared/ui/theme/typography-provider';
  */
 const MAX_WAIT_MS = 3000;
 
-SplashScreen.preventAutoHideAsync().catch(() => {
+SplashScreen.preventAutoHideAsync().catch((cause: unknown) => {
   // The splash may already be gone (fast refresh, or a platform without one).
+  reportError(asError(cause), { operation: 'splash.preventAutoHide' });
 });
 
 type SplashGateProps = {
@@ -36,11 +38,16 @@ export function SplashGate({ children }: SplashGateProps) {
 
   useEffect(() => {
     if (canReveal) {
-      SplashScreen.hideAsync().catch(() => {
+      SplashScreen.hideAsync().catch((cause: unknown) => {
         // Already hidden; nothing to do.
+        reportError(asError(cause), { operation: 'splash.hide' });
       });
     }
   }, [canReveal]);
 
   return children;
+}
+
+function asError(cause: unknown): Error {
+  return cause instanceof Error ? cause : new Error(String(cause));
 }

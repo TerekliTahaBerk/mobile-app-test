@@ -19,6 +19,7 @@ import {
   type HeartsStatus,
 } from '@/modules/progress/domain/hearts-policy';
 import { systemClock, type Clock } from '@/shared/time/clock';
+import { reportError } from '@/shared/observability/observability';
 
 /**
  * The hearts economy, wired to storage.
@@ -60,9 +61,11 @@ export function HeartsProvider({
     (next: HeartsRecord) => {
       recordRef.current = next;
       setRecord(next);
-      void repository?.write(next).catch(() => {
+      void repository?.write(next).catch((cause: unknown) => {
         // A failed heart write is not worth interrupting a lesson over; the
-        // stored value simply stays where it was and re-derives next launch.
+        // durable learning record is unaffected. Report it for diagnostics;
+        // the stored value stays where it was and re-derives next launch.
+        reportError(asError(cause), { operation: 'hearts.write' });
       });
     },
     [repository],
@@ -84,11 +87,15 @@ export function HeartsProvider({
         recordRef.current = next;
         setRecord(next);
         if (stored === null) {
-          void repository.write(next).catch(() => {});
+          void repository.write(next).catch((cause: unknown) => {
+            reportError(asError(cause), { operation: 'hearts.initialize' });
+          });
         }
       })
-      .catch(() => {
-        // Fall back to a full set rather than blocking the app on hearts.
+      .catch((cause: unknown) => {
+        // Design-preview economy state is non-critical to learning. Production
+        // uses unlimited studying and never depends on this fallback.
+        reportError(asError(cause), { operation: 'hearts.read' });
       });
 
     return () => {
@@ -123,4 +130,8 @@ export function useHearts(): HeartsStoreValue {
   }
 
   return value;
+}
+
+function asError(cause: unknown): Error {
+  return cause instanceof Error ? cause : new Error(String(cause));
 }

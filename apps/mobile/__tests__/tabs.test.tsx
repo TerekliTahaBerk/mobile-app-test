@@ -194,6 +194,36 @@ describe('Profil', () => {
       { id: 'streak', label: 'En uzun seri', value: '21' },
     ],
     streak: 12,
+    topicPerformance: [
+      {
+        accuracy: 0.33,
+        accuracyLabel: '%33 doğruluk',
+        band: 'needsPractice' as const,
+        correctAnswers: 1,
+        detail: '1 doğru · 2 yanlış',
+        id: 'unit.history',
+        nextReviewLabel: 'Sonraki tekrar 29 Ağu',
+        statusLabel: 'Tekrar gerekli',
+        subtopics: [
+          {
+            accuracy: 0.33,
+            accuracyLabel: '%33',
+            band: 'needsPractice' as const,
+            correctAnswers: 1,
+            detail: '1 doğru · 2 yanlış',
+            id: 'topic.history',
+            nextReviewLabel: 'Sonraki tekrar 29 Ağu',
+            statusLabel: 'Tekrar gerekli',
+            title: 'Kut ve Töre',
+            totalAttempts: 3,
+            wrongAnswers: 2,
+          },
+        ],
+        title: 'İlk Türk Devletleri',
+        totalAttempts: 3,
+        wrongAnswers: 2,
+      },
+    ],
     totalXp: 2840,
   };
 
@@ -203,8 +233,8 @@ describe('Profil', () => {
         onOpenLeagueHistory={jest.fn()}
         onOpenPremium={jest.fn()}
         onOpenSettings={jest.fn()}
+        onOpenTopicPerformance={jest.fn()}
         onSelectTab={jest.fn()}
-        premiumActive={false}
         viewModel={viewModel}
         {...overrides}
       />,
@@ -217,6 +247,9 @@ describe('Profil', () => {
     expect(screen.getByText('Ege')).toBeTruthy();
     expect(screen.getByText('YKS · Sayısal')).toBeTruthy();
     expect(screen.getByText('2.840 XP')).toBeTruthy();
+    expect(screen.getByText('Konu performansın')).toBeTruthy();
+    expect(screen.getByText('Tekrar gerekli')).toBeTruthy();
+    expect(screen.getByText('1 ana konu izleniyor')).toBeTruthy();
   });
 
   it('keeps unearned badges visible and says they are unearned', async () => {
@@ -224,6 +257,15 @@ describe('Profil', () => {
 
     expect(screen.getByLabelText('İlk Çalışma')).toBeTruthy();
     expect(screen.getByLabelText('30 Gün, henüz kazanılmadı')).toBeTruthy();
+  });
+
+  it('opens the detailed topic-performance feature', async () => {
+    const onOpenTopicPerformance = jest.fn();
+
+    await renderProfile({ onOpenTopicPerformance });
+    await fireEvent.press(screen.getByTestId('profile-topic-performance'));
+
+    expect(onOpenTopicPerformance).toHaveBeenCalledTimes(1);
   });
 
   it('routes each menu row to its own destination', async () => {

@@ -40,16 +40,26 @@ arrives over the network.
 SQLite (`tekrarla.db`) is the authoritative local learner store. Explicit,
 ordered migrations use `PRAGMA user_version`; foreign keys and WAL are enabled
 at open. The app renders learner-state screens only after migration and active
-session recovery complete. A later sync adapter may implement the same inward
+session recovery complete. A profile startup gate reads SQLite before routing:
+missing or unsupported legacy profiles enter onboarding, while a persisted YKS
+profile enters the normal app without a Home-screen flash. A later sync adapter may implement the same inward
 repository contracts, but authentication, Supabase, and cloud sync are not part
 of this pilot.
 
-Lesson completion is the critical transaction boundary. Session completion,
-attempts, XP ledger entries, path progression, daily activity, mastery evidence,
-review scheduling, and mistakes commit in one exclusive transaction. Unique
+Every observed answer is inserted with its active session snapshot in one
+exclusive transaction, allowing the topic-performance read model to update
+before lesson completion. Lesson completion remains the critical transaction
+boundary for XP ledger entries, path progression, daily activity, mastery evidence,
+review scheduling, and mistakes. Unique
 source keys make XP awards idempotent. Active snapshots are versioned and carry
 the content version; an incompatible snapshot is marked stale and the current
 lesson starts cleanly, while already committed history is preserved.
+
+Typed analytics, error-reporting, diagnostics, and build configuration seams
+live under `shared/observability` and `shared/config`. Application/UI boundaries
+emit stable curriculum identifiers only; domain modules do not import them.
+The shipped adapter is intentionally no-op until a production provider and
+privacy policy are selected.
 
 See [DECISIONS/0001-mobile-foundation.md](DECISIONS/0001-mobile-foundation.md) for the accepted foundation decision and [SECURITY.md](SECURITY.md) for trust boundaries.
 See [DECISIONS/0003-local-first-sqlite-progress.md](DECISIONS/0003-local-first-sqlite-progress.md) for the persistence decision.

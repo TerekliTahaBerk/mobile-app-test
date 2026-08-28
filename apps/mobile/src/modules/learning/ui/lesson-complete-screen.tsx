@@ -25,6 +25,7 @@ export type LessonCompleteViewModel = {
 };
 
 type LessonCompleteScreenProps = {
+  nextActionLabel?: string | undefined;
   onBackToHome: () => void;
   onNextRound: () => void;
   viewModel: LessonCompleteViewModel;
@@ -35,6 +36,7 @@ type LessonCompleteScreenProps = {
  * more round — the loop closes here rather than dropping the learner out.
  */
 export function LessonCompleteScreen({
+  nextActionLabel = 'Bir çalışma daha',
   onBackToHome,
   onNextRound,
   viewModel,
@@ -98,7 +100,7 @@ export function LessonCompleteScreen({
         )}
 
         <AppButton
-          label="Bir çalışma daha"
+          label={nextActionLabel}
           onPress={onNextRound}
           style={styles.primaryAction}
           testID="lesson-complete-next"

@@ -25,6 +25,7 @@ import type {
 export type ContentIndex = {
   readonly bundle: ContentBundle;
   getExercise: (id: ExerciseId) => ExerciseDefinition;
+  getExerciseTaxonomy: (id: ExerciseId) => ExerciseTaxonomy;
   getLesson: (id: LessonId) => Lesson;
   getLessonExercises: (id: LessonId) => readonly ExerciseDefinition[];
   getSkill: (id: SkillId) => Skill;
@@ -33,6 +34,15 @@ export type ContentIndex = {
   getUnit: (id: UnitId) => Unit;
   /** Nodes of a unit in ascending path order. */
   getUnitPath: (id: UnitId) => readonly PathNode[];
+};
+
+/** Product-facing topic labels derived from an exercise's skill mappings. */
+export type ExerciseTaxonomy = {
+  /** A content Unit is the learner-facing main topic. */
+  mainTopic: Unit;
+  skills: readonly Skill[];
+  /** Content Topics are the learner-facing subtopics. */
+  subtopics: readonly Topic[];
 };
 
 export function createContentIndex(bundle: ContentBundle): ContentIndex {
@@ -68,15 +78,36 @@ export function createContentIndex(bundle: ContentBundle): ContentIndex {
   const getLesson = (id: LessonId) => require(lessons, id, 'ders');
   const getExercise = (id: ExerciseId) => require(exercises, id, 'alıştırma');
   const getUnit = (id: UnitId) => require(units, id, 'ünite');
+  const getTopic = (id: TopicId) => require(topics, id, 'konu');
+  const getSkill = (id: SkillId) => require(skills, id, 'kazanım');
 
   return {
     bundle,
     getExercise,
+    getExerciseTaxonomy: (id) => {
+      const exerciseSkills = getExercise(id).skillIds.map(getSkill);
+      const subtopics = [...new Map(
+        exerciseSkills.map((skill) => {
+          const topic = getTopic(skill.topicId);
+          return [topic.id, topic] as const;
+        }),
+      ).values()];
+      const unitIds = new Set(subtopics.map((topic) => topic.unitId));
+      if (unitIds.size !== 1) {
+        throw new Error(`Alıştırma tek bir ana konuya bağlanmalı: "${id}".`);
+      }
+
+      return {
+        mainTopic: getUnit([...unitIds][0]!),
+        skills: exerciseSkills,
+        subtopics,
+      };
+    },
     getLesson,
     getLessonExercises: (id) => getLesson(id).exerciseIds.map(getExercise),
-    getSkill: (id) => require(skills, id, 'kazanım'),
+    getSkill,
     getSubjectOfUnit: (id) => require(subjects, getUnit(id).subjectId, 'ders'),
-    getTopic: (id) => require(topics, id, 'konu'),
+    getTopic,
     getUnit,
     getUnitPath: (id) => pathByUnit.get(id) ?? [],
   };

@@ -131,6 +131,22 @@ describe('progress repositories', () => {
     expect(mistakes[0]?.skillId).toBe('skill.history.kurultay-membership');
   });
 
+  it('persists a wrong answer immediately, before lesson completion', async () => {
+    const repositories = await setup();
+    const active = session('active-session');
+    const wrongAttempt = completion('active-session').attempts[1]!;
+
+    await repositories.sessionProgress.save(active, [wrongAttempt]);
+
+    await expect(repositories.attempts.listAllScored()).resolves.toEqual([wrongAttempt]);
+    await expect(repositories.sessions.get('active-session')).resolves.toMatchObject({
+      status: 'active',
+    });
+    await expect(repositories.progress.get(PATH_NODE_ID)).resolves.toMatchObject({
+      status: 'started',
+    });
+  });
+
   it('is idempotent: re-committing the same session awards nothing further', async () => {
     const repositories = await setup();
 
@@ -146,6 +162,43 @@ describe('progress repositories', () => {
 
     const activity = await repositories.dailyActivity.get('2026-08-27');
     expect(activity?.qualifyingSessions).toBe(1);
+  });
+
+  it('derives correct answers and perfect rounds from durable attempts', async () => {
+    const repositories = await setup();
+    await repositories.completion.completeSession(completion('mixed'));
+    await repositories.completion.completeSession(
+      completion('perfect', {
+        attempts: [
+          {
+            answer: 'a',
+            attemptNumber: 1,
+            correct: true,
+            exerciseId: 'ex.1' as ExerciseId,
+            id: 'perfect:ex.1:1',
+            lessonId: LESSON_ID,
+            occurredAt: COMPLETED_AT,
+            scored: true,
+            sessionId: 'perfect',
+          },
+        ],
+        evidence: [
+          {
+            correct: true,
+            exerciseId: 'ex.1',
+            observedAtIso: COMPLETED_AT,
+            skillIds: [SKILL_ID],
+            strength: 'strong',
+          },
+        ],
+        session: session('perfect'),
+      }),
+    );
+
+    await expect(repositories.statistics.read()).resolves.toEqual({
+      correctAnswers: 2,
+      perfectRounds: 1,
+    });
   });
 
   it('pays the first-completion bonus once per path node, even in a new session', async () => {

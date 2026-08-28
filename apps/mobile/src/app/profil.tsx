@@ -37,11 +37,11 @@ export default function ProfileRoute() {
 
   return (
     <ProfileScreen
-      onOpenLeagueHistory={() => onSelectTab('lig')}
-      onOpenPremium={() => router.push('/premium')}
+      onOpenLeagueHistory={FEATURES.league ? () => onSelectTab('lig') : undefined}
+      onOpenPremium={FEATURES.plus ? () => router.push('/premium') : undefined}
       onOpenSettings={() => router.push('/ayarlar')}
+      onOpenTopicPerformance={() => router.push('/konu-performansi')}
       onSelectTab={onSelectTab}
-      premiumActive={!FEATURES.heartsEconomy}
       viewModel={buildProfileViewModel(dashboard.data)}
     />
   );
