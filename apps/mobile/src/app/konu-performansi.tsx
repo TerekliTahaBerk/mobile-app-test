@@ -1,10 +1,11 @@
 import { useLocalSearchParams, useRouter } from 'expo-router';
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 
 import { useLessonSession } from '@/modules/learning/application/lesson-session-store';
-import { buildProfileViewModel } from '@/modules/profile/model/build-profile-view-model';
+import { buildTopicPerformanceViewModel } from '@/modules/profile/model/build-topic-performance-view-model';
 import { TopicPerformanceScreen } from '@/modules/profile/ui/topic-performance-screen';
 import { useProgressDashboard } from '@/modules/progress/application/use-progress-dashboard';
+import type { TopicPerformanceWindow } from '@/modules/progress/domain/topic-performance';
 import { MessageScreen } from '@/shared/ui/feedback/message-screen';
 
 export default function TopicPerformanceRoute() {
@@ -16,6 +17,12 @@ export default function TopicPerformanceRoute() {
     topicId?: string;
   }>();
   const [actionError, setActionError] = useState<Error | null>(null);
+  const [window, setWindow] = useState<TopicPerformanceWindow>('all');
+  const data = dashboard.status === 'ready' ? dashboard.data : null;
+  const viewModel = useMemo(
+    () => (data === null ? null : buildTopicPerformanceViewModel(data, window)),
+    [data, window],
+  );
   const goBack = () => (router.canGoBack() ? router.back() : router.replace('/profil'));
 
   if (dashboard.status === 'loading') {
@@ -54,8 +61,20 @@ export default function TopicPerformanceRoute() {
     );
   }
 
-  const viewModel = buildProfileViewModel(dashboard.data);
-  const recentTopic = viewModel.topicPerformance
+  if (viewModel === null) {
+    return (
+      <MessageScreen
+        body="Cevap geçmişin ana konu ve alt konulara ayrılıyor."
+        heading="Performansın hazırlanıyor"
+        testID="topic-performance-loading"
+        tone="muted"
+      />
+    );
+  }
+
+  // The change summary is always read from the all-time record: a drill just
+  // finished is evidence regardless of which window the learner is looking at.
+  const recentTopic = dashboard.data.topicPerformance.topics
     .flatMap((topic) => topic.subtopics)
     .find((topic) => topic.id === params.topicId);
   const beforeAccuracy = Number(params.beforeAccuracy);
@@ -71,6 +90,7 @@ export default function TopicPerformanceRoute() {
   return (
     <TopicPerformanceScreen
       onBack={goBack}
+      onChangeWindow={setWindow}
       onStartPractice={(topicId, currentAccuracy) => {
         void beginTopicPractice(topicId)
           .then(() => {
@@ -88,7 +108,7 @@ export default function TopicPerformanceRoute() {
           });
       }}
       recentResult={recentResult}
-      topics={viewModel.topicPerformance}
+      viewModel={viewModel}
     />
   );
 }

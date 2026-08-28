@@ -280,6 +280,19 @@ describe('progress repositories', () => {
     expect(afterFix?.stage).toBe(1);
   });
 
+  it('keeps a resolved mistake readable instead of removing it', async () => {
+    const repositories = await setup();
+    const skillId = 'skill.history.kurultay-membership' as SkillId;
+
+    await repositories.completion.completeSession(completion('s1'));
+    await repositories.mistakes.resolveForSkill(skillId, COMPLETED_AT);
+
+    await expect(repositories.mistakes.listUnresolved()).resolves.toEqual([]);
+    const all = await repositories.mistakes.listAll();
+    expect(all).toHaveLength(1);
+    expect(all[0]).toMatchObject({ resolvedAt: COMPLETED_AT, status: 'resolved' });
+  });
+
   it('reopens a mistake that recurs after being resolved', async () => {
     const repositories = await setup();
     const skillId = 'skill.history.kurultay-membership' as SkillId;

@@ -18,6 +18,8 @@ import type {
 } from '@/modules/curriculum/domain/content-types';
 import { isScoredKind } from '@/modules/curriculum/domain/content-types';
 import type { ExerciseAnswer } from '@/modules/learning/domain/answers';
+import type { DailyPlan } from '@/modules/learning/domain/daily-plan';
+import { assemblePlacement } from '@/modules/learning/domain/placement';
 import type { DomainEvent } from '@/modules/learning/domain/events';
 import {
   createLessonSession,
@@ -60,6 +62,8 @@ type LessonSessionStore = {
   readonly persistenceStatus: PersistenceStatus;
   abandon: () => void;
   begin: (lessonId: LessonId, pathNodeId?: PathNodeId) => void;
+  beginDailyPlan: (plan: DailyPlan) => void;
+  beginPlacement: () => number;
   beginReview: (skillId: SkillId) => void;
   beginTopicPractice: (topicId: TopicId) => Promise<number>;
   continueAfterFeedback: () => void;
@@ -248,6 +252,81 @@ export function LessonSessionProvider({
     [clock, enqueuePersistence, installLesson],
   );
 
+  /**
+   * Opens today's plan as one mixed drill. It deliberately carries no path
+   * node: a plan that crosses several units is practice, and completing it must
+   * not mark curriculum as finished.
+   */
+  const beginDailyPlan = useCallback(
+    (plan: DailyPlan) => {
+      if (plan.exercises.length === 0) {
+        throw new Error('Bugün için plan oluşturulacak soru bulunamadı.');
+      }
+
+      const index = getContentIndex();
+      const sourceLesson = index.bundle.lessons.find((candidate) =>
+        candidate.exerciseIds.includes(plan.exercises[0]!.id),
+      );
+      if (sourceLesson === undefined) {
+        throw new Error(`Plan sorusunun dersi bulunamadı: "${plan.exercises[0]!.id}".`);
+      }
+
+      const deps: LessonEngineDeps = {
+        exercises: plan.exercises,
+        lesson: {
+          ...sourceLesson,
+          exerciseIds: plan.exercises.map((exercise) => exercise.id),
+          subtitle: 'Bugünün planı',
+          title: 'Günün Çalışması',
+        },
+        xpPolicy: REVIEW_XP_POLICY,
+      };
+      start(deps, 'review', clock, installLesson, setEvents, enqueuePersistence);
+      trackEvent('daily_plan_started', {
+        partCount: plan.parts.length,
+        questionCount: plan.exercises.length,
+        topicCount: plan.topicCount,
+      });
+      setCompletionResult(null);
+    },
+    [clock, enqueuePersistence, installLesson],
+  );
+
+  /**
+   * Opens the starting diagnostic. Like the daily plan it carries no path node:
+   * measuring what a learner knows must not mark curriculum as completed, so
+   * the path stays exactly where their own work left it.
+   */
+  const beginPlacement = useCallback(() => {
+    const index = getContentIndex();
+    const placement = assemblePlacement(index);
+    const sourceLesson = index.bundle.lessons.find((candidate) =>
+      candidate.exerciseIds.includes(placement.exercises[0]!.id),
+    );
+    if (sourceLesson === undefined) {
+      throw new Error(`Tespit sorusunun dersi bulunamadı: "${placement.exercises[0]!.id}".`);
+    }
+
+    const deps: LessonEngineDeps = {
+      exercises: placement.exercises,
+      lesson: {
+        ...sourceLesson,
+        exerciseIds: placement.exercises.map((exercise) => exercise.id),
+        subtitle: 'Başlangıç seviyesi',
+        title: 'Seviye Tespiti',
+      },
+      xpPolicy: REVIEW_XP_POLICY,
+    };
+    start(deps, 'review', clock, installLesson, setEvents, enqueuePersistence);
+    trackEvent('placement_started', {
+      questionCount: placement.exercises.length,
+      topicCount: placement.topicIds.length,
+    });
+    setCompletionResult(null);
+
+    return placement.exercises.length;
+  }, [clock, enqueuePersistence, installLesson]);
+
   const beginReview = useCallback(
     (skillId: SkillId) => {
       const index = getContentIndex();
@@ -347,6 +426,8 @@ export function LessonSessionProvider({
     () => ({
       abandon: () => dispatch({ at: clock(), type: 'abandonLesson' }),
       begin,
+      beginDailyPlan,
+      beginPlacement,
       beginReview,
       beginTopicPractice,
       completionResult,
@@ -369,6 +450,8 @@ export function LessonSessionProvider({
     }),
     [
       begin,
+      beginDailyPlan,
+      beginPlacement,
       beginReview,
       beginTopicPractice,
       clock,

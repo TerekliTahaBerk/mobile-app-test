@@ -15,17 +15,28 @@ import {
   type UnitPath,
 } from '@/modules/curriculum/domain/path-progression';
 import type { LearnerProfile } from '@/modules/learner/domain/learner-profile';
+import { buildDailyPlan, type DailyPlan } from '@/modules/learning/domain/daily-plan';
 import { useRepositories } from '@/modules/progress/application/progress-store';
 import { levelForXp, type LevelStatus } from '@/modules/progress/domain/level-policy';
-import type { PathProgress } from '@/modules/progress/domain/progress-types';
+import type {
+  PathProgress,
+  ReviewItem,
+  StoredAttempt,
+} from '@/modules/progress/domain/progress-types';
+import {
+  buildMistakeNotebook,
+  type MistakeNotebook,
+} from '@/modules/progress/domain/mistake-notebook';
 import {
   buildTopicPerformance,
-  type MainTopicPerformance,
+  type ReportMoment,
+  type TopicPerformanceReport,
 } from '@/modules/progress/domain/topic-performance';
 import {
   recommendNext,
   type Recommendation,
 } from '@/modules/progress/domain/recommendation-policy';
+import { isDue, sortDueItems } from '@/modules/progress/domain/review-policy';
 import {
   buildStreakWeek,
   computeStreak,
@@ -54,17 +65,28 @@ export type ProgressDashboard = {
   completedNodes: number;
   completedSessions: { lessons: number; reviews: number };
   correctAnswers: number;
+  /** Today's mixed, explainable question set. */
+  dailyPlan: DailyPlan;
   level: LevelStatus;
+  /** Every mistake ever opened, with the evidence behind it. */
+  mistakeNotebook: MistakeNotebook;
   /** The next node the learner can open anywhere, or null when none is left. */
   nextStep: PathStep | null;
+  /** The instant and zone every derived date on screen is measured against. */
+  observedAt: ReportMoment;
   pathProgress: ReadonlyMap<PathNodeId, PathProgress>;
   perfectRounds: number;
   profile: LearnerProfile | null;
   recommendation: Recommendation;
+  /** Due review schedule, so window-specific reports can be rebuilt without a re-read. */
+  reviewItems: readonly ReviewItem[];
+  /** The attributable answer log behind every performance read model. */
+  scoredAttempts: readonly StoredAttempt[];
   streak: { current: number; todayQualified: boolean };
   subjects: ReadonlyMap<SubjectId, SubjectProgress>;
   totalXp: number;
-  topicPerformance: readonly MainTopicPerformance[];
+  /** All-time report. Windowed views are rebuilt from `scoredAttempts`. */
+  topicPerformance: TopicPerformanceReport;
   week: readonly StreakDay[];
 };
 
@@ -107,6 +129,7 @@ export function useProgressDashboard(clock: Clock = systemClock): ProgressDashbo
         repositories.sessions.findActive(),
         repositories.review.listAll(),
         repositories.mistakes.listUnresolved(),
+        repositories.mistakes.listAll(),
         repositories.sessions.completionCounts(),
         repositories.profile.read(),
         repositories.xp.list(),
@@ -121,6 +144,7 @@ export function useProgressDashboard(clock: Clock = systemClock): ProgressDashbo
             activeSession,
             reviewItems,
             mistakes,
+            allMistakes,
             counts,
             profile,
             ledger,
@@ -166,6 +190,21 @@ export function useProgressDashboard(clock: Clock = systemClock): ProgressDashbo
             const allPaths = [...subjects.values()].flatMap((entry) => entry.paths);
             const nextStep = nextOpenStep(allPaths);
             const streak = computeStreak(dates, today);
+            const observedAt: ReportMoment = { atMs: now, timeZone: clock.timeZone() };
+            const topicPerformance = buildTopicPerformance(attempts, index, {
+              moment: observedAt,
+              reviewItems,
+            });
+            // The plan may open any lesson the path has already unlocked, not
+            // only the single next step, so a short day can still be filled.
+            const openLessonIds = allPaths.flatMap((path) =>
+              path.steps.flatMap((step) =>
+                (step.status === 'available' || step.status === 'current') &&
+                step.node.lessonId !== undefined
+                  ? [step.node.lessonId]
+                  : [],
+              ),
+            );
 
             setState({
               data: {
@@ -174,8 +213,19 @@ export function useProgressDashboard(clock: Clock = systemClock): ProgressDashbo
                 completedNodes: progressRows.filter((row) => row.status === 'completed').length,
                 completedSessions: counts,
                 correctAnswers: statistics.correctAnswers,
+                dailyPlan: buildDailyPlan({
+                  attempts,
+                  dueSkillIds: sortDueItems(
+                    reviewItems.filter((item) => isDue(item, now)),
+                  ).map((item) => item.skillId),
+                  index,
+                  newLessonIds: openLessonIds,
+                  topics: topicPerformance.topics,
+                }),
                 level: levelForXp(totalXp),
+                mistakeNotebook: buildMistakeNotebook(allMistakes, attempts, index),
                 nextStep,
+                observedAt,
                 pathProgress,
                 perfectRounds: statistics.perfectRounds,
                 profile,
@@ -189,10 +239,12 @@ export function useProgressDashboard(clock: Clock = systemClock): ProgressDashbo
                   reviewItems,
                   unresolvedMistakes: mistakes,
                 }),
+                reviewItems,
+                scoredAttempts: attempts,
                 streak,
                 subjects,
                 totalXp,
-                topicPerformance: buildTopicPerformance(attempts, index, reviewItems),
+                topicPerformance,
                 week: buildStreakWeek(dates, today),
               },
               status: 'ready',

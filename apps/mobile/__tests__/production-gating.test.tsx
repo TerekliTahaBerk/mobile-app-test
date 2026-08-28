@@ -48,6 +48,7 @@ describe('build-mode route gates', () => {
         onOpenLeague={jest.fn()}
         onOpenSubject={jest.fn()}
         onSelectTab={jest.fn()}
+        onStartDailyPlan={jest.fn()}
         viewModel={homePreviewData}
       />,
     );

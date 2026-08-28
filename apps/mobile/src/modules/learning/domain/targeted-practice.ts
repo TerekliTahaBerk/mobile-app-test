@@ -5,6 +5,10 @@ import {
   type Lesson,
   type TopicId,
 } from '@/modules/curriculum/domain/content-types';
+import {
+  latestAttemptByExercise,
+  rankByHistory,
+} from '@/modules/learning/domain/exercise-selection';
 import type { StoredAttempt } from '@/modules/progress/domain/progress-types';
 
 export type TargetedPractice = {
@@ -26,31 +30,14 @@ export function assembleTargetedPractice(
 ): TargetedPractice {
   const topic = index.getTopic(topicId);
   const skillIds = new Set(topic.skillIds);
-  const latestAttempt = new Map<string, StoredAttempt>();
-  for (const attempt of attempts) {
-    const current = latestAttempt.get(attempt.exerciseId);
-    if (current === undefined || attempt.occurredAt > current.occurredAt) {
-      latestAttempt.set(attempt.exerciseId, attempt);
-    }
-  }
-
-  const exercises = index.bundle.exercises
-    .filter(
-      (exercise) =>
-        isScoredKind(exercise.kind) && exercise.skillIds.some((skillId) => skillIds.has(skillId)),
-    )
-    .sort((left, right) => {
-      const historyPriority = (exerciseId: string) => {
-        const previous = latestAttempt.get(exerciseId);
-        return previous === undefined ? 0 : previous.correct ? 2 : 1;
-      };
-      return (
-        historyPriority(left.id) - historyPriority(right.id) ||
-        left.difficulty - right.difficulty ||
-        left.id.localeCompare(right.id)
-      );
-    })
-    .slice(0, Math.max(1, limit));
+  const candidates = index.bundle.exercises.filter(
+    (exercise) =>
+      isScoredKind(exercise.kind) && exercise.skillIds.some((skillId) => skillIds.has(skillId)),
+  );
+  const exercises = rankByHistory(candidates, latestAttemptByExercise(attempts)).slice(
+    0,
+    Math.max(1, limit),
+  );
 
   if (exercises.length === 0) {
     throw new Error(`Alt konu için puanlanan alıştırma bulunamadı: "${topicId}".`);

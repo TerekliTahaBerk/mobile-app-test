@@ -79,6 +79,11 @@ export default function LessonCompleteRoute() {
   };
 
   const leaveNext = () => {
+    if (params.returnTo === 'placement') {
+      discard();
+      router.replace('/baslangic-haritasi');
+      return;
+    }
     if (params.returnTo !== 'topicPerformance') {
       leaveHome();
       return;
@@ -95,7 +100,13 @@ export default function LessonCompleteRoute() {
 
   return (
     <LessonCompleteScreen
-      nextActionLabel={params.returnTo === 'topicPerformance' ? 'Performansı gör' : undefined}
+      nextActionLabel={
+        params.returnTo === 'placement'
+          ? 'Haritamı gör'
+          : params.returnTo === 'topicPerformance'
+            ? 'Performansı gör'
+            : undefined
+      }
       onBackToHome={leaveHome}
       onNextRound={leaveNext}
       viewModel={viewModel}

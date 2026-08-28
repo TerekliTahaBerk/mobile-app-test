@@ -31,6 +31,7 @@ export function buildProfileViewModel(dashboard: ProgressDashboard): ProfileView
     displayName,
     initial: initialFor(displayName),
     level: dashboard.level.level,
+    openMistakes: dashboard.mistakeNotebook.openCount,
     stats: [
       {
         id: 'rounds',
@@ -42,7 +43,7 @@ export function buildProfileViewModel(dashboard: ProgressDashboard): ProfileView
     ],
     streak: dashboard.streak.current,
     totalXp: dashboard.totalXp,
-    topicPerformance: dashboard.topicPerformance.map(toTopicViewModel),
+    topicPerformance: dashboard.topicPerformance.topics.map(toTopicViewModel),
   };
 }
 

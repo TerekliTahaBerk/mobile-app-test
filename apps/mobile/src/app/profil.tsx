@@ -38,6 +38,7 @@ export default function ProfileRoute() {
   return (
     <ProfileScreen
       onOpenLeagueHistory={FEATURES.league ? () => onSelectTab('lig') : undefined}
+      onOpenMistakeNotebook={() => router.push('/yanlis-defteri')}
       onOpenPremium={FEATURES.plus ? () => router.push('/premium') : undefined}
       onOpenSettings={() => router.push('/ayarlar')}
       onOpenTopicPerformance={() => router.push('/konu-performansi')}

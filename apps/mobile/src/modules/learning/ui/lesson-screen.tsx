@@ -87,6 +87,10 @@ export function LessonScreen({ hearts, onComplete, onExit, onWrongAnswer }: Less
           cardIndex={cardIndex}
           evaluation={evaluation}
           exercise={exercise}
+          // Renderers hold the learner's draft answer in their own state.
+          // Keying by exercise remounts them, so two questions of the same kind
+          // in one round cannot inherit each other's half-finished answer.
+          key={exercise.id}
           onAdvanceCard={() => setDeckPosition({ exerciseId: exercise.id, index: cardIndex + 1 })}
           onSubmit={(answer) => {
             submitAnswer(answer);

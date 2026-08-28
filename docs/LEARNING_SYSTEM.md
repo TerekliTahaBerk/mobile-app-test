@@ -33,6 +33,36 @@ accuracy rather than presenting these summaries as mastery. Three attempts at
 practice; smaller or mixed samples remain developing. The dashboard refreshes
 whenever the profile regains focus.
 
+## Topic coach
+
+Topic performance is an instruction, not a scoreboard. Every non-strong subtopic
+carries a one-tap drill assembled from *other* questions measuring the same
+skills, preferring questions never seen over questions already missed over
+questions already answered correctly, so a drill teaches the outcome rather than
+memorising one item. Finishing a drill returns to the report with the
+before/after change for that subtopic and its next review date.
+
+The report is read over a window of calendar days in the learner's zone — last
+7, last 30, or all time — and every figure it shows is qualified by the evidence
+behind it:
+
+- the question count always accompanies the percentage; a sample below three
+  answers is labelled as too small to read;
+- a direction (rising / falling / steady) is claimed only from six or more
+  answers in the window, comparing its older half with its newer half, and only
+  when the halves differ by more than ten points;
+- coverage states how many of a main topic's authored subtopics have been
+  measured at all, so an unmeasured curriculum never reads as a strength;
+- first-sighting accuracy is separated from accuracy on questions already
+  answered before;
+- a strength untouched for fourteen days is flagged for a refresher rather than
+  left to decay silently.
+
+Corrections are derived from the whole history, not the window: a question that
+was missed before and answered correctly today is a correction, and the
+subtopics it measures appear under "Bugün düzelttiğin konular". A question
+answered correctly on its first ever sighting corrects nothing.
+
 ## Domain events
 
 `LessonStarted`, `AnswerSubmitted`, `AnswerCorrect`, `AnswerIncorrect`, `AttemptRecorded`, `ExerciseCompleted`, `SkillEvidenceObserved`, `MistakeRecorded`, `XpEarned`, `LessonCompleted`, `LessonAbandoned`.
@@ -74,6 +104,53 @@ Review times are instants; İz uses local calendar dates.
 Due review sessions reuse the existing lesson renderers and select up to three
 scored exercises for the chosen skill in stable ID order. They award only 10 XP
 per correct scored exercise: no lesson-completion or path bonus.
+
+## Starting diagnostic
+
+Choosing "Seviyemi ölç" during onboarding opens one diagnostic sampled across
+every main topic and subtopic that has scored material. Each subtopic
+contributes up to three questions — the topic report's evidence bar — and never
+more; a subtopic with less material contributes what it has, and one sitting is
+capped at twenty questions. Questions run easiest-first within a subtopic and
+never twice in a row from the same one.
+
+It carries no path node, so being measured never marks or unlocks curriculum.
+The result screen shows the ordinary topic report as a starting map, weakest
+subtopic first, and the ordinary daily plan as the first day. "Sıfırdan başla"
+skips all of it.
+
+## Mistake notebook
+
+Every mistake record is readable by the learner: the question, their own answer,
+the right answer, the explanation, its main topic and subtopic, how many times
+that question has been missed, when the skill was last worked, and a drill of
+other questions on the same subtopic.
+
+Nothing on the screen writes. A learner cannot delete a mistake or mark one as
+learned; a mistake closes only through a clean first-attempt answer on the same
+skill during a repeat, which is what the completion write already does. Closed
+records stay visible as "Artık öğrendiklerin".
+
+Prompts, right answers, and submitted answers are described per exercise kind in
+`evaluator-registry.ts`, beside the evaluator that scores them, so the notebook
+and the feedback sheet cannot disagree about what the right answer was.
+
+## Daily plan
+
+Ana Sayfa leads with one plan for today, stated as its parts: weak subtopics,
+due reviews, refreshers on strengths that have gone unmeasured, and new
+material. Quotas shape a full day (5 / 3 / 2 / 2, target 12), but every bucket
+is filled from the learner's record and the card reports what the plan actually
+holds. Only new material tops a short day back up.
+
+The plan's questions are regrouped by subtopic and interleaved, so no subtopic
+is asked twice in a row while another still has questions left. Selection reuses
+the same ordering as targeted practice: never seen, then missed, then already
+correct.
+
+The plan is a drill. It carries no path node, awards no lesson-completion or
+path bonus, and cannot complete or unlock curriculum. A resumable session
+outranks it: an unfinished round is offered instead.
 
 ## Recommendation
 

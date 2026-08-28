@@ -71,6 +71,8 @@ export type ReviewRepository = {
 };
 
 export type MistakeRepository = {
+  /** Every mistake ever opened, resolved ones included, oldest first. */
+  listAll: () => Promise<readonly Mistake[]>;
   listUnresolved: () => Promise<readonly Mistake[]>;
   resolveForSkill: (skillId: SkillId, atIso: string) => Promise<void>;
 };

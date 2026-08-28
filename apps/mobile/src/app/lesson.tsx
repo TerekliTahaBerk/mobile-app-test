@@ -53,7 +53,9 @@ export default function LessonRoute() {
                   returnTo: params.returnTo,
                   topicId: params.topicId ?? '',
                 }
-              : {},
+              : params.returnTo === 'placement'
+                ? { returnTo: params.returnTo }
+                : {},
         })
       }
       onExit={() => {

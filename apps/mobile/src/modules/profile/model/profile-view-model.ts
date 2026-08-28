@@ -14,6 +14,8 @@ export type ProfileViewModel = {
   displayName: string;
   initial: string;
   level: number;
+  /** Mistakes still waiting for a clean repeat answer. */
+  openMistakes: number;
   stats: readonly ProfileStat[];
   streak: number;
   totalXp: number;

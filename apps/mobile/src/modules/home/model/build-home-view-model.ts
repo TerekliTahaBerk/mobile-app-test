@@ -1,5 +1,6 @@
 import { getContentIndex } from '@/modules/curriculum/content/content-source';
 import { initialFor } from '@/modules/learner/domain/learner-profile';
+import { buildDailyPlanCard } from '@/modules/learning/model/daily-plan-card';
 import type { HomeViewModel, SubjectTile } from '@/modules/home/model/home-view-model';
 import type {
   ProgressDashboard,
@@ -27,6 +28,12 @@ export function buildHomeViewModel(
 
   return {
     continueCard: buildContinueCard(dashboard),
+    // A half-finished round outranks a fresh plan: finishing what you started
+    // is the one thing the learner already committed to.
+    dailyPlan:
+      dashboard.recommendation.kind === 'resume'
+        ? null
+        : buildDailyPlanCard(dashboard.dailyPlan),
     greeting: name === null ? 'Merhaba' : `Merhaba, ${name}`,
     hearts,
     initial: name === null ? '?' : initialFor(name),

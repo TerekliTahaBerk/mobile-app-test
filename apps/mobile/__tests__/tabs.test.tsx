@@ -19,6 +19,7 @@ describe('Ana Sayfa', () => {
         onOpenLeague={jest.fn()}
         onOpenSubject={jest.fn()}
         onSelectTab={jest.fn()}
+        onStartDailyPlan={jest.fn()}
         viewModel={homePreviewData}
         {...overrides}
       />,
@@ -29,7 +30,7 @@ describe('Ana Sayfa', () => {
     await renderHome();
 
     expect(screen.getByText('Merhaba, Ege')).toBeTruthy();
-    expect(screen.getByText('TYT Tarih')).toBeTruthy();
+    expect(screen.getByText('Bugün 12 soru')).toBeTruthy();
     expect(screen.getByText('Level 8')).toBeTruthy();
     expect(screen.getByText('850 / 1.000 XP')).toBeTruthy();
   });
@@ -41,19 +42,37 @@ describe('Ana Sayfa', () => {
     expect(screen.getByLabelText('5 can')).toBeTruthy();
   });
 
-  it('resumes the round the continue card names', async () => {
+  it('explains what today is made of before asking for it', async () => {
+    const onStartDailyPlan = jest.fn();
+
+    await renderHome({ onStartDailyPlan });
+
+    expect(screen.getByText('4 farklı konudan karışık')).toBeTruthy();
+    expect(screen.getByText('zayıf konu sorusu')).toBeTruthy();
+    expect(screen.getByText('zamanı gelen tekrar')).toBeTruthy();
+
+    await fireEvent.press(screen.getByTestId('home-daily-plan'));
+
+    expect(onStartDailyPlan).toHaveBeenCalledTimes(1);
+  });
+
+  it('offers the unfinished round instead of a plan when one is waiting', async () => {
     const onContinue = jest.fn();
 
-    await renderHome({ onContinue });
+    await renderHome({ onContinue, viewModel: { ...homePreviewData, dailyPlan: null } });
     await fireEvent.press(screen.getByTestId('home-continue'));
 
     expect(onContinue).toHaveBeenCalledWith(homePreviewData.continueCard);
+    expect(screen.queryByTestId('home-daily-plan')).toBeNull();
   });
 
-  it('hides the continue card when there is nothing to resume', async () => {
-    await renderHome({ viewModel: { ...homePreviewData, continueCard: null } });
+  it('shows no primary action when there is neither a plan nor a round', async () => {
+    await renderHome({
+      viewModel: { ...homePreviewData, continueCard: null, dailyPlan: null },
+    });
 
     expect(screen.queryByTestId('home-continue')).toBeNull();
+    expect(screen.queryByTestId('home-daily-plan')).toBeNull();
   });
 
   it('opens a subject that has content and refuses one that does not', async () => {
@@ -188,6 +207,7 @@ describe('Profil', () => {
     displayName: 'Ege',
     initial: 'E',
     level: 8,
+    openMistakes: 3,
     stats: [
       { id: 'rounds', label: 'Çalışma', value: '48' },
       { id: 'correct', label: 'Doğru', value: '386' },
@@ -231,6 +251,7 @@ describe('Profil', () => {
     return render(
       <ProfileScreen
         onOpenLeagueHistory={jest.fn()}
+        onOpenMistakeNotebook={jest.fn()}
         onOpenPremium={jest.fn()}
         onOpenSettings={jest.fn()}
         onOpenTopicPerformance={jest.fn()}
@@ -269,15 +290,24 @@ describe('Profil', () => {
   });
 
   it('routes each menu row to its own destination', async () => {
+    const onOpenMistakeNotebook = jest.fn();
     const onOpenPremium = jest.fn();
     const onOpenSettings = jest.fn();
 
-    await renderProfile({ onOpenPremium, onOpenSettings });
+    await renderProfile({ onOpenMistakeNotebook, onOpenPremium, onOpenSettings });
 
+    await fireEvent.press(screen.getByTestId('profile-menu-Yanlış Defterim'));
     await fireEvent.press(screen.getByTestId('profile-menu-Premium'));
     await fireEvent.press(screen.getByTestId('profile-menu-Ayarlar'));
 
+    expect(onOpenMistakeNotebook).toHaveBeenCalledTimes(1);
     expect(onOpenPremium).toHaveBeenCalledTimes(1);
     expect(onOpenSettings).toHaveBeenCalledTimes(1);
+  });
+
+  it('carries the open-mistake count into the notebook entry', async () => {
+    await renderProfile();
+
+    expect(screen.getByText('3')).toBeTruthy();
   });
 });

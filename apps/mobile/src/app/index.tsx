@@ -5,6 +5,7 @@ import { homePreviewData, type HomeViewModel } from '@/modules/home/model/home-v
 import { HomeScreen, type ExamFilter } from '@/modules/home/ui/home-screen';
 import { useHearts } from '@/modules/hearts/application/hearts-store';
 import { useLessonSession } from '@/modules/learning/application/lesson-session-store';
+import type { DailyPlan } from '@/modules/learning/domain/daily-plan';
 import { buildHomeViewModel } from '@/modules/home/model/build-home-view-model';
 import { useProgressDashboard } from '@/modules/progress/application/use-progress-dashboard';
 import { APP_MODE } from '@/shared/config/app-config';
@@ -16,7 +17,9 @@ export default function IndexRoute() {
 }
 
 function PreviewHomeRoute() {
-  return <HomeShell viewModel={homePreviewData} />;
+  // The design preview has no durable record to plan from, so the plan card is
+  // reviewable but opens the fixture's own lesson rather than a real day.
+  return <HomeShell plan={null} viewModel={homePreviewData} />;
 }
 
 function DurableHomeRoute() {
@@ -47,12 +50,17 @@ function DurableHomeRoute() {
     );
   }
 
-  return <HomeShell viewModel={buildHomeViewModel(dashboard.data, hearts.hearts)} />;
+  return (
+    <HomeShell
+      plan={dashboard.data.dailyPlan}
+      viewModel={buildHomeViewModel(dashboard.data, hearts.hearts)}
+    />
+  );
 }
 
-function HomeShell({ viewModel }: { viewModel: HomeViewModel }) {
+function HomeShell({ plan, viewModel }: { plan: DailyPlan | null; viewModel: HomeViewModel }) {
   const router = useRouter();
-  const { begin, beginReview, resume } = useLessonSession();
+  const { begin, beginDailyPlan, beginReview, resume } = useLessonSession();
   const onSelectTab = useTabNavigation('anasayfa');
   const [exam, setExam] = useState<ExamFilter>('tyt');
   const [actionError, setActionError] = useState<Error | null>(null);
@@ -93,6 +101,22 @@ function HomeShell({ viewModel }: { viewModel: HomeViewModel }) {
       onOpenLeague={() => router.replace('/lig')}
       onOpenSubject={(subjectId) => router.push(`/ogren/${subjectId}`)}
       onSelectTab={onSelectTab}
+      onStartDailyPlan={() => {
+        try {
+          if (plan === null) {
+            const preview = viewModel.continueCard?.action;
+            if (preview?.kind !== 'lesson') {
+              return;
+            }
+            begin(preview.lessonId, preview.pathNodeId);
+          } else {
+            beginDailyPlan(plan);
+          }
+          router.push('/lesson');
+        } catch (cause: unknown) {
+          setActionError(cause instanceof Error ? cause : new Error(String(cause)));
+        }
+      }}
       showExamToggle={APP_MODE === 'designPreview'}
       viewModel={viewModel}
     />

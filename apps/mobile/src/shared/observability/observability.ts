@@ -13,12 +13,14 @@ export type AnalyticsEventMap = {
     lessonId: string;
     sessionKind: 'lesson' | 'review';
   };
+  daily_plan_started: { partCount: number; questionCount: number; topicCount: number };
   lesson_completed: {
     correctCount: number;
     lessonId: string;
     scoredCount: number;
     sessionKind: 'lesson' | 'review';
   };
+  placement_started: { questionCount: number; topicCount: number };
   path_node_unlocked: { pathNodeId: string; prerequisiteId: string };
   review_started: { lessonId: string; skillId: string };
   review_completed: { correctCount: number; lessonId: string; scoredCount: number };

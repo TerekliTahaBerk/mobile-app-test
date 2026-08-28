@@ -104,7 +104,9 @@ export const START_CHOICES: readonly {
   label: string;
   value: StartingPoint;
 }[] = [
-  { detail: '4 soru · doğru üniteden başla', label: 'Seviyemi ölç', value: 'placement' },
+  // The diagnostic measures and plans; it never marks curriculum as done, so
+  // the copy promises a map rather than a shortcut through the path.
+  { detail: 'Kısa tur · konu haritanı çıkarayım', label: 'Seviyemi ölç', value: 'placement' },
   { detail: 'İlk üniteden ilerle', label: 'Sıfırdan başla', value: 'scratch' },
 ];
 

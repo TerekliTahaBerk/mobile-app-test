@@ -13,6 +13,7 @@ import { theme } from '@/shared/ui/theme/tokens';
 type ProfileScreenProps = {
   onOpenLeagueHistory?: (() => void) | undefined;
   onOpenPremium?: (() => void) | undefined;
+  onOpenMistakeNotebook: () => void;
   onOpenSettings: () => void;
   onOpenTopicPerformance: () => void;
   onSelectTab: (tab: AppTabKey) => void;
@@ -27,6 +28,7 @@ type ProfileScreenProps = {
 export function ProfileScreen({
   onOpenLeagueHistory,
   onOpenPremium,
+  onOpenMistakeNotebook,
   onOpenSettings,
   onOpenTopicPerformance,
   onSelectTab,
@@ -147,6 +149,11 @@ export function ProfileScreen({
         </View>
 
         <Card style={styles.menu} variant="outlined">
+          <MenuRow
+            badge={viewModel.openMistakes === 0 ? undefined : String(viewModel.openMistakes)}
+            label="Yanlış Defterim"
+            onPress={onOpenMistakeNotebook}
+          />
           {onOpenLeagueHistory === undefined ? null : (
             <MenuRow label="Lig Geçmişim" onPress={onOpenLeagueHistory} />
           )}

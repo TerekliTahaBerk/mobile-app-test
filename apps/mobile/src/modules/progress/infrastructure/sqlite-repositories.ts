@@ -755,6 +755,13 @@ export function createSqliteRepositories(db: SQLiteDatabase): ProgressRepositori
   };
 
   const mistakes: MistakeRepository = {
+    listAll: async () => {
+      const rows = await db.getAllAsync<MistakeRow>(
+        'SELECT * FROM mistakes ORDER BY created_at, id',
+      );
+
+      return rows.map(toMistake);
+    },
     listUnresolved: async () => {
       const rows = await db.getAllAsync<MistakeRow>(
         `SELECT * FROM mistakes WHERE status = 'unresolved' ORDER BY created_at, id`,

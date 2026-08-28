@@ -24,4 +24,8 @@ This repository is the system of record for the Online Dershanem working product
 - MVP sequence: [docs/EXECUTION/MVP.md](docs/EXECUTION/MVP.md)
 - Release blockers: [docs/RELEASE_READINESS.md](docs/RELEASE_READINESS.md)
 - Content and engine decisions: [docs/DECISIONS/0002-content-contract-and-learning-engine.md](docs/DECISIONS/0002-content-contract-and-learning-engine.md)
+- Topic coach and reporting decisions: [docs/DECISIONS/0006-topic-coach-and-evidence-qualified-reporting.md](docs/DECISIONS/0006-topic-coach-and-evidence-qualified-reporting.md)
+- Daily plan decisions: [docs/DECISIONS/0007-daily-plan.md](docs/DECISIONS/0007-daily-plan.md)
+- Mistake notebook decisions: [docs/DECISIONS/0008-mistake-notebook.md](docs/DECISIONS/0008-mistake-notebook.md)
+- Starting diagnostic decisions: [docs/DECISIONS/0009-starting-diagnostic.md](docs/DECISIONS/0009-starting-diagnostic.md)
 - Remaining domain documents: [docs/](docs/)

@@ -30,3 +30,37 @@ export type EvaluationResult = {
 export function answerMatchesKind(answer: ExerciseAnswer, kind: ExerciseKind): boolean {
   return answer.kind === kind;
 }
+
+const ANSWER_KINDS: readonly ExerciseKind[] = [
+  'fillBlank',
+  'flashcard',
+  'matching',
+  'multipleChoice',
+  'ordering',
+  'trueFalse',
+];
+
+/**
+ * Reads an answer back out of the durable attempt log.
+ *
+ * Stored answers can outlive the shape that wrote them, so this returns `null`
+ * rather than throwing: a record the app can no longer read is a gap in what it
+ * can show, never a reason to fail opening the notebook.
+ */
+export function parseStoredAnswer(serialized: string): ExerciseAnswer | null {
+  let parsed: unknown;
+  try {
+    parsed = JSON.parse(serialized);
+  } catch {
+    return null;
+  }
+
+  if (typeof parsed !== 'object' || parsed === null) {
+    return null;
+  }
+  const kind = (parsed as { kind?: unknown }).kind;
+
+  return typeof kind === 'string' && ANSWER_KINDS.includes(kind as ExerciseKind)
+    ? (parsed as ExerciseAnswer)
+    : null;
+}

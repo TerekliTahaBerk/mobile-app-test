@@ -1,7 +1,10 @@
 import { fireEvent, screen } from '@testing-library/react-native';
 import { useEffect } from 'react';
 
+import { tytDraftBundle } from '@/modules/curriculum/content/tyt-draft-bundle';
+import type { OrderingExercise } from '@/modules/curriculum/domain/content-types';
 import { useLessonSession } from '@/modules/learning/application/lesson-session-store';
+import type { DailyPlan } from '@/modules/learning/domain/daily-plan';
 import { LessonScreen } from '@/modules/learning/ui/lesson-screen';
 import { renderWithSession } from './support/render-with-session';
 
@@ -35,6 +38,34 @@ function LessonHarness({
       onWrongAnswer={onWrongAnswer}
     />
   );
+}
+
+/** The two authored ordering questions, back to back in one round. */
+function orderingPlan(): DailyPlan {
+  const exercises = tytDraftBundle.exercises.filter(
+    (exercise): exercise is OrderingExercise => exercise.kind === 'ordering',
+  );
+
+  return {
+    exercises: exercises.slice(0, 2),
+    parts: [{ exercises: exercises.slice(0, 2), kind: 'weakTopic', topicTitles: [] }],
+    topicCount: 2,
+  };
+}
+
+/** Opens a hand-built round, for flows that need a specific run of questions. */
+function PlanHarness({ plan }: { plan: DailyPlan }) {
+  const { beginDailyPlan, lesson } = useLessonSession();
+
+  useEffect(() => {
+    beginDailyPlan(plan);
+  }, [beginDailyPlan, plan]);
+
+  if (lesson === null) {
+    return null;
+  }
+
+  return <LessonScreen hearts={5} onComplete={jest.fn()} onExit={jest.fn()} />;
 }
 
 /** Works through the opening flashcard deck to reach the first scored exercise. */
@@ -167,5 +198,34 @@ describe('true/false and ordering renderers', () => {
     await fireEvent.press(screen.getByTestId('check-answer'));
 
     expect(screen.getByText('Doğru!')).toBeTruthy();
+  });
+
+  it('starts a second question of the same kind from an empty answer', async () => {
+    const plan = orderingPlan();
+    const [first, second] = plan.exercises as readonly OrderingExercise[];
+    await renderWithSession(<PlanHarness plan={plan} />);
+
+    for (const item of first!.correctOrder) {
+      await fireEvent.press(screen.getByTestId(`order-item-${item}`));
+    }
+    await fireEvent.press(screen.getByTestId('check-answer'));
+    await fireEvent.press(screen.getByTestId('feedback-continue'));
+
+    // The previous question's placements must not survive into this one: they
+    // would fill its slots with labels it does not have and leave the check
+    // action permanently disabled.
+    expect(screen.getByText(second!.prompt)).toBeTruthy();
+    expect(screen.getByText('buraya yerleştir')).toBeTruthy();
+    expect(screen.getByTestId('check-answer').props.accessibilityState).toMatchObject({
+      disabled: true,
+    });
+
+    for (const item of second!.correctOrder) {
+      await fireEvent.press(screen.getByTestId(`order-item-${item}`));
+    }
+
+    expect(screen.getByTestId('check-answer').props.accessibilityState).toMatchObject({
+      disabled: false,
+    });
   });
 });

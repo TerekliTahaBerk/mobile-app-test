@@ -1,4 +1,5 @@
 import type { LessonId, PathNodeId, SkillId } from '@/modules/curriculum/domain/content-types';
+import type { DailyPlanCard } from '@/modules/learning/model/daily-plan-card';
 import { subjectTheme, type SubjectTheme } from '@/shared/ui/theme/subject-theme';
 
 /**
@@ -19,6 +20,8 @@ export type ContinueCard = {
   subjectTitle: string;
 };
 
+export type { DailyPlanCard };
+
 export type SubjectTile = {
   id: string;
   /** `null` while the subject has no authored material yet. */
@@ -30,6 +33,8 @@ export type SubjectTile = {
 
 export type HomeViewModel = {
   continueCard: ContinueCard | null;
+  /** The primary action whenever there is no half-finished round to resume. */
+  dailyPlan: DailyPlanCard | null;
   greeting: string;
   hearts: number | null;
   initial: string;
@@ -45,6 +50,17 @@ export type HomeViewModel = {
 
 /** The Ana Sayfa fixture used by the design preview. */
 export const homePreviewData: HomeViewModel = {
+  dailyPlan: {
+    actionLabel: 'Başla',
+    detail: '4 farklı konudan karışık',
+    headline: 'Bugün 12 soru',
+    lines: [
+      { count: 5, kind: 'weakTopic', label: 'zayıf konu sorusu' },
+      { count: 3, kind: 'review', label: 'zamanı gelen tekrar' },
+      { count: 2, kind: 'refresh', label: 'güçlü konu kontrolü' },
+      { count: 2, kind: 'newMaterial', label: 'yeni konu sorusu' },
+    ],
+  },
   continueCard: {
     action: {
       kind: 'lesson',

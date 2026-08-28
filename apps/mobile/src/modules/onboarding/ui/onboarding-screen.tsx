@@ -414,7 +414,7 @@ function StepQuestion({ currentYear, draft, onPatch, step }: StepQuestionProps) 
               Nereden başlayalım?
             </AppText>
             <AppText color="accentSoft" style={styles.bubbleDetail} variant="proseS">
-              4 soruyla seviyeni bulayım — 1 dakika.
+              Kısa bir turla konu haritanı çıkarayım.
             </AppText>
           </DinoSpeech>
           <View style={styles.choices}>

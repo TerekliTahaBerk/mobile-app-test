@@ -2,6 +2,7 @@ import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 
 import type {
   ContinueCard,
+  DailyPlanCard,
   HomeViewModel,
   SubjectTile,
 } from '@/modules/home/model/home-view-model';
@@ -29,6 +30,7 @@ type HomeScreenProps = {
   onOpenLeague: () => void;
   onOpenSubject: (subjectId: string) => void;
   onSelectTab: (tab: AppTabKey) => void;
+  onStartDailyPlan: () => void;
   showExamToggle?: boolean | undefined;
   viewModel: HomeViewModel;
 };
@@ -45,6 +47,7 @@ export function HomeScreen({
   onOpenLeague,
   onOpenSubject,
   onSelectTab,
+  onStartDailyPlan,
   showExamToggle = true,
   viewModel,
 }: HomeScreenProps) {
@@ -84,8 +87,12 @@ export function HomeScreen({
           </View>
         </Card>
 
-        {viewModel.continueCard === null ? null : (
-          <ContinueBanner card={viewModel.continueCard} onPress={onContinue} />
+        {viewModel.dailyPlan === null ? (
+          viewModel.continueCard === null ? null : (
+            <ContinueBanner card={viewModel.continueCard} onPress={onContinue} />
+          )
+        ) : (
+          <DailyPlanBanner card={viewModel.dailyPlan} onPress={onStartDailyPlan} />
         )}
 
         {showExamToggle ? <View style={styles.examToggle}>
@@ -144,6 +151,57 @@ export function HomeScreen({
 
       <BottomTabBar activeTab="anasayfa" onSelectTab={onSelectTab} />
     </Screen>
+  );
+}
+
+function DailyPlanBanner({
+  card,
+  onPress,
+}: {
+  card: DailyPlanCard;
+  onPress: () => void;
+}) {
+  return (
+    <Pressable
+      accessibilityLabel={`${card.headline}, ${card.detail}`}
+      accessibilityRole="button"
+      onPress={onPress}
+      style={styles.planCard}
+      testID="home-daily-plan"
+    >
+      <View style={styles.planHeader}>
+        <View style={styles.planTitle}>
+          <AppText color="onDarkFaint" variant="eyebrow">
+            BUGÜNÜN PLANI
+          </AppText>
+          <AppText color="inverse" variant="headingS">
+            {card.headline}
+          </AppText>
+          <AppText color="onDark" style={styles.continueDetail} variant="proseS">
+            {card.detail}
+          </AppText>
+        </View>
+        <View style={styles.continueAction}>
+          <AppText color="inverse" variant="labelM">
+            {card.actionLabel}
+          </AppText>
+        </View>
+      </View>
+      <View style={styles.planLines}>
+        {card.lines.map((line) => (
+          <View key={line.kind} style={styles.planLine}>
+            <View style={styles.planCount}>
+              <AppText color="inverse" variant="labelS">
+                {line.count}
+              </AppText>
+            </View>
+            <AppText color="onDark" variant="proseS">
+              {line.label}
+            </AppText>
+          </View>
+        ))}
+      </View>
+    </Pressable>
   );
 }
 
@@ -279,6 +337,43 @@ const styles = StyleSheet.create({
   },
   continueDetail: {
     marginTop: 1,
+  },
+  planCard: {
+    backgroundColor: theme.colors.action.primaryDepth,
+    borderRadius: theme.radii.node,
+    gap: theme.spacing.md,
+    marginHorizontal: theme.spacing.xl,
+    marginTop: theme.spacing.lg,
+    padding: theme.spacing.md + 5,
+  },
+  planCount: {
+    alignItems: 'center',
+    backgroundColor: theme.colors.action.primary,
+    borderRadius: theme.radii.pill,
+    justifyContent: 'center',
+    minWidth: 26,
+    paddingHorizontal: theme.spacing.sm,
+    paddingVertical: 3,
+  },
+  planHeader: {
+    alignItems: 'center',
+    flexDirection: 'row',
+    gap: theme.spacing.lg,
+  },
+  planLine: {
+    alignItems: 'center',
+    flexDirection: 'row',
+    gap: theme.spacing.sm,
+  },
+  planLines: {
+    borderTopColor: theme.colors.action.primary,
+    borderTopWidth: 1,
+    gap: theme.spacing.sm,
+    paddingTop: theme.spacing.md,
+  },
+  planTitle: {
+    flex: 1,
+    gap: 3,
   },
   continueEyebrow: {
     textTransform: 'uppercase',

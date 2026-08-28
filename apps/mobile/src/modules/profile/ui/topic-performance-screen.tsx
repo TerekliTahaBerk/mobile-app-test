@@ -1,24 +1,30 @@
 import { ScrollView, StyleSheet, View } from 'react-native';
 
 import type {
-  ProfileTopicPerformance,
-  ProfileViewModel,
-} from '@/modules/profile/model/profile-view-model';
-import type { TopicPerformanceBand } from '@/modules/progress/domain/topic-performance';
+  MainTopicCard,
+  SubtopicCard,
+  TopicPerformanceViewModel,
+} from '@/modules/profile/model/topic-performance-view-model';
+import type {
+  TopicPerformanceBand,
+  TopicPerformanceWindow,
+} from '@/modules/progress/domain/topic-performance';
 import { AppButton } from '@/shared/ui/components/app-button';
 import { AppText } from '@/shared/ui/components/app-text';
 import { Card } from '@/shared/ui/components/card';
-import { BackIcon, CheckIcon, RepeatIcon, TargetIcon } from '@/shared/ui/components/icons';
+import { BackIcon, CheckIcon, ClockIcon, RepeatIcon, TargetIcon } from '@/shared/ui/components/icons';
 import { ProgressBar } from '@/shared/ui/components/progress-bar';
 import { Screen } from '@/shared/ui/components/screen';
+import { SegmentedToggle } from '@/shared/ui/components/segmented-toggle';
 import { TactilePressable } from '@/shared/ui/components/tactile-pressable';
 import { theme } from '@/shared/ui/theme/tokens';
 
 type TopicPerformanceScreenProps = {
   onBack: () => void;
+  onChangeWindow: (window: TopicPerformanceWindow) => void;
   onStartPractice: (topicId: string, beforeAccuracy: number) => void;
   recentResult?: { afterAccuracy: number; beforeAccuracy: number; topicTitle: string } | undefined;
-  topics: ProfileViewModel['topicPerformance'];
+  viewModel: TopicPerformanceViewModel;
 };
 
 const SECTIONS: readonly {
@@ -45,19 +51,12 @@ const SECTIONS: readonly {
 
 export function TopicPerformanceScreen({
   onBack,
+  onChangeWindow,
   onStartPractice,
   recentResult,
-  topics,
+  viewModel,
 }: TopicPerformanceScreenProps) {
-  const totals = topics.reduce(
-    (summary, topic) => ({
-      correct: summary.correct + topic.correctAnswers,
-      attempts: summary.attempts + topic.totalAttempts,
-      wrong: summary.wrong + topic.wrongAnswers,
-    }),
-    { attempts: 0, correct: 0, wrong: 0 },
-  );
-  const accuracy = totals.attempts === 0 ? 0 : totals.correct / totals.attempts;
+  const { overall } = viewModel;
 
   return (
     <Screen background="lesson" testID="topic-performance-screen">
@@ -84,6 +83,13 @@ export function TopicPerformanceScreen({
       </View>
 
       <ScrollView contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
+        <SegmentedToggle
+          accessibilityLabel="Zaman aralığı"
+          onChange={onChangeWindow}
+          options={viewModel.windowOptions}
+          value={viewModel.window}
+        />
+
         <Card style={styles.hero} variant="soft">
           <View style={styles.heroTop}>
             <View>
@@ -91,7 +97,10 @@ export function TopicPerformanceScreen({
                 GENEL DOĞRULUK
               </AppText>
               <AppText color="accentStrong" variant="display">
-                %{Math.round(accuracy * 100)}
+                {overall.accuracyLabel}
+              </AppText>
+              <AppText color="accentSoft" variant="labelS">
+                {overall.evidenceLabel}
               </AppText>
             </View>
             <View style={styles.heroIcon}>
@@ -99,13 +108,14 @@ export function TopicPerformanceScreen({
             </View>
           </View>
           <ProgressBar
-            accessibilityLabel={`Genel doğruluk yüzde ${Math.round(accuracy * 100)}`}
+            accessibilityLabel={`Genel doğruluk ${overall.accuracyLabel}`}
             height={10}
-            value={accuracy}
+            value={overall.accuracy}
           />
           <AppText color="secondary" style={styles.heroHint} variant="proseS">
-            Her puanlanan cevaptan sonra güncellenir. Konu hâkimiyetinden ayrı, gerçek cevap
-            performansını gösterir.
+            {overall.lowEvidence
+              ? 'Bu sonuç için henüz az veri var. Yüzde, arkasındaki soru sayısı kadar güvenilirdir.'
+              : 'Her puanlanan cevaptan sonra güncellenir. Konu hâkimiyetinden ayrı, gerçek cevap performansını gösterir.'}
           </AppText>
         </Card>
 
@@ -128,25 +138,59 @@ export function TopicPerformanceScreen({
           </Card>
         )}
 
+        {viewModel.correctedToday.length === 0 ? null : (
+          <View style={styles.section} testID="corrected-today">
+            <AppText accessibilityRole="header" variant="headingS">
+              Bugün düzelttiğin konular
+            </AppText>
+            <AppText color="secondary" style={styles.sectionDescription} variant="proseS">
+              Daha önce yanlış yaptığın soruları bugün doğru cevapladın.
+            </AppText>
+            <View style={styles.topicList}>
+              {viewModel.correctedToday.map((corrected) => (
+                <Card
+                  borderColor={theme.colors.status.successBorder}
+                  key={corrected.id}
+                  style={styles.correctedCard}
+                  surfaceColor={theme.colors.status.successSoft}
+                  testID={`corrected-today-${corrected.id}`}
+                >
+                  <CheckIcon color={theme.colors.status.successInk} size={20} />
+                  <View style={styles.resultText}>
+                    <AppText variant="labelM">{corrected.title}</AppText>
+                    <AppText color="secondary" variant="proseXS">
+                      {corrected.detail}
+                    </AppText>
+                  </View>
+                </Card>
+              ))}
+            </View>
+          </View>
+        )}
+
         <View style={styles.metricRow}>
-          <MetricCard label="Doğru" tone="success" value={totals.correct} />
-          <MetricCard label="Yanlış" tone="danger" value={totals.wrong} />
-          <MetricCard label="Ana konu" tone="neutral" value={topics.length} />
+          <MetricCard label="Doğru" tone="success" value={overall.correctAnswers} />
+          <MetricCard label="Yanlış" tone="danger" value={overall.wrongAnswers} />
+          <MetricCard label="Ana konu" tone="neutral" value={overall.mainTopics} />
         </View>
 
-        {topics.length === 0 ? (
-          <Card style={styles.empty} variant="outlined">
+        {viewModel.emptyReason !== null ? (
+          <Card style={styles.empty} testID="topic-performance-empty" variant="outlined">
             <TargetIcon color={theme.colors.text.muted} size={28} />
             <AppText style={styles.emptyTitle} variant="headingXS">
-              İlk verini oluşturalım
+              {viewModel.emptyReason === 'noData'
+                ? 'İlk verini oluşturalım'
+                : 'Bu aralıkta çözülen soru yok'}
             </AppText>
             <AppText align="center" color="secondary" variant="prose">
-              Puanlanan bir soru çözdüğünde ana konu ve alt konu performansın burada oluşacak.
+              {viewModel.emptyReason === 'noData'
+                ? 'Puanlanan bir soru çözdüğünde ana konu ve alt konu performansın burada oluşacak.'
+                : 'Daha geniş bir aralık seçebilir veya bugün kısa bir çalışma yapabilirsin.'}
             </AppText>
           </Card>
         ) : (
           SECTIONS.map((section) => {
-            const sectionTopics = topics.filter((topic) => topic.band === section.band);
+            const sectionTopics = viewModel.topics.filter((topic) => topic.band === section.band);
             if (sectionTopics.length === 0) {
               return null;
             }
@@ -198,12 +242,34 @@ function MetricCard({
   );
 }
 
+/** The trend and freshness line every topic and subtopic carries. */
+function ContextLine({ card }: { card: MainTopicCard | SubtopicCard }) {
+  return (
+    <View style={styles.contextRow}>
+      <ClockIcon color={theme.colors.text.muted} size={13} />
+      <AppText color="muted" variant="caption">
+        {card.lastStudiedLabel}
+      </AppText>
+      {card.trendLabel === null ? null : (
+        <View style={styles.trendBadge}>
+          <AppText
+            color={card.trend === 'falling' ? 'danger' : card.trend === 'rising' ? 'success' : 'secondary'}
+            variant="caption"
+          >
+            {card.trendLabel}
+          </AppText>
+        </View>
+      )}
+    </View>
+  );
+}
+
 function TopicDetailCard({
   onStartPractice,
   topic,
 }: {
   onStartPractice: (topicId: string, beforeAccuracy: number) => void;
-  topic: ProfileTopicPerformance;
+  topic: MainTopicCard;
 }) {
   const needsPractice = topic.band === 'needsPractice';
   const strong = topic.band === 'strong';
@@ -224,11 +290,7 @@ function TopicDetailCard({
         <View
           style={[
             styles.bandBadge,
-            needsPractice
-              ? styles.bandDanger
-              : strong
-                ? styles.bandSuccess
-                : styles.bandDeveloping,
+            needsPractice ? styles.bandDanger : strong ? styles.bandSuccess : styles.bandDeveloping,
           ]}
         >
           {strong ? (
@@ -236,72 +298,113 @@ function TopicDetailCard({
           ) : needsPractice ? (
             <RepeatIcon color={theme.colors.status.dangerInk} size={14} />
           ) : null}
-          <AppText color={needsPractice ? 'danger' : strong ? 'success' : 'secondary'} variant="caption">
+          <AppText
+            color={needsPractice ? 'danger' : strong ? 'success' : 'secondary'}
+            variant="caption"
+          >
             {topic.statusLabel}
           </AppText>
         </View>
       </View>
+
+      <ContextLine card={topic} />
+
       <View style={styles.accuracyRow}>
         <AppText color="secondary" variant="caption">
-          Ana konu
+          Ana konu · {topic.evidenceLabel}
         </AppText>
-        <AppText variant="labelS">{topic.accuracyLabel}</AppText>
+        <AppText variant="labelS">{topic.accuracyLabel} doğruluk</AppText>
       </View>
       <ProgressBar
-        accessibilityLabel={`${topic.title}: ${topic.accuracyLabel}`}
+        accessibilityLabel={`${topic.title}: ${topic.accuracyLabel} doğruluk, ${topic.evidenceLabel}`}
         fillColor={needsPractice ? theme.colors.status.danger : theme.colors.progress.fill}
         height={8}
         value={topic.accuracy}
       />
+      <AppText color="muted" style={styles.coverage} variant="caption">
+        {topic.coverageLabel}
+      </AppText>
+      {topic.staleLabel === null ? null : (
+        <AppText color="muted" variant="caption">
+          {topic.staleLabel}
+        </AppText>
+      )}
 
       <View style={styles.subtopicList}>
         <AppText color="muted" variant="eyebrow">
           ALT KONULAR
         </AppText>
         {topic.subtopics.map((subtopic) => (
-          <View key={subtopic.id} style={styles.subtopic}>
-            <View style={styles.subtopicTop}>
-              <View style={styles.topicTitle}>
-                <AppText variant="labelS">{subtopic.title}</AppText>
-                <AppText color="secondary" variant="proseXS">
-                  {subtopic.detail}
-                </AppText>
-              </View>
-              <AppText
-                color={subtopic.band === 'needsPractice' ? 'danger' : 'primary'}
-                variant="mono"
-              >
-                {subtopic.accuracyLabel}
-              </AppText>
-            </View>
-            <ProgressBar
-              accessibilityLabel={`${subtopic.title}: ${subtopic.accuracyLabel} doğruluk`}
-              fillColor={
-                subtopic.band === 'needsPractice'
-                  ? theme.colors.status.danger
-                  : theme.colors.progress.fill
-              }
-              height={5}
-              value={subtopic.accuracy}
-            />
-            {subtopic.nextReviewLabel === null ? null : (
-              <AppText color="muted" variant="caption">
-                {subtopic.nextReviewLabel}
-              </AppText>
-            )}
-            {subtopic.band === 'strong' ? null : (
-              <AppButton
-                label="Bu konuyu çalış"
-                onPress={() => onStartPractice(subtopic.id, subtopic.accuracy)}
-                style={styles.practiceButton}
-                testID={`practice-topic-${subtopic.id}`}
-                variant={subtopic.band === 'needsPractice' ? 'primary' : 'neutral'}
-              />
-            )}
-          </View>
+          <SubtopicRow key={subtopic.id} onStartPractice={onStartPractice} subtopic={subtopic} />
         ))}
       </View>
     </Card>
+  );
+}
+
+function SubtopicRow({
+  onStartPractice,
+  subtopic,
+}: {
+  onStartPractice: (topicId: string, beforeAccuracy: number) => void;
+  subtopic: SubtopicCard;
+}) {
+  const needsPractice = subtopic.band === 'needsPractice';
+  return (
+    <View style={styles.subtopic}>
+      <View style={styles.subtopicTop}>
+        <View style={styles.topicTitle}>
+          <AppText variant="labelS">{subtopic.title}</AppText>
+          <AppText color="secondary" variant="proseXS">
+            {subtopic.detail}
+          </AppText>
+        </View>
+        <View style={styles.subtopicScore}>
+          <AppText color={needsPractice ? 'danger' : 'primary'} variant="labelS">
+            {subtopic.accuracyLabel}
+          </AppText>
+          <AppText color="muted" variant="mono">
+            {subtopic.evidenceLabel}
+          </AppText>
+        </View>
+      </View>
+      <ProgressBar
+        accessibilityLabel={`${subtopic.title}: ${subtopic.accuracyLabel} doğruluk, ${subtopic.evidenceLabel}`}
+        fillColor={needsPractice ? theme.colors.status.danger : theme.colors.progress.fill}
+        height={5}
+        value={subtopic.accuracy}
+      />
+      <ContextLine card={subtopic} />
+      {subtopic.lowEvidenceNote === null ? null : (
+        <AppText color="muted" variant="caption">
+          {subtopic.lowEvidenceNote}
+        </AppText>
+      )}
+      {subtopic.attemptSplitLabel === null ? null : (
+        <AppText color="secondary" variant="caption">
+          {subtopic.attemptSplitLabel}
+        </AppText>
+      )}
+      {subtopic.staleLabel === null ? null : (
+        <AppText color="muted" variant="caption">
+          {subtopic.staleLabel}
+        </AppText>
+      )}
+      {subtopic.nextReviewLabel === null ? null : (
+        <AppText color="muted" variant="caption">
+          {subtopic.nextReviewLabel}
+        </AppText>
+      )}
+      {subtopic.band === 'strong' && subtopic.staleLabel === null ? null : (
+        <AppButton
+          label={subtopic.staleLabel === null ? 'Bu konuyu çalış' : 'Bu konuyu tazele'}
+          onPress={() => onStartPractice(subtopic.id, subtopic.accuracy)}
+          style={styles.practiceButton}
+          testID={`practice-topic-${subtopic.id}`}
+          variant={needsPractice ? 'primary' : 'neutral'}
+        />
+      )}
+    </View>
   );
 }
 
@@ -329,6 +432,18 @@ const styles = StyleSheet.create({
   bandDanger: { backgroundColor: theme.colors.status.dangerSoft },
   bandDeveloping: { backgroundColor: theme.colors.surface.recessed },
   bandSuccess: { backgroundColor: theme.colors.status.successSoft },
+  contextRow: {
+    alignItems: 'center',
+    flexDirection: 'row',
+    gap: theme.spacing.xs,
+    marginTop: theme.spacing.sm,
+  },
+  correctedCard: {
+    alignItems: 'center',
+    flexDirection: 'row',
+    gap: theme.spacing.md,
+  },
+  coverage: { marginTop: theme.spacing.sm },
   empty: {
     alignItems: 'center',
     marginTop: theme.spacing.xxl,
@@ -345,7 +460,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: theme.spacing.md,
   },
   headerTitle: { flex: 1, paddingRight: theme.spacing.xl },
-  hero: { padding: theme.spacing.xl },
+  hero: { marginTop: theme.spacing.md, padding: theme.spacing.xl },
   heroHint: { marginTop: theme.spacing.md },
   heroIcon: {
     alignItems: 'center',
@@ -381,9 +496,16 @@ const styles = StyleSheet.create({
     paddingTop: theme.spacing.md,
   },
   subtopicList: { gap: theme.spacing.md, marginTop: theme.spacing.lg },
+  subtopicScore: { alignItems: 'flex-end', gap: theme.spacing.xxs },
   subtopicTop: { alignItems: 'center', flexDirection: 'row', gap: theme.spacing.md },
   topicCard: { padding: theme.spacing.lg },
   topicHeader: { alignItems: 'flex-start', flexDirection: 'row', gap: theme.spacing.md },
   topicList: { gap: theme.spacing.md, marginTop: theme.spacing.md },
   topicTitle: { flex: 1, gap: theme.spacing.xxs },
+  trendBadge: {
+    backgroundColor: theme.colors.surface.recessed,
+    borderRadius: theme.radii.pill,
+    paddingHorizontal: theme.spacing.sm,
+    paddingVertical: theme.spacing.xxs,
+  },
 });

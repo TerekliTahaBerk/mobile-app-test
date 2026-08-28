@@ -71,10 +71,10 @@ describe('routes', () => {
     expect(mockPush).toHaveBeenCalledWith('/ogren/tyt.history');
   });
 
-  it('starts the round the continue card names', async () => {
+  it('opens a round from the primary action on the home tab', async () => {
     await renderWithSession(<IndexRoute />);
 
-    await fireEvent.press(screen.getByTestId('home-continue'));
+    await fireEvent.press(screen.getByTestId('home-daily-plan'));
 
     expect(mockPush).toHaveBeenCalledWith('/lesson');
   });
