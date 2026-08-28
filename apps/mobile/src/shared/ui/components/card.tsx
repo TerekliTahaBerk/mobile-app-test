@@ -2,7 +2,7 @@ import { StyleSheet, View, type ViewProps } from 'react-native';
 
 import { theme } from '@/shared/ui/theme/tokens';
 
-export type CardVariant = 'elevated' | 'outlined' | 'plain' | 'tactile';
+export type CardVariant = 'outlined' | 'plain' | 'soft' | 'tactile';
 
 type CardProps = ViewProps & {
   /** Overrides the outline colour for state-tinted cards (correct, wrong, selected). */
@@ -12,9 +12,9 @@ type CardProps = ViewProps & {
 };
 
 /**
- * The design's card language: a two-point outline, a warm surface, and — for
- * anything that reads as touchable — a thickened bottom edge that gives the
- * card physical weight without a shadow.
+ * The design's card language. Resting content sits in a hairline-outlined
+ * white card; anything that reads as touchable gets a two-point outline and a
+ * thickened bottom edge that gives it physical weight without a shadow.
  */
 export function Card({
   borderColor,
@@ -46,14 +46,14 @@ const styles = StyleSheet.create({
 });
 
 const variantStyles = StyleSheet.create({
-  elevated: {
-    ...theme.elevation.raised,
-  },
   outlined: {
     borderColor: theme.colors.border.subtle,
-    borderWidth: 2,
+    borderWidth: 1,
   },
   plain: {},
+  soft: {
+    backgroundColor: theme.colors.surface.soft,
+  },
   tactile: {
     borderBottomWidth: theme.depth.cardBorder,
     borderColor: theme.colors.border.subtle,

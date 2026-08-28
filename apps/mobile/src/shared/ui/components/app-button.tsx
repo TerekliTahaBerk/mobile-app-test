@@ -4,7 +4,7 @@ import { AppText, type AppTextColor } from '@/shared/ui/components/app-text';
 import { TactilePressable } from '@/shared/ui/components/tactile-pressable';
 import { theme } from '@/shared/ui/theme/tokens';
 
-export type AppButtonVariant = 'danger' | 'ghost' | 'neutral' | 'primary' | 'success';
+export type AppButtonVariant = 'danger' | 'ghost' | 'inverse' | 'neutral' | 'primary';
 
 type AppButtonProps = Omit<PressableProps, 'children' | 'onPress' | 'style'> & {
   fullWidth?: boolean;
@@ -15,9 +15,9 @@ type AppButtonProps = Omit<PressableProps, 'children' | 'onPress' | 'style'> & {
 };
 
 /**
- * The screen-driving action of the design: a wide, tactile, thumb-reachable
- * control with a compressed pressed state. `ghost` is the quiet text action
- * used for "Çıkışı onayla" and "İzi paylaş".
+ * The screen-driving action of the design: a wide, thumb-reachable control
+ * with a solid 4pt structural edge that compresses when pressed. `ghost` is
+ * the quiet text action used for "Şimdilik değil" and "Ana Sayfa".
  */
 export function AppButton({
   accessibilityLabel,
@@ -33,7 +33,7 @@ export function AppButton({
 }: AppButtonProps) {
   const isDisabled = disabled === true;
   const tone = isDisabled ? toneStyles.disabled : toneStyles[variant];
-  const labelColor: AppTextColor = isDisabled ? 'disabled' : tone.labelColor;
+  const labelColor: AppTextColor = isDisabled ? 'muted' : tone.labelColor;
 
   const sharedProps = {
     accessibilityLabel: accessibilityLabel ?? label,
@@ -54,7 +54,7 @@ export function AppButton({
         faceStyle={styles.ghostFace}
         style={[fullWidth && styles.fullWidth, style]}
       >
-        <AppText align="center" color="faint" variant="labelM">
+        <AppText align="center" color="secondary" variant="labelM">
           {label}
         </AppText>
       </TactilePressable>
@@ -65,7 +65,14 @@ export function AppButton({
     <TactilePressable
       {...sharedProps}
       depthColor={tone.depth}
-      faceStyle={[styles.face, { backgroundColor: tone.face }]}
+      faceStyle={[
+        styles.face,
+        { backgroundColor: tone.face },
+        tone.border === undefined
+          ? null
+          : { borderColor: tone.border, borderWidth: 2 },
+      ]}
+      radius={theme.radii.large}
       style={[fullWidth && styles.fullWidth, style]}
     >
       <View style={styles.labelRow}>
@@ -81,14 +88,14 @@ const styles = StyleSheet.create({
   face: {
     minHeight: 56,
     paddingHorizontal: theme.spacing.xl,
-    paddingVertical: theme.spacing.xl,
+    paddingVertical: 17,
   },
   fullWidth: {
     width: '100%',
   },
   ghostFace: {
-    minHeight: theme.hitTarget,
     justifyContent: 'center',
+    minHeight: theme.hitTarget,
     paddingVertical: theme.spacing.lg,
   },
   labelRow: {
@@ -97,7 +104,14 @@ const styles = StyleSheet.create({
   },
 });
 
-const toneStyles = {
+type ButtonTone = {
+  border?: string;
+  depth: string;
+  face: string;
+  labelColor: AppTextColor;
+};
+
+const toneStyles: Record<AppButtonVariant | 'disabled', ButtonTone> = {
   danger: {
     depth: theme.colors.action.dangerDepth,
     face: theme.colors.action.danger,
@@ -106,26 +120,29 @@ const toneStyles = {
   disabled: {
     depth: theme.colors.action.disabledDepth,
     face: theme.colors.action.disabled,
-    labelColor: 'disabled',
+    labelColor: 'muted',
   },
   ghost: {
-    depth: theme.colors.action.neutralDepth,
-    face: theme.colors.action.neutral,
-    labelColor: 'muted',
+    depth: 'transparent',
+    face: 'transparent',
+    labelColor: 'secondary',
   },
+  /** White face on a coloured stage — the welcome screen's "Başla". */
+  inverse: {
+    depth: theme.colors.action.inverseDepth,
+    face: theme.colors.action.inverse,
+    labelColor: 'accentStrong',
+  },
+  /** Outlined face on white — "Pratik Yaparak 1 Can Kazan". */
   neutral: {
-    depth: theme.colors.action.neutralDepth,
-    face: theme.colors.action.neutral,
-    labelColor: 'muted',
+    border: theme.colors.border.subtle,
+    depth: theme.colors.border.subtle,
+    face: theme.colors.surface.default,
+    labelColor: 'accentStrong',
   },
   primary: {
     depth: theme.colors.action.primaryDepth,
     face: theme.colors.action.primary,
     labelColor: 'inverse',
   },
-  success: {
-    depth: theme.colors.action.successDepth,
-    face: theme.colors.action.success,
-    labelColor: 'inverse',
-  },
-} as const satisfies Record<AppButtonVariant | 'disabled', { depth: string; face: string; labelColor: AppTextColor }>;
+};

@@ -1,190 +1,228 @@
 import { ScrollView, StyleSheet, View } from 'react-native';
 
-import { getContentIndex } from '@/modules/curriculum/content/content-source';
-import { useLessonSession } from '@/modules/learning/application/lesson-session-store';
 import { AppButton } from '@/shared/ui/components/app-button';
 import { AppText } from '@/shared/ui/components/app-text';
-import { BottomAction } from '@/shared/ui/components/bottom-action';
+import { ProgressBar } from '@/shared/ui/components/progress-bar';
 import { Screen } from '@/shared/ui/components/screen';
-import { Cizgi } from '@/shared/ui/cizgi/cizgi';
-import { Bob } from '@/shared/ui/motion/motion';
+import { StarIcon } from '@/shared/ui/components/icons';
+import { Dino } from '@/shared/ui/dino/dino';
 import { theme } from '@/shared/ui/theme/tokens';
 
-type LessonCompleteScreenProps = {
-  onCollect: () => void;
+export type LessonCompleteViewModel = {
+  accuracyLabel: string;
+  /** "Yeni node açıldı: Kut ve Töre" — omitted when nothing opened. */
+  unlockedLabel: string | null;
+  roundTitle: string;
+  streak: number;
+  unit: {
+    /** The share of the unit already done before this round, 0–1. */
+    before: number;
+    /** What this round added, 0–1. */
+    gained: number;
+    title: string;
+  } | null;
+  xpEarned: number;
 };
 
-type StatTone = { border: string; figure: string; label: string; surface: string };
+type LessonCompleteScreenProps = {
+  onBackToHome: () => void;
+  onNextRound: () => void;
+  viewModel: LessonCompleteViewModel;
+};
 
 /**
- * Design screen 09. Every number here now comes from the finished session: XP
- * the engine awarded, accuracy over the exercises it actually scored, and the
- * real lesson title.
- *
- * The İz line is still preview copy — İz is not computed yet.
+ * The payoff. It states what was earned, shows the unit moving, and offers one
+ * more round — the loop closes here rather than dropping the learner out.
  */
-export function LessonCompleteScreen({ onCollect }: LessonCompleteScreenProps) {
-  const { completionResult, lesson, summary } = useLessonSession();
-
-  if (lesson === null || summary === null) {
-    return null;
-  }
-
-  const index = getContentIndex();
-  const topic = index.getTopic(lesson.deps.lesson.topicId);
-  const unit = index.getUnit(topic.unitId);
-
-  const stats: readonly { id: string; label: string; tone: StatTone; value: string }[] = [
-    {
-      id: 'stat-xp',
-      label: 'KAZANILAN XP',
-      tone: {
-        border: theme.colors.reward.xp,
-        figure: theme.colors.reward.xpNumber,
-        label: theme.colors.reward.xpInk,
-        surface: theme.colors.reward.xpSoft,
-      },
-      value: `${completionResult?.awardedXp ?? summary.xpEarned}`,
-    },
-    {
-      id: 'stat-accuracy',
-      label: 'İSABET',
-      tone: {
-        border: theme.colors.subject.geography.primary,
-        figure: theme.colors.subject.geography.ink,
-        label: theme.colors.subject.geography.deep,
-        surface: theme.colors.subject.geography.soft,
-      },
-      value: `%${summary.accuracyPercent}`,
-    },
-    {
-      id: 'stat-correct',
-      label: 'DOĞRU',
-      tone: {
-        border: theme.colors.subject.religion.primary,
-        figure: theme.colors.subject.religion.ink,
-        label: theme.colors.subject.religion.deep,
-        surface: theme.colors.subject.religion.soft,
-      },
-      value: `${summary.correctCount}/${summary.scoredCount}`,
-    },
-  ];
+export function LessonCompleteScreen({
+  onBackToHome,
+  onNextRound,
+  viewModel,
+}: LessonCompleteScreenProps) {
+  const unit = viewModel.unit;
 
   return (
-    <Screen includeBottomInset={false} testID="lesson-complete-screen">
+    <Screen background="celebration" includeBottomInset={false} testID="lesson-complete-screen">
+      <View style={styles.stage}>
+        <Dino size={168} />
+        <AppText align="center" color="inverse" style={styles.title} variant="headingXXL">
+          Harika!
+        </AppText>
+        <AppText align="center" color="onDark" style={styles.subtitle} variant="bodyL">
+          Çalışma tamamlandı · {viewModel.roundTitle}
+        </AppText>
+      </View>
+
       <ScrollView
-        contentContainerStyle={styles.content}
+        contentContainerStyle={styles.sheetContent}
         showsVerticalScrollIndicator={false}
-        style={styles.scroll}
+        style={styles.sheet}
       >
-        <Bob duration={2400}>
-          <Cizgi mood="cheer" width={206} />
-        </Bob>
-
-        <View style={styles.heading}>
-          <AppText accessibilityRole="header" align="center" color="accentStrong" variant="headingXL">
-            {lesson.kind === 'review' ? 'Tekrar tamamlandı!' : 'Ders tamamlandı!'}
-          </AppText>
-          <AppText align="center" color="muted" variant="bodyM">
-            {`${unit.title} · ${lesson.deps.lesson.title}`}
-          </AppText>
+        <View style={styles.statRow}>
+          <Stat label="XP" tone="brand" value={`+${viewModel.xpEarned}`} />
+          <Stat label="Doğru" tone="brand" value={viewModel.accuracyLabel} />
+          <Stat label="Gün seri" tone="streak" value={String(viewModel.streak)} />
         </View>
 
-        <View style={styles.stats}>
-          {stats.map((stat) => (
-            <View
-              accessible
-              accessibilityLabel={`${stat.label}: ${stat.value}`}
-              key={stat.id}
-              style={[styles.stat, { borderColor: stat.tone.border }]}
-            >
-              <View style={[styles.statHeader, { backgroundColor: stat.tone.surface }]}>
-                <AppText
-                  align="center"
-                  style={[styles.statLabel, { color: stat.tone.label }]}
-                  variant="eyebrow"
-                >
-                  {stat.label}
+        {unit === null ? null : (
+          <View style={styles.unitCard}>
+            <View style={styles.unitRow}>
+              <AppText variant="bodyS">{unit.title}</AppText>
+              <AppText color="secondary" variant="bodyS">
+                %{Math.round(unit.before * 100)} →{' '}
+                <AppText color="success" variant="bodyM">
+                  %{Math.round((unit.before + unit.gained) * 100)}
                 </AppText>
-              </View>
-              <View style={styles.statBody}>
-                <AppText align="center" style={{ color: stat.tone.figure }} variant="numeric">
-                  {stat.value}
-                </AppText>
-              </View>
+              </AppText>
             </View>
-          ))}
-        </View>
+            <View style={styles.unitMeter}>
+              <ProgressBar
+                accessibilityLabel={`${unit.title} ilerlemesi`}
+                gainValue={unit.gained}
+                height={9}
+                value={unit.before}
+              />
+            </View>
+          </View>
+        )}
 
-        <View
-          accessible
-          accessibilityLabel={`${summary.exerciseCount} alıştırma tamamlandı`}
-          style={styles.traceCard}
-        >
-          <AppText color="secondary" style={styles.traceCopy} variant="bodyS">
-            {`${summary.exerciseCount} alıştırma tamamlandı · ${summary.scoredCount} tanesi puanlandı`}
-          </AppText>
-        </View>
+        {viewModel.unlockedLabel === null ? null : (
+          <View style={styles.unlocked}>
+            <View style={styles.unlockedIcon}>
+              <StarIcon color={theme.colors.subject.history.primary} size={18} />
+            </View>
+            <AppText style={styles.unlockedText} variant="bodyS">
+              {viewModel.unlockedLabel}
+            </AppText>
+          </View>
+        )}
+
+        <AppButton
+          label="Bir çalışma daha"
+          onPress={onNextRound}
+          style={styles.primaryAction}
+          testID="lesson-complete-next"
+        />
+        <AppButton
+          label="Ana Sayfa"
+          onPress={onBackToHome}
+          testID="lesson-complete-home"
+          variant="ghost"
+        />
       </ScrollView>
-
-      <BottomAction>
-        <AppButton label="XP’Yİ AL" onPress={onCollect} testID="lesson-complete-cta" />
-      </BottomAction>
     </Screen>
   );
 }
 
+function Stat({
+  label,
+  tone,
+  value,
+}: {
+  label: string;
+  tone: 'brand' | 'streak';
+  value: string;
+}) {
+  const isStreak = tone === 'streak';
+
+  return (
+    <View
+      style={[
+        styles.stat,
+        { backgroundColor: isStreak ? theme.colors.reward.streakSoft : theme.colors.surface.soft },
+      ]}
+    >
+      <AppText align="center" color={isStreak ? 'streak' : 'success'} variant="numeric">
+        {value}
+      </AppText>
+      <AppText
+        align="center"
+        color={isStreak ? 'streak' : 'secondary'}
+        style={styles.statLabel}
+        variant="caption"
+      >
+        {label}
+      </AppText>
+    </View>
+  );
+}
+
 const styles = StyleSheet.create({
-  content: {
+  primaryAction: {
+    marginTop: theme.spacing.lg + 2,
+  },
+  sheet: {
+    backgroundColor: theme.colors.surface.default,
+    borderTopLeftRadius: theme.radii.sheet,
+    borderTopRightRadius: theme.radii.sheet,
+    flexGrow: 0,
+  },
+  sheetContent: {
+    paddingBottom: theme.spacing.xxxl,
+    paddingHorizontal: theme.spacing.xl,
+    paddingTop: theme.spacing.xxl + 2,
+  },
+  stage: {
     alignItems: 'center',
-    flexGrow: 1,
-    gap: theme.spacing.xl,
-    justifyContent: 'center',
-    paddingHorizontal: theme.spacing.xxl,
-    paddingVertical: theme.spacing.xl,
-  },
-  heading: {
-    gap: theme.spacing.sm,
-  },
-  scroll: {
     flex: 1,
+    justifyContent: 'center',
+    paddingHorizontal: theme.spacing.xl,
   },
   stat: {
-    borderRadius: theme.radii.medium,
-    borderWidth: 2,
+    borderRadius: theme.radii.large,
     flex: 1,
-    overflow: 'hidden',
-  },
-  statBody: {
-    paddingHorizontal: theme.spacing.xs,
-    paddingVertical: theme.spacing.md + 1,
-  },
-  statHeader: {
-    paddingHorizontal: theme.spacing.xs,
-    paddingVertical: theme.spacing.sm - 2,
+    paddingHorizontal: theme.spacing.sm + 2,
+    paddingVertical: theme.spacing.lg + 1,
   },
   statLabel: {
-    fontSize: 10,
-    letterSpacing: 1,
+    marginTop: theme.spacing.xxs,
   },
-  stats: {
+  statRow: {
     flexDirection: 'row',
     gap: theme.spacing.md - 1,
-    width: '100%',
   },
-  traceCard: {
-    alignItems: 'center',
-    backgroundColor: theme.colors.trace.surface,
-    borderColor: theme.colors.trace.border,
-    borderRadius: theme.radii.medium + 2,
-    borderWidth: 2,
+  subtitle: {
+    marginTop: theme.spacing.xs,
+    opacity: 0.9,
+  },
+  title: {
+    marginTop: theme.spacing.xs + 2,
+  },
+  unitCard: {
+    borderColor: theme.colors.border.subtle,
+    borderRadius: theme.radii.large,
+    borderWidth: 1,
+    marginTop: theme.spacing.md + 1,
+    padding: theme.spacing.lg + 1,
+  },
+  unitMeter: {
+    marginTop: theme.spacing.md,
+  },
+  unitRow: {
+    alignItems: 'baseline',
     flexDirection: 'row',
-    gap: theme.spacing.md + 2,
-    paddingHorizontal: theme.spacing.lg,
-    paddingVertical: theme.spacing.lg - 1,
-    width: '100%',
+    justifyContent: 'space-between',
   },
-  traceCopy: {
+  unlocked: {
+    alignItems: 'center',
+    backgroundColor: theme.colors.subject.history.soft,
+    borderRadius: theme.radii.large,
+    flexDirection: 'row',
+    gap: theme.spacing.md,
+    marginTop: theme.spacing.md + 1,
+    paddingHorizontal: theme.spacing.lg + 1,
+    paddingVertical: theme.spacing.lg,
+  },
+  unlockedIcon: {
+    alignItems: 'center',
+    backgroundColor: theme.colors.surface.default,
+    borderRadius: theme.radii.small - 1,
+    height: 34,
+    justifyContent: 'center',
+    width: 34,
+  },
+  unlockedText: {
+    color: theme.colors.subject.history.deep,
     flex: 1,
   },
 });

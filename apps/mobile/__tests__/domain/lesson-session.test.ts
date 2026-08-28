@@ -1,8 +1,8 @@
 import { getContentIndex } from '@/modules/curriculum/content/content-source';
 import {
-  KURULTAY_LESSON_ID,
-  KURULTAY_PATH_NODE_ID,
-} from '@/modules/curriculum/content/tyt-social-draft-bundle';
+  CHRONOLOGY_LESSON_ID,
+  CHRONOLOGY_PATH_NODE_ID,
+} from '@/modules/curriculum/content/tyt-draft-bundle';
 import type { ExerciseAnswer } from '@/modules/learning/domain/answers';
 import {
   AnswerKindMismatchError,
@@ -20,9 +20,22 @@ import {
 import { XP_POLICY_V1 } from '@/modules/learning/domain/xp-policy';
 
 const index = getContentIndex();
-const lesson = index.getLesson(KURULTAY_LESSON_ID);
-const exercises = index.getLessonExercises(KURULTAY_LESSON_ID);
-const deps: LessonEngineDeps = { exercises, lesson, pathNodeId: KURULTAY_PATH_NODE_ID };
+const lesson = index.getLesson(CHRONOLOGY_LESSON_ID);
+
+/**
+ * A hand-picked run covering every exercise kind the engine has to reduce,
+ * including one unscored flashcard deck. The engine takes its exercises as a
+ * dependency, so the suite does not have to wait for a single authored lesson
+ * to happen to contain all of them.
+ */
+const exercises = [
+  index.getExercise('exercise.history.states.001.card01'),
+  index.getExercise('exercise.history.challenge.001.mcq01'),
+  index.getExercise('exercise.history.kut.001.blank01'),
+  index.getExercise('exercise.history.challenge.001.match01'),
+  index.getExercise('exercise.history.challenge.001.tf01'),
+];
+const deps: LessonEngineDeps = { exercises, lesson, pathNodeId: CHRONOLOGY_PATH_NODE_ID };
 
 /** Fixed clock: the engine never reads the real one. */
 const T = (n: number) => `2026-01-01T10:0${n}:00.000Z`;
@@ -43,6 +56,8 @@ function correctAnswerFor(index_: number): ExerciseAnswer {
       return { kind: 'flashcard', selfReport: 'known' };
     case 'ordering':
       return { kind: 'ordering', itemIds: [...exercise.correctOrder] };
+    case 'trueFalse':
+      return { choice: exercise.correctAnswer, kind: 'trueFalse' };
   }
 }
 
@@ -62,6 +77,8 @@ function wrongAnswerFor(index_: number): ExerciseAnswer {
       return { kind: 'flashcard', selfReport: 'unknown' };
     case 'ordering':
       return { kind: 'ordering', itemIds: [] };
+    case 'trueFalse':
+      return { choice: !exercise.correctAnswer, kind: 'trueFalse' };
   }
 }
 
@@ -190,7 +207,7 @@ describe('lesson session engine', () => {
     expect(attempt).toMatchObject({
       attemptNumber: 1,
       exerciseId: exercises[0]!.id,
-      lessonId: KURULTAY_LESSON_ID,
+      lessonId: CHRONOLOGY_LESSON_ID,
       occurredAt: T(1),
     });
     expect(attempt?.skillIds.length).toBeGreaterThan(0);
@@ -224,8 +241,8 @@ describe('lesson session engine', () => {
     expect(completed).toMatchObject({
       correctCount: 4,
       incorrectCount: 0,
-      lessonId: KURULTAY_LESSON_ID,
-      pathNodeId: KURULTAY_PATH_NODE_ID,
+      lessonId: CHRONOLOGY_LESSON_ID,
+      pathNodeId: CHRONOLOGY_PATH_NODE_ID,
       scoredCount: 4,
     });
   });

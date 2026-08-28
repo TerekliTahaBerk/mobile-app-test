@@ -92,9 +92,9 @@ export function ProgressStartupGate({ children }: { children: ReactNode }) {
     return (
       <MessageScreen
         body="Bu cihazdaki ilerlemen hazırlanıyor."
-        heading="Yolun hazırlanıyor"
-        mood="thinking"
+        heading="Hazırlanıyor"
         testID="progress-initializing"
+        tone="muted"
       />
     );
   }
@@ -102,12 +102,12 @@ export function ProgressStartupGate({ children }: { children: ReactNode }) {
   if (storage.status === 'failed') {
     return (
       <MessageScreen
-        action={{ label: 'TEKRAR DENE', onPress: storage.retry }}
+        action={{ label: 'Tekrar dene', onPress: storage.retry }}
         body="İlerlemen açılamadı. Hiçbir kayıt silinmedi; tekrar deneyebilirsin."
         detail={__DEV__ ? storage.error.message : undefined}
         heading="İlerleme açılamadı"
-        mood="sad"
         testID="progress-failed"
+        tone="dimmed"
       />
     );
   }

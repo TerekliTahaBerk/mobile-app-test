@@ -122,6 +122,38 @@ const MIGRATIONS: readonly Migration[] = [
       `);
     },
   },
+  {
+    name: 'hearts-and-learner-profile',
+    version: 2,
+    up: async (db) => {
+      await db.execAsync(`
+        -- Single-row tables. The CHECK pins the id so a second row cannot be
+        -- inserted by accident, which is cheaper to guarantee here than in
+        -- every call site.
+        CREATE TABLE hearts (
+          id            INTEGER PRIMARY KEY CHECK (id = 1),
+          hearts        INTEGER NOT NULL,
+          updated_at_ms INTEGER NOT NULL
+        );
+
+        CREATE TABLE learner_profile (
+          id                 INTEGER PRIMARY KEY CHECK (id = 1),
+          display_name       TEXT NOT NULL,
+          avatar_id          TEXT NOT NULL,
+          exam               TEXT NOT NULL,
+          track              TEXT,
+          grade              TEXT NOT NULL,
+          target_year        INTEGER NOT NULL,
+          referral_source    TEXT,
+          daily_goal         INTEGER NOT NULL,
+          starting_point     TEXT NOT NULL,
+          reminders_enabled  INTEGER NOT NULL DEFAULT 0,
+          reminder_time      TEXT,
+          completed_at       TEXT NOT NULL
+        );
+      `);
+    },
+  },
 ];
 
 export const LATEST_SCHEMA_VERSION = MIGRATIONS.length;

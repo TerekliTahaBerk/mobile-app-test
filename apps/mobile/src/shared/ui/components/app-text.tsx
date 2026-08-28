@@ -5,23 +5,25 @@ import { useAppTypographyReady } from '@/shared/ui/theme/typography-provider';
 
 export type AppTextColor =
   | 'accent'
+  | 'accentSoft'
   | 'accentStrong'
+  | 'badge'
   | 'body'
-  | 'checkpoint'
   | 'danger'
+  | 'dangerDeep'
   | 'disabled'
-  | 'eyebrow'
   | 'faint'
-  | 'gem'
   | 'heart'
   | 'inverse'
   | 'muted'
+  | 'onDark'
+  | 'onDarkFaint'
   | 'primary'
   | 'secondary'
+  | 'streak'
   | 'subjectHistory'
-  | 'subjectPhilosophy'
-  | 'success'
-  | 'xp';
+  | 'subjectHistoryDeep'
+  | 'success';
 
 type AppTextProps = TextProps & {
   align?: 'center' | 'left' | 'right';
@@ -55,58 +57,63 @@ export function AppText({
 }
 
 const fontFamilyStyles = StyleSheet.create({
-  display: { fontFamily: 'Baloo2_800ExtraBold' },
-  prose: { fontFamily: 'Nunito_400Regular' },
-  proseSemi: { fontFamily: 'Nunito_600SemiBold' },
-  body: { fontFamily: 'Nunito_700Bold' },
-  label: { fontFamily: 'Nunito_800ExtraBold' },
-  hud: { fontFamily: 'Nunito_900Black' },
+  bold: { fontFamily: 'Manrope_700Bold' },
+  extraBold: { fontFamily: 'Manrope_800ExtraBold' },
+  mono: { fontFamily: 'JetBrainsMono_500Medium' },
+  regular: { fontFamily: 'Manrope_400Regular' },
 });
 
 const fontFamilyByVariant = {
-  display: 'display',
-  headingXXL: 'display',
-  headingXL: 'display',
-  headingL: 'display',
-  headingM: 'display',
-  headingS: 'display',
-  headingXS: 'display',
-  numeric: 'display',
+  display: 'extraBold',
+  headingXXL: 'extraBold',
+  headingXL: 'extraBold',
+  headingL: 'extraBold',
+  headingM: 'extraBold',
+  headingS: 'extraBold',
+  headingXS: 'extraBold',
+  numeric: 'extraBold',
 
-  question: 'body',
-  bodyL: 'body',
-  bodyM: 'body',
-  bodyS: 'body',
-  prose: 'prose',
-  proseS: 'proseSemi',
+  question: 'extraBold',
+  questionS: 'extraBold',
 
-  labelL: 'label',
-  labelM: 'label',
-  labelS: 'label',
-  caption: 'label',
-  eyebrow: 'label',
-  hud: 'hud',
+  bodyL: 'bold',
+  bodyM: 'extraBold',
+  bodyS: 'bold',
+  prose: 'regular',
+  proseS: 'regular',
+  proseXS: 'regular',
+
+  labelL: 'extraBold',
+  labelM: 'extraBold',
+  labelS: 'extraBold',
+  caption: 'extraBold',
+  eyebrow: 'extraBold',
+  hud: 'extraBold',
+  mono: 'mono',
+  monoM: 'mono',
 } as const satisfies Record<TypographyRole, keyof typeof fontFamilyStyles>;
 
 const colorStyles = StyleSheet.create({
   accent: { color: theme.colors.text.accent },
+  accentSoft: { color: theme.colors.text.accentSoft },
   accentStrong: { color: theme.colors.text.accentStrong },
+  badge: { color: theme.colors.reward.badge },
   body: { color: theme.colors.text.body },
-  checkpoint: { color: theme.colors.reward.xpInk },
   danger: { color: theme.colors.status.dangerInk },
+  dangerDeep: { color: theme.colors.status.dangerDeep },
   disabled: { color: theme.colors.text.disabled },
-  eyebrow: { color: theme.colors.text.eyebrow },
   faint: { color: theme.colors.text.faint },
-  gem: { color: theme.colors.reward.gemInk },
   heart: { color: theme.colors.reward.heartInk },
   inverse: { color: theme.colors.text.inverse },
   muted: { color: theme.colors.text.muted },
+  onDark: { color: theme.colors.text.onDark },
+  onDarkFaint: { color: theme.colors.text.onDarkFaint },
   primary: { color: theme.colors.text.primary },
   secondary: { color: theme.colors.text.secondary },
+  streak: { color: theme.colors.reward.streakInk },
   subjectHistory: { color: theme.colors.subject.history.ink },
-  subjectPhilosophy: { color: theme.colors.subject.philosophy.ink },
+  subjectHistoryDeep: { color: theme.colors.subject.history.deep },
   success: { color: theme.colors.status.successInk },
-  xp: { color: theme.colors.reward.xpNumber },
 });
 
 const alignmentStyles = StyleSheet.create({

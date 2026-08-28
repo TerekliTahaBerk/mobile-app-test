@@ -1,33 +1,24 @@
+import { useRouter } from 'expo-router';
+
+import { buildProfileViewModel } from '@/modules/profile/model/build-profile-view-model';
 import { ProfileScreen } from '@/modules/profile/ui/profile-screen';
 import { useProgressDashboard } from '@/modules/progress/application/use-progress-dashboard';
-import { APP_MODE } from '@/shared/config/app-config';
+import { FEATURES } from '@/shared/config/app-config';
 import { useTabNavigation } from '@/shared/navigation/use-tab-navigation';
 import { MessageScreen } from '@/shared/ui/feedback/message-screen';
 
-export default function ProfilRoute() {
-  return APP_MODE === 'designPreview' ? <PreviewProfileRoute /> : <DurableProfileRoute />;
-}
-
-function PreviewProfileRoute() {
-  return (
-    <ProfileScreen
-      activeTab="profil"
-      initialTab="profile"
-      onSelectTab={useTabNavigation('profil')}
-    />
-  );
-}
-
-function DurableProfileRoute() {
+export default function ProfileRoute() {
   const dashboard = useProgressDashboard();
   const onSelectTab = useTabNavigation('profil');
+  const router = useRouter();
 
   if (dashboard.status === 'loading') {
     return (
       <MessageScreen
         body="Bu cihazdaki çalışma kayıtların okunuyor."
         heading="Profilin hazırlanıyor"
-        mood="thinking"
+        testID="profile-loading"
+        tone="muted"
       />
     );
   }
@@ -35,26 +26,23 @@ function DurableProfileRoute() {
   if (dashboard.status === 'failed') {
     return (
       <MessageScreen
-        action={{ label: 'TEKRAR DENE', onPress: dashboard.refresh }}
+        action={{ label: 'Tekrar dene', onPress: dashboard.refresh }}
         body="Yerel ilerleme kayıtların okunamadı."
         heading="Profil açılamadı"
-        mood="sad"
+        testID="profile-failed"
+        tone="dimmed"
       />
     );
   }
 
   return (
     <ProfileScreen
-      activeTab="profil"
-      initialTab="profile"
-      localStats={{
-        completedLevels: dashboard.data.completedRealLevels,
-        iz: dashboard.data.iz.current,
-        lessonsCompleted: dashboard.data.completedSessions.lessons,
-        reviewsCompleted: dashboard.data.completedSessions.reviews,
-        totalXp: dashboard.data.totalXp,
-      }}
+      onOpenLeagueHistory={() => onSelectTab('lig')}
+      onOpenPremium={() => router.push('/premium')}
+      onOpenSettings={() => router.push('/ayarlar')}
       onSelectTab={onSelectTab}
+      premiumActive={!FEATURES.heartsEconomy}
+      viewModel={buildProfileViewModel(dashboard.data)}
     />
   );
 }

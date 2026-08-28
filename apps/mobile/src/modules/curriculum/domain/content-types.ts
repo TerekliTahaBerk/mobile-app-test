@@ -64,10 +64,30 @@ export type Exam = {
   title: string;
 };
 
+/**
+ * Stable presentation key for a subject. Screens must not branch on subject
+ * IDs, so the identity that drives a subject's icon and colour is part of the
+ * content record rather than a switch statement in the UI.
+ */
+export type SubjectThemeKey =
+  | 'biology'
+  | 'chemistry'
+  | 'geography'
+  | 'history'
+  | 'math'
+  | 'philosophy'
+  | 'physics'
+  | 'turkish';
+
 export type Subject = {
   examId: ExamId;
   id: SubjectId;
+  themeKey: SubjectThemeKey;
   title: string;
+  /**
+   * Empty while the subject is in the catalogue but has no authored material.
+   * Screens show these as not yet available rather than inventing progress.
+   */
   unitIds: readonly UnitId[];
 };
 
@@ -110,7 +130,8 @@ export type ExerciseKind =
   | 'flashcard'
   | 'matching'
   | 'multipleChoice'
-  | 'ordering';
+  | 'ordering'
+  | 'trueFalse';
 
 /** 1 = recall, 5 = exam-hard. Kept coarse on purpose. */
 export type Difficulty = 1 | 2 | 3 | 4 | 5;
@@ -136,7 +157,7 @@ export type MultipleChoiceExercise = ExerciseBase & {
 export type FillBlankExercise = ExerciseBase & {
   /** Every selectable token, solution tokens included, in presentation order. */
   bank: readonly { id: string; label: string }[];
-  /** The clue shown beside ÇİZGİ. */
+  /** The clue shown beside Dino. */
   hint: string;
   kind: 'fillBlank';
   /** Bank token ids in the order that forms the correct sentence. */
@@ -158,11 +179,16 @@ export type MatchingExercise = ExerciseBase & {
   title: string;
 };
 
+export type TrueFalseExercise = ExerciseBase & {
+  correctAnswer: boolean;
+  kind: 'trueFalse';
+  /** The claim the learner judges. */
+  statement: string;
+  tag: string;
+};
+
 export type OrderingExercise = ExerciseBase & {
-  /**
-   * Contracted but not yet rendered: no approved screen exists for ordering, so
-   * the lesson validator rejects it inside a lesson until one does.
-   */
+  /** Item ids in the one accepted order. */
   correctOrder: readonly string[];
   items: readonly { id: string; label: string }[];
   kind: 'ordering';
@@ -175,7 +201,8 @@ export type ExerciseDefinition =
   | FlashcardExercise
   | MatchingExercise
   | MultipleChoiceExercise
-  | OrderingExercise;
+  | OrderingExercise
+  | TrueFalseExercise;
 
 /**
  * Flashcards are self-reported recall, so they complete without being marked
@@ -186,6 +213,7 @@ export const SCORED_EXERCISE_KINDS: readonly ExerciseKind[] = [
   'matching',
   'multipleChoice',
   'ordering',
+  'trueFalse',
 ];
 
 export function isScoredKind(kind: ExerciseKind): boolean {
@@ -229,7 +257,7 @@ export type PathNode = {
 // ---------------------------------------------------------------------------
 
 /** Bumped when these contracts change shape. */
-export const CONTENT_SCHEMA_VERSION = 1;
+export const CONTENT_SCHEMA_VERSION = 2;
 
 export type ContentBundle = {
   concepts: readonly Concept[];

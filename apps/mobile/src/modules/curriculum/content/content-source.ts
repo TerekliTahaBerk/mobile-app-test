@@ -1,6 +1,6 @@
 import { createContentIndex, type ContentIndex } from '@/modules/curriculum/domain/content-index';
 import { assertValidContentBundle } from '@/modules/curriculum/domain/validate-content-bundle';
-import { tytSocialDraftBundle } from '@/modules/curriculum/content/tyt-social-draft-bundle';
+import { tytDraftBundle } from '@/modules/curriculum/content/tyt-draft-bundle';
 
 let index: ContentIndex | null = null;
 
@@ -15,7 +15,7 @@ let index: ContentIndex | null = null;
  */
 export function getContentIndex(): ContentIndex {
   if (index === null) {
-    index = createContentIndex(assertValidContentBundle(tytSocialDraftBundle));
+    index = createContentIndex(assertValidContentBundle(tytDraftBundle));
   }
 
   return index;

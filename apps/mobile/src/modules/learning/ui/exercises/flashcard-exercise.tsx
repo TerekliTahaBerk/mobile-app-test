@@ -1,198 +1,175 @@
 import { useState } from 'react';
-import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
+import { Pressable, StyleSheet, View } from 'react-native';
 
-import type { FlashcardExercise as FlashcardDefinition } from '@/modules/curriculum/domain/content-types';
+import type { FlashcardExercise as Exercise } from '@/modules/curriculum/domain/content-types';
 import type { ExerciseViewProps } from '@/modules/learning/ui/exercise-view';
 import { AppButton } from '@/shared/ui/components/app-button';
 import { AppText } from '@/shared/ui/components/app-text';
 import { BottomAction } from '@/shared/ui/components/bottom-action';
-import { SubjectTag } from '@/shared/ui/components/subject-tag';
 import { theme } from '@/shared/ui/theme/tokens';
 
-type FlashcardExerciseProps = ExerciseViewProps<FlashcardDefinition> & {
-  /** Owned by the lesson so the HUD can report deck position. */
+type FlashcardExerciseProps = ExerciseViewProps<Exercise> & {
+  /** Lifted so the lesson chrome can count cards in its own progress bar. */
   cardIndex: number;
-  onCardIndexChange: (index: number) => void;
+  onAdvanceCard: () => void;
 };
 
 /**
- * Design screen 07. Tap to turn the card over, then say whether you knew it.
- * Recall is self-reported: the deck is evidence for the skill, never a verdict,
- * so working through it submits once at the end and is never marked wrong.
+ * The recall deck, on the dark stage. Self-report is evidence, not a verdict:
+ * both answers advance the card, and neither costs a heart.
  */
 export function FlashcardExercise({
   cardIndex,
-  evaluation,
   exercise,
-  onCardIndexChange,
-  onContinue,
+  onAdvanceCard,
   onSubmit,
-  subject,
 }: FlashcardExerciseProps) {
-  const [turned, setTurned] = useState(false);
-  const [missed, setMissed] = useState(false);
-
+  const [flipped, setFlipped] = useState(false);
   const card = exercise.cards[cardIndex];
+
   if (card === undefined) {
     return null;
   }
 
-  const checked = evaluation !== null;
-
-  const report = (knew: boolean) => {
-    if (!knew) {
-      setMissed(true);
+  const isLast = cardIndex >= exercise.cards.length - 1;
+  const answer = (selfReport: 'known' | 'unknown') => {
+    setFlipped(false);
+    if (isLast) {
+      onSubmit({ kind: 'flashcard', selfReport });
+    } else {
+      onAdvanceCard();
     }
-
-    if (cardIndex + 1 >= exercise.cards.length) {
-      // The deck is done; hand a single self-report to the engine.
-      onSubmit({ kind: 'flashcard', selfReport: !knew || missed ? 'unknown' : 'known' });
-      return;
-    }
-
-    setTurned(false);
-    onCardIndexChange(cardIndex + 1);
   };
 
   return (
     <>
-      <ScrollView
-        contentContainerStyle={styles.content}
-        showsVerticalScrollIndicator={false}
-        style={styles.scroll}
-      >
-        <SubjectTag label={exercise.tag} subject={subject} />
+      <View style={styles.tagRow}>
+        <View style={styles.tag}>
+          <AppText color="inverse" variant="caption">
+            {exercise.tag}
+          </AppText>
+        </View>
+      </View>
 
+      <View style={styles.stage}>
         <Pressable
-          accessibilityHint="Kartın diğer yüzünü gösterir"
-          accessibilityLabel={
-            turned ? `${card.front}. Tanım: ${card.back}. ${card.hint}` : `Kavram: ${card.front}`
-          }
+          accessibilityHint="Kartı çevirmek için dokun"
+          accessibilityLabel={flipped ? `${card.front}. ${card.back}` : card.front}
           accessibilityRole="button"
-          onPress={() => setTurned((value) => !value)}
+          onPress={() => setFlipped((value) => !value)}
+          style={styles.card}
           testID="flashcard"
         >
-          {turned ? <CardBack card={card} /> : <CardFront front={card.front} />}
+          <AppText align="center" color="muted" style={styles.face} variant="eyebrow">
+            {flipped ? 'ARKA YÜZ' : 'ÖN YÜZ'}
+          </AppText>
+          <AppText align="center" color="accentStrong" style={styles.term} variant="headingXXL">
+            {card.front.toLocaleUpperCase('tr-TR')}
+          </AppText>
+          <View style={styles.rule} />
+          <AppText align="center" variant="bodyL">
+            {flipped ? card.back : card.hint}
+          </AppText>
+          <AppText align="center" color="muted" style={styles.flipHint} variant="proseS">
+            Çevirmek için dokun
+          </AppText>
         </Pressable>
-      </ScrollView>
 
-      <BottomAction>
-        {checked ? (
-          <AppButton label="DEVAM ET" onPress={onContinue} testID="flashcard-continue" />
-        ) : (
-          <View style={styles.verdictRow}>
-            <AppButton
-              fullWidth={false}
-              label="Bilmiyordum"
-              onPress={() => report(false)}
-              style={styles.verdictButton}
-              testID="flashcard-unknown"
-              variant="neutral"
+        <View style={styles.dots}>
+          {exercise.cards.map((deckCard, index) => (
+            <View
+              key={deckCard.id}
+              style={[styles.dot, index === cardIndex ? styles.dotActive : null]}
             />
-            <AppButton
-              fullWidth={false}
-              label="Biliyordum"
-              onPress={() => report(true)}
-              style={styles.verdictButton}
-              testID="flashcard-known"
-              variant="success"
-            />
-          </View>
-        )}
+          ))}
+        </View>
+      </View>
+
+      <BottomAction style={styles.actions}>
+        <View style={styles.actionRow}>
+          <AppButton
+            label="Tekrar Et"
+            onPress={() => answer('unknown')}
+            style={styles.action}
+            testID="flashcard-unknown"
+            variant="ghost"
+          />
+          <AppButton
+            label="Biliyorum"
+            onPress={() => answer('known')}
+            style={styles.action}
+            testID="flashcard-known"
+          />
+        </View>
       </BottomAction>
     </>
   );
 }
 
-function CardFront({ front }: { front: string }) {
-  return (
-    <View style={[styles.card, styles.cardFront]}>
-      <AppText align="center" style={styles.frontEyebrow} variant="eyebrow">
-        KAVRAM
-      </AppText>
-      <AppText align="center" variant="headingXXL">
-        {front}
-      </AppText>
-      <AppText align="center" style={styles.frontFooter} variant="bodyS">
-        çevirmek için dokun
-      </AppText>
-    </View>
-  );
-}
-
-function CardBack({ card }: { card: FlashcardDefinition['cards'][number] }) {
-  return (
-    <View style={[styles.card, styles.cardBack]}>
-      <AppText style={styles.backEyebrow} variant="eyebrow">
-        TANIM
-      </AppText>
-      <AppText color="inverse" style={styles.backDefinition} variant="bodyL">
-        {card.back}
-      </AppText>
-      <View style={styles.backDivider} />
-      <AppText style={styles.backHint} variant="prose">
-        {card.hint}
-      </AppText>
-    </View>
-  );
-}
-
 const styles = StyleSheet.create({
-  backDefinition: {
-    fontSize: 22,
-    lineHeight: 32,
+  action: {
+    flex: 1,
   },
-  backDivider: {
-    backgroundColor: 'rgba(255, 255, 255, 0.34)',
-    height: 1,
-    marginVertical: theme.spacing.xl,
+  actionRow: {
+    flexDirection: 'row',
+    gap: theme.spacing.md + 1,
   },
-  backEyebrow: {
-    color: 'rgba(255, 255, 255, 0.7)',
-    letterSpacing: 1.9,
-    marginBottom: theme.spacing.lg,
-  },
-  backHint: {
-    color: 'rgba(255, 255, 255, 0.9)',
+  actions: {
+    paddingTop: theme.spacing.lg + 4,
   },
   card: {
-    borderRadius: theme.radii.xlarge,
-    justifyContent: 'center',
-    minHeight: 400,
-    padding: theme.spacing.xxxl,
-  },
-  cardBack: {
-    backgroundColor: theme.colors.subject.philosophy.primary,
-  },
-  cardFront: {
-    alignItems: 'center',
+    ...theme.elevation.flashcard,
     backgroundColor: theme.colors.surface.default,
-    borderBottomWidth: theme.depth.cardBorderXL,
-    borderColor: theme.colors.subject.philosophy.track,
-    borderWidth: 2,
+    borderRadius: 28,
+    paddingHorizontal: theme.spacing.xxl + 2,
+    paddingVertical: theme.spacing.huge,
   },
-  content: {
-    gap: theme.spacing.xl,
-    paddingBottom: theme.spacing.xl,
+  dot: {
+    backgroundColor: theme.colors.progress.trackOnDark,
+    borderRadius: theme.radii.pill,
+    height: 9,
+    width: 9,
+  },
+  dotActive: {
+    backgroundColor: theme.colors.progress.fillOnDark,
+    width: 26,
+  },
+  dots: {
+    flexDirection: 'row',
+    gap: theme.spacing.sm + 2,
+    justifyContent: 'center',
+    marginTop: theme.spacing.lg + 4,
+  },
+  face: {
+    letterSpacing: 1.3,
+  },
+  flipHint: {
+    marginTop: theme.spacing.xl,
+  },
+  rule: {
+    alignSelf: 'center',
+    backgroundColor: theme.colors.surface.soft,
+    borderRadius: theme.radii.pill,
+    height: 3,
+    marginVertical: theme.spacing.lg + 4,
+    width: 44,
+  },
+  stage: {
+    flex: 1,
+    justifyContent: 'center',
     paddingHorizontal: theme.spacing.xl,
   },
-  frontEyebrow: {
-    color: theme.colors.subject.philosophy.dim,
-    letterSpacing: 1.9,
-    marginBottom: theme.spacing.xxl,
+  tag: {
+    backgroundColor: theme.colors.surface.onDark,
+    borderRadius: theme.radii.pill,
+    paddingHorizontal: theme.spacing.md + 2,
+    paddingVertical: 7,
   },
-  frontFooter: {
-    color: theme.colors.subject.philosophy.dim,
-    marginTop: theme.spacing.xxl,
+  tagRow: {
+    alignItems: 'center',
+    paddingTop: theme.spacing.xs + 2,
   },
-  scroll: {
-    flex: 1,
-  },
-  verdictButton: {
-    flex: 1,
-  },
-  verdictRow: {
-    flexDirection: 'row',
-    gap: theme.spacing.md,
+  term: {
+    marginTop: theme.spacing.lg + 2,
   },
 });

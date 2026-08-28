@@ -1,176 +1,179 @@
 import { useEffect, useState } from 'react';
+import { StyleSheet, View } from 'react-native';
 
-import { getContentIndex } from '@/modules/curriculum/content/content-source';
 import type { ExerciseDefinition } from '@/modules/curriculum/domain/content-types';
 import { useLessonSession } from '@/modules/learning/application/lesson-session-store';
-import { subjectThemeFor, type ExerciseViewProps } from '@/modules/learning/ui/exercise-view';
+import { XP_POLICY_V1 } from '@/modules/learning/domain/xp-policy';
 import { ExitConfirmSheet } from '@/modules/learning/ui/exit-confirm-sheet';
+import { FeedbackSheet } from '@/modules/learning/ui/feedback-sheet';
+import { FillBlankExercise } from '@/modules/learning/ui/exercises/fill-blank-exercise';
 import { FlashcardExercise } from '@/modules/learning/ui/exercises/flashcard-exercise';
 import { MatchingExercise } from '@/modules/learning/ui/exercises/matching-exercise';
 import { MultipleChoiceExercise } from '@/modules/learning/ui/exercises/multiple-choice-exercise';
-import { WordBankExercise } from '@/modules/learning/ui/exercises/word-bank-exercise';
-import { lessonChromeFor } from '@/modules/learning/ui/lesson-chrome';
+import { OrderingExercise } from '@/modules/learning/ui/exercises/ordering-exercise';
+import { TrueFalseExercise } from '@/modules/learning/ui/exercises/true-false-exercise';
 import { LessonHeader } from '@/modules/learning/ui/lesson-header';
-import { lessonPreviewData } from '@/modules/learning/model/lesson-preview-data';
-import { FEATURES } from '@/shared/config/app-config';
 import { Screen } from '@/shared/ui/components/screen';
-import { MessageScreen } from '@/shared/ui/feedback/message-screen';
 
 type LessonScreenProps = {
+  /** `null` when the hearts limit does not apply, e.g. a free practice round. */
+  hearts: number | null;
   onComplete: () => void;
   onExit: () => void;
+  /** Called when a scored answer comes back wrong, so a heart can be spent. */
+  onWrongAnswer?: (() => void) | undefined;
 };
 
 /**
- * Runs the active lesson. The screen holds no learning rules: it renders the
- * exercise the engine says is current, hands answers back, and reacts to the
- * session status the engine returns.
+ * The exercise runner. It owns the chrome and the feedback sheet; each exercise
+ * kind owns its own body and its own "answerable yet?" rule.
  */
-export function LessonScreen({ onComplete, onExit }: LessonScreenProps) {
-  const {
-    abandon,
-    continueAfterFeedback,
-    discard,
-    lesson,
-    persistenceError,
-    persistenceStatus,
-    retryPersistence,
-    submitAnswer,
-  } = useLessonSession();
-  const [cardIndex, setCardIndex] = useState(0);
-  const [exitVisible, setExitVisible] = useState(false);
+export function LessonScreen({ hearts, onComplete, onExit, onWrongAnswer }: LessonScreenProps) {
+  const { continueAfterFeedback, lesson, submitAnswer } = useLessonSession();
+  // The deck position is keyed by its exercise, so moving to a new exercise
+  // resets the card without an effect that writes state during render.
+  const [deckPosition, setDeckPosition] = useState({ exerciseId: '', index: 0 });
+  const [confirmingExit, setConfirmingExit] = useState(false);
 
   const session = lesson?.session ?? null;
-  const isCompleted = session?.status === 'completed';
+  const exercise = currentExercise(lesson);
+  const evaluation = session?.lastEvaluation ?? null;
+  const showingFeedback = session?.phase === 'feedback' && evaluation !== null;
+  const cardIndex = deckPosition.exerciseId === exercise?.id ? deckPosition.index : 0;
 
   useEffect(() => {
-    if (isCompleted && (persistenceStatus === 'saved' || persistenceStatus === 'idle')) {
+    if (session?.status === 'completed') {
       onComplete();
     }
-  }, [isCompleted, onComplete, persistenceStatus]);
+  }, [onComplete, session?.status]);
 
-  if (persistenceStatus === 'failed') {
-    return (
-      <MessageScreen
-        action={{ label: 'TEKRAR DENE', onPress: retryPersistence }}
-        body="Dersin cihazına yazılamadı. Bu ekranda kal; yeniden deneyince kaldığın yer korunacak."
-        detail={__DEV__ ? persistenceError?.message : undefined}
-        heading="İlerlemen kaydedilemedi"
-        mood="sad"
-        testID="lesson-persistence-failed"
-      />
-    );
-  }
-
-  if (isCompleted && persistenceStatus === 'saving') {
-    return (
-      <MessageScreen
-        body="XP, İz ve ders ilerlemen birlikte kaydediliyor."
-        heading="İlerlemen kaydediliyor"
-        mood="proud"
-        testID="lesson-persistence-saving"
-      />
-    );
-  }
-
-  if (lesson === null || session === null || isCompleted) {
-    return null;
-  }
-
-  const exercise = lesson.deps.exercises[session.currentIndex];
-  if (exercise === undefined) {
-    return null;
-  }
-
-  const index = getContentIndex();
-  const topic = index.getTopic(lesson.deps.lesson.topicId);
-  const subject = subjectThemeFor(index.getSubjectOfUnit(topic.unitId).id);
-  const evaluation =
-    session.lastEvaluation?.exerciseId === exercise.id ? session.lastEvaluation : null;
-
-  const chrome = lessonChromeFor({
-    cardIndex,
-    exercise,
-    exerciseCount: session.exerciseIds.length,
-    stepIndex: session.currentIndex,
-  });
-
-  const viewProps: ExerciseViewProps<ExerciseDefinition> = {
-    evaluation,
-    exercise,
-    onContinue: () => {
-      setCardIndex(0);
+  // An unscored exercise has no verdict to show, so there is nothing for the
+  // learner to acknowledge: the deck advances itself rather than parking the
+  // session in a feedback phase with no way forward.
+  useEffect(() => {
+    if (session?.phase === 'feedback' && evaluation !== null && !evaluation.scored) {
       continueAfterFeedback();
-    },
-    onSubmit: submitAnswer,
-    subject,
-  };
+    }
+  }, [continueAfterFeedback, evaluation, session?.phase]);
+
+  if (lesson === null || exercise === undefined || session === null) {
+    return null;
+  }
+
+  const isFlashcard = exercise.kind === 'flashcard';
+  const stepIndex = session.currentIndex;
+  const progress = isFlashcard
+    ? (cardIndex + 1) / exercise.cards.length
+    : (stepIndex + (showingFeedback ? 1 : 0)) / session.exerciseIds.length;
 
   return (
-    <Screen background={chrome.background} includeBottomInset={false} testID="lesson-screen">
+    <Screen
+      background={isFlashcard ? 'flashcard' : 'lesson'}
+      includeBottomInset={false}
+      testID="lesson-screen"
+    >
       <LessonHeader
-        counter={chrome.counter}
-        counterColor={chrome.counterColor}
-        fillColor={chrome.fillColor}
-        glyphColor={chrome.glyphColor}
-        hearts={FEATURES.heartsEconomy ? chrome.hearts : undefined}
-        onClose={() => setExitVisible(true)}
-        progress={chrome.progress}
-        trackColor={chrome.trackColor}
+        counter={
+          isFlashcard ? `${cardIndex + 1} / ${exercise.cards.length}` : undefined
+        }
+        hearts={hearts}
+        onDark={isFlashcard}
+        onExit={() => setConfirmingExit(true)}
+        progress={progress}
       />
 
-      <ExerciseStep
-        cardIndex={cardIndex}
-        onCardIndexChange={setCardIndex}
-        viewProps={viewProps}
-      />
+      <View style={styles.body}>
+        <ExerciseBody
+          cardIndex={cardIndex}
+          evaluation={evaluation}
+          exercise={exercise}
+          onAdvanceCard={() => setDeckPosition({ exerciseId: exercise.id, index: cardIndex + 1 })}
+          onSubmit={(answer) => {
+            submitAnswer(answer);
+          }}
+        />
+      </View>
+
+      {showingFeedback && evaluation.scored ? (
+        <FeedbackSheet
+          correct={evaluation.correct}
+          correctAnswerSummary={evaluation.correctAnswerSummary}
+          explanation={exercise.explanation}
+          onContinue={() => {
+            if (!evaluation.correct) {
+              onWrongAnswer?.();
+            }
+            continueAfterFeedback();
+          }}
+          xpAwarded={evaluation.correct ? XP_POLICY_V1.correctExercise : null}
+        />
+      ) : null}
 
       <ExitConfirmSheet
-        exit={lessonPreviewData.exit}
+        onCancel={() => setConfirmingExit(false)}
         onConfirm={() => {
-          setExitVisible(false);
-          abandon();
-          discard();
+          setConfirmingExit(false);
           onExit();
         }}
-        onStay={() => setExitVisible(false)}
-        visible={exitVisible}
+        visible={confirmingExit}
       />
     </Screen>
   );
 }
 
-type ExerciseStepProps = {
+type ExerciseBodyProps = {
   cardIndex: number;
-  onCardIndexChange: (index: number) => void;
-  viewProps: ExerciseViewProps<ExerciseDefinition>;
+  evaluation: React.ComponentProps<typeof MultipleChoiceExercise>['evaluation'];
+  exercise: ExerciseDefinition;
+  onAdvanceCard: () => void;
+  onSubmit: React.ComponentProps<typeof MultipleChoiceExercise>['onSubmit'];
 };
 
-/**
- * One renderer per exercise kind. The lesson engine never branches on kind;
- * this is the only place that does, and it only chooses a component.
- */
-function ExerciseStep({ cardIndex, onCardIndexChange, viewProps }: ExerciseStepProps) {
-  const { exercise } = viewProps;
-
+function ExerciseBody({
+  cardIndex,
+  evaluation,
+  exercise,
+  onAdvanceCard,
+  onSubmit,
+}: ExerciseBodyProps) {
   switch (exercise.kind) {
     case 'multipleChoice':
-      return <MultipleChoiceExercise {...viewProps} exercise={exercise} />;
+      return (
+        <MultipleChoiceExercise
+          evaluation={evaluation}
+          exercise={exercise}
+          onSubmit={onSubmit}
+        />
+      );
+    case 'trueFalse':
+      return <TrueFalseExercise evaluation={evaluation} exercise={exercise} onSubmit={onSubmit} />;
     case 'fillBlank':
-      return <WordBankExercise {...viewProps} exercise={exercise} />;
+      return <FillBlankExercise evaluation={evaluation} exercise={exercise} onSubmit={onSubmit} />;
     case 'matching':
-      return <MatchingExercise {...viewProps} exercise={exercise} />;
+      return <MatchingExercise evaluation={evaluation} exercise={exercise} onSubmit={onSubmit} />;
+    case 'ordering':
+      return <OrderingExercise evaluation={evaluation} exercise={exercise} onSubmit={onSubmit} />;
     case 'flashcard':
       return (
         <FlashcardExercise
-          {...viewProps}
           cardIndex={cardIndex}
+          evaluation={evaluation}
           exercise={exercise}
-          onCardIndexChange={onCardIndexChange}
+          onAdvanceCard={onAdvanceCard}
+          onSubmit={onSubmit}
         />
       );
-    case 'ordering':
-      // Contracted but unrendered; content validation blocks it from a lesson.
-      return null;
   }
 }
+
+function currentExercise(
+  lesson: ReturnType<typeof useLessonSession>['lesson'],
+): ExerciseDefinition | undefined {
+  return lesson === null ? undefined : lesson.deps.exercises[lesson.session.currentIndex];
+}
+
+const styles = StyleSheet.create({
+  body: {
+    flex: 1,
+  },
+});

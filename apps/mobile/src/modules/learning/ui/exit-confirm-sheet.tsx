@@ -1,65 +1,41 @@
 import { Modal, StyleSheet, View } from 'react-native';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import type { LessonPreviewViewModel } from '@/modules/learning/model/lesson-preview-data';
 import { AppButton } from '@/shared/ui/components/app-button';
 import { AppText } from '@/shared/ui/components/app-text';
-import { TraceMark } from '@/shared/ui/components/trace-mark';
-import { Cizgi } from '@/shared/ui/cizgi/cizgi';
+import { BottomAction } from '@/shared/ui/components/bottom-action';
+import { Dino } from '@/shared/ui/dino/dino';
 import { theme } from '@/shared/ui/theme/tokens';
 
 type ExitConfirmSheetProps = {
-  exit: LessonPreviewViewModel['exit'];
+  onCancel: () => void;
   onConfirm: () => void;
-  onStay: () => void;
   visible: boolean;
 };
 
-/**
- * Design screen 08. The sheet states what leaving costs without scolding: the
- * loud action keeps the learner in the lesson, and leaving stays one quiet tap
- * away.
- */
-export function ExitConfirmSheet({ exit, onConfirm, onStay, visible }: ExitConfirmSheetProps) {
-  const insets = useSafeAreaInsets();
-
+/** Leaving mid-round loses the round's progress, so it is worth one question. */
+export function ExitConfirmSheet({ onCancel, onConfirm, visible }: ExitConfirmSheetProps) {
   return (
-    <Modal
-      animationType="fade"
-      onRequestClose={onStay}
-      statusBarTranslucent
-      transparent
-      visible={visible}
-    >
+    <Modal animationType="slide" onRequestClose={onCancel} transparent visible={visible}>
       <View style={styles.scrim}>
-        <View
-          accessibilityViewIsModal
-          style={[styles.sheet, { paddingBottom: Math.max(insets.bottom, theme.spacing.xxl) }]}
-          testID="exit-confirm-sheet"
-        >
-          <View style={styles.headingRow}>
-            <Cizgi mood={exit.mood} width={96} />
-            <View style={styles.headingCopy}>
-              <TraceMark size="md" />
-              <AppText accessibilityRole="header" variant="headingL">
-                {exit.heading}
-              </AppText>
-            </View>
-          </View>
-
-          <AppText color="secondary" variant="prose">
-            {exit.body}
+        <View style={styles.sheet} testID="exit-confirm-sheet">
+          <View style={styles.grabber} />
+          <Dino size={92} tone="muted" />
+          <AppText accessibilityRole="header" align="center" variant="headingM">
+            Şimdi çıkarsan bu tur sayılmaz.
+          </AppText>
+          <AppText align="center" color="secondary" style={styles.body} variant="prose">
+            Birkaç soru daha kaldı. Devam edersen seri bugün de korunur.
           </AppText>
 
-          <View style={styles.actions}>
-            <AppButton label={exit.stayLabel} onPress={onStay} testID="exit-stay" />
+          <BottomAction style={styles.actions}>
+            <AppButton label="Devam Et" onPress={onCancel} testID="exit-cancel" />
             <AppButton
-              label={exit.confirmLabel}
+              label="Çıkışı Onayla"
               onPress={onConfirm}
               testID="exit-confirm"
               variant="ghost"
             />
-          </View>
+          </BottomAction>
         </View>
       </View>
     </Modal>
@@ -68,17 +44,18 @@ export function ExitConfirmSheet({ exit, onConfirm, onStay, visible }: ExitConfi
 
 const styles = StyleSheet.create({
   actions: {
-    gap: theme.spacing.md,
+    paddingHorizontal: 0,
+    width: '100%',
   },
-  headingCopy: {
-    flex: 1,
-    gap: theme.spacing.md,
-    paddingBottom: theme.spacing.sm,
+  body: {
+    maxWidth: 300,
   },
-  headingRow: {
-    alignItems: 'flex-end',
-    flexDirection: 'row',
-    gap: theme.spacing.md + 2,
+  grabber: {
+    backgroundColor: theme.colors.border.subtle,
+    borderRadius: theme.radii.pill,
+    height: 5,
+    marginBottom: theme.spacing.lg,
+    width: 44,
   },
   scrim: {
     backgroundColor: theme.colors.background.scrim,
@@ -86,11 +63,12 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end',
   },
   sheet: {
+    alignItems: 'center',
     backgroundColor: theme.colors.surface.sheet,
     borderTopLeftRadius: theme.radii.sheet,
     borderTopRightRadius: theme.radii.sheet,
-    gap: theme.spacing.xl,
-    paddingHorizontal: theme.spacing.xxl,
-    paddingTop: theme.spacing.xxl,
+    gap: theme.spacing.sm,
+    paddingHorizontal: theme.spacing.xl,
+    paddingTop: theme.spacing.md,
   },
 });

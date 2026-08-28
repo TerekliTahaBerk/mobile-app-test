@@ -21,9 +21,9 @@ type TactilePressableProps = Omit<PressableProps, 'children' | 'style'> & {
 };
 
 /**
- * The shared physical control of the TEKRARLA design: a raised face sitting on
- * a solid structural shadow. Pressing compresses the face onto the shadow.
- * Depth is drawn with plain views so no animation dependency is required.
+ * The shared physical control of the design: a raised face sitting on a solid
+ * structural edge. Pressing compresses the face onto that edge. Depth is drawn
+ * with plain views so no animation dependency is required.
  */
 export function TactilePressable({
   children,
@@ -33,7 +33,7 @@ export function TactilePressable({
   faceStyle,
   onPressIn,
   onPressOut,
-  radius = theme.radii.medium,
+  radius = theme.radii.large,
   style,
   testID,
   ...pressableProps

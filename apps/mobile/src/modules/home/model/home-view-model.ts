@@ -1,234 +1,91 @@
-import { getContentIndex } from '@/modules/curriculum/content/content-source';
-import {
-  FIRST_TURKISH_STATES_UNIT_ID,
-  KURULTAY_PATH_NODE_ID,
-} from '@/modules/curriculum/content/tyt-social-draft-bundle';
 import type { LessonId, PathNodeId } from '@/modules/curriculum/domain/content-types';
-import type { PathProgress } from '@/modules/progress/domain/progress-types';
-import type { Recommendation } from '@/modules/progress/domain/recommendation-policy';
-import type { CizgiMood } from '@/shared/ui/cizgi/cizgi-assets';
-import type { SubjectKey } from '@/shared/ui/theme/tokens';
+import { subjectTheme, type SubjectTheme } from '@/shared/ui/theme/subject-theme';
 
 /**
- * The home path view model.
- *
- * One node on this path is REAL: it comes from the validated content bundle and
- * opens an actual lesson. Everything around it is PREVIEW_ONLY — placeholder
- * levels that keep the approved composition intact while the curriculum is
- * still one topic wide. The two are tagged so nothing pretends to be content it
- * is not, and preview nodes are not openable.
+ * What the Ana Sayfa tab renders. The screen takes this whole model as a prop
+ * so it can be composed from live progress in a pilot build and from fixtures
+ * in a design preview, without the screen knowing which it got.
  */
 
-export type PathNodeState =
-  | 'available'
-  | 'checkpoint'
-  | 'complete'
-  | 'current'
-  | 'locked'
-  | 'review';
-
-export type PathNodeSource = 'preview' | 'real';
-
-export type PathNodeView = {
+export type ContinueCard = {
+  lessonId: LessonId;
+  pathNodeId: PathNodeId;
+  /** "İlk ve Orta Çağlarda Türk Dünyası · %60" */
   detail: string;
-  id: PathNodeId;
-  /** Present only on real nodes; preview nodes cannot be opened. */
-  readonly lessonId?: LessonId;
-  source: PathNodeSource;
-  state: PathNodeState;
-  /** Visible, non-colour status word. */
-  status: string;
-  title: string;
+  subjectTitle: string;
 };
 
-export type CurrentLevelView = {
-  cta: string;
-  meta: string;
-  nodeId: PathNodeId;
+export type SubjectTile = {
+  id: string;
+  /** `null` while the subject has no authored material yet. */
+  level: number | null;
+  progress: number;
+  subjectTheme: SubjectTheme;
   title: string;
 };
 
 export type HomeViewModel = {
-  companion: { accessibilityLabel: string; mood: CizgiMood };
-  currentLevel: CurrentLevelView;
-  hud: {
-    readonly gems?: string;
-    readonly hearts?: string;
-    readonly level?: string;
-    mode: string;
-    trace: string;
-    readonly xp?: string;
-  };
-  nodes: readonly PathNodeView[];
-  unit: { eyebrow: string; subject: SubjectKey; title: string };
+  continueCard: ContinueCard | null;
+  greeting: string;
+  hearts: number | null;
+  initial: string;
+  /** `null` when the league has no standings to show. */
+  leagueRank: { closesIn: string; name: string; rank: number } | null;
+  level: number;
+  levelProgress: number;
+  streak: number;
+  subjects: readonly SubjectTile[];
+  xpForLevel: number;
+  xpIntoLevel: number;
 };
 
-/**
- * HUD counters stay preview values: XP, gems, hearts, and İz all need durable
- * progress, which is Milestone 6. Nothing here is computed.
- */
-const PREVIEW_HUD = {
-  gems: '527',
-  hearts: '4',
-  level: '14',
-  mode: 'TYT',
-  trace: '13',
-} as const;
-
-const PREVIEW_NODES_BEFORE: readonly PathNodeView[] = [
-  {
-    detail: 'Bölüm 1 kontrol noktası · önizleme',
-    id: 'preview.first-turkish-states.checkpoint',
-    source: 'preview',
-    state: 'checkpoint',
-    status: 'Tamamlandı',
-    title: 'Bölüm 1 rozeti',
+/** The Ana Sayfa fixture used by the design preview. */
+export const homePreviewData: HomeViewModel = {
+  continueCard: {
+    detail: 'İlk ve Orta Çağlarda Türk Dünyası · %60',
+    lessonId: 'lesson.history.chronology.001',
+    pathNodeId: 'path.history.first-turkish-states.03',
+    subjectTitle: 'TYT Tarih',
   },
-  {
-    detail: 'Önizleme içeriği',
-    id: 'preview.first-turkish-states.01',
-    source: 'preview',
-    state: 'complete',
-    status: 'Tamamlandı',
-    title: 'Türklerde devlet',
-  },
-  {
-    detail: 'Önizleme içeriği',
-    id: 'preview.first-turkish-states.02',
-    source: 'preview',
-    state: 'complete',
-    status: 'Tamamlandı',
-    title: 'Kut ve veraset',
-  },
-];
-
-const PREVIEW_NODES_AFTER: readonly PathNodeView[] = [
-  {
-    detail: 'Önceki ders bitince açılır',
-    id: 'preview.first-turkish-states.04',
-    source: 'preview',
-    state: 'locked',
-    status: 'Kilitli',
-    title: 'Töre',
-  },
-  {
-    detail: 'Önceki ders bitince açılır',
-    id: 'preview.first-turkish-states.05',
-    source: 'preview',
-    state: 'locked',
-    status: 'Kilitli',
-    title: 'Mini tekrar',
-  },
-];
-
-/** Builds the home view model, splicing the one real node into the preview path. */
-export function buildHomeViewModel(): HomeViewModel {
-  const index = getContentIndex();
-  const unit = index.getUnit(FIRST_TURKISH_STATES_UNIT_ID);
-  const subject = index.getSubjectOfUnit(unit.id);
-  const realNode = index
-    .getUnitPath(unit.id)
-    .find((node) => node.id === KURULTAY_PATH_NODE_ID);
-
-  if (realNode?.lessonId === undefined) {
-    throw new Error('Gerçek yol düğümü içerik paketinde bulunamadı.');
-  }
-
-  const lesson = index.getLesson(realNode.lessonId);
-  const current: PathNodeView = {
-    detail: `${lesson.exerciseIds.length} alıştırma · ~${lesson.estimatedMinutes} dk`,
-    id: realNode.id,
-    lessonId: realNode.lessonId,
-    source: 'real',
-    state: 'current',
-    status: 'Şimdi',
-    title: lesson.title,
-  };
-
-  return {
-    companion: { accessibilityLabel: 'ÇİZGİ seni yolda bekliyor', mood: 'happy' },
-    currentLevel: {
-      cta: 'BAŞLA',
-      meta: `${lesson.exerciseIds.length} alıştırma · ~${lesson.estimatedMinutes} dk`,
-      nodeId: realNode.id,
-      title: lesson.title,
+  greeting: 'Merhaba, Ege',
+  hearts: 5,
+  initial: 'E',
+  leagueRank: { closesIn: 'Bitişe 3 gün', name: 'Zümrüt Lig', rank: 8 },
+  level: 8,
+  levelProgress: 0.85,
+  streak: 12,
+  subjects: [
+    {
+      id: 'tyt.history',
+      level: 6,
+      progress: 0.6,
+      subjectTheme: subjectTheme('history'),
+      title: 'Tarih',
     },
-    hud: PREVIEW_HUD,
-    nodes: [...PREVIEW_NODES_BEFORE, current, ...PREVIEW_NODES_AFTER],
-    unit: {
-      eyebrow: `ÜNİTE 1 · ${subject.title.toLocaleUpperCase('tr-TR')}`,
-      subject: 'history',
-      title: unit.title,
+    { id: 'tyt.math', level: 5, progress: 0.42, subjectTheme: subjectTheme('math'), title: 'Matematik' },
+    { id: 'tyt.physics', level: 3, progress: 0.24, subjectTheme: subjectTheme('physics'), title: 'Fizik' },
+    {
+      id: 'tyt.chemistry',
+      level: 2,
+      progress: 0.18,
+      subjectTheme: subjectTheme('chemistry'),
+      title: 'Kimya',
     },
-  };
-}
-
-export type DurableHomeInput = {
-  iz: number;
-  progress: PathProgress | null;
-  recommendation: Recommendation;
-  totalXp: number;
+    {
+      id: 'tyt.biology',
+      level: 4,
+      progress: 0.33,
+      subjectTheme: subjectTheme('biology'),
+      title: 'Biyoloji',
+    },
+    {
+      id: 'tyt.geography',
+      level: 2,
+      progress: 0.12,
+      subjectTheme: subjectTheme('geography'),
+      title: 'Coğrafya',
+    },
+  ],
+  xpForLevel: 1000,
+  xpIntoLevel: 850,
 };
-
-/** Production home state: only the shipped node is real; every other node is locked preview. */
-export function buildDurableHomeViewModel(input: DurableHomeInput): HomeViewModel {
-  const base = buildHomeViewModel();
-  const real = base.nodes.find((node) => node.source === 'real');
-  if (real?.lessonId === undefined) {
-    throw new Error('Gerçek yol düğümü görünüm modelinde bulunamadı.');
-  }
-
-  const reviewSkillId =
-    input.recommendation.kind === 'review' || input.recommendation.kind === 'mistake'
-      ? input.recommendation.skillId
-      : null;
-  const reviewSkill = reviewSkillId === null ? null : getContentIndex().getSkill(reviewSkillId);
-  const isResume = input.recommendation.kind === 'resume';
-  const isReview = reviewSkill !== null;
-  const isCompleted = input.progress?.status === 'completed';
-
-  const state: PathNodeState = isReview
-    ? 'review'
-    : isResume
-      ? 'current'
-      : isCompleted
-        ? 'complete'
-        : 'current';
-  const title = isReview
-    ? input.recommendation.reason === 'mistake'
-      ? 'Yanlışını temizle'
-      : 'Tekrar zamanı'
-    : real.title;
-  const detail = isReview ? reviewSkill.title : real.detail;
-  const status = isReview
-    ? 'Tekrar'
-    : isResume
-      ? 'Devam et'
-      : isCompleted
-        ? 'Tamamlandı'
-        : input.progress?.status === 'started'
-          ? 'Başlandı'
-          : 'Şimdi';
-
-  const durableReal: PathNodeView = { ...real, detail, state, status, title };
-  const lockedPreview = [...PREVIEW_NODES_BEFORE, ...PREVIEW_NODES_AFTER].map<PathNodeView>(
-    (node) => ({
-      ...node,
-      detail: 'İçerik önizlemesi · henüz yayında değil',
-      state: 'locked',
-      status: 'Önizleme',
-    }),
-  );
-
-  return {
-    ...base,
-    currentLevel: {
-      cta: isReview ? 'TEKRARA BAŞLA' : isResume ? 'DEVAM ET' : isCompleted ? 'TEKRARLA' : 'BAŞLA',
-      meta: detail,
-      nodeId: real.id,
-      title,
-    },
-    hud: { mode: 'TYT', trace: String(input.iz), xp: `${input.totalXp} XP` },
-    nodes: [lockedPreview[0]!, lockedPreview[1]!, lockedPreview[2]!, durableReal, lockedPreview[3]!, lockedPreview[4]!],
-  };
-}

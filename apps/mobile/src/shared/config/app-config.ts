@@ -2,44 +2,37 @@
  * Build-mode configuration.
  *
  * The app carries approved screens for features that do not work yet: the
- * league ranks invented people, and TEKRARLA Plus shows prices with no billing
- * behind them. Both stay in the codebase and stay reachable while designing,
- * but neither may reach a pilot build — advertising a purchase that cannot be
- * made, or a ranking that is fiction, is not something a release should do.
+ * league ranks invented people, Premium shows benefits with no billing behind
+ * them, and the hearts limit has no way for a learner to lift it. All three
+ * stay in the codebase and stay reachable while designing, but none may reach a
+ * pilot build — advertising a purchase that cannot be made, a ranking that is
+ * fiction, or a limit with no escape is not something a release should do.
  *
  * This is deliberately a compile-time constant rather than a flag service.
- * Remote configuration is Milestone 8.
+ * Remote configuration is a later milestone.
  */
 
 export type AppMode = 'designPreview' | 'productionPilot';
 
 export type FeatureFlags = {
-  /** Fictional gem balance. Hidden until an economy exists. */
-  gemsEconomy: boolean;
-  /** Attempts/hearts economy. Studying is never blocked in the pilot. */
+  /** Hearts economy. Studying is never blocked in the pilot. */
   heartsEconomy: boolean;
   /** Weekly league standings. Needs a real leaderboard service. */
   league: boolean;
-  /** TEKRARLA Plus. Needs real in-app purchases. */
+  /** Premium. Needs real in-app purchases. */
   plus: boolean;
-  /** Presentation-only quest board. */
-  quests: boolean;
 };
 
 const FLAGS_BY_MODE: Record<AppMode, FeatureFlags> = {
   designPreview: {
-    gemsEconomy: true,
     heartsEconomy: true,
     league: true,
     plus: true,
-    quests: true,
   },
   productionPilot: {
-    gemsEconomy: false,
     heartsEconomy: false,
     league: false,
     plus: false,
-    quests: false,
   },
 };
 

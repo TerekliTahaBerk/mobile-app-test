@@ -12,7 +12,8 @@ export type ExerciseAnswer =
   /** Left pair id -> chosen right label. */
   | { kind: 'matching'; pairs: Readonly<Record<string, string>> }
   | { kind: 'multipleChoice'; optionId: string }
-  | { kind: 'ordering'; itemIds: readonly string[] };
+  | { kind: 'ordering'; itemIds: readonly string[] }
+  | { choice: boolean; kind: 'trueFalse' };
 
 export type EvaluationResult = {
   correct: boolean;

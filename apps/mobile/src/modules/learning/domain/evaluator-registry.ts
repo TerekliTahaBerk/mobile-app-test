@@ -6,6 +6,7 @@ import type {
   MatchingExercise,
   MultipleChoiceExercise,
   OrderingExercise,
+  TrueFalseExercise,
 } from '@/modules/curriculum/domain/content-types';
 import type { EvaluationResult, ExerciseAnswer } from '@/modules/learning/domain/answers';
 
@@ -92,6 +93,15 @@ const evaluateOrdering: EvaluatorFor<
   };
 };
 
+const evaluateTrueFalse: EvaluatorFor<
+  TrueFalseExercise,
+  { choice: boolean; kind: 'trueFalse' }
+> = (exercise, answer) => ({
+  correct: answer.choice === exercise.correctAnswer,
+  correctAnswerSummary: exercise.correctAnswer ? 'Doğru' : 'Yanlış',
+  scored: true,
+});
+
 const evaluateFlashcard: EvaluatorFor<
   FlashcardExercise,
   { kind: 'flashcard'; selfReport: 'known' | 'unknown' }
@@ -108,6 +118,7 @@ const registry: EvaluatorRegistry = {
   matching: evaluateMatching,
   multipleChoice: evaluateMultipleChoice,
   ordering: evaluateOrdering,
+  trueFalse: evaluateTrueFalse,
 };
 
 export class AnswerKindMismatchError extends Error {

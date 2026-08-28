@@ -1,46 +1,35 @@
 import { useRouter } from 'expo-router';
+import { useState } from 'react';
 
-import { KURULTAY_PATH_NODE_ID } from '@/modules/curriculum/content/tyt-social-draft-bundle';
-import { buildDurableHomeViewModel } from '@/modules/home/model/home-view-model';
-import { HomeScreen } from '@/modules/home/ui/home-screen';
+import { homePreviewData, type HomeViewModel } from '@/modules/home/model/home-view-model';
+import { HomeScreen, type ExamFilter } from '@/modules/home/ui/home-screen';
+import { useHearts } from '@/modules/hearts/application/hearts-store';
 import { useLessonSession } from '@/modules/learning/application/lesson-session-store';
+import { buildHomeViewModel } from '@/modules/home/model/build-home-view-model';
 import { useProgressDashboard } from '@/modules/progress/application/use-progress-dashboard';
 import { APP_MODE } from '@/shared/config/app-config';
 import { useTabNavigation } from '@/shared/navigation/use-tab-navigation';
 import { MessageScreen } from '@/shared/ui/feedback/message-screen';
 
 export default function IndexRoute() {
-  return APP_MODE === 'designPreview' ? <PreviewIndexRoute /> : <DurableIndexRoute />;
+  return APP_MODE === 'designPreview' ? <PreviewHomeRoute /> : <DurableHomeRoute />;
 }
 
-function PreviewIndexRoute() {
-  const router = useRouter();
-  const { begin } = useLessonSession();
-
-  return (
-    <HomeScreen
-      onSelectTab={useTabNavigation('yol')}
-      onStartLevel={(lessonId, pathNodeId) => {
-        begin(lessonId, pathNodeId);
-        router.push({ params: { lessonId }, pathname: '/lesson-intro' });
-      }}
-    />
-  );
+function PreviewHomeRoute() {
+  return <HomeShell viewModel={homePreviewData} />;
 }
 
-function DurableIndexRoute() {
-  const router = useRouter();
-  const { begin, beginReview, resume } = useLessonSession();
+function DurableHomeRoute() {
   const dashboard = useProgressDashboard();
-  const onSelectTab = useTabNavigation('yol');
+  const hearts = useHearts();
 
   if (dashboard.status === 'loading') {
     return (
       <MessageScreen
-        body="XP, İz ve ders durumun okunuyor."
-        heading="Yolun hazırlanıyor"
-        mood="thinking"
+        body="XP, seri ve ders durumun okunuyor."
+        heading="Hazırlanıyor"
         testID="home-loading"
+        tone="muted"
       />
     );
   }
@@ -48,47 +37,37 @@ function DurableIndexRoute() {
   if (dashboard.status === 'failed') {
     return (
       <MessageScreen
-        action={{ label: 'TEKRAR DENE', onPress: dashboard.refresh }}
+        action={{ label: 'Tekrar dene', onPress: dashboard.refresh }}
         body="İlerlemen okunamadı. Kayıtların silinmedi."
         detail={__DEV__ ? dashboard.error.message : undefined}
-        heading="Yol açılamadı"
-        mood="sad"
+        heading="Ana sayfa açılamadı"
         testID="home-failed"
+        tone="dimmed"
       />
     );
   }
 
-  const home = buildDurableHomeViewModel({
-    iz: dashboard.data.iz.current,
-    progress: dashboard.data.pathProgress.get(KURULTAY_PATH_NODE_ID) ?? null,
-    recommendation: dashboard.data.recommendation,
-    totalXp: dashboard.data.totalXp,
-  });
+  return <HomeShell viewModel={buildHomeViewModel(dashboard.data, hearts.hearts)} />;
+}
+
+function HomeShell({ viewModel }: { viewModel: HomeViewModel }) {
+  const router = useRouter();
+  const { begin } = useLessonSession();
+  const onSelectTab = useTabNavigation('anasayfa');
+  const [exam, setExam] = useState<ExamFilter>('tyt');
 
   return (
     <HomeScreen
-      onSelectTab={onSelectTab}
-      onStartLevel={async (lessonId, pathNodeId) => {
-        const recommendation = dashboard.data.recommendation;
-        if (recommendation.kind === 'mistake' || recommendation.kind === 'review') {
-          beginReview(recommendation.skillId);
-          router.push('/lesson');
-          return;
-        }
-
-        if (recommendation.kind === 'resume') {
-          if (await resume(recommendation.sessionId)) {
-            router.push('/lesson');
-          } else {
-            dashboard.refresh();
-          }
-          return;
-        }
-
-        begin(lessonId, pathNodeId);
-        router.push({ params: { lessonId }, pathname: '/lesson-intro' });
+      exam={exam}
+      onChangeExam={setExam}
+      onContinue={(card) => {
+        begin(card.lessonId, card.pathNodeId);
+        router.push('/lesson');
       }}
-      viewModel={home}
+      onOpenLeague={() => router.replace('/lig')}
+      onOpenSubject={(subjectId) => router.push(`/ogren/${subjectId}`)}
+      onSelectTab={onSelectTab}
+      viewModel={viewModel}
     />
   );
 }

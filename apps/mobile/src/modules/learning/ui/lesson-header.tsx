@@ -1,99 +1,112 @@
-import { Pressable, StyleSheet, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
 import { AppText } from '@/shared/ui/components/app-text';
-import { CloseGlyph, HeartGlyph } from '@/shared/ui/components/glyphs';
+import { CloseIcon, HeartIcon } from '@/shared/ui/components/icons';
 import { ProgressBar } from '@/shared/ui/components/progress-bar';
+import { TactilePressable } from '@/shared/ui/components/tactile-pressable';
 import { theme } from '@/shared/ui/theme/tokens';
 
 type LessonHeaderProps = {
-  /** Omitted on decks that track cards instead of hearts. */
-  hearts?: string | undefined;
-  /** Replaces the hearts slot, e.g. "3/12" on the flashcard deck. */
+  /** `null` hides the counter — the flashcard deck counts cards instead. */
+  hearts: number | null;
+  onExit: () => void;
+  /** Shown in place of the heart count on the flashcard stage. */
   counter?: string | undefined;
-  counterColor?: string | undefined;
-  fillColor?: string | undefined;
-  glyphColor?: string | undefined;
-  onClose: () => void;
+  onDark?: boolean;
   progress: number;
-  trackColor?: string | undefined;
 };
 
 /**
- * The exercise HUD: leave, how far through the lesson you are, and what you
- * have left to spend. It stays identical across every exercise type so the
- * learner's escape route never moves.
+ * The persistent exercise chrome: a way out, how far this round has come, and
+ * what a mistake will cost. Nothing else competes with the question.
  */
 export function LessonHeader({
   counter,
-  counterColor,
-  fillColor,
-  glyphColor,
   hearts,
-  onClose,
+  onDark = false,
+  onExit,
   progress,
-  trackColor,
 }: LessonHeaderProps) {
+  const heartsDepleted = hearts !== null && hearts <= 0;
+
   return (
     <View style={styles.header}>
-      <Pressable
-        accessibilityHint="Dersten çıkışı onaylamanı ister"
-        accessibilityLabel="Dersi kapat"
+      <TactilePressable
+        accessibilityLabel="Çalışmadan çık"
         accessibilityRole="button"
-        onPress={onClose}
-        style={styles.closeButton}
-        testID="lesson-close"
+        depth={0}
+        depthColor="transparent"
+        faceStyle={styles.exitFace}
+        onPress={onExit}
+        testID="lesson-exit"
       >
-        <CloseGlyph color={glyphColor} />
-      </Pressable>
+        <CloseIcon color={onDark ? theme.colors.text.onDarkFaint : theme.colors.text.muted} />
+      </TactilePressable>
 
-      <View style={styles.progress}>
+      <View style={styles.meter}>
         <ProgressBar
-          accessibilityLabel="Ders ilerlemesi"
-          fillColor={fillColor}
-          trackColor={trackColor}
+          accessibilityLabel="Çalışma ilerlemesi"
+          fillColor={onDark ? theme.colors.progress.fillOnDark : theme.colors.progress.fill}
+          height={12}
+          trackColor={onDark ? theme.colors.progress.trackOnDark : theme.colors.progress.track}
           value={progress}
         />
       </View>
 
-      {hearts === undefined ? null : (
-        <View accessible accessibilityLabel={`${hearts} can kaldı`} style={styles.hearts}>
-          <HeartGlyph size={20} />
-          <AppText color="heart" variant="hud">
+      {counter !== undefined ? (
+        <AppText color={onDark ? 'onDark' : 'secondary'} variant="bodyS">
+          {counter}
+        </AppText>
+      ) : hearts === null ? (
+        <View accessibilityLabel="Sınırsız can" accessibilityRole="text" style={styles.counter}>
+          <HeartIcon size={20} />
+          <AppText color="heart" variant="labelM">
+            ∞
+          </AppText>
+        </View>
+      ) : (
+        <View
+          accessibilityLabel={`${hearts} can`}
+          accessibilityRole="text"
+          style={[styles.counter, heartsDepleted ? styles.counterEmpty : null]}
+        >
+          <HeartIcon size={20} />
+          <AppText color="heart" variant="labelM">
             {hearts}
           </AppText>
         </View>
-      )}
-
-      {counter === undefined ? null : (
-        <AppText accessibilityLabel={`Kart ${counter}`} style={{ color: counterColor }} variant="labelM">
-          {counter}
-        </AppText>
       )}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  closeButton: {
+  counter: {
     alignItems: 'center',
-    height: theme.hitTarget,
+    flexDirection: 'row',
+    gap: theme.spacing.xs,
+  },
+  counterEmpty: {
+    backgroundColor: theme.colors.reward.heartSoft,
+    borderRadius: theme.radii.pill,
+    paddingHorizontal: theme.spacing.md - 1,
+    paddingVertical: 5,
+  },
+  exitFace: {
+    alignItems: 'center',
     justifyContent: 'center',
-    marginLeft: -theme.spacing.md,
-    width: theme.hitTarget,
+    minHeight: theme.hitTarget,
+    minWidth: theme.hitTarget - 14,
   },
   header: {
     alignItems: 'center',
     flexDirection: 'row',
     gap: theme.spacing.lg,
+    paddingBottom: 16,
     paddingHorizontal: theme.spacing.xl,
-    paddingVertical: theme.spacing.sm,
+    paddingTop: theme.spacing.sm,
   },
-  hearts: {
-    alignItems: 'center',
-    flexDirection: 'row',
-    gap: theme.spacing.sm - 2,
-  },
-  progress: {
+  meter: {
     flex: 1,
   },
 });

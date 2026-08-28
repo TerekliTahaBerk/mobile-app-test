@@ -6,11 +6,24 @@ import type {
   PathNodeId,
   SkillId,
 } from '@/modules/curriculum/domain/content-types';
+import type {
+  AvatarId,
+  DailyGoal,
+  ExamTarget,
+  GradeLevel,
+  LearnerProfile,
+  ReferralSource,
+  ReminderTime,
+  StartingPoint,
+  StudyTrack,
+} from '@/modules/learner/domain/learner-profile';
 import { XP_POLICY_V1 } from '@/modules/learning/domain/xp-policy';
 import type {
   AttemptRepository,
   CompletionRepository,
   DailyActivityRepository,
+  HeartsRepository,
+  LearnerProfileRepository,
   MasteryRepository,
   MistakeRepository,
   ProgressRepositories,
@@ -714,6 +727,68 @@ export function createSqliteRepositories(db: SQLiteDatabase): ProgressRepositori
     },
   };
 
+  const hearts: HeartsRepository = {
+    read: async () => {
+      const row = await db.getFirstAsync<HeartsRow>('SELECT * FROM hearts WHERE id = 1');
+
+      return row === null ? null : { hearts: row.hearts, updatedAtMs: row.updated_at_ms };
+    },
+    write: async (record) => {
+      await db.runAsync(
+        `INSERT INTO hearts (id, hearts, updated_at_ms) VALUES (1, ?, ?)
+         ON CONFLICT (id) DO UPDATE SET hearts = excluded.hearts,
+                                        updated_at_ms = excluded.updated_at_ms`,
+        [record.hearts, record.updatedAtMs],
+      );
+    },
+  };
+
+  const profile: LearnerProfileRepository = {
+    read: async () => {
+      const row = await db.getFirstAsync<LearnerProfileRow>(
+        'SELECT * FROM learner_profile WHERE id = 1',
+      );
+
+      return row === null ? null : toLearnerProfile(row);
+    },
+    write: async (value) => {
+      await db.runAsync(
+        `INSERT INTO learner_profile (
+           id, display_name, avatar_id, exam, track, grade, target_year,
+           referral_source, daily_goal, starting_point, reminders_enabled,
+           reminder_time, completed_at
+         ) VALUES (1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+         ON CONFLICT (id) DO UPDATE SET
+           display_name      = excluded.display_name,
+           avatar_id         = excluded.avatar_id,
+           exam              = excluded.exam,
+           track             = excluded.track,
+           grade             = excluded.grade,
+           target_year       = excluded.target_year,
+           referral_source   = excluded.referral_source,
+           daily_goal        = excluded.daily_goal,
+           starting_point    = excluded.starting_point,
+           reminders_enabled = excluded.reminders_enabled,
+           reminder_time     = excluded.reminder_time,
+           completed_at      = excluded.completed_at`,
+        [
+          value.displayName,
+          value.avatarId,
+          value.exam,
+          value.track ?? null,
+          value.grade,
+          value.targetYear,
+          value.referralSource ?? null,
+          value.dailyGoal,
+          value.startingPoint,
+          value.remindersEnabled ? 1 : 0,
+          value.reminderTime ?? null,
+          value.completedAtIso,
+        ],
+      );
+    },
+  };
+
   const completion: CompletionRepository = {
     completeSession: async (input) => {
       let result: SessionCompletionResult = {
@@ -735,11 +810,57 @@ export function createSqliteRepositories(db: SQLiteDatabase): ProgressRepositori
     attempts,
     completion,
     dailyActivity,
+    hearts,
     mastery,
     mistakes,
+    profile,
     progress,
     review,
     sessions,
     xp,
   };
 }
+
+type HeartsRow = {
+  hearts: number;
+  id: number;
+  updated_at_ms: number;
+};
+
+type LearnerProfileRow = {
+  avatar_id: string;
+  completed_at: string;
+  daily_goal: number;
+  display_name: string;
+  exam: string;
+  grade: string;
+  id: number;
+  referral_source: string | null;
+  reminder_time: string | null;
+  reminders_enabled: number;
+  starting_point: string;
+  target_year: number;
+  track: string | null;
+};
+
+function toLearnerProfile(row: LearnerProfileRow): LearnerProfile {
+  return {
+    avatarId: row.avatar_id as AvatarId,
+    completedAtIso: row.completed_at,
+    dailyGoal: row.daily_goal as DailyGoal,
+    displayName: row.display_name,
+    exam: row.exam as ExamTarget,
+    grade: row.grade as GradeLevel,
+    ...(row.referral_source === null
+      ? {}
+      : { referralSource: row.referral_source as ReferralSource }),
+    ...(row.reminder_time === null
+      ? {}
+      : { reminderTime: row.reminder_time as ReminderTime }),
+    remindersEnabled: row.reminders_enabled === 1,
+    startingPoint: row.starting_point as StartingPoint,
+    targetYear: row.target_year,
+    ...(row.track === null ? {} : { track: row.track as StudyTrack }),
+  };
+}
+

@@ -1,4 +1,4 @@
-import { tytSocialDraftBundle } from '@/modules/curriculum/content/tyt-social-draft-bundle';
+import { tytDraftBundle } from '@/modules/curriculum/content/tyt-draft-bundle';
 import type { ContentBundle } from '@/modules/curriculum/domain/content-types';
 import {
   assertValidContentBundle,
@@ -25,21 +25,21 @@ function edit<T>(value: unknown): T {
 
 describe('content bundle validation', () => {
   it('accepts the shipped draft bundle', () => {
-    expect(validateContentBundle(tytSocialDraftBundle)).toEqual([]);
-    expect(assertValidContentBundle(tytSocialDraftBundle)).toBe(tytSocialDraftBundle);
+    expect(validateContentBundle(tytDraftBundle)).toEqual([]);
+    expect(assertValidContentBundle(tytDraftBundle)).toBe(tytDraftBundle);
   });
 
   it('keeps the shipped lesson marked draft until a human reviews it', () => {
-    for (const lesson of tytSocialDraftBundle.lessons) {
+    for (const lesson of tytDraftBundle.lessons) {
       expect(lesson.provenance.reviewStatus).toBe('draft');
     }
-    for (const exercise of tytSocialDraftBundle.exercises) {
+    for (const exercise of tytDraftBundle.exercises) {
       expect(exercise.provenance.reviewStatus).toBe('draft');
     }
   });
 
   it('rejects a duplicate stable id', () => {
-    const bundle = mutableCopy(tytSocialDraftBundle);
+    const bundle = mutableCopy(tytDraftBundle);
     const [first] = bundle.skills;
     edit<(typeof bundle.skills)[number][]>(bundle.skills).push({ ...first! });
 
@@ -47,7 +47,7 @@ describe('content bundle validation', () => {
   });
 
   it('rejects an exercise pointing at an unknown skill', () => {
-    const bundle = mutableCopy(tytSocialDraftBundle);
+    const bundle = mutableCopy(tytDraftBundle);
     edit<{ skillIds: string[] }>(bundle.exercises[1]).skillIds = ['skill.does.not.exist'];
 
     const issues = validateContentBundle(bundle);
@@ -56,21 +56,21 @@ describe('content bundle validation', () => {
   });
 
   it('rejects a path node pointing at an unknown lesson', () => {
-    const bundle = mutableCopy(tytSocialDraftBundle);
+    const bundle = mutableCopy(tytDraftBundle);
     edit<{ lessonId: string }>(bundle.pathNodes[0]).lessonId = 'lesson.nope';
 
     expect(codesFrom(bundle)).toContain('brokenReference');
   });
 
   it('rejects a lesson pointing at an unknown exercise', () => {
-    const bundle = mutableCopy(tytSocialDraftBundle);
+    const bundle = mutableCopy(tytDraftBundle);
     edit<{ exerciseIds: string[] }>(bundle.lessons[0]).exerciseIds = ['exercise.nope'];
 
     expect(codesFrom(bundle)).toContain('brokenReference');
   });
 
   it('rejects a multiple choice whose correct option is not among its options', () => {
-    const bundle = mutableCopy(tytSocialDraftBundle);
+    const bundle = mutableCopy(tytDraftBundle);
     const mcq = bundle.exercises.find((exercise) => exercise.kind === 'multipleChoice')!;
     edit<{ correctOptionId: string }>(mcq).correctOptionId = 'opt-missing';
 
@@ -78,7 +78,7 @@ describe('content bundle validation', () => {
   });
 
   it('rejects a fill-blank solution token that is not in the bank', () => {
-    const bundle = mutableCopy(tytSocialDraftBundle);
+    const bundle = mutableCopy(tytDraftBundle);
     const blank = bundle.exercises.find((exercise) => exercise.kind === 'fillBlank')!;
     edit<{ solutionTokenIds: string[] }>(blank).solutionTokenIds = ['w-not-in-bank'];
 
@@ -86,7 +86,7 @@ describe('content bundle validation', () => {
   });
 
   it('rejects a matching exercise with ambiguous right-hand values', () => {
-    const bundle = mutableCopy(tytSocialDraftBundle);
+    const bundle = mutableCopy(tytDraftBundle);
     const matching = bundle.exercises.find((exercise) => exercise.kind === 'matching')!;
     const pairs = edit<{ pairs: { right: string }[] }>(matching).pairs;
     pairs[1]!.right = pairs[0]!.right;
@@ -95,38 +95,36 @@ describe('content bundle validation', () => {
   });
 
   it('rejects a scored exercise with no skill mapping', () => {
-    const bundle = mutableCopy(tytSocialDraftBundle);
+    const bundle = mutableCopy(tytDraftBundle);
     edit<{ skillIds: string[] }>(bundle.exercises[1]).skillIds = [];
 
     expect(codesFrom(bundle)).toContain('emptyCollection');
   });
 
-  it('rejects an exercise kind that has no approved renderer', () => {
-    const bundle = mutableCopy(tytSocialDraftBundle);
+  it('keeps a contracted-but-unrendered exercise kind out of a lesson', () => {
+    // Every kind in the contract has a renderer today. The guard exists for the
+    // next one: a kind may be authored and stored before a screen exists, but
+    // it must not reach a learner until one does.
+    const bundle = mutableCopy(tytDraftBundle);
     edit<unknown[]>(bundle.exercises).push({
-      correctOrder: ['a', 'b'],
       difficulty: 2,
       explanation: 'demo',
-      id: 'exercise.history.kurultay.001.order01',
-      items: [
-        { id: 'a', label: 'A' },
-        { id: 'b', label: 'B' },
-      ],
-      kind: 'ordering',
-      prompt: 'Sırala',
+      id: 'exercise.history.states.001.future01',
+      kind: 'numericEntry',
+      prompt: 'Kaç?',
       provenance: { author: 'test', reviewStatus: 'draft' },
       skillIds: [bundle.skills[0]!.id],
       tag: 'TARİH',
     });
     edit<{ exerciseIds: string[] }>(bundle.lessons[0]).exerciseIds.push(
-      'exercise.history.kurultay.001.order01',
+      'exercise.history.states.001.future01',
     );
 
     expect(codesFrom(bundle)).toContain('unsupportedExerciseKind');
   });
 
   it('rejects a node that lists itself as a prerequisite', () => {
-    const bundle = mutableCopy(tytSocialDraftBundle);
+    const bundle = mutableCopy(tytDraftBundle);
     const node = bundle.pathNodes[0]!;
     edit<{ prerequisiteIds: string[] }>(node).prerequisiteIds = [node.id];
 
@@ -134,14 +132,14 @@ describe('content bundle validation', () => {
   });
 
   it('rejects a schema version the app does not understand', () => {
-    const bundle = mutableCopy(tytSocialDraftBundle);
+    const bundle = mutableCopy(tytDraftBundle);
     edit<{ schemaVersion: number }>(bundle).schemaVersion = 99;
 
     expect(codesFrom(bundle)).toContain('schemaVersionMismatch');
   });
 
   it('throws with every issue listed and actionable', () => {
-    const bundle = mutableCopy(tytSocialDraftBundle);
+    const bundle = mutableCopy(tytDraftBundle);
     edit<{ skillIds: string[] }>(bundle.exercises[1]).skillIds = ['skill.nope'];
 
     expect(() => assertValidContentBundle(bundle)).toThrow(ContentValidationError);

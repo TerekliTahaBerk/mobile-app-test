@@ -1,134 +1,56 @@
 # Brand identity
 
-This document owns the working identity, voice, visual personality, and brand-level design decisions for the product. [DESIGN_SYSTEM.md](DESIGN_SYSTEM.md) owns how those decisions become semantic tokens, reusable primitives, interaction states, and accessibility rules.
+## Working name
 
-The identity below is taken from the approved Claude Design project **TEKRARLA Ekranlar v2** (the pastel pass), which is the visual source of truth.
+**Online Dershanem** — the learner's own online cram school, in their pocket. The name is a working one: `slug`, `scheme`, and the store bundle identifiers still carry the earlier `tekrarla` name and are deliberately unchanged, because renaming an identifier orphans the EAS project and the store listing. Settle the name commercially before touching those.
 
-## Working identity
+## What the product is
 
-- **Name:** TEKRARLA
-- **Role:** a focused study companion for Turkish exam preparation
-- **Current pilot:** TYT Sosyal Bilimler
-- **Personality:** lively, clear, encouraging, and purposeful
-- **Promise:** make the next useful repetition feel obvious and manageable
+A study game, not a dashboard. The learner opens the app, sees one obvious next step, plays a short round of questions, and leaves with their streak intact. Everything else on screen exists to get them into that loop or to show them what the loop earned.
 
-TEKRARLA is a working brand name. It is used consistently in the application until naming and legal checks are complete.
+The product line is: **dersler → ünite yolu → interaktif çalışma → can / XP / seri → lig → bir tane daha.**
 
-## Companion character
+## Mascot
 
-ÇİZGİ is a pencil study companion: an orange barrel body with a wooden tip, a yellow ferrule band, navy shoes, and large expressive eyes. The character is rendered as soft 3D artwork, not a flat illustration.
+**Dino** — a green cartoon dinosaur in a graduation cap. He is the app's reaction, not its narrator: he appears on the welcome screen, beside each onboarding question, in the verdict after an answer, when hearts run out, at a streak milestone, and on the paywall. He never explains the curriculum and he never blocks a screen.
 
-ÇİZGİ points toward the next action, keeps the learner company on the path, and acknowledges steady effort. ÇİZGİ is not a teacher, authority figure, answer engine, or a character who claims to be smarter than the learner.
+Dino has one piece of artwork, sized by the composition and desaturated when the moment is a setback. There is no pose library and no mascot state machine — see `apps/mobile/src/shared/ui/dino/dino.tsx`.
 
-### Poses in use
-
-Nine poses ship as transparent PNGs under `apps/mobile/assets/cizgi/`, cut from the approved pose sheet:
-
-| Mood | Where the design uses it |
-| --- | --- |
-| `wave` | Onboarding, first question |
-| `thinking` | Onboarding level question; multiple-choice exercises |
-| `idle` | Onboarding start question; fill-in-the-blank exercises |
-| `proud` | Onboarding daily-goal question; İz celebration |
-| `pose` | Lesson preparation |
-| `happy` | Beside the current node on the learning path |
-| `sad` | Exit confirmation |
-| `cheer` | Lesson completed |
-| `excited` | TEKRARLA Plus |
-
-Poses are consumed through the registry in `src/shared/ui/cizgi/cizgi-assets.ts`. Screens never call `require` on a mascot file directly, and there is no mascot state engine — which pose appears is a per-screen presentation decision.
+> The approved artwork is not in the repository yet. `apps/mobile/assets/dino/dino.png` is a placeholder; the design MCP caps a file response at 256 KiB and the real file is larger, so every fetch arrives truncated. Dropping the real file at that path is the whole change — see `apps/mobile/assets/dino/README.md`.
 
 ## Voice
 
-Copy is concise, direct, supportive, and nonpunitive. It should reduce decision load without sounding childish or overly celebratory.
+Turkish, second person singular, short sentences. Encouraging without being saccharine; direct without being cold.
 
-Prefer:
+- "Soru çöz, seriyi bozma."
+- "Doğru!" / "Olmadı." — the verdict is one word, the reason follows it.
+- "Canların bitti. Biraz sonra yeniden deneyebilirsin."
+- "XP, seri ve lig sıralaması satın alınamaz."
 
-- "Merhaba, ben Çizgi! Hangi sınava çalışıyoruz?"
-- "Tamam! Ünite 3, Ders 2'ye hazırlan — Tanzimat."
-- "Her gün en az bir ders çöz, izin kesilmesin."
+Never: exam-anxiety language, guilt about a broken streak, or claims about score improvement the product cannot support.
 
-Avoid:
+## Colour
 
-- blame, shame, loss aversion, or threats about broken habits;
-- claims that ÇİZGİ teaches, knows better, or guarantees outcomes;
-- loud reward language for ordinary navigation;
-- English-facing "streak" terminology. The learner-facing habit marker is **İz**.
-
-Exit copy states what leaving costs without scolding — "Şimdi çıkarsan bu ders izine yazılmaz" — and the loud action keeps the learner in the lesson while leaving stays one quiet tap away.
-
-## Color identity
-
-Coral is the single action colour. Everything else is pastel, and text is warm graphite rather than black.
-
-| Role | Value | Use |
+| Role | Hex | Where it appears |
 | --- | --- | --- |
-| Coral | `#F2794F` | The one action colour and the current path node |
-| Coral dark | `#C2552F` | Structural depth beneath coral controls |
-| Coral deep | `#B9491F` | Coral text on light surfaces |
-| Coral ink | `#E2683A` | İz numerals and celebration headings |
-| Coral tint | `#FFF3EC` | Selected-choice surfaces |
-| Coral soft | `#FFE7DB` | Coral-tinted labels |
-| App background | `#FFFCFA` | Path and celebration canvas |
-| Lesson background | `#FFFFFF` | Exercise canvas |
-| Ink | `#2E2A26` | Primary text |
-| Body ink | `#3A342F` | Answer and body text |
-| Reward yellow | `#F6CE7C` | XP, progress fill, checkpoints |
-| Heart | `#F2857F` | Remaining attempts |
-| Success | `#5FB78E` | Correct verdicts |
-| Error | `#EF8078` | Wrong verdicts |
+| Brand | `#14976B` | Primary actions, the current path node, correct answers |
+| Brand deep | `#0C4A38` | Button edges, the dark flashcard stage, the league banner |
+| Brand soft | `#EDF7F2` | Selected states, correct-answer sheets, quiet chips |
+| Ink | `#14201C` | Body and heading text |
+| Canvas | `#FBFCFA` | Tab-shell backgrounds |
+| Streak | `#E08A1E` | The daily-streak flame and its counter |
+| Hearts | `#D9556B` | The hearts counter and every wrong-answer surface |
 
-Subject palette:
+Subjects each own a colour so a learner can tell where they are without reading: Tarih amber `#B4762A`, Matematik and Türkçe brand green, Fizik `#4A6FA5`, Kimya and Felsefe `#7A5AA8`, Biyoloji `#6E9B3A`, Coğrafya `#2E8A8A`.
 
-| Subject | Primary | Depth | Soft | Ink |
-| --- | --- | --- | --- | --- |
-| Tarih | `#E0A876` | `#C08850` | `#FBE7D6` | `#A9662F` |
-| Coğrafya | `#86C9A6` | `#34785A` | `#DFF3E8` | `#34785A` |
-| Felsefe | `#A79BE6` | `#5C4CB0` | `#EAE5FB` | `#5C4CB0` |
-| Din Kültürü | `#8FBBE8` | `#3A6D9E` | `#E3EFFB` | `#3A6D9E` |
-
-Subject colours identify learning context and may take over a whole screen — the flashcard deck runs in the Felsefe palette end to end. Coral remains the action colour inside a subject-coloured area. Reward yellow is an accent, not a substitute for state text or icons.
+Green is the only action colour. Rose is only ever a setback. Amber is only ever the streak or the Tarih subject. Nothing else in the system is allowed to be red or green for decoration.
 
 ## Typography
 
-- **Baloo 2 ExtraBold:** display numerals, headings, celebration copy, and large concept words.
-- **Nunito:** everything else — Regular for prose, SemiBold for secondary prose, Bold for questions and body, ExtraBold for labels and buttons, Black for HUD numerals.
+**Manrope** carries everything — 800 for headings, counters and labels, 700 for body, 400 for prose. **JetBrains Mono Medium** appears only in micro-labels: question counters, XP figures, league scores. Mono is a texture for numbers, never for reading.
 
-The app loads Baloo 2 ExtraBold and Nunito 400/600/700/800/900 through `@expo-google-fonts` and `expo-font`. Runtime loading preserves the Expo Go workflow. Rendering is never blocked; native system fonts remain the startup and error fallback, so a font failure cannot produce a blank screen. Turkish glyphs — ı, İ, ğ, ş, ç, ö, ü — are verified in both families on device.
+## Open identity decisions
 
-Both families are distributed under the SIL Open Font License 1.1. Package code is MIT licensed. Sources: [Expo font guidance](https://docs.expo.dev/develop/user-interface/fonts/), [Expo Google Fonts](https://github.com/expo/google-fonts), [Baloo 2](https://github.com/EkType/Baloo2), and [Nunito metadata](https://github.com/google/fonts/blob/main/ofl/nunito/METADATA.pb).
-
-## İz
-
-İz is the learner-facing habit trace and replaces any flame, fire, or "streak" iconography. Its mark is a short stroke that tapers as it recedes: three or four rounded bars stepping down in width and coral saturation. It appears in the path HUD, on the lesson preparation screen, in the completion summary, on the exit sheet, and at full size on the İz celebration screen.
-
-The İz week strip states each day in words as well as colour: completed, today, and not yet arrived.
-
-## Shapes and surfaces
-
-- Corner radii step through 9, 13, 16, 20, 26, 30, and pill.
-- Path nodes are circles with solid offset depth; the current node wears a partial coral ring.
-- Cards are two-point outlines on warm surfaces. Anything touchable gains a thickened bottom border.
-- Buttons are wide, tall, and compress onto their own shadow when pressed.
-- Speech bubbles are outlined with a rotated square tail.
-- The unit banner is a subject-tinted band with an index affordance on its right edge.
-
-## Icons and companion art
-
-Icons are small, geometric, and drawn from plain views — no icon font, no SVG runtime. Text labels remain available where an icon alone would be ambiguous.
-
-## One-handed mobile use
-
-- Primary continuation controls stay in a fixed lower action region.
-- Every interactive control clears 44 points.
-- Safe areas, native scrolling, and font scaling are preserved.
-- The path scrolls; nothing depends on a fixed device height.
-
-## Unresolved brand decisions
-
-- Final wordmark and logo system.
-- Final app icon and launch artwork.
-- Naming, trademark, and other legal clearance for TEKRARLA and ÇİZGİ.
-- Ownership and licensing of the ÇİZGİ artwork for production. The shipped poses are cut from a source sheet in which each character is roughly 140 pt wide, so the largest placements (196–206 pt) are interpolated on a 3× display. Sharpening them requires re-rendering from the original 3D source, not a different export.
-- Whether the league is competitive, and what the standings on the Lig screen would actually rank — the current rows are fixture text.
-- Whether TEKRARLA Plus ships at all, and at what price. The Plus screen is layout only: it has no billing integration and collects nothing.
+- The commercial name, and whether the `tekrarla` identifiers get migrated with it.
+- App icon and splash artwork, which still carry the previous brand.
+- Whether Dino gets a second pose for the setback moments, or keeps the single-artwork rule.

@@ -10,7 +10,7 @@ import {
 import { useReducedMotion } from '@/shared/ui/motion/use-reduced-motion';
 
 /**
- * The design's four motions, rebuilt on React Native's built-in `Animated`.
+ * The design's four motions, built on React Native's built-in `Animated`.
  * No animation dependency is added, every loop runs on the native driver, and
  * each one collapses to a static frame under Reduce Motion.
  */
@@ -19,6 +19,7 @@ type MotionProps = {
   children: ReactNode;
   onLayout?: ViewProps['onLayout'];
   style?: StyleProp<ViewStyle>;
+  testID?: string | undefined;
 };
 
 type LoopProps = MotionProps & {
@@ -26,7 +27,7 @@ type LoopProps = MotionProps & {
   duration?: number;
 };
 
-/** `tk-bob` — a slow vertical float, used under ÇİZGİ. */
+/** A slow vertical float, used under Dino. */
 export function Bob({ children, duration = 3600, style }: LoopProps) {
   const reduced = useReducedMotion();
   // A lazy state initializer keeps one stable Animated.Value per mount without
@@ -65,7 +66,7 @@ export function Bob({ children, duration = 3600, style }: LoopProps) {
   return <Animated.View style={[style, { transform: [{ translateY }] }]}>{children}</Animated.View>;
 }
 
-/** `tk-ring` — the breathing ring around the current level node. */
+/** The breathing ring around the current path node. */
 export function Pulse({ children, duration = 2400, style }: LoopProps) {
   const reduced = useReducedMotion();
   const [progress] = useState(() => new Animated.Value(0));
@@ -102,8 +103,8 @@ export function Pulse({ children, duration = 2400, style }: LoopProps) {
   return <Animated.View style={[style, { transform: [{ scale }] }]}>{children}</Animated.View>;
 }
 
-/** `tk-pop` — the entrance for the start callout and the level detail panel. */
-export function Pop({ children, duration = 220, onLayout, style }: LoopProps) {
+/** The entrance for callouts, sheets and reward panels. */
+export function Pop({ children, duration = 220, onLayout, style, testID }: LoopProps) {
   const reduced = useReducedMotion();
   const [progress] = useState(() => new Animated.Value(0));
 
@@ -131,6 +132,7 @@ export function Pop({ children, duration = 220, onLayout, style }: LoopProps) {
     <Animated.View
       onLayout={onLayout}
       style={[style, { opacity: progress, transform: [{ scale }] }]}
+      testID={testID}
     >
       {children}
     </Animated.View>
@@ -142,7 +144,7 @@ type ShakeProps = MotionProps & {
   trigger: number;
 };
 
-/** `tk-shake` — the refusal when a match does not land. */
+/** The refusal when a match does not land. */
 export function Shake({ children, style, trigger }: ShakeProps) {
   const reduced = useReducedMotion();
   const [offset] = useState(() => new Animated.Value(0));

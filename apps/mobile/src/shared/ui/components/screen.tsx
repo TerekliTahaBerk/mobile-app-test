@@ -4,7 +4,13 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { theme } from '@/shared/ui/theme/tokens';
 
-export type ScreenBackground = 'app' | 'flashcard' | 'lesson';
+export type ScreenBackground =
+  | 'app'
+  | 'celebration'
+  | 'flashcard'
+  | 'lesson'
+  | 'premium'
+  | 'streak';
 
 type ScreenProps = {
   background?: ScreenBackground;
@@ -51,6 +57,9 @@ const styles = StyleSheet.create({
 
 const backgroundStyles = StyleSheet.create({
   app: { backgroundColor: theme.colors.background.app },
+  celebration: { backgroundColor: theme.colors.background.celebration },
   flashcard: { backgroundColor: theme.colors.background.flashcard },
   lesson: { backgroundColor: theme.colors.background.lesson },
+  premium: { backgroundColor: theme.colors.background.premium },
+  streak: { backgroundColor: theme.colors.background.streak },
 });

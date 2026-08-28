@@ -20,8 +20,8 @@ type AppErrorBoundaryState = {
  * blank screen. React has no function-component equivalent, so this stays a
  * class.
  *
- * Recovery is a remount of the subtree: the app holds no durable state yet, so
- * there is nothing to restore beyond re-rendering from the route.
+ * Recovery is a remount of the subtree. Durable progress lives in SQLite and is
+ * re-read on focus, so nothing is lost by re-rendering from the route.
  */
 export class AppErrorBoundary extends Component<AppErrorBoundaryProps, AppErrorBoundaryState> {
   state: AppErrorBoundaryState = { error: null };
@@ -31,7 +31,7 @@ export class AppErrorBoundary extends Component<AppErrorBoundaryProps, AppErrorB
   }
 
   componentDidCatch(error: Error, info: ErrorInfo) {
-    console.error('[TEKRARLA] Beklenmeyen bir hata yakalandı:', error, info.componentStack);
+    console.error('[Online Dershanem] Beklenmeyen bir hata yakalandı:', error, info.componentStack);
     this.props.onError?.(error, info);
   }
 
@@ -48,11 +48,11 @@ export class AppErrorBoundary extends Component<AppErrorBoundaryProps, AppErrorB
 
     return (
       <MessageScreen
-        action={{ label: 'TEKRAR DENE', onPress: this.retry }}
-        body="Beklenmeyen bir sorun çıktı. İzin ve ilerlemen yerinde — tekrar deneyebilirsin."
+        action={{ label: 'Tekrar dene', onPress: this.retry }}
+        body="Beklenmeyen bir sorun çıktı. Serin ve ilerlemen yerinde — tekrar deneyebilirsin."
         detail={__DEV__ ? error.message : undefined}
         heading="Bir şeyler ters gitti"
-        mood="sad"
+        tone="dimmed"
         testID="app-error-boundary"
       />
     );

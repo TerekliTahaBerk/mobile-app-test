@@ -51,6 +51,8 @@ const RENDERABLE_KINDS = new Set<ExerciseDefinition['kind']>([
   'flashcard',
   'matching',
   'multipleChoice',
+  'ordering',
+  'trueFalse',
 ]);
 
 export function validateContentBundle(bundle: ContentBundle): readonly ContentIssue[] {
@@ -284,6 +286,13 @@ function validateExerciseAnswerability(
           add('invalidAnswer', `${at}.correctOrder[${j}]`, `"${id}" öğeler arasında yok.`);
         }
       });
+      return;
+    }
+
+    case 'trueFalse': {
+      if (exercise.statement.trim().length === 0) {
+        add('invalidAnswer', `${at}.statement`, 'Doğru–yanlış önermesi boş olamaz.');
+      }
       return;
     }
 

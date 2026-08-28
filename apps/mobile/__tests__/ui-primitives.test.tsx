@@ -2,7 +2,10 @@ import { fireEvent, render, screen, userEvent } from '@testing-library/react-nat
 import { StyleSheet } from 'react-native';
 
 import { AppButton } from '@/shared/ui/components/app-button';
+import { HudChip } from '@/shared/ui/components/hud-chip';
 import { ProgressBar } from '@/shared/ui/components/progress-bar';
+import { SegmentedToggle } from '@/shared/ui/components/segmented-toggle';
+import { StepProgress } from '@/shared/ui/components/step-progress';
 
 describe('design primitives', () => {
   it('prevents disabled button interaction and exposes its state', async () => {
@@ -17,7 +20,7 @@ describe('design primitives', () => {
     expect(onPress).not.toHaveBeenCalled();
   });
 
-  it('compresses the tactile button face onto its structural depth while pressed', async () => {
+  it('compresses the button face onto its structural edge while pressed', async () => {
     let pressedOffset: number | undefined;
 
     await render(
@@ -52,7 +55,60 @@ describe('design primitives', () => {
       max: 100,
       min: 0,
       now: 100,
-      text: '100%',
+      text: '%100',
+    });
+  });
+
+  it('counts a session gain into the announced total without overflowing', async () => {
+    await render(
+      <ProgressBar accessibilityLabel="Ünite" gainValue={0.9} value={0.35} />,
+    );
+
+    expect(screen.getByLabelText('Ünite').props.accessibilityValue).toMatchObject({
+      now: 100,
+    });
+  });
+
+  it('states each counter in words rather than by icon alone', async () => {
+    await render(<HudChip kind="streak" value={12} />);
+    expect(screen.getByLabelText('12 günlük seri')).toBeTruthy();
+
+    await render(<HudChip kind="hearts" value={null} />);
+    expect(screen.getByLabelText('Sınırsız can')).toBeTruthy();
+  });
+
+  it('marks the chosen segment as selected', async () => {
+    const onChange = jest.fn();
+
+    await render(
+      <SegmentedToggle
+        accessibilityLabel="Sınav"
+        onChange={onChange}
+        options={[
+          { label: 'TYT', value: 'tyt' },
+          { label: 'AYT', value: 'ayt' },
+        ]}
+        value="tyt"
+      />,
+    );
+
+    expect(screen.getByTestId('segment-tyt').props.accessibilityState).toMatchObject({
+      selected: true,
+    });
+
+    await fireEvent.press(screen.getByTestId('segment-ayt'));
+    expect(onChange).toHaveBeenCalledWith('ayt');
+  });
+
+  it('reports how far through a multi-step flow the learner is', async () => {
+    await render(
+      <StepProgress accessibilityLabel="Adım 3 / 7" currentStep={3} totalSteps={7} />,
+    );
+
+    expect(screen.getByLabelText('Adım 3 / 7').props.accessibilityValue).toEqual({
+      max: 7,
+      min: 0,
+      now: 3,
     });
   });
 });

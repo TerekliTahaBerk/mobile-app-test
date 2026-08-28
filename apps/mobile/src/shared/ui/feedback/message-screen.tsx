@@ -4,25 +4,24 @@ import { AppButton } from '@/shared/ui/components/app-button';
 import { AppText } from '@/shared/ui/components/app-text';
 import { BottomAction } from '@/shared/ui/components/bottom-action';
 import { Screen } from '@/shared/ui/components/screen';
-import { Cizgi } from '@/shared/ui/cizgi/cizgi';
+import { Dino, type DinoTone } from '@/shared/ui/dino/dino';
 import { theme } from '@/shared/ui/theme/tokens';
-import type { CizgiMood } from '@/shared/ui/cizgi/cizgi-assets';
 
 type MessageScreenProps = {
   action?: { label: string; onPress: () => void } | undefined;
   body: string;
-  heading: string;
-  mood: CizgiMood;
-  /** Small monospace-ish detail shown under the body, e.g. an error summary. */
+  /** Small detail under the body, e.g. an error summary in a dev build. */
   detail?: string | undefined;
+  heading: string;
   secondaryAction?: { label: string; onPress: () => void } | undefined;
   testID?: string | undefined;
+  tone?: DinoTone;
 };
 
 /**
  * The shared full-screen message layout behind every dead end: a crash, an
  * unknown link, an empty path. The design has no frame for these, so the
- * composition follows the celebration screens — ÇİZGİ, a heading, one short
+ * composition follows the celebration screens — Dino, a heading, one short
  * explanation, and a single obvious way back.
  */
 export function MessageScreen({
@@ -30,14 +29,14 @@ export function MessageScreen({
   body,
   detail,
   heading,
-  mood,
   secondaryAction,
   testID,
+  tone = 'default',
 }: MessageScreenProps) {
   return (
     <Screen includeBottomInset={false} testID={testID}>
       <View style={styles.stage}>
-        <Cizgi mood={mood} width={150} />
+        <Dino size={150} tone={tone} />
 
         <View style={styles.copy}>
           <AppText accessibilityRole="header" align="center" variant="headingL">
@@ -47,7 +46,7 @@ export function MessageScreen({
             {body}
           </AppText>
           {detail === undefined ? null : (
-            <AppText align="center" color="faint" numberOfLines={3} variant="bodyS">
+            <AppText align="center" color="muted" numberOfLines={3} variant="proseS">
               {detail}
             </AppText>
           )}

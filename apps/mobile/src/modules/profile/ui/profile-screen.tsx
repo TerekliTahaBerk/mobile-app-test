@@ -1,137 +1,288 @@
-import { useState } from 'react';
-import { ScrollView, StyleSheet, View } from 'react-native';
+import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 
-import { BottomTabBar, type AppTabKey } from '@/modules/home/ui/bottom-tab-bar';
-import { profilePreviewData } from '@/modules/profile/model/profile-preview-data';
-import { LeagueBoard } from '@/modules/profile/ui/league-board';
-import { ProfileOverview } from '@/modules/profile/ui/profile-overview';
-import type { LocalProfileStats } from '@/modules/profile/ui/profile-overview';
-import { FEATURES } from '@/shared/config/app-config';
+import type { Badge } from '@/modules/progress/domain/badge-policy';
+import type { ProfileViewModel } from '@/modules/profile/model/profile-view-model';
 import { AppText } from '@/shared/ui/components/app-text';
+import { Card } from '@/shared/ui/components/card';
+import { ChevronIcon, LockIcon, StarIcon, StreakIcon } from '@/shared/ui/components/icons';
 import { Screen } from '@/shared/ui/components/screen';
-import { TactilePressable } from '@/shared/ui/components/tactile-pressable';
-import { Cizgi } from '@/shared/ui/cizgi/cizgi';
+import { BottomTabBar, type AppTabKey } from '@/shared/ui/navigation/bottom-tab-bar';
 import { theme } from '@/shared/ui/theme/tokens';
 
-export type ProfileTab = 'league' | 'profile';
-
-const PORTRAIT_HEIGHT = 172;
-
 type ProfileScreenProps = {
-  activeTab: AppTabKey;
-  initialTab: ProfileTab;
-  localStats?: LocalProfileStats | undefined;
+  onOpenLeagueHistory: () => void;
+  onOpenPremium: () => void;
+  onOpenSettings: () => void;
   onSelectTab: (tab: AppTabKey) => void;
+  /** Shown on the Premium row when the entitlement is already held. */
+  premiumActive: boolean;
+  viewModel: ProfileViewModel;
 };
 
 /**
- * Design screen 12. One screen with two segments: the learner's own overview
- * and the weekly league standing. The green portrait band only belongs to the
- * profile segment, exactly as the design specifies.
- *
- * Everything is preview copy — see the module's model for what this is not.
+ * Profil. Every figure here is the learner's own local record — there is no
+ * account behind it and nothing is fetched. Unearned badges stay visible as
+ * locked tiles so the set reads as one collection.
  */
-export function ProfileScreen({ activeTab, initialTab, localStats, onSelectTab }: ProfileScreenProps) {
-  const [tab, setTab] = useState<ProfileTab>(initialTab);
-  const leagueAvailable = FEATURES.league && localStats === undefined;
-  const isProfile = !leagueAvailable || tab === 'profile';
-
+export function ProfileScreen({
+  onOpenLeagueHistory,
+  onOpenPremium,
+  onOpenSettings,
+  onSelectTab,
+  premiumActive,
+  viewModel,
+}: ProfileScreenProps) {
   return (
     <Screen includeBottomInset={false} testID="profile-screen">
-      {isProfile ? (
-        <View style={styles.portrait}>
-          <Cizgi height={PORTRAIT_HEIGHT - theme.spacing.xxl} mood={profilePreviewData.header.mood} />
+      <ScrollView contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
+        <View style={styles.identity}>
+          <View style={styles.avatar}>
+            <AppText color="accentStrong" variant="headingXL">
+              {viewModel.initial}
+            </AppText>
+          </View>
+          <AppText accessibilityRole="header" align="center" style={styles.name} variant="headingL">
+            {viewModel.displayName}
+          </AppText>
+          <AppText align="center" color="secondary" style={styles.description} variant="prose">
+            {viewModel.description}
+          </AppText>
+
+          <View style={styles.chips}>
+            <View style={styles.chip}>
+              <AppText color="success" variant="labelS">
+                Level {viewModel.level}
+              </AppText>
+            </View>
+            <View style={styles.chip}>
+              <AppText color="success" variant="labelS">
+                {viewModel.totalXp.toLocaleString('tr-TR')} XP
+              </AppText>
+            </View>
+            <View style={[styles.chip, styles.chipStreak]}>
+              <StreakIcon size={14} />
+              <AppText color="streak" variant="labelS">
+                {viewModel.streak}
+              </AppText>
+            </View>
+          </View>
         </View>
-      ) : null}
 
-      {leagueAvailable ? <View accessibilityRole="tablist" style={styles.segments}>
-        <SegmentButton
-          label={profilePreviewData.tabs.profile}
-          onPress={() => setTab('profile')}
-          selected={isProfile}
-          testID="profile-tab-profile"
-        />
-        <SegmentButton
-          label={profilePreviewData.tabs.league}
-          onPress={() => setTab('league')}
-          selected={!isProfile}
-          testID="profile-tab-league"
-        />
-      </View> : null}
+        <View style={styles.statRow}>
+          {viewModel.stats.map((stat) => (
+            <Card key={stat.id} style={styles.statCard}>
+              <AppText align="center" variant="numeric">
+                {stat.value}
+              </AppText>
+              <AppText align="center" color="secondary" style={styles.statLabel} variant="caption">
+                {stat.label}
+              </AppText>
+            </Card>
+          ))}
+        </View>
 
-      <ScrollView
-        contentContainerStyle={styles.content}
-        showsVerticalScrollIndicator={false}
-        style={styles.scroll}
-      >
-        {isProfile ? <ProfileOverview localStats={localStats} /> : <LeagueBoard />}
+        <AppText accessibilityRole="header" style={styles.sectionTitle} variant="headingS">
+          Başarılarım
+        </AppText>
+        <View style={styles.badgeGrid}>
+          {viewModel.badges.map((badge) => (
+            <BadgeTile badge={badge} key={badge.id} />
+          ))}
+        </View>
+
+        <Card style={styles.menu} variant="outlined">
+          <MenuRow label="Lig Geçmişim" onPress={onOpenLeagueHistory} />
+          <MenuRow
+            badge={premiumActive ? '∞ can' : undefined}
+            label="Premium"
+            onPress={onOpenPremium}
+          />
+          <MenuRow label="Ayarlar" last onPress={onOpenSettings} />
+        </Card>
       </ScrollView>
 
-      <BottomTabBar activeTab={activeTab} onSelectTab={onSelectTab} />
+      <BottomTabBar activeTab="profil" onSelectTab={onSelectTab} />
     </Screen>
   );
 }
 
-type SegmentButtonProps = {
-  label: string;
-  onPress: () => void;
-  selected: boolean;
-  testID: string;
-};
-
-function SegmentButton({ label, onPress, selected, testID }: SegmentButtonProps) {
+function BadgeTile({ badge }: { badge: Badge }) {
   return (
-    <TactilePressable
-      accessibilityLabel={label}
-      accessibilityRole="tab"
-      accessibilityState={{ selected }}
-      depth={0}
-      depthColor="transparent"
-      faceStyle={[styles.segmentFace, selected && styles.segmentFaceSelected]}
-      onPress={onPress}
-      radius={theme.radii.small + 1}
-      style={styles.segment}
-      testID={testID}
+    <View
+      accessibilityLabel={`${badge.label}${badge.earned ? '' : ', henüz kazanılmadı'}`}
+      accessibilityRole="image"
+      style={styles.badge}
+      testID={`badge-${badge.id}`}
     >
-      <AppText align="center" color={selected ? 'inverse' : 'muted'} variant="labelS">
+      <View style={[styles.badgeFace, badge.earned ? styles.badgeEarned : styles.badgeLocked]}>
+        {badge.earned ? (
+          <StarIcon color={theme.colors.action.primary} size={26} />
+        ) : (
+          <LockIcon color={theme.colors.text.faint} size={20} />
+        )}
+      </View>
+      <AppText
+        align="center"
+        color={badge.earned ? 'primary' : 'muted'}
+        style={styles.badgeLabel}
+        variant="caption"
+      >
+        {badge.label}
+      </AppText>
+    </View>
+  );
+}
+
+function MenuRow({
+  badge,
+  label,
+  last = false,
+  onPress,
+}: {
+  badge?: string | undefined;
+  label: string;
+  last?: boolean;
+  onPress: () => void;
+}) {
+  return (
+    <Pressable
+      accessibilityLabel={label}
+      accessibilityRole="button"
+      onPress={onPress}
+      style={[styles.menuRow, last ? null : styles.menuRowDivided]}
+      testID={`profile-menu-${label}`}
+    >
+      <AppText style={styles.menuLabel} variant="labelM">
         {label}
       </AppText>
-    </TactilePressable>
+      {badge === undefined ? null : (
+        <View style={styles.menuBadge}>
+          <AppText color="success" variant="caption">
+            {badge}
+          </AppText>
+        </View>
+      )}
+      <ChevronIcon color={theme.colors.text.muted} size={16} />
+    </Pressable>
   );
 }
 
 const styles = StyleSheet.create({
-  content: {
-    gap: theme.spacing.lg,
-    paddingBottom: theme.spacing.xxl,
-    paddingHorizontal: theme.spacing.xl,
-  },
-  portrait: {
+  avatar: {
     alignItems: 'center',
-    backgroundColor: theme.colors.profile.portrait,
-    height: PORTRAIT_HEIGHT,
-    justifyContent: 'flex-end',
-    overflow: 'hidden',
-  },
-  scroll: {
-    flex: 1,
-  },
-  segment: {
-    flex: 1,
-  },
-  segmentFace: {
-    backgroundColor: theme.colors.surface.recessed,
+    backgroundColor: theme.colors.surface.soft,
+    borderColor: theme.colors.action.primary,
+    borderRadius: theme.radii.pill,
+    borderWidth: 3,
+    height: 86,
     justifyContent: 'center',
-    minHeight: theme.hitTarget,
-    paddingVertical: theme.spacing.md,
+    width: 86,
   },
-  segmentFaceSelected: {
-    backgroundColor: theme.colors.action.primary,
+  badge: {
+    flexBasis: '22%',
+    flexGrow: 1,
   },
-  segments: {
+  badgeEarned: {
+    backgroundColor: theme.colors.surface.soft,
+    borderColor: theme.colors.status.successBorder,
+  },
+  badgeFace: {
+    alignItems: 'center',
+    aspectRatio: 1,
+    borderRadius: theme.radii.large + 2,
+    borderWidth: 2,
+    justifyContent: 'center',
+    width: '100%',
+  },
+  badgeGrid: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: theme.spacing.md - 1,
+    marginHorizontal: theme.spacing.xl,
+    marginTop: theme.spacing.md + 1,
+  },
+  badgeLabel: {
+    fontSize: 10.5,
+    marginTop: theme.spacing.xs + 2,
+  },
+  badgeLocked: {
+    backgroundColor: theme.colors.surface.recessed,
+    borderColor: theme.colors.border.strong,
+    borderStyle: 'dashed',
+  },
+  chip: {
+    alignItems: 'center',
+    backgroundColor: theme.colors.surface.soft,
+    borderRadius: theme.radii.pill,
+    flexDirection: 'row',
+    gap: theme.spacing.xs + 1,
+    paddingHorizontal: theme.spacing.lg,
+    paddingVertical: 9,
+  },
+  chipStreak: {
+    backgroundColor: theme.colors.reward.streakSoft,
+  },
+  chips: {
     flexDirection: 'row',
     gap: theme.spacing.sm,
+    marginTop: theme.spacing.lg,
+  },
+  description: {
+    marginTop: theme.spacing.xxs,
+  },
+  identity: {
+    alignItems: 'center',
     paddingHorizontal: theme.spacing.xl,
-    paddingVertical: theme.spacing.md,
+    paddingTop: theme.spacing.lg + 2,
+  },
+  menu: {
+    marginHorizontal: theme.spacing.xl,
+    marginTop: theme.spacing.xl,
+    padding: 0,
+  },
+  menuBadge: {
+    backgroundColor: theme.colors.surface.soft,
+    borderRadius: theme.radii.pill,
+    paddingHorizontal: theme.spacing.md - 1,
+    paddingVertical: 5,
+  },
+  menuLabel: {
+    flex: 1,
+  },
+  menuRow: {
+    alignItems: 'center',
+    flexDirection: 'row',
+    gap: theme.spacing.md + 1,
+    minHeight: theme.hitTarget + 8,
+    paddingHorizontal: theme.spacing.lg + 2,
+    paddingVertical: theme.spacing.lg + 2,
+  },
+  menuRowDivided: {
+    borderBottomColor: theme.colors.border.subtle,
+    borderBottomWidth: 1,
+  },
+  name: {
+    marginTop: theme.spacing.md + 1,
+  },
+  scroll: {
+    paddingBottom: theme.spacing.xxl,
+  },
+  sectionTitle: {
+    marginHorizontal: theme.spacing.xl,
+    marginTop: theme.spacing.xxl,
+  },
+  statCard: {
+    flex: 1,
+    paddingHorizontal: theme.spacing.sm,
+    paddingVertical: theme.spacing.lg,
+  },
+  statLabel: {
+    marginTop: theme.spacing.xxs,
+  },
+  statRow: {
+    flexDirection: 'row',
+    gap: theme.spacing.md - 1,
+    marginHorizontal: theme.spacing.xl,
+    marginTop: theme.spacing.xxl,
   },
 });

@@ -332,9 +332,9 @@ export function LessonSessionProvider({
     return (
       <MessageScreen
         body="Yarım kalan çalışman kontrol ediliyor."
-        heading="Dersin hazırlanıyor"
-        mood="thinking"
+        heading="Hazırlanıyor"
         testID="session-restoring"
+        tone="muted"
       />
     );
   }

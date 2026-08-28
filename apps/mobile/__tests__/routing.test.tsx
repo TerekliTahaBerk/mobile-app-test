@@ -1,119 +1,119 @@
 import { fireEvent, render, screen } from '@testing-library/react-native';
 
-import { KURULTAY_LESSON_ID, KURULTAY_PATH_NODE_ID } from '@/modules/curriculum/content/tyt-social-draft-bundle';
 import { renderWithSession } from './support/render-with-session';
 
-import GorevlerRoute from '@/app/gorevler';
+import CanlarRoute from '@/app/canlar';
 import IndexRoute from '@/app/index';
-import IzRoute from '@/app/iz';
-import LessonCompleteRoute from '@/app/lesson-complete';
-import LessonIntroRoute from '@/app/lesson-intro';
 import LigRoute from '@/app/lig';
-import MagazaRoute from '@/app/magaza';
-import ProfilRoute from '@/app/profil';
+import LearnRoute from '@/app/ogren/index';
+import NotFoundRoute from '@/app/+not-found';
+import PremiumRoute from '@/app/premium';
 
 const mockBack = jest.fn();
+const mockCanGoBack = jest.fn(() => true);
 const mockDismissTo = jest.fn();
 const mockPush = jest.fn();
 const mockReplace = jest.fn();
 
 jest.mock('expo-router', () => ({
   Redirect: () => null,
-  useLocalSearchParams: () => ({ lessonId: 'lesson.history.kurultay.001' }),
+  useFocusEffect: jest.fn(),
+  useLocalSearchParams: () => ({ subjectId: 'tyt.history' }),
   useRouter: () => ({
     back: mockBack,
+    canGoBack: mockCanGoBack,
     dismissTo: mockDismissTo,
     push: mockPush,
     replace: mockReplace,
   }),
 }));
 
-describe('routes', () => {
-  beforeEach(() => {
-    mockBack.mockClear();
-    mockDismissTo.mockClear();
-    mockPush.mockClear();
-    mockReplace.mockClear();
-  });
-
-  it('sends the home path CTA into the lesson intro with the real lesson id', async () => {
-    await renderWithSession(<IndexRoute />);
-
-    await fireEvent.press(screen.getByTestId(`path-node-${KURULTAY_PATH_NODE_ID}`));
-    await fireEvent.press(screen.getByTestId('level-detail-cta'));
-
-    expect(mockPush).toHaveBeenCalledWith({
-      params: { lessonId: KURULTAY_LESSON_ID },
-      pathname: '/lesson-intro',
-    });
-  });
-
-  it('continues from the lesson intro into the lesson and back to the path', async () => {
-    await renderWithSession(<LessonIntroRoute />);
-
-    await fireEvent.press(screen.getByTestId('lesson-intro-cta'));
-    expect(mockReplace).toHaveBeenCalledWith('/lesson');
-
-    await fireEvent.press(screen.getByTestId('lesson-intro-back'));
-    expect(mockBack).toHaveBeenCalledTimes(1);
-  });
-
-  it('returns to the path from the İz celebration', async () => {
-    await render(<IzRoute />);
-
-    await fireEvent.press(screen.getByTestId('iz-continue'));
-
-    expect(mockDismissTo).toHaveBeenCalledWith('/');
-  });
-
-  it('closes the quest board back to the path', async () => {
-    await render(<GorevlerRoute />);
-
-    await fireEvent.press(screen.getByTestId('quests-close'));
-
-    expect(mockReplace).toHaveBeenCalledWith('/');
-  });
+beforeEach(() => {
+  mockBack.mockClear();
+  mockDismissTo.mockClear();
+  mockPush.mockClear();
+  mockReplace.mockClear();
 });
 
 describe('shell tabs', () => {
-  beforeEach(() => {
-    mockReplace.mockClear();
-  });
-
   it('swaps sections rather than stacking them', async () => {
     await renderWithSession(<IndexRoute />);
 
-    await fireEvent.press(screen.getByTestId('tab-gorev'));
+    await fireEvent.press(screen.getByTestId('tab-ogren'));
     await fireEvent.press(screen.getByTestId('tab-profil'));
 
-    expect(mockReplace.mock.calls.map(([route]) => route)).toEqual(['/gorevler', '/profil']);
+    expect(mockReplace.mock.calls.map(([route]) => route)).toEqual(['/ogren', '/profil']);
   });
 
   it('does not re-navigate when the active tab is tapped', async () => {
     await renderWithSession(<IndexRoute />);
 
-    await fireEvent.press(screen.getByTestId('tab-yol'));
+    await fireEvent.press(screen.getByTestId('tab-anasayfa'));
 
     expect(mockReplace).not.toHaveBeenCalled();
   });
 
-  it('routes the league and profile tabs to their own entry points', async () => {
-    await render(<LigRoute />);
-    await fireEvent.press(screen.getByTestId('tab-profil'));
-    expect(mockReplace).toHaveBeenCalledWith('/profil');
+  it('keeps all four tabs present on every shell screen', async () => {
+    await renderWithSession(<LearnRoute />);
 
-    mockReplace.mockClear();
+    for (const tab of ['anasayfa', 'ogren', 'lig', 'profil']) {
+      expect(screen.getByTestId(`tab-${tab}`)).toBeTruthy();
+    }
+  });
+});
 
-    await render(<ProfilRoute />);
-    await fireEvent.press(screen.getByTestId('tab-lig'));
-    expect(mockReplace).toHaveBeenCalledWith('/lig');
+describe('routes', () => {
+  it('opens a subject path from the home tab', async () => {
+    await renderWithSession(<IndexRoute />);
+
+    await fireEvent.press(screen.getByTestId('subject-tyt.history'));
+
+    expect(mockPush).toHaveBeenCalledWith('/ogren/tyt.history');
   });
 
-  it('closes the store back to the path', async () => {
-    await render(<MagazaRoute />);
+  it('starts the round the continue card names', async () => {
+    await renderWithSession(<IndexRoute />);
 
-    await fireEvent.press(screen.getByTestId('store-close'));
+    await fireEvent.press(screen.getByTestId('home-continue'));
+
+    expect(mockPush).toHaveBeenCalledWith('/lesson');
+  });
+
+  it('sends the out-of-hearts screen to Premium rather than to an ad', async () => {
+    await renderWithSession(<CanlarRoute />);
+
+    await fireEvent.press(screen.getByTestId('hearts-premium'));
+
+    expect(mockReplace).toHaveBeenCalledWith('/premium');
+  });
+
+  it('dismisses the premium sheet back where the learner came from', async () => {
+    await render(<PremiumRoute />);
+
+    await fireEvent.press(screen.getByTestId('premium-dismiss'));
+
+    expect(mockBack).toHaveBeenCalledTimes(1);
+  });
+
+  it('gives a stale deep link a way back', async () => {
+    await render(<NotFoundRoute />);
+
+    expect(screen.getByTestId('not-found-screen')).toBeTruthy();
+
+    await fireEvent.press(screen.getByTestId('message-action'));
 
     expect(mockReplace).toHaveBeenCalledWith('/');
+  });
+});
+
+describe('league gate', () => {
+  it('keeps the tab in place while the leaderboard does not exist', async () => {
+    await render(<LigRoute />);
+
+    // In a design-preview test build the league renders; in a pilot build the
+    // same route explains itself instead of ranking invented people.
+    expect(
+      screen.queryByTestId('league-screen') ?? screen.getByTestId('league-pending'),
+    ).toBeTruthy();
   });
 });

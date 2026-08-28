@@ -3,6 +3,8 @@ import type {
   PathNodeId,
   SkillId,
 } from '@/modules/curriculum/domain/content-types';
+import type { LearnerProfile } from '@/modules/learner/domain/learner-profile';
+import type { HeartsRecord } from '@/modules/progress/domain/hearts-policy';
 import type {
   DailyActivity,
   Mistake,
@@ -68,6 +70,20 @@ export type DailyActivityRepository = {
 };
 
 /**
+ * Hearts are stored as a count plus the instant it was written; the current
+ * balance is derived from elapsed time by the policy, never by the store.
+ */
+export type HeartsRepository = {
+  read: () => Promise<HeartsRecord | null>;
+  write: (record: HeartsRecord) => Promise<void>;
+};
+
+export type LearnerProfileRepository = {
+  read: () => Promise<LearnerProfile | null>;
+  write: (profile: LearnerProfile) => Promise<void>;
+};
+
+/**
  * The one write that must be all-or-nothing.
  *
  * Completing a session touches the session, its attempts, three kinds of XP,
@@ -111,7 +127,9 @@ export type ProgressRepositories = {
   attempts: AttemptRepository;
   completion: CompletionRepository;
   dailyActivity: DailyActivityRepository;
+  hearts: HeartsRepository;
   mastery: MasteryRepository;
+  profile: LearnerProfileRepository;
   mistakes: MistakeRepository;
   progress: ProgressRepository;
   review: ReviewRepository;
