@@ -255,6 +255,7 @@ describe('Profil', () => {
         onOpenPremium={jest.fn()}
         onOpenSettings={jest.fn()}
         onOpenTopicPerformance={jest.fn()}
+        onOpenWeeklyReport={jest.fn()}
         onSelectTab={jest.fn()}
         viewModel={viewModel}
         {...overrides}

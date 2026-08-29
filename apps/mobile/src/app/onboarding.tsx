@@ -23,7 +23,7 @@ export default function OnboardingRoute() {
         }
 
         try {
-          beginPlacement();
+          await beginPlacement();
           router.replace({ pathname: '/lesson', params: { returnTo: 'placement' } });
         } catch {
           // A diagnostic that cannot be assembled must not trap a new learner on

@@ -141,6 +141,29 @@ export type Mistake = {
 };
 
 // ---------------------------------------------------------------------------
+// Question reports
+// ---------------------------------------------------------------------------
+
+/**
+ * Why a learner flagged a question. Fixed choices, never free text: the app
+ * captures no learner prose, and a reason it cannot read is a reason nobody
+ * acts on.
+ */
+export type ReportReason =
+  | 'confusingExplanation'
+  | 'typo'
+  | 'wrongAnswer'
+  | 'wrongQuestion';
+
+export type QuestionReport = {
+  createdAt: Timestamp;
+  exerciseId: ExerciseId;
+  id: string;
+  reason: ReportReason;
+  sessionId: string;
+};
+
+// ---------------------------------------------------------------------------
 // Daily activity (İz)
 // ---------------------------------------------------------------------------
 

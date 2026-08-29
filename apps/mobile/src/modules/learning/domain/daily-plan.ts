@@ -53,6 +53,8 @@ export type DailyPlanInput = {
   index: ContentIndex;
   /** Lessons the learner may open, in path order. */
   newLessonIds: readonly LessonId[];
+  /** Questions the learner reported as broken; they are never drilled again. */
+  reportedExerciseIds?: ReadonlySet<ExerciseId>;
   /** All-time topic report; weak and stale subtopics are read from it. */
   topics: readonly MainTopicPerformance[];
 };
@@ -78,7 +80,9 @@ const REFRESH_AFTER_DAYS = 14;
  */
 export function buildDailyPlan(input: DailyPlanInput): DailyPlan {
   const history = latestAttemptByExercise(input.attempts);
-  const taken = new Set<ExerciseId>();
+  // A question the learner says is broken is not asked again in an assembled
+  // drill. The authored path still shows it, so the curriculum keeps its shape.
+  const taken = new Set<ExerciseId>(input.reportedExerciseIds ?? []);
   const subtopics = input.topics.flatMap((topic) => topic.subtopics);
 
   const weak = subtopics

@@ -306,6 +306,23 @@ describe('progress repositories', () => {
     await expect(repositories.mistakes.listUnresolved()).resolves.toHaveLength(1);
   });
 
+  it('keeps one report per question per round, with the last reason', async () => {
+    const repositories = await setup();
+    const report = {
+      createdAt: COMPLETED_AT,
+      exerciseId: 'exercise.history.states.001.mcq01' as ExerciseId,
+      id: 'report:s1:exercise.history.states.001.mcq01',
+      sessionId: 's1',
+    };
+
+    await repositories.reports.record({ ...report, reason: 'typo' });
+    await repositories.reports.record({ ...report, reason: 'wrongAnswer' });
+
+    const stored = await repositories.reports.listAll();
+    expect(stored).toHaveLength(1);
+    expect(stored[0]).toMatchObject({ reason: 'wrongAnswer' });
+  });
+
   it('surfaces only sessions that are still active for resume', async () => {
     const repositories = await setup();
 

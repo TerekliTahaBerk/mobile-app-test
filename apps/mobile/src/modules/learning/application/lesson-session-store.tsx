@@ -11,6 +11,7 @@ import {
 
 import { getContentIndex } from '@/modules/curriculum/content/content-source';
 import type {
+  ExerciseId,
   LessonId,
   PathNodeId,
   SkillId,
@@ -34,13 +35,18 @@ import { assembleTargetedPractice } from '@/modules/learning/domain/targeted-pra
 import {
   createLessonPersistence,
   restoreSession,
+  sessionIdFor,
   type LessonPersistence,
 } from '@/modules/progress/application/lesson-persistence';
 import type {
   ProgressRepositories,
   SessionCompletionResult,
 } from '@/modules/progress/application/repositories';
-import type { SessionKind, StoredSession } from '@/modules/progress/domain/progress-types';
+import type {
+  ReportReason,
+  SessionKind,
+  StoredSession,
+} from '@/modules/progress/domain/progress-types';
 import { MessageScreen } from '@/shared/ui/feedback/message-screen';
 import { trackEvent } from '@/shared/observability/observability';
 import { systemClock, type Clock as ProgressClock } from '@/shared/time/clock';
@@ -63,11 +69,12 @@ type LessonSessionStore = {
   abandon: () => void;
   begin: (lessonId: LessonId, pathNodeId?: PathNodeId) => void;
   beginDailyPlan: (plan: DailyPlan) => void;
-  beginPlacement: () => number;
+  beginPlacement: () => Promise<number>;
   beginReview: (skillId: SkillId) => void;
   beginTopicPractice: (topicId: TopicId) => Promise<number>;
   continueAfterFeedback: () => void;
   discard: () => void;
+  reportQuestion: (exerciseId: ExerciseId, reason: ReportReason) => Promise<void>;
   retryPersistence: () => void;
   resume: (sessionId: string) => Promise<boolean>;
   submitAnswer: (answer: ExerciseAnswer) => void;
@@ -297,9 +304,13 @@ export function LessonSessionProvider({
    * measuring what a learner knows must not mark curriculum as completed, so
    * the path stays exactly where their own work left it.
    */
-  const beginPlacement = useCallback(() => {
+  const beginPlacement = useCallback(async () => {
+    const reports = (await repositories?.reports.listAll()) ?? [];
     const index = getContentIndex();
-    const placement = assemblePlacement(index);
+    const placement = assemblePlacement(
+      index,
+      new Set(reports.map((report) => report.exerciseId)),
+    );
     const sourceLesson = index.bundle.lessons.find((candidate) =>
       candidate.exerciseIds.includes(placement.exercises[0]!.id),
     );
@@ -325,7 +336,7 @@ export function LessonSessionProvider({
     setCompletionResult(null);
 
     return placement.exercises.length;
-  }, [clock, enqueuePersistence, installLesson]);
+  }, [clock, enqueuePersistence, installLesson, repositories]);
 
   const beginReview = useCallback(
     (skillId: SkillId) => {
@@ -357,7 +368,14 @@ export function LessonSessionProvider({
   const beginTopicPractice = useCallback(
     async (topicId: TopicId) => {
       const attempts = (await repositories?.attempts.listAllScored()) ?? [];
-      const practice = assembleTargetedPractice(topicId, getContentIndex(), 5, attempts);
+      const reports = (await repositories?.reports.listAll()) ?? [];
+      const practice = assembleTargetedPractice(
+        topicId,
+        getContentIndex(),
+        5,
+        attempts,
+        new Set(reports.map((report) => report.exerciseId)),
+      );
       const deps: LessonEngineDeps = {
         exercises: practice.exercises,
         lesson: practice.lesson,
@@ -373,6 +391,32 @@ export function LessonSessionProvider({
       return practice.exercises.length;
     },
     [clock, enqueuePersistence, installLesson, repositories],
+  );
+
+  /**
+   * Records that the learner considers this question broken. It is deliberately
+   * not part of the answer: reporting is not answering, and it neither scores
+   * nor advances the round.
+   */
+  const reportQuestion = useCallback(
+    async (exerciseId: ExerciseId, reason: ReportReason) => {
+      const current = lessonRef.current;
+      if (repositories === undefined || current === null) {
+        return;
+      }
+      const sessionId = sessionIdFor(current.session);
+      await repositories.reports.record({
+        createdAt: new Date(progressClock.now()).toISOString(),
+        exerciseId,
+        // One report per question per round, so a changed mind corrects the
+        // reason rather than adding a second row.
+        id: `report:${sessionId}:${exerciseId}`,
+        reason,
+        sessionId,
+      });
+      trackEvent('question_reported', { exerciseId, reason });
+    },
+    [progressClock, repositories],
   );
 
   const retryPersistence = useCallback(() => {
@@ -443,6 +487,7 @@ export function LessonSessionProvider({
       lesson,
       persistenceError,
       persistenceStatus,
+      reportQuestion,
       retryPersistence,
       resume,
       submitAnswer: (answer) => dispatch({ answer, at: clock(), type: 'submitAnswer' }),
@@ -462,6 +507,7 @@ export function LessonSessionProvider({
       lesson,
       persistenceError,
       persistenceStatus,
+      reportQuestion,
       retryPersistence,
       resume,
     ],

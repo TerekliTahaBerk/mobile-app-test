@@ -8,6 +8,7 @@ import { useLessonSession } from '@/modules/learning/application/lesson-session-
 import type { DailyPlan } from '@/modules/learning/domain/daily-plan';
 import { buildHomeViewModel } from '@/modules/home/model/build-home-view-model';
 import { useProgressDashboard } from '@/modules/progress/application/use-progress-dashboard';
+import { useReminders } from '@/modules/reminders/application/use-reminders';
 import { APP_MODE } from '@/shared/config/app-config';
 import { useTabNavigation } from '@/shared/navigation/use-tab-navigation';
 import { MessageScreen } from '@/shared/ui/feedback/message-screen';
@@ -25,6 +26,10 @@ function PreviewHomeRoute() {
 function DurableHomeRoute() {
   const dashboard = useProgressDashboard();
   const hearts = useHearts();
+
+  // Home is where the dashboard is already read, so reminders re-arm on every
+  // app open without a second pass over storage.
+  useReminders(dashboard.status === 'ready' ? dashboard.data : null);
 
   if (dashboard.status === 'loading') {
     return (

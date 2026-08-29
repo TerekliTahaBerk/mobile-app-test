@@ -6,6 +6,7 @@ This repository is the system of record for the Online Dershanem working product
 
 - Keep the pilot limited to TYT Sosyal Bilimler unless product scope is explicitly changed.
 - Keep route files thin. Domain logic must not import React, React Native, Expo, or infrastructure adapters.
+- Author content in `apps/mobile/src/modules/curriculum/content/data/`, by hand or through `npm run studio`. The studio must keep using the app's own validation rather than its own copy.
 - Prefer small, feature-oriented modules and application-owned UI primitives.
 - Keep XP, mastery, progress, and İz/streak concepts separate.
 - Do not hardcode curriculum or exercise content into screens; author it in the content bundle.
@@ -28,4 +29,8 @@ This repository is the system of record for the Online Dershanem working product
 - Daily plan decisions: [docs/DECISIONS/0007-daily-plan.md](docs/DECISIONS/0007-daily-plan.md)
 - Mistake notebook decisions: [docs/DECISIONS/0008-mistake-notebook.md](docs/DECISIONS/0008-mistake-notebook.md)
 - Starting diagnostic decisions: [docs/DECISIONS/0009-starting-diagnostic.md](docs/DECISIONS/0009-starting-diagnostic.md)
+- Weekly report decisions: [docs/DECISIONS/0010-weekly-report.md](docs/DECISIONS/0010-weekly-report.md)
+- Content authoring decisions: [docs/DECISIONS/0011-content-as-data.md](docs/DECISIONS/0011-content-as-data.md)
+- Content studio decisions: [docs/DECISIONS/0012-content-studio.md](docs/DECISIONS/0012-content-studio.md)
+- Question report decisions: [docs/DECISIONS/0013-question-reports.md](docs/DECISIONS/0013-question-reports.md)
 - Remaining domain documents: [docs/](docs/)

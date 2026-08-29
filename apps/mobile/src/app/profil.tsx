@@ -42,6 +42,7 @@ export default function ProfileRoute() {
       onOpenPremium={FEATURES.plus ? () => router.push('/premium') : undefined}
       onOpenSettings={() => router.push('/ayarlar')}
       onOpenTopicPerformance={() => router.push('/konu-performansi')}
+      onOpenWeeklyReport={() => router.push('/haftalik-rapor')}
       onSelectTab={onSelectTab}
       viewModel={buildProfileViewModel(dashboard.data)}
     />

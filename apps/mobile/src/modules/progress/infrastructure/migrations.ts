@@ -154,6 +154,38 @@ const MIGRATIONS: readonly Migration[] = [
       `);
     },
   },
+  {
+    name: 'weekly-report-day',
+    version: 3,
+    up: async (db) => {
+      await db.execAsync(`
+        -- Which weekday closes the learner's reporting week. Sunday by default,
+        -- so an existing profile keeps the behaviour it would have had.
+        ALTER TABLE learner_profile
+          ADD COLUMN weekly_report_day INTEGER NOT NULL DEFAULT 0;
+      `);
+    },
+  },
+  {
+    name: 'question-reports',
+    version: 4,
+    up: async (db) => {
+      await db.execAsync(`
+        -- A learner's report of a bad question. One row per question per
+        -- session, so re-reporting corrects the reason instead of piling up.
+        CREATE TABLE question_reports (
+          id          TEXT PRIMARY KEY NOT NULL,
+          exercise_id TEXT NOT NULL,
+          session_id  TEXT NOT NULL,
+          reason      TEXT NOT NULL,
+          created_at  TEXT NOT NULL
+        );
+
+        CREATE INDEX question_reports_exercise_idx
+          ON question_reports (exercise_id);
+      `);
+    },
+  },
 ];
 
 export const LATEST_SCHEMA_VERSION = MIGRATIONS.length;

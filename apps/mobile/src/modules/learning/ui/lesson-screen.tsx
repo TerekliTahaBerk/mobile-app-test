@@ -29,7 +29,7 @@ type LessonScreenProps = {
  * kind owns its own body and its own "answerable yet?" rule.
  */
 export function LessonScreen({ hearts, onComplete, onExit, onWrongAnswer }: LessonScreenProps) {
-  const { continueAfterFeedback, lesson, submitAnswer } = useLessonSession();
+  const { continueAfterFeedback, lesson, reportQuestion, submitAnswer } = useLessonSession();
   // The deck position is keyed by its exercise, so moving to a new exercise
   // resets the card without an effect that writes state during render.
   const [deckPosition, setDeckPosition] = useState({ exerciseId: '', index: 0 });
@@ -108,6 +108,11 @@ export function LessonScreen({ hearts, onComplete, onExit, onWrongAnswer }: Less
               onWrongAnswer?.();
             }
             continueAfterFeedback();
+          }}
+          onReport={(reason) => {
+            // Reporting is not answering: a failed write must not interrupt the
+            // round the learner is in the middle of.
+            void reportQuestion(exercise.id, reason).catch(() => undefined);
           }}
           xpAwarded={evaluation.correct ? XP_POLICY_V1.correctExercise : null}
         />

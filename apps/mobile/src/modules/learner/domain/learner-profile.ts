@@ -29,6 +29,9 @@ export type ReminderTime = '17:00' | '20:00' | '22:00';
 
 export type StartingPoint = 'placement' | 'scratch';
 
+/** Which weekday closes the learner's reporting week. 0 = Pazar. */
+export type WeeklyReportDay = 0 | 1 | 2 | 3 | 4 | 5 | 6;
+
 export const DISPLAY_NAME_MAX_LENGTH = 20;
 
 export const AVATAR_IDS = ['initial', 'dino', 'sky', 'violet'] as const;
@@ -46,6 +49,8 @@ export type LearnerProfile = {
   readonly reminderTime?: ReminderTime;
   remindersEnabled: boolean;
   startingPoint: StartingPoint;
+  /** The day the weekly report closes on. */
+  weeklyReportDay: WeeklyReportDay;
   /** Absent for LGS, where there is no track to choose. */
   readonly track?: StudyTrack;
   /** Calendar year of the exam being prepared for. */
@@ -104,6 +109,7 @@ export function completeOnboarding(
     ...(draft.reminderTime === undefined ? {} : { reminderTime: draft.reminderTime }),
     remindersEnabled: draft.remindersEnabled ?? false,
     startingPoint: draft.startingPoint ?? 'scratch',
+    weeklyReportDay: 0,
     targetYear: required(draft.targetYear, 'targetYear'),
     ...(exam === 'lgs' ? {} : { track: draft.track ?? 'undecided' }),
   };

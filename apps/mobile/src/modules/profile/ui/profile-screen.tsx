@@ -14,6 +14,7 @@ type ProfileScreenProps = {
   onOpenLeagueHistory?: (() => void) | undefined;
   onOpenPremium?: (() => void) | undefined;
   onOpenMistakeNotebook: () => void;
+  onOpenWeeklyReport: () => void;
   onOpenSettings: () => void;
   onOpenTopicPerformance: () => void;
   onSelectTab: (tab: AppTabKey) => void;
@@ -31,6 +32,7 @@ export function ProfileScreen({
   onOpenMistakeNotebook,
   onOpenSettings,
   onOpenTopicPerformance,
+  onOpenWeeklyReport,
   onSelectTab,
   viewModel,
 }: ProfileScreenProps) {
@@ -149,6 +151,7 @@ export function ProfileScreen({
         </View>
 
         <Card style={styles.menu} variant="outlined">
+          <MenuRow label="Haftalık Raporum" onPress={onOpenWeeklyReport} />
           <MenuRow
             badge={viewModel.openMistakes === 0 ? undefined : String(viewModel.openMistakes)}
             label="Yanlış Defterim"

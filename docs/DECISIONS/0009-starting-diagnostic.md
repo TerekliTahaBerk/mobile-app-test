@@ -40,3 +40,9 @@ answers support.
   screens state their real numbers rather than hiding it.
 - `buildDailyPlanCard` moved to `modules/learning/model/daily-plan-card.ts` so
   Home and the placement result state the plan with the same words.
+- Running the diagnostic surfaced a blocking defect that no single authored
+  lesson could reach: exercise renderers keep the learner's draft answer in
+  their own state, and the lesson screen reused one instance across questions of
+  the same kind. The second ordering question inherited the first's placements,
+  rendered blank slots, and could never be submitted. The screen now keys the
+  renderer by exercise id.

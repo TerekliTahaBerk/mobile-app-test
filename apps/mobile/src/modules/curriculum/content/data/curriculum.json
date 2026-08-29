@@ -1,0 +1,158 @@
+{
+  "contentVersion": "0.2.0-draft",
+  "curriculumVersion": "2026.1-draft",
+  "exams": [
+    {
+      "id": "tyt",
+      "subjectIds": [
+        "tyt.history",
+        "tyt.math",
+        "tyt.turkish",
+        "tyt.geography",
+        "tyt.philosophy",
+        "tyt.physics",
+        "tyt.chemistry",
+        "tyt.biology"
+      ],
+      "title": "TYT"
+    },
+    {
+      "id": "ayt",
+      "subjectIds": [
+        "ayt.math",
+        "ayt.physics",
+        "ayt.chemistry",
+        "ayt.biology",
+        "ayt.history"
+      ],
+      "title": "AYT"
+    }
+  ],
+  "locale": "tr-TR",
+  "schemaVersion": 2,
+  "subjects": [
+    {
+      "examId": "tyt",
+      "id": "tyt.history",
+      "themeKey": "history",
+      "title": "Tarih",
+      "unitIds": [
+        "tyt.history.time-and-history",
+        "tyt.history.first-turkish-states",
+        "tyt.history.medieval-world"
+      ]
+    },
+    {
+      "examId": "tyt",
+      "id": "tyt.math",
+      "themeKey": "math",
+      "title": "Matematik",
+      "unitIds": []
+    },
+    {
+      "examId": "tyt",
+      "id": "tyt.turkish",
+      "themeKey": "turkish",
+      "title": "Türkçe",
+      "unitIds": []
+    },
+    {
+      "examId": "tyt",
+      "id": "tyt.geography",
+      "themeKey": "geography",
+      "title": "Coğrafya",
+      "unitIds": []
+    },
+    {
+      "examId": "tyt",
+      "id": "tyt.philosophy",
+      "themeKey": "philosophy",
+      "title": "Felsefe",
+      "unitIds": []
+    },
+    {
+      "examId": "tyt",
+      "id": "tyt.physics",
+      "themeKey": "physics",
+      "title": "Fizik",
+      "unitIds": []
+    },
+    {
+      "examId": "tyt",
+      "id": "tyt.chemistry",
+      "themeKey": "chemistry",
+      "title": "Kimya",
+      "unitIds": []
+    },
+    {
+      "examId": "tyt",
+      "id": "tyt.biology",
+      "themeKey": "biology",
+      "title": "Biyoloji",
+      "unitIds": []
+    },
+    {
+      "examId": "ayt",
+      "id": "ayt.math",
+      "themeKey": "math",
+      "title": "Matematik",
+      "unitIds": []
+    },
+    {
+      "examId": "ayt",
+      "id": "ayt.physics",
+      "themeKey": "physics",
+      "title": "Fizik",
+      "unitIds": []
+    },
+    {
+      "examId": "ayt",
+      "id": "ayt.chemistry",
+      "themeKey": "chemistry",
+      "title": "Kimya",
+      "unitIds": []
+    },
+    {
+      "examId": "ayt",
+      "id": "ayt.biology",
+      "themeKey": "biology",
+      "title": "Biyoloji",
+      "unitIds": []
+    },
+    {
+      "examId": "ayt",
+      "id": "ayt.history",
+      "themeKey": "history",
+      "title": "Tarih",
+      "unitIds": []
+    }
+  ],
+  "units": [
+    {
+      "id": "tyt.history.time-and-history",
+      "subjectId": "tyt.history",
+      "title": "Tarih ve Zaman",
+      "topicIds": [
+        "tyt.history.time-and-history.measuring-time",
+        "tyt.history.time-and-history.eras"
+      ]
+    },
+    {
+      "id": "tyt.history.first-turkish-states",
+      "subjectId": "tyt.history",
+      "title": "İlk ve Orta Çağlarda Türk Dünyası",
+      "topicIds": [
+        "tyt.history.first-turkish-states.states",
+        "tyt.history.first-turkish-states.kurultay"
+      ]
+    },
+    {
+      "id": "tyt.history.medieval-world",
+      "subjectId": "tyt.history",
+      "title": "Orta Çağ'da Dünya",
+      "topicIds": [
+        "tyt.history.medieval-world.feudalism"
+      ]
+    }
+  ]
+}

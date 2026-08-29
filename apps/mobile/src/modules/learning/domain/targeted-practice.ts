@@ -19,7 +19,8 @@ export type TargetedPractice = {
 
 /**
  * Builds a stable, bounded drill from every scored exercise that measures one
- * of the selected subtopic's skills. It reuses an authored lesson identity so
+ * of the selected subtopic's skills, skipping questions this learner has
+ * reported as broken. It reuses an authored lesson identity so
  * the existing durable session and attempt schema need no synthetic content.
  */
 export function assembleTargetedPractice(
@@ -27,12 +28,15 @@ export function assembleTargetedPractice(
   index: ContentIndex,
   limit = 5,
   attempts: readonly StoredAttempt[] = [],
+  reported: ReadonlySet<string> = new Set(),
 ): TargetedPractice {
   const topic = index.getTopic(topicId);
   const skillIds = new Set(topic.skillIds);
   const candidates = index.bundle.exercises.filter(
     (exercise) =>
-      isScoredKind(exercise.kind) && exercise.skillIds.some((skillId) => skillIds.has(skillId)),
+      isScoredKind(exercise.kind) &&
+      !reported.has(exercise.id) &&
+      exercise.skillIds.some((skillId) => skillIds.has(skillId)),
   );
   const exercises = rankByHistory(candidates, latestAttemptByExercise(attempts)).slice(
     0,

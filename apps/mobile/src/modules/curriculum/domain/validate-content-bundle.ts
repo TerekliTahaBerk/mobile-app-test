@@ -32,6 +32,7 @@ export type ContentIssueCode =
   | 'emptyCollection'
   | 'invalidAnswer'
   | 'invalidTaxonomy'
+  | 'malformedRecord'
   | 'schemaVersionMismatch'
   | 'unsupportedExerciseKind';
 

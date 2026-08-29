@@ -16,6 +16,7 @@ import type {
   ReminderTime,
   StartingPoint,
   StudyTrack,
+  WeeklyReportDay,
 } from '@/modules/learner/domain/learner-profile';
 import { XP_POLICY_V1 } from '@/modules/learning/domain/xp-policy';
 import type {
@@ -29,6 +30,7 @@ import type {
   MistakeRepository,
   ProgressRepositories,
   ProgressRepository,
+  QuestionReportRepository,
   ReviewRepository,
   SessionCompletionInput,
   SessionCompletionResult,
@@ -42,6 +44,7 @@ import type {
   Mistake,
   PathNodeStatus,
   PathProgress,
+  QuestionReport,
   ReviewItem,
   SkillMastery,
   StoredAttempt,
@@ -778,7 +781,40 @@ export function createSqliteRepositories(db: SQLiteDatabase): ProgressRepositori
     },
   };
 
+  const reports: QuestionReportRepository = {
+    listAll: async () => {
+      const rows = await db.getAllAsync<QuestionReportRow>(
+        'SELECT * FROM question_reports ORDER BY created_at, id',
+      );
+
+      return rows.map((row) => ({
+        createdAt: row.created_at,
+        exerciseId: row.exercise_id,
+        id: row.id,
+        reason: row.reason as QuestionReport['reason'],
+        sessionId: row.session_id,
+      }));
+    },
+    record: async (report) => {
+      await db.runAsync(
+        `INSERT INTO question_reports (id, exercise_id, session_id, reason, created_at)
+         VALUES (?, ?, ?, ?, ?)
+         ON CONFLICT (id) DO UPDATE SET
+           reason     = excluded.reason,
+           created_at = excluded.created_at`,
+        [report.id, report.exerciseId, report.sessionId, report.reason, report.createdAt],
+      );
+    },
+  };
+
   const dailyActivity: DailyActivityRepository = {
+    list: async () => {
+      const rows = await db.getAllAsync<DailyActivityRow>(
+        'SELECT * FROM daily_activity ORDER BY local_date',
+      );
+
+      return rows.map(toDailyActivity);
+    },
     listQualifyingDates: async () => {
       const rows = await db.getAllAsync<{ local_date: string }>(
         'SELECT local_date FROM daily_activity WHERE qualifying_sessions > 0 ORDER BY local_date',
@@ -825,8 +861,8 @@ export function createSqliteRepositories(db: SQLiteDatabase): ProgressRepositori
         `INSERT INTO learner_profile (
            id, display_name, avatar_id, exam, track, grade, target_year,
            referral_source, daily_goal, starting_point, reminders_enabled,
-           reminder_time, completed_at
-         ) VALUES (1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+           reminder_time, weekly_report_day, completed_at
+         ) VALUES (1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
          ON CONFLICT (id) DO UPDATE SET
            display_name      = excluded.display_name,
            avatar_id         = excluded.avatar_id,
@@ -839,6 +875,7 @@ export function createSqliteRepositories(db: SQLiteDatabase): ProgressRepositori
            starting_point    = excluded.starting_point,
            reminders_enabled = excluded.reminders_enabled,
            reminder_time     = excluded.reminder_time,
+           weekly_report_day = excluded.weekly_report_day,
            completed_at      = excluded.completed_at`,
         [
           value.displayName,
@@ -852,6 +889,7 @@ export function createSqliteRepositories(db: SQLiteDatabase): ProgressRepositori
           value.startingPoint,
           value.remindersEnabled ? 1 : 0,
           value.reminderTime ?? null,
+          value.weeklyReportDay,
           value.completedAtIso,
         ],
       );
@@ -883,6 +921,7 @@ export function createSqliteRepositories(db: SQLiteDatabase): ProgressRepositori
     mastery,
     mistakes,
     profile,
+    reports,
     progress,
     review,
     sessionProgress,
@@ -891,6 +930,14 @@ export function createSqliteRepositories(db: SQLiteDatabase): ProgressRepositori
     xp,
   };
 }
+
+type QuestionReportRow = {
+  created_at: string;
+  exercise_id: string;
+  id: string;
+  reason: string;
+  session_id: string;
+};
 
 type HeartsRow = {
   hearts: number;
@@ -912,6 +959,7 @@ type LearnerProfileRow = {
   starting_point: string;
   target_year: number;
   track: string | null;
+  weekly_report_day: number;
 };
 
 function toLearnerProfile(row: LearnerProfileRow): LearnerProfile {
@@ -931,6 +979,7 @@ function toLearnerProfile(row: LearnerProfileRow): LearnerProfile {
     remindersEnabled: row.reminders_enabled === 1,
     startingPoint: row.starting_point as StartingPoint,
     targetYear: row.target_year,
+    weeklyReportDay: row.weekly_report_day as WeeklyReportDay,
     ...(row.track === null ? {} : { track: row.track as StudyTrack }),
   };
 }

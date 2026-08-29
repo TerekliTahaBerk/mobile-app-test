@@ -25,6 +25,7 @@ describe('migrations', () => {
         'attempts',
         'daily_activity',
         'mistakes',
+        'question_reports',
         'path_progress',
         'review_items',
         'sessions',
@@ -32,6 +33,26 @@ describe('migrations', () => {
         'xp_transactions',
       ]),
     );
+  });
+
+  it('adds the weekly report day to an existing profile without losing it', async () => {
+    const db = createTestDatabase();
+    await migrateToLatest(db);
+
+    await db.runAsync(
+      `INSERT INTO learner_profile (
+         id, display_name, avatar_id, exam, grade, target_year, daily_goal,
+         starting_point, completed_at
+       ) VALUES (1, 'Ege', 'initial', 'yks', 'grade12', 2027, 3, 'scratch', '2026-08-28T10:00:00.000Z')`,
+    );
+
+    const row = await db.getFirstAsync<{ display_name: string; weekly_report_day: number }>(
+      'SELECT display_name, weekly_report_day FROM learner_profile WHERE id = 1',
+    );
+
+    // Sunday is the default, so a profile written before this column existed
+    // keeps the behaviour it already had.
+    expect(row).toMatchObject({ display_name: 'Ege', weekly_report_day: 0 });
   });
 
   it('is idempotent: running again applies nothing and preserves data', async () => {

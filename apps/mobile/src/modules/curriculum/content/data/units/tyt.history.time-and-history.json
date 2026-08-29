@@ -1,0 +1,680 @@
+{
+  "concepts": [
+    {
+      "definition": "Zamanı yıl, ay ve gün olarak bölen sistem.",
+      "id": "concept.history.takvim",
+      "term": "Takvim",
+      "topicId": "tyt.history.time-and-history.measuring-time"
+    },
+    {
+      "definition": "Hz. İsa'nın doğumunu başlangıç alan, güneş yılı esaslı takvim.",
+      "id": "concept.history.miladi",
+      "term": "Miladi takvim",
+      "topicId": "tyt.history.time-and-history.measuring-time"
+    },
+    {
+      "definition": "Hicret olayını başlangıç alan, ay yılı esaslı takvim.",
+      "id": "concept.history.hicri",
+      "term": "Hicri takvim",
+      "topicId": "tyt.history.time-and-history.measuring-time"
+    },
+    {
+      "definition": "Tarihin, toplumları derinden etkileyen olaylarla bölünen uzun dönemi.",
+      "id": "concept.history.cag",
+      "term": "Çağ",
+      "topicId": "tyt.history.time-and-history.eras"
+    }
+  ],
+  "exercises": [
+    {
+      "cards": [
+        {
+          "back": "Hz. İsa'nın doğumunu başlangıç alan, güneş yılı esaslı takvim.",
+          "front": "Miladi takvim",
+          "hint": "Bugün resmî olarak kullandığımız takvim.",
+          "id": "card-miladi"
+        },
+        {
+          "back": "Hicret olayını başlangıç alan, ay yılı esaslı takvim.",
+          "front": "Hicri takvim",
+          "hint": "Ay yılı, güneş yılından yaklaşık 11 gün kısadır.",
+          "id": "card-hicri"
+        },
+        {
+          "back": "Zamanı yıl, ay ve gün olarak bölen sistem.",
+          "front": "Takvim",
+          "hint": "Her toplum kendi başlangıcını seçer.",
+          "id": "card-takvim"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Takvimler başlangıç noktası ve yıl esası bakımından ayrılır.",
+      "id": "exercise.history.time.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.time.calendars"
+      ],
+      "tag": "TARİH · TAKVİM"
+    },
+    {
+      "correctOptionId": "opt-moon",
+      "difficulty": 2,
+      "explanation": "Hicri takvim ay yılı esaslıdır; ay yılı güneş yılından yaklaşık 11 gün kısadır. Bu yüzden iki takvim arasındaki fark her yıl büyür.",
+      "id": "exercise.history.time.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-moon",
+          "label": "Ay yılı esaslı olması"
+        },
+        {
+          "id": "opt-sun",
+          "label": "Güneş yılı esaslı olması"
+        },
+        {
+          "id": "opt-start",
+          "label": "Başlangıcının aynı olması"
+        },
+        {
+          "id": "opt-leap",
+          "label": "Artık yıl içermemesi"
+        }
+      ],
+      "prompt": "Hicri takvimi miladi takvimden ayıran temel özellik nedir?",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.time.calendars"
+      ],
+      "tag": "TARİH · TAKVİM"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 2,
+      "explanation": "Miladi takvim güneş yılı, hicri takvim ay yılı esaslıdır. Aynı uzunlukta değillerdir.",
+      "id": "exercise.history.time.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.time.calendars"
+      ],
+      "statement": "Hicri yıl ile miladi yıl aynı uzunluktadır.",
+      "tag": "TARİH · TAKVİM"
+    },
+    {
+      "correctOptionId": "opt-writing",
+      "difficulty": 2,
+      "explanation": "Tarih öncesi ile tarihî çağları ayıran ölçüt yazının bulunmasıdır. Yazı, geçmişin yazılı kaynaklarla izlenebilmesini sağlar.",
+      "id": "exercise.history.eras.002.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-writing",
+          "label": "Yazının bulunması"
+        },
+        {
+          "id": "opt-fire",
+          "label": "Ateşin kullanılması"
+        },
+        {
+          "id": "opt-wheel",
+          "label": "Tekerleğin icadı"
+        },
+        {
+          "id": "opt-city",
+          "label": "İlk şehirlerin kurulması"
+        }
+      ],
+      "prompt": "Tarih öncesi çağlar ile tarihî çağları ayıran ölçüt aşağıdakilerden hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.time.eras"
+      ],
+      "tag": "TARİH · ÇAĞLAR"
+    },
+    {
+      "correctOrder": [
+        "item-ilk",
+        "item-orta",
+        "item-yeni",
+        "item-yakin"
+      ],
+      "difficulty": 3,
+      "explanation": "Çağlar sırasıyla İlk Çağ, Orta Çağ, Yeni Çağ ve Yakın Çağ olarak adlandırılır.",
+      "id": "exercise.history.eras.002.order01",
+      "items": [
+        {
+          "id": "item-orta",
+          "label": "Orta Çağ"
+        },
+        {
+          "id": "item-yakin",
+          "label": "Yakın Çağ"
+        },
+        {
+          "id": "item-ilk",
+          "label": "İlk Çağ"
+        },
+        {
+          "id": "item-yeni",
+          "label": "Yeni Çağ"
+        }
+      ],
+      "kind": "ordering",
+      "prompt": "Çağları eskiden yeniye sırala.",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.time.eras"
+      ],
+      "tag": "TARİH · ÇAĞLAR"
+    },
+    {
+      "bank": [
+        {
+          "id": "w-yazinin",
+          "label": "yazının"
+        },
+        {
+          "id": "w-ates",
+          "label": "ateşin"
+        },
+        {
+          "id": "w-bulunmasi",
+          "label": "bulunması"
+        },
+        {
+          "id": "w-tarih",
+          "label": "Tarih"
+        },
+        {
+          "id": "w-oncesi",
+          "label": "öncesi"
+        },
+        {
+          "id": "w-doner",
+          "label": "döner"
+        },
+        {
+          "id": "w-biter",
+          "label": "biter"
+        },
+        {
+          "id": "w-ile",
+          "label": "ile"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "Tarih öncesi dönem, yazının bulunmasıyla sona erer.",
+      "hint": "Tarih öncesini bitiren gelişme",
+      "id": "exercise.history.eras.002.blank01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.time.eras"
+      ],
+      "solutionTokenIds": [
+        "w-tarih",
+        "w-oncesi",
+        "w-yazinin",
+        "w-bulunmasi",
+        "w-ile",
+        "w-biter"
+      ],
+      "title": "Cümleyi tamamla"
+    },
+    {
+      "correctOptionId": "opt-hicret",
+      "difficulty": 3,
+      "explanation": "Hicri takvimin başlangıcı hicret olayıdır.",
+      "id": "exercise.history.time.003.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-hicret",
+          "label": "Hicret"
+        },
+        {
+          "id": "opt-birth",
+          "label": "Hz. İsa'nın doğumu"
+        },
+        {
+          "id": "opt-olympics",
+          "label": "İlk olimpiyatlar"
+        },
+        {
+          "id": "opt-rome",
+          "label": "Roma'nın kuruluşu"
+        }
+      ],
+      "prompt": "Hicri takvimin başlangıç olayı hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.time.calendars"
+      ],
+      "tag": "TARİH · MINI CHALLENGE"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 3,
+      "explanation": "Çağ ayrımı, toplumları geniş ölçekte etkileyen olaylara dayanır.",
+      "id": "exercise.history.time.003.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.time.eras"
+      ],
+      "statement": "Çağların başlangıç ve bitişleri, toplumları derinden etkileyen olaylara dayanır.",
+      "tag": "TARİH · MINI CHALLENGE"
+    },
+    {
+      "correctOptionId": "opt-isa",
+      "difficulty": 1,
+      "explanation": "Miladi takvim Hz. İsa'nın doğumunu, hicri takvim ise Hicret'i başlangıç kabul eder.",
+      "id": "exercise.history.time.004.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-isa",
+          "label": "Hz. İsa'nın doğumu"
+        },
+        {
+          "id": "opt-hicret",
+          "label": "Hicret"
+        },
+        {
+          "id": "opt-roma",
+          "label": "Roma'nın kuruluşu"
+        },
+        {
+          "id": "opt-olimpiyat",
+          "label": "İlk olimpiyatlar"
+        }
+      ],
+      "prompt": "Miladi takvimin başlangıç olarak kabul ettiği olay nedir?",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.time.calendars"
+      ],
+      "tag": "TARİH · TAKVİM"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 2,
+      "explanation": "Rumi takvim güneş yılı esaslıdır; hicri takvim ise ay yılı esaslıdır.",
+      "id": "exercise.history.time.004.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.time.calendars"
+      ],
+      "statement": "Rumi takvim güneş yılı esaslıdır.",
+      "tag": "TARİH · TAKVİM"
+    },
+    {
+      "correctOptionId": "opt-15",
+      "difficulty": 2,
+      "explanation": "Bir yılın yüzyılı bulunurken yüzler basamağındaki sayıya bir eklenir: 1453 → 15. yüzyıl.",
+      "id": "exercise.history.time.005.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-15",
+          "label": "15. yüzyıl"
+        },
+        {
+          "id": "opt-14",
+          "label": "14. yüzyıl"
+        },
+        {
+          "id": "opt-16",
+          "label": "16. yüzyıl"
+        },
+        {
+          "id": "opt-13",
+          "label": "13. yüzyıl"
+        }
+      ],
+      "prompt": "1453 yılı hangi yüzyılda yer alır?",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.time.calendars"
+      ],
+      "tag": "TARİH · TAKVİM"
+    },
+    {
+      "correctOptionId": "opt-354",
+      "difficulty": 3,
+      "explanation": "Hicri takvim ay yılı esaslıdır; bir ay yılı yaklaşık 354 gündür.",
+      "id": "exercise.history.time.005.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-354",
+          "label": "354 gün"
+        },
+        {
+          "id": "opt-365",
+          "label": "365 gün"
+        },
+        {
+          "id": "opt-360",
+          "label": "360 gün"
+        },
+        {
+          "id": "opt-366",
+          "label": "366 gün"
+        }
+      ],
+      "prompt": "Hicri takvimde bir yıl yaklaşık kaç gündür?",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.time.calendars"
+      ],
+      "tag": "TARİH · TAKVİM"
+    },
+    {
+      "correctOptionId": "opt-1926",
+      "difficulty": 3,
+      "explanation": "Miladi takvim 1 Ocak 1926'da yürürlüğe girmiştir.",
+      "id": "exercise.history.time.005.mcq03",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1926",
+          "label": "1926"
+        },
+        {
+          "id": "opt-1923",
+          "label": "1923"
+        },
+        {
+          "id": "opt-1928",
+          "label": "1928"
+        },
+        {
+          "id": "opt-1931",
+          "label": "1931"
+        }
+      ],
+      "prompt": "Türkiye'de miladi takvim hangi yılın başında yürürlüğe girmiştir?",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.time.calendars"
+      ],
+      "tag": "TARİH · TAKVİM"
+    },
+    {
+      "correctOptionId": "opt-kavimler",
+      "difficulty": 2,
+      "explanation": "375'teki Kavimler Göçü İlk Çağ'ı bitirip Orta Çağ'ı başlatır.",
+      "id": "exercise.history.eras.003.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-kavimler",
+          "label": "Kavimler Göçü"
+        },
+        {
+          "id": "opt-fetih",
+          "label": "İstanbul'un Fethi"
+        },
+        {
+          "id": "opt-yazi",
+          "label": "Yazının bulunması"
+        },
+        {
+          "id": "opt-ihtilal",
+          "label": "Fransız İhtilali"
+        }
+      ],
+      "prompt": "Orta Çağ'ın başlangıcı olarak kabul edilen olay nedir?",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.time.eras"
+      ],
+      "tag": "TARİH · ÇAĞLAR"
+    },
+    {
+      "correctOptionId": "opt-fetih",
+      "difficulty": 2,
+      "explanation": "1453'te İstanbul'un fethi Orta Çağ'ı bitirip Yeni Çağ'ı başlatır.",
+      "id": "exercise.history.eras.003.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-fetih",
+          "label": "İstanbul'un Fethi"
+        },
+        {
+          "id": "opt-kavimler",
+          "label": "Kavimler Göçü"
+        },
+        {
+          "id": "opt-ihtilal",
+          "label": "Fransız İhtilali"
+        },
+        {
+          "id": "opt-kesif",
+          "label": "Coğrafi Keşifler"
+        }
+      ],
+      "prompt": "Yeni Çağ'ı başlatan olay nedir?",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.time.eras"
+      ],
+      "tag": "TARİH · ÇAĞLAR"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 2,
+      "explanation": "1789 Fransız İhtilali Yeni Çağ'ı bitirip Yakın Çağ'ı başlatır.",
+      "id": "exercise.history.eras.003.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.time.eras"
+      ],
+      "statement": "Yakın Çağ, Fransız İhtilali ile başlar.",
+      "tag": "TARİH · ÇAĞLAR"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 4,
+      "exerciseIds": [
+        "exercise.history.time.001.card01",
+        "exercise.history.time.001.mcq01",
+        "exercise.history.time.001.tf01",
+        "exercise.history.time.004.mcq01",
+        "exercise.history.time.004.tf01"
+      ],
+      "id": "lesson.history.time.001",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Takvimler ve başlangıç noktaları",
+      "title": "Zamanı Ölçmek",
+      "topicId": "tyt.history.time-and-history.measuring-time"
+    },
+    {
+      "estimatedMinutes": 5,
+      "exerciseIds": [
+        "exercise.history.eras.002.mcq01",
+        "exercise.history.eras.002.order01",
+        "exercise.history.eras.002.blank01",
+        "exercise.history.eras.003.mcq01",
+        "exercise.history.eras.003.mcq02",
+        "exercise.history.eras.003.tf01"
+      ],
+      "id": "lesson.history.eras.002",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Tarihin bölümlenmesi",
+      "title": "Çağlar ve Dönemler",
+      "topicId": "tyt.history.time-and-history.eras"
+    },
+    {
+      "estimatedMinutes": 4,
+      "exerciseIds": [
+        "exercise.history.time.003.mcq01",
+        "exercise.history.time.003.tf01",
+        "exercise.history.time.005.mcq01",
+        "exercise.history.time.005.mcq02",
+        "exercise.history.time.005.mcq03"
+      ],
+      "id": "lesson.history.time.003",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Ünitenin kısa sınavı",
+      "title": "Mini Challenge",
+      "topicId": "tyt.history.time-and-history.measuring-time"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.history.time.01",
+      "kind": "lesson",
+      "lessonId": "lesson.history.time.001",
+      "order": 1,
+      "prerequisiteIds": [],
+      "title": "Zamanı Ölçmek",
+      "unitId": "tyt.history.time-and-history"
+    },
+    {
+      "id": "path.history.time.02",
+      "kind": "lesson",
+      "lessonId": "lesson.history.eras.002",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.history.time.01"
+      ],
+      "title": "Çağlar ve Dönemler",
+      "unitId": "tyt.history.time-and-history"
+    },
+    {
+      "id": "path.history.time.03",
+      "kind": "checkpoint",
+      "lessonId": "lesson.history.time.003",
+      "order": 3,
+      "prerequisiteIds": [
+        "path.history.time.02"
+      ],
+      "title": "Mini Challenge",
+      "unitId": "tyt.history.time-and-history"
+    }
+  ],
+  "skills": [
+    {
+      "description": "Miladi ve hicri takvimlerin ölçütlerini ayırt eder.",
+      "id": "skill.history.time.calendars",
+      "title": "Takvim türleri",
+      "topicId": "tyt.history.time-and-history.measuring-time"
+    },
+    {
+      "description": "Tarihin çağlara ayrılmasında kullanılan ölçütleri açıklar.",
+      "id": "skill.history.time.eras",
+      "title": "Çağların ayrımı",
+      "topicId": "tyt.history.time-and-history.eras"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.history.takvim",
+        "concept.history.miladi",
+        "concept.history.hicri"
+      ],
+      "id": "tyt.history.time-and-history.measuring-time",
+      "skillIds": [
+        "skill.history.time.calendars"
+      ],
+      "title": "Zamanı Ölçmek",
+      "unitId": "tyt.history.time-and-history"
+    },
+    {
+      "conceptIds": [
+        "concept.history.cag"
+      ],
+      "id": "tyt.history.time-and-history.eras",
+      "skillIds": [
+        "skill.history.time.eras"
+      ],
+      "title": "Çağlar ve Dönemler",
+      "unitId": "tyt.history.time-and-history"
+    }
+  ],
+  "unitId": "tyt.history.time-and-history"
+}

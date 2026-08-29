@@ -8,6 +8,7 @@ import type { HeartsRecord } from '@/modules/progress/domain/hearts-policy';
 import type {
   DailyActivity,
   Mistake,
+  QuestionReport,
   PathProgress,
   ReviewItem,
   SkillMastery,
@@ -77,7 +78,20 @@ export type MistakeRepository = {
   resolveForSkill: (skillId: SkillId, atIso: string) => Promise<void>;
 };
 
+/**
+ * Questions the learner flagged. The app cannot deliver these anywhere yet, so
+ * they are kept for the content review that will read them and used locally to
+ * stop drilling a question the learner says is broken.
+ */
+export type QuestionReportRepository = {
+  listAll: () => Promise<readonly QuestionReport[]>;
+  /** Last reason wins for the same question in the same round. */
+  record: (report: QuestionReport) => Promise<void>;
+};
+
 export type DailyActivityRepository = {
+  /** Every recorded day, oldest first. */
+  list: () => Promise<readonly DailyActivity[]>;
   listQualifyingDates: () => Promise<readonly LocalDate[]>;
   get: (localDate: LocalDate) => Promise<DailyActivity | null>;
 };
@@ -144,6 +158,7 @@ export type ProgressRepositories = {
   mastery: MasteryRepository;
   profile: LearnerProfileRepository;
   mistakes: MistakeRepository;
+  reports: QuestionReportRepository;
   progress: ProgressRepository;
   review: ReviewRepository;
   sessionProgress: SessionProgressRepository;

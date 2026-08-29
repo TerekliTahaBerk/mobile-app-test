@@ -1,0 +1,320 @@
+{
+  "concepts": [
+    {
+      "definition": "Toprak karşılığı korunma ve hizmet ilişkisine dayanan Orta Çağ düzeni.",
+      "id": "concept.history.feodalite",
+      "term": "Feodalite",
+      "topicId": "tyt.history.medieval-world.feudalism"
+    }
+  ],
+  "exercises": [
+    {
+      "cards": [
+        {
+          "back": "Toprak karşılığı korunma ve hizmet ilişkisine dayanan Orta Çağ düzeni.",
+          "front": "Feodalite",
+          "hint": "Merkezî otoritenin zayıfladığı dönemde güçlenir.",
+          "id": "card-feodalite"
+        },
+        {
+          "back": "Toprağı işleyen, toprağa bağlı köylü.",
+          "front": "Serf",
+          "hint": "Toprakla birlikte el değiştirirdi.",
+          "id": "card-serf"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Feodal düzenin iki temel kavramı.",
+      "id": "exercise.history.medieval.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.medieval.feudalism"
+      ],
+      "tag": "TARİH · ORTA ÇAĞ"
+    },
+    {
+      "correctOptionId": "opt-weak-center",
+      "difficulty": 3,
+      "explanation": "Feodalite, merkezî otoritenin zayıfladığı ve güvenliğin yerel güçlere bırakıldığı koşullarda güçlenir.",
+      "id": "exercise.history.medieval.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-weak-center",
+          "label": "Merkezî otoritenin zayıflaması"
+        },
+        {
+          "id": "opt-trade",
+          "label": "Ticaretin hızla gelişmesi"
+        },
+        {
+          "id": "opt-city",
+          "label": "Şehir nüfusunun artması"
+        },
+        {
+          "id": "opt-navy",
+          "label": "Deniz aşırı seferler"
+        }
+      ],
+      "prompt": "Feodal düzenin güçlenmesini kolaylaştıran temel koşul nedir?",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.medieval.feudalism"
+      ],
+      "tag": "TARİH · ORTA ÇAĞ"
+    },
+    {
+      "correctOptionId": "opt-serf",
+      "difficulty": 1,
+      "explanation": "Serf, toprağa bağlı olan ve toprakla birlikte el değiştiren köylüdür.",
+      "id": "exercise.history.medieval.002.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-serf",
+          "label": "Serf"
+        },
+        {
+          "id": "opt-senyor",
+          "label": "Senyör"
+        },
+        {
+          "id": "opt-vassal",
+          "label": "Vassal"
+        },
+        {
+          "id": "opt-sovalye",
+          "label": "Şövalye"
+        }
+      ],
+      "prompt": "Feodal düzende toprağa bağlı yaşayan ve toprakla birlikte el değiştiren köylülere ne ad verilir?",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.medieval.feudalism"
+      ],
+      "tag": "TARİH · ORTA ÇAĞ"
+    },
+    {
+      "correctOptionId": "opt-vassal",
+      "difficulty": 2,
+      "explanation": "Vassal, bir senyöre bağlılık yemini ederek onun korumasına giren kişidir.",
+      "id": "exercise.history.medieval.002.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-vassal",
+          "label": "Vassal"
+        },
+        {
+          "id": "opt-serf",
+          "label": "Serf"
+        },
+        {
+          "id": "opt-papa",
+          "label": "Papa"
+        },
+        {
+          "id": "opt-burjuva",
+          "label": "Burjuva"
+        }
+      ],
+      "prompt": "Bir senyöre bağlılık yemini ederek onun himayesine giren kişiye ne ad verilir?",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.medieval.feudalism"
+      ],
+      "tag": "TARİH · ORTA ÇAĞ"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 2,
+      "explanation": "Feodalite, merkezî otoritenin zayıfladığı ve güvenliğin yerel güçlere kaldığı koşullarda ortaya çıkar.",
+      "id": "exercise.history.medieval.002.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.medieval.feudalism"
+      ],
+      "statement": "Feodalite, merkezî otoritenin güçlendiği dönemlerde ortaya çıkmıştır.",
+      "tag": "TARİH · ORTA ÇAĞ"
+    },
+    {
+      "correctOptionId": "opt-barut",
+      "difficulty": 3,
+      "explanation": "Ateşli silahlar şatoların savunmasını etkisiz kılarak derebeylerini zayıflatmıştır.",
+      "id": "exercise.history.medieval.002.mcq03",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-barut",
+          "label": "Barutun ateşli silahlarda kullanılması"
+        },
+        {
+          "id": "opt-kavimler",
+          "label": "Kavimler Göçü"
+        },
+        {
+          "id": "opt-ticaret",
+          "label": "Ticaretin tamamen durması"
+        },
+        {
+          "id": "opt-sehir",
+          "label": "Şehirlerin boşalması"
+        }
+      ],
+      "prompt": "Avrupa'da feodalitenin zayıflamasında aşağıdakilerden hangisi etkili olmuştur?",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.medieval.feudalism"
+      ],
+      "tag": "TARİH · ORTA ÇAĞ"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Feodal düzen, toprak karşılığında koruma ve hizmet ilişkisine dayanır.",
+      "id": "exercise.history.medieval.002.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-serf",
+          "left": "Serf",
+          "right": "Toprağa bağlı köylü"
+        },
+        {
+          "id": "pair-senyor",
+          "left": "Senyör",
+          "right": "Toprak sahibi soylu"
+        },
+        {
+          "id": "pair-vassal",
+          "left": "Vassal",
+          "right": "Bağlılık yemini eden kişi"
+        },
+        {
+          "id": "pair-fief",
+          "left": "Fief",
+          "right": "Vassala verilen toprak"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.medieval.feudalism"
+      ],
+      "subtitle": "Feodal düzenin taraflarını karşılığıyla birleştir.",
+      "tag": "TARİH · ORTA ÇAĞ",
+      "title": "Eşleştir"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 3,
+      "exerciseIds": [
+        "exercise.history.medieval.001.card01",
+        "exercise.history.medieval.001.mcq01"
+      ],
+      "id": "lesson.history.medieval.001",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Toprak, koruma ve hizmet",
+      "title": "Feodalite",
+      "topicId": "tyt.history.medieval-world.feudalism"
+    },
+    {
+      "estimatedMinutes": 4,
+      "exerciseIds": [
+        "exercise.history.medieval.002.mcq01",
+        "exercise.history.medieval.002.mcq02",
+        "exercise.history.medieval.002.tf01",
+        "exercise.history.medieval.002.mcq03",
+        "exercise.history.medieval.002.match01"
+      ],
+      "id": "lesson.history.medieval.002",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Serf, senyör ve vassal",
+      "title": "Feodal Düzenin Tarafları",
+      "topicId": "tyt.history.medieval-world.feudalism"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.history.medieval-world.01",
+      "kind": "lesson",
+      "lessonId": "lesson.history.medieval.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.history.first-turkish-states.06"
+      ],
+      "title": "Feodalite",
+      "unitId": "tyt.history.medieval-world"
+    },
+    {
+      "id": "path.history.medieval-world.02",
+      "kind": "lesson",
+      "lessonId": "lesson.history.medieval.002",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.history.medieval-world.01"
+      ],
+      "title": "Feodal Düzenin Tarafları",
+      "unitId": "tyt.history.medieval-world"
+    }
+  ],
+  "skills": [
+    {
+      "description": "Feodal düzenin temel ilişkilerini açıklar.",
+      "id": "skill.history.medieval.feudalism",
+      "title": "Feodal düzen",
+      "topicId": "tyt.history.medieval-world.feudalism"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.history.feodalite"
+      ],
+      "id": "tyt.history.medieval-world.feudalism",
+      "skillIds": [
+        "skill.history.medieval.feudalism"
+      ],
+      "title": "Feodalite",
+      "unitId": "tyt.history.medieval-world"
+    }
+  ],
+  "unitId": "tyt.history.medieval-world"
+}

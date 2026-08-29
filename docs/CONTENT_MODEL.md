@@ -2,6 +2,30 @@
 
 Curriculum and exercise content are versioned product assets, not screen constants. Contracts live in `apps/mobile/src/modules/curriculum/domain/content-types.ts`; the shipped bundle lives under `src/modules/curriculum/content/`.
 
+## Where content is authored
+
+Content is JSON under `src/modules/curriculum/content/data/`: `curriculum.json`
+for the exam/subject/unit skeleton, and one file per unit under `data/units/`
+holding that unit's topics, skills, concepts, lessons, exercises and path nodes.
+Every record carries its own `provenance`, so review status is recorded per
+question rather than shared by the whole bundle.
+
+`tyt-draft-bundle.ts` only assembles those files. New units are added by
+dropping in a file and listing it in `content/units.ts`, which the bundler needs
+because it resolves modules at build time and cannot read a directory.
+
+Authored data passes two gates before it becomes a bundle, in this order:
+
+```text
+JSON -> assertParsedContentBundle (shape) -> assertValidContentBundle (references)
+```
+
+The first proves each record is the shape its kind claims — an unknown exercise
+kind, a missing prompt, a difficulty outside 1–5, a review status that is not
+one of the three. The second checks identity, references, taxonomy and answer
+integrity, and is entitled to assume the first has run. Both report every issue
+at once rather than throwing on the first.
+
 ## Bundle
 
 A published bundle identifies `schemaVersion`, `curriculumVersion`, `contentVersion`, `locale`, and optional `publishedAt`, and carries flat collections of exams, subjects, units, topics, skills, concepts, exercises, lessons, and path nodes. Records reference each other by stable string ID; nothing is identified by array position, so content can be reordered and versioned without touching UI.
@@ -62,7 +86,7 @@ The project intentionally carries **no schema-validation dependency**. The bundl
 
 ## Current state
 
-The bundle contains 10 original Tarih lessons across 3 units and 10 chained path
+The bundle contains 11 original Tarih lessons across 3 units and 11 chained path
 nodes, including practice and checkpoint nodes. Every lesson and exercise is
 `draft`; none is production academic content. Catalogue entries without units
 are not usable curriculum and production screens do not present them as such.

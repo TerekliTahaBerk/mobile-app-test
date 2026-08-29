@@ -11,7 +11,7 @@ production observability has no deployed provider, and store/legal work is incom
 | Area | State |
 | --- | --- |
 | Native product shell | Approved screens, semantic design system, navigation, crash containment |
-| Content contract | Versioned bundle, stable IDs, semantic validation, 10 draft Tarih lessons across 3 units |
+| Content contract | Versioned bundle, stable IDs, shape and semantic validation, 11 draft Tarih lessons across 3 units |
 | First launch | SQLite-ready profile gate, durable onboarding completion, recoverable write failure |
 | Learning engine | Pure deterministic reducer, evaluators, attempts, events, XP policy |
 | Polished vertical slice | Home → lesson/review → completion → İz → Home |

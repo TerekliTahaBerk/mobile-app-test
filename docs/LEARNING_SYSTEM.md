@@ -16,6 +16,15 @@ lesson definition + session state + command -> new session state + domain events
 
 Evaluation is registered per exercise kind in `evaluator-registry.ts`, never branched on inside the engine. An evaluator receives an exercise and an answer of the matching kind and returns `{ correct, correctAnswerSummary, scored }`. Renderer and evaluator are independent: adding an exercise type means adding a content contract, an evaluator, and a renderer.
 
+The same registry describes the question, the right answer, and a submitted
+answer in learner-facing words, so the feedback sheet and the mistake notebook
+cannot disagree about what the right answer was.
+
+A renderer holds the learner's half-finished answer in its own state, so the
+lesson screen keys it by exercise id. Two questions of the same kind in one
+round therefore start clean; without the key the second inherits the first's
+placements and can become unanswerable.
+
 ## Attempts
 
 An `Attempt` records the exercise, lesson, skills, submitted answer, correctness, attempt number, whether it was scored, and the injected timestamp. Only the final attempt on each exercise counts toward the lesson summary, so a retry does not inflate the mistake count. No free-form learner text is captured.
@@ -105,6 +114,21 @@ Due review sessions reuse the existing lesson renderers and select up to three
 scored exercises for the chosen skill in stable ID order. They award only 10 XP
 per correct scored exercise: no lesson-completion or path bonus.
 
+## Weekly report
+
+The report covers the seven days ending on the learner's chosen report day
+(Pazar by default, stored on the profile). Opened mid-week it covers the week
+in progress and says so; on the report day it closes and is final. Accuracy is
+compared against the seven days immediately before the window.
+
+"Güçlenen konular" compares the band a subtopic had going into the week with the
+band it has now, so a strength the learner already held is not re-announced.
+Rounds and study days come from the daily activity record, not from attempts.
+
+The notification copy is part of the report's view model. Notification delivery
+does not exist yet: it needs a scheduling dependency, permissions, and a privacy
+decision the pilot has not made.
+
 ## Starting diagnostic
 
 Choosing "Seviyemi ölç" during onboarding opens one diagnostic sampled across
@@ -118,6 +142,20 @@ It carries no path node, so being measured never marks or unlocks curriculum.
 The result screen shows the ordinary topic report as a starting map, weakest
 subtopic first, and the ordinary daily plan as the first day. "Sıfırdan başla"
 skips all of it.
+
+## Question reports
+
+From the feedback sheet a learner can flag the question they just answered, with
+one of four fixed reasons — never free text, since the app captures no learner
+prose. Reporting does not score, does not advance the round, and a failed write
+never interrupts it. One report per question per round; re-reporting corrects
+the reason.
+
+A reported question is skipped by targeted practice, the daily plan and the
+starting diagnostic for that learner. Its authored lesson keeps it, so the
+curriculum keeps its shape and the skill is still drilled through its other
+questions. Reports are device-local: delivering them to content review needs
+backend synchronisation, which does not exist yet.
 
 ## Mistake notebook
 

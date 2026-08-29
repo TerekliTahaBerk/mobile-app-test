@@ -22,6 +22,8 @@ export type AnalyticsEventMap = {
   };
   placement_started: { questionCount: number; topicCount: number };
   path_node_unlocked: { pathNodeId: string; prerequisiteId: string };
+  question_reported: { exerciseId: string; reason: string };
+  reminders_scheduled: { count: number };
   review_started: { lessonId: string; skillId: string };
   review_completed: { correctCount: number; lessonId: string; scoredCount: number };
   topic_practice_started: { lessonId: string; questionCount: number; topicId: string };

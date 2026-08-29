@@ -1,5 +1,7 @@
-import { StyleSheet, View } from 'react-native';
+import { useState } from 'react';
+import { Pressable, StyleSheet, View } from 'react-native';
 
+import type { ReportReason } from '@/modules/progress/domain/progress-types';
 import { AppButton } from '@/shared/ui/components/app-button';
 import { AppText } from '@/shared/ui/components/app-text';
 import { Dino } from '@/shared/ui/dino/dino';
@@ -13,9 +15,18 @@ type FeedbackSheetProps = {
   /** Why that is the answer. Always shown, so a miss always teaches. */
   explanation: string;
   onContinue: () => void;
+  /** Absent where reporting cannot be stored, such as the design preview. */
+  onReport?: ((reason: ReportReason) => void) | undefined;
   /** Awarded XP, shown only on a correct answer. */
   xpAwarded: number | null;
 };
+
+const REPORT_REASONS: readonly { label: string; value: ReportReason }[] = [
+  { label: 'Soru hatalı', value: 'wrongQuestion' },
+  { label: 'Doğru cevap yanlış', value: 'wrongAnswer' },
+  { label: 'Açıklama anlaşılmıyor', value: 'confusingExplanation' },
+  { label: 'Yazım hatası', value: 'typo' },
+];
 
 /**
  * The verdict. It rises from the bottom over the question the learner just
@@ -27,8 +38,12 @@ export function FeedbackSheet({
   correctAnswerSummary,
   explanation,
   onContinue,
+  onReport,
   xpAwarded,
 }: FeedbackSheetProps) {
+  const [reporting, setReporting] = useState(false);
+  const [reported, setReported] = useState(false);
+
   return (
     <Pop
       style={[styles.sheet, correct ? styles.sheetCorrect : styles.sheetWrong]}
@@ -77,6 +92,46 @@ export function FeedbackSheet({
         testID="feedback-continue"
         variant={correct ? 'primary' : 'danger'}
       />
+
+      {onReport === undefined ? null : (
+        <View style={styles.report}>
+          {reported ? (
+            <AppText align="center" color="muted" variant="caption">
+              Bildirimin kaydedildi. Teşekkürler.
+            </AppText>
+          ) : reporting ? (
+            <View style={styles.reasons}>
+              {REPORT_REASONS.map((reason) => (
+                <Pressable
+                  accessibilityRole="button"
+                  key={reason.value}
+                  onPress={() => {
+                    onReport(reason.value);
+                    setReported(true);
+                    setReporting(false);
+                  }}
+                  style={styles.reason}
+                  testID={`report-${reason.value}`}
+                >
+                  <AppText color="secondary" variant="caption">
+                    {reason.label}
+                  </AppText>
+                </Pressable>
+              ))}
+            </View>
+          ) : (
+            <Pressable
+              accessibilityRole="button"
+              onPress={() => setReporting(true)}
+              testID="report-question"
+            >
+              <AppText align="center" color="muted" variant="caption">
+                Bu soruyu bildir
+              </AppText>
+            </Pressable>
+          )}
+        </View>
+      )}
     </Pop>
   );
 }
@@ -94,6 +149,24 @@ const styles = StyleSheet.create({
     marginTop: theme.spacing.lg,
     paddingHorizontal: theme.spacing.lg + 1,
     paddingVertical: theme.spacing.md + 2,
+  },
+  reason: {
+    backgroundColor: theme.colors.surface.default,
+    borderColor: theme.colors.border.subtle,
+    borderRadius: theme.radii.pill,
+    borderWidth: 1,
+    paddingHorizontal: theme.spacing.md,
+    paddingVertical: theme.spacing.sm,
+  },
+  reasons: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: theme.spacing.sm,
+    justifyContent: 'center',
+  },
+  report: {
+    marginTop: theme.spacing.md,
+    minHeight: theme.hitTarget - 12,
   },
   row: {
     alignItems: 'center',

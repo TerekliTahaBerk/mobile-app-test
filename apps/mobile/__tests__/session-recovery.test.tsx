@@ -1,10 +1,17 @@
 import { fireEvent, render, screen, waitFor } from '@testing-library/react-native';
 import { Text, View } from 'react-native';
 
+import { getContentIndex } from '@/modules/curriculum/content/content-source';
+import {
+  isScoredKind,
+  type ExerciseDefinition,
+} from '@/modules/curriculum/domain/content-types';
+import type { ExerciseAnswer } from '@/modules/learning/domain/answers';
 import {
   LessonSessionProvider,
   useLessonSession,
 } from '@/modules/learning/application/lesson-session-store';
+import { XP_POLICY_V1 } from '@/modules/learning/domain/xp-policy';
 import { migrateToLatest } from '@/modules/progress/infrastructure/migrations';
 import { createSqliteRepositories } from '@/modules/progress/infrastructure/sqlite-repositories';
 import type { Clock } from '@/shared/time/clock';
@@ -18,16 +25,41 @@ const progressClock: Clock = {
   timeZone: () => 'Europe/Istanbul',
 };
 
+/**
+ * A correct answer for whatever is on screen. The recovery test is about the
+ * snapshot surviving a relaunch, not about how long a lesson happens to be, so
+ * it must not encode either.
+ */
+function correctAnswerFor(exercise: ExerciseDefinition): ExerciseAnswer {
+  switch (exercise.kind) {
+    case 'multipleChoice':
+      return { kind: 'multipleChoice', optionId: exercise.correctOptionId };
+    case 'trueFalse':
+      return { choice: exercise.correctAnswer, kind: 'trueFalse' };
+    case 'fillBlank':
+      return { kind: 'fillBlank', tokenIds: exercise.solutionTokenIds };
+    case 'matching':
+      return {
+        kind: 'matching',
+        pairs: Object.fromEntries(exercise.pairs.map((pair) => [pair.id, pair.right])),
+      };
+    case 'ordering':
+      return { itemIds: exercise.correctOrder, kind: 'ordering' };
+    case 'flashcard':
+      return { kind: 'flashcard', selfReport: 'known' };
+  }
+}
+
 function SessionHarness() {
   const store = useLessonSession();
-  const exerciseId = store.lesson?.session.exerciseIds[store.lesson.session.currentIndex];
+  const session = store.lesson?.session ?? null;
+  const exercise =
+    session === null ? undefined : store.lesson?.deps.exercises[session.currentIndex];
 
   return (
     <View>
       <Text testID="session-state">
-        {store.lesson === null
-          ? 'none'
-          : `${store.lesson.session.status}:${store.lesson.session.currentIndex}`}
+        {session === null ? 'none' : `${session.status}:${session.currentIndex}`}
       </Text>
       <Text testID="persistence-state">{store.persistenceStatus}</Text>
       <Text
@@ -38,24 +70,14 @@ function SessionHarness() {
       >
         Başla
       </Text>
-      {exerciseId === 'exercise.history.time.003.mcq01' ? (
+      {exercise === undefined ? null : (
         <Text
-          onPress={() =>
-            store.submitAnswer({ kind: 'multipleChoice', optionId: 'opt-hicret' })
-          }
-          testID="answer-first"
+          onPress={() => store.submitAnswer(correctAnswerFor(exercise))}
+          testID="answer-current"
         >
-          İlk yanıt
+          Yanıtla
         </Text>
-      ) : null}
-      {exerciseId === 'exercise.history.time.003.tf01' ? (
-        <Text
-          onPress={() => store.submitAnswer({ choice: true, kind: 'trueFalse' })}
-          testID="answer-second"
-        >
-          İkinci yanıt
-        </Text>
-      ) : null}
+      )}
       <Text onPress={store.continueAfterFeedback} testID="continue-session">
         Devam
       </Text>
@@ -99,15 +121,22 @@ describe('durable session recovery', () => {
     );
     await waitFor(() => expect(screen.getByTestId('session-state')).toHaveTextContent('active:0'));
 
-    await fireEvent.press(screen.getByTestId('answer-first'));
-    await fireEvent.press(screen.getByTestId('continue-session'));
-    await waitFor(() => expect(screen.getByTestId('answer-second')).toBeTruthy());
-    await fireEvent.press(screen.getByTestId('answer-second'));
-    await fireEvent.press(screen.getByTestId('continue-session'));
+    const scoredCount = getContentIndex()
+      .getLessonExercises('lesson.history.time.003')
+      .filter((exercise) => isScoredKind(exercise.kind)).length;
+
+    for (let answered = 0; answered < scoredCount; answered += 1) {
+      await fireEvent.press(screen.getByTestId('answer-current'));
+      await fireEvent.press(screen.getByTestId('continue-session'));
+    }
 
     await waitFor(() => expect(screen.getByTestId('persistence-state')).toHaveTextContent('saved'));
     const completed = await repositories.sessions.completionCounts();
     expect(completed.lessons).toBe(1);
-    await expect(repositories.xp.total()).resolves.toBe(65);
+    await expect(repositories.xp.total()).resolves.toBe(
+      scoredCount * XP_POLICY_V1.correctExercise +
+        XP_POLICY_V1.lessonCompletion +
+        XP_POLICY_V1.firstPathLevelCompletion,
+    );
   });
 });

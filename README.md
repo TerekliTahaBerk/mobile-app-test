@@ -5,8 +5,8 @@ is the working product name; `tekrarla` remains in technical identifiers until
 commercial name and trademark clearance are complete.
 
 The production pilot is limited to TYT Sosyal Bilimler. The compiled draft
-bundle currently makes only Tarih usable: 10 lessons across 3 units and 10 path
-nodes. All authored material remains engineering-written `draft` content.
+bundle currently makes only Tarih usable: 11 lessons across 3 units, 11 path
+nodes and 54 exercises. All authored material remains engineering-written `draft` content.
 Catalogue-only subjects are not shown as available in the production pilot.
 
 The repository contains the native product foundation, deterministic learning
@@ -43,9 +43,28 @@ No secrets or backend configuration are required. Development defaults to the
 approved design preview; run with `EXPO_PUBLIC_APP_MODE=productionPilot` to QA
 the accountless durable pilot flow in a development build.
 
+## Content studio
+
+Authored content lives as JSON under
+`apps/mobile/src/modules/curriculum/content/data/`. To write or review it:
+
+```sh
+npm run studio
+```
+
+The tool opens on `http://localhost:5174`. It navigates unit → topic → lesson →
+question; creates, renames, reorders (by dragging or with the arrow keys) and deletes all
+five; edits questions of
+every exercise kind; previews what the learner will be asked; and reports
+coverage per skill. It edits the
+content files in place and validates with the app's own two gates, so anything
+it saves is content the app will load. Review status changes are commits: git is
+the audit trail, and only a named human reviewer can move a record past draft.
+
 ## Repository map
 
 - `apps/mobile`: Expo Router application
+- `apps/studio`: local content authoring and academic review tool
 - `docs`: product, architecture, domain boundaries, decisions, and execution plan
 - `AGENTS.md`: concise permanent engineering instructions
 

@@ -30,6 +30,7 @@ const profile: LearnerProfile = {
   remindersEnabled: false,
   startingPoint: 'scratch',
   targetYear: 2027,
+  weeklyReportDay: 0,
   track: 'verbal',
 };
 
@@ -103,6 +104,7 @@ describe('first-launch entry', () => {
       remindersEnabled: profile.remindersEnabled,
       startingPoint: profile.startingPoint,
       targetYear: profile.targetYear,
+      weeklyReportDay: profile.weeklyReportDay,
     };
     expect(needsOnboarding(legacyProfile)).toBe(true);
     expect(needsOnboarding(profile)).toBe(false);

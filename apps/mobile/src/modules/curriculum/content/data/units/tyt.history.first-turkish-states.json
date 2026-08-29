@@ -1,0 +1,1234 @@
+{
+  "concepts": [
+    {
+      "definition": "II. Göktürk Devleti döneminde Göktürk alfabesiyle yazılmış taş yazıtlar.",
+      "id": "concept.history.orhun",
+      "term": "Orhun Yazıtları",
+      "topicId": "tyt.history.first-turkish-states.states"
+    },
+    {
+      "definition": "İlk Türk devletlerinde devlet işlerinin görüşüldüğü meclis.",
+      "id": "concept.history.kurultay",
+      "term": "Kurultay",
+      "topicId": "tyt.history.first-turkish-states.kurultay"
+    },
+    {
+      "definition": "Yazılı olmayan, geleneğe dayalı hukuk kuralları.",
+      "id": "concept.history.tore",
+      "term": "Töre",
+      "topicId": "tyt.history.first-turkish-states.kurultay"
+    },
+    {
+      "definition": "Yönetme yetkisinin hükümdara Tanrı tarafından verildiği inancı.",
+      "id": "concept.history.kut",
+      "term": "Kut",
+      "topicId": "tyt.history.first-turkish-states.kurultay"
+    }
+  ],
+  "exercises": [
+    {
+      "cards": [
+        {
+          "back": "Bilinen ilk Türk devleti; Mete Han döneminde ordu düzeniyle tanınır.",
+          "front": "Asya Hun Devleti",
+          "hint": "Onluk sistemin kaynağı sayılır.",
+          "id": "card-hun"
+        },
+        {
+          "back": "Orhun Yazıtları bu devlet döneminde dikilmiştir.",
+          "front": "II. Göktürk Devleti",
+          "hint": "Türk adının geçtiği ilk yazılı belgeler.",
+          "id": "card-gokturk"
+        },
+        {
+          "back": "Yerleşik hayata geçen, kendi alfabesini kullanan Türk devleti.",
+          "front": "Uygur Devleti",
+          "hint": "Matbaa ve kâğıtla anılır.",
+          "id": "card-uygur"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Üç devlet, ayırt edici özellikleriyle birlikte hatırlanır.",
+      "id": "exercise.history.states.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.states.identify"
+      ],
+      "tag": "TARİH · DEVLETLER"
+    },
+    {
+      "correctOptionId": "opt-gokturk",
+      "difficulty": 2,
+      "explanation": "Orhun Yazıtları II. Göktürk Devleti döneminde, Göktürk alfabesiyle yazılmıştır.",
+      "id": "exercise.history.states.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-hun",
+          "label": "Asya Hun Devleti"
+        },
+        {
+          "id": "opt-gokturk",
+          "label": "II. Göktürk Devleti"
+        },
+        {
+          "id": "opt-uygur",
+          "label": "Uygur Devleti"
+        },
+        {
+          "id": "opt-avar",
+          "label": "Avarlar"
+        }
+      ],
+      "prompt": "Orhun Yazıtları hangi Türk devletine aittir?",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.states.identify"
+      ],
+      "tag": "TARİH · TUR 2"
+    },
+    {
+      "correctOptionId": "opt-settled",
+      "difficulty": 3,
+      "explanation": "Uygurlar yerleşik hayata geçen ilk Türk devleti olarak bilinir; şehirler kurmuş ve kendi alfabelerini kullanmışlardır.",
+      "id": "exercise.history.states.001.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-settled",
+          "label": "Yerleşik hayata geçmeleri"
+        },
+        {
+          "id": "opt-nomad",
+          "label": "Konar-göçer kalmaları"
+        },
+        {
+          "id": "opt-navy",
+          "label": "Güçlü bir donanma kurmaları"
+        },
+        {
+          "id": "opt-coin",
+          "label": "İlk parayı basmaları"
+        }
+      ],
+      "prompt": "Uygurları diğer ilk Türk devletlerinden ayıran özellik nedir?",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.states.identify"
+      ],
+      "tag": "TARİH · DEVLETLER"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Kurultay meclisi, töre yazısız hukuku, kut yönetme yetkisini, toy ise devlet şölenini karşılar.",
+      "id": "exercise.history.kurultay.001.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-kurultay",
+          "left": "Kurultay",
+          "right": "Meclis"
+        },
+        {
+          "id": "pair-tore",
+          "left": "Töre",
+          "right": "Yazısız hukuk"
+        },
+        {
+          "id": "pair-kut",
+          "left": "Kut",
+          "right": "Yönetme yetkisi"
+        },
+        {
+          "id": "pair-toy",
+          "left": "Toy",
+          "right": "Devlet şöleni"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.kurultay.terms"
+      ],
+      "subtitle": "Kavramı karşılığıyla birleştir.",
+      "tag": "TARİH · KAVRAMLAR",
+      "title": "Eşleştir"
+    },
+    {
+      "correctOptionId": "opt-envoy",
+      "difficulty": 4,
+      "explanation": "Kurultay; kağan, hatun ve boy beylerinin katıldığı bir meclistir. Yabancı elçiler bu meclisin üyesi değildir.",
+      "id": "exercise.history.kurultay.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-kagan",
+          "label": "Kağan"
+        },
+        {
+          "id": "opt-hatun",
+          "label": "Hatun"
+        },
+        {
+          "id": "opt-beys",
+          "label": "Boy beyleri"
+        },
+        {
+          "id": "opt-envoy",
+          "label": "Yabancı elçiler"
+        }
+      ],
+      "prompt": "Aşağıdakilerden hangisi kurultayın üyeleri arasında gösterilemez?",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.kurultay.members"
+      ],
+      "tag": "TARİH · KURULTAY"
+    },
+    {
+      "correctOrder": [
+        "item-hun",
+        "item-gokturk",
+        "item-uygur"
+      ],
+      "difficulty": 3,
+      "explanation": "Asya Hun Devleti en eski, Uygurlar ise bu üçlü içinde en geç kurulan devlettir.",
+      "id": "exercise.history.chronology.001.order01",
+      "items": [
+        {
+          "id": "item-gokturk",
+          "label": "Göktürkler"
+        },
+        {
+          "id": "item-hun",
+          "label": "Asya Hun Devleti"
+        },
+        {
+          "id": "item-uygur",
+          "label": "Uygurlar"
+        }
+      ],
+      "kind": "ordering",
+      "prompt": "İlk Türk devletlerini eskiden yeniye sırala.",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.states.chronology"
+      ],
+      "tag": "TARİH · KRONOLOJİ"
+    },
+    {
+      "correctOptionId": "opt-hun-first",
+      "difficulty": 2,
+      "explanation": "Bilinen ilk Türk devleti Asya Hun Devleti’dir.",
+      "id": "exercise.history.chronology.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-hun-first",
+          "label": "Asya Hun Devleti"
+        },
+        {
+          "id": "opt-gokturk-first",
+          "label": "I. Göktürk Devleti"
+        },
+        {
+          "id": "opt-uygur-first",
+          "label": "Uygur Devleti"
+        },
+        {
+          "id": "opt-avar-first",
+          "label": "Avarlar"
+        }
+      ],
+      "prompt": "Bilinen ilk Türk devleti hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.states.chronology"
+      ],
+      "tag": "TARİH · KRONOLOJİ"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 3,
+      "explanation": "Kurultay, ilk Türk devletlerinde devlet işlerinin görüşüldüğü meclistir; kaynaklarda toy adıyla da geçer.",
+      "id": "exercise.history.chronology.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.kurultay.function"
+      ],
+      "statement": "Kurultay, ilk Türk devletlerinde devlet işlerinin görüşüldüğü meclistir.",
+      "tag": "TARİH · KURULTAY"
+    },
+    {
+      "bank": [
+        {
+          "id": "w-kut",
+          "label": "Kut"
+        },
+        {
+          "id": "w-tore",
+          "label": "Töre"
+        },
+        {
+          "id": "w-kurultay",
+          "label": "Kurultay"
+        },
+        {
+          "id": "w-toy",
+          "label": "Toy"
+        },
+        {
+          "id": "w-denir",
+          "label": "denir"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Hükümdarın yönetme yetkisinin Tanrı’dan geldiğine inanılması kut anlayışıdır. Töre ise yazısız hukuk kurallarıdır.",
+      "hint": "Yönetme yetkisinin kaynağı",
+      "id": "exercise.history.kut.001.blank01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.kurultay.terms"
+      ],
+      "solutionTokenIds": [
+        "w-kut",
+        "w-denir"
+      ],
+      "title": "Boşluğu doldur"
+    },
+    {
+      "correctOptionId": "opt-unwritten",
+      "difficulty": 3,
+      "explanation": "Töre, yazılı olmayan ve geleneğe dayanan hukuk kurallarıdır.",
+      "id": "exercise.history.kut.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-unwritten",
+          "label": "Yazısız, geleneğe dayalı hukuk kuralları"
+        },
+        {
+          "id": "opt-written",
+          "label": "Kağan tarafından yazdırılan kanunlar"
+        },
+        {
+          "id": "opt-tax",
+          "label": "Vergi toplama yöntemi"
+        },
+        {
+          "id": "opt-army",
+          "label": "Ordu düzeni"
+        }
+      ],
+      "prompt": "İlk Türk devletlerinde töre neyi ifade eder?",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.kurultay.terms"
+      ],
+      "tag": "TARİH · KAVRAMLAR"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Kut, yönetme yetkisinin Tanrı tarafından verildiği inancıdır; yazısız hukuk kuralları töredir.",
+      "id": "exercise.history.kut.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.kurultay.terms"
+      ],
+      "statement": "Kut, ilk Türk devletlerindeki yazısız hukuk kurallarının adıdır.",
+      "tag": "TARİH · KAVRAMLAR"
+    },
+    {
+      "cards": [
+        {
+          "back": "Türk hükümdarına yönetme yetkisinin Tanrı tarafından verildiğine inanılması.",
+          "front": "Kut",
+          "hint": "Hükümdarın meşruiyetini açıklar.",
+          "id": "card-kut"
+        },
+        {
+          "back": "Yazılı olmayan, geleneğe dayalı hukuk kuralları.",
+          "front": "Töre",
+          "hint": "Kurultay kararları töreyi güncelleyebilirdi.",
+          "id": "card-tore"
+        },
+        {
+          "back": "Devlet işlerinin görüşüldüğü meclis.",
+          "front": "Kurultay",
+          "hint": "Kaynaklarda “toy” adıyla da geçer.",
+          "id": "card-kurultay"
+        },
+        {
+          "back": "II. Göktürk Devleti döneminde dikilen taş yazıtlar.",
+          "front": "Orhun Yazıtları",
+          "hint": "Türk adının geçtiği ilk yazılı belgeler.",
+          "id": "card-orhun"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Ünitenin çatı kavramları tek turda toplanır.",
+      "id": "exercise.history.review.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.kurultay.terms"
+      ],
+      "tag": "HIZLI TEKRAR"
+    },
+    {
+      "correctOptionId": "opt-assembly",
+      "difficulty": 4,
+      "explanation": "Kurultay, devlet işlerinin tartışılıp karara bağlandığı meclistir. Ordunun eğitimi ya da vergi toplama gibi işler yürütmenin görevidir.",
+      "id": "exercise.history.challenge.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-assembly",
+          "label": "Devlet işlerinin görüşülüp karara bağlanması"
+        },
+        {
+          "id": "opt-drill",
+          "label": "Ordunun günlük eğitiminin yürütülmesi"
+        },
+        {
+          "id": "opt-tax",
+          "label": "Ticaret yollarından vergi toplanması"
+        },
+        {
+          "id": "opt-map",
+          "label": "Sınır boylarının haritalanması"
+        }
+      ],
+      "prompt": "İlk Türk devletlerinde kurultayın temel işlevi aşağıdakilerden hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.kurultay.function"
+      ],
+      "tag": "ÜNİTE CHALLENGE"
+    },
+    {
+      "correctOrder": [
+        "ch-hun",
+        "ch-gokturk",
+        "ch-uygur"
+      ],
+      "difficulty": 4,
+      "explanation": "Kuruluş sırası: Asya Hunları, Göktürkler, Uygurlar.",
+      "id": "exercise.history.challenge.001.order01",
+      "items": [
+        {
+          "id": "ch-uygur",
+          "label": "Uygurlar"
+        },
+        {
+          "id": "ch-hun",
+          "label": "Asya Hun Devleti"
+        },
+        {
+          "id": "ch-gokturk",
+          "label": "Göktürkler"
+        }
+      ],
+      "kind": "ordering",
+      "prompt": "Devletleri kuruluş sırasına göre diz.",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.states.chronology"
+      ],
+      "tag": "ÜNİTE CHALLENGE"
+    },
+    {
+      "difficulty": 4,
+      "explanation": "Her devlet, kendisini ayıran özellikle birlikte hatırlanır.",
+      "id": "exercise.history.challenge.001.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-orhun",
+          "left": "Orhun Yazıtları",
+          "right": "II. Göktürk Devleti"
+        },
+        {
+          "id": "pair-settle",
+          "left": "Yerleşik hayat",
+          "right": "Uygurlar"
+        },
+        {
+          "id": "pair-army",
+          "left": "Onluk ordu sistemi",
+          "right": "Asya Hun Devleti"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.states.identify"
+      ],
+      "subtitle": "Özelliği devletiyle birleştir.",
+      "tag": "ÜNİTE CHALLENGE",
+      "title": "Eşleştir"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 4,
+      "explanation": "Orhun Yazıtları Uygurlara değil, II. Göktürk Devleti dönemine aittir.",
+      "id": "exercise.history.challenge.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.states.identify"
+      ],
+      "statement": "Orhun Yazıtları Uygur Devleti döneminde dikilmiştir.",
+      "tag": "ÜNİTE CHALLENGE"
+    },
+    {
+      "correctOptionId": "opt-mete",
+      "difficulty": 2,
+      "explanation": "Onluk ordu sistemi Asya Hun hükümdarı Mete Han'a mal edilir.",
+      "id": "exercise.history.states.002.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-mete",
+          "label": "Mete Han"
+        },
+        {
+          "id": "opt-bumin",
+          "label": "Bumin Kağan"
+        },
+        {
+          "id": "opt-bilge",
+          "label": "Bilge Kağan"
+        },
+        {
+          "id": "opt-kutluk",
+          "label": "Kutluk Kağan"
+        }
+      ],
+      "prompt": "Ordusunu onluk sisteme göre düzenleyen ilk Türk hükümdarı kimdir?",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.states.identify"
+      ],
+      "tag": "TARİH · DEVLETLER"
+    },
+    {
+      "correctOptionId": "opt-bumin",
+      "difficulty": 2,
+      "explanation": "I. Göktürk Devleti 552 yılında Bumin Kağan tarafından kurulmuştur.",
+      "id": "exercise.history.states.002.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-bumin",
+          "label": "Bumin Kağan"
+        },
+        {
+          "id": "opt-mete",
+          "label": "Mete Han"
+        },
+        {
+          "id": "opt-bilge",
+          "label": "Bilge Kağan"
+        },
+        {
+          "id": "opt-kursad",
+          "label": "Kür Şad"
+        }
+      ],
+      "prompt": "I. Göktürk Devleti'nin kurucusu kimdir?",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.states.identify"
+      ],
+      "tag": "TARİH · DEVLETLER"
+    },
+    {
+      "correctOptionId": "opt-mani",
+      "difficulty": 3,
+      "explanation": "Mani dini avlanmayı ve hayvan kesmeyi yasakladığı için Uygurları yerleşik hayata yöneltmiştir.",
+      "id": "exercise.history.states.002.mcq03",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-mani",
+          "label": "Mani dini"
+        },
+        {
+          "id": "opt-goktanri",
+          "label": "Gök Tanrı inancı"
+        },
+        {
+          "id": "opt-hristiyan",
+          "label": "Hristiyanlık"
+        },
+        {
+          "id": "opt-musevi",
+          "label": "Musevilik"
+        }
+      ],
+      "prompt": "Uygurların yerleşik hayata geçmesinde etkili olan din hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.states.identify"
+      ],
+      "tag": "TARİH · DEVLETLER"
+    },
+    {
+      "correctOptionId": "opt-hun",
+      "difficulty": 3,
+      "explanation": "Batıya ilerleyen Hunlar, Avrupa'daki kavimleri yerinden ederek Kavimler Göçü'nü başlatmıştır.",
+      "id": "exercise.history.chronology.002.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-hun",
+          "label": "Hunlar"
+        },
+        {
+          "id": "opt-gokturk",
+          "label": "Göktürkler"
+        },
+        {
+          "id": "opt-uygur",
+          "label": "Uygurlar"
+        },
+        {
+          "id": "opt-avar",
+          "label": "Avarlar"
+        }
+      ],
+      "prompt": "375'teki Kavimler Göçü hangi Türk topluluğunun batıya ilerlemesiyle başlamıştır?",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.states.chronology"
+      ],
+      "tag": "TARİH · KRONOLOJİ"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 1,
+      "explanation": "Asya Hun Devleti bilinen ilk Türk devletidir; Göktürkler ondan sonra kurulmuştur.",
+      "id": "exercise.history.chronology.002.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.states.chronology"
+      ],
+      "statement": "Göktürk Devleti, Asya Hun Devleti'nden önce kurulmuştur.",
+      "tag": "TARİH · KRONOLOJİ"
+    },
+    {
+      "correctOptionId": "opt-nonbinding",
+      "difficulty": 3,
+      "explanation": "Kurultay bir danışma meclisidir; aldığı kararlar hükümdarı bağlamaz.",
+      "id": "exercise.history.kurultay.002.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-nonbinding",
+          "label": "Hükümdar için bağlayıcı değildi"
+        },
+        {
+          "id": "opt-dismiss",
+          "label": "Hükümdarı görevden alırdı"
+        },
+        {
+          "id": "opt-waronly",
+          "label": "Yalnızca savaş kararı alırdı"
+        },
+        {
+          "id": "opt-vote",
+          "label": "Halkın oyuyla alınırdı"
+        }
+      ],
+      "prompt": "İlk Türk devletlerinde kurultayda alınan kararlar için aşağıdakilerden hangisi söylenebilir?",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.kurultay.function"
+      ],
+      "tag": "TARİH · KURULTAY"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 1,
+      "explanation": "Kurultaya kağanın yanı sıra hatun ve boy beyleri de katılırdı.",
+      "id": "exercise.history.kurultay.002.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.kurultay.function"
+      ],
+      "statement": "Kurultaya yalnızca hükümdar katılırdı.",
+      "tag": "TARİH · KURULTAY"
+    },
+    {
+      "correctOptionId": "opt-kagan",
+      "difficulty": 1,
+      "explanation": "Kurultaya devletin başındaki kağan başkanlık ederdi.",
+      "id": "exercise.history.kurultay.003.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-kagan",
+          "label": "Kağan"
+        },
+        {
+          "id": "opt-hatun",
+          "label": "Hatun"
+        },
+        {
+          "id": "opt-boybeyi",
+          "label": "Boy beyi"
+        },
+        {
+          "id": "opt-tigin",
+          "label": "Tigin"
+        }
+      ],
+      "prompt": "Kurultaya kim başkanlık ederdi?",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.kurultay.members"
+      ],
+      "tag": "TARİH · KURULTAY"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 2,
+      "explanation": "İlk Türk devletlerinde hatun, kurultaya katılabilen üyeler arasındadır.",
+      "id": "exercise.history.kurultay.003.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.kurultay.members"
+      ],
+      "statement": "Hatun kurultaya katılabilirdi.",
+      "tag": "TARİH · KURULTAY"
+    },
+    {
+      "correctOptionId": "opt-ulus",
+      "difficulty": 3,
+      "explanation": "Ülüş, ülke topraklarının hanedan üyeleri arasında paylaştırılması anlayışıdır.",
+      "id": "exercise.history.kurultay.004.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-ulus",
+          "label": "Ülüş"
+        },
+        {
+          "id": "opt-kut",
+          "label": "Kut"
+        },
+        {
+          "id": "opt-tore",
+          "label": "Töre"
+        },
+        {
+          "id": "opt-toy",
+          "label": "Toy"
+        }
+      ],
+      "prompt": "Ülke topraklarının hanedan üyeleri arasında paylaştırılması anlayışına ne ad verilir?",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.kurultay.terms"
+      ],
+      "tag": "TARİH · KURULTAY"
+    },
+    {
+      "correctOptionId": "opt-boybeyleri",
+      "difficulty": 2,
+      "explanation": "Boy beyleri, kurultayda kendi boylarını temsil ederdi.",
+      "id": "exercise.history.kurultay.003.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-boybeyleri",
+          "label": "Boy beyleri"
+        },
+        {
+          "id": "opt-tiginler",
+          "label": "Tiginler"
+        },
+        {
+          "id": "opt-tarkanlar",
+          "label": "Tarkanlar"
+        },
+        {
+          "id": "opt-yabgular",
+          "label": "Yabgular"
+        }
+      ],
+      "prompt": "Kurultayda boyları temsil eden kişilere ne ad verilir?",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.kurultay.members"
+      ],
+      "tag": "TARİH · KURULTAY"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 2,
+      "explanation": "Töre, hükümdar dâhil herkesi bağlayan yazısız hukuk kurallarıdır.",
+      "id": "exercise.history.kurultay.004.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.kurultay.terms"
+      ],
+      "statement": "Töre, hükümdarın da uymak zorunda olduğu kurallardan oluşur.",
+      "tag": "TARİH · KURULTAY"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 3,
+      "explanation": "Mani dinini benimseyen Uygurlar, yerleşik hayata geçen ilk Türk topluluğu kabul edilir.",
+      "id": "exercise.history.states.002.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.states.identify"
+      ],
+      "statement": "Uygurlar, yerleşik hayata geçen ilk Türk topluluğu olarak kabul edilir.",
+      "tag": "TARİH · DEVLETLER"
+    },
+    {
+      "correctOptionId": "opt-552",
+      "difficulty": 2,
+      "explanation": "I. Göktürk Devleti 552 yılında kurulmuştur.",
+      "id": "exercise.history.chronology.002.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-552",
+          "label": "552"
+        },
+        {
+          "id": "opt-375",
+          "label": "375"
+        },
+        {
+          "id": "opt-840",
+          "label": "840"
+        },
+        {
+          "id": "opt-1071",
+          "label": "1071"
+        }
+      ],
+      "prompt": "I. Göktürk Devleti hangi yılda kurulmuştur?",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.states.chronology"
+      ],
+      "tag": "TARİH · KRONOLOJİ"
+    },
+    {
+      "correctOptionId": "opt-toy",
+      "difficulty": 2,
+      "explanation": "Kurultay, kaynaklarda toy adıyla da geçer.",
+      "id": "exercise.history.kurultay.002.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-toy",
+          "label": "Toy"
+        },
+        {
+          "id": "opt-ulus",
+          "label": "Ülüş"
+        },
+        {
+          "id": "opt-kut",
+          "label": "Kut"
+        },
+        {
+          "id": "opt-tore",
+          "label": "Töre"
+        }
+      ],
+      "prompt": "Kurultayın kaynaklarda geçen bir diğer adı nedir?",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.kurultay.function"
+      ],
+      "tag": "TARİH · KURULTAY"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 4,
+      "exerciseIds": [
+        "exercise.history.states.001.card01",
+        "exercise.history.states.001.mcq01",
+        "exercise.history.states.001.mcq02",
+        "exercise.history.states.002.mcq01",
+        "exercise.history.states.002.mcq02"
+      ],
+      "id": "lesson.history.states.001",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "İlk Türk devletlerinin ayırt edici özellikleri",
+      "title": "Devletleri Tanı",
+      "topicId": "tyt.history.first-turkish-states.states"
+    },
+    {
+      "estimatedMinutes": 4,
+      "exerciseIds": [
+        "exercise.history.kurultay.001.match01",
+        "exercise.history.kurultay.001.mcq01",
+        "exercise.history.kurultay.002.mcq01",
+        "exercise.history.kurultay.002.tf01",
+        "exercise.history.kurultay.003.mcq01"
+      ],
+      "id": "lesson.history.kurultay.001",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Yönetim kavramları",
+      "title": "Kavramları Eşleştir",
+      "topicId": "tyt.history.first-turkish-states.kurultay"
+    },
+    {
+      "estimatedMinutes": 5,
+      "exerciseIds": [
+        "exercise.history.chronology.001.order01",
+        "exercise.history.chronology.001.mcq01",
+        "exercise.history.chronology.001.tf01",
+        "exercise.history.states.002.mcq03",
+        "exercise.history.chronology.002.mcq01",
+        "exercise.history.chronology.002.tf01"
+      ],
+      "id": "lesson.history.chronology.001",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Devletleri sıraya koy",
+      "title": "Kronolojik Sırala",
+      "topicId": "tyt.history.first-turkish-states.states"
+    },
+    {
+      "estimatedMinutes": 4,
+      "exerciseIds": [
+        "exercise.history.kut.001.blank01",
+        "exercise.history.kut.001.mcq01",
+        "exercise.history.kut.001.tf01",
+        "exercise.history.kurultay.003.tf01",
+        "exercise.history.kurultay.004.mcq01"
+      ],
+      "id": "lesson.history.kut.001",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Yönetme yetkisi ve hukuk",
+      "title": "Kut ve Töre",
+      "topicId": "tyt.history.first-turkish-states.kurultay"
+    },
+    {
+      "estimatedMinutes": 3,
+      "exerciseIds": [
+        "exercise.history.review.001.card01",
+        "exercise.history.kurultay.003.mcq02",
+        "exercise.history.kurultay.004.tf01"
+      ],
+      "id": "lesson.history.review.001",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Ünitenin kavramları",
+      "title": "Hızlı Tekrar",
+      "topicId": "tyt.history.first-turkish-states.kurultay"
+    },
+    {
+      "estimatedMinutes": 6,
+      "exerciseIds": [
+        "exercise.history.challenge.001.mcq01",
+        "exercise.history.challenge.001.order01",
+        "exercise.history.challenge.001.match01",
+        "exercise.history.challenge.001.tf01",
+        "exercise.history.states.002.tf01",
+        "exercise.history.chronology.002.mcq02",
+        "exercise.history.kurultay.002.mcq02"
+      ],
+      "id": "lesson.history.challenge.001",
+      "provenance": {
+        "author": "Online Dershanem engineering",
+        "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Ünitenin sonu",
+      "title": "Ünite Challenge",
+      "topicId": "tyt.history.first-turkish-states.states"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.history.first-turkish-states.01",
+      "kind": "lesson",
+      "lessonId": "lesson.history.states.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.history.time.03"
+      ],
+      "title": "Devletleri Tanı",
+      "unitId": "tyt.history.first-turkish-states"
+    },
+    {
+      "id": "path.history.first-turkish-states.02",
+      "kind": "lesson",
+      "lessonId": "lesson.history.kurultay.001",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.history.first-turkish-states.01"
+      ],
+      "title": "Kavramları Eşleştir",
+      "unitId": "tyt.history.first-turkish-states"
+    },
+    {
+      "id": "path.history.first-turkish-states.03",
+      "kind": "lesson",
+      "lessonId": "lesson.history.chronology.001",
+      "order": 3,
+      "prerequisiteIds": [
+        "path.history.first-turkish-states.02"
+      ],
+      "title": "Kronolojik Sırala",
+      "unitId": "tyt.history.first-turkish-states"
+    },
+    {
+      "id": "path.history.first-turkish-states.04",
+      "kind": "lesson",
+      "lessonId": "lesson.history.kut.001",
+      "order": 4,
+      "prerequisiteIds": [
+        "path.history.first-turkish-states.03"
+      ],
+      "title": "Kut ve Töre",
+      "unitId": "tyt.history.first-turkish-states"
+    },
+    {
+      "id": "path.history.first-turkish-states.05",
+      "kind": "practice",
+      "lessonId": "lesson.history.review.001",
+      "order": 5,
+      "prerequisiteIds": [
+        "path.history.first-turkish-states.04"
+      ],
+      "title": "Hızlı Tekrar",
+      "unitId": "tyt.history.first-turkish-states"
+    },
+    {
+      "id": "path.history.first-turkish-states.06",
+      "kind": "checkpoint",
+      "lessonId": "lesson.history.challenge.001",
+      "order": 6,
+      "prerequisiteIds": [
+        "path.history.first-turkish-states.05"
+      ],
+      "title": "Ünite Challenge",
+      "unitId": "tyt.history.first-turkish-states"
+    }
+  ],
+  "skills": [
+    {
+      "description": "İlk Türk devletlerini ayırt edici özellikleriyle tanır.",
+      "id": "skill.history.states.identify",
+      "title": "Devletleri tanıma",
+      "topicId": "tyt.history.first-turkish-states.states"
+    },
+    {
+      "description": "İlk Türk devletlerini kuruluş sırasına göre dizer.",
+      "id": "skill.history.states.chronology",
+      "title": "Kronolojik sıralama",
+      "topicId": "tyt.history.first-turkish-states.states"
+    },
+    {
+      "description": "Kurultayın devlet yönetimindeki işlevini açıklar.",
+      "id": "skill.history.kurultay.function",
+      "title": "Kurultayın işlevi",
+      "topicId": "tyt.history.first-turkish-states.kurultay"
+    },
+    {
+      "description": "Kurultaya kimlerin katıldığını ayırt eder.",
+      "id": "skill.history.kurultay.members",
+      "title": "Kurultay üyeleri",
+      "topicId": "tyt.history.first-turkish-states.kurultay"
+    },
+    {
+      "description": "Kut, töre ve kurultay kavramlarını anlamlarıyla eşleştirir.",
+      "id": "skill.history.kurultay.terms",
+      "title": "Yönetim kavramları",
+      "topicId": "tyt.history.first-turkish-states.kurultay"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.history.orhun"
+      ],
+      "id": "tyt.history.first-turkish-states.states",
+      "skillIds": [
+        "skill.history.states.identify",
+        "skill.history.states.chronology"
+      ],
+      "title": "İlk Türk Devletleri",
+      "unitId": "tyt.history.first-turkish-states"
+    },
+    {
+      "conceptIds": [
+        "concept.history.kurultay",
+        "concept.history.tore",
+        "concept.history.kut"
+      ],
+      "id": "tyt.history.first-turkish-states.kurultay",
+      "skillIds": [
+        "skill.history.kurultay.function",
+        "skill.history.kurultay.members",
+        "skill.history.kurultay.terms"
+      ],
+      "title": "Kut ve Töre",
+      "unitId": "tyt.history.first-turkish-states"
+    }
+  ],
+  "unitId": "tyt.history.first-turkish-states"
+}

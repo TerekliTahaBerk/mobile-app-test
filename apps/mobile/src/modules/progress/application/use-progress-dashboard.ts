@@ -37,6 +37,7 @@ import {
   type Recommendation,
 } from '@/modules/progress/domain/recommendation-policy';
 import { isDue, sortDueItems } from '@/modules/progress/domain/review-policy';
+import { buildWeeklyReport, type WeeklyReport } from '@/modules/progress/domain/weekly-report';
 import {
   buildStreakWeek,
   computeStreak,
@@ -80,6 +81,8 @@ export type ProgressDashboard = {
   recommendation: Recommendation;
   /** Due review schedule, so window-specific reports can be rebuilt without a re-read. */
   reviewItems: readonly ReviewItem[];
+  /** Questions this learner reported as broken. */
+  reportedExerciseIds: ReadonlySet<string>;
   /** The attributable answer log behind every performance read model. */
   scoredAttempts: readonly StoredAttempt[];
   streak: { current: number; todayQualified: boolean };
@@ -88,6 +91,8 @@ export type ProgressDashboard = {
   /** All-time report. Windowed views are rebuilt from `scoredAttempts`. */
   topicPerformance: TopicPerformanceReport;
   week: readonly StreakDay[];
+  /** The closed week ending on the learner's chosen report day. */
+  weeklyReport: WeeklyReport;
 };
 
 export type ProgressDashboardState =
@@ -125,6 +130,7 @@ export function useProgressDashboard(clock: Clock = systemClock): ProgressDashbo
       Promise.all([
         repositories.xp.total(),
         repositories.dailyActivity.listQualifyingDates(),
+        repositories.dailyActivity.list(),
         repositories.progress.getAll(),
         repositories.sessions.findActive(),
         repositories.review.listAll(),
@@ -135,11 +141,13 @@ export function useProgressDashboard(clock: Clock = systemClock): ProgressDashbo
         repositories.xp.list(),
         repositories.statistics.read(),
         repositories.attempts.listAllScored(),
+        repositories.reports.listAll(),
       ])
         .then(
           ([
             totalXp,
             dates,
+            activityDays,
             progressRows,
             activeSession,
             reviewItems,
@@ -150,6 +158,7 @@ export function useProgressDashboard(clock: Clock = systemClock): ProgressDashbo
             ledger,
             statistics,
             attempts,
+            reports,
           ]) => {
             if (cancelled) {
               return;
@@ -191,6 +200,7 @@ export function useProgressDashboard(clock: Clock = systemClock): ProgressDashbo
             const nextStep = nextOpenStep(allPaths);
             const streak = computeStreak(dates, today);
             const observedAt: ReportMoment = { atMs: now, timeZone: clock.timeZone() };
+            const reportedExerciseIds = new Set(reports.map((report) => report.exerciseId));
             const topicPerformance = buildTopicPerformance(attempts, index, {
               moment: observedAt,
               reviewItems,
@@ -220,6 +230,7 @@ export function useProgressDashboard(clock: Clock = systemClock): ProgressDashbo
                   ).map((item) => item.skillId),
                   index,
                   newLessonIds: openLessonIds,
+                  reportedExerciseIds,
                   topics: topicPerformance.topics,
                 }),
                 level: levelForXp(totalXp),
@@ -239,6 +250,7 @@ export function useProgressDashboard(clock: Clock = systemClock): ProgressDashbo
                   reviewItems,
                   unresolvedMistakes: mistakes,
                 }),
+                reportedExerciseIds,
                 reviewItems,
                 scoredAttempts: attempts,
                 streak,
@@ -246,6 +258,13 @@ export function useProgressDashboard(clock: Clock = systemClock): ProgressDashbo
                 totalXp,
                 topicPerformance,
                 week: buildStreakWeek(dates, today),
+                weeklyReport: buildWeeklyReport({
+                  attempts,
+                  dailyActivity: activityDays,
+                  index,
+                  moment: observedAt,
+                  ...(profile === null ? {} : { reportDay: profile.weeklyReportDay }),
+                }),
               },
               status: 'ready',
             });

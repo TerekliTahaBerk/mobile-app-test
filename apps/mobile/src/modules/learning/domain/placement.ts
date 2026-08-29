@@ -36,11 +36,16 @@ export type Placement = {
  * easiest question first inside each subtopic and never twice in a row from the
  * same one. Deterministic: the same bundle always produces the same diagnostic.
  */
-export function assemblePlacement(index: ContentIndex): Placement {
+export function assemblePlacement(
+  index: ContentIndex,
+  reported: ReadonlySet<string> = new Set(),
+): Placement {
   const queues = index.bundle.units
     .flatMap((unit) => unit.topicIds)
     .map((topicId) => ({
-      exercises: scoredFor(topicId, index).slice(0, PER_SUBTOPIC),
+      exercises: scoredFor(topicId, index)
+        .filter((exercise) => !reported.has(exercise.id))
+        .slice(0, PER_SUBTOPIC),
       topicId,
     }))
     .filter((queue) => queue.exercises.length > 0);

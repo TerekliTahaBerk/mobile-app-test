@@ -18,7 +18,7 @@ const BAND_ORDER: Readonly<Record<TopicPerformanceBand, number>> = {
  * nothing here can claim more than the learner's own answers support.
  */
 export function buildPlacementResultViewModel(
-  dashboard: ProgressDashboard,
+  dashboard: Pick<ProgressDashboard, 'dailyPlan' | 'topicPerformance'>,
 ): PlacementResultViewModel {
   const topics = dashboard.topicPerformance.topics;
   const rows: PlacementTopicRow[] = topics
