@@ -6,6 +6,7 @@
     "apps/*"
   ],
   "scripts": {
+    "build": "npm --workspace @tyt-social/mobile run build",
     "dev": "npm --workspace @tyt-social/mobile run start --",
     "studio": "npm --workspace @tyt-social/studio run dev",
     "lint": "npm run lint --workspaces --if-present",

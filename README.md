@@ -39,6 +39,9 @@ npm test
 
 `npm run dev` starts Expo for `apps/mobile`. Pass Expo arguments after `--`, for example `npm run dev -- --offline`.
 
+`npm run build` creates the static Expo web export in `apps/mobile/dist`. Vercel
+uses this command and output path through the repository's `vercel.json`.
+
 No secrets or backend configuration are required. Development defaults to the
 approved design preview; run with `EXPO_PUBLIC_APP_MODE=productionPilot` to QA
 the accountless durable pilot flow in a development build.
