@@ -1,0 +1,531 @@
+{
+  "concepts": [
+    {
+      "definition": "Orojenezle dağ oluşur",
+      "id": "concept.geography.internal-external-forces.internal-forces",
+      "term": "Levhalar sıkışır ve tabakalar kıvrılır",
+      "topicId": "tyt.geography.internal-external-forces.internal-forces"
+    },
+    {
+      "definition": "Birikinti konisi gelişebilir",
+      "id": "concept.geography.internal-external-forces.external-forces",
+      "term": "Akarsu eğimin azaldığı yerde yük bırakır",
+      "topicId": "tyt.geography.internal-external-forces.external-forces"
+    }
+  ],
+  "exercises": [
+    {
+      "correctOptionId": "opt-1",
+      "difficulty": 2,
+      "explanation": "Levhalar sıkışır ve tabakalar kıvrılır durumunda orojenezle dağ oluşur. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.internal-external-forces.internal-forces.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Orojenezle dağ oluşur"
+        },
+        {
+          "id": "opt-2",
+          "label": "Epirojenez görülür"
+        },
+        {
+          "id": "opt-3",
+          "label": "Volkanik şekiller oluşur"
+        },
+        {
+          "id": "opt-4",
+          "label": "Tektonik deprem oluşur"
+        }
+      ],
+      "prompt": "Levhalar sıkışır ve tabakalar kıvrılır. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.internal-external-forces.internal-forces.interpret"
+      ],
+      "tag": "COĞRAFYA · İÇ KUVVETLER"
+    },
+    {
+      "correctOptionId": "opt-2",
+      "difficulty": 4,
+      "explanation": "Geniş kara parçası bütünüyle yükselir durumunda epirojenez görülür. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.internal-external-forces.internal-forces.001.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Orojenezle dağ oluşur"
+        },
+        {
+          "id": "opt-2",
+          "label": "Epirojenez görülür"
+        },
+        {
+          "id": "opt-3",
+          "label": "Volkanik şekiller oluşur"
+        },
+        {
+          "id": "opt-4",
+          "label": "Tektonik deprem oluşur"
+        }
+      ],
+      "prompt": "Geniş kara parçası bütünüyle yükselir. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.internal-external-forces.internal-forces.interpret"
+      ],
+      "tag": "COĞRAFYA · İÇ KUVVETLER"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 3,
+      "explanation": "Magma yüzeye çıkar ile volkanik şekiller oluşur arasında doğrudan bir coğrafi ilişki vardır.",
+      "id": "exercise.geography.internal-external-forces.internal-forces.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.internal-external-forces.internal-forces.interpret"
+      ],
+      "statement": "Magma yüzeye çıkar; bunun sonucunda volkanik şekiller oluşur.",
+      "tag": "COĞRAFYA · İÇ KUVVETLER"
+    },
+    {
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "Orojenezle dağ oluşur"
+        },
+        {
+          "id": "w-2",
+          "label": "Epirojenez görülür"
+        },
+        {
+          "id": "w-3",
+          "label": "Volkanik şekiller oluşur"
+        },
+        {
+          "id": "w-4",
+          "label": "Tektonik deprem oluşur"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "Fay boyunca ani enerji boşalır koşulunun beklenen sonucu “Tektonik deprem oluşur” ilişkisidir.",
+      "hint": "Fay boyunca ani enerji boşalır",
+      "id": "exercise.geography.internal-external-forces.internal-forces.001.blank01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.internal-external-forces.internal-forces.interpret"
+      ],
+      "solutionTokenIds": [
+        "w-4"
+      ],
+      "title": "Fay boyunca ani enerji boşalır durumunda sonuç"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Her koşul, kendisinden beklenen özgün coğrafi sonuçla eşleştirilir; aynı sonuç iki kez kullanılmaz.",
+      "id": "exercise.geography.internal-external-forces.internal-forces.001.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Levhalar sıkışır ve tabakalar kıvrılır",
+          "right": "Orojenezle dağ oluşur"
+        },
+        {
+          "id": "pair-2",
+          "left": "Geniş kara parçası bütünüyle yükselir",
+          "right": "Epirojenez görülür"
+        },
+        {
+          "id": "pair-3",
+          "left": "Magma yüzeye çıkar",
+          "right": "Volkanik şekiller oluşur"
+        },
+        {
+          "id": "pair-4",
+          "left": "Fay boyunca ani enerji boşalır",
+          "right": "Tektonik deprem oluşur"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.internal-external-forces.internal-forces.interpret"
+      ],
+      "subtitle": "Koşulu doğru coğrafi sonuçla birleştir.",
+      "tag": "COĞRAFYA · İÇ KUVVETLER",
+      "title": "İlişkiyi eşleştir"
+    },
+    {
+      "cards": [
+        {
+          "back": "Orojenezle dağ oluşur",
+          "front": "Levhalar sıkışır ve tabakalar kıvrılır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-1"
+        },
+        {
+          "back": "Epirojenez görülür",
+          "front": "Geniş kara parçası bütünüyle yükselir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-2"
+        },
+        {
+          "back": "Volkanik şekiller oluşur",
+          "front": "Magma yüzeye çıkar",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-3"
+        },
+        {
+          "back": "Tektonik deprem oluşur",
+          "front": "Fay boyunca ani enerji boşalır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-4"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Kartlar temel ilişkileri kısa tekrar için özetler; puanlanan skill coverage hesabına katılmaz.",
+      "id": "exercise.geography.internal-external-forces.internal-forces.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.internal-external-forces.internal-forces.interpret"
+      ],
+      "tag": "COĞRAFYA · İÇ KUVVETLER"
+    },
+    {
+      "correctOptionId": "opt-1",
+      "difficulty": 2,
+      "explanation": "Akarsu eğimin azaldığı yerde yük bırakır durumunda birikinti konisi gelişebilir. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.internal-external-forces.external-forces.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Birikinti konisi gelişebilir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Kumul oluşur"
+        },
+        {
+          "id": "opt-3",
+          "label": "Falez oluşabilir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Mağara gelişebilir"
+        }
+      ],
+      "prompt": "Akarsu eğimin azaldığı yerde yük bırakır. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.internal-external-forces.external-forces.interpret"
+      ],
+      "tag": "COĞRAFYA · DIŞ KUVVETLER"
+    },
+    {
+      "correctOptionId": "opt-2",
+      "difficulty": 4,
+      "explanation": "Rüzgâr kurak alanda kum biriktirir durumunda kumul oluşur. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.internal-external-forces.external-forces.001.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Birikinti konisi gelişebilir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Kumul oluşur"
+        },
+        {
+          "id": "opt-3",
+          "label": "Falez oluşabilir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Mağara gelişebilir"
+        }
+      ],
+      "prompt": "Rüzgâr kurak alanda kum biriktirir. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.internal-external-forces.external-forces.interpret"
+      ],
+      "tag": "COĞRAFYA · DIŞ KUVVETLER"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 3,
+      "explanation": "Dalga kıyıyı aşındırır ile falez oluşabilir arasında doğrudan bir coğrafi ilişki vardır.",
+      "id": "exercise.geography.internal-external-forces.external-forces.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.internal-external-forces.external-forces.interpret"
+      ],
+      "statement": "Dalga kıyıyı aşındırır; bunun sonucunda falez oluşabilir.",
+      "tag": "COĞRAFYA · DIŞ KUVVETLER"
+    },
+    {
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "Birikinti konisi gelişebilir"
+        },
+        {
+          "id": "w-2",
+          "label": "Kumul oluşur"
+        },
+        {
+          "id": "w-3",
+          "label": "Falez oluşabilir"
+        },
+        {
+          "id": "w-4",
+          "label": "Mağara gelişebilir"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "Karstik arazide yer altı suyu çözündürür koşulunun beklenen sonucu “Mağara gelişebilir” ilişkisidir.",
+      "hint": "Karstik arazide yer altı suyu çözündürür",
+      "id": "exercise.geography.internal-external-forces.external-forces.001.blank01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.internal-external-forces.external-forces.interpret"
+      ],
+      "solutionTokenIds": [
+        "w-4"
+      ],
+      "title": "Karstik arazide yer altı suyu çözündürür durumunda sonuç"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Her koşul, kendisinden beklenen özgün coğrafi sonuçla eşleştirilir; aynı sonuç iki kez kullanılmaz.",
+      "id": "exercise.geography.internal-external-forces.external-forces.001.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Akarsu eğimin azaldığı yerde yük bırakır",
+          "right": "Birikinti konisi gelişebilir"
+        },
+        {
+          "id": "pair-2",
+          "left": "Rüzgâr kurak alanda kum biriktirir",
+          "right": "Kumul oluşur"
+        },
+        {
+          "id": "pair-3",
+          "left": "Dalga kıyıyı aşındırır",
+          "right": "Falez oluşabilir"
+        },
+        {
+          "id": "pair-4",
+          "left": "Karstik arazide yer altı suyu çözündürür",
+          "right": "Mağara gelişebilir"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.internal-external-forces.external-forces.interpret"
+      ],
+      "subtitle": "Koşulu doğru coğrafi sonuçla birleştir.",
+      "tag": "COĞRAFYA · DIŞ KUVVETLER",
+      "title": "İlişkiyi eşleştir"
+    },
+    {
+      "cards": [
+        {
+          "back": "Birikinti konisi gelişebilir",
+          "front": "Akarsu eğimin azaldığı yerde yük bırakır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-1"
+        },
+        {
+          "back": "Kumul oluşur",
+          "front": "Rüzgâr kurak alanda kum biriktirir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-2"
+        },
+        {
+          "back": "Falez oluşabilir",
+          "front": "Dalga kıyıyı aşındırır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-3"
+        },
+        {
+          "back": "Mağara gelişebilir",
+          "front": "Karstik arazide yer altı suyu çözündürür",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-4"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Kartlar temel ilişkileri kısa tekrar için özetler; puanlanan skill coverage hesabına katılmaz.",
+      "id": "exercise.geography.internal-external-forces.external-forces.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.internal-external-forces.external-forces.interpret"
+      ],
+      "tag": "COĞRAFYA · DIŞ KUVVETLER"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.geography.internal-external-forces.internal-forces.001.mcq01",
+        "exercise.geography.internal-external-forces.internal-forces.001.mcq02",
+        "exercise.geography.internal-external-forces.internal-forces.001.tf01",
+        "exercise.geography.internal-external-forces.internal-forces.001.blank01",
+        "exercise.geography.internal-external-forces.internal-forces.001.match01",
+        "exercise.geography.internal-external-forces.internal-forces.001.card01"
+      ],
+      "id": "lesson.geography.internal-external-forces.internal-forces.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Orojenez, epirojenez, volkanizma ve depremin yer şekillerine etkisini ayırt eder.",
+      "title": "İç Kuvvetler",
+      "topicId": "tyt.geography.internal-external-forces.internal-forces"
+    },
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.geography.internal-external-forces.external-forces.001.mcq01",
+        "exercise.geography.internal-external-forces.external-forces.001.mcq02",
+        "exercise.geography.internal-external-forces.external-forces.001.tf01",
+        "exercise.geography.internal-external-forces.external-forces.001.blank01",
+        "exercise.geography.internal-external-forces.external-forces.001.match01",
+        "exercise.geography.internal-external-forces.external-forces.001.card01"
+      ],
+      "id": "lesson.geography.internal-external-forces.external-forces.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Dış kuvvet süreçleri ile oluşturdukları aşınım ve birikim şekillerini eşleştirir.",
+      "title": "Dış Kuvvetler",
+      "topicId": "tyt.geography.internal-external-forces.external-forces"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.geography.internal-external-forces.01",
+      "kind": "lesson",
+      "lessonId": "lesson.geography.internal-external-forces.internal-forces.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.geography.humidity-precipitation.02"
+      ],
+      "title": "İç Kuvvetler",
+      "unitId": "tyt.geography.internal-external-forces"
+    },
+    {
+      "id": "path.geography.internal-external-forces.02",
+      "kind": "practice",
+      "lessonId": "lesson.geography.internal-external-forces.external-forces.001",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.geography.internal-external-forces.01"
+      ],
+      "title": "Dış Kuvvetler Uygulaması",
+      "unitId": "tyt.geography.internal-external-forces"
+    }
+  ],
+  "skills": [
+    {
+      "description": "Orojenez, epirojenez, volkanizma ve depremin yer şekillerine etkisini ayırt eder.",
+      "id": "skill.geography.internal-external-forces.internal-forces.interpret",
+      "title": "Orojenez, epirojenez, volkanizma ve depremin yer şekillerine etkisini ayırt eder.",
+      "topicId": "tyt.geography.internal-external-forces.internal-forces"
+    },
+    {
+      "description": "Dış kuvvet süreçleri ile oluşturdukları aşınım ve birikim şekillerini eşleştirir.",
+      "id": "skill.geography.internal-external-forces.external-forces.interpret",
+      "title": "Dış kuvvet süreçleri ile oluşturdukları aşınım ve birikim şekillerini eşleştirir.",
+      "topicId": "tyt.geography.internal-external-forces.external-forces"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.geography.internal-external-forces.internal-forces"
+      ],
+      "id": "tyt.geography.internal-external-forces.internal-forces",
+      "skillIds": [
+        "skill.geography.internal-external-forces.internal-forces.interpret"
+      ],
+      "title": "İç Kuvvetler",
+      "unitId": "tyt.geography.internal-external-forces"
+    },
+    {
+      "conceptIds": [
+        "concept.geography.internal-external-forces.external-forces"
+      ],
+      "id": "tyt.geography.internal-external-forces.external-forces",
+      "skillIds": [
+        "skill.geography.internal-external-forces.external-forces.interpret"
+      ],
+      "title": "Dış Kuvvetler",
+      "unitId": "tyt.geography.internal-external-forces"
+    }
+  ],
+  "unitId": "tyt.geography.internal-external-forces"
+}

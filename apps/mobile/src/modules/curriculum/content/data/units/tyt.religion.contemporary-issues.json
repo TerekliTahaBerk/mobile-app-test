@@ -1,0 +1,862 @@
+{
+  "unitId": "tyt.religion.contemporary-issues",
+  "topics": [
+    {
+      "id": "tyt.religion.contemporary-issues.technology-privacy",
+      "unitId": "tyt.religion.contemporary-issues",
+      "title": "Teknoloji, Mahremiyet ve Etik",
+      "skillIds": [
+        "skill.religion.contemporary-issues.technology-privacy.interpret",
+        "skill.religion.contemporary-issues.technology-privacy.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.contemporary-issues.technology-privacy.dijital-mahremiyet"
+      ]
+    },
+    {
+      "id": "tyt.religion.contemporary-issues.environment-consumption",
+      "unitId": "tyt.religion.contemporary-issues",
+      "title": "Çevre, Tüketim ve Sorumluluk",
+      "skillIds": [
+        "skill.religion.contemporary-issues.environment-consumption.interpret",
+        "skill.religion.contemporary-issues.environment-consumption.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.contemporary-issues.environment-consumption.cevre-ahlaki"
+      ]
+    },
+    {
+      "id": "tyt.religion.contemporary-issues.social-problems",
+      "unitId": "tyt.religion.contemporary-issues",
+      "title": "Bağımlılık ve Toplumsal Sorunlar",
+      "skillIds": [
+        "skill.religion.contemporary-issues.social-problems.interpret",
+        "skill.religion.contemporary-issues.social-problems.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.contemporary-issues.social-problems.bagimlilik"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "skill.religion.contemporary-issues.technology-privacy.interpret",
+      "title": "Teknoloji kullanımını mahremiyet ve etik sorumlulukla değerlendirir.",
+      "description": "Teknoloji kullanımını mahremiyet ve etik sorumlulukla değerlendirir.",
+      "topicId": "tyt.religion.contemporary-issues.technology-privacy"
+    },
+    {
+      "id": "skill.religion.contemporary-issues.technology-privacy.distinguish",
+      "title": "Dinî konuda uzman görüşü ile kişisel yorumu ayırt eder.",
+      "description": "Dinî konuda uzman görüşü ile kişisel yorumu ayırt eder.",
+      "topicId": "tyt.religion.contemporary-issues.technology-privacy"
+    },
+    {
+      "id": "skill.religion.contemporary-issues.environment-consumption.interpret",
+      "title": "Tüketim alışkanlıklarını ölçülülük açısından yorumlar.",
+      "description": "Tüketim alışkanlıklarını ölçülülük açısından yorumlar.",
+      "topicId": "tyt.religion.contemporary-issues.environment-consumption"
+    },
+    {
+      "id": "skill.religion.contemporary-issues.environment-consumption.distinguish",
+      "title": "Çevre sorunlarında bireysel ve toplumsal sorumluluğu ilişkilendirir.",
+      "description": "Çevre sorunlarında bireysel ve toplumsal sorumluluğu ilişkilendirir.",
+      "topicId": "tyt.religion.contemporary-issues.environment-consumption"
+    },
+    {
+      "id": "skill.religion.contemporary-issues.social-problems.interpret",
+      "title": "Bağımlılığı yalnız irade zayıflığına indirgeyen yaklaşımı ayırt eder.",
+      "description": "Bağımlılığı yalnız irade zayıflığına indirgeyen yaklaşımı ayırt eder.",
+      "topicId": "tyt.religion.contemporary-issues.social-problems"
+    },
+    {
+      "id": "skill.religion.contemporary-issues.social-problems.distinguish",
+      "title": "İhtilaflı dinî meselelerde farklı değerlendirmeler bulunabileceğini fark eder.",
+      "description": "İhtilaflı dinî meselelerde farklı değerlendirmeler bulunabileceğini fark eder.",
+      "topicId": "tyt.religion.contemporary-issues.social-problems"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "concept.religion.contemporary-issues.technology-privacy.dijital-mahremiyet",
+      "term": "dijital mahremiyet",
+      "definition": "kişisel bilgi ve özel alanın dijital ortamlarda korunması sorumluluğu",
+      "topicId": "tyt.religion.contemporary-issues.technology-privacy"
+    },
+    {
+      "id": "concept.religion.contemporary-issues.environment-consumption.cevre-ahlaki",
+      "term": "çevre ahlakı",
+      "definition": "doğal varlıklara karşı ölçülülük ve gelecek kuşakları gözetme sorumluluğu",
+      "topicId": "tyt.religion.contemporary-issues.environment-consumption"
+    },
+    {
+      "id": "concept.religion.contemporary-issues.social-problems.bagimlilik",
+      "term": "bağımlılık",
+      "definition": "kişinin davranış veya madde üzerindeki denetimini azaltan çok boyutlu sorun",
+      "topicId": "tyt.religion.contemporary-issues.social-problems"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "lesson.religion.contemporary-issues.technology-privacy.001",
+      "topicId": "tyt.religion.contemporary-issues.technology-privacy",
+      "title": "Teknoloji, Mahremiyet ve Etik",
+      "subtitle": "Teknoloji kullanımını mahremiyet ve etik sorumlulukla değerlendirir. Dinî konuda uzman görüşü ile kişisel yorumu ayırt eder.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.contemporary-issues.technology-privacy.001.card01",
+        "exercise.religion.contemporary-issues.technology-privacy.001.mcq01",
+        "exercise.religion.contemporary-issues.technology-privacy.001.mcq02",
+        "exercise.religion.contemporary-issues.technology-privacy.001.mcq03",
+        "exercise.religion.contemporary-issues.technology-privacy.001.mcq04",
+        "exercise.religion.contemporary-issues.technology-privacy.001.tf01",
+        "exercise.religion.contemporary-issues.technology-privacy.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.religion.contemporary-issues.environment-consumption.001",
+      "topicId": "tyt.religion.contemporary-issues.environment-consumption",
+      "title": "Çevre, Tüketim ve Sorumluluk",
+      "subtitle": "Tüketim alışkanlıklarını ölçülülük açısından yorumlar. Çevre sorunlarında bireysel ve toplumsal sorumluluğu ilişkilendirir.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.contemporary-issues.environment-consumption.001.card01",
+        "exercise.religion.contemporary-issues.environment-consumption.001.mcq01",
+        "exercise.religion.contemporary-issues.environment-consumption.001.mcq02",
+        "exercise.religion.contemporary-issues.environment-consumption.001.mcq03",
+        "exercise.religion.contemporary-issues.environment-consumption.001.mcq04",
+        "exercise.religion.contemporary-issues.environment-consumption.001.tf01",
+        "exercise.religion.contemporary-issues.environment-consumption.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.religion.contemporary-issues.social-problems.001",
+      "topicId": "tyt.religion.contemporary-issues.social-problems",
+      "title": "Bağımlılık ve Toplumsal Sorunlar",
+      "subtitle": "Bağımlılığı yalnız irade zayıflığına indirgeyen yaklaşımı ayırt eder. İhtilaflı dinî meselelerde farklı değerlendirmeler bulunabileceğini fark eder.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.contemporary-issues.social-problems.001.card01",
+        "exercise.religion.contemporary-issues.social-problems.001.mcq01",
+        "exercise.religion.contemporary-issues.social-problems.001.mcq02",
+        "exercise.religion.contemporary-issues.social-problems.001.mcq03",
+        "exercise.religion.contemporary-issues.social-problems.001.mcq04",
+        "exercise.religion.contemporary-issues.social-problems.001.tf01",
+        "exercise.religion.contemporary-issues.social-problems.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "id": "exercise.religion.contemporary-issues.technology-privacy.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "dijital mahremiyet, kişisel bilgi ve özel alanın dijital ortamlarda korunması sorumluluğu.",
+      "skillIds": [
+        "skill.religion.contemporary-issues.technology-privacy.interpret",
+        "skill.religion.contemporary-issues.technology-privacy.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TEKNOLOJİ, MAHREMİYET VE ETİK",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "dijital mahremiyet",
+          "back": "kişisel bilgi ve özel alanın dijital ortamlarda korunması sorumluluğu",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.contemporary-issues.technology-privacy.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "dijital mahremiyet, kişisel bilgi ve özel alanın dijital ortamlarda korunması sorumluluğu.",
+      "skillIds": [
+        "skill.religion.contemporary-issues.technology-privacy.interpret",
+        "skill.religion.contemporary-issues.technology-privacy.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TEKNOLOJİ, MAHREMİYET VE ETİK",
+      "prompt": "“Kişisel bilgi ve özel alanın dijital ortamlarda korunması sorumluluğu” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "dijital mahremiyet"
+        },
+        {
+          "id": "b",
+          "label": "çevre ahlakı"
+        },
+        {
+          "id": "c",
+          "label": "bağımlılık"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.contemporary-issues.technology-privacy.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada dijital mahremiyet kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.contemporary-issues.technology-privacy.interpret",
+        "skill.religion.contemporary-issues.technology-privacy.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TEKNOLOJİ, MAHREMİYET VE ETİK",
+      "prompt": "Bir öğrenci dijital mahremiyet konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.contemporary-issues.technology-privacy.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Teknoloji kullanımını mahremiyet ve etik sorumlulukla değerlendirir. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.contemporary-issues.technology-privacy.interpret",
+        "skill.religion.contemporary-issues.technology-privacy.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TEKNOLOJİ, MAHREMİYET VE ETİK",
+      "prompt": "Teknoloji kullanımını mahremiyet ve etik sorumlulukla değerlendirir. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.contemporary-issues.technology-privacy.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "Dinî konuda uzman görüşü ile kişisel yorumu ayırt eder. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.contemporary-issues.technology-privacy.interpret",
+        "skill.religion.contemporary-issues.technology-privacy.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TEKNOLOJİ, MAHREMİYET VE ETİK",
+      "prompt": "Bir açıklama, dijital mahremiyet kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.contemporary-issues.technology-privacy.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. dijital mahremiyet, kişisel bilgi ve özel alanın dijital ortamlarda korunması sorumluluğu; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.contemporary-issues.technology-privacy.interpret",
+        "skill.religion.contemporary-issues.technology-privacy.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TEKNOLOJİ, MAHREMİYET VE ETİK",
+      "statement": "dijital mahremiyet kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.contemporary-issues.technology-privacy.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.contemporary-issues.technology-privacy.interpret",
+        "skill.religion.contemporary-issues.technology-privacy.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TEKNOLOJİ, MAHREMİYET VE ETİK",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "dijital mahremiyet",
+          "right": "kişisel bilgi ve özel alanın dijital ortamlarda korunması sorumluluğu"
+        },
+        {
+          "id": "p2",
+          "left": "çevre ahlakı",
+          "right": "doğal varlıklara karşı ölçülülük ve gelecek kuşakları gözetme sorumluluğu"
+        },
+        {
+          "id": "p3",
+          "left": "bağımlılık",
+          "right": "kişinin davranış veya madde üzerindeki denetimini azaltan çok boyutlu sorun"
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.contemporary-issues.environment-consumption.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "çevre ahlakı, doğal varlıklara karşı ölçülülük ve gelecek kuşakları gözetme sorumluluğu.",
+      "skillIds": [
+        "skill.religion.contemporary-issues.environment-consumption.interpret",
+        "skill.religion.contemporary-issues.environment-consumption.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ÇEVRE, TÜKETİM VE SORUMLULUK",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "çevre ahlakı",
+          "back": "doğal varlıklara karşı ölçülülük ve gelecek kuşakları gözetme sorumluluğu",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.contemporary-issues.environment-consumption.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "çevre ahlakı, doğal varlıklara karşı ölçülülük ve gelecek kuşakları gözetme sorumluluğu.",
+      "skillIds": [
+        "skill.religion.contemporary-issues.environment-consumption.interpret",
+        "skill.religion.contemporary-issues.environment-consumption.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ÇEVRE, TÜKETİM VE SORUMLULUK",
+      "prompt": "“Doğal varlıklara karşı ölçülülük ve gelecek kuşakları gözetme sorumluluğu” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "dijital mahremiyet"
+        },
+        {
+          "id": "b",
+          "label": "çevre ahlakı"
+        },
+        {
+          "id": "c",
+          "label": "bağımlılık"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "b"
+    },
+    {
+      "id": "exercise.religion.contemporary-issues.environment-consumption.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada çevre ahlakı kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.contemporary-issues.environment-consumption.interpret",
+        "skill.religion.contemporary-issues.environment-consumption.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ÇEVRE, TÜKETİM VE SORUMLULUK",
+      "prompt": "Bir öğrenci çevre ahlakı konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.contemporary-issues.environment-consumption.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Tüketim alışkanlıklarını ölçülülük açısından yorumlar. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.contemporary-issues.environment-consumption.interpret",
+        "skill.religion.contemporary-issues.environment-consumption.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ÇEVRE, TÜKETİM VE SORUMLULUK",
+      "prompt": "Tüketim alışkanlıklarını ölçülülük açısından yorumlar. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.contemporary-issues.environment-consumption.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "Çevre sorunlarında bireysel ve toplumsal sorumluluğu ilişkilendirir. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.contemporary-issues.environment-consumption.interpret",
+        "skill.religion.contemporary-issues.environment-consumption.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ÇEVRE, TÜKETİM VE SORUMLULUK",
+      "prompt": "Bir açıklama, çevre ahlakı kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.contemporary-issues.environment-consumption.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. çevre ahlakı, doğal varlıklara karşı ölçülülük ve gelecek kuşakları gözetme sorumluluğu; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.contemporary-issues.environment-consumption.interpret",
+        "skill.religion.contemporary-issues.environment-consumption.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ÇEVRE, TÜKETİM VE SORUMLULUK",
+      "statement": "çevre ahlakı kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.contemporary-issues.environment-consumption.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.contemporary-issues.environment-consumption.interpret",
+        "skill.religion.contemporary-issues.environment-consumption.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ÇEVRE, TÜKETİM VE SORUMLULUK",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "dijital mahremiyet",
+          "right": "kişisel bilgi ve özel alanın dijital ortamlarda korunması sorumluluğu"
+        },
+        {
+          "id": "p2",
+          "left": "çevre ahlakı",
+          "right": "doğal varlıklara karşı ölçülülük ve gelecek kuşakları gözetme sorumluluğu"
+        },
+        {
+          "id": "p3",
+          "left": "bağımlılık",
+          "right": "kişinin davranış veya madde üzerindeki denetimini azaltan çok boyutlu sorun"
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.contemporary-issues.social-problems.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "bağımlılık, kişinin davranış veya madde üzerindeki denetimini azaltan çok boyutlu sorun.",
+      "skillIds": [
+        "skill.religion.contemporary-issues.social-problems.interpret",
+        "skill.religion.contemporary-issues.social-problems.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · BAĞIMLILIK VE TOPLUMSAL SORUNLAR",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "bağımlılık",
+          "back": "kişinin davranış veya madde üzerindeki denetimini azaltan çok boyutlu sorun",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.contemporary-issues.social-problems.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "bağımlılık, kişinin davranış veya madde üzerindeki denetimini azaltan çok boyutlu sorun.",
+      "skillIds": [
+        "skill.religion.contemporary-issues.social-problems.interpret",
+        "skill.religion.contemporary-issues.social-problems.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · BAĞIMLILIK VE TOPLUMSAL SORUNLAR",
+      "prompt": "“Kişinin davranış veya madde üzerindeki denetimini azaltan çok boyutlu sorun” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "dijital mahremiyet"
+        },
+        {
+          "id": "b",
+          "label": "çevre ahlakı"
+        },
+        {
+          "id": "c",
+          "label": "bağımlılık"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "c"
+    },
+    {
+      "id": "exercise.religion.contemporary-issues.social-problems.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada bağımlılık kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.contemporary-issues.social-problems.interpret",
+        "skill.religion.contemporary-issues.social-problems.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · BAĞIMLILIK VE TOPLUMSAL SORUNLAR",
+      "prompt": "Bir öğrenci bağımlılık konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.contemporary-issues.social-problems.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bağımlılığı yalnız irade zayıflığına indirgeyen yaklaşımı ayırt eder. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.contemporary-issues.social-problems.interpret",
+        "skill.religion.contemporary-issues.social-problems.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · BAĞIMLILIK VE TOPLUMSAL SORUNLAR",
+      "prompt": "Bağımlılığı yalnız irade zayıflığına indirgeyen yaklaşımı ayırt eder. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.contemporary-issues.social-problems.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "İhtilaflı dinî meselelerde farklı değerlendirmeler bulunabileceğini fark eder. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.contemporary-issues.social-problems.interpret",
+        "skill.religion.contemporary-issues.social-problems.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · BAĞIMLILIK VE TOPLUMSAL SORUNLAR",
+      "prompt": "Bir açıklama, bağımlılık kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.contemporary-issues.social-problems.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. bağımlılık, kişinin davranış veya madde üzerindeki denetimini azaltan çok boyutlu sorun; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.contemporary-issues.social-problems.interpret",
+        "skill.religion.contemporary-issues.social-problems.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · BAĞIMLILIK VE TOPLUMSAL SORUNLAR",
+      "statement": "bağımlılık kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.contemporary-issues.social-problems.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.contemporary-issues.social-problems.interpret",
+        "skill.religion.contemporary-issues.social-problems.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · BAĞIMLILIK VE TOPLUMSAL SORUNLAR",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "dijital mahremiyet",
+          "right": "kişisel bilgi ve özel alanın dijital ortamlarda korunması sorumluluğu"
+        },
+        {
+          "id": "p2",
+          "left": "çevre ahlakı",
+          "right": "doğal varlıklara karşı ölçülülük ve gelecek kuşakları gözetme sorumluluğu"
+        },
+        {
+          "id": "p3",
+          "left": "bağımlılık",
+          "right": "kişinin davranış veya madde üzerindeki denetimini azaltan çok boyutlu sorun"
+        }
+      ]
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.religion.contemporary-issues.01",
+      "unitId": "tyt.religion.contemporary-issues",
+      "kind": "lesson",
+      "title": "Teknoloji, Mahremiyet ve Etik",
+      "order": 1,
+      "lessonId": "lesson.religion.contemporary-issues.technology-privacy.001",
+      "prerequisiteIds": []
+    },
+    {
+      "id": "path.religion.contemporary-issues.02",
+      "unitId": "tyt.religion.contemporary-issues",
+      "kind": "lesson",
+      "title": "Çevre, Tüketim ve Sorumluluk",
+      "order": 2,
+      "lessonId": "lesson.religion.contemporary-issues.environment-consumption.001",
+      "prerequisiteIds": [
+        "path.religion.contemporary-issues.01"
+      ]
+    },
+    {
+      "id": "path.religion.contemporary-issues.03",
+      "unitId": "tyt.religion.contemporary-issues",
+      "kind": "lesson",
+      "title": "Bağımlılık ve Toplumsal Sorunlar",
+      "order": 3,
+      "lessonId": "lesson.religion.contemporary-issues.social-problems.001",
+      "prerequisiteIds": [
+        "path.religion.contemporary-issues.02"
+      ]
+    }
+  ]
+}

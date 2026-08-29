@@ -1108,7 +1108,7 @@
       "lessonId": "lesson.history.states.001",
       "order": 1,
       "prerequisiteIds": [
-        "path.history.time.03"
+        "path.history.medieval-world.02"
       ],
       "title": "Devletleri Tanı",
       "unitId": "tyt.history.first-turkish-states"

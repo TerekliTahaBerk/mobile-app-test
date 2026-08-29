@@ -1,0 +1,531 @@
+{
+  "concepts": [
+    {
+      "definition": "İlkbaharda akım artabilir",
+      "id": "concept.geography.water-soil-plants.water",
+      "term": "Kar erimeleriyle beslenen akarsu incelenir",
+      "topicId": "tyt.geography.water-soil-plants.water"
+    },
+    {
+      "definition": "Toprak örtüsü ince kalabilir",
+      "id": "concept.geography.water-soil-plants.soil-plants",
+      "term": "Eğimli yamaçta aşınma güçlüdür",
+      "topicId": "tyt.geography.water-soil-plants.soil-plants"
+    }
+  ],
+  "exercises": [
+    {
+      "correctOptionId": "opt-1",
+      "difficulty": 2,
+      "explanation": "Kar erimeleriyle beslenen akarsu incelenir durumunda ilkbaharda akım artabilir. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.water-soil-plants.water.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "İlkbaharda akım artabilir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Yer altı suyu oluşabilir"
+        },
+        {
+          "id": "opt-3",
+          "label": "Göl suyu tuzlu olabilir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Yıl içindeki akım değişimi azdır"
+        }
+      ],
+      "prompt": "Kar erimeleriyle beslenen akarsu incelenir. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.water-soil-plants.water.interpret"
+      ],
+      "tag": "COĞRAFYA · SU KAYNAKLARI"
+    },
+    {
+      "correctOptionId": "opt-2",
+      "difficulty": 4,
+      "explanation": "Geçirimli tabakada su birikir durumunda yer altı suyu oluşabilir. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.water-soil-plants.water.001.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "İlkbaharda akım artabilir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Yer altı suyu oluşabilir"
+        },
+        {
+          "id": "opt-3",
+          "label": "Göl suyu tuzlu olabilir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Yıl içindeki akım değişimi azdır"
+        }
+      ],
+      "prompt": "Geçirimli tabakada su birikir. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.water-soil-plants.water.interpret"
+      ],
+      "tag": "COĞRAFYA · SU KAYNAKLARI"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 3,
+      "explanation": "Kapalı havzada buharlaşma güçlüdür ile göl suyu tuzlu olabilir arasında doğrudan bir coğrafi ilişki vardır.",
+      "id": "exercise.geography.water-soil-plants.water.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.water-soil-plants.water.interpret"
+      ],
+      "statement": "Kapalı havzada buharlaşma güçlüdür; bunun sonucunda göl suyu tuzlu olabilir.",
+      "tag": "COĞRAFYA · SU KAYNAKLARI"
+    },
+    {
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "İlkbaharda akım artabilir"
+        },
+        {
+          "id": "w-2",
+          "label": "Yer altı suyu oluşabilir"
+        },
+        {
+          "id": "w-3",
+          "label": "Göl suyu tuzlu olabilir"
+        },
+        {
+          "id": "w-4",
+          "label": "Yıl içindeki akım değişimi azdır"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "Akarsu rejimi düzenlidir koşulunun beklenen sonucu “Yıl içindeki akım değişimi azdır” ilişkisidir.",
+      "hint": "Akarsu rejimi düzenlidir",
+      "id": "exercise.geography.water-soil-plants.water.001.blank01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.water-soil-plants.water.interpret"
+      ],
+      "solutionTokenIds": [
+        "w-4"
+      ],
+      "title": "Akarsu rejimi düzenlidir durumunda sonuç"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Her koşul, kendisinden beklenen özgün coğrafi sonuçla eşleştirilir; aynı sonuç iki kez kullanılmaz.",
+      "id": "exercise.geography.water-soil-plants.water.001.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Kar erimeleriyle beslenen akarsu incelenir",
+          "right": "İlkbaharda akım artabilir"
+        },
+        {
+          "id": "pair-2",
+          "left": "Geçirimli tabakada su birikir",
+          "right": "Yer altı suyu oluşabilir"
+        },
+        {
+          "id": "pair-3",
+          "left": "Kapalı havzada buharlaşma güçlüdür",
+          "right": "Göl suyu tuzlu olabilir"
+        },
+        {
+          "id": "pair-4",
+          "left": "Akarsu rejimi düzenlidir",
+          "right": "Yıl içindeki akım değişimi azdır"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.water-soil-plants.water.interpret"
+      ],
+      "subtitle": "Koşulu doğru coğrafi sonuçla birleştir.",
+      "tag": "COĞRAFYA · SU KAYNAKLARI",
+      "title": "İlişkiyi eşleştir"
+    },
+    {
+      "cards": [
+        {
+          "back": "İlkbaharda akım artabilir",
+          "front": "Kar erimeleriyle beslenen akarsu incelenir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-1"
+        },
+        {
+          "back": "Yer altı suyu oluşabilir",
+          "front": "Geçirimli tabakada su birikir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-2"
+        },
+        {
+          "back": "Göl suyu tuzlu olabilir",
+          "front": "Kapalı havzada buharlaşma güçlüdür",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-3"
+        },
+        {
+          "back": "Yıl içindeki akım değişimi azdır",
+          "front": "Akarsu rejimi düzenlidir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-4"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Kartlar temel ilişkileri kısa tekrar için özetler; puanlanan skill coverage hesabına katılmaz.",
+      "id": "exercise.geography.water-soil-plants.water.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.water-soil-plants.water.interpret"
+      ],
+      "tag": "COĞRAFYA · SU KAYNAKLARI"
+    },
+    {
+      "correctOptionId": "opt-1",
+      "difficulty": 2,
+      "explanation": "Eğimli yamaçta aşınma güçlüdür durumunda toprak örtüsü ince kalabilir. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.water-soil-plants.soil-plants.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Toprak örtüsü ince kalabilir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Topraktaki çözünebilir maddeler alt katlara taşınır"
+        },
+        {
+          "id": "opt-3",
+          "label": "Alüvyal toprak oluşur"
+        },
+        {
+          "id": "opt-4",
+          "label": "Bitki örtüsü seyrekleşebilir"
+        }
+      ],
+      "prompt": "Eğimli yamaçta aşınma güçlüdür. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.water-soil-plants.soil-plants.interpret"
+      ],
+      "tag": "COĞRAFYA · TOPRAK VE BİTKİ BAĞLANTISI"
+    },
+    {
+      "correctOptionId": "opt-2",
+      "difficulty": 4,
+      "explanation": "Nemli iklimde yıkanma fazladır durumunda topraktaki çözünebilir maddeler alt katlara taşınır. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.water-soil-plants.soil-plants.001.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Toprak örtüsü ince kalabilir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Topraktaki çözünebilir maddeler alt katlara taşınır"
+        },
+        {
+          "id": "opt-3",
+          "label": "Alüvyal toprak oluşur"
+        },
+        {
+          "id": "opt-4",
+          "label": "Bitki örtüsü seyrekleşebilir"
+        }
+      ],
+      "prompt": "Nemli iklimde yıkanma fazladır. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.water-soil-plants.soil-plants.interpret"
+      ],
+      "tag": "COĞRAFYA · TOPRAK VE BİTKİ BAĞLANTISI"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 3,
+      "explanation": "Akarsu malzeme biriktirir ile alüvyal toprak oluşur arasında doğrudan bir coğrafi ilişki vardır.",
+      "id": "exercise.geography.water-soil-plants.soil-plants.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.water-soil-plants.soil-plants.interpret"
+      ],
+      "statement": "Akarsu malzeme biriktirir; bunun sonucunda alüvyal toprak oluşur.",
+      "tag": "COĞRAFYA · TOPRAK VE BİTKİ BAĞLANTISI"
+    },
+    {
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "Toprak örtüsü ince kalabilir"
+        },
+        {
+          "id": "w-2",
+          "label": "Topraktaki çözünebilir maddeler alt katlara taşınır"
+        },
+        {
+          "id": "w-3",
+          "label": "Alüvyal toprak oluşur"
+        },
+        {
+          "id": "w-4",
+          "label": "Bitki örtüsü seyrekleşebilir"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "İklim kuraklaşır koşulunun beklenen sonucu “Bitki örtüsü seyrekleşebilir” ilişkisidir.",
+      "hint": "İklim kuraklaşır",
+      "id": "exercise.geography.water-soil-plants.soil-plants.001.blank01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.water-soil-plants.soil-plants.interpret"
+      ],
+      "solutionTokenIds": [
+        "w-4"
+      ],
+      "title": "İklim kuraklaşır durumunda sonuç"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Her koşul, kendisinden beklenen özgün coğrafi sonuçla eşleştirilir; aynı sonuç iki kez kullanılmaz.",
+      "id": "exercise.geography.water-soil-plants.soil-plants.001.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Eğimli yamaçta aşınma güçlüdür",
+          "right": "Toprak örtüsü ince kalabilir"
+        },
+        {
+          "id": "pair-2",
+          "left": "Nemli iklimde yıkanma fazladır",
+          "right": "Topraktaki çözünebilir maddeler alt katlara taşınır"
+        },
+        {
+          "id": "pair-3",
+          "left": "Akarsu malzeme biriktirir",
+          "right": "Alüvyal toprak oluşur"
+        },
+        {
+          "id": "pair-4",
+          "left": "İklim kuraklaşır",
+          "right": "Bitki örtüsü seyrekleşebilir"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.water-soil-plants.soil-plants.interpret"
+      ],
+      "subtitle": "Koşulu doğru coğrafi sonuçla birleştir.",
+      "tag": "COĞRAFYA · TOPRAK VE BİTKİ BAĞLANTISI",
+      "title": "İlişkiyi eşleştir"
+    },
+    {
+      "cards": [
+        {
+          "back": "Toprak örtüsü ince kalabilir",
+          "front": "Eğimli yamaçta aşınma güçlüdür",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-1"
+        },
+        {
+          "back": "Topraktaki çözünebilir maddeler alt katlara taşınır",
+          "front": "Nemli iklimde yıkanma fazladır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-2"
+        },
+        {
+          "back": "Alüvyal toprak oluşur",
+          "front": "Akarsu malzeme biriktirir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-3"
+        },
+        {
+          "back": "Bitki örtüsü seyrekleşebilir",
+          "front": "İklim kuraklaşır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-4"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Kartlar temel ilişkileri kısa tekrar için özetler; puanlanan skill coverage hesabına katılmaz.",
+      "id": "exercise.geography.water-soil-plants.soil-plants.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.water-soil-plants.soil-plants.interpret"
+      ],
+      "tag": "COĞRAFYA · TOPRAK VE BİTKİ BAĞLANTISI"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.geography.water-soil-plants.water.001.mcq01",
+        "exercise.geography.water-soil-plants.water.001.mcq02",
+        "exercise.geography.water-soil-plants.water.001.tf01",
+        "exercise.geography.water-soil-plants.water.001.blank01",
+        "exercise.geography.water-soil-plants.water.001.match01",
+        "exercise.geography.water-soil-plants.water.001.card01"
+      ],
+      "id": "lesson.geography.water-soil-plants.water.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Su kaynaklarının beslenme koşulları ve kullanım özelliklerini yorumlar.",
+      "title": "Su Kaynakları",
+      "topicId": "tyt.geography.water-soil-plants.water"
+    },
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.geography.water-soil-plants.soil-plants.001.mcq01",
+        "exercise.geography.water-soil-plants.soil-plants.001.mcq02",
+        "exercise.geography.water-soil-plants.soil-plants.001.tf01",
+        "exercise.geography.water-soil-plants.soil-plants.001.blank01",
+        "exercise.geography.water-soil-plants.soil-plants.001.match01",
+        "exercise.geography.water-soil-plants.soil-plants.001.card01"
+      ],
+      "id": "lesson.geography.water-soil-plants.soil-plants.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "İklim, ana kaya, topoğrafya ve bitki örtüsünün toprak oluşumuna etkisini çözümler.",
+      "title": "Toprak ve Bitki Bağlantısı",
+      "topicId": "tyt.geography.water-soil-plants.soil-plants"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.geography.water-soil-plants.01",
+      "kind": "lesson",
+      "lessonId": "lesson.geography.water-soil-plants.water.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.geography.internal-external-forces.02"
+      ],
+      "title": "Su Kaynakları",
+      "unitId": "tyt.geography.water-soil-plants"
+    },
+    {
+      "id": "path.geography.water-soil-plants.02",
+      "kind": "practice",
+      "lessonId": "lesson.geography.water-soil-plants.soil-plants.001",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.geography.water-soil-plants.01"
+      ],
+      "title": "Toprak ve Bitki Bağlantısı Uygulaması",
+      "unitId": "tyt.geography.water-soil-plants"
+    }
+  ],
+  "skills": [
+    {
+      "description": "Su kaynaklarının beslenme koşulları ve kullanım özelliklerini yorumlar.",
+      "id": "skill.geography.water-soil-plants.water.interpret",
+      "title": "Su kaynaklarının beslenme koşulları ve kullanım özelliklerini yorumlar.",
+      "topicId": "tyt.geography.water-soil-plants.water"
+    },
+    {
+      "description": "İklim, ana kaya, topoğrafya ve bitki örtüsünün toprak oluşumuna etkisini çözümler.",
+      "id": "skill.geography.water-soil-plants.soil-plants.interpret",
+      "title": "İklim, ana kaya, topoğrafya ve bitki örtüsünün toprak oluşumuna etkisini çözümler.",
+      "topicId": "tyt.geography.water-soil-plants.soil-plants"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.geography.water-soil-plants.water"
+      ],
+      "id": "tyt.geography.water-soil-plants.water",
+      "skillIds": [
+        "skill.geography.water-soil-plants.water.interpret"
+      ],
+      "title": "Su Kaynakları",
+      "unitId": "tyt.geography.water-soil-plants"
+    },
+    {
+      "conceptIds": [
+        "concept.geography.water-soil-plants.soil-plants"
+      ],
+      "id": "tyt.geography.water-soil-plants.soil-plants",
+      "skillIds": [
+        "skill.geography.water-soil-plants.soil-plants.interpret"
+      ],
+      "title": "Toprak ve Bitki Bağlantısı",
+      "unitId": "tyt.geography.water-soil-plants"
+    }
+  ],
+  "unitId": "tyt.geography.water-soil-plants"
+}

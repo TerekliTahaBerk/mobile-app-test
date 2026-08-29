@@ -1,0 +1,862 @@
+{
+  "unitId": "tyt.religion.sufi-interpretations",
+  "topics": [
+    {
+      "id": "tyt.religion.sufi-interpretations.sufism-ethics",
+      "unitId": "tyt.religion.sufi-interpretations",
+      "title": "Tasavvuf ve Ahlaki Olgunlaşma",
+      "skillIds": [
+        "skill.religion.sufi-interpretations.sufism-ethics.interpret",
+        "skill.religion.sufi-interpretations.sufism-ethics.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.sufi-interpretations.sufism-ethics.tasavvuf"
+      ]
+    },
+    {
+      "id": "tyt.religion.sufi-interpretations.concepts-orders",
+      "unitId": "tyt.religion.sufi-interpretations",
+      "title": "Tarikat, Mezhep ve Yorum",
+      "skillIds": [
+        "skill.religion.sufi-interpretations.concepts-orders.interpret",
+        "skill.religion.sufi-interpretations.concepts-orders.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.sufi-interpretations.concepts-orders.tarikat"
+      ]
+    },
+    {
+      "id": "tyt.religion.sufi-interpretations.love-tolerance",
+      "unitId": "tyt.religion.sufi-interpretations",
+      "title": "Sevgi, Hoşgörü ve Çoğul Yorum",
+      "skillIds": [
+        "skill.religion.sufi-interpretations.love-tolerance.interpret",
+        "skill.religion.sufi-interpretations.love-tolerance.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.sufi-interpretations.love-tolerance.hosgoru"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "skill.religion.sufi-interpretations.sufism-ethics.interpret",
+      "title": "Tasavvufun ahlaki olgunlaşma amacını yorumlar.",
+      "description": "Tasavvufun ahlaki olgunlaşma amacını yorumlar.",
+      "topicId": "tyt.religion.sufi-interpretations.sufism-ethics"
+    },
+    {
+      "id": "skill.religion.sufi-interpretations.sufism-ethics.distinguish",
+      "title": "Nefis terbiyesini öz denetim bağlamında açıklar.",
+      "description": "Nefis terbiyesini öz denetim bağlamında açıklar.",
+      "topicId": "tyt.religion.sufi-interpretations.sufism-ethics"
+    },
+    {
+      "id": "skill.religion.sufi-interpretations.concepts-orders.interpret",
+      "title": "Mezhep ile tarikat kavramlarını ayırt eder.",
+      "description": "Mezhep ile tarikat kavramlarını ayırt eder.",
+      "topicId": "tyt.religion.sufi-interpretations.concepts-orders"
+    },
+    {
+      "id": "skill.religion.sufi-interpretations.concepts-orders.distinguish",
+      "title": "Dinî yorumların tarihsel ve toplumsal bağlamını fark eder.",
+      "description": "Dinî yorumların tarihsel ve toplumsal bağlamını fark eder.",
+      "topicId": "tyt.religion.sufi-interpretations.concepts-orders"
+    },
+    {
+      "id": "skill.religion.sufi-interpretations.love-tolerance.interpret",
+      "title": "Sevgi ve hoşgörünün tasavvufi yorumlardaki yerini yorumlar.",
+      "description": "Sevgi ve hoşgörünün tasavvufi yorumlardaki yerini yorumlar.",
+      "topicId": "tyt.religion.sufi-interpretations.love-tolerance"
+    },
+    {
+      "id": "skill.religion.sufi-interpretations.love-tolerance.distinguish",
+      "title": "Bir tasavvufi geleneği bütün İslam düşüncesiyle özdeşleştiren yaklaşımı ayırt eder.",
+      "description": "Bir tasavvufi geleneği bütün İslam düşüncesiyle özdeşleştiren yaklaşımı ayırt eder.",
+      "topicId": "tyt.religion.sufi-interpretations.love-tolerance"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "concept.religion.sufi-interpretations.sufism-ethics.tasavvuf",
+      "term": "tasavvuf",
+      "definition": "İslam düşüncesinde manevi ve ahlaki olgunlaşmayı öne çıkaran yorum ve yaşama geleneği",
+      "topicId": "tyt.religion.sufi-interpretations.sufism-ethics"
+    },
+    {
+      "id": "concept.religion.sufi-interpretations.concepts-orders.tarikat",
+      "term": "tarikat",
+      "definition": "tasavvufi eğitim ve uygulama çevresinde oluşmuş tarihsel yol ve topluluk",
+      "topicId": "tyt.religion.sufi-interpretations.concepts-orders"
+    },
+    {
+      "id": "concept.religion.sufi-interpretations.love-tolerance.hosgoru",
+      "term": "hoşgörü",
+      "definition": "farklılıklar karşısında saygılı ve anlayışlı tutum geliştirme",
+      "topicId": "tyt.religion.sufi-interpretations.love-tolerance"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "lesson.religion.sufi-interpretations.sufism-ethics.001",
+      "topicId": "tyt.religion.sufi-interpretations.sufism-ethics",
+      "title": "Tasavvuf ve Ahlaki Olgunlaşma",
+      "subtitle": "Tasavvufun ahlaki olgunlaşma amacını yorumlar. Nefis terbiyesini öz denetim bağlamında açıklar.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.sufi-interpretations.sufism-ethics.001.card01",
+        "exercise.religion.sufi-interpretations.sufism-ethics.001.mcq01",
+        "exercise.religion.sufi-interpretations.sufism-ethics.001.mcq02",
+        "exercise.religion.sufi-interpretations.sufism-ethics.001.mcq03",
+        "exercise.religion.sufi-interpretations.sufism-ethics.001.mcq04",
+        "exercise.religion.sufi-interpretations.sufism-ethics.001.tf01",
+        "exercise.religion.sufi-interpretations.sufism-ethics.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.religion.sufi-interpretations.concepts-orders.001",
+      "topicId": "tyt.religion.sufi-interpretations.concepts-orders",
+      "title": "Tarikat, Mezhep ve Yorum",
+      "subtitle": "Mezhep ile tarikat kavramlarını ayırt eder. Dinî yorumların tarihsel ve toplumsal bağlamını fark eder.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.sufi-interpretations.concepts-orders.001.card01",
+        "exercise.religion.sufi-interpretations.concepts-orders.001.mcq01",
+        "exercise.religion.sufi-interpretations.concepts-orders.001.mcq02",
+        "exercise.religion.sufi-interpretations.concepts-orders.001.mcq03",
+        "exercise.religion.sufi-interpretations.concepts-orders.001.mcq04",
+        "exercise.religion.sufi-interpretations.concepts-orders.001.tf01",
+        "exercise.religion.sufi-interpretations.concepts-orders.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.religion.sufi-interpretations.love-tolerance.001",
+      "topicId": "tyt.religion.sufi-interpretations.love-tolerance",
+      "title": "Sevgi, Hoşgörü ve Çoğul Yorum",
+      "subtitle": "Sevgi ve hoşgörünün tasavvufi yorumlardaki yerini yorumlar. Bir tasavvufi geleneği bütün İslam düşüncesiyle özdeşleştiren yaklaşımı ayırt eder.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.sufi-interpretations.love-tolerance.001.card01",
+        "exercise.religion.sufi-interpretations.love-tolerance.001.mcq01",
+        "exercise.religion.sufi-interpretations.love-tolerance.001.mcq02",
+        "exercise.religion.sufi-interpretations.love-tolerance.001.mcq03",
+        "exercise.religion.sufi-interpretations.love-tolerance.001.mcq04",
+        "exercise.religion.sufi-interpretations.love-tolerance.001.tf01",
+        "exercise.religion.sufi-interpretations.love-tolerance.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "id": "exercise.religion.sufi-interpretations.sufism-ethics.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "tasavvuf, İslam düşüncesinde manevi ve ahlaki olgunlaşmayı öne çıkaran yorum ve yaşama geleneği.",
+      "skillIds": [
+        "skill.religion.sufi-interpretations.sufism-ethics.interpret",
+        "skill.religion.sufi-interpretations.sufism-ethics.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TASAVVUF VE AHLAKİ OLGUNLAŞMA",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "tasavvuf",
+          "back": "İslam düşüncesinde manevi ve ahlaki olgunlaşmayı öne çıkaran yorum ve yaşama geleneği",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.sufi-interpretations.sufism-ethics.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "tasavvuf, İslam düşüncesinde manevi ve ahlaki olgunlaşmayı öne çıkaran yorum ve yaşama geleneği.",
+      "skillIds": [
+        "skill.religion.sufi-interpretations.sufism-ethics.interpret",
+        "skill.religion.sufi-interpretations.sufism-ethics.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TASAVVUF VE AHLAKİ OLGUNLAŞMA",
+      "prompt": "“İslam düşüncesinde manevi ve ahlaki olgunlaşmayı öne çıkaran yorum ve yaşama geleneği” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "tasavvuf"
+        },
+        {
+          "id": "b",
+          "label": "tarikat"
+        },
+        {
+          "id": "c",
+          "label": "hoşgörü"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.sufi-interpretations.sufism-ethics.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada tasavvuf kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.sufi-interpretations.sufism-ethics.interpret",
+        "skill.religion.sufi-interpretations.sufism-ethics.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TASAVVUF VE AHLAKİ OLGUNLAŞMA",
+      "prompt": "Bir öğrenci tasavvuf konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.sufi-interpretations.sufism-ethics.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Tasavvufun ahlaki olgunlaşma amacını yorumlar. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.sufi-interpretations.sufism-ethics.interpret",
+        "skill.religion.sufi-interpretations.sufism-ethics.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TASAVVUF VE AHLAKİ OLGUNLAŞMA",
+      "prompt": "Tasavvufun ahlaki olgunlaşma amacını yorumlar. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.sufi-interpretations.sufism-ethics.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "Nefis terbiyesini öz denetim bağlamında açıklar. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.sufi-interpretations.sufism-ethics.interpret",
+        "skill.religion.sufi-interpretations.sufism-ethics.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TASAVVUF VE AHLAKİ OLGUNLAŞMA",
+      "prompt": "Bir açıklama, tasavvuf kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.sufi-interpretations.sufism-ethics.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. tasavvuf, İslam düşüncesinde manevi ve ahlaki olgunlaşmayı öne çıkaran yorum ve yaşama geleneği; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.sufi-interpretations.sufism-ethics.interpret",
+        "skill.religion.sufi-interpretations.sufism-ethics.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TASAVVUF VE AHLAKİ OLGUNLAŞMA",
+      "statement": "tasavvuf kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.sufi-interpretations.sufism-ethics.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.sufi-interpretations.sufism-ethics.interpret",
+        "skill.religion.sufi-interpretations.sufism-ethics.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TASAVVUF VE AHLAKİ OLGUNLAŞMA",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "tasavvuf",
+          "right": "İslam düşüncesinde manevi ve ahlaki olgunlaşmayı öne çıkaran yorum ve yaşama geleneği"
+        },
+        {
+          "id": "p2",
+          "left": "tarikat",
+          "right": "tasavvufi eğitim ve uygulama çevresinde oluşmuş tarihsel yol ve topluluk"
+        },
+        {
+          "id": "p3",
+          "left": "hoşgörü",
+          "right": "farklılıklar karşısında saygılı ve anlayışlı tutum geliştirme"
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.sufi-interpretations.concepts-orders.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "tarikat, tasavvufi eğitim ve uygulama çevresinde oluşmuş tarihsel yol ve topluluk.",
+      "skillIds": [
+        "skill.religion.sufi-interpretations.concepts-orders.interpret",
+        "skill.religion.sufi-interpretations.concepts-orders.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TARİKAT, MEZHEP VE YORUM",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "tarikat",
+          "back": "tasavvufi eğitim ve uygulama çevresinde oluşmuş tarihsel yol ve topluluk",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.sufi-interpretations.concepts-orders.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "tarikat, tasavvufi eğitim ve uygulama çevresinde oluşmuş tarihsel yol ve topluluk.",
+      "skillIds": [
+        "skill.religion.sufi-interpretations.concepts-orders.interpret",
+        "skill.religion.sufi-interpretations.concepts-orders.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TARİKAT, MEZHEP VE YORUM",
+      "prompt": "“Tasavvufi eğitim ve uygulama çevresinde oluşmuş tarihsel yol ve topluluk” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "tasavvuf"
+        },
+        {
+          "id": "b",
+          "label": "tarikat"
+        },
+        {
+          "id": "c",
+          "label": "hoşgörü"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "b"
+    },
+    {
+      "id": "exercise.religion.sufi-interpretations.concepts-orders.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada tarikat kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.sufi-interpretations.concepts-orders.interpret",
+        "skill.religion.sufi-interpretations.concepts-orders.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TARİKAT, MEZHEP VE YORUM",
+      "prompt": "Bir öğrenci tarikat konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.sufi-interpretations.concepts-orders.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Mezhep ile tarikat kavramlarını ayırt eder. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.sufi-interpretations.concepts-orders.interpret",
+        "skill.religion.sufi-interpretations.concepts-orders.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TARİKAT, MEZHEP VE YORUM",
+      "prompt": "Mezhep ile tarikat kavramlarını ayırt eder. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.sufi-interpretations.concepts-orders.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "Dinî yorumların tarihsel ve toplumsal bağlamını fark eder. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.sufi-interpretations.concepts-orders.interpret",
+        "skill.religion.sufi-interpretations.concepts-orders.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TARİKAT, MEZHEP VE YORUM",
+      "prompt": "Bir açıklama, tarikat kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.sufi-interpretations.concepts-orders.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. tarikat, tasavvufi eğitim ve uygulama çevresinde oluşmuş tarihsel yol ve topluluk; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.sufi-interpretations.concepts-orders.interpret",
+        "skill.religion.sufi-interpretations.concepts-orders.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TARİKAT, MEZHEP VE YORUM",
+      "statement": "tarikat kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.sufi-interpretations.concepts-orders.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.sufi-interpretations.concepts-orders.interpret",
+        "skill.religion.sufi-interpretations.concepts-orders.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TARİKAT, MEZHEP VE YORUM",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "tasavvuf",
+          "right": "İslam düşüncesinde manevi ve ahlaki olgunlaşmayı öne çıkaran yorum ve yaşama geleneği"
+        },
+        {
+          "id": "p2",
+          "left": "tarikat",
+          "right": "tasavvufi eğitim ve uygulama çevresinde oluşmuş tarihsel yol ve topluluk"
+        },
+        {
+          "id": "p3",
+          "left": "hoşgörü",
+          "right": "farklılıklar karşısında saygılı ve anlayışlı tutum geliştirme"
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.sufi-interpretations.love-tolerance.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "hoşgörü, farklılıklar karşısında saygılı ve anlayışlı tutum geliştirme.",
+      "skillIds": [
+        "skill.religion.sufi-interpretations.love-tolerance.interpret",
+        "skill.religion.sufi-interpretations.love-tolerance.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · SEVGİ, HOŞGÖRÜ VE ÇOĞUL YORUM",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "hoşgörü",
+          "back": "farklılıklar karşısında saygılı ve anlayışlı tutum geliştirme",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.sufi-interpretations.love-tolerance.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "hoşgörü, farklılıklar karşısında saygılı ve anlayışlı tutum geliştirme.",
+      "skillIds": [
+        "skill.religion.sufi-interpretations.love-tolerance.interpret",
+        "skill.religion.sufi-interpretations.love-tolerance.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · SEVGİ, HOŞGÖRÜ VE ÇOĞUL YORUM",
+      "prompt": "“Farklılıklar karşısında saygılı ve anlayışlı tutum geliştirme” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "tasavvuf"
+        },
+        {
+          "id": "b",
+          "label": "tarikat"
+        },
+        {
+          "id": "c",
+          "label": "hoşgörü"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "c"
+    },
+    {
+      "id": "exercise.religion.sufi-interpretations.love-tolerance.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada hoşgörü kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.sufi-interpretations.love-tolerance.interpret",
+        "skill.religion.sufi-interpretations.love-tolerance.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · SEVGİ, HOŞGÖRÜ VE ÇOĞUL YORUM",
+      "prompt": "Bir öğrenci hoşgörü konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.sufi-interpretations.love-tolerance.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Sevgi ve hoşgörünün tasavvufi yorumlardaki yerini yorumlar. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.sufi-interpretations.love-tolerance.interpret",
+        "skill.religion.sufi-interpretations.love-tolerance.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · SEVGİ, HOŞGÖRÜ VE ÇOĞUL YORUM",
+      "prompt": "Sevgi ve hoşgörünün tasavvufi yorumlardaki yerini yorumlar. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.sufi-interpretations.love-tolerance.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "Bir tasavvufi geleneği bütün İslam düşüncesiyle özdeşleştiren yaklaşımı ayırt eder. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.sufi-interpretations.love-tolerance.interpret",
+        "skill.religion.sufi-interpretations.love-tolerance.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · SEVGİ, HOŞGÖRÜ VE ÇOĞUL YORUM",
+      "prompt": "Bir açıklama, hoşgörü kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.sufi-interpretations.love-tolerance.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. hoşgörü, farklılıklar karşısında saygılı ve anlayışlı tutum geliştirme; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.sufi-interpretations.love-tolerance.interpret",
+        "skill.religion.sufi-interpretations.love-tolerance.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · SEVGİ, HOŞGÖRÜ VE ÇOĞUL YORUM",
+      "statement": "hoşgörü kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.sufi-interpretations.love-tolerance.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.sufi-interpretations.love-tolerance.interpret",
+        "skill.religion.sufi-interpretations.love-tolerance.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · SEVGİ, HOŞGÖRÜ VE ÇOĞUL YORUM",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "tasavvuf",
+          "right": "İslam düşüncesinde manevi ve ahlaki olgunlaşmayı öne çıkaran yorum ve yaşama geleneği"
+        },
+        {
+          "id": "p2",
+          "left": "tarikat",
+          "right": "tasavvufi eğitim ve uygulama çevresinde oluşmuş tarihsel yol ve topluluk"
+        },
+        {
+          "id": "p3",
+          "left": "hoşgörü",
+          "right": "farklılıklar karşısında saygılı ve anlayışlı tutum geliştirme"
+        }
+      ]
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.religion.sufi-interpretations.01",
+      "unitId": "tyt.religion.sufi-interpretations",
+      "kind": "lesson",
+      "title": "Tasavvuf ve Ahlaki Olgunlaşma",
+      "order": 1,
+      "lessonId": "lesson.religion.sufi-interpretations.sufism-ethics.001",
+      "prerequisiteIds": []
+    },
+    {
+      "id": "path.religion.sufi-interpretations.02",
+      "unitId": "tyt.religion.sufi-interpretations",
+      "kind": "lesson",
+      "title": "Tarikat, Mezhep ve Yorum",
+      "order": 2,
+      "lessonId": "lesson.religion.sufi-interpretations.concepts-orders.001",
+      "prerequisiteIds": [
+        "path.religion.sufi-interpretations.01"
+      ]
+    },
+    {
+      "id": "path.religion.sufi-interpretations.03",
+      "unitId": "tyt.religion.sufi-interpretations",
+      "kind": "lesson",
+      "title": "Sevgi, Hoşgörü ve Çoğul Yorum",
+      "order": 3,
+      "lessonId": "lesson.religion.sufi-interpretations.love-tolerance.001",
+      "prerequisiteIds": [
+        "path.religion.sufi-interpretations.02"
+      ]
+    }
+  ]
+}

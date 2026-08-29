@@ -1,0 +1,531 @@
+{
+  "concepts": [
+    {
+      "definition": "Akdeniz ile Kızıldeniz arasında kısa rota sağlanır",
+      "id": "concept.geography.international-routes.straits-canals",
+      "term": "Süveyş Kanalı kullanılır",
+      "topicId": "tyt.geography.international-routes.straits-canals"
+    },
+    {
+      "definition": "Stratejik önemi artar",
+      "id": "concept.geography.international-routes.trade-strategy",
+      "term": "Dar bir deniz geçidi yoğun trafiği toplar",
+      "topicId": "tyt.geography.international-routes.trade-strategy"
+    }
+  ],
+  "exercises": [
+    {
+      "correctOptionId": "opt-1",
+      "difficulty": 2,
+      "explanation": "Süveyş Kanalı kullanılır durumunda akdeniz ile kızıldeniz arasında kısa rota sağlanır. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.international-routes.straits-canals.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Akdeniz ile Kızıldeniz arasında kısa rota sağlanır"
+        },
+        {
+          "id": "opt-2",
+          "label": "Atlas ile Büyük Okyanus arasında geçiş sağlanır"
+        },
+        {
+          "id": "opt-3",
+          "label": "Karadeniz ile Marmara Denizi bağlanır"
+        },
+        {
+          "id": "opt-4",
+          "label": "Marmara Denizi ile Ege Denizi bağlanır"
+        }
+      ],
+      "prompt": "Süveyş Kanalı kullanılır. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.international-routes.straits-canals.interpret"
+      ],
+      "tag": "COĞRAFYA · BOĞAZLAR VE KANALLAR"
+    },
+    {
+      "correctOptionId": "opt-2",
+      "difficulty": 4,
+      "explanation": "Panama Kanalı kullanılır durumunda atlas ile büyük okyanus arasında geçiş sağlanır. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.international-routes.straits-canals.001.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Akdeniz ile Kızıldeniz arasında kısa rota sağlanır"
+        },
+        {
+          "id": "opt-2",
+          "label": "Atlas ile Büyük Okyanus arasında geçiş sağlanır"
+        },
+        {
+          "id": "opt-3",
+          "label": "Karadeniz ile Marmara Denizi bağlanır"
+        },
+        {
+          "id": "opt-4",
+          "label": "Marmara Denizi ile Ege Denizi bağlanır"
+        }
+      ],
+      "prompt": "Panama Kanalı kullanılır. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.international-routes.straits-canals.interpret"
+      ],
+      "tag": "COĞRAFYA · BOĞAZLAR VE KANALLAR"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 3,
+      "explanation": "İstanbul Boğazı geçilir ile karadeniz ile marmara denizi bağlanır arasında doğrudan bir coğrafi ilişki vardır.",
+      "id": "exercise.geography.international-routes.straits-canals.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.international-routes.straits-canals.interpret"
+      ],
+      "statement": "İstanbul Boğazı geçilir; bunun sonucunda karadeniz ile marmara denizi bağlanır.",
+      "tag": "COĞRAFYA · BOĞAZLAR VE KANALLAR"
+    },
+    {
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "Akdeniz ile Kızıldeniz arasında kısa rota sağlanır"
+        },
+        {
+          "id": "w-2",
+          "label": "Atlas ile Büyük Okyanus arasında geçiş sağlanır"
+        },
+        {
+          "id": "w-3",
+          "label": "Karadeniz ile Marmara Denizi bağlanır"
+        },
+        {
+          "id": "w-4",
+          "label": "Marmara Denizi ile Ege Denizi bağlanır"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "Çanakkale Boğazı geçilir koşulunun beklenen sonucu “Marmara Denizi ile Ege Denizi bağlanır” ilişkisidir.",
+      "hint": "Çanakkale Boğazı geçilir",
+      "id": "exercise.geography.international-routes.straits-canals.001.blank01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.international-routes.straits-canals.interpret"
+      ],
+      "solutionTokenIds": [
+        "w-4"
+      ],
+      "title": "Çanakkale Boğazı geçilir durumunda sonuç"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Her koşul, kendisinden beklenen özgün coğrafi sonuçla eşleştirilir; aynı sonuç iki kez kullanılmaz.",
+      "id": "exercise.geography.international-routes.straits-canals.001.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Süveyş Kanalı kullanılır",
+          "right": "Akdeniz ile Kızıldeniz arasında kısa rota sağlanır"
+        },
+        {
+          "id": "pair-2",
+          "left": "Panama Kanalı kullanılır",
+          "right": "Atlas ile Büyük Okyanus arasında geçiş sağlanır"
+        },
+        {
+          "id": "pair-3",
+          "left": "İstanbul Boğazı geçilir",
+          "right": "Karadeniz ile Marmara Denizi bağlanır"
+        },
+        {
+          "id": "pair-4",
+          "left": "Çanakkale Boğazı geçilir",
+          "right": "Marmara Denizi ile Ege Denizi bağlanır"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.international-routes.straits-canals.interpret"
+      ],
+      "subtitle": "Koşulu doğru coğrafi sonuçla birleştir.",
+      "tag": "COĞRAFYA · BOĞAZLAR VE KANALLAR",
+      "title": "İlişkiyi eşleştir"
+    },
+    {
+      "cards": [
+        {
+          "back": "Akdeniz ile Kızıldeniz arasında kısa rota sağlanır",
+          "front": "Süveyş Kanalı kullanılır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-1"
+        },
+        {
+          "back": "Atlas ile Büyük Okyanus arasında geçiş sağlanır",
+          "front": "Panama Kanalı kullanılır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-2"
+        },
+        {
+          "back": "Karadeniz ile Marmara Denizi bağlanır",
+          "front": "İstanbul Boğazı geçilir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-3"
+        },
+        {
+          "back": "Marmara Denizi ile Ege Denizi bağlanır",
+          "front": "Çanakkale Boğazı geçilir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-4"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Kartlar temel ilişkileri kısa tekrar için özetler; puanlanan skill coverage hesabına katılmaz.",
+      "id": "exercise.geography.international-routes.straits-canals.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.international-routes.straits-canals.interpret"
+      ],
+      "tag": "COĞRAFYA · BOĞAZLAR VE KANALLAR"
+    },
+    {
+      "correctOptionId": "opt-1",
+      "difficulty": 2,
+      "explanation": "Dar bir deniz geçidi yoğun trafiği toplar durumunda stratejik önemi artar. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.international-routes.trade-strategy.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Stratejik önemi artar"
+        },
+        {
+          "id": "opt-2",
+          "label": "Taşıma süresi ve yakıt maliyeti azalabilir"
+        },
+        {
+          "id": "opt-3",
+          "label": "Art bölgesi genişleyebilir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Transit ulaşım potansiyeli artar"
+        }
+      ],
+      "prompt": "Dar bir deniz geçidi yoğun trafiği toplar. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.international-routes.trade-strategy.interpret"
+      ],
+      "tag": "COĞRAFYA · TİCARET YOLLARI VE STRATEJİK KONUM"
+    },
+    {
+      "correctOptionId": "opt-2",
+      "difficulty": 4,
+      "explanation": "Kanal rota mesafesini kısaltır durumunda taşıma süresi ve yakıt maliyeti azalabilir. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.international-routes.trade-strategy.001.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Stratejik önemi artar"
+        },
+        {
+          "id": "opt-2",
+          "label": "Taşıma süresi ve yakıt maliyeti azalabilir"
+        },
+        {
+          "id": "opt-3",
+          "label": "Art bölgesi genişleyebilir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Transit ulaşım potansiyeli artar"
+        }
+      ],
+      "prompt": "Kanal rota mesafesini kısaltır. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.international-routes.trade-strategy.interpret"
+      ],
+      "tag": "COĞRAFYA · TİCARET YOLLARI VE STRATEJİK KONUM"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 3,
+      "explanation": "Limanın kara yolu ve demir yolu bağlantısı güçlenir ile art bölgesi genişleyebilir arasında doğrudan bir coğrafi ilişki vardır.",
+      "id": "exercise.geography.international-routes.trade-strategy.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.international-routes.trade-strategy.interpret"
+      ],
+      "statement": "Limanın kara yolu ve demir yolu bağlantısı güçlenir; bunun sonucunda art bölgesi genişleyebilir.",
+      "tag": "COĞRAFYA · TİCARET YOLLARI VE STRATEJİK KONUM"
+    },
+    {
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "Stratejik önemi artar"
+        },
+        {
+          "id": "w-2",
+          "label": "Taşıma süresi ve yakıt maliyeti azalabilir"
+        },
+        {
+          "id": "w-3",
+          "label": "Art bölgesi genişleyebilir"
+        },
+        {
+          "id": "w-4",
+          "label": "Transit ulaşım potansiyeli artar"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "Türkiye kıtalar arası geçişte bulunur koşulunun beklenen sonucu “Transit ulaşım potansiyeli artar” ilişkisidir.",
+      "hint": "Türkiye kıtalar arası geçişte bulunur",
+      "id": "exercise.geography.international-routes.trade-strategy.001.blank01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.international-routes.trade-strategy.interpret"
+      ],
+      "solutionTokenIds": [
+        "w-4"
+      ],
+      "title": "Türkiye kıtalar arası geçişte bulunur durumunda sonuç"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Her koşul, kendisinden beklenen özgün coğrafi sonuçla eşleştirilir; aynı sonuç iki kez kullanılmaz.",
+      "id": "exercise.geography.international-routes.trade-strategy.001.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Dar bir deniz geçidi yoğun trafiği toplar",
+          "right": "Stratejik önemi artar"
+        },
+        {
+          "id": "pair-2",
+          "left": "Kanal rota mesafesini kısaltır",
+          "right": "Taşıma süresi ve yakıt maliyeti azalabilir"
+        },
+        {
+          "id": "pair-3",
+          "left": "Limanın kara yolu ve demir yolu bağlantısı güçlenir",
+          "right": "Art bölgesi genişleyebilir"
+        },
+        {
+          "id": "pair-4",
+          "left": "Türkiye kıtalar arası geçişte bulunur",
+          "right": "Transit ulaşım potansiyeli artar"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.international-routes.trade-strategy.interpret"
+      ],
+      "subtitle": "Koşulu doğru coğrafi sonuçla birleştir.",
+      "tag": "COĞRAFYA · TİCARET YOLLARI VE STRATEJİK KONUM",
+      "title": "İlişkiyi eşleştir"
+    },
+    {
+      "cards": [
+        {
+          "back": "Stratejik önemi artar",
+          "front": "Dar bir deniz geçidi yoğun trafiği toplar",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-1"
+        },
+        {
+          "back": "Taşıma süresi ve yakıt maliyeti azalabilir",
+          "front": "Kanal rota mesafesini kısaltır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-2"
+        },
+        {
+          "back": "Art bölgesi genişleyebilir",
+          "front": "Limanın kara yolu ve demir yolu bağlantısı güçlenir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-3"
+        },
+        {
+          "back": "Transit ulaşım potansiyeli artar",
+          "front": "Türkiye kıtalar arası geçişte bulunur",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-4"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Kartlar temel ilişkileri kısa tekrar için özetler; puanlanan skill coverage hesabına katılmaz.",
+      "id": "exercise.geography.international-routes.trade-strategy.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.international-routes.trade-strategy.interpret"
+      ],
+      "tag": "COĞRAFYA · TİCARET YOLLARI VE STRATEJİK KONUM"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.geography.international-routes.straits-canals.001.mcq01",
+        "exercise.geography.international-routes.straits-canals.001.mcq02",
+        "exercise.geography.international-routes.straits-canals.001.tf01",
+        "exercise.geography.international-routes.straits-canals.001.blank01",
+        "exercise.geography.international-routes.straits-canals.001.match01",
+        "exercise.geography.international-routes.straits-canals.001.card01"
+      ],
+      "id": "lesson.geography.international-routes.straits-canals.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel boğaz ve kanalların bağladığı denizleri ve sağladığı rota avantajını ayırt eder.",
+      "title": "Boğazlar ve Kanallar",
+      "topicId": "tyt.geography.international-routes.straits-canals"
+    },
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.geography.international-routes.trade-strategy.001.mcq01",
+        "exercise.geography.international-routes.trade-strategy.001.mcq02",
+        "exercise.geography.international-routes.trade-strategy.001.tf01",
+        "exercise.geography.international-routes.trade-strategy.001.blank01",
+        "exercise.geography.international-routes.trade-strategy.001.match01",
+        "exercise.geography.international-routes.trade-strategy.001.card01"
+      ],
+      "id": "lesson.geography.international-routes.trade-strategy.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Ulaşım koridorlarının ekonomik ve stratejik önemini konum özelliklerinden çıkarır.",
+      "title": "Ticaret Yolları ve Stratejik Konum",
+      "topicId": "tyt.geography.international-routes.trade-strategy"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.geography.international-routes.01",
+      "kind": "lesson",
+      "lessonId": "lesson.geography.international-routes.straits-canals.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.geography.regions.02"
+      ],
+      "title": "Boğazlar ve Kanallar",
+      "unitId": "tyt.geography.international-routes"
+    },
+    {
+      "id": "path.geography.international-routes.02",
+      "kind": "practice",
+      "lessonId": "lesson.geography.international-routes.trade-strategy.001",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.geography.international-routes.01"
+      ],
+      "title": "Ticaret Yolları ve Stratejik Konum Uygulaması",
+      "unitId": "tyt.geography.international-routes"
+    }
+  ],
+  "skills": [
+    {
+      "description": "Temel boğaz ve kanalların bağladığı denizleri ve sağladığı rota avantajını ayırt eder.",
+      "id": "skill.geography.international-routes.straits-canals.interpret",
+      "title": "Temel boğaz ve kanalların bağladığı denizleri ve sağladığı rota avantajını ayırt eder.",
+      "topicId": "tyt.geography.international-routes.straits-canals"
+    },
+    {
+      "description": "Ulaşım koridorlarının ekonomik ve stratejik önemini konum özelliklerinden çıkarır.",
+      "id": "skill.geography.international-routes.trade-strategy.interpret",
+      "title": "Ulaşım koridorlarının ekonomik ve stratejik önemini konum özelliklerinden çıkarır.",
+      "topicId": "tyt.geography.international-routes.trade-strategy"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.geography.international-routes.straits-canals"
+      ],
+      "id": "tyt.geography.international-routes.straits-canals",
+      "skillIds": [
+        "skill.geography.international-routes.straits-canals.interpret"
+      ],
+      "title": "Boğazlar ve Kanallar",
+      "unitId": "tyt.geography.international-routes"
+    },
+    {
+      "conceptIds": [
+        "concept.geography.international-routes.trade-strategy"
+      ],
+      "id": "tyt.geography.international-routes.trade-strategy",
+      "skillIds": [
+        "skill.geography.international-routes.trade-strategy.interpret"
+      ],
+      "title": "Ticaret Yolları ve Stratejik Konum",
+      "unitId": "tyt.geography.international-routes"
+    }
+  ],
+  "unitId": "tyt.geography.international-routes"
+}

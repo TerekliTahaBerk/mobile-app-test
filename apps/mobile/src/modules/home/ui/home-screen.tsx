@@ -4,8 +4,10 @@ import type {
   ContinueCard,
   DailyPlanCard,
   HomeViewModel,
-  SubjectTile,
+  LeagueCard,
+  PersonalizedCard,
 } from '@/modules/home/model/home-view-model';
+import type { DailyPlanLine } from '@/modules/learning/model/daily-plan-card';
 import { AppText } from '@/shared/ui/components/app-text';
 import { Card } from '@/shared/ui/components/card';
 import { HudChip } from '@/shared/ui/components/hud-chip';
@@ -13,44 +15,34 @@ import {
   BookmarkIcon,
   ChevronIcon,
   LeagueIcon,
-  SubjectIcon,
+  RepeatIcon,
+  StarIcon,
+  StreakIcon,
+  TargetIcon,
 } from '@/shared/ui/components/icons';
 import { ProgressBar } from '@/shared/ui/components/progress-bar';
 import { Screen } from '@/shared/ui/components/screen';
-import { SegmentedToggle } from '@/shared/ui/components/segmented-toggle';
 import { BottomTabBar, type AppTabKey } from '@/shared/ui/navigation/bottom-tab-bar';
 import { theme } from '@/shared/ui/theme/tokens';
 
-export type ExamFilter = 'ayt' | 'tyt';
-
 type HomeScreenProps = {
-  exam: ExamFilter;
-  onChangeExam: (exam: ExamFilter) => void;
   onContinue: (card: ContinueCard) => void;
   onOpenLeague: () => void;
-  onOpenSubject: (subjectId: string) => void;
   onSelectTab: (tab: AppTabKey) => void;
   onStartDailyPlan: () => void;
-  showExamToggle?: boolean | undefined;
   viewModel: HomeViewModel;
 };
 
-/**
- * Ana Sayfa: who the learner is, what they were in the middle of, and every
- * subject they can open. The continue card is the only primary action —
- * everything else is a way into the same loop from a different angle.
- */
+/** Ana Sayfa answers one question: “Şimdi ne yapmalıyım?” */
 export function HomeScreen({
-  exam,
-  onChangeExam,
   onContinue,
   onOpenLeague,
-  onOpenSubject,
   onSelectTab,
   onStartDailyPlan,
-  showExamToggle = true,
   viewModel,
 }: HomeScreenProps) {
+  const planLocked = viewModel.continueCard?.action.kind === 'resume';
+
   return (
     <Screen includeBottomInset={false} testID="home-screen">
       <ScrollView contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
@@ -87,66 +79,44 @@ export function HomeScreen({
           </View>
         </Card>
 
-        {viewModel.dailyPlan === null ? (
-          viewModel.continueCard === null ? null : (
-            <ContinueBanner card={viewModel.continueCard} onPress={onContinue} />
-          )
-        ) : (
-          <DailyPlanBanner card={viewModel.dailyPlan} onPress={onStartDailyPlan} />
+        {viewModel.continueCard === null ? null : (
+          <ContinueBanner card={viewModel.continueCard} onPress={onContinue} />
         )}
 
-        {showExamToggle ? <View style={styles.examToggle}>
-          <SegmentedToggle
-            accessibilityLabel="Sınav seçimi"
-            onChange={onChangeExam}
-            options={[
-              { label: 'TYT', value: 'tyt' },
-              { label: 'AYT', value: 'ayt' },
-            ]}
-            value={exam}
-          />
-        </View> : null}
-
-        <AppText accessibilityRole="header" style={styles.sectionTitle} variant="headingM">
-          Dersler
-        </AppText>
-
-        {viewModel.subjects.length === 0 ? (
-          <Card style={styles.emptySubjects}>
-            <AppText color="secondary" variant="prose">
-              Bu sınav için henüz ders eklenmedi.
-            </AppText>
-          </Card>
-        ) : (
-          <View style={styles.subjectGrid}>
-            {viewModel.subjects.map((subject) => (
-              <SubjectCard key={subject.id} onPress={onOpenSubject} subject={subject} />
-            ))}
+        {viewModel.dailyPlan === null ? null : (
+          <View style={styles.planSection}>
+            <View style={styles.sectionHeading}>
+              <View>
+                <AppText accessibilityRole="header" variant="headingM">
+                  Bugünkü Plan
+                </AppText>
+                <AppText color="secondary" variant="proseS">
+                  Karar verme; sıradaki adımın hazır.
+                </AppText>
+              </View>
+              <AppText color="accentStrong" variant="labelS">
+                {compactPlanLines(viewModel.dailyPlan.lines).length} adım
+              </AppText>
+            </View>
+            <DailyPlanBanner
+              card={viewModel.dailyPlan}
+              disabled={planLocked}
+              onPress={onStartDailyPlan}
+            />
           </View>
         )}
 
-        {viewModel.leagueRank === null ? null : (
-          <Pressable
-            accessibilityLabel={`${viewModel.leagueRank.name}, ${viewModel.leagueRank.rank}. sıra`}
-            accessibilityRole="button"
-            onPress={onOpenLeague}
-            style={styles.leagueRow}
-            testID="home-league-row"
-          >
-            <View style={styles.leagueIcon}>
-              <LeagueIcon color={theme.colors.action.primary} size={20} />
-            </View>
-            <View style={styles.leagueBody}>
-              <AppText variant="bodyM">
-                {viewModel.leagueRank.name} · #{viewModel.leagueRank.rank}
-              </AppText>
-              <AppText color="secondary" style={styles.leagueDetail} variant="proseS">
-                {viewModel.leagueRank.closesIn}
-              </AppText>
-            </View>
-            <ChevronIcon color={theme.colors.text.muted} />
-          </Pressable>
+        <DailyProgress progress={viewModel.dailyProgress} />
+
+        {viewModel.personalizedCard === null ? null : (
+          <PersonalizedBanner
+            card={viewModel.personalizedCard}
+            disabled={planLocked}
+            onPress={onStartDailyPlan}
+          />
         )}
+
+        <LeagueBanner card={viewModel.leagueCard} onPress={onOpenLeague} />
       </ScrollView>
 
       <BottomTabBar activeTab="anasayfa" onSelectTab={onSelectTab} />
@@ -154,48 +124,92 @@ export function HomeScreen({
   );
 }
 
+function LeagueBanner({ card, onPress }: { card: LeagueCard; onPress: () => void }) {
+  const standing = card.kind === 'standing' ? `, ${card.rank}. sıra` : '';
+
+  return (
+    <View style={styles.leagueSection}>
+      <View style={styles.sectionHeading}>
+        <AppText accessibilityRole="header" variant="headingM">
+          Lig
+        </AppText>
+        <AppText color="secondary" variant="proseS">
+          Haftalık XP sıralaması
+        </AppText>
+      </View>
+      <Pressable
+        accessibilityLabel={`${card.title}${standing}. ${card.detail}`}
+        accessibilityRole="button"
+        onPress={onPress}
+        style={styles.leagueRow}
+        testID="home-league-row"
+      >
+        <View style={styles.leagueIcon}>
+          <LeagueIcon color={theme.colors.action.primary} size={22} />
+        </View>
+        <View style={styles.leagueBody}>
+          <AppText variant="bodyM">
+            {card.title}
+            {card.kind === 'standing' ? ` · #${card.rank}` : ''}
+          </AppText>
+          <AppText color="secondary" style={styles.leagueDetail} variant="proseS">
+            {card.detail}
+          </AppText>
+        </View>
+        <ChevronIcon color={theme.colors.text.muted} />
+      </Pressable>
+    </View>
+  );
+}
+
 function DailyPlanBanner({
   card,
+  disabled,
   onPress,
 }: {
   card: DailyPlanCard;
+  disabled: boolean;
   onPress: () => void;
 }) {
+  const lines = compactPlanLines(card.lines);
+
   return (
     <Pressable
       accessibilityLabel={`${card.headline}, ${card.detail}`}
       accessibilityRole="button"
+      accessibilityState={{ disabled }}
+      disabled={disabled}
       onPress={onPress}
-      style={styles.planCard}
+      style={[styles.planCard, disabled ? styles.disabledCard : null]}
       testID="home-daily-plan"
     >
       <View style={styles.planHeader}>
+        <View style={styles.planMark}>
+          <TargetIcon color={theme.colors.text.inverse} size={24} />
+        </View>
         <View style={styles.planTitle}>
-          <AppText color="onDarkFaint" variant="eyebrow">
-            BUGÜNÜN PLANI
-          </AppText>
           <AppText color="inverse" variant="headingS">
             {card.headline}
           </AppText>
-          <AppText color="onDark" style={styles.continueDetail} variant="proseS">
+          <AppText color="onDark" variant="proseS">
             {card.detail}
           </AppText>
         </View>
-        <View style={styles.continueAction}>
-          <AppText color="inverse" variant="labelM">
-            {card.actionLabel}
+        <View style={styles.planAction}>
+          <AppText color="accentStrong" variant="labelM">
+            {disabled ? 'Önce devam et' : card.actionLabel}
           </AppText>
         </View>
       </View>
       <View style={styles.planLines}>
-        {card.lines.map((line) => (
+        {lines.map((line) => (
           <View key={line.kind} style={styles.planLine}>
             <View style={styles.planCount}>
-              <AppText color="inverse" variant="labelS">
+              <AppText color="accentStrong" variant="labelS">
                 {line.count}
               </AppText>
             </View>
-            <AppText color="onDark" variant="proseS">
+            <AppText color="onDark" style={styles.planLineLabel} variant="proseS">
               {line.label}
             </AppText>
           </View>
@@ -205,13 +219,67 @@ function DailyPlanBanner({
   );
 }
 
-function ContinueBanner({
+function DailyProgress({ progress }: { progress: HomeViewModel['dailyProgress'] }) {
+  const value = progress.goal === 0 ? 0 : Math.min(progress.completed / progress.goal, 1);
+
+  return (
+    <Card style={styles.progressCard} testID="home-daily-progress" variant="soft">
+      <View style={styles.progressHeading}>
+        <AppText variant="labelM">Bugünkü ilerleme</AppText>
+        <AppText color="accentStrong" variant="mono">
+          {progress.completed} / {progress.goal} çalışma
+        </AppText>
+      </View>
+      <ProgressBar accessibilityLabel="Bugünkü çalışma hedefi" height={8} value={value} />
+    </Card>
+  );
+}
+
+function PersonalizedBanner({
   card,
+  disabled,
   onPress,
 }: {
-  card: ContinueCard;
-  onPress: (card: ContinueCard) => void;
+  card: PersonalizedCard;
+  disabled: boolean;
+  onPress: () => void;
 }) {
+  return (
+    <Pressable
+      accessibilityLabel={`${card.title}. ${card.detail}`}
+      accessibilityRole="button"
+      accessibilityState={{ disabled }}
+      disabled={disabled}
+      onPress={onPress}
+      style={[styles.personalizedCard, disabled ? styles.disabledCard : null]}
+      testID="home-personalized-card"
+    >
+      <View style={styles.personalizedIcon}>
+        {card.kind === 'review' ? (
+          <RepeatIcon />
+        ) : card.kind === 'streak' ? (
+          <StreakIcon size={22} />
+        ) : (
+          <StarIcon color={theme.colors.action.primary} size={22} />
+        )}
+      </View>
+      <View style={styles.personalizedBody}>
+        <AppText color="muted" variant="eyebrow">
+          {card.eyebrow}
+        </AppText>
+        <AppText variant="headingXS">{card.title}</AppText>
+        <AppText color="secondary" variant="proseS">
+          {card.detail}
+        </AppText>
+      </View>
+      <AppText color="accent" variant="labelS">
+        {disabled ? 'Bekliyor' : card.actionLabel}
+      </AppText>
+    </Pressable>
+  );
+}
+
+function ContinueBanner({ card, onPress }: { card: ContinueCard; onPress: (card: ContinueCard) => void }) {
   return (
     <Pressable
       accessibilityLabel={`Kaldığın yerden devam et: ${card.subjectTitle}`}
@@ -224,286 +292,70 @@ function ContinueBanner({
         <BookmarkIcon />
       </View>
       <View style={styles.continueBody}>
-        <AppText color="onDarkFaint" style={styles.continueEyebrow} variant="eyebrow">
-          {card.eyebrow}
-        </AppText>
-        <AppText color="inverse" variant="headingXS">
-          {card.subjectTitle}
-        </AppText>
-        <AppText color="onDark" style={styles.continueDetail} variant="proseS">
-          {card.detail}
-        </AppText>
+        <AppText color="muted" variant="eyebrow">{card.eyebrow}</AppText>
+        <AppText variant="headingXS">{card.subjectTitle}</AppText>
+        <AppText color="secondary" variant="proseS">{card.detail}</AppText>
       </View>
       <View style={styles.continueAction}>
-        <AppText color="inverse" variant="labelM">
-          {card.actionLabel}
-        </AppText>
+        <AppText color="inverse" variant="labelM">{card.actionLabel}</AppText>
       </View>
     </Pressable>
   );
 }
 
-function SubjectCard({
-  onPress,
-  subject,
-}: {
-  onPress: (subjectId: string) => void;
-  subject: SubjectTile;
-}) {
-  const tone = subject.subjectTheme;
-  const isAvailable = subject.level !== null;
+function compactPlanLines(lines: readonly DailyPlanLine[]): readonly DailyPlanLine[] {
+  if (lines.length <= 3) return lines;
 
-  return (
-    <Pressable
-      accessibilityLabel={
-        isAvailable ? `${subject.title}, seviye ${subject.level}` : `${subject.title}, yakında`
-      }
-      accessibilityRole="button"
-      accessibilityState={{ disabled: !isAvailable }}
-      disabled={!isAvailable}
-      onPress={() => onPress(subject.id)}
-      style={[
-        styles.subjectCard,
-        { backgroundColor: tone.soft, borderColor: tone.border },
-        isAvailable ? null : styles.subjectCardPending,
-      ]}
-      testID={`subject-${subject.id}`}
-    >
-      <View style={styles.subjectIcon}>
-        <SubjectIcon color={tone.primary} name={tone.icon} />
-      </View>
-      <AppText style={[styles.subjectTitle, { color: tone.deep }]} variant="headingXS">
-        {subject.title}
-      </AppText>
-      {isAvailable ? (
-        <View style={styles.subjectMeter}>
-          <View style={styles.subjectMeterTrack}>
-            <ProgressBar
-              accessibilityLabel={`${subject.title} ilerlemesi`}
-              fillColor={tone.primary}
-              height={6}
-              trackColor={theme.colors.surface.default}
-              value={subject.progress}
-            />
-          </View>
-          <AppText style={{ color: tone.ink }} variant="mono">
-            Lv {subject.level}
-          </AppText>
-        </View>
-      ) : (
-        <AppText style={[styles.subjectPending, { color: tone.ink }]} variant="proseS">
-          Yakında
-        </AppText>
-      )}
-    </Pressable>
-  );
+  const first = lines.slice(0, 2);
+  const rest = lines.slice(2);
+  return [
+    ...first,
+    {
+      count: rest.reduce((sum, line) => sum + line.count, 0),
+      kind: 'newMaterial',
+      label: 'yeni ve pekiştirme sorusu',
+    },
+  ];
 }
 
-/** Turkish thousands separator, as the design writes XP figures. */
 function formatXp(value: number): string {
   return value.toLocaleString('tr-TR');
 }
 
 const styles = StyleSheet.create({
-  avatar: {
-    alignItems: 'center',
-    backgroundColor: theme.colors.surface.soft,
-    borderColor: theme.colors.action.primary,
-    borderRadius: theme.radii.pill,
-    borderWidth: 2,
-    height: 44,
-    justifyContent: 'center',
-    width: 44,
-  },
-  continueAction: {
-    backgroundColor: theme.colors.action.primary,
-    borderRadius: theme.radii.pill,
-    paddingHorizontal: theme.spacing.md + 5,
-    paddingVertical: theme.spacing.md + 2,
-  },
-  continueBody: {
-    flex: 1,
-    gap: 3,
-  },
-  continueCard: {
-    alignItems: 'center',
-    backgroundColor: theme.colors.action.primaryDepth,
-    borderRadius: theme.radii.node,
-    flexDirection: 'row',
-    gap: theme.spacing.lg,
-    marginHorizontal: theme.spacing.xl,
-    marginTop: theme.spacing.lg,
-    padding: theme.spacing.md + 5,
-  },
-  continueDetail: {
-    marginTop: 1,
-  },
-  planCard: {
-    backgroundColor: theme.colors.action.primaryDepth,
-    borderRadius: theme.radii.node,
-    gap: theme.spacing.md,
-    marginHorizontal: theme.spacing.xl,
-    marginTop: theme.spacing.lg,
-    padding: theme.spacing.md + 5,
-  },
-  planCount: {
-    alignItems: 'center',
-    backgroundColor: theme.colors.action.primary,
-    borderRadius: theme.radii.pill,
-    justifyContent: 'center',
-    minWidth: 26,
-    paddingHorizontal: theme.spacing.sm,
-    paddingVertical: 3,
-  },
-  planHeader: {
-    alignItems: 'center',
-    flexDirection: 'row',
-    gap: theme.spacing.lg,
-  },
-  planLine: {
-    alignItems: 'center',
-    flexDirection: 'row',
-    gap: theme.spacing.sm,
-  },
-  planLines: {
-    borderTopColor: theme.colors.action.primary,
-    borderTopWidth: 1,
-    gap: theme.spacing.sm,
-    paddingTop: theme.spacing.md,
-  },
-  planTitle: {
-    flex: 1,
-    gap: 3,
-  },
-  continueEyebrow: {
-    textTransform: 'uppercase',
-  },
-  continueIcon: {
-    alignItems: 'center',
-    backgroundColor: theme.colors.surface.onDark,
-    borderRadius: theme.radii.medium,
-    height: 52,
-    justifyContent: 'center',
-    width: 52,
-  },
-  emptySubjects: {
-    marginHorizontal: theme.spacing.xl,
-    marginTop: theme.spacing.lg,
-  },
-  examToggle: {
-    marginHorizontal: theme.spacing.xl,
-    marginTop: theme.spacing.xxl,
-  },
-  greeting: {
-    flex: 1,
-  },
-  header: {
-    alignItems: 'center',
-    flexDirection: 'row',
-    gap: theme.spacing.sm + 2,
-    paddingHorizontal: theme.spacing.xl,
-    paddingTop: theme.spacing.md,
-  },
-  leagueBody: {
-    flex: 1,
-  },
-  leagueDetail: {
-    marginTop: 1,
-  },
-  leagueIcon: {
-    alignItems: 'center',
-    backgroundColor: theme.colors.surface.soft,
-    borderRadius: theme.radii.small,
-    height: 38,
-    justifyContent: 'center',
-    width: 38,
-  },
-  leagueRow: {
-    alignItems: 'center',
-    backgroundColor: theme.colors.surface.default,
-    borderColor: theme.colors.border.subtle,
-    borderRadius: theme.radii.large + 2,
-    borderWidth: 1,
-    flexDirection: 'row',
-    gap: theme.spacing.md + 1,
-    marginHorizontal: theme.spacing.xl,
-    marginTop: theme.spacing.xl,
-    paddingHorizontal: theme.spacing.lg + 2,
-    paddingVertical: theme.spacing.lg,
-  },
-  levelBadge: {
-    alignItems: 'center',
-    backgroundColor: theme.colors.action.primaryDepth,
-    borderRadius: theme.radii.small - 1,
-    height: 34,
-    justifyContent: 'center',
-    width: 34,
-  },
-  levelBadgeText: {
-    color: theme.colors.progress.gain,
-  },
-  levelBody: {
-    flex: 1,
-    gap: 5,
-  },
-  levelCard: {
-    alignItems: 'center',
-    flexDirection: 'row',
-    gap: theme.spacing.md + 1,
-    marginHorizontal: theme.spacing.xl,
-    marginTop: theme.spacing.lg,
-  },
-  levelRow: {
-    alignItems: 'baseline',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-  },
-  scroll: {
-    paddingBottom: theme.spacing.xxl,
-  },
-  sectionTitle: {
-    marginHorizontal: theme.spacing.xl,
-    marginTop: theme.spacing.xl,
-  },
-  subjectCard: {
-    borderRadius: theme.radii.xlarge,
-    borderWidth: 2,
-    flexBasis: '48%',
-    flexGrow: 1,
-    paddingHorizontal: theme.spacing.lg,
-    paddingVertical: theme.spacing.md + 5,
-  },
-  subjectCardPending: {
-    opacity: 0.72,
-  },
-  subjectGrid: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: theme.spacing.md + 1,
-    marginHorizontal: theme.spacing.xl,
-    marginTop: theme.spacing.lg,
-  },
-  subjectIcon: {
-    alignItems: 'center',
-    backgroundColor: theme.colors.surface.default,
-    borderRadius: theme.radii.medium,
-    height: 52,
-    justifyContent: 'center',
-    width: 52,
-  },
-  subjectMeter: {
-    alignItems: 'center',
-    flexDirection: 'row',
-    gap: 7,
-    marginTop: theme.spacing.sm,
-  },
-  subjectMeterTrack: {
-    flex: 1,
-  },
-  subjectPending: {
-    marginTop: theme.spacing.sm,
-  },
-  subjectTitle: {
-    marginTop: theme.spacing.md + 1,
-  },
+  avatar: { alignItems: 'center', backgroundColor: theme.colors.surface.soft, borderColor: theme.colors.action.primary, borderRadius: theme.radii.pill, borderWidth: 2, height: 44, justifyContent: 'center', width: 44 },
+  continueAction: { backgroundColor: theme.colors.action.primary, borderRadius: theme.radii.pill, paddingHorizontal: theme.spacing.md + 5, paddingVertical: theme.spacing.md + 2 },
+  continueBody: { flex: 1, gap: 3 },
+  continueCard: { alignItems: 'center', backgroundColor: theme.colors.surface.default, borderBottomWidth: theme.depth.cardBorder, borderColor: theme.colors.border.subtle, borderRadius: theme.radii.node, flexDirection: 'row', gap: theme.spacing.lg, marginHorizontal: theme.spacing.xl, marginTop: theme.spacing.lg, padding: theme.spacing.md + 5 },
+  continueIcon: { alignItems: 'center', backgroundColor: theme.colors.action.primaryDepth, borderRadius: theme.radii.medium, height: 52, justifyContent: 'center', width: 52 },
+  disabledCard: { opacity: 0.58 },
+  greeting: { flex: 1 },
+  header: { alignItems: 'center', flexDirection: 'row', gap: theme.spacing.sm + 2, paddingHorizontal: theme.spacing.xl, paddingTop: theme.spacing.md },
+  leagueBody: { flex: 1 },
+  leagueDetail: { marginTop: 1 },
+  leagueIcon: { alignItems: 'center', backgroundColor: theme.colors.surface.soft, borderRadius: theme.radii.small, height: 38, justifyContent: 'center', width: 38 },
+  leagueRow: { alignItems: 'center', backgroundColor: theme.colors.surface.default, borderColor: theme.colors.border.subtle, borderRadius: theme.radii.large + 2, borderWidth: 1, flexDirection: 'row', gap: theme.spacing.md + 1, paddingHorizontal: theme.spacing.lg + 2, paddingVertical: theme.spacing.lg },
+  leagueSection: { gap: theme.spacing.md, marginHorizontal: theme.spacing.xl, marginTop: theme.spacing.xxl },
+  levelBadge: { alignItems: 'center', backgroundColor: theme.colors.action.primaryDepth, borderRadius: theme.radii.small - 1, height: 34, justifyContent: 'center', width: 34 },
+  levelBadgeText: { color: theme.colors.progress.gain },
+  levelBody: { flex: 1, gap: 5 },
+  levelCard: { alignItems: 'center', flexDirection: 'row', gap: theme.spacing.md + 1, marginHorizontal: theme.spacing.xl, marginTop: theme.spacing.lg },
+  levelRow: { alignItems: 'baseline', flexDirection: 'row', justifyContent: 'space-between' },
+  personalizedBody: { flex: 1, gap: 2 },
+  personalizedCard: { alignItems: 'center', backgroundColor: theme.colors.surface.default, borderColor: theme.colors.border.subtle, borderRadius: theme.radii.xlarge, borderWidth: 1, flexDirection: 'row', gap: theme.spacing.md, marginHorizontal: theme.spacing.xl, marginTop: theme.spacing.lg, padding: theme.spacing.lg },
+  personalizedIcon: { alignItems: 'center', backgroundColor: theme.colors.surface.soft, borderRadius: theme.radii.medium, height: 44, justifyContent: 'center', width: 44 },
+  planAction: { backgroundColor: theme.colors.surface.default, borderRadius: theme.radii.pill, paddingHorizontal: theme.spacing.md, paddingVertical: theme.spacing.sm },
+  planCard: { backgroundColor: theme.colors.action.primaryDepth, borderRadius: theme.radii.node, gap: theme.spacing.lg, padding: theme.spacing.lg },
+  planCount: { alignItems: 'center', backgroundColor: theme.colors.surface.default, borderRadius: theme.radii.pill, justifyContent: 'center', minWidth: 30, paddingHorizontal: theme.spacing.sm, paddingVertical: 4 },
+  planHeader: { alignItems: 'center', flexDirection: 'row', gap: theme.spacing.md },
+  planLine: { alignItems: 'center', backgroundColor: theme.colors.surface.onDark, borderRadius: theme.radii.medium, flex: 1, gap: theme.spacing.sm, minHeight: 70, padding: theme.spacing.md },
+  planLineLabel: { textAlign: 'center' },
+  planLines: { flexDirection: 'row', gap: theme.spacing.sm },
+  planMark: { alignItems: 'center', backgroundColor: theme.colors.action.primary, borderRadius: theme.radii.medium, height: 48, justifyContent: 'center', width: 48 },
+  planSection: { gap: theme.spacing.md, marginHorizontal: theme.spacing.xl, marginTop: theme.spacing.xxl },
+  planTitle: { flex: 1, gap: 2 },
+  progressCard: { gap: theme.spacing.md, marginHorizontal: theme.spacing.xl, marginTop: theme.spacing.lg },
+  progressHeading: { alignItems: 'center', flexDirection: 'row', justifyContent: 'space-between' },
+  scroll: { paddingBottom: theme.spacing.xxl },
+  sectionHeading: { alignItems: 'center', flexDirection: 'row', justifyContent: 'space-between' },
 });

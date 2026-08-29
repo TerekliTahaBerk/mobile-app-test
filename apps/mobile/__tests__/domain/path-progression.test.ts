@@ -32,7 +32,7 @@ describe('unit path progression', () => {
     const path = buildUnitPath(
       FIRST_TURKISH_STATES_UNIT_ID,
       nodes,
-      completed('path.history.time.03'),
+      completed('path.history.medieval-world.02'),
     );
 
     expect(path.steps.filter((step) => step.status === 'current')).toHaveLength(1);
@@ -45,7 +45,7 @@ describe('unit path progression', () => {
       FIRST_TURKISH_STATES_UNIT_ID,
       nodes,
       completed(
-        'path.history.time.03',
+        'path.history.medieval-world.02',
         'path.history.first-turkish-states.01',
         'path.history.first-turkish-states.02',
       ),
@@ -62,7 +62,7 @@ describe('unit path progression', () => {
     const path = buildUnitPath(
       FIRST_TURKISH_STATES_UNIT_ID,
       nodes,
-      completed('path.history.time.03', ...nodes.map((node) => node.id)),
+      completed('path.history.medieval-world.02', ...nodes.map((node) => node.id)),
     );
 
     expect(path.completion).toBe(1);
@@ -91,6 +91,6 @@ describe('unit path progression', () => {
 
     expect(paths[0]?.completion).toBe(1);
     expect(paths[1]?.steps[0]?.status).toBe('current');
-    expect(nextOpenStep(paths)?.node.id).toBe('path.history.first-turkish-states.01');
+    expect(nextOpenStep(paths)?.node.id).toBe('path.history.first-human-periods.01');
   });
 });

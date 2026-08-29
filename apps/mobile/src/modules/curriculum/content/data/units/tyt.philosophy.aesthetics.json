@@ -1,0 +1,848 @@
+{
+  "unitId": "tyt.philosophy.aesthetics",
+  "topics": [
+    {
+      "id": "tyt.philosophy.aesthetics.aesthetic-structure",
+      "unitId": "tyt.philosophy.aesthetics",
+      "title": "Estetik Özne, Nesne ve Yargı",
+      "skillIds": [
+        "skill.philosophy.aesthetics.aesthetic-structure.subject-object",
+        "skill.philosophy.aesthetics.aesthetic-structure.judgment"
+      ],
+      "conceptIds": [
+        "concept.philosophy.aesthetics.aesthetic-structure.estetik-ozne-ve-nesne",
+        "concept.philosophy.aesthetics.aesthetic-structure.estetik-yargi"
+      ]
+    },
+    {
+      "id": "tyt.philosophy.aesthetics.beauty-art",
+      "unitId": "tyt.philosophy.aesthetics",
+      "title": "Güzel, Hoş ve Sanatın İşlevi",
+      "skillIds": [
+        "skill.philosophy.aesthetics.beauty-art.beautiful-pleasant",
+        "skill.philosophy.aesthetics.beauty-art.function"
+      ],
+      "conceptIds": [
+        "concept.philosophy.aesthetics.beauty-art.guzel-ve-hos",
+        "concept.philosophy.aesthetics.beauty-art.sanatin-islevi"
+      ]
+    },
+    {
+      "id": "tyt.philosophy.aesthetics.art-theories",
+      "unitId": "tyt.philosophy.aesthetics",
+      "title": "Sanat Anlayışları ve Sanat Eleştirisi",
+      "skillIds": [
+        "skill.philosophy.aesthetics.art-theories.imitation-creation-play",
+        "skill.philosophy.aesthetics.art-theories.philosophy-criticism"
+      ],
+      "conceptIds": [
+        "concept.philosophy.aesthetics.art-theories.sanat-anlayislari",
+        "concept.philosophy.aesthetics.art-theories.sanat-felsefesi-ve-elestiri"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "skill.philosophy.aesthetics.aesthetic-structure.subject-object",
+      "title": "Estetik özne ile nesneyi ayırt eder",
+      "description": "Estetik deneyde değerlendiren kişi ile değerlendirilen eseri ayırt eder.",
+      "topicId": "tyt.philosophy.aesthetics.aesthetic-structure"
+    },
+    {
+      "id": "skill.philosophy.aesthetics.aesthetic-structure.judgment",
+      "title": "Estetik yargının niteliğini yorumlar",
+      "description": "Estetik yargıların beğeni içermesine karşın gerekçelendirme ve paylaşılabilirlik iddiası taşıyabileceğini yorumlar.",
+      "topicId": "tyt.philosophy.aesthetics.aesthetic-structure"
+    },
+    {
+      "id": "skill.philosophy.aesthetics.beauty-art.beautiful-pleasant",
+      "title": "Güzel ile hoşu ayırt eder",
+      "description": "Duyusal haz veren hoş ile estetik değerlendirmeye konu olan güzeli ayırt eder.",
+      "topicId": "tyt.philosophy.aesthetics.beauty-art"
+    },
+    {
+      "id": "skill.philosophy.aesthetics.beauty-art.function",
+      "title": "Sanatın işlevini metinden çıkarır",
+      "description": "Sanatın ifade, düşündürme, dönüştürme veya estetik deney sağlama işlevlerini yorumlar.",
+      "topicId": "tyt.philosophy.aesthetics.beauty-art"
+    },
+    {
+      "id": "skill.philosophy.aesthetics.art-theories.imitation-creation-play",
+      "title": "Taklit, yaratma ve oyun anlayışlarını ayırt eder",
+      "description": "Sanatı gerçekliği yansıtma, özgün bir dünya kurma veya özgür oyun etkinliği olarak gören yaklaşımları ayırt eder.",
+      "topicId": "tyt.philosophy.aesthetics.art-theories"
+    },
+    {
+      "id": "skill.philosophy.aesthetics.art-theories.philosophy-criticism",
+      "title": "Sanat felsefesi ile sanat eleştirisini ayırt eder",
+      "description": "Sanatın ve güzelin genel problemlerini incelemekle belirli bir eseri değerlendirmeyi ayırt eder.",
+      "topicId": "tyt.philosophy.aesthetics.art-theories"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "concept.philosophy.aesthetics.aesthetic-structure.estetik-ozne-ve-nesne",
+      "term": "estetik özne ve nesne",
+      "definition": "Estetik deneyde değerlendiren kişi ile değerlendirilen eseri ayırt eder.",
+      "topicId": "tyt.philosophy.aesthetics.aesthetic-structure"
+    },
+    {
+      "id": "concept.philosophy.aesthetics.aesthetic-structure.estetik-yargi",
+      "term": "estetik yargı",
+      "definition": "Estetik yargıların beğeni içermesine karşın gerekçelendirme ve paylaşılabilirlik iddiası taşıyabileceğini yorumlar.",
+      "topicId": "tyt.philosophy.aesthetics.aesthetic-structure"
+    },
+    {
+      "id": "concept.philosophy.aesthetics.beauty-art.guzel-ve-hos",
+      "term": "güzel ve hoş",
+      "definition": "Duyusal haz veren hoş ile estetik değerlendirmeye konu olan güzeli ayırt eder.",
+      "topicId": "tyt.philosophy.aesthetics.beauty-art"
+    },
+    {
+      "id": "concept.philosophy.aesthetics.beauty-art.sanatin-islevi",
+      "term": "sanatın işlevi",
+      "definition": "Sanatın ifade, düşündürme, dönüştürme veya estetik deney sağlama işlevlerini yorumlar.",
+      "topicId": "tyt.philosophy.aesthetics.beauty-art"
+    },
+    {
+      "id": "concept.philosophy.aesthetics.art-theories.sanat-anlayislari",
+      "term": "sanat anlayışları",
+      "definition": "Sanatı gerçekliği yansıtma, özgün bir dünya kurma veya özgür oyun etkinliği olarak gören yaklaşımları ayırt eder.",
+      "topicId": "tyt.philosophy.aesthetics.art-theories"
+    },
+    {
+      "id": "concept.philosophy.aesthetics.art-theories.sanat-felsefesi-ve-elestiri",
+      "term": "sanat felsefesi ve eleştiri",
+      "definition": "Sanatın ve güzelin genel problemlerini incelemekle belirli bir eseri değerlendirmeyi ayırt eder.",
+      "topicId": "tyt.philosophy.aesthetics.art-theories"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "lesson.philosophy.aesthetics.aesthetic-structure.001",
+      "topicId": "tyt.philosophy.aesthetics.aesthetic-structure",
+      "title": "Estetik Özne, Nesne ve Yargı",
+      "subtitle": "Estetik özne ile nesneyi ayırt eder ve Estetik yargının niteliğini yorumlar.",
+      "estimatedMinutes": 10,
+      "exerciseIds": [
+        "exercise.philosophy.aesthetics.aesthetic-structure.001.card01",
+        "exercise.philosophy.aesthetics.aesthetic-structure.001.mcq1",
+        "exercise.philosophy.aesthetics.aesthetic-structure.001.mcq2",
+        "exercise.philosophy.aesthetics.aesthetic-structure.001.mcq3",
+        "exercise.philosophy.aesthetics.aesthetic-structure.001.mcq4",
+        "exercise.philosophy.aesthetics.aesthetic-structure.001.tf01",
+        "exercise.philosophy.aesthetics.aesthetic-structure.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.philosophy.aesthetics.beauty-art.001",
+      "topicId": "tyt.philosophy.aesthetics.beauty-art",
+      "title": "Güzel, Hoş ve Sanatın İşlevi",
+      "subtitle": "Güzel ile hoşu ayırt eder ve Sanatın işlevini metinden çıkarır.",
+      "estimatedMinutes": 10,
+      "exerciseIds": [
+        "exercise.philosophy.aesthetics.beauty-art.001.mcq1",
+        "exercise.philosophy.aesthetics.beauty-art.001.mcq2",
+        "exercise.philosophy.aesthetics.beauty-art.001.mcq3",
+        "exercise.philosophy.aesthetics.beauty-art.001.mcq4",
+        "exercise.philosophy.aesthetics.beauty-art.001.tf01",
+        "exercise.philosophy.aesthetics.beauty-art.001.match01",
+        "exercise.philosophy.aesthetics.beauty-art.001.blank01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.philosophy.aesthetics.art-theories.001",
+      "topicId": "tyt.philosophy.aesthetics.art-theories",
+      "title": "Sanat Anlayışları ve Sanat Eleştirisi",
+      "subtitle": "Taklit, yaratma ve oyun anlayışlarını ayırt eder ve Sanat felsefesi ile sanat eleştirisini ayırt eder.",
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.philosophy.aesthetics.art-theories.001.mcq1",
+        "exercise.philosophy.aesthetics.art-theories.001.mcq2",
+        "exercise.philosophy.aesthetics.art-theories.001.mcq3",
+        "exercise.philosophy.aesthetics.art-theories.001.mcq4",
+        "exercise.philosophy.aesthetics.art-theories.001.tf01",
+        "exercise.philosophy.aesthetics.art-theories.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "id": "exercise.philosophy.aesthetics.aesthetic-structure.001.mcq1",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.aesthetics.aesthetic-structure.subject-object"
+      ],
+      "prompt": "Bir dinleyici senfoniyi dikkatle dinleyip eserin uyandırdığı estetik değeri değerlendirir.\n\nBu örnekte estetik özne hangisidir?",
+      "tag": "FELSEFE · ESTETİK ÖZNE, NESNE VE YARGI",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Senfoni"
+        },
+        {
+          "id": "opt-2",
+          "label": "Konser salonu"
+        },
+        {
+          "id": "opt-3",
+          "label": "Bilet"
+        },
+        {
+          "id": "opt-4",
+          "label": "Dinleyici"
+        }
+      ],
+      "correctOptionId": "opt-4",
+      "explanation": "Bir dinleyici senfoniyi dikkatle dinleyip eserin uyandırdığı estetik değeri değerlendirir. Bu nedenle doğru ayrım “Dinleyici”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.aesthetics.aesthetic-structure.001.mcq2",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.aesthetics.aesthetic-structure.subject-object"
+      ],
+      "prompt": "Bir dinleyici senfoniyi dikkatle dinleyip eserin uyandırdığı estetik değeri değerlendirir.\n\nBir öğrenci bu görüşü “Senfoni” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · ESTETİK ÖZNE, NESNE VE YARGI",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Konser salonu"
+        },
+        {
+          "id": "opt-2",
+          "label": "Bilet"
+        },
+        {
+          "id": "opt-3",
+          "label": "Dinleyici"
+        },
+        {
+          "id": "opt-4",
+          "label": "Senfoni"
+        }
+      ],
+      "correctOptionId": "opt-3",
+      "explanation": "Görüşte belirleyici ölçüt “estetik özne ve nesne” çerçevesidir. “Senfoni” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.aesthetics.aesthetic-structure.001.mcq3",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.aesthetics.aesthetic-structure.judgment"
+      ],
+      "prompt": "Bir eleştirmen “Bu tablo güzeldir.” derken yalnız kişisel hoşlanmasını bildirmez; kompozisyon ve renk ilişkisine dayanarak başkalarının da değerlendirmesini bekler.\n\nBu parçada estetik yargının hangi yönü vurgulanır?",
+      "tag": "FELSEFE · ESTETİK ÖZNE, NESNE VE YARGI",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Yalnız fiyat bildirmesi"
+        },
+        {
+          "id": "opt-2",
+          "label": "Gerekçelendirilip paylaşılabilir olması"
+        },
+        {
+          "id": "opt-3",
+          "label": "Deneysel yasa olması"
+        },
+        {
+          "id": "opt-4",
+          "label": "Hukuki yaptırım taşıması"
+        }
+      ],
+      "correctOptionId": "opt-2",
+      "explanation": "Bir eleştirmen “Bu tablo güzeldir. Bu nedenle doğru ayrım “Gerekçelendirilip paylaşılabilir olması”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.aesthetics.aesthetic-structure.001.mcq4",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.aesthetics.aesthetic-structure.judgment"
+      ],
+      "prompt": "Bir eleştirmen “Bu tablo güzeldir.” derken yalnız kişisel hoşlanmasını bildirmez; kompozisyon ve renk ilişkisine dayanarak başkalarının da değerlendirmesini bekler.\n\nBir öğrenci bu görüşü “Deneysel yasa olması” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · ESTETİK ÖZNE, NESNE VE YARGI",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Gerekçelendirilip paylaşılabilir olması"
+        },
+        {
+          "id": "opt-2",
+          "label": "Deneysel yasa olması"
+        },
+        {
+          "id": "opt-3",
+          "label": "Hukuki yaptırım taşıması"
+        },
+        {
+          "id": "opt-4",
+          "label": "Yalnız fiyat bildirmesi"
+        }
+      ],
+      "correctOptionId": "opt-1",
+      "explanation": "Görüşte belirleyici ölçüt “estetik yargı” çerçevesidir. “Deneysel yasa olması” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.aesthetics.aesthetic-structure.001.tf01",
+      "kind": "trueFalse",
+      "skillIds": [
+        "skill.philosophy.aesthetics.aesthetic-structure.subject-object",
+        "skill.philosophy.aesthetics.aesthetic-structure.judgment"
+      ],
+      "statement": "estetik özne ve nesne ile estetik yargı aynı kavram değildir; bir metnin gerekçesine bakılarak birbirinden ayrılmalıdır.",
+      "tag": "FELSEFE · ESTETİK ÖZNE, NESNE VE YARGI",
+      "correctAnswer": true,
+      "explanation": "Bu iki kavram aynı topic içinde ilişkili olsa da farklı sorulara veya ölçütlere karşılık gelir. Ayrım, yalnız anahtar kelimeye değil görüşün gerekçesine dayanır.",
+      "difficulty": 2,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.aesthetics.aesthetic-structure.001.match01",
+      "kind": "matching",
+      "skillIds": [
+        "skill.philosophy.aesthetics.aesthetic-structure.subject-object",
+        "skill.philosophy.aesthetics.aesthetic-structure.judgment"
+      ],
+      "title": "Görüşü temel vurgusuyla eşleştir",
+      "subtitle": "Her ifadeyi yalnız bir kavramla eşleştir.",
+      "tag": "FELSEFE · ESTETİK ÖZNE, NESNE VE YARGI",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "estetik özne ve nesne",
+          "right": "Estetik deneyde değerlendiren kişi ile değerlendirilen eseri ayırt eder."
+        },
+        {
+          "id": "pair-2",
+          "left": "estetik yargı",
+          "right": "Estetik yargıların beğeni içermesine karşın gerekçelendirme ve paylaşılabilirlik iddiası taşıyabileceğini yorumlar."
+        }
+      ],
+      "explanation": "Eşleştirmeler kavramın adı ile ölçülebilir ayırt etme ölçütünü bağlar; görüşü yalnız ezberlemek yerine gerekçesiyle tanımayı sağlar.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.aesthetics.aesthetic-structure.001.card01",
+      "kind": "flashcard",
+      "skillIds": [
+        "skill.philosophy.aesthetics.aesthetic-structure.subject-object",
+        "skill.philosophy.aesthetics.aesthetic-structure.judgment"
+      ],
+      "tag": "FELSEFE · ESTETİK ÖZNE, NESNE VE YARGI",
+      "cards": [
+        {
+          "id": "card-1",
+          "front": "estetik özne ve nesne",
+          "back": "Estetik deneyde değerlendiren kişi ile değerlendirilen eseri ayırt eder.",
+          "hint": "Kavramın bir metinde hangi ölçütle tanınacağını düşün."
+        },
+        {
+          "id": "card-2",
+          "front": "estetik yargı",
+          "back": "Estetik yargıların beğeni içermesine karşın gerekçelendirme ve paylaşılabilirlik iddiası taşıyabileceğini yorumlar.",
+          "hint": "Kavramın bir metinde hangi ölçütle tanınacağını düşün."
+        }
+      ],
+      "explanation": "Kartlar temel ayrımları ilk karşılaşmada tanıtır; scored skill coverage hesabına katılmaz.",
+      "difficulty": 1,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.aesthetics.beauty-art.001.mcq1",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.aesthetics.beauty-art.beautiful-pleasant"
+      ],
+      "prompt": "Bir tatlı damağa hoş gelebilir; bir şiirin güzelliği ise yalnız duyusal hazdan değil, biçim ve anlam bütünlüğünün değerlendirilmesinden doğar.\n\nBu örnek hangi ayrımı gösterir?",
+      "tag": "FELSEFE · GÜZEL, HOŞ VE SANATIN İŞLEVİ",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Teori–yasa"
+        },
+        {
+          "id": "opt-2",
+          "label": "Güzel–hoş"
+        },
+        {
+          "id": "opt-3",
+          "label": "Doğru–gerçek"
+        },
+        {
+          "id": "opt-4",
+          "label": "Hak–özgürlük"
+        }
+      ],
+      "correctOptionId": "opt-2",
+      "explanation": "Bir tatlı damağa hoş gelebilir; bir şiirin güzelliği ise yalnız duyusal hazdan değil, biçim ve anlam bütünlüğünün değerlendirilmesinden doğar. Bu nedenle doğru ayrım “Güzel–hoş”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.aesthetics.beauty-art.001.mcq2",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.aesthetics.beauty-art.beautiful-pleasant"
+      ],
+      "prompt": "Bir tatlı damağa hoş gelebilir; bir şiirin güzelliği ise yalnız duyusal hazdan değil, biçim ve anlam bütünlüğünün değerlendirilmesinden doğar.\n\nBir öğrenci bu görüşü “Doğru–gerçek” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · GÜZEL, HOŞ VE SANATIN İŞLEVİ",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Güzel–hoş"
+        },
+        {
+          "id": "opt-2",
+          "label": "Doğru–gerçek"
+        },
+        {
+          "id": "opt-3",
+          "label": "Hak–özgürlük"
+        },
+        {
+          "id": "opt-4",
+          "label": "Teori–yasa"
+        }
+      ],
+      "correctOptionId": "opt-1",
+      "explanation": "Görüşte belirleyici ölçüt “güzel ve hoş” çerçevesidir. “Doğru–gerçek” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.aesthetics.beauty-art.001.mcq3",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.aesthetics.beauty-art.function"
+      ],
+      "prompt": "Bir tiyatro oyunu seyirciye hazır bir çözüm sunmaz; gündelik hayatta fark edilmeyen bir adaletsizliği görünür kılar ve tartışmaya açar.\n\nBu parçada sanatın hangi işlevi öne çıkar?",
+      "tag": "FELSEFE · GÜZEL, HOŞ VE SANATIN İŞLEVİ",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Kesin bilimsel yasa koyma"
+        },
+        {
+          "id": "opt-2",
+          "label": "Dini hüküm verme"
+        },
+        {
+          "id": "opt-3",
+          "label": "Siyasi iktidar kullanma"
+        },
+        {
+          "id": "opt-4",
+          "label": "Düşündürme ve farkındalık oluşturma"
+        }
+      ],
+      "correctOptionId": "opt-4",
+      "explanation": "Bir tiyatro oyunu seyirciye hazır bir çözüm sunmaz; gündelik hayatta fark edilmeyen bir adaletsizliği görünür kılar ve tartışmaya açar. Bu nedenle doğru ayrım “Düşündürme ve farkındalık oluşturma”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.aesthetics.beauty-art.001.mcq4",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.aesthetics.beauty-art.function"
+      ],
+      "prompt": "Bir tiyatro oyunu seyirciye hazır bir çözüm sunmaz; gündelik hayatta fark edilmeyen bir adaletsizliği görünür kılar ve tartışmaya açar.\n\nBir öğrenci bu görüşü “Kesin bilimsel yasa koyma” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · GÜZEL, HOŞ VE SANATIN İŞLEVİ",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Dini hüküm verme"
+        },
+        {
+          "id": "opt-2",
+          "label": "Siyasi iktidar kullanma"
+        },
+        {
+          "id": "opt-3",
+          "label": "Düşündürme ve farkındalık oluşturma"
+        },
+        {
+          "id": "opt-4",
+          "label": "Kesin bilimsel yasa koyma"
+        }
+      ],
+      "correctOptionId": "opt-3",
+      "explanation": "Görüşte belirleyici ölçüt “sanatın işlevi” çerçevesidir. “Kesin bilimsel yasa koyma” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.aesthetics.beauty-art.001.tf01",
+      "kind": "trueFalse",
+      "skillIds": [
+        "skill.philosophy.aesthetics.beauty-art.beautiful-pleasant",
+        "skill.philosophy.aesthetics.beauty-art.function"
+      ],
+      "statement": "güzel ve hoş ile sanatın işlevi aynı kavram değildir; bir metnin gerekçesine bakılarak birbirinden ayrılmalıdır.",
+      "tag": "FELSEFE · GÜZEL, HOŞ VE SANATIN İŞLEVİ",
+      "correctAnswer": true,
+      "explanation": "Bu iki kavram aynı topic içinde ilişkili olsa da farklı sorulara veya ölçütlere karşılık gelir. Ayrım, yalnız anahtar kelimeye değil görüşün gerekçesine dayanır.",
+      "difficulty": 2,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.aesthetics.beauty-art.001.match01",
+      "kind": "matching",
+      "skillIds": [
+        "skill.philosophy.aesthetics.beauty-art.beautiful-pleasant",
+        "skill.philosophy.aesthetics.beauty-art.function"
+      ],
+      "title": "Görüşü temel vurgusuyla eşleştir",
+      "subtitle": "Her ifadeyi yalnız bir kavramla eşleştir.",
+      "tag": "FELSEFE · GÜZEL, HOŞ VE SANATIN İŞLEVİ",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "güzel ve hoş",
+          "right": "Duyusal haz veren hoş ile estetik değerlendirmeye konu olan güzeli ayırt eder."
+        },
+        {
+          "id": "pair-2",
+          "left": "sanatın işlevi",
+          "right": "Sanatın ifade, düşündürme, dönüştürme veya estetik deney sağlama işlevlerini yorumlar."
+        }
+      ],
+      "explanation": "Eşleştirmeler kavramın adı ile ölçülebilir ayırt etme ölçütünü bağlar; görüşü yalnız ezberlemek yerine gerekçesiyle tanımayı sağlar.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.aesthetics.beauty-art.001.blank01",
+      "kind": "fillBlank",
+      "skillIds": [
+        "skill.philosophy.aesthetics.beauty-art.beautiful-pleasant"
+      ],
+      "title": "Temel kavramı tamamla",
+      "hint": "Duyusal haz veren hoş ile estetik değerlendirmeye konu olan güzeli ayırt eder.",
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "güzel ve hoş"
+        },
+        {
+          "id": "w-2",
+          "label": "sanatın işlevi"
+        },
+        {
+          "id": "w-3",
+          "label": "olgusal betimleme"
+        }
+      ],
+      "solutionTokenIds": [
+        "w-1"
+      ],
+      "explanation": "Tanım “güzel ve hoş” kavramına karşılık gelir. Diğer seçenekler farklı bir ölçüt veya düşünme alanını belirtir.",
+      "difficulty": 1,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.aesthetics.art-theories.001.mcq1",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.aesthetics.art-theories.imitation-creation-play"
+      ],
+      "prompt": "Bir sanatçı doğayı olduğu gibi kopyalamayı amaçlamaz; daha önce var olmayan imgeler ve ilişkiler kurarak kendine özgü bir dünya oluşturur.\n\nBu görüş hangi sanat anlayışına yakındır?",
+      "tag": "FELSEFE · SANAT ANLAYIŞLARI VE SANAT ELEŞTİRİSİ",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Yaratma"
+        },
+        {
+          "id": "opt-2",
+          "label": "Taklit"
+        },
+        {
+          "id": "opt-3",
+          "label": "Oyun"
+        },
+        {
+          "id": "opt-4",
+          "label": "Pozitivizm"
+        }
+      ],
+      "correctOptionId": "opt-1",
+      "explanation": "Bir sanatçı doğayı olduğu gibi kopyalamayı amaçlamaz; daha önce var olmayan imgeler ve ilişkiler kurarak kendine özgü bir dünya oluşturur. Bu nedenle doğru ayrım “Yaratma”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.aesthetics.art-theories.001.mcq2",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.aesthetics.art-theories.imitation-creation-play"
+      ],
+      "prompt": "Bir sanatçı doğayı olduğu gibi kopyalamayı amaçlamaz; daha önce var olmayan imgeler ve ilişkiler kurarak kendine özgü bir dünya oluşturur.\n\nBir öğrenci bu görüşü “Taklit” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · SANAT ANLAYIŞLARI VE SANAT ELEŞTİRİSİ",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Taklit"
+        },
+        {
+          "id": "opt-2",
+          "label": "Oyun"
+        },
+        {
+          "id": "opt-3",
+          "label": "Pozitivizm"
+        },
+        {
+          "id": "opt-4",
+          "label": "Yaratma"
+        }
+      ],
+      "correctOptionId": "opt-4",
+      "explanation": "Görüşte belirleyici ölçüt “sanat anlayışları” çerçevesidir. “Taklit” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.aesthetics.art-theories.001.mcq3",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.aesthetics.art-theories.philosophy-criticism"
+      ],
+      "prompt": "Bir çalışma “Sanatın değeri nedir?” sorusunu incelerken diğeri belirli bir filmin kurgu ve oyunculuğunu değerlendirir.\n\nİkinci çalışma hangisine örnektir?",
+      "tag": "FELSEFE · SANAT ANLAYIŞLARI VE SANAT ELEŞTİRİSİ",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Bilgi felsefesi"
+        },
+        {
+          "id": "opt-2",
+          "label": "Din felsefesi"
+        },
+        {
+          "id": "opt-3",
+          "label": "Sanat eleştirisi"
+        },
+        {
+          "id": "opt-4",
+          "label": "Sanat ontolojisi"
+        }
+      ],
+      "correctOptionId": "opt-3",
+      "explanation": "Bir çalışma “Sanatın değeri nedir?” sorusunu incelerken diğeri belirli bir filmin kurgu ve oyunculuğunu değerlendirir. Bu nedenle doğru ayrım “Sanat eleştirisi”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.aesthetics.art-theories.001.mcq4",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.aesthetics.art-theories.philosophy-criticism"
+      ],
+      "prompt": "Bir çalışma “Sanatın değeri nedir?” sorusunu incelerken diğeri belirli bir filmin kurgu ve oyunculuğunu değerlendirir.\n\nBir öğrenci bu görüşü “Sanat ontolojisi” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · SANAT ANLAYIŞLARI VE SANAT ELEŞTİRİSİ",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Din felsefesi"
+        },
+        {
+          "id": "opt-2",
+          "label": "Sanat eleştirisi"
+        },
+        {
+          "id": "opt-3",
+          "label": "Sanat ontolojisi"
+        },
+        {
+          "id": "opt-4",
+          "label": "Bilgi felsefesi"
+        }
+      ],
+      "correctOptionId": "opt-2",
+      "explanation": "Görüşte belirleyici ölçüt “sanat felsefesi ve eleştiri” çerçevesidir. “Sanat ontolojisi” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.aesthetics.art-theories.001.tf01",
+      "kind": "trueFalse",
+      "skillIds": [
+        "skill.philosophy.aesthetics.art-theories.imitation-creation-play",
+        "skill.philosophy.aesthetics.art-theories.philosophy-criticism"
+      ],
+      "statement": "sanat anlayışları ile sanat felsefesi ve eleştiri aynı kavram değildir; bir metnin gerekçesine bakılarak birbirinden ayrılmalıdır.",
+      "tag": "FELSEFE · SANAT ANLAYIŞLARI VE SANAT ELEŞTİRİSİ",
+      "correctAnswer": true,
+      "explanation": "Bu iki kavram aynı topic içinde ilişkili olsa da farklı sorulara veya ölçütlere karşılık gelir. Ayrım, yalnız anahtar kelimeye değil görüşün gerekçesine dayanır.",
+      "difficulty": 2,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.aesthetics.art-theories.001.match01",
+      "kind": "matching",
+      "skillIds": [
+        "skill.philosophy.aesthetics.art-theories.imitation-creation-play",
+        "skill.philosophy.aesthetics.art-theories.philosophy-criticism"
+      ],
+      "title": "Görüşü temel vurgusuyla eşleştir",
+      "subtitle": "Her ifadeyi yalnız bir kavramla eşleştir.",
+      "tag": "FELSEFE · SANAT ANLAYIŞLARI VE SANAT ELEŞTİRİSİ",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "sanat anlayışları",
+          "right": "Sanatı gerçekliği yansıtma, özgün bir dünya kurma veya özgür oyun etkinliği olarak gören yaklaşımları ayırt eder."
+        },
+        {
+          "id": "pair-2",
+          "left": "sanat felsefesi ve eleştiri",
+          "right": "Sanatın ve güzelin genel problemlerini incelemekle belirli bir eseri değerlendirmeyi ayırt eder."
+        }
+      ],
+      "explanation": "Eşleştirmeler kavramın adı ile ölçülebilir ayırt etme ölçütünü bağlar; görüşü yalnız ezberlemek yerine gerekçesiyle tanımayı sağlar.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.philosophy.aesthetics.01",
+      "unitId": "tyt.philosophy.aesthetics",
+      "kind": "lesson",
+      "title": "Estetik Özne, Nesne ve Yargı",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.philosophy.ethics.03"
+      ],
+      "lessonId": "lesson.philosophy.aesthetics.aesthetic-structure.001"
+    },
+    {
+      "id": "path.philosophy.aesthetics.02",
+      "unitId": "tyt.philosophy.aesthetics",
+      "kind": "lesson",
+      "title": "Güzel, Hoş ve Sanatın İşlevi",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.philosophy.aesthetics.01"
+      ],
+      "lessonId": "lesson.philosophy.aesthetics.beauty-art.001"
+    },
+    {
+      "id": "path.philosophy.aesthetics.03",
+      "unitId": "tyt.philosophy.aesthetics",
+      "kind": "practice",
+      "title": "Sanat Anlayışları ve Sanat Eleştirisi Uygulaması",
+      "order": 3,
+      "prerequisiteIds": [
+        "path.philosophy.aesthetics.02"
+      ],
+      "lessonId": "lesson.philosophy.aesthetics.art-theories.001"
+    }
+  ]
+}

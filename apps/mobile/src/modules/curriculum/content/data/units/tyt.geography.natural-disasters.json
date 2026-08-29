@@ -1,0 +1,531 @@
+{
+  "concepts": [
+    {
+      "definition": "Tehlike vardır ama kayıp sınırlı kalabilir",
+      "id": "concept.geography.natural-disasters.hazard-risk",
+      "term": "Şiddetli deprem ıssız alanda olur",
+      "topicId": "tyt.geography.natural-disasters.hazard-risk"
+    },
+    {
+      "definition": "Depreme dayanıklı yapılaşma gerekir",
+      "id": "concept.geography.natural-disasters.turkey-risks",
+      "term": "Aktif fay kuşağına yakın yerleşim vardır",
+      "topicId": "tyt.geography.natural-disasters.turkey-risks"
+    }
+  ],
+  "exercises": [
+    {
+      "correctOptionId": "opt-1",
+      "difficulty": 2,
+      "explanation": "Şiddetli deprem ıssız alanda olur durumunda tehlike vardır ama kayıp sınırlı kalabilir. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.natural-disasters.hazard-risk.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Tehlike vardır ama kayıp sınırlı kalabilir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Deprem riski yükselir"
+        },
+        {
+          "id": "opt-3",
+          "label": "Can kaybı riski azaltılabilir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Afet niteliği kazanır"
+        }
+      ],
+      "prompt": "Şiddetli deprem ıssız alanda olur. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.natural-disasters.hazard-risk.interpret"
+      ],
+      "tag": "COĞRAFYA · TEHLİKE, RİSK VE AFET"
+    },
+    {
+      "correctOptionId": "opt-2",
+      "difficulty": 4,
+      "explanation": "Fay yakınında dayanıksız yapılaşma artar durumunda deprem riski yükselir. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.natural-disasters.hazard-risk.001.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Tehlike vardır ama kayıp sınırlı kalabilir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Deprem riski yükselir"
+        },
+        {
+          "id": "opt-3",
+          "label": "Can kaybı riski azaltılabilir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Afet niteliği kazanır"
+        }
+      ],
+      "prompt": "Fay yakınında dayanıksız yapılaşma artar. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.natural-disasters.hazard-risk.interpret"
+      ],
+      "tag": "COĞRAFYA · TEHLİKE, RİSK VE AFET"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 3,
+      "explanation": "Aynı taşkın tehlikesinde erken uyarı kurulur ile can kaybı riski azaltılabilir arasında doğrudan bir coğrafi ilişki vardır.",
+      "id": "exercise.geography.natural-disasters.hazard-risk.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.natural-disasters.hazard-risk.interpret"
+      ],
+      "statement": "Aynı taşkın tehlikesinde erken uyarı kurulur; bunun sonucunda can kaybı riski azaltılabilir.",
+      "tag": "COĞRAFYA · TEHLİKE, RİSK VE AFET"
+    },
+    {
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "Tehlike vardır ama kayıp sınırlı kalabilir"
+        },
+        {
+          "id": "w-2",
+          "label": "Deprem riski yükselir"
+        },
+        {
+          "id": "w-3",
+          "label": "Can kaybı riski azaltılabilir"
+        },
+        {
+          "id": "w-4",
+          "label": "Afet niteliği kazanır"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "Doğal olay toplumda ciddi kayıp doğurur koşulunun beklenen sonucu “Afet niteliği kazanır” ilişkisidir.",
+      "hint": "Doğal olay toplumda ciddi kayıp doğurur",
+      "id": "exercise.geography.natural-disasters.hazard-risk.001.blank01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.natural-disasters.hazard-risk.interpret"
+      ],
+      "solutionTokenIds": [
+        "w-4"
+      ],
+      "title": "Doğal olay toplumda ciddi kayıp doğurur durumunda sonuç"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Her koşul, kendisinden beklenen özgün coğrafi sonuçla eşleştirilir; aynı sonuç iki kez kullanılmaz.",
+      "id": "exercise.geography.natural-disasters.hazard-risk.001.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Şiddetli deprem ıssız alanda olur",
+          "right": "Tehlike vardır ama kayıp sınırlı kalabilir"
+        },
+        {
+          "id": "pair-2",
+          "left": "Fay yakınında dayanıksız yapılaşma artar",
+          "right": "Deprem riski yükselir"
+        },
+        {
+          "id": "pair-3",
+          "left": "Aynı taşkın tehlikesinde erken uyarı kurulur",
+          "right": "Can kaybı riski azaltılabilir"
+        },
+        {
+          "id": "pair-4",
+          "left": "Doğal olay toplumda ciddi kayıp doğurur",
+          "right": "Afet niteliği kazanır"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.natural-disasters.hazard-risk.interpret"
+      ],
+      "subtitle": "Koşulu doğru coğrafi sonuçla birleştir.",
+      "tag": "COĞRAFYA · TEHLİKE, RİSK VE AFET",
+      "title": "İlişkiyi eşleştir"
+    },
+    {
+      "cards": [
+        {
+          "back": "Tehlike vardır ama kayıp sınırlı kalabilir",
+          "front": "Şiddetli deprem ıssız alanda olur",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-1"
+        },
+        {
+          "back": "Deprem riski yükselir",
+          "front": "Fay yakınında dayanıksız yapılaşma artar",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-2"
+        },
+        {
+          "back": "Can kaybı riski azaltılabilir",
+          "front": "Aynı taşkın tehlikesinde erken uyarı kurulur",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-3"
+        },
+        {
+          "back": "Afet niteliği kazanır",
+          "front": "Doğal olay toplumda ciddi kayıp doğurur",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-4"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Kartlar temel ilişkileri kısa tekrar için özetler; puanlanan skill coverage hesabına katılmaz.",
+      "id": "exercise.geography.natural-disasters.hazard-risk.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.natural-disasters.hazard-risk.interpret"
+      ],
+      "tag": "COĞRAFYA · TEHLİKE, RİSK VE AFET"
+    },
+    {
+      "correctOptionId": "opt-1",
+      "difficulty": 2,
+      "explanation": "Aktif fay kuşağına yakın yerleşim vardır durumunda depreme dayanıklı yapılaşma gerekir. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.natural-disasters.turkey-risks.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Depreme dayanıklı yapılaşma gerekir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Heyelan riski artar"
+        },
+        {
+          "id": "opt-3",
+          "label": "Çığ riski artar"
+        },
+        {
+          "id": "opt-4",
+          "label": "Sel ve taşkın kaybı büyüyebilir"
+        }
+      ],
+      "prompt": "Aktif fay kuşağına yakın yerleşim vardır. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.natural-disasters.turkey-risks.interpret"
+      ],
+      "tag": "COĞRAFYA · TÜRKİYE’DE AFET DAĞILIŞI VE ÖNLEM"
+    },
+    {
+      "correctOptionId": "opt-2",
+      "difficulty": 4,
+      "explanation": "Doğu Karadeniz’de dik ve yağışlı yamaç bulunur durumunda heyelan riski artar. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.natural-disasters.turkey-risks.001.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Depreme dayanıklı yapılaşma gerekir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Heyelan riski artar"
+        },
+        {
+          "id": "opt-3",
+          "label": "Çığ riski artar"
+        },
+        {
+          "id": "opt-4",
+          "label": "Sel ve taşkın kaybı büyüyebilir"
+        }
+      ],
+      "prompt": "Doğu Karadeniz’de dik ve yağışlı yamaç bulunur. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.natural-disasters.turkey-risks.interpret"
+      ],
+      "tag": "COĞRAFYA · TÜRKİYE’DE AFET DAĞILIŞI VE ÖNLEM"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 3,
+      "explanation": "Kar yağışlı dik yamaçta kar tabakası dengesizdir ile çığ riski artar arasında doğrudan bir coğrafi ilişki vardır.",
+      "id": "exercise.geography.natural-disasters.turkey-risks.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.natural-disasters.turkey-risks.interpret"
+      ],
+      "statement": "Kar yağışlı dik yamaçta kar tabakası dengesizdir; bunun sonucunda çığ riski artar.",
+      "tag": "COĞRAFYA · TÜRKİYE’DE AFET DAĞILIŞI VE ÖNLEM"
+    },
+    {
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "Depreme dayanıklı yapılaşma gerekir"
+        },
+        {
+          "id": "w-2",
+          "label": "Heyelan riski artar"
+        },
+        {
+          "id": "w-3",
+          "label": "Çığ riski artar"
+        },
+        {
+          "id": "w-4",
+          "label": "Sel ve taşkın kaybı büyüyebilir"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "Dere yatağı yapılaşmaya açılır koşulunun beklenen sonucu “Sel ve taşkın kaybı büyüyebilir” ilişkisidir.",
+      "hint": "Dere yatağı yapılaşmaya açılır",
+      "id": "exercise.geography.natural-disasters.turkey-risks.001.blank01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.natural-disasters.turkey-risks.interpret"
+      ],
+      "solutionTokenIds": [
+        "w-4"
+      ],
+      "title": "Dere yatağı yapılaşmaya açılır durumunda sonuç"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Her koşul, kendisinden beklenen özgün coğrafi sonuçla eşleştirilir; aynı sonuç iki kez kullanılmaz.",
+      "id": "exercise.geography.natural-disasters.turkey-risks.001.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Aktif fay kuşağına yakın yerleşim vardır",
+          "right": "Depreme dayanıklı yapılaşma gerekir"
+        },
+        {
+          "id": "pair-2",
+          "left": "Doğu Karadeniz’de dik ve yağışlı yamaç bulunur",
+          "right": "Heyelan riski artar"
+        },
+        {
+          "id": "pair-3",
+          "left": "Kar yağışlı dik yamaçta kar tabakası dengesizdir",
+          "right": "Çığ riski artar"
+        },
+        {
+          "id": "pair-4",
+          "left": "Dere yatağı yapılaşmaya açılır",
+          "right": "Sel ve taşkın kaybı büyüyebilir"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.natural-disasters.turkey-risks.interpret"
+      ],
+      "subtitle": "Koşulu doğru coğrafi sonuçla birleştir.",
+      "tag": "COĞRAFYA · TÜRKİYE’DE AFET DAĞILIŞI VE ÖNLEM",
+      "title": "İlişkiyi eşleştir"
+    },
+    {
+      "cards": [
+        {
+          "back": "Depreme dayanıklı yapılaşma gerekir",
+          "front": "Aktif fay kuşağına yakın yerleşim vardır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-1"
+        },
+        {
+          "back": "Heyelan riski artar",
+          "front": "Doğu Karadeniz’de dik ve yağışlı yamaç bulunur",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-2"
+        },
+        {
+          "back": "Çığ riski artar",
+          "front": "Kar yağışlı dik yamaçta kar tabakası dengesizdir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-3"
+        },
+        {
+          "back": "Sel ve taşkın kaybı büyüyebilir",
+          "front": "Dere yatağı yapılaşmaya açılır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-4"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Kartlar temel ilişkileri kısa tekrar için özetler; puanlanan skill coverage hesabına katılmaz.",
+      "id": "exercise.geography.natural-disasters.turkey-risks.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.natural-disasters.turkey-risks.interpret"
+      ],
+      "tag": "COĞRAFYA · TÜRKİYE’DE AFET DAĞILIŞI VE ÖNLEM"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.geography.natural-disasters.hazard-risk.001.mcq01",
+        "exercise.geography.natural-disasters.hazard-risk.001.mcq02",
+        "exercise.geography.natural-disasters.hazard-risk.001.tf01",
+        "exercise.geography.natural-disasters.hazard-risk.001.blank01",
+        "exercise.geography.natural-disasters.hazard-risk.001.match01",
+        "exercise.geography.natural-disasters.hazard-risk.001.card01"
+      ],
+      "id": "lesson.geography.natural-disasters.hazard-risk.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Doğal olayın afete dönüşmesini tehlike, maruziyet ve kırılganlık üzerinden yorumlar.",
+      "title": "Tehlike, Risk ve Afet",
+      "topicId": "tyt.geography.natural-disasters.hazard-risk"
+    },
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.geography.natural-disasters.turkey-risks.001.mcq01",
+        "exercise.geography.natural-disasters.turkey-risks.001.mcq02",
+        "exercise.geography.natural-disasters.turkey-risks.001.tf01",
+        "exercise.geography.natural-disasters.turkey-risks.001.blank01",
+        "exercise.geography.natural-disasters.turkey-risks.001.match01",
+        "exercise.geography.natural-disasters.turkey-risks.001.card01"
+      ],
+      "id": "lesson.geography.natural-disasters.turkey-risks.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Türkiye’de afet riskini fiziksel koşullarla ilişkilendirip uygun azaltım önlemini seçer.",
+      "title": "Türkiye’de Afet Dağılışı ve Önlem",
+      "topicId": "tyt.geography.natural-disasters.turkey-risks"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.geography.natural-disasters.01",
+      "kind": "lesson",
+      "lessonId": "lesson.geography.natural-disasters.hazard-risk.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.geography.environment-society.02"
+      ],
+      "title": "Tehlike, Risk ve Afet",
+      "unitId": "tyt.geography.natural-disasters"
+    },
+    {
+      "id": "path.geography.natural-disasters.02",
+      "kind": "practice",
+      "lessonId": "lesson.geography.natural-disasters.turkey-risks.001",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.geography.natural-disasters.01"
+      ],
+      "title": "Türkiye’de Afet Dağılışı ve Önlem Uygulaması",
+      "unitId": "tyt.geography.natural-disasters"
+    }
+  ],
+  "skills": [
+    {
+      "description": "Doğal olayın afete dönüşmesini tehlike, maruziyet ve kırılganlık üzerinden yorumlar.",
+      "id": "skill.geography.natural-disasters.hazard-risk.interpret",
+      "title": "Doğal olayın afete dönüşmesini tehlike, maruziyet ve kırılganlık üzerinden yorumlar.",
+      "topicId": "tyt.geography.natural-disasters.hazard-risk"
+    },
+    {
+      "description": "Türkiye’de afet riskini fiziksel koşullarla ilişkilendirip uygun azaltım önlemini seçer.",
+      "id": "skill.geography.natural-disasters.turkey-risks.interpret",
+      "title": "Türkiye’de afet riskini fiziksel koşullarla ilişkilendirip uygun azaltım önlemini seçer.",
+      "topicId": "tyt.geography.natural-disasters.turkey-risks"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.geography.natural-disasters.hazard-risk"
+      ],
+      "id": "tyt.geography.natural-disasters.hazard-risk",
+      "skillIds": [
+        "skill.geography.natural-disasters.hazard-risk.interpret"
+      ],
+      "title": "Tehlike, Risk ve Afet",
+      "unitId": "tyt.geography.natural-disasters"
+    },
+    {
+      "conceptIds": [
+        "concept.geography.natural-disasters.turkey-risks"
+      ],
+      "id": "tyt.geography.natural-disasters.turkey-risks",
+      "skillIds": [
+        "skill.geography.natural-disasters.turkey-risks.interpret"
+      ],
+      "title": "Türkiye’de Afet Dağılışı ve Önlem",
+      "unitId": "tyt.geography.natural-disasters"
+    }
+  ],
+  "unitId": "tyt.geography.natural-disasters"
+}

@@ -4,9 +4,10 @@ Mobile-first, gamified exam preparation for Turkish students. Online Dershanem
 is the working product name; `tekrarla` remains in technical identifiers until
 commercial name and trademark clearance are complete.
 
-The production pilot is limited to TYT Sosyal Bilimler. The compiled draft
-bundle currently makes only Tarih usable: 11 lessons across 3 units, 11 path
-nodes and 54 exercises. All authored material remains engineering-written `draft` content.
+The production pilot is limited to TYT Sosyal Bilimler. The compiled 2027 draft
+bundle currently makes only Tarih usable: 55 lessons across 25 units, 55 path
+nodes and 331 exercises. All authored material remains AI-assisted or
+engineering-written `draft` content.
 Catalogue-only subjects are not shown as available in the production pilot.
 
 The repository contains the native product foundation, deterministic learning

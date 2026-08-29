@@ -1,6 +1,5 @@
-import type { LessonId, PathNodeId, SkillId } from '@/modules/curriculum/domain/content-types';
+import type { LessonId, PathNodeId } from '@/modules/curriculum/domain/content-types';
 import type { DailyPlanCard } from '@/modules/learning/model/daily-plan-card';
-import { subjectTheme, type SubjectTheme } from '@/shared/ui/theme/subject-theme';
 
 /**
  * What the Ana Sayfa tab renders. The screen takes this whole model as a prop
@@ -11,8 +10,7 @@ import { subjectTheme, type SubjectTheme } from '@/shared/ui/theme/subject-theme
 export type ContinueCard = {
   action:
     | { kind: 'lesson'; lessonId: LessonId; pathNodeId: PathNodeId }
-    | { kind: 'resume'; sessionId: string }
-    | { kind: 'review'; skillId: SkillId };
+    | { kind: 'resume'; sessionId: string };
   actionLabel: string;
   /** "İlk ve Orta Çağlarda Türk Dünyası · %60" */
   detail: string;
@@ -22,28 +20,32 @@ export type ContinueCard = {
 
 export type { DailyPlanCard };
 
-export type SubjectTile = {
-  id: string;
-  /** `null` while the subject has no authored material yet. */
-  level: number | null;
-  progress: number;
-  subjectTheme: SubjectTheme;
+export type PersonalizedCard = {
+  actionLabel: string;
+  detail: string;
+  eyebrow: string;
+  kind: 'review' | 'streak' | 'weakTopic';
   title: string;
 };
 
+export type LeagueCard =
+  | { detail: string; kind: 'pending'; title: string }
+  | { detail: string; kind: 'standing'; rank: number; title: string };
+
 export type HomeViewModel = {
   continueCard: ContinueCard | null;
-  /** The primary action whenever there is no half-finished round to resume. */
+  /** Today's real, evidence-backed mixed drill. */
   dailyPlan: DailyPlanCard | null;
+  dailyProgress: { completed: number; goal: number };
   greeting: string;
   hearts: number | null;
   initial: string;
-  /** `null` when the league has no standings to show. */
-  leagueRank: { closesIn: string; name: string; rank: number } | null;
+  /** Always present; pending never pretends a real standing exists. */
+  leagueCard: LeagueCard;
   level: number;
   levelProgress: number;
+  personalizedCard: PersonalizedCard | null;
   streak: number;
-  subjects: readonly SubjectTile[];
   xpForLevel: number;
   xpIntoLevel: number;
 };
@@ -72,45 +74,21 @@ export const homePreviewData: HomeViewModel = {
     eyebrow: 'KALDIĞIN YERDEN',
     subjectTitle: 'TYT Tarih',
   },
+  dailyProgress: { completed: 1, goal: 3 },
   greeting: 'Merhaba, Ege',
   hearts: 5,
   initial: 'E',
-  leagueRank: { closesIn: 'Bitişe 3 gün', name: 'Zümrüt Lig', rank: 8 },
+  leagueCard: { detail: 'Bitişe 3 gün', kind: 'standing', rank: 8, title: 'Zümrüt Lig' },
   level: 8,
   levelProgress: 0.85,
+  personalizedCard: {
+    actionLabel: 'Plana geç',
+    detail: 'Dün zorlandığın 3 soru bugünkü planında hazır.',
+    eyebrow: 'SANA ÖZEL',
+    kind: 'review',
+    title: 'Tekrar zamanı',
+  },
   streak: 12,
-  subjects: [
-    {
-      id: 'tyt.history',
-      level: 6,
-      progress: 0.6,
-      subjectTheme: subjectTheme('history'),
-      title: 'Tarih',
-    },
-    { id: 'tyt.math', level: 5, progress: 0.42, subjectTheme: subjectTheme('math'), title: 'Matematik' },
-    { id: 'tyt.physics', level: 3, progress: 0.24, subjectTheme: subjectTheme('physics'), title: 'Fizik' },
-    {
-      id: 'tyt.chemistry',
-      level: 2,
-      progress: 0.18,
-      subjectTheme: subjectTheme('chemistry'),
-      title: 'Kimya',
-    },
-    {
-      id: 'tyt.biology',
-      level: 4,
-      progress: 0.33,
-      subjectTheme: subjectTheme('biology'),
-      title: 'Biyoloji',
-    },
-    {
-      id: 'tyt.geography',
-      level: 2,
-      progress: 0.12,
-      subjectTheme: subjectTheme('geography'),
-      title: 'Coğrafya',
-    },
-  ],
   xpForLevel: 1000,
   xpIntoLevel: 850,
 };

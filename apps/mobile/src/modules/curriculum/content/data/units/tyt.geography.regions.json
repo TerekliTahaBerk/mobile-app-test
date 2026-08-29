@@ -1,0 +1,531 @@
+{
+  "concepts": [
+    {
+      "definition": "Doğal bölge oluşturulur",
+      "id": "concept.geography.regions.region-concept",
+      "term": "İklim benzerliği ölçüt alınır",
+      "topicId": "tyt.geography.regions.region-concept"
+    },
+    {
+      "definition": "Bölge sınırları değişebilir",
+      "id": "concept.geography.regions.boundaries",
+      "term": "İklim ölçütü yerine tarım ölçütü seçilir",
+      "topicId": "tyt.geography.regions.boundaries"
+    }
+  ],
+  "exercises": [
+    {
+      "correctOptionId": "opt-1",
+      "difficulty": 2,
+      "explanation": "İklim benzerliği ölçüt alınır durumunda doğal bölge oluşturulur. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.regions.region-concept.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Doğal bölge oluşturulur"
+        },
+        {
+          "id": "opt-2",
+          "label": "Beşerî bölge oluşturulur"
+        },
+        {
+          "id": "opt-3",
+          "label": "Ekonomik bölge oluşturulur"
+        },
+        {
+          "id": "opt-4",
+          "label": "İşlevsel bölge belirlenir"
+        }
+      ],
+      "prompt": "İklim benzerliği ölçüt alınır. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.regions.region-concept.interpret"
+      ],
+      "tag": "COĞRAFYA · BÖLGE KAVRAMI"
+    },
+    {
+      "correctOptionId": "opt-2",
+      "difficulty": 4,
+      "explanation": "Nüfus yoğunluğu ölçüt alınır durumunda beşerî bölge oluşturulur. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.regions.region-concept.001.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Doğal bölge oluşturulur"
+        },
+        {
+          "id": "opt-2",
+          "label": "Beşerî bölge oluşturulur"
+        },
+        {
+          "id": "opt-3",
+          "label": "Ekonomik bölge oluşturulur"
+        },
+        {
+          "id": "opt-4",
+          "label": "İşlevsel bölge belirlenir"
+        }
+      ],
+      "prompt": "Nüfus yoğunluğu ölçüt alınır. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.regions.region-concept.interpret"
+      ],
+      "tag": "COĞRAFYA · BÖLGE KAVRAMI"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 3,
+      "explanation": "Sanayi faaliyeti ölçüt alınır ile ekonomik bölge oluşturulur arasında doğrudan bir coğrafi ilişki vardır.",
+      "id": "exercise.geography.regions.region-concept.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.regions.region-concept.interpret"
+      ],
+      "statement": "Sanayi faaliyeti ölçüt alınır; bunun sonucunda ekonomik bölge oluşturulur.",
+      "tag": "COĞRAFYA · BÖLGE KAVRAMI"
+    },
+    {
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "Doğal bölge oluşturulur"
+        },
+        {
+          "id": "w-2",
+          "label": "Beşerî bölge oluşturulur"
+        },
+        {
+          "id": "w-3",
+          "label": "Ekonomik bölge oluşturulur"
+        },
+        {
+          "id": "w-4",
+          "label": "İşlevsel bölge belirlenir"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "Bir kentin hizmet etki alanı incelenir koşulunun beklenen sonucu “İşlevsel bölge belirlenir” ilişkisidir.",
+      "hint": "Bir kentin hizmet etki alanı incelenir",
+      "id": "exercise.geography.regions.region-concept.001.blank01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.regions.region-concept.interpret"
+      ],
+      "solutionTokenIds": [
+        "w-4"
+      ],
+      "title": "Bir kentin hizmet etki alanı incelenir durumunda sonuç"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Her koşul, kendisinden beklenen özgün coğrafi sonuçla eşleştirilir; aynı sonuç iki kez kullanılmaz.",
+      "id": "exercise.geography.regions.region-concept.001.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "İklim benzerliği ölçüt alınır",
+          "right": "Doğal bölge oluşturulur"
+        },
+        {
+          "id": "pair-2",
+          "left": "Nüfus yoğunluğu ölçüt alınır",
+          "right": "Beşerî bölge oluşturulur"
+        },
+        {
+          "id": "pair-3",
+          "left": "Sanayi faaliyeti ölçüt alınır",
+          "right": "Ekonomik bölge oluşturulur"
+        },
+        {
+          "id": "pair-4",
+          "left": "Bir kentin hizmet etki alanı incelenir",
+          "right": "İşlevsel bölge belirlenir"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.regions.region-concept.interpret"
+      ],
+      "subtitle": "Koşulu doğru coğrafi sonuçla birleştir.",
+      "tag": "COĞRAFYA · BÖLGE KAVRAMI",
+      "title": "İlişkiyi eşleştir"
+    },
+    {
+      "cards": [
+        {
+          "back": "Doğal bölge oluşturulur",
+          "front": "İklim benzerliği ölçüt alınır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-1"
+        },
+        {
+          "back": "Beşerî bölge oluşturulur",
+          "front": "Nüfus yoğunluğu ölçüt alınır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-2"
+        },
+        {
+          "back": "Ekonomik bölge oluşturulur",
+          "front": "Sanayi faaliyeti ölçüt alınır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-3"
+        },
+        {
+          "back": "İşlevsel bölge belirlenir",
+          "front": "Bir kentin hizmet etki alanı incelenir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-4"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Kartlar temel ilişkileri kısa tekrar için özetler; puanlanan skill coverage hesabına katılmaz.",
+      "id": "exercise.geography.regions.region-concept.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.regions.region-concept.interpret"
+      ],
+      "tag": "COĞRAFYA · BÖLGE KAVRAMI"
+    },
+    {
+      "correctOptionId": "opt-1",
+      "difficulty": 2,
+      "explanation": "İklim ölçütü yerine tarım ölçütü seçilir durumunda bölge sınırları değişebilir. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.regions.boundaries.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Bölge sınırları değişebilir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Kesinliği doğal bölgelere göre daha fazladır"
+        },
+        {
+          "id": "opt-3",
+          "label": "Aynı anda farklı bölgelere girebilir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Bölge sınırı dinamik biçimde değişebilir"
+        }
+      ],
+      "prompt": "İklim ölçütü yerine tarım ölçütü seçilir. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.regions.boundaries.interpret"
+      ],
+      "tag": "COĞRAFYA · BÖLGE SINIRLARI"
+    },
+    {
+      "correctOptionId": "opt-2",
+      "difficulty": 4,
+      "explanation": "İdari sınırlar kanunla belirlenir durumunda kesinliği doğal bölgelere göre daha fazladır. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.regions.boundaries.001.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Bölge sınırları değişebilir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Kesinliği doğal bölgelere göre daha fazladır"
+        },
+        {
+          "id": "opt-3",
+          "label": "Aynı anda farklı bölgelere girebilir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Bölge sınırı dinamik biçimde değişebilir"
+        }
+      ],
+      "prompt": "İdari sınırlar kanunla belirlenir. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.regions.boundaries.interpret"
+      ],
+      "tag": "COĞRAFYA · BÖLGE SINIRLARI"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 3,
+      "explanation": "Bir yer birden çok ölçütle incelenir ile aynı anda farklı bölgelere girebilir arasında doğrudan bir coğrafi ilişki vardır.",
+      "id": "exercise.geography.regions.boundaries.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.regions.boundaries.interpret"
+      ],
+      "statement": "Bir yer birden çok ölçütle incelenir; bunun sonucunda aynı anda farklı bölgelere girebilir.",
+      "tag": "COĞRAFYA · BÖLGE SINIRLARI"
+    },
+    {
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "Bölge sınırları değişebilir"
+        },
+        {
+          "id": "w-2",
+          "label": "Kesinliği doğal bölgelere göre daha fazladır"
+        },
+        {
+          "id": "w-3",
+          "label": "Aynı anda farklı bölgelere girebilir"
+        },
+        {
+          "id": "w-4",
+          "label": "Bölge sınırı dinamik biçimde değişebilir"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "İşlevsel etki alanı zamanla genişler koşulunun beklenen sonucu “Bölge sınırı dinamik biçimde değişebilir” ilişkisidir.",
+      "hint": "İşlevsel etki alanı zamanla genişler",
+      "id": "exercise.geography.regions.boundaries.001.blank01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.regions.boundaries.interpret"
+      ],
+      "solutionTokenIds": [
+        "w-4"
+      ],
+      "title": "İşlevsel etki alanı zamanla genişler durumunda sonuç"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Her koşul, kendisinden beklenen özgün coğrafi sonuçla eşleştirilir; aynı sonuç iki kez kullanılmaz.",
+      "id": "exercise.geography.regions.boundaries.001.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "İklim ölçütü yerine tarım ölçütü seçilir",
+          "right": "Bölge sınırları değişebilir"
+        },
+        {
+          "id": "pair-2",
+          "left": "İdari sınırlar kanunla belirlenir",
+          "right": "Kesinliği doğal bölgelere göre daha fazladır"
+        },
+        {
+          "id": "pair-3",
+          "left": "Bir yer birden çok ölçütle incelenir",
+          "right": "Aynı anda farklı bölgelere girebilir"
+        },
+        {
+          "id": "pair-4",
+          "left": "İşlevsel etki alanı zamanla genişler",
+          "right": "Bölge sınırı dinamik biçimde değişebilir"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.regions.boundaries.interpret"
+      ],
+      "subtitle": "Koşulu doğru coğrafi sonuçla birleştir.",
+      "tag": "COĞRAFYA · BÖLGE SINIRLARI",
+      "title": "İlişkiyi eşleştir"
+    },
+    {
+      "cards": [
+        {
+          "back": "Bölge sınırları değişebilir",
+          "front": "İklim ölçütü yerine tarım ölçütü seçilir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-1"
+        },
+        {
+          "back": "Kesinliği doğal bölgelere göre daha fazladır",
+          "front": "İdari sınırlar kanunla belirlenir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-2"
+        },
+        {
+          "back": "Aynı anda farklı bölgelere girebilir",
+          "front": "Bir yer birden çok ölçütle incelenir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-3"
+        },
+        {
+          "back": "Bölge sınırı dinamik biçimde değişebilir",
+          "front": "İşlevsel etki alanı zamanla genişler",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-4"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Kartlar temel ilişkileri kısa tekrar için özetler; puanlanan skill coverage hesabına katılmaz.",
+      "id": "exercise.geography.regions.boundaries.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.regions.boundaries.interpret"
+      ],
+      "tag": "COĞRAFYA · BÖLGE SINIRLARI"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.geography.regions.region-concept.001.mcq01",
+        "exercise.geography.regions.region-concept.001.mcq02",
+        "exercise.geography.regions.region-concept.001.tf01",
+        "exercise.geography.regions.region-concept.001.blank01",
+        "exercise.geography.regions.region-concept.001.match01",
+        "exercise.geography.regions.region-concept.001.card01"
+      ],
+      "id": "lesson.geography.regions.region-concept.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Bölgeleri kuruluş ölçütüne göre doğal, beşerî, ekonomik ve işlevsel olarak sınıflandırır.",
+      "title": "Bölge Kavramı",
+      "topicId": "tyt.geography.regions.region-concept"
+    },
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.geography.regions.boundaries.001.mcq01",
+        "exercise.geography.regions.boundaries.001.mcq02",
+        "exercise.geography.regions.boundaries.001.tf01",
+        "exercise.geography.regions.boundaries.001.blank01",
+        "exercise.geography.regions.boundaries.001.match01",
+        "exercise.geography.regions.boundaries.001.card01"
+      ],
+      "id": "lesson.geography.regions.boundaries.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Bölge sınırlarının amaca ve ölçüte göre değişebileceğini yorumlar.",
+      "title": "Bölge Sınırları",
+      "topicId": "tyt.geography.regions.boundaries"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.geography.regions.01",
+      "kind": "lesson",
+      "lessonId": "lesson.geography.regions.region-concept.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.geography.economic-activities.02"
+      ],
+      "title": "Bölge Kavramı",
+      "unitId": "tyt.geography.regions"
+    },
+    {
+      "id": "path.geography.regions.02",
+      "kind": "practice",
+      "lessonId": "lesson.geography.regions.boundaries.001",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.geography.regions.01"
+      ],
+      "title": "Bölge Sınırları Uygulaması",
+      "unitId": "tyt.geography.regions"
+    }
+  ],
+  "skills": [
+    {
+      "description": "Bölgeleri kuruluş ölçütüne göre doğal, beşerî, ekonomik ve işlevsel olarak sınıflandırır.",
+      "id": "skill.geography.regions.region-concept.interpret",
+      "title": "Bölgeleri kuruluş ölçütüne göre doğal, beşerî, ekonomik ve işlevsel olarak sınıflandırır.",
+      "topicId": "tyt.geography.regions.region-concept"
+    },
+    {
+      "description": "Bölge sınırlarının amaca ve ölçüte göre değişebileceğini yorumlar.",
+      "id": "skill.geography.regions.boundaries.interpret",
+      "title": "Bölge sınırlarının amaca ve ölçüte göre değişebileceğini yorumlar.",
+      "topicId": "tyt.geography.regions.boundaries"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.geography.regions.region-concept"
+      ],
+      "id": "tyt.geography.regions.region-concept",
+      "skillIds": [
+        "skill.geography.regions.region-concept.interpret"
+      ],
+      "title": "Bölge Kavramı",
+      "unitId": "tyt.geography.regions"
+    },
+    {
+      "conceptIds": [
+        "concept.geography.regions.boundaries"
+      ],
+      "id": "tyt.geography.regions.boundaries",
+      "skillIds": [
+        "skill.geography.regions.boundaries.interpret"
+      ],
+      "title": "Bölge Sınırları",
+      "unitId": "tyt.geography.regions"
+    }
+  ],
+  "unitId": "tyt.geography.regions"
+}

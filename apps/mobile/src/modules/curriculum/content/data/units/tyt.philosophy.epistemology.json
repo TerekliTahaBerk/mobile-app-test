@@ -1,0 +1,848 @@
+{
+  "unitId": "tyt.philosophy.epistemology",
+  "topics": [
+    {
+      "id": "tyt.philosophy.epistemology.knowledge-truth",
+      "unitId": "tyt.philosophy.epistemology",
+      "title": "Bilgi, Doğruluk ve Temellendirme",
+      "skillIds": [
+        "skill.philosophy.epistemology.knowledge-truth.knowledge-belief",
+        "skill.philosophy.epistemology.knowledge-truth.truth-reality"
+      ],
+      "conceptIds": [
+        "concept.philosophy.epistemology.knowledge-truth.bilgi",
+        "concept.philosophy.epistemology.knowledge-truth.dogruluk"
+      ]
+    },
+    {
+      "id": "tyt.philosophy.epistemology.sources",
+      "unitId": "tyt.philosophy.epistemology",
+      "title": "Bilginin Kaynağı",
+      "skillIds": [
+        "skill.philosophy.epistemology.sources.rationalism-empiricism",
+        "skill.philosophy.epistemology.sources.criticism-intuition"
+      ],
+      "conceptIds": [
+        "concept.philosophy.epistemology.sources.rasyonalizm-ve-empirizm",
+        "concept.philosophy.epistemology.sources.kritisizm-ve-sezgicilik"
+      ]
+    },
+    {
+      "id": "tyt.philosophy.epistemology.possibility-limits",
+      "unitId": "tyt.philosophy.epistemology",
+      "title": "Bilginin İmkânı ve Sınırları",
+      "skillIds": [
+        "skill.philosophy.epistemology.possibility-limits.dogmatism-skepticism",
+        "skill.philosophy.epistemology.possibility-limits.limits"
+      ],
+      "conceptIds": [
+        "concept.philosophy.epistemology.possibility-limits.dogmatizm-ve-septisizm",
+        "concept.philosophy.epistemology.possibility-limits.bilginin-sinirlari"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "skill.philosophy.epistemology.knowledge-truth.knowledge-belief",
+      "title": "Bilgi ile inancı ayırt eder",
+      "description": "Bir iddianın bilgi sayılmasında doğruluk ve gerekçelendirme gereğini örnekten ayırt eder.",
+      "topicId": "tyt.philosophy.epistemology.knowledge-truth"
+    },
+    {
+      "id": "skill.philosophy.epistemology.knowledge-truth.truth-reality",
+      "title": "Doğruluk ile gerçekliği ayırt eder",
+      "description": "Yargının doğruluğu ile yargının yöneldiği gerçekliği birbirinden ayırır.",
+      "topicId": "tyt.philosophy.epistemology.knowledge-truth"
+    },
+    {
+      "id": "skill.philosophy.epistemology.sources.rationalism-empiricism",
+      "title": "Akılcılık ile deneyciliği ayırt eder",
+      "description": "Bilginin kaynağında akla veya deney ve duyuma öncelik veren yaklaşımı metinden belirler.",
+      "topicId": "tyt.philosophy.epistemology.sources"
+    },
+    {
+      "id": "skill.philosophy.epistemology.sources.criticism-intuition",
+      "title": "Kritisizm ile sezgiciliği yorumlar",
+      "description": "Akıl-deney sentezi ile aracısız kavrayış vurgusunu verilen görüşten çıkarır.",
+      "topicId": "tyt.philosophy.epistemology.sources"
+    },
+    {
+      "id": "skill.philosophy.epistemology.possibility-limits.dogmatism-skepticism",
+      "title": "Dogmatizm ile septisizmi ayırt eder",
+      "description": "Kesin bilginin mümkün olduğunu savunan görüşle yargıyı askıya alan görüşü ayırt eder.",
+      "topicId": "tyt.philosophy.epistemology.possibility-limits"
+    },
+    {
+      "id": "skill.philosophy.epistemology.possibility-limits.limits",
+      "title": "Bilginin sınırlarını yorumlar",
+      "description": "İnsan bilgisinin deney, zihin veya konu bakımından sınırlandırılmasına ilişkin çıkarım yapar.",
+      "topicId": "tyt.philosophy.epistemology.possibility-limits"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "concept.philosophy.epistemology.knowledge-truth.bilgi",
+      "term": "bilgi",
+      "definition": "Bir iddianın bilgi sayılmasında doğruluk ve gerekçelendirme gereğini örnekten ayırt eder.",
+      "topicId": "tyt.philosophy.epistemology.knowledge-truth"
+    },
+    {
+      "id": "concept.philosophy.epistemology.knowledge-truth.dogruluk",
+      "term": "doğruluk",
+      "definition": "Yargının doğruluğu ile yargının yöneldiği gerçekliği birbirinden ayırır.",
+      "topicId": "tyt.philosophy.epistemology.knowledge-truth"
+    },
+    {
+      "id": "concept.philosophy.epistemology.sources.rasyonalizm-ve-empirizm",
+      "term": "rasyonalizm ve empirizm",
+      "definition": "Bilginin kaynağında akla veya deney ve duyuma öncelik veren yaklaşımı metinden belirler.",
+      "topicId": "tyt.philosophy.epistemology.sources"
+    },
+    {
+      "id": "concept.philosophy.epistemology.sources.kritisizm-ve-sezgicilik",
+      "term": "kritisizm ve sezgicilik",
+      "definition": "Akıl-deney sentezi ile aracısız kavrayış vurgusunu verilen görüşten çıkarır.",
+      "topicId": "tyt.philosophy.epistemology.sources"
+    },
+    {
+      "id": "concept.philosophy.epistemology.possibility-limits.dogmatizm-ve-septisizm",
+      "term": "dogmatizm ve septisizm",
+      "definition": "Kesin bilginin mümkün olduğunu savunan görüşle yargıyı askıya alan görüşü ayırt eder.",
+      "topicId": "tyt.philosophy.epistemology.possibility-limits"
+    },
+    {
+      "id": "concept.philosophy.epistemology.possibility-limits.bilginin-sinirlari",
+      "term": "bilginin sınırları",
+      "definition": "İnsan bilgisinin deney, zihin veya konu bakımından sınırlandırılmasına ilişkin çıkarım yapar.",
+      "topicId": "tyt.philosophy.epistemology.possibility-limits"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "lesson.philosophy.epistemology.knowledge-truth.001",
+      "topicId": "tyt.philosophy.epistemology.knowledge-truth",
+      "title": "Bilgi, Doğruluk ve Temellendirme",
+      "subtitle": "Bilgi ile inancı ayırt eder ve Doğruluk ile gerçekliği ayırt eder.",
+      "estimatedMinutes": 10,
+      "exerciseIds": [
+        "exercise.philosophy.epistemology.knowledge-truth.001.card01",
+        "exercise.philosophy.epistemology.knowledge-truth.001.mcq1",
+        "exercise.philosophy.epistemology.knowledge-truth.001.mcq2",
+        "exercise.philosophy.epistemology.knowledge-truth.001.mcq3",
+        "exercise.philosophy.epistemology.knowledge-truth.001.mcq4",
+        "exercise.philosophy.epistemology.knowledge-truth.001.tf01",
+        "exercise.philosophy.epistemology.knowledge-truth.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.philosophy.epistemology.sources.001",
+      "topicId": "tyt.philosophy.epistemology.sources",
+      "title": "Bilginin Kaynağı",
+      "subtitle": "Akılcılık ile deneyciliği ayırt eder ve Kritisizm ile sezgiciliği yorumlar.",
+      "estimatedMinutes": 10,
+      "exerciseIds": [
+        "exercise.philosophy.epistemology.sources.001.mcq1",
+        "exercise.philosophy.epistemology.sources.001.mcq2",
+        "exercise.philosophy.epistemology.sources.001.mcq3",
+        "exercise.philosophy.epistemology.sources.001.mcq4",
+        "exercise.philosophy.epistemology.sources.001.tf01",
+        "exercise.philosophy.epistemology.sources.001.match01",
+        "exercise.philosophy.epistemology.sources.001.blank01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.philosophy.epistemology.possibility-limits.001",
+      "topicId": "tyt.philosophy.epistemology.possibility-limits",
+      "title": "Bilginin İmkânı ve Sınırları",
+      "subtitle": "Dogmatizm ile septisizmi ayırt eder ve Bilginin sınırlarını yorumlar.",
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.philosophy.epistemology.possibility-limits.001.mcq1",
+        "exercise.philosophy.epistemology.possibility-limits.001.mcq2",
+        "exercise.philosophy.epistemology.possibility-limits.001.mcq3",
+        "exercise.philosophy.epistemology.possibility-limits.001.mcq4",
+        "exercise.philosophy.epistemology.possibility-limits.001.tf01",
+        "exercise.philosophy.epistemology.possibility-limits.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "id": "exercise.philosophy.epistemology.knowledge-truth.001.mcq1",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.epistemology.knowledge-truth.knowledge-belief"
+      ],
+      "prompt": "Ece bir sonucun doğru olduğuna inanır; ancak bu inancı destekleyecek kanıt ya da gerekçe sunamaz. Sonuç tesadüfen doğru çıkar.\n\nBu durumda eksik olan temel unsur hangisidir?",
+      "tag": "FELSEFE · BİLGİ, DOĞRULUK VE TEMELLENDİRME",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Gerçeklik"
+        },
+        {
+          "id": "opt-2",
+          "label": "Özne"
+        },
+        {
+          "id": "opt-3",
+          "label": "Nesne"
+        },
+        {
+          "id": "opt-4",
+          "label": "Temellendirme"
+        }
+      ],
+      "correctOptionId": "opt-4",
+      "explanation": "Ece bir sonucun doğru olduğuna inanır; ancak bu inancı destekleyecek kanıt ya da gerekçe sunamaz. Bu nedenle doğru ayrım “Temellendirme”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.epistemology.knowledge-truth.001.mcq2",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.epistemology.knowledge-truth.knowledge-belief"
+      ],
+      "prompt": "Ece bir sonucun doğru olduğuna inanır; ancak bu inancı destekleyecek kanıt ya da gerekçe sunamaz. Sonuç tesadüfen doğru çıkar.\n\nBir öğrenci bu görüşü “Gerçeklik” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · BİLGİ, DOĞRULUK VE TEMELLENDİRME",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Özne"
+        },
+        {
+          "id": "opt-2",
+          "label": "Nesne"
+        },
+        {
+          "id": "opt-3",
+          "label": "Temellendirme"
+        },
+        {
+          "id": "opt-4",
+          "label": "Gerçeklik"
+        }
+      ],
+      "correctOptionId": "opt-3",
+      "explanation": "Görüşte belirleyici ölçüt “bilgi” çerçevesidir. “Gerçeklik” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.epistemology.knowledge-truth.001.mcq3",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.epistemology.knowledge-truth.truth-reality"
+      ],
+      "prompt": "“Masada bir kitap vardır.” cümlesi bir yargıdır; masadaki kitabın kendisi ise bu yargının yöneldiği durumdur.\n\nBu örnekte doğruluk neyin özelliğidir?",
+      "tag": "FELSEFE · BİLGİ, DOĞRULUK VE TEMELLENDİRME",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Masanın renginin"
+        },
+        {
+          "id": "opt-2",
+          "label": "Yargının"
+        },
+        {
+          "id": "opt-3",
+          "label": "Nesnenin maddesinin"
+        },
+        {
+          "id": "opt-4",
+          "label": "Öznenin yaşının"
+        }
+      ],
+      "correctOptionId": "opt-2",
+      "explanation": "“Masada bir kitap vardır. Bu nedenle doğru ayrım “Yargının”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.epistemology.knowledge-truth.001.mcq4",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.epistemology.knowledge-truth.truth-reality"
+      ],
+      "prompt": "“Masada bir kitap vardır.” cümlesi bir yargıdır; masadaki kitabın kendisi ise bu yargının yöneldiği durumdur.\n\nBir öğrenci bu görüşü “Nesnenin maddesinin” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · BİLGİ, DOĞRULUK VE TEMELLENDİRME",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Yargının"
+        },
+        {
+          "id": "opt-2",
+          "label": "Nesnenin maddesinin"
+        },
+        {
+          "id": "opt-3",
+          "label": "Öznenin yaşının"
+        },
+        {
+          "id": "opt-4",
+          "label": "Masanın renginin"
+        }
+      ],
+      "correctOptionId": "opt-1",
+      "explanation": "Görüşte belirleyici ölçüt “doğruluk” çerçevesidir. “Nesnenin maddesinin” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.epistemology.knowledge-truth.001.tf01",
+      "kind": "trueFalse",
+      "skillIds": [
+        "skill.philosophy.epistemology.knowledge-truth.knowledge-belief",
+        "skill.philosophy.epistemology.knowledge-truth.truth-reality"
+      ],
+      "statement": "bilgi ile doğruluk aynı kavram değildir; bir metnin gerekçesine bakılarak birbirinden ayrılmalıdır.",
+      "tag": "FELSEFE · BİLGİ, DOĞRULUK VE TEMELLENDİRME",
+      "correctAnswer": true,
+      "explanation": "Bu iki kavram aynı topic içinde ilişkili olsa da farklı sorulara veya ölçütlere karşılık gelir. Ayrım, yalnız anahtar kelimeye değil görüşün gerekçesine dayanır.",
+      "difficulty": 2,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.epistemology.knowledge-truth.001.match01",
+      "kind": "matching",
+      "skillIds": [
+        "skill.philosophy.epistemology.knowledge-truth.knowledge-belief",
+        "skill.philosophy.epistemology.knowledge-truth.truth-reality"
+      ],
+      "title": "Görüşü temel vurgusuyla eşleştir",
+      "subtitle": "Her ifadeyi yalnız bir kavramla eşleştir.",
+      "tag": "FELSEFE · BİLGİ, DOĞRULUK VE TEMELLENDİRME",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "bilgi",
+          "right": "Bir iddianın bilgi sayılmasında doğruluk ve gerekçelendirme gereğini örnekten ayırt eder."
+        },
+        {
+          "id": "pair-2",
+          "left": "doğruluk",
+          "right": "Yargının doğruluğu ile yargının yöneldiği gerçekliği birbirinden ayırır."
+        }
+      ],
+      "explanation": "Eşleştirmeler kavramın adı ile ölçülebilir ayırt etme ölçütünü bağlar; görüşü yalnız ezberlemek yerine gerekçesiyle tanımayı sağlar.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.epistemology.knowledge-truth.001.card01",
+      "kind": "flashcard",
+      "skillIds": [
+        "skill.philosophy.epistemology.knowledge-truth.knowledge-belief",
+        "skill.philosophy.epistemology.knowledge-truth.truth-reality"
+      ],
+      "tag": "FELSEFE · BİLGİ, DOĞRULUK VE TEMELLENDİRME",
+      "cards": [
+        {
+          "id": "card-1",
+          "front": "bilgi",
+          "back": "Bir iddianın bilgi sayılmasında doğruluk ve gerekçelendirme gereğini örnekten ayırt eder.",
+          "hint": "Kavramın bir metinde hangi ölçütle tanınacağını düşün."
+        },
+        {
+          "id": "card-2",
+          "front": "doğruluk",
+          "back": "Yargının doğruluğu ile yargının yöneldiği gerçekliği birbirinden ayırır.",
+          "hint": "Kavramın bir metinde hangi ölçütle tanınacağını düşün."
+        }
+      ],
+      "explanation": "Kartlar temel ayrımları ilk karşılaşmada tanıtır; scored skill coverage hesabına katılmaz.",
+      "difficulty": 1,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.epistemology.sources.001.mcq1",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.epistemology.sources.rationalism-empiricism"
+      ],
+      "prompt": "Bir görüşe göre duyular değişken veriler sağlar; zorunlu ve genel bilgiye ulaşmayı mümkün kılan temel kaynak akıldır.\n\nBu görüş hangi yaklaşıma yakındır?",
+      "tag": "FELSEFE · BİLGİNİN KAYNAĞI",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Empirizm"
+        },
+        {
+          "id": "opt-2",
+          "label": "Septisizm"
+        },
+        {
+          "id": "opt-3",
+          "label": "Sezgicilik"
+        },
+        {
+          "id": "opt-4",
+          "label": "Rasyonalizm"
+        }
+      ],
+      "correctOptionId": "opt-4",
+      "explanation": "Bir görüşe göre duyular değişken veriler sağlar; zorunlu ve genel bilgiye ulaşmayı mümkün kılan temel kaynak akıldır. Bu nedenle doğru ayrım “Rasyonalizm”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.epistemology.sources.001.mcq2",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.epistemology.sources.rationalism-empiricism"
+      ],
+      "prompt": "Bir görüşe göre duyular değişken veriler sağlar; zorunlu ve genel bilgiye ulaşmayı mümkün kılan temel kaynak akıldır.\n\nBir öğrenci bu görüşü “Empirizm” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · BİLGİNİN KAYNAĞI",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Septisizm"
+        },
+        {
+          "id": "opt-2",
+          "label": "Sezgicilik"
+        },
+        {
+          "id": "opt-3",
+          "label": "Rasyonalizm"
+        },
+        {
+          "id": "opt-4",
+          "label": "Empirizm"
+        }
+      ],
+      "correctOptionId": "opt-3",
+      "explanation": "Görüşte belirleyici ölçüt “rasyonalizm ve empirizm” çerçevesidir. “Empirizm” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.epistemology.sources.001.mcq3",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.epistemology.sources.criticism-intuition"
+      ],
+      "prompt": "Bir düşünür, bilginin deneyle başladığını fakat zihnin bu verileri kendi formlarıyla düzenlediğini savunur.\n\nBu görüş aşağıdakilerden hangisiyle daha çok örtüşür?",
+      "tag": "FELSEFE · BİLGİNİN KAYNAĞI",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Nihilizm"
+        },
+        {
+          "id": "opt-2",
+          "label": "Kritisizm"
+        },
+        {
+          "id": "opt-3",
+          "label": "Salt empirizm"
+        },
+        {
+          "id": "opt-4",
+          "label": "Sezgicilik"
+        }
+      ],
+      "correctOptionId": "opt-2",
+      "explanation": "Bir düşünür, bilginin deneyle başladığını fakat zihnin bu verileri kendi formlarıyla düzenlediğini savunur. Bu nedenle doğru ayrım “Kritisizm”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.epistemology.sources.001.mcq4",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.epistemology.sources.criticism-intuition"
+      ],
+      "prompt": "Bir düşünür, bilginin deneyle başladığını fakat zihnin bu verileri kendi formlarıyla düzenlediğini savunur.\n\nBir öğrenci bu görüşü “Salt empirizm” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · BİLGİNİN KAYNAĞI",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Kritisizm"
+        },
+        {
+          "id": "opt-2",
+          "label": "Salt empirizm"
+        },
+        {
+          "id": "opt-3",
+          "label": "Sezgicilik"
+        },
+        {
+          "id": "opt-4",
+          "label": "Nihilizm"
+        }
+      ],
+      "correctOptionId": "opt-1",
+      "explanation": "Görüşte belirleyici ölçüt “kritisizm ve sezgicilik” çerçevesidir. “Salt empirizm” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.epistemology.sources.001.tf01",
+      "kind": "trueFalse",
+      "skillIds": [
+        "skill.philosophy.epistemology.sources.rationalism-empiricism",
+        "skill.philosophy.epistemology.sources.criticism-intuition"
+      ],
+      "statement": "rasyonalizm ve empirizm ile kritisizm ve sezgicilik aynı kavram değildir; bir metnin gerekçesine bakılarak birbirinden ayrılmalıdır.",
+      "tag": "FELSEFE · BİLGİNİN KAYNAĞI",
+      "correctAnswer": true,
+      "explanation": "Bu iki kavram aynı topic içinde ilişkili olsa da farklı sorulara veya ölçütlere karşılık gelir. Ayrım, yalnız anahtar kelimeye değil görüşün gerekçesine dayanır.",
+      "difficulty": 2,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.epistemology.sources.001.match01",
+      "kind": "matching",
+      "skillIds": [
+        "skill.philosophy.epistemology.sources.rationalism-empiricism",
+        "skill.philosophy.epistemology.sources.criticism-intuition"
+      ],
+      "title": "Görüşü temel vurgusuyla eşleştir",
+      "subtitle": "Her ifadeyi yalnız bir kavramla eşleştir.",
+      "tag": "FELSEFE · BİLGİNİN KAYNAĞI",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "rasyonalizm ve empirizm",
+          "right": "Bilginin kaynağında akla veya deney ve duyuma öncelik veren yaklaşımı metinden belirler."
+        },
+        {
+          "id": "pair-2",
+          "left": "kritisizm ve sezgicilik",
+          "right": "Akıl-deney sentezi ile aracısız kavrayış vurgusunu verilen görüşten çıkarır."
+        }
+      ],
+      "explanation": "Eşleştirmeler kavramın adı ile ölçülebilir ayırt etme ölçütünü bağlar; görüşü yalnız ezberlemek yerine gerekçesiyle tanımayı sağlar.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.epistemology.sources.001.blank01",
+      "kind": "fillBlank",
+      "skillIds": [
+        "skill.philosophy.epistemology.sources.rationalism-empiricism"
+      ],
+      "title": "Temel kavramı tamamla",
+      "hint": "Bilginin kaynağında akla veya deney ve duyuma öncelik veren yaklaşımı metinden belirler.",
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "rasyonalizm ve empirizm"
+        },
+        {
+          "id": "w-2",
+          "label": "kritisizm ve sezgicilik"
+        },
+        {
+          "id": "w-3",
+          "label": "olgusal betimleme"
+        }
+      ],
+      "solutionTokenIds": [
+        "w-1"
+      ],
+      "explanation": "Tanım “rasyonalizm ve empirizm” kavramına karşılık gelir. Diğer seçenekler farklı bir ölçüt veya düşünme alanını belirtir.",
+      "difficulty": 1,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.epistemology.possibility-limits.001.mcq1",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.epistemology.possibility-limits.dogmatism-skepticism"
+      ],
+      "prompt": "Bir araştırmacı, her iddianın karşısına eşit güçte bir karşı iddia konabileceğini söyleyerek kesin hüküm vermekten kaçınır.\n\nBu tutum hangi yaklaşıma yakındır?",
+      "tag": "FELSEFE · BİLGİNİN İMKÂNI VE SINIRLARI",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Empirizm"
+        },
+        {
+          "id": "opt-2",
+          "label": "Septisizm"
+        },
+        {
+          "id": "opt-3",
+          "label": "Dogmatizm"
+        },
+        {
+          "id": "opt-4",
+          "label": "Rasyonalizm"
+        }
+      ],
+      "correctOptionId": "opt-2",
+      "explanation": "Bir araştırmacı, her iddianın karşısına eşit güçte bir karşı iddia konabileceğini söyleyerek kesin hüküm vermekten kaçınır. Bu nedenle doğru ayrım “Septisizm”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.epistemology.possibility-limits.001.mcq2",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.epistemology.possibility-limits.dogmatism-skepticism"
+      ],
+      "prompt": "Bir araştırmacı, her iddianın karşısına eşit güçte bir karşı iddia konabileceğini söyleyerek kesin hüküm vermekten kaçınır.\n\nBir öğrenci bu görüşü “Dogmatizm” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · BİLGİNİN İMKÂNI VE SINIRLARI",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Septisizm"
+        },
+        {
+          "id": "opt-2",
+          "label": "Dogmatizm"
+        },
+        {
+          "id": "opt-3",
+          "label": "Rasyonalizm"
+        },
+        {
+          "id": "opt-4",
+          "label": "Empirizm"
+        }
+      ],
+      "correctOptionId": "opt-1",
+      "explanation": "Görüşte belirleyici ölçüt “dogmatizm ve septisizm” çerçevesidir. “Dogmatizm” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.epistemology.possibility-limits.001.mcq3",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.epistemology.possibility-limits.limits"
+      ],
+      "prompt": "Bir görüş, zihnin deneyin ötesindeki şeyler hakkında düşünse de bunları bilgi konusu yapamayacağını savunur.\n\nBu görüşten hangi sonuç çıkar?",
+      "tag": "FELSEFE · BİLGİNİN İMKÂNI VE SINIRLARI",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Her düşünülen şey kesin bilinir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Duyular hiçbir bilgi sağlamaz"
+        },
+        {
+          "id": "opt-3",
+          "label": "Bilgi yalnız sezgidir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Bilginin kapsamı deney alanıyla sınırlıdır"
+        }
+      ],
+      "correctOptionId": "opt-4",
+      "explanation": "Bir görüş, zihnin deneyin ötesindeki şeyler hakkında düşünse de bunları bilgi konusu yapamayacağını savunur. Bu nedenle doğru ayrım “Bilginin kapsamı deney alanıyla sınırlıdır”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.epistemology.possibility-limits.001.mcq4",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.epistemology.possibility-limits.limits"
+      ],
+      "prompt": "Bir görüş, zihnin deneyin ötesindeki şeyler hakkında düşünse de bunları bilgi konusu yapamayacağını savunur.\n\nBir öğrenci bu görüşü “Her düşünülen şey kesin bilinir” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · BİLGİNİN İMKÂNI VE SINIRLARI",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Duyular hiçbir bilgi sağlamaz"
+        },
+        {
+          "id": "opt-2",
+          "label": "Bilgi yalnız sezgidir"
+        },
+        {
+          "id": "opt-3",
+          "label": "Bilginin kapsamı deney alanıyla sınırlıdır"
+        },
+        {
+          "id": "opt-4",
+          "label": "Her düşünülen şey kesin bilinir"
+        }
+      ],
+      "correctOptionId": "opt-3",
+      "explanation": "Görüşte belirleyici ölçüt “bilginin sınırları” çerçevesidir. “Her düşünülen şey kesin bilinir” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.epistemology.possibility-limits.001.tf01",
+      "kind": "trueFalse",
+      "skillIds": [
+        "skill.philosophy.epistemology.possibility-limits.dogmatism-skepticism",
+        "skill.philosophy.epistemology.possibility-limits.limits"
+      ],
+      "statement": "dogmatizm ve septisizm ile bilginin sınırları aynı kavram değildir; bir metnin gerekçesine bakılarak birbirinden ayrılmalıdır.",
+      "tag": "FELSEFE · BİLGİNİN İMKÂNI VE SINIRLARI",
+      "correctAnswer": true,
+      "explanation": "Bu iki kavram aynı topic içinde ilişkili olsa da farklı sorulara veya ölçütlere karşılık gelir. Ayrım, yalnız anahtar kelimeye değil görüşün gerekçesine dayanır.",
+      "difficulty": 2,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.epistemology.possibility-limits.001.match01",
+      "kind": "matching",
+      "skillIds": [
+        "skill.philosophy.epistemology.possibility-limits.dogmatism-skepticism",
+        "skill.philosophy.epistemology.possibility-limits.limits"
+      ],
+      "title": "Görüşü temel vurgusuyla eşleştir",
+      "subtitle": "Her ifadeyi yalnız bir kavramla eşleştir.",
+      "tag": "FELSEFE · BİLGİNİN İMKÂNI VE SINIRLARI",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "dogmatizm ve septisizm",
+          "right": "Kesin bilginin mümkün olduğunu savunan görüşle yargıyı askıya alan görüşü ayırt eder."
+        },
+        {
+          "id": "pair-2",
+          "left": "bilginin sınırları",
+          "right": "İnsan bilgisinin deney, zihin veya konu bakımından sınırlandırılmasına ilişkin çıkarım yapar."
+        }
+      ],
+      "explanation": "Eşleştirmeler kavramın adı ile ölçülebilir ayırt etme ölçütünü bağlar; görüşü yalnız ezberlemek yerine gerekçesiyle tanımayı sağlar.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.philosophy.epistemology.01",
+      "unitId": "tyt.philosophy.epistemology",
+      "kind": "lesson",
+      "title": "Bilgi, Doğruluk ve Temellendirme",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.philosophy.subject-matter.03"
+      ],
+      "lessonId": "lesson.philosophy.epistemology.knowledge-truth.001"
+    },
+    {
+      "id": "path.philosophy.epistemology.02",
+      "unitId": "tyt.philosophy.epistemology",
+      "kind": "lesson",
+      "title": "Bilginin Kaynağı",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.philosophy.epistemology.01"
+      ],
+      "lessonId": "lesson.philosophy.epistemology.sources.001"
+    },
+    {
+      "id": "path.philosophy.epistemology.03",
+      "unitId": "tyt.philosophy.epistemology",
+      "kind": "practice",
+      "title": "Bilginin İmkânı ve Sınırları Uygulaması",
+      "order": 3,
+      "prerequisiteIds": [
+        "path.philosophy.epistemology.02"
+      ],
+      "lessonId": "lesson.philosophy.epistemology.possibility-limits.001"
+    }
+  ]
+}

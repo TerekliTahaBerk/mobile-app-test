@@ -1,0 +1,531 @@
+{
+  "concepts": [
+    {
+      "definition": "Bağıl nem azalır",
+      "id": "concept.geography.humidity-precipitation.humidity",
+      "term": "Sıcaklık artar, havadaki su buharı değişmez",
+      "topicId": "tyt.geography.humidity-precipitation.humidity"
+    },
+    {
+      "definition": "Orografik yağış oluşur",
+      "id": "concept.geography.humidity-precipitation.precipitation",
+      "term": "Nemli hava dağ yamacında yükselir",
+      "topicId": "tyt.geography.humidity-precipitation.precipitation"
+    }
+  ],
+  "exercises": [
+    {
+      "correctOptionId": "opt-1",
+      "difficulty": 2,
+      "explanation": "Sıcaklık artar, havadaki su buharı değişmez durumunda bağıl nem azalır. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.humidity-precipitation.humidity.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Bağıl nem azalır"
+        },
+        {
+          "id": "opt-2",
+          "label": "Yoğuşma başlayabilir"
+        },
+        {
+          "id": "opt-3",
+          "label": "Buharlaşma artabilir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Bağıl nem yüzde 100 olur"
+        }
+      ],
+      "prompt": "Sıcaklık artar, havadaki su buharı değişmez. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.humidity-precipitation.humidity.interpret"
+      ],
+      "tag": "COĞRAFYA · NEM VE BUHARLAŞMA"
+    },
+    {
+      "correctOptionId": "opt-2",
+      "difficulty": 4,
+      "explanation": "Hava soğuyarak doyma noktasına ulaşır durumunda yoğuşma başlayabilir. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.humidity-precipitation.humidity.001.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Bağıl nem azalır"
+        },
+        {
+          "id": "opt-2",
+          "label": "Yoğuşma başlayabilir"
+        },
+        {
+          "id": "opt-3",
+          "label": "Buharlaşma artabilir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Bağıl nem yüzde 100 olur"
+        }
+      ],
+      "prompt": "Hava soğuyarak doyma noktasına ulaşır. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.humidity-precipitation.humidity.interpret"
+      ],
+      "tag": "COĞRAFYA · NEM VE BUHARLAŞMA"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 3,
+      "explanation": "Sıcak ve kuru rüzgâr eser ile buharlaşma artabilir arasında doğrudan bir coğrafi ilişki vardır.",
+      "id": "exercise.geography.humidity-precipitation.humidity.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.humidity-precipitation.humidity.interpret"
+      ],
+      "statement": "Sıcak ve kuru rüzgâr eser; bunun sonucunda buharlaşma artabilir.",
+      "tag": "COĞRAFYA · NEM VE BUHARLAŞMA"
+    },
+    {
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "Bağıl nem azalır"
+        },
+        {
+          "id": "w-2",
+          "label": "Yoğuşma başlayabilir"
+        },
+        {
+          "id": "w-3",
+          "label": "Buharlaşma artabilir"
+        },
+        {
+          "id": "w-4",
+          "label": "Bağıl nem yüzde 100 olur"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "Mutlak nem maksimum neme eşit olur koşulunun beklenen sonucu “Bağıl nem yüzde 100 olur” ilişkisidir.",
+      "hint": "Mutlak nem maksimum neme eşit olur",
+      "id": "exercise.geography.humidity-precipitation.humidity.001.blank01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.humidity-precipitation.humidity.interpret"
+      ],
+      "solutionTokenIds": [
+        "w-4"
+      ],
+      "title": "Mutlak nem maksimum neme eşit olur durumunda sonuç"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Her koşul, kendisinden beklenen özgün coğrafi sonuçla eşleştirilir; aynı sonuç iki kez kullanılmaz.",
+      "id": "exercise.geography.humidity-precipitation.humidity.001.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Sıcaklık artar, havadaki su buharı değişmez",
+          "right": "Bağıl nem azalır"
+        },
+        {
+          "id": "pair-2",
+          "left": "Hava soğuyarak doyma noktasına ulaşır",
+          "right": "Yoğuşma başlayabilir"
+        },
+        {
+          "id": "pair-3",
+          "left": "Sıcak ve kuru rüzgâr eser",
+          "right": "Buharlaşma artabilir"
+        },
+        {
+          "id": "pair-4",
+          "left": "Mutlak nem maksimum neme eşit olur",
+          "right": "Bağıl nem yüzde 100 olur"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.humidity-precipitation.humidity.interpret"
+      ],
+      "subtitle": "Koşulu doğru coğrafi sonuçla birleştir.",
+      "tag": "COĞRAFYA · NEM VE BUHARLAŞMA",
+      "title": "İlişkiyi eşleştir"
+    },
+    {
+      "cards": [
+        {
+          "back": "Bağıl nem azalır",
+          "front": "Sıcaklık artar, havadaki su buharı değişmez",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-1"
+        },
+        {
+          "back": "Yoğuşma başlayabilir",
+          "front": "Hava soğuyarak doyma noktasına ulaşır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-2"
+        },
+        {
+          "back": "Buharlaşma artabilir",
+          "front": "Sıcak ve kuru rüzgâr eser",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-3"
+        },
+        {
+          "back": "Bağıl nem yüzde 100 olur",
+          "front": "Mutlak nem maksimum neme eşit olur",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-4"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Kartlar temel ilişkileri kısa tekrar için özetler; puanlanan skill coverage hesabına katılmaz.",
+      "id": "exercise.geography.humidity-precipitation.humidity.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.humidity-precipitation.humidity.interpret"
+      ],
+      "tag": "COĞRAFYA · NEM VE BUHARLAŞMA"
+    },
+    {
+      "correctOptionId": "opt-1",
+      "difficulty": 2,
+      "explanation": "Nemli hava dağ yamacında yükselir durumunda orografik yağış oluşur. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.humidity-precipitation.precipitation.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Orografik yağış oluşur"
+        },
+        {
+          "id": "opt-2",
+          "label": "Konveksiyonel yağış oluşur"
+        },
+        {
+          "id": "opt-3",
+          "label": "Cephe yağışı oluşur"
+        },
+        {
+          "id": "opt-4",
+          "label": "Nem kapasitesi azalır ve yoğuşma kolaylaşır"
+        }
+      ],
+      "prompt": "Nemli hava dağ yamacında yükselir. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.humidity-precipitation.precipitation.interpret"
+      ],
+      "tag": "COĞRAFYA · YAĞIŞ OLUŞUMU"
+    },
+    {
+      "correctOptionId": "opt-2",
+      "difficulty": 4,
+      "explanation": "Isınan hava hızla yükselir durumunda konveksiyonel yağış oluşur. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.humidity-precipitation.precipitation.001.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Orografik yağış oluşur"
+        },
+        {
+          "id": "opt-2",
+          "label": "Konveksiyonel yağış oluşur"
+        },
+        {
+          "id": "opt-3",
+          "label": "Cephe yağışı oluşur"
+        },
+        {
+          "id": "opt-4",
+          "label": "Nem kapasitesi azalır ve yoğuşma kolaylaşır"
+        }
+      ],
+      "prompt": "Isınan hava hızla yükselir. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.humidity-precipitation.precipitation.interpret"
+      ],
+      "tag": "COĞRAFYA · YAĞIŞ OLUŞUMU"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 3,
+      "explanation": "Sıcak ve soğuk hava kütleleri karşılaşır ile cephe yağışı oluşur arasında doğrudan bir coğrafi ilişki vardır.",
+      "id": "exercise.geography.humidity-precipitation.precipitation.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.humidity-precipitation.precipitation.interpret"
+      ],
+      "statement": "Sıcak ve soğuk hava kütleleri karşılaşır; bunun sonucunda cephe yağışı oluşur.",
+      "tag": "COĞRAFYA · YAĞIŞ OLUŞUMU"
+    },
+    {
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "Orografik yağış oluşur"
+        },
+        {
+          "id": "w-2",
+          "label": "Konveksiyonel yağış oluşur"
+        },
+        {
+          "id": "w-3",
+          "label": "Cephe yağışı oluşur"
+        },
+        {
+          "id": "w-4",
+          "label": "Nem kapasitesi azalır ve yoğuşma kolaylaşır"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "Hava yükselip soğur koşulunun beklenen sonucu “Nem kapasitesi azalır ve yoğuşma kolaylaşır” ilişkisidir.",
+      "hint": "Hava yükselip soğur",
+      "id": "exercise.geography.humidity-precipitation.precipitation.001.blank01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.humidity-precipitation.precipitation.interpret"
+      ],
+      "solutionTokenIds": [
+        "w-4"
+      ],
+      "title": "Hava yükselip soğur durumunda sonuç"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Her koşul, kendisinden beklenen özgün coğrafi sonuçla eşleştirilir; aynı sonuç iki kez kullanılmaz.",
+      "id": "exercise.geography.humidity-precipitation.precipitation.001.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Nemli hava dağ yamacında yükselir",
+          "right": "Orografik yağış oluşur"
+        },
+        {
+          "id": "pair-2",
+          "left": "Isınan hava hızla yükselir",
+          "right": "Konveksiyonel yağış oluşur"
+        },
+        {
+          "id": "pair-3",
+          "left": "Sıcak ve soğuk hava kütleleri karşılaşır",
+          "right": "Cephe yağışı oluşur"
+        },
+        {
+          "id": "pair-4",
+          "left": "Hava yükselip soğur",
+          "right": "Nem kapasitesi azalır ve yoğuşma kolaylaşır"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.humidity-precipitation.precipitation.interpret"
+      ],
+      "subtitle": "Koşulu doğru coğrafi sonuçla birleştir.",
+      "tag": "COĞRAFYA · YAĞIŞ OLUŞUMU",
+      "title": "İlişkiyi eşleştir"
+    },
+    {
+      "cards": [
+        {
+          "back": "Orografik yağış oluşur",
+          "front": "Nemli hava dağ yamacında yükselir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-1"
+        },
+        {
+          "back": "Konveksiyonel yağış oluşur",
+          "front": "Isınan hava hızla yükselir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-2"
+        },
+        {
+          "back": "Cephe yağışı oluşur",
+          "front": "Sıcak ve soğuk hava kütleleri karşılaşır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-3"
+        },
+        {
+          "back": "Nem kapasitesi azalır ve yoğuşma kolaylaşır",
+          "front": "Hava yükselip soğur",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-4"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Kartlar temel ilişkileri kısa tekrar için özetler; puanlanan skill coverage hesabına katılmaz.",
+      "id": "exercise.geography.humidity-precipitation.precipitation.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.humidity-precipitation.precipitation.interpret"
+      ],
+      "tag": "COĞRAFYA · YAĞIŞ OLUŞUMU"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.geography.humidity-precipitation.humidity.001.mcq01",
+        "exercise.geography.humidity-precipitation.humidity.001.mcq02",
+        "exercise.geography.humidity-precipitation.humidity.001.tf01",
+        "exercise.geography.humidity-precipitation.humidity.001.blank01",
+        "exercise.geography.humidity-precipitation.humidity.001.match01",
+        "exercise.geography.humidity-precipitation.humidity.001.card01"
+      ],
+      "id": "lesson.geography.humidity-precipitation.humidity.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Mutlak, maksimum ve bağıl nem ilişkisini sıcaklıkla birlikte yorumlar.",
+      "title": "Nem ve Buharlaşma",
+      "topicId": "tyt.geography.humidity-precipitation.humidity"
+    },
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.geography.humidity-precipitation.precipitation.001.mcq01",
+        "exercise.geography.humidity-precipitation.precipitation.001.mcq02",
+        "exercise.geography.humidity-precipitation.precipitation.001.tf01",
+        "exercise.geography.humidity-precipitation.precipitation.001.blank01",
+        "exercise.geography.humidity-precipitation.precipitation.001.match01",
+        "exercise.geography.humidity-precipitation.precipitation.001.card01"
+      ],
+      "id": "lesson.geography.humidity-precipitation.precipitation.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Yükselici hava hareketine göre yağış türlerini ayırt eder.",
+      "title": "Yağış Oluşumu",
+      "topicId": "tyt.geography.humidity-precipitation.precipitation"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.geography.humidity-precipitation.01",
+      "kind": "lesson",
+      "lessonId": "lesson.geography.humidity-precipitation.humidity.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.geography.pressure-winds.02"
+      ],
+      "title": "Nem ve Buharlaşma",
+      "unitId": "tyt.geography.humidity-precipitation"
+    },
+    {
+      "id": "path.geography.humidity-precipitation.02",
+      "kind": "practice",
+      "lessonId": "lesson.geography.humidity-precipitation.precipitation.001",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.geography.humidity-precipitation.01"
+      ],
+      "title": "Yağış Oluşumu Uygulaması",
+      "unitId": "tyt.geography.humidity-precipitation"
+    }
+  ],
+  "skills": [
+    {
+      "description": "Mutlak, maksimum ve bağıl nem ilişkisini sıcaklıkla birlikte yorumlar.",
+      "id": "skill.geography.humidity-precipitation.humidity.interpret",
+      "title": "Mutlak, maksimum ve bağıl nem ilişkisini sıcaklıkla birlikte yorumlar.",
+      "topicId": "tyt.geography.humidity-precipitation.humidity"
+    },
+    {
+      "description": "Yükselici hava hareketine göre yağış türlerini ayırt eder.",
+      "id": "skill.geography.humidity-precipitation.precipitation.interpret",
+      "title": "Yükselici hava hareketine göre yağış türlerini ayırt eder.",
+      "topicId": "tyt.geography.humidity-precipitation.precipitation"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.geography.humidity-precipitation.humidity"
+      ],
+      "id": "tyt.geography.humidity-precipitation.humidity",
+      "skillIds": [
+        "skill.geography.humidity-precipitation.humidity.interpret"
+      ],
+      "title": "Nem ve Buharlaşma",
+      "unitId": "tyt.geography.humidity-precipitation"
+    },
+    {
+      "conceptIds": [
+        "concept.geography.humidity-precipitation.precipitation"
+      ],
+      "id": "tyt.geography.humidity-precipitation.precipitation",
+      "skillIds": [
+        "skill.geography.humidity-precipitation.precipitation.interpret"
+      ],
+      "title": "Yağış Oluşumu",
+      "unitId": "tyt.geography.humidity-precipitation"
+    }
+  ],
+  "unitId": "tyt.geography.humidity-precipitation"
+}

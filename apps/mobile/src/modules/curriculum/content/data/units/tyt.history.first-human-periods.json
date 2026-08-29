@@ -1,0 +1,535 @@
+{
+  "concepts": [
+    {
+      "definition": "Tarımın başlaması",
+      "id": "concept.history.first-human-periods.neolithic-production",
+      "term": "Tarımın başlaması",
+      "topicId": "tyt.history.first-human-periods.from-hunter-to-farmer"
+    },
+    {
+      "definition": "İş bölümünün gelişmesi",
+      "id": "concept.history.first-human-periods.settlement-surplus",
+      "term": "İş bölümünün gelişmesi",
+      "topicId": "tyt.history.first-human-periods.from-hunter-to-farmer"
+    },
+    {
+      "definition": "Yazının icadı",
+      "id": "concept.history.first-human-periods.writing-history",
+      "term": "Yazının icadı",
+      "topicId": "tyt.history.first-human-periods.writing-and-civilizations"
+    },
+    {
+      "definition": "Çivi yazısını kullanmaları",
+      "id": "concept.history.first-human-periods.mesopotamia-records",
+      "term": "Çivi yazısını kullanmaları",
+      "topicId": "tyt.history.first-human-periods.writing-and-civilizations"
+    }
+  ],
+  "exercises": [
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Tarımın başlaması, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.first-human-periods.from-hunter-to-farmer.neolithic-production.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Tarımın başlaması"
+        },
+        {
+          "id": "d1",
+          "label": "Yazının icadı"
+        },
+        {
+          "id": "d2",
+          "label": "Demirin işlenmesi"
+        },
+        {
+          "id": "d3",
+          "label": "Paranın kullanılması"
+        }
+      ],
+      "prompt": "Neolitik Dönemde yerleşik yaşamı ve tarımsal üretimi başlatan temel gelişme hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.first-human-periods.neolithic-production"
+      ],
+      "tag": "TARİH · AVCI-TOPLAYICI YAŞAMDAN ÜRETİME GEÇİŞ"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Neolitik Dönemde yerleşik yaşamı ve tarımsal üretimi başlatan temel gelişme hangisidir sorusunun doğru karşılığı “Tarımın başlaması” olmalıdır.",
+      "id": "exercise.history.first-human-periods.from-hunter-to-farmer.neolithic-production.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.first-human-periods.neolithic-production"
+      ],
+      "statement": "Yazının icadı, Neolitik Dönemde üretime geçişin sonuçlarını açıklar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · AVCI-TOPLAYICI YAŞAMDAN ÜRETİME GEÇİŞ"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "Tarımın başlaması"
+        },
+        {
+          "id": "d1",
+          "label": "Yazının icadı"
+        },
+        {
+          "id": "d2",
+          "label": "Demirin işlenmesi"
+        },
+        {
+          "id": "d3",
+          "label": "Paranın kullanılması"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “Tarımın başlaması” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.first-human-periods.from-hunter-to-farmer.neolithic-production.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.first-human-periods.neolithic-production"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: Neolitik Dönemde yerleşik yaşamı ve tarımsal üretimi başlatan temel gelişme hangisidir?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "İş bölümünün gelişmesi, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.first-human-periods.from-hunter-to-farmer.settlement-surplus.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "İş bölümünün gelişmesi"
+        },
+        {
+          "id": "d1",
+          "label": "Göçebe yaşamın zorunlu olması"
+        },
+        {
+          "id": "d2",
+          "label": "Yazının ortadan kalkması"
+        },
+        {
+          "id": "d3",
+          "label": "Ticaretin sona ermesi"
+        }
+      ],
+      "prompt": "Tarımsal üretim fazlasının ilk yerleşimlerde doğrudan desteklediği gelişme hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.first-human-periods.settlement-surplus"
+      ],
+      "tag": "TARİH · AVCI-TOPLAYICI YAŞAMDAN ÜRETİME GEÇİŞ"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Tarımsal üretim fazlasının ilk yerleşimlerde doğrudan desteklediği gelişme hangisidir sorusunun doğru karşılığı “İş bölümünün gelişmesi” olmalıdır.",
+      "id": "exercise.history.first-human-periods.from-hunter-to-farmer.settlement-surplus.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.first-human-periods.settlement-surplus"
+      ],
+      "statement": "Göçebe yaşamın zorunlu olması, Üretim fazlasının yerleşim ve iş bölümüne etkisini yorumlar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · AVCI-TOPLAYICI YAŞAMDAN ÜRETİME GEÇİŞ"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, Avcı-Toplayıcı Yaşamdan Üretime Geçiş başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.first-human-periods.from-hunter-to-farmer.settlement-surplus.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Neolitik Dönemde yerleşik yaşamı ve tarımsal üretimi başlatan temel gelişme hangisidir?",
+          "right": "Tarımın başlaması"
+        },
+        {
+          "id": "pair-2",
+          "left": "Tarımsal üretim fazlasının ilk yerleşimlerde doğrudan desteklediği gelişme hangisidir?",
+          "right": "İş bölümünün gelişmesi"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.first-human-periods.neolithic-production",
+        "skill.history.first-human-periods.settlement-surplus"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · AVCI-TOPLAYICI YAŞAMDAN ÜRETİME GEÇİŞ",
+      "title": "Bilgi bağlarını eşleştir"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Yazının icadı, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.first-human-periods.writing-and-civilizations.writing-history.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Yazının icadı"
+        },
+        {
+          "id": "d1",
+          "label": "Tarımın başlaması"
+        },
+        {
+          "id": "d2",
+          "label": "Ateşin denetlenmesi"
+        },
+        {
+          "id": "d3",
+          "label": "Tekerleğin kullanılması"
+        }
+      ],
+      "prompt": "Tarih öncesi çağları sona erdiren gelişme hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.first-human-periods.writing-history"
+      ],
+      "tag": "TARİH · YAZI, ŞEHİR VE İLK UYGARLIKLAR"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Tarih öncesi çağları sona erdiren gelişme hangisidir sorusunun doğru karşılığı “Yazının icadı” olmalıdır.",
+      "id": "exercise.history.first-human-periods.writing-and-civilizations.writing-history.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.first-human-periods.writing-history"
+      ],
+      "statement": "Tarımın başlaması, Yazının tarih çağlarını başlatmadaki rolünü açıklar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · YAZI, ŞEHİR VE İLK UYGARLIKLAR"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "Yazının icadı"
+        },
+        {
+          "id": "d1",
+          "label": "Tarımın başlaması"
+        },
+        {
+          "id": "d2",
+          "label": "Ateşin denetlenmesi"
+        },
+        {
+          "id": "d3",
+          "label": "Tekerleğin kullanılması"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “Yazının icadı” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.first-human-periods.writing-and-civilizations.writing-history.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.first-human-periods.writing-history"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: Tarih öncesi çağları sona erdiren gelişme hangisidir?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Çivi yazısını kullanmaları, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.first-human-periods.writing-and-civilizations.mesopotamia-records.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Çivi yazısını kullanmaları"
+        },
+        {
+          "id": "d1",
+          "label": "Alfabeyi ilk kez oluşturmaları"
+        },
+        {
+          "id": "d2",
+          "label": "Kâğıdı icat etmeleri"
+        },
+        {
+          "id": "d3",
+          "label": "Matbaayı geliştirmeleri"
+        }
+      ],
+      "prompt": "Sümerlerin tarih bilimi açısından belirleyici katkısı hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.first-human-periods.mesopotamia-records"
+      ],
+      "tag": "TARİH · YAZI, ŞEHİR VE İLK UYGARLIKLAR"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Sümerlerin tarih bilimi açısından belirleyici katkısı hangisidir sorusunun doğru karşılığı “Çivi yazısını kullanmaları” olmalıdır.",
+      "id": "exercise.history.first-human-periods.writing-and-civilizations.mesopotamia-records.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.first-human-periods.mesopotamia-records"
+      ],
+      "statement": "Alfabeyi ilk kez oluşturmaları, Mezopotamya uygarlıklarının yazılı kültüre katkısını tanır kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · YAZI, ŞEHİR VE İLK UYGARLIKLAR"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, Yazı, Şehir ve İlk Uygarlıklar başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.first-human-periods.writing-and-civilizations.mesopotamia-records.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Tarih öncesi çağları sona erdiren gelişme hangisidir?",
+          "right": "Yazının icadı"
+        },
+        {
+          "id": "pair-2",
+          "left": "Sümerlerin tarih bilimi açısından belirleyici katkısı hangisidir?",
+          "right": "Çivi yazısını kullanmaları"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.first-human-periods.writing-history",
+        "skill.history.first-human-periods.mesopotamia-records"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · YAZI, ŞEHİR VE İLK UYGARLIKLAR",
+      "title": "Bilgi bağlarını eşleştir"
+    },
+    {
+      "correctOrder": [
+        "event-1",
+        "event-2",
+        "event-3",
+        "event-4"
+      ],
+      "difficulty": 4,
+      "explanation": "Olaylar tarihleri dikkate alınarak eskiden yeniye sıralanır. Kronoloji, gelişmeler arasındaki neden-sonuç ilişkisini kurmak için temel bir çerçeve sunar.",
+      "id": "exercise.history.first-human-periods.from-hunter-to-farmer.order01",
+      "items": [
+        {
+          "id": "event-1",
+          "label": "Paleolitik Dönem"
+        },
+        {
+          "id": "event-2",
+          "label": "Neolitik Dönem"
+        },
+        {
+          "id": "event-3",
+          "label": "Yazının icadı"
+        },
+        {
+          "id": "event-4",
+          "label": "Tarih çağlarının başlaması"
+        }
+      ],
+      "kind": "ordering",
+      "prompt": "Gelişmeleri eskiden yeniye doğru sırala.",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.first-human-periods.neolithic-production",
+        "skill.history.first-human-periods.settlement-surplus"
+      ],
+      "tag": "TARİH · AVCI-TOPLAYICI YAŞAMDAN ÜRETİME GEÇİŞ"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.first-human-periods.from-hunter-to-farmer.neolithic-production.mcq01",
+        "exercise.history.first-human-periods.from-hunter-to-farmer.neolithic-production.tf01",
+        "exercise.history.first-human-periods.from-hunter-to-farmer.neolithic-production.fill01",
+        "exercise.history.first-human-periods.from-hunter-to-farmer.settlement-surplus.mcq01",
+        "exercise.history.first-human-periods.from-hunter-to-farmer.settlement-surplus.tf01",
+        "exercise.history.first-human-periods.from-hunter-to-farmer.settlement-surplus.match01",
+        "exercise.history.first-human-periods.from-hunter-to-farmer.order01"
+      ],
+      "id": "lesson.history.first-human-periods.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "Avcı-Toplayıcı Yaşamdan Üretime Geçiş",
+      "topicId": "tyt.history.first-human-periods.from-hunter-to-farmer"
+    },
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.first-human-periods.writing-and-civilizations.writing-history.mcq01",
+        "exercise.history.first-human-periods.writing-and-civilizations.writing-history.tf01",
+        "exercise.history.first-human-periods.writing-and-civilizations.writing-history.fill01",
+        "exercise.history.first-human-periods.writing-and-civilizations.mesopotamia-records.mcq01",
+        "exercise.history.first-human-periods.writing-and-civilizations.mesopotamia-records.tf01",
+        "exercise.history.first-human-periods.writing-and-civilizations.mesopotamia-records.match01"
+      ],
+      "id": "lesson.history.first-human-periods.002",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "Yazı, Şehir ve İlk Uygarlıklar",
+      "topicId": "tyt.history.first-human-periods.writing-and-civilizations"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.history.first-human-periods.01",
+      "kind": "lesson",
+      "lessonId": "lesson.history.first-human-periods.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.history.time.03"
+      ],
+      "title": "Avcı-Toplayıcı Yaşamdan Üretime Geçiş",
+      "unitId": "tyt.history.first-human-periods"
+    },
+    {
+      "id": "path.history.first-human-periods.02",
+      "kind": "checkpoint",
+      "lessonId": "lesson.history.first-human-periods.002",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.history.first-human-periods.01"
+      ],
+      "title": "İnsanlığın İlk Dönemleri Kontrolü",
+      "unitId": "tyt.history.first-human-periods"
+    }
+  ],
+  "skills": [
+    {
+      "description": "Neolitik Dönemde üretime geçişin sonuçlarını açıklar.",
+      "id": "skill.history.first-human-periods.neolithic-production",
+      "title": "Neolitik Dönemde üretime geçişin sonuçlarını açıklar",
+      "topicId": "tyt.history.first-human-periods.from-hunter-to-farmer"
+    },
+    {
+      "description": "Üretim fazlasının yerleşim ve iş bölümüne etkisini yorumlar.",
+      "id": "skill.history.first-human-periods.settlement-surplus",
+      "title": "Üretim fazlasının yerleşim ve iş bölümüne etkisini yorumlar",
+      "topicId": "tyt.history.first-human-periods.from-hunter-to-farmer"
+    },
+    {
+      "description": "Yazının tarih çağlarını başlatmadaki rolünü açıklar.",
+      "id": "skill.history.first-human-periods.writing-history",
+      "title": "Yazının tarih çağlarını başlatmadaki rolünü açıklar",
+      "topicId": "tyt.history.first-human-periods.writing-and-civilizations"
+    },
+    {
+      "description": "Mezopotamya uygarlıklarının yazılı kültüre katkısını tanır.",
+      "id": "skill.history.first-human-periods.mesopotamia-records",
+      "title": "Mezopotamya uygarlıklarının yazılı kültüre katkısını tanır",
+      "topicId": "tyt.history.first-human-periods.writing-and-civilizations"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.history.first-human-periods.neolithic-production",
+        "concept.history.first-human-periods.settlement-surplus"
+      ],
+      "id": "tyt.history.first-human-periods.from-hunter-to-farmer",
+      "skillIds": [
+        "skill.history.first-human-periods.neolithic-production",
+        "skill.history.first-human-periods.settlement-surplus"
+      ],
+      "title": "Avcı-Toplayıcı Yaşamdan Üretime Geçiş",
+      "unitId": "tyt.history.first-human-periods"
+    },
+    {
+      "conceptIds": [
+        "concept.history.first-human-periods.writing-history",
+        "concept.history.first-human-periods.mesopotamia-records"
+      ],
+      "id": "tyt.history.first-human-periods.writing-and-civilizations",
+      "skillIds": [
+        "skill.history.first-human-periods.writing-history",
+        "skill.history.first-human-periods.mesopotamia-records"
+      ],
+      "title": "Yazı, Şehir ve İlk Uygarlıklar",
+      "unitId": "tyt.history.first-human-periods"
+    }
+  ],
+  "unitId": "tyt.history.first-human-periods"
+}

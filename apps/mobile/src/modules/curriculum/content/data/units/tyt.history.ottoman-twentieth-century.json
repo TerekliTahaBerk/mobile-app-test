@@ -1,0 +1,535 @@
+{
+  "concepts": [
+    {
+      "definition": "Trablusgarp’ı",
+      "id": "concept.history.ottoman-twentieth-century.tripoli-result",
+      "term": "Trablusgarp’ı",
+      "topicId": "tyt.history.ottoman-twentieth-century.tripoli-balkan-wars"
+    },
+    {
+      "definition": "Balkan topraklarının büyük bölümünün kaybedilmesi",
+      "id": "concept.history.ottoman-twentieth-century.balkan-losses",
+      "term": "Balkan topraklarının büyük bölümünün kaybedilmesi",
+      "topicId": "tyt.history.ottoman-twentieth-century.tripoli-balkan-wars"
+    },
+    {
+      "definition": "Meclis-i Mebusan",
+      "id": "concept.history.ottoman-twentieth-century.second-constitution",
+      "term": "Meclis-i Mebusan",
+      "topicId": "tyt.history.ottoman-twentieth-century.second-constitutional-era"
+    },
+    {
+      "definition": "Tüm unsurları ortak vatandaşlıkta birleştirerek devleti korumak",
+      "id": "concept.history.ottoman-twentieth-century.ottomanism-purpose",
+      "term": "Tüm unsurları ortak vatandaşlıkta birleştirerek devleti korumak",
+      "topicId": "tyt.history.ottoman-twentieth-century.second-constitutional-era"
+    }
+  ],
+  "exercises": [
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Trablusgarp’ı, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.ottoman-twentieth-century.tripoli-balkan-wars.tripoli-result.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Trablusgarp’ı"
+        },
+        {
+          "id": "d1",
+          "label": "Doğu Trakya’yı"
+        },
+        {
+          "id": "d2",
+          "label": "Musul’u"
+        },
+        {
+          "id": "d3",
+          "label": "Kars’ı"
+        }
+      ],
+      "prompt": "Uşi Antlaşması’yla Osmanlı Devleti hangi toprağı kaybetmiştir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-twentieth-century.tripoli-result"
+      ],
+      "tag": "TARİH · TRABLUSGARP VE BALKAN SAVAŞLARI"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Uşi Antlaşması’yla Osmanlı Devleti hangi toprağı kaybetmiştir sorusunun doğru karşılığı “Trablusgarp’ı” olmalıdır.",
+      "id": "exercise.history.ottoman-twentieth-century.tripoli-balkan-wars.tripoli-result.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-twentieth-century.tripoli-result"
+      ],
+      "statement": "Doğu Trakya’yı, Trablusgarp Savaşı’nın Osmanlı açısından sonucunu açıklar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · TRABLUSGARP VE BALKAN SAVAŞLARI"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "Trablusgarp’ı"
+        },
+        {
+          "id": "d1",
+          "label": "Doğu Trakya’yı"
+        },
+        {
+          "id": "d2",
+          "label": "Musul’u"
+        },
+        {
+          "id": "d3",
+          "label": "Kars’ı"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “Trablusgarp’ı” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.ottoman-twentieth-century.tripoli-balkan-wars.tripoli-result.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-twentieth-century.tripoli-result"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: Uşi Antlaşması’yla Osmanlı Devleti hangi toprağı kaybetmiştir?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Balkan topraklarının büyük bölümünün kaybedilmesi, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.ottoman-twentieth-century.tripoli-balkan-wars.balkan-losses.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Balkan topraklarının büyük bölümünün kaybedilmesi"
+        },
+        {
+          "id": "d1",
+          "label": "Kuzey Afrika’nın tamamının geri alınması"
+        },
+        {
+          "id": "d2",
+          "label": "Rusya’nın savaştan çekilmesi"
+        },
+        {
+          "id": "d3",
+          "label": "Boğazların uluslararası komisyona bırakılması"
+        }
+      ],
+      "prompt": "Balkan Savaşlarının Osmanlı Devleti açısından sonucu hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-twentieth-century.balkan-losses"
+      ],
+      "tag": "TARİH · TRABLUSGARP VE BALKAN SAVAŞLARI"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Balkan Savaşlarının Osmanlı Devleti açısından sonucu hangisidir sorusunun doğru karşılığı “Balkan topraklarının büyük bölümünün kaybedilmesi” olmalıdır.",
+      "id": "exercise.history.ottoman-twentieth-century.tripoli-balkan-wars.balkan-losses.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-twentieth-century.balkan-losses"
+      ],
+      "statement": "Kuzey Afrika’nın tamamının geri alınması, Balkan Savaşlarının siyasi ve toplumsal sonuçlarını yorumlar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · TRABLUSGARP VE BALKAN SAVAŞLARI"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, Trablusgarp ve Balkan Savaşları başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.ottoman-twentieth-century.tripoli-balkan-wars.balkan-losses.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Uşi Antlaşması’yla Osmanlı Devleti hangi toprağı kaybetmiştir?",
+          "right": "Trablusgarp’ı"
+        },
+        {
+          "id": "pair-2",
+          "left": "Balkan Savaşlarının Osmanlı Devleti açısından sonucu hangisidir?",
+          "right": "Balkan topraklarının büyük bölümünün kaybedilmesi"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-twentieth-century.tripoli-result",
+        "skill.history.ottoman-twentieth-century.balkan-losses"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · TRABLUSGARP VE BALKAN SAVAŞLARI",
+      "title": "Bilgi bağlarını eşleştir"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Meclis-i Mebusan, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.ottoman-twentieth-century.second-constitutional-era.second-constitution.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Meclis-i Mebusan"
+        },
+        {
+          "id": "d1",
+          "label": "Divan-ı Hümayun"
+        },
+        {
+          "id": "d2",
+          "label": "Ayan Meclisi tek başına"
+        },
+        {
+          "id": "d3",
+          "label": "TBMM"
+        }
+      ],
+      "prompt": "1908’de II. Meşrutiyet’in ilanıyla hangi kurum yeniden açılmıştır?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-twentieth-century.second-constitution"
+      ],
+      "tag": "TARİH · II. MEŞRUTİYET VE FİKİR AKIMLARI"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. 1908’de II. Meşrutiyet’in ilanıyla hangi kurum yeniden açılmıştır sorusunun doğru karşılığı “Meclis-i Mebusan” olmalıdır.",
+      "id": "exercise.history.ottoman-twentieth-century.second-constitutional-era.second-constitution.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-twentieth-century.second-constitution"
+      ],
+      "statement": "Divan-ı Hümayun, II. Meşrutiyet’in siyasi hayata etkisini açıklar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · II. MEŞRUTİYET VE FİKİR AKIMLARI"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "Meclis-i Mebusan"
+        },
+        {
+          "id": "d1",
+          "label": "Divan-ı Hümayun"
+        },
+        {
+          "id": "d2",
+          "label": "Ayan Meclisi tek başına"
+        },
+        {
+          "id": "d3",
+          "label": "TBMM"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “Meclis-i Mebusan” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.ottoman-twentieth-century.second-constitutional-era.second-constitution.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-twentieth-century.second-constitution"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: 1908’de II. Meşrutiyet’in ilanıyla hangi kurum yeniden açılmıştır?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Tüm unsurları ortak vatandaşlıkta birleştirerek devleti korumak, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.ottoman-twentieth-century.second-constitutional-era.ottomanism-purpose.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Tüm unsurları ortak vatandaşlıkta birleştirerek devleti korumak"
+        },
+        {
+          "id": "d1",
+          "label": "Yalnızca Türk topluluklarını birleştirmek"
+        },
+        {
+          "id": "d2",
+          "label": "Halifeliği kaldırmak"
+        },
+        {
+          "id": "d3",
+          "label": "Batı ile bütün ilişkileri kesmek"
+        }
+      ],
+      "prompt": "Osmanlıcılık fikir akımının temel amacı hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-twentieth-century.ottomanism-purpose"
+      ],
+      "tag": "TARİH · II. MEŞRUTİYET VE FİKİR AKIMLARI"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Osmanlıcılık fikir akımının temel amacı hangisidir sorusunun doğru karşılığı “Tüm unsurları ortak vatandaşlıkta birleştirerek devleti korumak” olmalıdır.",
+      "id": "exercise.history.ottoman-twentieth-century.second-constitutional-era.ottomanism-purpose.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-twentieth-century.ottomanism-purpose"
+      ],
+      "statement": "Yalnızca Türk topluluklarını birleştirmek, Osmanlıcılık fikrinin amacını açıklar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · II. MEŞRUTİYET VE FİKİR AKIMLARI"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, II. Meşrutiyet ve Fikir Akımları başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.ottoman-twentieth-century.second-constitutional-era.ottomanism-purpose.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "1908’de II. Meşrutiyet’in ilanıyla hangi kurum yeniden açılmıştır?",
+          "right": "Meclis-i Mebusan"
+        },
+        {
+          "id": "pair-2",
+          "left": "Osmanlıcılık fikir akımının temel amacı hangisidir?",
+          "right": "Tüm unsurları ortak vatandaşlıkta birleştirerek devleti korumak"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-twentieth-century.second-constitution",
+        "skill.history.ottoman-twentieth-century.ottomanism-purpose"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · II. MEŞRUTİYET VE FİKİR AKIMLARI",
+      "title": "Bilgi bağlarını eşleştir"
+    },
+    {
+      "correctOrder": [
+        "event-1",
+        "event-2",
+        "event-3",
+        "event-4"
+      ],
+      "difficulty": 4,
+      "explanation": "Olaylar tarihleri dikkate alınarak eskiden yeniye sıralanır. Kronoloji, gelişmeler arasındaki neden-sonuç ilişkisini kurmak için temel bir çerçeve sunar.",
+      "id": "exercise.history.ottoman-twentieth-century.tripoli-balkan-wars.order01",
+      "items": [
+        {
+          "id": "event-1",
+          "label": "II. Meşrutiyet (1908)"
+        },
+        {
+          "id": "event-2",
+          "label": "Trablusgarp Savaşı (1911)"
+        },
+        {
+          "id": "event-3",
+          "label": "Balkan Savaşları (1912)"
+        },
+        {
+          "id": "event-4",
+          "label": "I. Dünya Savaşı’nın başlaması (1914)"
+        }
+      ],
+      "kind": "ordering",
+      "prompt": "Gelişmeleri eskiden yeniye doğru sırala.",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-twentieth-century.tripoli-result",
+        "skill.history.ottoman-twentieth-century.balkan-losses"
+      ],
+      "tag": "TARİH · TRABLUSGARP VE BALKAN SAVAŞLARI"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.ottoman-twentieth-century.tripoli-balkan-wars.tripoli-result.mcq01",
+        "exercise.history.ottoman-twentieth-century.tripoli-balkan-wars.tripoli-result.tf01",
+        "exercise.history.ottoman-twentieth-century.tripoli-balkan-wars.tripoli-result.fill01",
+        "exercise.history.ottoman-twentieth-century.tripoli-balkan-wars.balkan-losses.mcq01",
+        "exercise.history.ottoman-twentieth-century.tripoli-balkan-wars.balkan-losses.tf01",
+        "exercise.history.ottoman-twentieth-century.tripoli-balkan-wars.balkan-losses.match01",
+        "exercise.history.ottoman-twentieth-century.tripoli-balkan-wars.order01"
+      ],
+      "id": "lesson.history.ottoman-twentieth-century.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "Trablusgarp ve Balkan Savaşları",
+      "topicId": "tyt.history.ottoman-twentieth-century.tripoli-balkan-wars"
+    },
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.ottoman-twentieth-century.second-constitutional-era.second-constitution.mcq01",
+        "exercise.history.ottoman-twentieth-century.second-constitutional-era.second-constitution.tf01",
+        "exercise.history.ottoman-twentieth-century.second-constitutional-era.second-constitution.fill01",
+        "exercise.history.ottoman-twentieth-century.second-constitutional-era.ottomanism-purpose.mcq01",
+        "exercise.history.ottoman-twentieth-century.second-constitutional-era.ottomanism-purpose.tf01",
+        "exercise.history.ottoman-twentieth-century.second-constitutional-era.ottomanism-purpose.match01"
+      ],
+      "id": "lesson.history.ottoman-twentieth-century.002",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "II. Meşrutiyet ve Fikir Akımları",
+      "topicId": "tyt.history.ottoman-twentieth-century.second-constitutional-era"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.history.ottoman-twentieth-century.01",
+      "kind": "lesson",
+      "lessonId": "lesson.history.ottoman-twentieth-century.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.history.ottoman-culture-civilization.02"
+      ],
+      "title": "Trablusgarp ve Balkan Savaşları",
+      "unitId": "tyt.history.ottoman-twentieth-century"
+    },
+    {
+      "id": "path.history.ottoman-twentieth-century.02",
+      "kind": "checkpoint",
+      "lessonId": "lesson.history.ottoman-twentieth-century.002",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.history.ottoman-twentieth-century.01"
+      ],
+      "title": "20. Yüzyılda Osmanlı Devleti Kontrolü",
+      "unitId": "tyt.history.ottoman-twentieth-century"
+    }
+  ],
+  "skills": [
+    {
+      "description": "Trablusgarp Savaşı’nın Osmanlı açısından sonucunu açıklar.",
+      "id": "skill.history.ottoman-twentieth-century.tripoli-result",
+      "title": "Trablusgarp Savaşı’nın Osmanlı açısından sonucunu açıklar",
+      "topicId": "tyt.history.ottoman-twentieth-century.tripoli-balkan-wars"
+    },
+    {
+      "description": "Balkan Savaşlarının siyasi ve toplumsal sonuçlarını yorumlar.",
+      "id": "skill.history.ottoman-twentieth-century.balkan-losses",
+      "title": "Balkan Savaşlarının siyasi ve toplumsal sonuçlarını yorumlar",
+      "topicId": "tyt.history.ottoman-twentieth-century.tripoli-balkan-wars"
+    },
+    {
+      "description": "II. Meşrutiyet’in siyasi hayata etkisini açıklar.",
+      "id": "skill.history.ottoman-twentieth-century.second-constitution",
+      "title": "II. Meşrutiyet’in siyasi hayata etkisini açıklar",
+      "topicId": "tyt.history.ottoman-twentieth-century.second-constitutional-era"
+    },
+    {
+      "description": "Osmanlıcılık fikrinin amacını açıklar.",
+      "id": "skill.history.ottoman-twentieth-century.ottomanism-purpose",
+      "title": "Osmanlıcılık fikrinin amacını açıklar",
+      "topicId": "tyt.history.ottoman-twentieth-century.second-constitutional-era"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.history.ottoman-twentieth-century.tripoli-result",
+        "concept.history.ottoman-twentieth-century.balkan-losses"
+      ],
+      "id": "tyt.history.ottoman-twentieth-century.tripoli-balkan-wars",
+      "skillIds": [
+        "skill.history.ottoman-twentieth-century.tripoli-result",
+        "skill.history.ottoman-twentieth-century.balkan-losses"
+      ],
+      "title": "Trablusgarp ve Balkan Savaşları",
+      "unitId": "tyt.history.ottoman-twentieth-century"
+    },
+    {
+      "conceptIds": [
+        "concept.history.ottoman-twentieth-century.second-constitution",
+        "concept.history.ottoman-twentieth-century.ottomanism-purpose"
+      ],
+      "id": "tyt.history.ottoman-twentieth-century.second-constitutional-era",
+      "skillIds": [
+        "skill.history.ottoman-twentieth-century.second-constitution",
+        "skill.history.ottoman-twentieth-century.ottomanism-purpose"
+      ],
+      "title": "II. Meşrutiyet ve Fikir Akımları",
+      "unitId": "tyt.history.ottoman-twentieth-century"
+    }
+  ],
+  "unitId": "tyt.history.ottoman-twentieth-century"
+}

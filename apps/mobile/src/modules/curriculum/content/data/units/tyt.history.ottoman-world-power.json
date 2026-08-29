@@ -1,0 +1,540 @@
+{
+  "concepts": [
+    {
+      "definition": "Boğazlar ve iki yakası arasında denetim",
+      "id": "concept.history.ottoman-world-power.conquest-results",
+      "term": "Boğazlar ve iki yakası arasında denetim",
+      "topicId": "tyt.history.ottoman-world-power.conquest-and-central-power"
+    },
+    {
+      "definition": "Merkez ve saray teşkilatını kurallara bağlamak",
+      "id": "concept.history.ottoman-world-power.kanunname-centralization",
+      "term": "Merkez ve saray teşkilatını kurallara bağlamak",
+      "topicId": "tyt.history.ottoman-world-power.conquest-and-central-power"
+    },
+    {
+      "definition": "Doğu Anadolu’da Osmanlı üstünlüğünün güçlenmesi",
+      "id": "concept.history.ottoman-world-power.caldiran-result",
+      "term": "Doğu Anadolu’da Osmanlı üstünlüğünün güçlenmesi",
+      "topicId": "tyt.history.ottoman-world-power.east-west-and-seas"
+    },
+    {
+      "definition": "Osmanlıların Akdeniz’deki üstünlüğünü",
+      "id": "concept.history.ottoman-world-power.preveza-result",
+      "term": "Osmanlıların Akdeniz’deki üstünlüğünü",
+      "topicId": "tyt.history.ottoman-world-power.east-west-and-seas"
+    }
+  ],
+  "exercises": [
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Boğazlar ve iki yakası arasında denetim, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.ottoman-world-power.conquest-and-central-power.conquest-results.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Boğazlar ve iki yakası arasında denetim"
+        },
+        {
+          "id": "d1",
+          "label": "Hint Okyanusu’nda tam egemenlik"
+        },
+        {
+          "id": "d2",
+          "label": "Kutsal Roma Germen İmparatorluğu tacı"
+        },
+        {
+          "id": "d3",
+          "label": "Atlas Okyanusu ticaretinin tekeli"
+        }
+      ],
+      "prompt": "İstanbul’un fethi Osmanlı Devleti’ne hangi stratejik kazanımı sağlamıştır?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-world-power.conquest-results"
+      ],
+      "tag": "TARİH · İSTANBUL’UN FETHİ VE MERKEZÎ GÜÇ"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. İstanbul’un fethi Osmanlı Devleti’ne hangi stratejik kazanımı sağlamıştır sorusunun doğru karşılığı “Boğazlar ve iki yakası arasında denetim” olmalıdır.",
+      "id": "exercise.history.ottoman-world-power.conquest-and-central-power.conquest-results.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-world-power.conquest-results"
+      ],
+      "statement": "Hint Okyanusu’nda tam egemenlik, İstanbul’un fethinin siyasi ve ekonomik sonuçlarını yorumlar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · İSTANBUL’UN FETHİ VE MERKEZÎ GÜÇ"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "Boğazlar ve iki yakası arasında denetim"
+        },
+        {
+          "id": "d1",
+          "label": "Hint Okyanusu’nda tam egemenlik"
+        },
+        {
+          "id": "d2",
+          "label": "Kutsal Roma Germen İmparatorluğu tacı"
+        },
+        {
+          "id": "d3",
+          "label": "Atlas Okyanusu ticaretinin tekeli"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “Boğazlar ve iki yakası arasında denetim” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.ottoman-world-power.conquest-and-central-power.conquest-results.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-world-power.conquest-results"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: İstanbul’un fethi Osmanlı Devleti’ne hangi stratejik kazanımı sağlamıştır?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Merkez ve saray teşkilatını kurallara bağlamak, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.ottoman-world-power.conquest-and-central-power.kanunname-centralization.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Merkez ve saray teşkilatını kurallara bağlamak"
+        },
+        {
+          "id": "d1",
+          "label": "Tımar sistemini tamamen kaldırmak"
+        },
+        {
+          "id": "d2",
+          "label": "Meşrutiyeti ilan etmek"
+        },
+        {
+          "id": "d3",
+          "label": "Yeniçeri Ocağını kapatmak"
+        }
+      ],
+      "prompt": "Fatih Kanunnamesi’nin temel işlevi hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-world-power.kanunname-centralization"
+      ],
+      "tag": "TARİH · İSTANBUL’UN FETHİ VE MERKEZÎ GÜÇ"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Fatih Kanunnamesi’nin temel işlevi hangisidir sorusunun doğru karşılığı “Merkez ve saray teşkilatını kurallara bağlamak” olmalıdır.",
+      "id": "exercise.history.ottoman-world-power.conquest-and-central-power.kanunname-centralization.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-world-power.kanunname-centralization"
+      ],
+      "statement": "Tımar sistemini tamamen kaldırmak, Fatih’in kanunnamelerinin merkezî devlet yapısındaki rolünü açıklar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · İSTANBUL’UN FETHİ VE MERKEZÎ GÜÇ"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, İstanbul’un Fethi ve Merkezî Güç başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.ottoman-world-power.conquest-and-central-power.kanunname-centralization.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "İstanbul’un fethi Osmanlı Devleti’ne hangi stratejik kazanımı sağlamıştır?",
+          "right": "Boğazlar ve iki yakası arasında denetim"
+        },
+        {
+          "id": "pair-2",
+          "left": "Fatih Kanunnamesi’nin temel işlevi hangisidir?",
+          "right": "Merkez ve saray teşkilatını kurallara bağlamak"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-world-power.conquest-results",
+        "skill.history.ottoman-world-power.kanunname-centralization"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · İSTANBUL’UN FETHİ VE MERKEZÎ GÜÇ",
+      "title": "Bilgi bağlarını eşleştir"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Doğu Anadolu’da Osmanlı üstünlüğünün güçlenmesi, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.ottoman-world-power.east-west-and-seas.caldiran-result.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Doğu Anadolu’da Osmanlı üstünlüğünün güçlenmesi"
+        },
+        {
+          "id": "d1",
+          "label": "Memlük Devleti’nin kurulması"
+        },
+        {
+          "id": "d2",
+          "label": "Viyana’nın fethedilmesi"
+        },
+        {
+          "id": "d3",
+          "label": "Kıbrıs’ın kaybedilmesi"
+        }
+      ],
+      "prompt": "1514 Çaldıran Zaferi’nin sonucu hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-world-power.caldiran-result"
+      ],
+      "tag": "TARİH · DOĞUDA, BATIDA VE DENİZLERDE HÂKİMİYET"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. 1514 Çaldıran Zaferi’nin sonucu hangisidir sorusunun doğru karşılığı “Doğu Anadolu’da Osmanlı üstünlüğünün güçlenmesi” olmalıdır.",
+      "id": "exercise.history.ottoman-world-power.east-west-and-seas.caldiran-result.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-world-power.caldiran-result"
+      ],
+      "statement": "Memlük Devleti’nin kurulması, Çaldıran Savaşı’nın Osmanlı-Safevi rekabetindeki sonucunu açıklar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · DOĞUDA, BATIDA VE DENİZLERDE HÂKİMİYET"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "Doğu Anadolu’da Osmanlı üstünlüğünün güçlenmesi"
+        },
+        {
+          "id": "d1",
+          "label": "Memlük Devleti’nin kurulması"
+        },
+        {
+          "id": "d2",
+          "label": "Viyana’nın fethedilmesi"
+        },
+        {
+          "id": "d3",
+          "label": "Kıbrıs’ın kaybedilmesi"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “Doğu Anadolu’da Osmanlı üstünlüğünün güçlenmesi” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.ottoman-world-power.east-west-and-seas.caldiran-result.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-world-power.caldiran-result"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: 1514 Çaldıran Zaferi’nin sonucu hangisidir?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Osmanlıların Akdeniz’deki üstünlüğünü, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.ottoman-world-power.east-west-and-seas.preveza-result.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Osmanlıların Akdeniz’deki üstünlüğünü"
+        },
+        {
+          "id": "d1",
+          "label": "Karadeniz’in uluslararası ticarete açılmasını"
+        },
+        {
+          "id": "d2",
+          "label": "Portekiz’in Hint Okyanusu’ndan çekilmesini"
+        },
+        {
+          "id": "d3",
+          "label": "Venedik’in Balkanlara egemen olmasını"
+        }
+      ],
+      "prompt": "1538 Preveze Deniz Zaferi hangi sonucu desteklemiştir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-world-power.preveza-result"
+      ],
+      "tag": "TARİH · DOĞUDA, BATIDA VE DENİZLERDE HÂKİMİYET"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. 1538 Preveze Deniz Zaferi hangi sonucu desteklemiştir sorusunun doğru karşılığı “Osmanlıların Akdeniz’deki üstünlüğünü” olmalıdır.",
+      "id": "exercise.history.ottoman-world-power.east-west-and-seas.preveza-result.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-world-power.preveza-result"
+      ],
+      "statement": "Karadeniz’in uluslararası ticarete açılmasını, Preveze Deniz Zaferi’nin Akdeniz siyasetine etkisini yorumlar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · DOĞUDA, BATIDA VE DENİZLERDE HÂKİMİYET"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, Doğuda, Batıda ve Denizlerde Hâkimiyet başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.ottoman-world-power.east-west-and-seas.preveza-result.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "1514 Çaldıran Zaferi’nin sonucu hangisidir?",
+          "right": "Doğu Anadolu’da Osmanlı üstünlüğünün güçlenmesi"
+        },
+        {
+          "id": "pair-2",
+          "left": "1538 Preveze Deniz Zaferi hangi sonucu desteklemiştir?",
+          "right": "Osmanlıların Akdeniz’deki üstünlüğünü"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-world-power.caldiran-result",
+        "skill.history.ottoman-world-power.preveza-result"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · DOĞUDA, BATIDA VE DENİZLERDE HÂKİMİYET",
+      "title": "Bilgi bağlarını eşleştir"
+    },
+    {
+      "correctOrder": [
+        "event-1",
+        "event-2",
+        "event-3",
+        "event-4",
+        "event-5"
+      ],
+      "difficulty": 4,
+      "explanation": "Olaylar tarihleri dikkate alınarak eskiden yeniye sıralanır. Kronoloji, gelişmeler arasındaki neden-sonuç ilişkisini kurmak için temel bir çerçeve sunar.",
+      "id": "exercise.history.ottoman-world-power.east-west-and-seas.order01",
+      "items": [
+        {
+          "id": "event-1",
+          "label": "İstanbul’un fethi (1453)"
+        },
+        {
+          "id": "event-2",
+          "label": "Çaldıran Savaşı (1514)"
+        },
+        {
+          "id": "event-3",
+          "label": "Mısır’ın fethi (1517)"
+        },
+        {
+          "id": "event-4",
+          "label": "Preveze Deniz Zaferi (1538)"
+        },
+        {
+          "id": "event-5",
+          "label": "Kıbrıs’ın fethi (1571)"
+        }
+      ],
+      "kind": "ordering",
+      "prompt": "Gelişmeleri eskiden yeniye doğru sırala.",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-world-power.caldiran-result",
+        "skill.history.ottoman-world-power.preveza-result"
+      ],
+      "tag": "TARİH · DOĞUDA, BATIDA VE DENİZLERDE HÂKİMİYET"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.ottoman-world-power.conquest-and-central-power.conquest-results.mcq01",
+        "exercise.history.ottoman-world-power.conquest-and-central-power.conquest-results.tf01",
+        "exercise.history.ottoman-world-power.conquest-and-central-power.conquest-results.fill01",
+        "exercise.history.ottoman-world-power.conquest-and-central-power.kanunname-centralization.mcq01",
+        "exercise.history.ottoman-world-power.conquest-and-central-power.kanunname-centralization.tf01",
+        "exercise.history.ottoman-world-power.conquest-and-central-power.kanunname-centralization.match01"
+      ],
+      "id": "lesson.history.ottoman-world-power.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "İstanbul’un Fethi ve Merkezî Güç",
+      "topicId": "tyt.history.ottoman-world-power.conquest-and-central-power"
+    },
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.ottoman-world-power.east-west-and-seas.caldiran-result.mcq01",
+        "exercise.history.ottoman-world-power.east-west-and-seas.caldiran-result.tf01",
+        "exercise.history.ottoman-world-power.east-west-and-seas.caldiran-result.fill01",
+        "exercise.history.ottoman-world-power.east-west-and-seas.preveza-result.mcq01",
+        "exercise.history.ottoman-world-power.east-west-and-seas.preveza-result.tf01",
+        "exercise.history.ottoman-world-power.east-west-and-seas.preveza-result.match01",
+        "exercise.history.ottoman-world-power.east-west-and-seas.order01"
+      ],
+      "id": "lesson.history.ottoman-world-power.002",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "Doğuda, Batıda ve Denizlerde Hâkimiyet",
+      "topicId": "tyt.history.ottoman-world-power.east-west-and-seas"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.history.ottoman-world-power.01",
+      "kind": "lesson",
+      "lessonId": "lesson.history.ottoman-world-power.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.history.ottoman-from-beylik-to-state.02"
+      ],
+      "title": "İstanbul’un Fethi ve Merkezî Güç",
+      "unitId": "tyt.history.ottoman-world-power"
+    },
+    {
+      "id": "path.history.ottoman-world-power.02",
+      "kind": "checkpoint",
+      "lessonId": "lesson.history.ottoman-world-power.002",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.history.ottoman-world-power.01"
+      ],
+      "title": "Dünya Gücü Osmanlı Devleti (1453-1600) Kontrolü",
+      "unitId": "tyt.history.ottoman-world-power"
+    }
+  ],
+  "skills": [
+    {
+      "description": "İstanbul’un fethinin siyasi ve ekonomik sonuçlarını yorumlar.",
+      "id": "skill.history.ottoman-world-power.conquest-results",
+      "title": "İstanbul’un fethinin siyasi ve ekonomik sonuçlarını yorumlar",
+      "topicId": "tyt.history.ottoman-world-power.conquest-and-central-power"
+    },
+    {
+      "description": "Fatih’in kanunnamelerinin merkezî devlet yapısındaki rolünü açıklar.",
+      "id": "skill.history.ottoman-world-power.kanunname-centralization",
+      "title": "Fatih’in kanunnamelerinin merkezî devlet yapısındaki rolünü açıklar",
+      "topicId": "tyt.history.ottoman-world-power.conquest-and-central-power"
+    },
+    {
+      "description": "Çaldıran Savaşı’nın Osmanlı-Safevi rekabetindeki sonucunu açıklar.",
+      "id": "skill.history.ottoman-world-power.caldiran-result",
+      "title": "Çaldıran Savaşı’nın Osmanlı-Safevi rekabetindeki sonucunu açıklar",
+      "topicId": "tyt.history.ottoman-world-power.east-west-and-seas"
+    },
+    {
+      "description": "Preveze Deniz Zaferi’nin Akdeniz siyasetine etkisini yorumlar.",
+      "id": "skill.history.ottoman-world-power.preveza-result",
+      "title": "Preveze Deniz Zaferi’nin Akdeniz siyasetine etkisini yorumlar",
+      "topicId": "tyt.history.ottoman-world-power.east-west-and-seas"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.history.ottoman-world-power.conquest-results",
+        "concept.history.ottoman-world-power.kanunname-centralization"
+      ],
+      "id": "tyt.history.ottoman-world-power.conquest-and-central-power",
+      "skillIds": [
+        "skill.history.ottoman-world-power.conquest-results",
+        "skill.history.ottoman-world-power.kanunname-centralization"
+      ],
+      "title": "İstanbul’un Fethi ve Merkezî Güç",
+      "unitId": "tyt.history.ottoman-world-power"
+    },
+    {
+      "conceptIds": [
+        "concept.history.ottoman-world-power.caldiran-result",
+        "concept.history.ottoman-world-power.preveza-result"
+      ],
+      "id": "tyt.history.ottoman-world-power.east-west-and-seas",
+      "skillIds": [
+        "skill.history.ottoman-world-power.caldiran-result",
+        "skill.history.ottoman-world-power.preveza-result"
+      ],
+      "title": "Doğuda, Batıda ve Denizlerde Hâkimiyet",
+      "unitId": "tyt.history.ottoman-world-power"
+    }
+  ],
+  "unitId": "tyt.history.ottoman-world-power"
+}

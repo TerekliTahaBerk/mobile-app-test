@@ -1,0 +1,531 @@
+{
+  "concepts": [
+    {
+      "definition": "Erozyon hızlanabilir",
+      "id": "concept.geography.environment-society.problems",
+      "term": "Bitki örtüsü tahrip edilir ve aşırı otlatma yapılır",
+      "topicId": "tyt.geography.environment-society.problems"
+    },
+    {
+      "definition": "Yüzey akışı ve toprak kaybı azalabilir",
+      "id": "concept.geography.environment-society.sustainability",
+      "term": "Eğimli arazide teraslama yapılır",
+      "topicId": "tyt.geography.environment-society.sustainability"
+    }
+  ],
+  "exercises": [
+    {
+      "correctOptionId": "opt-1",
+      "difficulty": 2,
+      "explanation": "Bitki örtüsü tahrip edilir ve aşırı otlatma yapılır durumunda erozyon hızlanabilir. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.environment-society.problems.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Erozyon hızlanabilir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Su kirliliği artar"
+        },
+        {
+          "id": "opt-3",
+          "label": "Çölleşme riski artar"
+        },
+        {
+          "id": "opt-4",
+          "label": "Hava kirliliği ve sera gazı salımı artar"
+        }
+      ],
+      "prompt": "Bitki örtüsü tahrip edilir ve aşırı otlatma yapılır. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.environment-society.problems.interpret"
+      ],
+      "tag": "COĞRAFYA · ÇEVRE SORUNLARININ NEDENLERİ"
+    },
+    {
+      "correctOptionId": "opt-2",
+      "difficulty": 4,
+      "explanation": "Arıtılmamış atık su akarsuya verilir durumunda su kirliliği artar. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.environment-society.problems.001.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Erozyon hızlanabilir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Su kirliliği artar"
+        },
+        {
+          "id": "opt-3",
+          "label": "Çölleşme riski artar"
+        },
+        {
+          "id": "opt-4",
+          "label": "Hava kirliliği ve sera gazı salımı artar"
+        }
+      ],
+      "prompt": "Arıtılmamış atık su akarsuya verilir. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.environment-society.problems.interpret"
+      ],
+      "tag": "COĞRAFYA · ÇEVRE SORUNLARININ NEDENLERİ"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 3,
+      "explanation": "Kurak alanda toprak yanlış kullanılır ile çölleşme riski artar arasında doğrudan bir coğrafi ilişki vardır.",
+      "id": "exercise.geography.environment-society.problems.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.environment-society.problems.interpret"
+      ],
+      "statement": "Kurak alanda toprak yanlış kullanılır; bunun sonucunda çölleşme riski artar.",
+      "tag": "COĞRAFYA · ÇEVRE SORUNLARININ NEDENLERİ"
+    },
+    {
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "Erozyon hızlanabilir"
+        },
+        {
+          "id": "w-2",
+          "label": "Su kirliliği artar"
+        },
+        {
+          "id": "w-3",
+          "label": "Çölleşme riski artar"
+        },
+        {
+          "id": "w-4",
+          "label": "Hava kirliliği ve sera gazı salımı artar"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "Fosil yakıt tüketimi yükselir koşulunun beklenen sonucu “Hava kirliliği ve sera gazı salımı artar” ilişkisidir.",
+      "hint": "Fosil yakıt tüketimi yükselir",
+      "id": "exercise.geography.environment-society.problems.001.blank01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.environment-society.problems.interpret"
+      ],
+      "solutionTokenIds": [
+        "w-4"
+      ],
+      "title": "Fosil yakıt tüketimi yükselir durumunda sonuç"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Her koşul, kendisinden beklenen özgün coğrafi sonuçla eşleştirilir; aynı sonuç iki kez kullanılmaz.",
+      "id": "exercise.geography.environment-society.problems.001.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Bitki örtüsü tahrip edilir ve aşırı otlatma yapılır",
+          "right": "Erozyon hızlanabilir"
+        },
+        {
+          "id": "pair-2",
+          "left": "Arıtılmamış atık su akarsuya verilir",
+          "right": "Su kirliliği artar"
+        },
+        {
+          "id": "pair-3",
+          "left": "Kurak alanda toprak yanlış kullanılır",
+          "right": "Çölleşme riski artar"
+        },
+        {
+          "id": "pair-4",
+          "left": "Fosil yakıt tüketimi yükselir",
+          "right": "Hava kirliliği ve sera gazı salımı artar"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.environment-society.problems.interpret"
+      ],
+      "subtitle": "Koşulu doğru coğrafi sonuçla birleştir.",
+      "tag": "COĞRAFYA · ÇEVRE SORUNLARININ NEDENLERİ",
+      "title": "İlişkiyi eşleştir"
+    },
+    {
+      "cards": [
+        {
+          "back": "Erozyon hızlanabilir",
+          "front": "Bitki örtüsü tahrip edilir ve aşırı otlatma yapılır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-1"
+        },
+        {
+          "back": "Su kirliliği artar",
+          "front": "Arıtılmamış atık su akarsuya verilir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-2"
+        },
+        {
+          "back": "Çölleşme riski artar",
+          "front": "Kurak alanda toprak yanlış kullanılır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-3"
+        },
+        {
+          "back": "Hava kirliliği ve sera gazı salımı artar",
+          "front": "Fosil yakıt tüketimi yükselir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-4"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Kartlar temel ilişkileri kısa tekrar için özetler; puanlanan skill coverage hesabına katılmaz.",
+      "id": "exercise.geography.environment-society.problems.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.environment-society.problems.interpret"
+      ],
+      "tag": "COĞRAFYA · ÇEVRE SORUNLARININ NEDENLERİ"
+    },
+    {
+      "correctOptionId": "opt-1",
+      "difficulty": 2,
+      "explanation": "Eğimli arazide teraslama yapılır durumunda yüzey akışı ve toprak kaybı azalabilir. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.environment-society.sustainability.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Yüzey akışı ve toprak kaybı azalabilir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Tatlı su baskısı azalabilir"
+        },
+        {
+          "id": "opt-3",
+          "label": "Kaynak tüketimi ve salımlar azalabilir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Turizmin çevresel baskısı sınırlanır"
+        }
+      ],
+      "prompt": "Eğimli arazide teraslama yapılır. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.environment-society.sustainability.interpret"
+      ],
+      "tag": "COĞRAFYA · SÜRDÜRÜLEBİLİR KAYNAK KULLANIMI"
+    },
+    {
+      "correctOptionId": "opt-2",
+      "difficulty": 4,
+      "explanation": "Atık su arıtılarak yeniden kullanılır durumunda tatlı su baskısı azalabilir. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.environment-society.sustainability.001.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Yüzey akışı ve toprak kaybı azalabilir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Tatlı su baskısı azalabilir"
+        },
+        {
+          "id": "opt-3",
+          "label": "Kaynak tüketimi ve salımlar azalabilir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Turizmin çevresel baskısı sınırlanır"
+        }
+      ],
+      "prompt": "Atık su arıtılarak yeniden kullanılır. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.environment-society.sustainability.interpret"
+      ],
+      "tag": "COĞRAFYA · SÜRDÜRÜLEBİLİR KAYNAK KULLANIMI"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 3,
+      "explanation": "Üretimde enerji verimliliği artırılır ile kaynak tüketimi ve salımlar azalabilir arasında doğrudan bir coğrafi ilişki vardır.",
+      "id": "exercise.geography.environment-society.sustainability.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.environment-society.sustainability.interpret"
+      ],
+      "statement": "Üretimde enerji verimliliği artırılır; bunun sonucunda kaynak tüketimi ve salımlar azalabilir.",
+      "tag": "COĞRAFYA · SÜRDÜRÜLEBİLİR KAYNAK KULLANIMI"
+    },
+    {
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "Yüzey akışı ve toprak kaybı azalabilir"
+        },
+        {
+          "id": "w-2",
+          "label": "Tatlı su baskısı azalabilir"
+        },
+        {
+          "id": "w-3",
+          "label": "Kaynak tüketimi ve salımlar azalabilir"
+        },
+        {
+          "id": "w-4",
+          "label": "Turizmin çevresel baskısı sınırlanır"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "Hassas alanda taşıma kapasitesi gözetilir koşulunun beklenen sonucu “Turizmin çevresel baskısı sınırlanır” ilişkisidir.",
+      "hint": "Hassas alanda taşıma kapasitesi gözetilir",
+      "id": "exercise.geography.environment-society.sustainability.001.blank01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.environment-society.sustainability.interpret"
+      ],
+      "solutionTokenIds": [
+        "w-4"
+      ],
+      "title": "Hassas alanda taşıma kapasitesi gözetilir durumunda sonuç"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Her koşul, kendisinden beklenen özgün coğrafi sonuçla eşleştirilir; aynı sonuç iki kez kullanılmaz.",
+      "id": "exercise.geography.environment-society.sustainability.001.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Eğimli arazide teraslama yapılır",
+          "right": "Yüzey akışı ve toprak kaybı azalabilir"
+        },
+        {
+          "id": "pair-2",
+          "left": "Atık su arıtılarak yeniden kullanılır",
+          "right": "Tatlı su baskısı azalabilir"
+        },
+        {
+          "id": "pair-3",
+          "left": "Üretimde enerji verimliliği artırılır",
+          "right": "Kaynak tüketimi ve salımlar azalabilir"
+        },
+        {
+          "id": "pair-4",
+          "left": "Hassas alanda taşıma kapasitesi gözetilir",
+          "right": "Turizmin çevresel baskısı sınırlanır"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.environment-society.sustainability.interpret"
+      ],
+      "subtitle": "Koşulu doğru coğrafi sonuçla birleştir.",
+      "tag": "COĞRAFYA · SÜRDÜRÜLEBİLİR KAYNAK KULLANIMI",
+      "title": "İlişkiyi eşleştir"
+    },
+    {
+      "cards": [
+        {
+          "back": "Yüzey akışı ve toprak kaybı azalabilir",
+          "front": "Eğimli arazide teraslama yapılır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-1"
+        },
+        {
+          "back": "Tatlı su baskısı azalabilir",
+          "front": "Atık su arıtılarak yeniden kullanılır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-2"
+        },
+        {
+          "back": "Kaynak tüketimi ve salımlar azalabilir",
+          "front": "Üretimde enerji verimliliği artırılır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-3"
+        },
+        {
+          "back": "Turizmin çevresel baskısı sınırlanır",
+          "front": "Hassas alanda taşıma kapasitesi gözetilir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-4"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Kartlar temel ilişkileri kısa tekrar için özetler; puanlanan skill coverage hesabına katılmaz.",
+      "id": "exercise.geography.environment-society.sustainability.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.environment-society.sustainability.interpret"
+      ],
+      "tag": "COĞRAFYA · SÜRDÜRÜLEBİLİR KAYNAK KULLANIMI"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.geography.environment-society.problems.001.mcq01",
+        "exercise.geography.environment-society.problems.001.mcq02",
+        "exercise.geography.environment-society.problems.001.tf01",
+        "exercise.geography.environment-society.problems.001.blank01",
+        "exercise.geography.environment-society.problems.001.match01",
+        "exercise.geography.environment-society.problems.001.card01"
+      ],
+      "id": "lesson.geography.environment-society.problems.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Kaynak kullanımı ile erozyon, kirlilik ve çölleşme süreçleri arasında neden-sonuç kurar.",
+      "title": "Çevre Sorunlarının Nedenleri",
+      "topicId": "tyt.geography.environment-society.problems"
+    },
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.geography.environment-society.sustainability.001.mcq01",
+        "exercise.geography.environment-society.sustainability.001.mcq02",
+        "exercise.geography.environment-society.sustainability.001.tf01",
+        "exercise.geography.environment-society.sustainability.001.blank01",
+        "exercise.geography.environment-society.sustainability.001.match01",
+        "exercise.geography.environment-society.sustainability.001.card01"
+      ],
+      "id": "lesson.geography.environment-society.sustainability.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Çevre sorunlarına yönelik önlemleri neden ve beklenen sonuçlarıyla değerlendirir.",
+      "title": "Sürdürülebilir Kaynak Kullanımı",
+      "topicId": "tyt.geography.environment-society.sustainability"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.geography.environment-society.01",
+      "kind": "lesson",
+      "lessonId": "lesson.geography.environment-society.problems.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.geography.international-routes.02"
+      ],
+      "title": "Çevre Sorunlarının Nedenleri",
+      "unitId": "tyt.geography.environment-society"
+    },
+    {
+      "id": "path.geography.environment-society.02",
+      "kind": "practice",
+      "lessonId": "lesson.geography.environment-society.sustainability.001",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.geography.environment-society.01"
+      ],
+      "title": "Sürdürülebilir Kaynak Kullanımı Uygulaması",
+      "unitId": "tyt.geography.environment-society"
+    }
+  ],
+  "skills": [
+    {
+      "description": "Kaynak kullanımı ile erozyon, kirlilik ve çölleşme süreçleri arasında neden-sonuç kurar.",
+      "id": "skill.geography.environment-society.problems.interpret",
+      "title": "Kaynak kullanımı ile erozyon, kirlilik ve çölleşme süreçleri arasında neden-sonuç kurar.",
+      "topicId": "tyt.geography.environment-society.problems"
+    },
+    {
+      "description": "Çevre sorunlarına yönelik önlemleri neden ve beklenen sonuçlarıyla değerlendirir.",
+      "id": "skill.geography.environment-society.sustainability.interpret",
+      "title": "Çevre sorunlarına yönelik önlemleri neden ve beklenen sonuçlarıyla değerlendirir.",
+      "topicId": "tyt.geography.environment-society.sustainability"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.geography.environment-society.problems"
+      ],
+      "id": "tyt.geography.environment-society.problems",
+      "skillIds": [
+        "skill.geography.environment-society.problems.interpret"
+      ],
+      "title": "Çevre Sorunlarının Nedenleri",
+      "unitId": "tyt.geography.environment-society"
+    },
+    {
+      "conceptIds": [
+        "concept.geography.environment-society.sustainability"
+      ],
+      "id": "tyt.geography.environment-society.sustainability",
+      "skillIds": [
+        "skill.geography.environment-society.sustainability.interpret"
+      ],
+      "title": "Sürdürülebilir Kaynak Kullanımı",
+      "unitId": "tyt.geography.environment-society"
+    }
+  ],
+  "unitId": "tyt.geography.environment-society"
+}

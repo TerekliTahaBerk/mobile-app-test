@@ -14,9 +14,11 @@ The product line is: **dersler → ünite yolu → interaktif çalışma → can
 
 **Dino** — a green cartoon dinosaur in a graduation cap. He is the app's reaction, not its narrator: he appears on the welcome screen, beside each onboarding question, in the verdict after an answer, when hearts run out, at a streak milestone, and on the paywall. He never explains the curriculum and he never blocks a screen.
 
-Dino has one piece of artwork, sized by the composition and desaturated when the moment is a setback. There is no pose library and no mascot state machine — see `apps/mobile/src/shared/ui/dino/dino.tsx`.
-
-> The approved artwork is not in the repository yet. `apps/mobile/assets/dino/dino.png` is a placeholder; the design MCP caps a file response at 256 KiB and the real file is larger, so every fetch arrives truncated. Dropping the real file at that path is the whole change — see `apps/mobile/assets/dino/README.md`.
+Dino has three approved poses: general encouragement, writing/study guidance,
+and graduation/completion. Screens choose them semantically rather than by
+file path; setback moments still use a subdued tone. There is no mascot state
+machine — see `apps/mobile/src/shared/ui/dino/dino.tsx` and
+`apps/mobile/assets/dino/README.md`.
 
 ## Voice
 
@@ -53,4 +55,5 @@ Green is the only action colour. Rose is only ever a setback. Amber is only ever
 
 - The commercial name, and whether the `tekrarla` identifiers get migrated with it.
 - App icon and splash artwork, which still carry the previous brand.
-- Whether Dino gets a second pose for the setback moments, or keeps the single-artwork rule.
+- Whether a dedicated setback pose is needed; current setback moments reuse the
+  general pose with a subdued tone.

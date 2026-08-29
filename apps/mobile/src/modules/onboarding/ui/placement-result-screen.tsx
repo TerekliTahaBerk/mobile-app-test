@@ -32,7 +32,7 @@ export function PlacementResultScreen({
     <Screen testID="placement-result-screen">
       <ScrollView contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
         <View style={styles.hero}>
-          <Dino size={96} />
+          <Dino pose="graduation" size={96} />
           <AppText accessibilityRole="header" align="center" style={styles.title} variant="headingL">
             Başlangıç haritan hazır
           </AppText>

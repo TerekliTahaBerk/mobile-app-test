@@ -1,0 +1,493 @@
+{
+  "concepts": [
+    {
+      "definition": "Avusturya hükümdarının protokolde Osmanlı padişahına denk sayılmasını",
+      "id": "concept.history.ottoman-search-years.treaty-zitvatorok",
+      "term": "Avusturya hükümdarının protokolde Osmanlı padişahına denk sayılmasını",
+      "topicId": "tyt.history.ottoman-search-years.seventeenth-century-change"
+    },
+    {
+      "definition": "Eyalet askerlerinin sayı ve niteliğinin azalmasını",
+      "id": "concept.history.ottoman-search-years.military-disruption",
+      "term": "Eyalet askerlerinin sayı ve niteliğinin azalmasını",
+      "topicId": "tyt.history.ottoman-search-years.seventeenth-century-change"
+    },
+    {
+      "definition": "Bozulan eski düzeni yeniden kurmayı amaçlamaları",
+      "id": "concept.history.ottoman-search-years.reform-character",
+      "term": "Bozulan eski düzeni yeniden kurmayı amaçlamaları",
+      "topicId": "tyt.history.ottoman-search-years.reform-and-reports"
+    },
+    {
+      "definition": "Devlet düzenindeki bozulmaları ve çözüm önerilerini sunması",
+      "id": "concept.history.ottoman-search-years.koci-bey",
+      "term": "Devlet düzenindeki bozulmaları ve çözüm önerilerini sunması",
+      "topicId": "tyt.history.ottoman-search-years.reform-and-reports"
+    }
+  ],
+  "exercises": [
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Avusturya hükümdarının protokolde Osmanlı padişahına denk sayılmasını, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.ottoman-search-years.seventeenth-century-change.treaty-zitvatorok.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Avusturya hükümdarının protokolde Osmanlı padişahına denk sayılmasını"
+        },
+        {
+          "id": "d1",
+          "label": "Avusturya’nın Osmanlı eyaleti olmasını"
+        },
+        {
+          "id": "d2",
+          "label": "Belgrad’ın Rusya’ya verilmesini"
+        },
+        {
+          "id": "d3",
+          "label": "Kapitülasyonların kaldırılmasını"
+        }
+      ],
+      "prompt": "1606 Zitvatorok Antlaşması Osmanlı-Avusturya ilişkilerinde hangi değişimi göstermiştir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-search-years.treaty-zitvatorok"
+      ],
+      "tag": "TARİH · XVII. YÜZYILDA SİYASİ VE ASKERÎ DEĞİŞİM"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. 1606 Zitvatorok Antlaşması Osmanlı-Avusturya ilişkilerinde hangi değişimi göstermiştir sorusunun doğru karşılığı “Avusturya hükümdarının protokolde Osmanlı padişahına denk sayılmasını” olmalıdır.",
+      "id": "exercise.history.ottoman-search-years.seventeenth-century-change.treaty-zitvatorok.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-search-years.treaty-zitvatorok"
+      ],
+      "statement": "Avusturya’nın Osmanlı eyaleti olmasını, Zitvatorok Antlaşması’nın diplomatik anlamını yorumlar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · XVII. YÜZYILDA SİYASİ VE ASKERÎ DEĞİŞİM"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "Avusturya hükümdarının protokolde Osmanlı padişahına denk sayılmasını"
+        },
+        {
+          "id": "d1",
+          "label": "Avusturya’nın Osmanlı eyaleti olmasını"
+        },
+        {
+          "id": "d2",
+          "label": "Belgrad’ın Rusya’ya verilmesini"
+        },
+        {
+          "id": "d3",
+          "label": "Kapitülasyonların kaldırılmasını"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “Avusturya hükümdarının protokolde Osmanlı padişahına denk sayılmasını” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.ottoman-search-years.seventeenth-century-change.treaty-zitvatorok.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-search-years.treaty-zitvatorok"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: 1606 Zitvatorok Antlaşması Osmanlı-Avusturya ilişkilerinde hangi değişimi göstermiştir?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Eyalet askerlerinin sayı ve niteliğinin azalmasını, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.ottoman-search-years.seventeenth-century-change.military-disruption.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Eyalet askerlerinin sayı ve niteliğinin azalmasını"
+        },
+        {
+          "id": "d1",
+          "label": "Donanmanın okyanuslara açılmasını"
+        },
+        {
+          "id": "d2",
+          "label": "Medreselerin kapatılmasını"
+        },
+        {
+          "id": "d3",
+          "label": "Kapitülasyonların sona ermesini"
+        }
+      ],
+      "prompt": "Tımar sisteminin bozulması hangi sonucu doğrudan etkilemiştir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-search-years.military-disruption"
+      ],
+      "tag": "TARİH · XVII. YÜZYILDA SİYASİ VE ASKERÎ DEĞİŞİM"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Tımar sisteminin bozulması hangi sonucu doğrudan etkilemiştir sorusunun doğru karşılığı “Eyalet askerlerinin sayı ve niteliğinin azalmasını” olmalıdır.",
+      "id": "exercise.history.ottoman-search-years.seventeenth-century-change.military-disruption.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-search-years.military-disruption"
+      ],
+      "statement": "Donanmanın okyanuslara açılmasını, Tımar ve kapıkulu düzenindeki bozulmaların sonuçlarını açıklar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · XVII. YÜZYILDA SİYASİ VE ASKERÎ DEĞİŞİM"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, XVII. Yüzyılda Siyasi ve Askerî Değişim başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.ottoman-search-years.seventeenth-century-change.military-disruption.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "1606 Zitvatorok Antlaşması Osmanlı-Avusturya ilişkilerinde hangi değişimi göstermiştir?",
+          "right": "Avusturya hükümdarının protokolde Osmanlı padişahına denk sayılmasını"
+        },
+        {
+          "id": "pair-2",
+          "left": "Tımar sisteminin bozulması hangi sonucu doğrudan etkilemiştir?",
+          "right": "Eyalet askerlerinin sayı ve niteliğinin azalmasını"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-search-years.treaty-zitvatorok",
+        "skill.history.ottoman-search-years.military-disruption"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · XVII. YÜZYILDA SİYASİ VE ASKERÎ DEĞİŞİM",
+      "title": "Bilgi bağlarını eşleştir"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Bozulan eski düzeni yeniden kurmayı amaçlamaları, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.ottoman-search-years.reform-and-reports.reform-character.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Bozulan eski düzeni yeniden kurmayı amaçlamaları"
+        },
+        {
+          "id": "d1",
+          "label": "Halk egemenliğini kurmaları"
+        },
+        {
+          "id": "d2",
+          "label": "Avrupa hukukunu bütünüyle benimsemeleri"
+        },
+        {
+          "id": "d3",
+          "label": "Sanayi yatırımlarına odaklanmaları"
+        }
+      ],
+      "prompt": "XVII. yüzyıl Osmanlı ıslahatlarının ortak özelliği hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-search-years.reform-character"
+      ],
+      "tag": "TARİH · ISLAHATLAR VE LAYİHALAR"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. XVII. yüzyıl Osmanlı ıslahatlarının ortak özelliği hangisidir sorusunun doğru karşılığı “Bozulan eski düzeni yeniden kurmayı amaçlamaları” olmalıdır.",
+      "id": "exercise.history.ottoman-search-years.reform-and-reports.reform-character.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-search-years.reform-character"
+      ],
+      "statement": "Halk egemenliğini kurmaları, XVII. yüzyıl ıslahatlarının genel niteliğini ayırt eder kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · ISLAHATLAR VE LAYİHALAR"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "Bozulan eski düzeni yeniden kurmayı amaçlamaları"
+        },
+        {
+          "id": "d1",
+          "label": "Halk egemenliğini kurmaları"
+        },
+        {
+          "id": "d2",
+          "label": "Avrupa hukukunu bütünüyle benimsemeleri"
+        },
+        {
+          "id": "d3",
+          "label": "Sanayi yatırımlarına odaklanmaları"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “Bozulan eski düzeni yeniden kurmayı amaçlamaları” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.ottoman-search-years.reform-and-reports.reform-character.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-search-years.reform-character"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: XVII. yüzyıl Osmanlı ıslahatlarının ortak özelliği hangisidir?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Devlet düzenindeki bozulmaları ve çözüm önerilerini sunması, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.ottoman-search-years.reform-and-reports.koci-bey.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Devlet düzenindeki bozulmaları ve çözüm önerilerini sunması"
+        },
+        {
+          "id": "d1",
+          "label": "Bir barış antlaşması olması"
+        },
+        {
+          "id": "d2",
+          "label": "Yeniçeri Ocağını kaldırması"
+        },
+        {
+          "id": "d3",
+          "label": "Meşrutiyeti ilan etmesi"
+        }
+      ],
+      "prompt": "Koçi Bey Risalesi’nin temel niteliği hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-search-years.koci-bey"
+      ],
+      "tag": "TARİH · ISLAHATLAR VE LAYİHALAR"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Koçi Bey Risalesi’nin temel niteliği hangisidir sorusunun doğru karşılığı “Devlet düzenindeki bozulmaları ve çözüm önerilerini sunması” olmalıdır.",
+      "id": "exercise.history.ottoman-search-years.reform-and-reports.koci-bey.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-search-years.koci-bey"
+      ],
+      "statement": "Bir barış antlaşması olması, Koçi Bey Risalesi’nin ıslahat düşüncesindeki yerini açıklar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · ISLAHATLAR VE LAYİHALAR"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, Islahatlar ve Layihalar başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.ottoman-search-years.reform-and-reports.koci-bey.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "XVII. yüzyıl Osmanlı ıslahatlarının ortak özelliği hangisidir?",
+          "right": "Bozulan eski düzeni yeniden kurmayı amaçlamaları"
+        },
+        {
+          "id": "pair-2",
+          "left": "Koçi Bey Risalesi’nin temel niteliği hangisidir?",
+          "right": "Devlet düzenindeki bozulmaları ve çözüm önerilerini sunması"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-search-years.reform-character",
+        "skill.history.ottoman-search-years.koci-bey"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · ISLAHATLAR VE LAYİHALAR",
+      "title": "Bilgi bağlarını eşleştir"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.ottoman-search-years.seventeenth-century-change.treaty-zitvatorok.mcq01",
+        "exercise.history.ottoman-search-years.seventeenth-century-change.treaty-zitvatorok.tf01",
+        "exercise.history.ottoman-search-years.seventeenth-century-change.treaty-zitvatorok.fill01",
+        "exercise.history.ottoman-search-years.seventeenth-century-change.military-disruption.mcq01",
+        "exercise.history.ottoman-search-years.seventeenth-century-change.military-disruption.tf01",
+        "exercise.history.ottoman-search-years.seventeenth-century-change.military-disruption.match01"
+      ],
+      "id": "lesson.history.ottoman-search-years.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "XVII. Yüzyılda Siyasi ve Askerî Değişim",
+      "topicId": "tyt.history.ottoman-search-years.seventeenth-century-change"
+    },
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.ottoman-search-years.reform-and-reports.reform-character.mcq01",
+        "exercise.history.ottoman-search-years.reform-and-reports.reform-character.tf01",
+        "exercise.history.ottoman-search-years.reform-and-reports.reform-character.fill01",
+        "exercise.history.ottoman-search-years.reform-and-reports.koci-bey.mcq01",
+        "exercise.history.ottoman-search-years.reform-and-reports.koci-bey.tf01",
+        "exercise.history.ottoman-search-years.reform-and-reports.koci-bey.match01"
+      ],
+      "id": "lesson.history.ottoman-search-years.002",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "Islahatlar ve Layihalar",
+      "topicId": "tyt.history.ottoman-search-years.reform-and-reports"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.history.ottoman-search-years.01",
+      "kind": "lesson",
+      "lessonId": "lesson.history.ottoman-search-years.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.history.modern-europe.02"
+      ],
+      "title": "XVII. Yüzyılda Siyasi ve Askerî Değişim",
+      "unitId": "tyt.history.ottoman-search-years"
+    },
+    {
+      "id": "path.history.ottoman-search-years.02",
+      "kind": "checkpoint",
+      "lessonId": "lesson.history.ottoman-search-years.002",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.history.ottoman-search-years.01"
+      ],
+      "title": "Osmanlı Devleti’nde Arayış Yılları Kontrolü",
+      "unitId": "tyt.history.ottoman-search-years"
+    }
+  ],
+  "skills": [
+    {
+      "description": "Zitvatorok Antlaşması’nın diplomatik anlamını yorumlar.",
+      "id": "skill.history.ottoman-search-years.treaty-zitvatorok",
+      "title": "Zitvatorok Antlaşması’nın diplomatik anlamını yorumlar",
+      "topicId": "tyt.history.ottoman-search-years.seventeenth-century-change"
+    },
+    {
+      "description": "Tımar ve kapıkulu düzenindeki bozulmaların sonuçlarını açıklar.",
+      "id": "skill.history.ottoman-search-years.military-disruption",
+      "title": "Tımar ve kapıkulu düzenindeki bozulmaların sonuçlarını açıklar",
+      "topicId": "tyt.history.ottoman-search-years.seventeenth-century-change"
+    },
+    {
+      "description": "XVII. yüzyıl ıslahatlarının genel niteliğini ayırt eder.",
+      "id": "skill.history.ottoman-search-years.reform-character",
+      "title": "XVII. yüzyıl ıslahatlarının genel niteliğini ayırt eder",
+      "topicId": "tyt.history.ottoman-search-years.reform-and-reports"
+    },
+    {
+      "description": "Koçi Bey Risalesi’nin ıslahat düşüncesindeki yerini açıklar.",
+      "id": "skill.history.ottoman-search-years.koci-bey",
+      "title": "Koçi Bey Risalesi’nin ıslahat düşüncesindeki yerini açıklar",
+      "topicId": "tyt.history.ottoman-search-years.reform-and-reports"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.history.ottoman-search-years.treaty-zitvatorok",
+        "concept.history.ottoman-search-years.military-disruption"
+      ],
+      "id": "tyt.history.ottoman-search-years.seventeenth-century-change",
+      "skillIds": [
+        "skill.history.ottoman-search-years.treaty-zitvatorok",
+        "skill.history.ottoman-search-years.military-disruption"
+      ],
+      "title": "XVII. Yüzyılda Siyasi ve Askerî Değişim",
+      "unitId": "tyt.history.ottoman-search-years"
+    },
+    {
+      "conceptIds": [
+        "concept.history.ottoman-search-years.reform-character",
+        "concept.history.ottoman-search-years.koci-bey"
+      ],
+      "id": "tyt.history.ottoman-search-years.reform-and-reports",
+      "skillIds": [
+        "skill.history.ottoman-search-years.reform-character",
+        "skill.history.ottoman-search-years.koci-bey"
+      ],
+      "title": "Islahatlar ve Layihalar",
+      "unitId": "tyt.history.ottoman-search-years"
+    }
+  ],
+  "unitId": "tyt.history.ottoman-search-years"
+}

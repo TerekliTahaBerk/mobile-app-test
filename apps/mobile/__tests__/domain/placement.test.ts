@@ -23,7 +23,7 @@ describe('starting diagnostic', () => {
     );
   });
 
-  it('samples every main topic and subtopic that has scored material', () => {
+  it('samples measurable subtopics without exceeding the one-sitting cap', () => {
     const placement = assemblePlacement(index);
     const measurable = index.bundle.units
       .flatMap((unit) => unit.topicIds)
@@ -36,7 +36,8 @@ describe('starting diagnostic', () => {
         );
       });
 
-    expect([...placement.topicIds].sort()).toEqual([...measurable].sort());
+    expect(placement.topicIds.every((topicId) => measurable.includes(topicId))).toBe(true);
+    expect(placement.topicIds).toHaveLength(Math.min(measurable.length, 20));
     expect(
       new Set(placement.exercises.map((exercise) => index.getExerciseTaxonomy(exercise.id).mainTopic.id))
         .size,

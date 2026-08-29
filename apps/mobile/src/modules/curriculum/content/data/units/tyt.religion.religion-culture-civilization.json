@@ -1,0 +1,862 @@
+{
+  "unitId": "tyt.religion.religion-culture-civilization",
+  "topics": [
+    {
+      "id": "tyt.religion.religion-culture-civilization.religion-culture",
+      "unitId": "tyt.religion.religion-culture-civilization",
+      "title": "Din ve Kültür Etkileşimi",
+      "skillIds": [
+        "skill.religion.religion-culture-civilization.religion-culture.interpret",
+        "skill.religion.religion-culture-civilization.religion-culture.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.religion-culture-civilization.religion-culture.din-kultur-etkilesimi"
+      ]
+    },
+    {
+      "id": "tyt.religion.religion-culture-civilization.family-society",
+      "unitId": "tyt.religion.religion-culture-civilization",
+      "title": "Aile, Toplum ve Ortak Değerler",
+      "skillIds": [
+        "skill.religion.religion-culture-civilization.family-society.interpret",
+        "skill.religion.religion-culture-civilization.family-society.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.religion-culture-civilization.family-society.ortak-deger"
+      ]
+    },
+    {
+      "id": "tyt.religion.religion-culture-civilization.art-civilization",
+      "unitId": "tyt.religion.religion-culture-civilization",
+      "title": "Sanat, Mimari ve Medeniyet",
+      "skillIds": [
+        "skill.religion.religion-culture-civilization.art-civilization.interpret",
+        "skill.religion.religion-culture-civilization.art-civilization.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.religion-culture-civilization.art-civilization.medeniyet"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "skill.religion.religion-culture-civilization.religion-culture.interpret",
+      "title": "Din ile kültürü özdeşleştirmeden ilişkilerini yorumlar.",
+      "description": "Din ile kültürü özdeşleştirmeden ilişkilerini yorumlar.",
+      "topicId": "tyt.religion.religion-culture-civilization.religion-culture"
+    },
+    {
+      "id": "skill.religion.religion-culture-civilization.religion-culture.distinguish",
+      "title": "Dinî ilke ile kültürel uygulamayı örnekten ayırt eder.",
+      "description": "Dinî ilke ile kültürel uygulamayı örnekten ayırt eder.",
+      "topicId": "tyt.religion.religion-culture-civilization.religion-culture"
+    },
+    {
+      "id": "skill.religion.religion-culture-civilization.family-society.interpret",
+      "title": "Ailenin değer aktarımındaki rolünü yorumlar.",
+      "description": "Ailenin değer aktarımındaki rolünü yorumlar.",
+      "topicId": "tyt.religion.religion-culture-civilization.family-society"
+    },
+    {
+      "id": "skill.religion.religion-culture-civilization.family-society.distinguish",
+      "title": "Ortak değerlerin toplumsal birlikteliğe katkısını çıkarır.",
+      "description": "Ortak değerlerin toplumsal birlikteliğe katkısını çıkarır.",
+      "topicId": "tyt.religion.religion-culture-civilization.family-society"
+    },
+    {
+      "id": "skill.religion.religion-culture-civilization.art-civilization.interpret",
+      "title": "Dinin sanat ve mimariye etkisini örnekten yorumlar.",
+      "description": "Dinin sanat ve mimariye etkisini örnekten yorumlar.",
+      "topicId": "tyt.religion.religion-culture-civilization.art-civilization"
+    },
+    {
+      "id": "skill.religion.religion-culture-civilization.art-civilization.distinguish",
+      "title": "Medeniyeti tek bir sanat ürününe indirgemeyen açıklamayı seçer.",
+      "description": "Medeniyeti tek bir sanat ürününe indirgemeyen açıklamayı seçer.",
+      "topicId": "tyt.religion.religion-culture-civilization.art-civilization"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "concept.religion.religion-culture-civilization.religion-culture.din-kultur-etkilesimi",
+      "term": "din-kültür etkileşimi",
+      "definition": "dinî değerlerin kültürü etkilerken kültürel biçimlerin de yaşantıya çeşitlilik katması",
+      "topicId": "tyt.religion.religion-culture-civilization.religion-culture"
+    },
+    {
+      "id": "concept.religion.religion-culture-civilization.family-society.ortak-deger",
+      "term": "ortak değer",
+      "definition": "farklı bireylerin birlikte yaşamını destekleyen paylaşılan ahlaki ilke",
+      "topicId": "tyt.religion.religion-culture-civilization.family-society"
+    },
+    {
+      "id": "concept.religion.religion-culture-civilization.art-civilization.medeniyet",
+      "term": "medeniyet",
+      "definition": "bir toplumun bilgi, sanat, kurum ve değerlerle oluşturduğu tarihsel birikim",
+      "topicId": "tyt.religion.religion-culture-civilization.art-civilization"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "lesson.religion.religion-culture-civilization.religion-culture.001",
+      "topicId": "tyt.religion.religion-culture-civilization.religion-culture",
+      "title": "Din ve Kültür Etkileşimi",
+      "subtitle": "Din ile kültürü özdeşleştirmeden ilişkilerini yorumlar. Dinî ilke ile kültürel uygulamayı örnekten ayırt eder.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.religion-culture-civilization.religion-culture.001.card01",
+        "exercise.religion.religion-culture-civilization.religion-culture.001.mcq01",
+        "exercise.religion.religion-culture-civilization.religion-culture.001.mcq02",
+        "exercise.religion.religion-culture-civilization.religion-culture.001.mcq03",
+        "exercise.religion.religion-culture-civilization.religion-culture.001.mcq04",
+        "exercise.religion.religion-culture-civilization.religion-culture.001.tf01",
+        "exercise.religion.religion-culture-civilization.religion-culture.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.religion.religion-culture-civilization.family-society.001",
+      "topicId": "tyt.religion.religion-culture-civilization.family-society",
+      "title": "Aile, Toplum ve Ortak Değerler",
+      "subtitle": "Ailenin değer aktarımındaki rolünü yorumlar. Ortak değerlerin toplumsal birlikteliğe katkısını çıkarır.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.religion-culture-civilization.family-society.001.card01",
+        "exercise.religion.religion-culture-civilization.family-society.001.mcq01",
+        "exercise.religion.religion-culture-civilization.family-society.001.mcq02",
+        "exercise.religion.religion-culture-civilization.family-society.001.mcq03",
+        "exercise.religion.religion-culture-civilization.family-society.001.mcq04",
+        "exercise.religion.religion-culture-civilization.family-society.001.tf01",
+        "exercise.religion.religion-culture-civilization.family-society.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.religion.religion-culture-civilization.art-civilization.001",
+      "topicId": "tyt.religion.religion-culture-civilization.art-civilization",
+      "title": "Sanat, Mimari ve Medeniyet",
+      "subtitle": "Dinin sanat ve mimariye etkisini örnekten yorumlar. Medeniyeti tek bir sanat ürününe indirgemeyen açıklamayı seçer.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.religion-culture-civilization.art-civilization.001.card01",
+        "exercise.religion.religion-culture-civilization.art-civilization.001.mcq01",
+        "exercise.religion.religion-culture-civilization.art-civilization.001.mcq02",
+        "exercise.religion.religion-culture-civilization.art-civilization.001.mcq03",
+        "exercise.religion.religion-culture-civilization.art-civilization.001.mcq04",
+        "exercise.religion.religion-culture-civilization.art-civilization.001.tf01",
+        "exercise.religion.religion-culture-civilization.art-civilization.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "id": "exercise.religion.religion-culture-civilization.religion-culture.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "din-kültür etkileşimi, dinî değerlerin kültürü etkilerken kültürel biçimlerin de yaşantıya çeşitlilik katması.",
+      "skillIds": [
+        "skill.religion.religion-culture-civilization.religion-culture.interpret",
+        "skill.religion.religion-culture-civilization.religion-culture.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · DİN VE KÜLTÜR ETKİLEŞİMİ",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "din-kültür etkileşimi",
+          "back": "dinî değerlerin kültürü etkilerken kültürel biçimlerin de yaşantıya çeşitlilik katması",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.religion-culture-civilization.religion-culture.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "din-kültür etkileşimi, dinî değerlerin kültürü etkilerken kültürel biçimlerin de yaşantıya çeşitlilik katması.",
+      "skillIds": [
+        "skill.religion.religion-culture-civilization.religion-culture.interpret",
+        "skill.religion.religion-culture-civilization.religion-culture.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · DİN VE KÜLTÜR ETKİLEŞİMİ",
+      "prompt": "“Dinî değerlerin kültürü etkilerken kültürel biçimlerin de yaşantıya çeşitlilik katması” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "din-kültür etkileşimi"
+        },
+        {
+          "id": "b",
+          "label": "ortak değer"
+        },
+        {
+          "id": "c",
+          "label": "medeniyet"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.religion-culture-civilization.religion-culture.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada din-kültür etkileşimi kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.religion-culture-civilization.religion-culture.interpret",
+        "skill.religion.religion-culture-civilization.religion-culture.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · DİN VE KÜLTÜR ETKİLEŞİMİ",
+      "prompt": "Bir öğrenci din-kültür etkileşimi konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.religion-culture-civilization.religion-culture.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Din ile kültürü özdeşleştirmeden ilişkilerini yorumlar. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.religion-culture-civilization.religion-culture.interpret",
+        "skill.religion.religion-culture-civilization.religion-culture.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · DİN VE KÜLTÜR ETKİLEŞİMİ",
+      "prompt": "Din ile kültürü özdeşleştirmeden ilişkilerini yorumlar. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.religion-culture-civilization.religion-culture.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "Dinî ilke ile kültürel uygulamayı örnekten ayırt eder. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.religion-culture-civilization.religion-culture.interpret",
+        "skill.religion.religion-culture-civilization.religion-culture.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · DİN VE KÜLTÜR ETKİLEŞİMİ",
+      "prompt": "Bir açıklama, din-kültür etkileşimi kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.religion-culture-civilization.religion-culture.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. din-kültür etkileşimi, dinî değerlerin kültürü etkilerken kültürel biçimlerin de yaşantıya çeşitlilik katması; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.religion-culture-civilization.religion-culture.interpret",
+        "skill.religion.religion-culture-civilization.religion-culture.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · DİN VE KÜLTÜR ETKİLEŞİMİ",
+      "statement": "din-kültür etkileşimi kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.religion-culture-civilization.religion-culture.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.religion-culture-civilization.religion-culture.interpret",
+        "skill.religion.religion-culture-civilization.religion-culture.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · DİN VE KÜLTÜR ETKİLEŞİMİ",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "din-kültür etkileşimi",
+          "right": "dinî değerlerin kültürü etkilerken kültürel biçimlerin de yaşantıya çeşitlilik katması"
+        },
+        {
+          "id": "p2",
+          "left": "ortak değer",
+          "right": "farklı bireylerin birlikte yaşamını destekleyen paylaşılan ahlaki ilke"
+        },
+        {
+          "id": "p3",
+          "left": "medeniyet",
+          "right": "bir toplumun bilgi, sanat, kurum ve değerlerle oluşturduğu tarihsel birikim"
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.religion-culture-civilization.family-society.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "ortak değer, farklı bireylerin birlikte yaşamını destekleyen paylaşılan ahlaki ilke.",
+      "skillIds": [
+        "skill.religion.religion-culture-civilization.family-society.interpret",
+        "skill.religion.religion-culture-civilization.family-society.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · AİLE, TOPLUM VE ORTAK DEĞERLER",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "ortak değer",
+          "back": "farklı bireylerin birlikte yaşamını destekleyen paylaşılan ahlaki ilke",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.religion-culture-civilization.family-society.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "ortak değer, farklı bireylerin birlikte yaşamını destekleyen paylaşılan ahlaki ilke.",
+      "skillIds": [
+        "skill.religion.religion-culture-civilization.family-society.interpret",
+        "skill.religion.religion-culture-civilization.family-society.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · AİLE, TOPLUM VE ORTAK DEĞERLER",
+      "prompt": "“Farklı bireylerin birlikte yaşamını destekleyen paylaşılan ahlaki ilke” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "din-kültür etkileşimi"
+        },
+        {
+          "id": "b",
+          "label": "ortak değer"
+        },
+        {
+          "id": "c",
+          "label": "medeniyet"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "b"
+    },
+    {
+      "id": "exercise.religion.religion-culture-civilization.family-society.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada ortak değer kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.religion-culture-civilization.family-society.interpret",
+        "skill.religion.religion-culture-civilization.family-society.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · AİLE, TOPLUM VE ORTAK DEĞERLER",
+      "prompt": "Bir öğrenci ortak değer konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.religion-culture-civilization.family-society.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Ailenin değer aktarımındaki rolünü yorumlar. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.religion-culture-civilization.family-society.interpret",
+        "skill.religion.religion-culture-civilization.family-society.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · AİLE, TOPLUM VE ORTAK DEĞERLER",
+      "prompt": "Ailenin değer aktarımındaki rolünü yorumlar. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.religion-culture-civilization.family-society.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "Ortak değerlerin toplumsal birlikteliğe katkısını çıkarır. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.religion-culture-civilization.family-society.interpret",
+        "skill.religion.religion-culture-civilization.family-society.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · AİLE, TOPLUM VE ORTAK DEĞERLER",
+      "prompt": "Bir açıklama, ortak değer kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.religion-culture-civilization.family-society.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. ortak değer, farklı bireylerin birlikte yaşamını destekleyen paylaşılan ahlaki ilke; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.religion-culture-civilization.family-society.interpret",
+        "skill.religion.religion-culture-civilization.family-society.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · AİLE, TOPLUM VE ORTAK DEĞERLER",
+      "statement": "ortak değer kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.religion-culture-civilization.family-society.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.religion-culture-civilization.family-society.interpret",
+        "skill.religion.religion-culture-civilization.family-society.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · AİLE, TOPLUM VE ORTAK DEĞERLER",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "din-kültür etkileşimi",
+          "right": "dinî değerlerin kültürü etkilerken kültürel biçimlerin de yaşantıya çeşitlilik katması"
+        },
+        {
+          "id": "p2",
+          "left": "ortak değer",
+          "right": "farklı bireylerin birlikte yaşamını destekleyen paylaşılan ahlaki ilke"
+        },
+        {
+          "id": "p3",
+          "left": "medeniyet",
+          "right": "bir toplumun bilgi, sanat, kurum ve değerlerle oluşturduğu tarihsel birikim"
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.religion-culture-civilization.art-civilization.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "medeniyet, bir toplumun bilgi, sanat, kurum ve değerlerle oluşturduğu tarihsel birikim.",
+      "skillIds": [
+        "skill.religion.religion-culture-civilization.art-civilization.interpret",
+        "skill.religion.religion-culture-civilization.art-civilization.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · SANAT, MİMARİ VE MEDENİYET",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "medeniyet",
+          "back": "bir toplumun bilgi, sanat, kurum ve değerlerle oluşturduğu tarihsel birikim",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.religion-culture-civilization.art-civilization.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "medeniyet, bir toplumun bilgi, sanat, kurum ve değerlerle oluşturduğu tarihsel birikim.",
+      "skillIds": [
+        "skill.religion.religion-culture-civilization.art-civilization.interpret",
+        "skill.religion.religion-culture-civilization.art-civilization.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · SANAT, MİMARİ VE MEDENİYET",
+      "prompt": "“Bir toplumun bilgi, sanat, kurum ve değerlerle oluşturduğu tarihsel birikim” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "din-kültür etkileşimi"
+        },
+        {
+          "id": "b",
+          "label": "ortak değer"
+        },
+        {
+          "id": "c",
+          "label": "medeniyet"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "c"
+    },
+    {
+      "id": "exercise.religion.religion-culture-civilization.art-civilization.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada medeniyet kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.religion-culture-civilization.art-civilization.interpret",
+        "skill.religion.religion-culture-civilization.art-civilization.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · SANAT, MİMARİ VE MEDENİYET",
+      "prompt": "Bir öğrenci medeniyet konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.religion-culture-civilization.art-civilization.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Dinin sanat ve mimariye etkisini örnekten yorumlar. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.religion-culture-civilization.art-civilization.interpret",
+        "skill.religion.religion-culture-civilization.art-civilization.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · SANAT, MİMARİ VE MEDENİYET",
+      "prompt": "Dinin sanat ve mimariye etkisini örnekten yorumlar. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.religion-culture-civilization.art-civilization.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "Medeniyeti tek bir sanat ürününe indirgemeyen açıklamayı seçer. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.religion-culture-civilization.art-civilization.interpret",
+        "skill.religion.religion-culture-civilization.art-civilization.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · SANAT, MİMARİ VE MEDENİYET",
+      "prompt": "Bir açıklama, medeniyet kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.religion-culture-civilization.art-civilization.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. medeniyet, bir toplumun bilgi, sanat, kurum ve değerlerle oluşturduğu tarihsel birikim; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.religion-culture-civilization.art-civilization.interpret",
+        "skill.religion.religion-culture-civilization.art-civilization.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · SANAT, MİMARİ VE MEDENİYET",
+      "statement": "medeniyet kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.religion-culture-civilization.art-civilization.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.religion-culture-civilization.art-civilization.interpret",
+        "skill.religion.religion-culture-civilization.art-civilization.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · SANAT, MİMARİ VE MEDENİYET",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "din-kültür etkileşimi",
+          "right": "dinî değerlerin kültürü etkilerken kültürel biçimlerin de yaşantıya çeşitlilik katması"
+        },
+        {
+          "id": "p2",
+          "left": "ortak değer",
+          "right": "farklı bireylerin birlikte yaşamını destekleyen paylaşılan ahlaki ilke"
+        },
+        {
+          "id": "p3",
+          "left": "medeniyet",
+          "right": "bir toplumun bilgi, sanat, kurum ve değerlerle oluşturduğu tarihsel birikim"
+        }
+      ]
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.religion.religion-culture-civilization.01",
+      "unitId": "tyt.religion.religion-culture-civilization",
+      "kind": "lesson",
+      "title": "Din ve Kültür Etkileşimi",
+      "order": 1,
+      "lessonId": "lesson.religion.religion-culture-civilization.religion-culture.001",
+      "prerequisiteIds": []
+    },
+    {
+      "id": "path.religion.religion-culture-civilization.02",
+      "unitId": "tyt.religion.religion-culture-civilization",
+      "kind": "lesson",
+      "title": "Aile, Toplum ve Ortak Değerler",
+      "order": 2,
+      "lessonId": "lesson.religion.religion-culture-civilization.family-society.001",
+      "prerequisiteIds": [
+        "path.religion.religion-culture-civilization.01"
+      ]
+    },
+    {
+      "id": "path.religion.religion-culture-civilization.03",
+      "unitId": "tyt.religion.religion-culture-civilization",
+      "kind": "lesson",
+      "title": "Sanat, Mimari ve Medeniyet",
+      "order": 3,
+      "lessonId": "lesson.religion.religion-culture-civilization.art-civilization.001",
+      "prerequisiteIds": [
+        "path.religion.religion-culture-civilization.02"
+      ]
+    }
+  ]
+}

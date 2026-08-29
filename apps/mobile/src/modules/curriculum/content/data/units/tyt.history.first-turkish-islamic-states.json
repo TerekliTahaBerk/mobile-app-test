@@ -1,0 +1,535 @@
+{
+  "concepts": [
+    {
+      "definition": "Karahanlılar",
+      "id": "concept.history.first-turkish-islamic-states.karakhanid-identity",
+      "term": "Karahanlılar",
+      "topicId": "tyt.history.first-turkish-islamic-states.karakhanids-ghaznavids"
+    },
+    {
+      "definition": "İslamiyet’in Hindistan’da yayılmasına ortam hazırlaması",
+      "id": "concept.history.first-turkish-islamic-states.ghaznavid-india",
+      "term": "İslamiyet’in Hindistan’da yayılmasına ortam hazırlaması",
+      "topicId": "tyt.history.first-turkish-islamic-states.karakhanids-ghaznavids"
+    },
+    {
+      "definition": "Büyük Selçuklu Devleti’nin kurulması",
+      "id": "concept.history.first-turkish-islamic-states.dandanakan-state",
+      "term": "Büyük Selçuklu Devleti’nin kurulması",
+      "topicId": "tyt.history.first-turkish-islamic-states.great-seljuks"
+    },
+    {
+      "definition": "Nitelikli yönetici yetiştirmek ve Sünni düşünceyi desteklemek",
+      "id": "concept.history.first-turkish-islamic-states.nizamiye-purpose",
+      "term": "Nitelikli yönetici yetiştirmek ve Sünni düşünceyi desteklemek",
+      "topicId": "tyt.history.first-turkish-islamic-states.great-seljuks"
+    }
+  ],
+  "exercises": [
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Karahanlılar, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.first-turkish-islamic-states.karakhanids-ghaznavids.karakhanid-identity.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Karahanlılar"
+        },
+        {
+          "id": "d1",
+          "label": "Gazneliler"
+        },
+        {
+          "id": "d2",
+          "label": "Büyük Selçuklular"
+        },
+        {
+          "id": "d3",
+          "label": "Harzemşahlar"
+        }
+      ],
+      "prompt": "Türk-İslam tarihinin ilk Türk devleti olarak kabul edilen devlet hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.first-turkish-islamic-states.karakhanid-identity"
+      ],
+      "tag": "TARİH · KARAHANLILAR VE GAZNELİLER"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Türk-İslam tarihinin ilk Türk devleti olarak kabul edilen devlet hangisidir sorusunun doğru karşılığı “Karahanlılar” olmalıdır.",
+      "id": "exercise.history.first-turkish-islamic-states.karakhanids-ghaznavids.karakhanid-identity.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.first-turkish-islamic-states.karakhanid-identity"
+      ],
+      "statement": "Gazneliler, Karahanlıların Türk-İslam tarihindeki yerini açıklar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · KARAHANLILAR VE GAZNELİLER"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "Karahanlılar"
+        },
+        {
+          "id": "d1",
+          "label": "Gazneliler"
+        },
+        {
+          "id": "d2",
+          "label": "Büyük Selçuklular"
+        },
+        {
+          "id": "d3",
+          "label": "Harzemşahlar"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “Karahanlılar” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.first-turkish-islamic-states.karakhanids-ghaznavids.karakhanid-identity.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.first-turkish-islamic-states.karakhanid-identity"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: Türk-İslam tarihinin ilk Türk devleti olarak kabul edilen devlet hangisidir?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "İslamiyet’in Hindistan’da yayılmasına ortam hazırlaması, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.first-turkish-islamic-states.karakhanids-ghaznavids.ghaznavid-india.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "İslamiyet’in Hindistan’da yayılmasına ortam hazırlaması"
+        },
+        {
+          "id": "d1",
+          "label": "Anadolu’nun Türkleşmesini tamamlaması"
+        },
+        {
+          "id": "d2",
+          "label": "Bizans’ın yıkılmasını sağlaması"
+        },
+        {
+          "id": "d3",
+          "label": "Haçlı Seferlerini sona erdirmesi"
+        }
+      ],
+      "prompt": "Gazneli Mahmut’un Hindistan seferlerinin kalıcı etkisi hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.first-turkish-islamic-states.ghaznavid-india"
+      ],
+      "tag": "TARİH · KARAHANLILAR VE GAZNELİLER"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Gazneli Mahmut’un Hindistan seferlerinin kalıcı etkisi hangisidir sorusunun doğru karşılığı “İslamiyet’in Hindistan’da yayılmasına ortam hazırlaması” olmalıdır.",
+      "id": "exercise.history.first-turkish-islamic-states.karakhanids-ghaznavids.ghaznavid-india.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.first-turkish-islamic-states.ghaznavid-india"
+      ],
+      "statement": "Anadolu’nun Türkleşmesini tamamlaması, Gaznelilerin Hindistan seferlerinin sonuçlarını yorumlar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · KARAHANLILAR VE GAZNELİLER"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, Karahanlılar ve Gazneliler başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.first-turkish-islamic-states.karakhanids-ghaznavids.ghaznavid-india.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Türk-İslam tarihinin ilk Türk devleti olarak kabul edilen devlet hangisidir?",
+          "right": "Karahanlılar"
+        },
+        {
+          "id": "pair-2",
+          "left": "Gazneli Mahmut’un Hindistan seferlerinin kalıcı etkisi hangisidir?",
+          "right": "İslamiyet’in Hindistan’da yayılmasına ortam hazırlaması"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.first-turkish-islamic-states.karakhanid-identity",
+        "skill.history.first-turkish-islamic-states.ghaznavid-india"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · KARAHANLILAR VE GAZNELİLER",
+      "title": "Bilgi bağlarını eşleştir"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Büyük Selçuklu Devleti’nin kurulması, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.first-turkish-islamic-states.great-seljuks.dandanakan-state.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Büyük Selçuklu Devleti’nin kurulması"
+        },
+        {
+          "id": "d1",
+          "label": "Anadolu Selçuklu Devleti’nin yıkılması"
+        },
+        {
+          "id": "d2",
+          "label": "Bizans’ın Anadolu’dan çekilmesi"
+        },
+        {
+          "id": "d3",
+          "label": "Moğol egemenliğinin başlaması"
+        }
+      ],
+      "prompt": "1040 Dandanakan Savaşı’nın temel sonucu hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.first-turkish-islamic-states.dandanakan-state"
+      ],
+      "tag": "TARİH · BÜYÜK SELÇUKLU DEVLETİ"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. 1040 Dandanakan Savaşı’nın temel sonucu hangisidir sorusunun doğru karşılığı “Büyük Selçuklu Devleti’nin kurulması” olmalıdır.",
+      "id": "exercise.history.first-turkish-islamic-states.great-seljuks.dandanakan-state.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.first-turkish-islamic-states.dandanakan-state"
+      ],
+      "statement": "Anadolu Selçuklu Devleti’nin yıkılması, Dandanakan Savaşı’nın siyasi sonucunu açıklar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · BÜYÜK SELÇUKLU DEVLETİ"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "Büyük Selçuklu Devleti’nin kurulması"
+        },
+        {
+          "id": "d1",
+          "label": "Anadolu Selçuklu Devleti’nin yıkılması"
+        },
+        {
+          "id": "d2",
+          "label": "Bizans’ın Anadolu’dan çekilmesi"
+        },
+        {
+          "id": "d3",
+          "label": "Moğol egemenliğinin başlaması"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “Büyük Selçuklu Devleti’nin kurulması” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.first-turkish-islamic-states.great-seljuks.dandanakan-state.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.first-turkish-islamic-states.dandanakan-state"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: 1040 Dandanakan Savaşı’nın temel sonucu hangisidir?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Nitelikli yönetici yetiştirmek ve Sünni düşünceyi desteklemek, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.first-turkish-islamic-states.great-seljuks.nizamiye-purpose.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Nitelikli yönetici yetiştirmek ve Sünni düşünceyi desteklemek"
+        },
+        {
+          "id": "d1",
+          "label": "Deniz ticaretini denetlemek"
+        },
+        {
+          "id": "d2",
+          "label": "Tımar sistemini kaldırmak"
+        },
+        {
+          "id": "d3",
+          "label": "Göçebe yaşamı yaygınlaştırmak"
+        }
+      ],
+      "prompt": "Nizamiye Medreselerinin kurulmasında hangi amaç etkiliydi?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.first-turkish-islamic-states.nizamiye-purpose"
+      ],
+      "tag": "TARİH · BÜYÜK SELÇUKLU DEVLETİ"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Nizamiye Medreselerinin kurulmasında hangi amaç etkiliydi sorusunun doğru karşılığı “Nitelikli yönetici yetiştirmek ve Sünni düşünceyi desteklemek” olmalıdır.",
+      "id": "exercise.history.first-turkish-islamic-states.great-seljuks.nizamiye-purpose.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.first-turkish-islamic-states.nizamiye-purpose"
+      ],
+      "statement": "Deniz ticaretini denetlemek, Nizamiye Medreselerinin devlet ve eğitim hayatındaki işlevini açıklar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · BÜYÜK SELÇUKLU DEVLETİ"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, Büyük Selçuklu Devleti başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.first-turkish-islamic-states.great-seljuks.nizamiye-purpose.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "1040 Dandanakan Savaşı’nın temel sonucu hangisidir?",
+          "right": "Büyük Selçuklu Devleti’nin kurulması"
+        },
+        {
+          "id": "pair-2",
+          "left": "Nizamiye Medreselerinin kurulmasında hangi amaç etkiliydi?",
+          "right": "Nitelikli yönetici yetiştirmek ve Sünni düşünceyi desteklemek"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.first-turkish-islamic-states.dandanakan-state",
+        "skill.history.first-turkish-islamic-states.nizamiye-purpose"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · BÜYÜK SELÇUKLU DEVLETİ",
+      "title": "Bilgi bağlarını eşleştir"
+    },
+    {
+      "correctOrder": [
+        "event-1",
+        "event-2",
+        "event-3",
+        "event-4"
+      ],
+      "difficulty": 4,
+      "explanation": "Olaylar tarihleri dikkate alınarak eskiden yeniye sıralanır. Kronoloji, gelişmeler arasındaki neden-sonuç ilişkisini kurmak için temel bir çerçeve sunar.",
+      "id": "exercise.history.first-turkish-islamic-states.great-seljuks.order01",
+      "items": [
+        {
+          "id": "event-1",
+          "label": "Talas Savaşı (751)"
+        },
+        {
+          "id": "event-2",
+          "label": "Karahanlı Devleti’nin kuruluşu (840)"
+        },
+        {
+          "id": "event-3",
+          "label": "Dandanakan Savaşı (1040)"
+        },
+        {
+          "id": "event-4",
+          "label": "Malazgirt Savaşı (1071)"
+        }
+      ],
+      "kind": "ordering",
+      "prompt": "Gelişmeleri eskiden yeniye doğru sırala.",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.first-turkish-islamic-states.dandanakan-state",
+        "skill.history.first-turkish-islamic-states.nizamiye-purpose"
+      ],
+      "tag": "TARİH · BÜYÜK SELÇUKLU DEVLETİ"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.first-turkish-islamic-states.karakhanids-ghaznavids.karakhanid-identity.mcq01",
+        "exercise.history.first-turkish-islamic-states.karakhanids-ghaznavids.karakhanid-identity.tf01",
+        "exercise.history.first-turkish-islamic-states.karakhanids-ghaznavids.karakhanid-identity.fill01",
+        "exercise.history.first-turkish-islamic-states.karakhanids-ghaznavids.ghaznavid-india.mcq01",
+        "exercise.history.first-turkish-islamic-states.karakhanids-ghaznavids.ghaznavid-india.tf01",
+        "exercise.history.first-turkish-islamic-states.karakhanids-ghaznavids.ghaznavid-india.match01"
+      ],
+      "id": "lesson.history.first-turkish-islamic-states.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "Karahanlılar ve Gazneliler",
+      "topicId": "tyt.history.first-turkish-islamic-states.karakhanids-ghaznavids"
+    },
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.first-turkish-islamic-states.great-seljuks.dandanakan-state.mcq01",
+        "exercise.history.first-turkish-islamic-states.great-seljuks.dandanakan-state.tf01",
+        "exercise.history.first-turkish-islamic-states.great-seljuks.dandanakan-state.fill01",
+        "exercise.history.first-turkish-islamic-states.great-seljuks.nizamiye-purpose.mcq01",
+        "exercise.history.first-turkish-islamic-states.great-seljuks.nizamiye-purpose.tf01",
+        "exercise.history.first-turkish-islamic-states.great-seljuks.nizamiye-purpose.match01",
+        "exercise.history.first-turkish-islamic-states.great-seljuks.order01"
+      ],
+      "id": "lesson.history.first-turkish-islamic-states.002",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "Büyük Selçuklu Devleti",
+      "topicId": "tyt.history.first-turkish-islamic-states.great-seljuks"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.history.first-turkish-islamic-states.01",
+      "kind": "lesson",
+      "lessonId": "lesson.history.first-turkish-islamic-states.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.history.birth-of-islamic-civilization.02"
+      ],
+      "title": "Karahanlılar ve Gazneliler",
+      "unitId": "tyt.history.first-turkish-islamic-states"
+    },
+    {
+      "id": "path.history.first-turkish-islamic-states.02",
+      "kind": "checkpoint",
+      "lessonId": "lesson.history.first-turkish-islamic-states.002",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.history.first-turkish-islamic-states.01"
+      ],
+      "title": "İlk Türk İslam Devletleri Kontrolü",
+      "unitId": "tyt.history.first-turkish-islamic-states"
+    }
+  ],
+  "skills": [
+    {
+      "description": "Karahanlıların Türk-İslam tarihindeki yerini açıklar.",
+      "id": "skill.history.first-turkish-islamic-states.karakhanid-identity",
+      "title": "Karahanlıların Türk-İslam tarihindeki yerini açıklar",
+      "topicId": "tyt.history.first-turkish-islamic-states.karakhanids-ghaznavids"
+    },
+    {
+      "description": "Gaznelilerin Hindistan seferlerinin sonuçlarını yorumlar.",
+      "id": "skill.history.first-turkish-islamic-states.ghaznavid-india",
+      "title": "Gaznelilerin Hindistan seferlerinin sonuçlarını yorumlar",
+      "topicId": "tyt.history.first-turkish-islamic-states.karakhanids-ghaznavids"
+    },
+    {
+      "description": "Dandanakan Savaşı’nın siyasi sonucunu açıklar.",
+      "id": "skill.history.first-turkish-islamic-states.dandanakan-state",
+      "title": "Dandanakan Savaşı’nın siyasi sonucunu açıklar",
+      "topicId": "tyt.history.first-turkish-islamic-states.great-seljuks"
+    },
+    {
+      "description": "Nizamiye Medreselerinin devlet ve eğitim hayatındaki işlevini açıklar.",
+      "id": "skill.history.first-turkish-islamic-states.nizamiye-purpose",
+      "title": "Nizamiye Medreselerinin devlet ve eğitim hayatındaki işlevini açıklar",
+      "topicId": "tyt.history.first-turkish-islamic-states.great-seljuks"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.history.first-turkish-islamic-states.karakhanid-identity",
+        "concept.history.first-turkish-islamic-states.ghaznavid-india"
+      ],
+      "id": "tyt.history.first-turkish-islamic-states.karakhanids-ghaznavids",
+      "skillIds": [
+        "skill.history.first-turkish-islamic-states.karakhanid-identity",
+        "skill.history.first-turkish-islamic-states.ghaznavid-india"
+      ],
+      "title": "Karahanlılar ve Gazneliler",
+      "unitId": "tyt.history.first-turkish-islamic-states"
+    },
+    {
+      "conceptIds": [
+        "concept.history.first-turkish-islamic-states.dandanakan-state",
+        "concept.history.first-turkish-islamic-states.nizamiye-purpose"
+      ],
+      "id": "tyt.history.first-turkish-islamic-states.great-seljuks",
+      "skillIds": [
+        "skill.history.first-turkish-islamic-states.dandanakan-state",
+        "skill.history.first-turkish-islamic-states.nizamiye-purpose"
+      ],
+      "title": "Büyük Selçuklu Devleti",
+      "unitId": "tyt.history.first-turkish-islamic-states"
+    }
+  ],
+  "unitId": "tyt.history.first-turkish-islamic-states"
+}

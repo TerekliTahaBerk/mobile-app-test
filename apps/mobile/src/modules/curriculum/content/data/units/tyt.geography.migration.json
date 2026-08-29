@@ -1,0 +1,531 @@
+{
+  "concepts": [
+    {
+      "definition": "Mevsimlik göç gerçekleşir",
+      "id": "concept.geography.migration.types",
+      "term": "İşçi yazın turizm merkezine gidip kışın döner",
+      "topicId": "tyt.geography.migration.types"
+    },
+    {
+      "definition": "Ekonomik itici faktör oluşur",
+      "id": "concept.geography.migration.causes-effects",
+      "term": "Kırsalda iş olanağı azalır",
+      "topicId": "tyt.geography.migration.causes-effects"
+    }
+  ],
+  "exercises": [
+    {
+      "correctOptionId": "opt-1",
+      "difficulty": 2,
+      "explanation": "İşçi yazın turizm merkezine gidip kışın döner durumunda mevsimlik göç gerçekleşir. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.migration.types.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Mevsimlik göç gerçekleşir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Beyin göçü ve dış göç görülür"
+        },
+        {
+          "id": "opt-3",
+          "label": "Zorunlu göç gerçekleşir"
+        },
+        {
+          "id": "opt-4",
+          "label": "İç göç gerçekleşir"
+        }
+      ],
+      "prompt": "İşçi yazın turizm merkezine gidip kışın döner. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.migration.types.interpret"
+      ],
+      "tag": "COĞRAFYA · GÖÇ TÜRLERİ"
+    },
+    {
+      "correctOptionId": "opt-2",
+      "difficulty": 4,
+      "explanation": "Uzman başka ülkeye araştırma için yerleşir durumunda beyin göçü ve dış göç görülür. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.migration.types.001.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Mevsimlik göç gerçekleşir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Beyin göçü ve dış göç görülür"
+        },
+        {
+          "id": "opt-3",
+          "label": "Zorunlu göç gerçekleşir"
+        },
+        {
+          "id": "opt-4",
+          "label": "İç göç gerçekleşir"
+        }
+      ],
+      "prompt": "Uzman başka ülkeye araştırma için yerleşir. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.migration.types.interpret"
+      ],
+      "tag": "COĞRAFYA · GÖÇ TÜRLERİ"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 3,
+      "explanation": "Afet nedeniyle bölge zorunlu boşaltılır ile zorunlu göç gerçekleşir arasında doğrudan bir coğrafi ilişki vardır.",
+      "id": "exercise.geography.migration.types.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.migration.types.interpret"
+      ],
+      "statement": "Afet nedeniyle bölge zorunlu boşaltılır; bunun sonucunda zorunlu göç gerçekleşir.",
+      "tag": "COĞRAFYA · GÖÇ TÜRLERİ"
+    },
+    {
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "Mevsimlik göç gerçekleşir"
+        },
+        {
+          "id": "w-2",
+          "label": "Beyin göçü ve dış göç görülür"
+        },
+        {
+          "id": "w-3",
+          "label": "Zorunlu göç gerçekleşir"
+        },
+        {
+          "id": "w-4",
+          "label": "İç göç gerçekleşir"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "Köyden aynı ülkenin kentine taşınılır koşulunun beklenen sonucu “İç göç gerçekleşir” ilişkisidir.",
+      "hint": "Köyden aynı ülkenin kentine taşınılır",
+      "id": "exercise.geography.migration.types.001.blank01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.migration.types.interpret"
+      ],
+      "solutionTokenIds": [
+        "w-4"
+      ],
+      "title": "Köyden aynı ülkenin kentine taşınılır durumunda sonuç"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Her koşul, kendisinden beklenen özgün coğrafi sonuçla eşleştirilir; aynı sonuç iki kez kullanılmaz.",
+      "id": "exercise.geography.migration.types.001.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "İşçi yazın turizm merkezine gidip kışın döner",
+          "right": "Mevsimlik göç gerçekleşir"
+        },
+        {
+          "id": "pair-2",
+          "left": "Uzman başka ülkeye araştırma için yerleşir",
+          "right": "Beyin göçü ve dış göç görülür"
+        },
+        {
+          "id": "pair-3",
+          "left": "Afet nedeniyle bölge zorunlu boşaltılır",
+          "right": "Zorunlu göç gerçekleşir"
+        },
+        {
+          "id": "pair-4",
+          "left": "Köyden aynı ülkenin kentine taşınılır",
+          "right": "İç göç gerçekleşir"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.migration.types.interpret"
+      ],
+      "subtitle": "Koşulu doğru coğrafi sonuçla birleştir.",
+      "tag": "COĞRAFYA · GÖÇ TÜRLERİ",
+      "title": "İlişkiyi eşleştir"
+    },
+    {
+      "cards": [
+        {
+          "back": "Mevsimlik göç gerçekleşir",
+          "front": "İşçi yazın turizm merkezine gidip kışın döner",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-1"
+        },
+        {
+          "back": "Beyin göçü ve dış göç görülür",
+          "front": "Uzman başka ülkeye araştırma için yerleşir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-2"
+        },
+        {
+          "back": "Zorunlu göç gerçekleşir",
+          "front": "Afet nedeniyle bölge zorunlu boşaltılır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-3"
+        },
+        {
+          "back": "İç göç gerçekleşir",
+          "front": "Köyden aynı ülkenin kentine taşınılır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-4"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Kartlar temel ilişkileri kısa tekrar için özetler; puanlanan skill coverage hesabına katılmaz.",
+      "id": "exercise.geography.migration.types.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.migration.types.interpret"
+      ],
+      "tag": "COĞRAFYA · GÖÇ TÜRLERİ"
+    },
+    {
+      "correctOptionId": "opt-1",
+      "difficulty": 2,
+      "explanation": "Kırsalda iş olanağı azalır durumunda ekonomik itici faktör oluşur. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.migration.causes-effects.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Ekonomik itici faktör oluşur"
+        },
+        {
+          "id": "opt-2",
+          "label": "Çekici faktör oluşur"
+        },
+        {
+          "id": "opt-3",
+          "label": "Konut ve altyapı baskısı artabilir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Yaşlı nüfus oranı artabilir"
+        }
+      ],
+      "prompt": "Kırsalda iş olanağı azalır. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.migration.causes-effects.interpret"
+      ],
+      "tag": "COĞRAFYA · GÖÇÜN NEDEN VE SONUÇLARI"
+    },
+    {
+      "correctOptionId": "opt-2",
+      "difficulty": 4,
+      "explanation": "Kentte eğitim ve sağlık hizmetleri gelişmiştir durumunda çekici faktör oluşur. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.migration.causes-effects.001.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Ekonomik itici faktör oluşur"
+        },
+        {
+          "id": "opt-2",
+          "label": "Çekici faktör oluşur"
+        },
+        {
+          "id": "opt-3",
+          "label": "Konut ve altyapı baskısı artabilir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Yaşlı nüfus oranı artabilir"
+        }
+      ],
+      "prompt": "Kentte eğitim ve sağlık hizmetleri gelişmiştir. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.migration.causes-effects.interpret"
+      ],
+      "tag": "COĞRAFYA · GÖÇÜN NEDEN VE SONUÇLARI"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 3,
+      "explanation": "Hedef kent kısa sürede yoğun göç alır ile konut ve altyapı baskısı artabilir arasında doğrudan bir coğrafi ilişki vardır.",
+      "id": "exercise.geography.migration.causes-effects.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.migration.causes-effects.interpret"
+      ],
+      "statement": "Hedef kent kısa sürede yoğun göç alır; bunun sonucunda konut ve altyapı baskısı artabilir.",
+      "tag": "COĞRAFYA · GÖÇÜN NEDEN VE SONUÇLARI"
+    },
+    {
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "Ekonomik itici faktör oluşur"
+        },
+        {
+          "id": "w-2",
+          "label": "Çekici faktör oluşur"
+        },
+        {
+          "id": "w-3",
+          "label": "Konut ve altyapı baskısı artabilir"
+        },
+        {
+          "id": "w-4",
+          "label": "Yaşlı nüfus oranı artabilir"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "Kaynak alan genç nüfus kaybeder koşulunun beklenen sonucu “Yaşlı nüfus oranı artabilir” ilişkisidir.",
+      "hint": "Kaynak alan genç nüfus kaybeder",
+      "id": "exercise.geography.migration.causes-effects.001.blank01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.migration.causes-effects.interpret"
+      ],
+      "solutionTokenIds": [
+        "w-4"
+      ],
+      "title": "Kaynak alan genç nüfus kaybeder durumunda sonuç"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Her koşul, kendisinden beklenen özgün coğrafi sonuçla eşleştirilir; aynı sonuç iki kez kullanılmaz.",
+      "id": "exercise.geography.migration.causes-effects.001.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Kırsalda iş olanağı azalır",
+          "right": "Ekonomik itici faktör oluşur"
+        },
+        {
+          "id": "pair-2",
+          "left": "Kentte eğitim ve sağlık hizmetleri gelişmiştir",
+          "right": "Çekici faktör oluşur"
+        },
+        {
+          "id": "pair-3",
+          "left": "Hedef kent kısa sürede yoğun göç alır",
+          "right": "Konut ve altyapı baskısı artabilir"
+        },
+        {
+          "id": "pair-4",
+          "left": "Kaynak alan genç nüfus kaybeder",
+          "right": "Yaşlı nüfus oranı artabilir"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.migration.causes-effects.interpret"
+      ],
+      "subtitle": "Koşulu doğru coğrafi sonuçla birleştir.",
+      "tag": "COĞRAFYA · GÖÇÜN NEDEN VE SONUÇLARI",
+      "title": "İlişkiyi eşleştir"
+    },
+    {
+      "cards": [
+        {
+          "back": "Ekonomik itici faktör oluşur",
+          "front": "Kırsalda iş olanağı azalır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-1"
+        },
+        {
+          "back": "Çekici faktör oluşur",
+          "front": "Kentte eğitim ve sağlık hizmetleri gelişmiştir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-2"
+        },
+        {
+          "back": "Konut ve altyapı baskısı artabilir",
+          "front": "Hedef kent kısa sürede yoğun göç alır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-3"
+        },
+        {
+          "back": "Yaşlı nüfus oranı artabilir",
+          "front": "Kaynak alan genç nüfus kaybeder",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-4"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Kartlar temel ilişkileri kısa tekrar için özetler; puanlanan skill coverage hesabına katılmaz.",
+      "id": "exercise.geography.migration.causes-effects.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.migration.causes-effects.interpret"
+      ],
+      "tag": "COĞRAFYA · GÖÇÜN NEDEN VE SONUÇLARI"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.geography.migration.types.001.mcq01",
+        "exercise.geography.migration.types.001.mcq02",
+        "exercise.geography.migration.types.001.tf01",
+        "exercise.geography.migration.types.001.blank01",
+        "exercise.geography.migration.types.001.match01",
+        "exercise.geography.migration.types.001.card01"
+      ],
+      "id": "lesson.geography.migration.types.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Göç örneklerini iç-dış, gönüllü-zorunlu ve sürekli-mevsimlik olarak sınıflandırır.",
+      "title": "Göç Türleri",
+      "topicId": "tyt.geography.migration.types"
+    },
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.geography.migration.causes-effects.001.mcq01",
+        "exercise.geography.migration.causes-effects.001.mcq02",
+        "exercise.geography.migration.causes-effects.001.tf01",
+        "exercise.geography.migration.causes-effects.001.blank01",
+        "exercise.geography.migration.causes-effects.001.match01",
+        "exercise.geography.migration.causes-effects.001.card01"
+      ],
+      "id": "lesson.geography.migration.causes-effects.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Göçün itici-çekici nedenleri ile kaynak ve hedef alandaki sonuçlarını ilişkilendirir.",
+      "title": "Göçün Neden ve Sonuçları",
+      "topicId": "tyt.geography.migration.causes-effects"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.geography.migration.01",
+      "kind": "lesson",
+      "lessonId": "lesson.geography.migration.types.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.geography.population.02"
+      ],
+      "title": "Göç Türleri",
+      "unitId": "tyt.geography.migration"
+    },
+    {
+      "id": "path.geography.migration.02",
+      "kind": "practice",
+      "lessonId": "lesson.geography.migration.causes-effects.001",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.geography.migration.01"
+      ],
+      "title": "Göçün Neden ve Sonuçları Uygulaması",
+      "unitId": "tyt.geography.migration"
+    }
+  ],
+  "skills": [
+    {
+      "description": "Göç örneklerini iç-dış, gönüllü-zorunlu ve sürekli-mevsimlik olarak sınıflandırır.",
+      "id": "skill.geography.migration.types.interpret",
+      "title": "Göç örneklerini iç-dış, gönüllü-zorunlu ve sürekli-mevsimlik olarak sınıflandırır.",
+      "topicId": "tyt.geography.migration.types"
+    },
+    {
+      "description": "Göçün itici-çekici nedenleri ile kaynak ve hedef alandaki sonuçlarını ilişkilendirir.",
+      "id": "skill.geography.migration.causes-effects.interpret",
+      "title": "Göçün itici-çekici nedenleri ile kaynak ve hedef alandaki sonuçlarını ilişkilendirir.",
+      "topicId": "tyt.geography.migration.causes-effects"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.geography.migration.types"
+      ],
+      "id": "tyt.geography.migration.types",
+      "skillIds": [
+        "skill.geography.migration.types.interpret"
+      ],
+      "title": "Göç Türleri",
+      "unitId": "tyt.geography.migration"
+    },
+    {
+      "conceptIds": [
+        "concept.geography.migration.causes-effects"
+      ],
+      "id": "tyt.geography.migration.causes-effects",
+      "skillIds": [
+        "skill.geography.migration.causes-effects.interpret"
+      ],
+      "title": "Göçün Neden ve Sonuçları",
+      "unitId": "tyt.geography.migration"
+    }
+  ],
+  "unitId": "tyt.geography.migration"
+}

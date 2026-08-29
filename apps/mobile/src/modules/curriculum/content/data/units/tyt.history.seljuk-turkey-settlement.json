@@ -1,0 +1,493 @@
+{
+  "concepts": [
+    {
+      "definition": "Türk yerleşiminin hızlanması",
+      "id": "concept.history.seljuk-turkey-settlement.manzikert-result",
+      "term": "Türk yerleşiminin hızlanması",
+      "topicId": "tyt.history.seljuk-turkey-settlement.anatolia-conquest"
+    },
+    {
+      "definition": "Yerleşme, imar ve savunmayı desteklemeleri",
+      "id": "concept.history.seljuk-turkey-settlement.first-beyliks-role",
+      "term": "Yerleşme, imar ve savunmayı desteklemeleri",
+      "topicId": "tyt.history.seljuk-turkey-settlement.anatolia-conquest"
+    },
+    {
+      "definition": "Ticaret yollarının güvenliğini ve canlılığını artırmaya",
+      "id": "concept.history.seljuk-turkey-settlement.trade-policy",
+      "term": "Ticaret yollarının güvenliğini ve canlılığını artırmaya",
+      "topicId": "tyt.history.seljuk-turkey-settlement.anatolian-seljuk-state"
+    },
+    {
+      "definition": "Türkiye Selçuklularının Moğol baskısına girmesi",
+      "id": "concept.history.seljuk-turkey-settlement.kosedag-result",
+      "term": "Türkiye Selçuklularının Moğol baskısına girmesi",
+      "topicId": "tyt.history.seljuk-turkey-settlement.anatolian-seljuk-state"
+    }
+  ],
+  "exercises": [
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Türk yerleşiminin hızlanması, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.seljuk-turkey-settlement.anatolia-conquest.manzikert-result.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Türk yerleşiminin hızlanması"
+        },
+        {
+          "id": "d1",
+          "label": "Bizans’ın aynı yıl yıkılması"
+        },
+        {
+          "id": "d2",
+          "label": "Haçlı Seferlerinin sona ermesi"
+        },
+        {
+          "id": "d3",
+          "label": "Moğol baskısının kalkması"
+        }
+      ],
+      "prompt": "1071 Malazgirt Zaferi’nin Anadolu açısından temel sonucu hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.seljuk-turkey-settlement.manzikert-result"
+      ],
+      "tag": "TARİH · ANADOLU’NUN FETHİ VE TÜRKLEŞMESİ"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. 1071 Malazgirt Zaferi’nin Anadolu açısından temel sonucu hangisidir sorusunun doğru karşılığı “Türk yerleşiminin hızlanması” olmalıdır.",
+      "id": "exercise.history.seljuk-turkey-settlement.anatolia-conquest.manzikert-result.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.seljuk-turkey-settlement.manzikert-result"
+      ],
+      "statement": "Bizans’ın aynı yıl yıkılması, Malazgirt Savaşı’nın Anadolu tarihi açısından sonucunu yorumlar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · ANADOLU’NUN FETHİ VE TÜRKLEŞMESİ"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "Türk yerleşiminin hızlanması"
+        },
+        {
+          "id": "d1",
+          "label": "Bizans’ın aynı yıl yıkılması"
+        },
+        {
+          "id": "d2",
+          "label": "Haçlı Seferlerinin sona ermesi"
+        },
+        {
+          "id": "d3",
+          "label": "Moğol baskısının kalkması"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “Türk yerleşiminin hızlanması” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.seljuk-turkey-settlement.anatolia-conquest.manzikert-result.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.seljuk-turkey-settlement.manzikert-result"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: 1071 Malazgirt Zaferi’nin Anadolu açısından temel sonucu hangisidir?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Yerleşme, imar ve savunmayı desteklemeleri, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.seljuk-turkey-settlement.anatolia-conquest.first-beyliks-role.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Yerleşme, imar ve savunmayı desteklemeleri"
+        },
+        {
+          "id": "d1",
+          "label": "Merkezî otoriteyi tek elde toplamaları"
+        },
+        {
+          "id": "d2",
+          "label": "Moğol Devleti’ni yıkmaları"
+        },
+        {
+          "id": "d3",
+          "label": "Kapitülasyonları başlatmaları"
+        }
+      ],
+      "prompt": "İlk Türk beyliklerinin Anadolu’daki ortak katkısı hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.seljuk-turkey-settlement.first-beyliks-role"
+      ],
+      "tag": "TARİH · ANADOLU’NUN FETHİ VE TÜRKLEŞMESİ"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. İlk Türk beyliklerinin Anadolu’daki ortak katkısı hangisidir sorusunun doğru karşılığı “Yerleşme, imar ve savunmayı desteklemeleri” olmalıdır.",
+      "id": "exercise.history.seljuk-turkey-settlement.anatolia-conquest.first-beyliks-role.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.seljuk-turkey-settlement.first-beyliks-role"
+      ],
+      "statement": "Merkezî otoriteyi tek elde toplamaları, Anadolu’daki ilk Türk beyliklerinin Türkleşmeye katkısını açıklar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · ANADOLU’NUN FETHİ VE TÜRKLEŞMESİ"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, Anadolu’nun Fethi ve Türkleşmesi başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.seljuk-turkey-settlement.anatolia-conquest.first-beyliks-role.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "1071 Malazgirt Zaferi’nin Anadolu açısından temel sonucu hangisidir?",
+          "right": "Türk yerleşiminin hızlanması"
+        },
+        {
+          "id": "pair-2",
+          "left": "İlk Türk beyliklerinin Anadolu’daki ortak katkısı hangisidir?",
+          "right": "Yerleşme, imar ve savunmayı desteklemeleri"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.seljuk-turkey-settlement.manzikert-result",
+        "skill.history.seljuk-turkey-settlement.first-beyliks-role"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · ANADOLU’NUN FETHİ VE TÜRKLEŞMESİ",
+      "title": "Bilgi bağlarını eşleştir"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Ticaret yollarının güvenliğini ve canlılığını artırmaya, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.seljuk-turkey-settlement.anatolian-seljuk-state.trade-policy.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Ticaret yollarının güvenliğini ve canlılığını artırmaya"
+        },
+        {
+          "id": "d1",
+          "label": "Tarımsal üretimi yasaklamaya"
+        },
+        {
+          "id": "d2",
+          "label": "Uç beylerini merkezden uzaklaştırmaya"
+        },
+        {
+          "id": "d3",
+          "label": "Denizciliği sona erdirmeye"
+        }
+      ],
+      "prompt": "Kervansarayların yaygınlaştırılması hangi amaca hizmet etmiştir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.seljuk-turkey-settlement.trade-policy"
+      ],
+      "tag": "TARİH · TÜRKİYE SELÇUKLULARINDA DEVLET VE TİCARET"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Kervansarayların yaygınlaştırılması hangi amaca hizmet etmiştir sorusunun doğru karşılığı “Ticaret yollarının güvenliğini ve canlılığını artırmaya” olmalıdır.",
+      "id": "exercise.history.seljuk-turkey-settlement.anatolian-seljuk-state.trade-policy.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.seljuk-turkey-settlement.trade-policy"
+      ],
+      "statement": "Tarımsal üretimi yasaklamaya, Türkiye Selçuklularının ticareti geliştirme politikalarını tanır kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · TÜRKİYE SELÇUKLULARINDA DEVLET VE TİCARET"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "Ticaret yollarının güvenliğini ve canlılığını artırmaya"
+        },
+        {
+          "id": "d1",
+          "label": "Tarımsal üretimi yasaklamaya"
+        },
+        {
+          "id": "d2",
+          "label": "Uç beylerini merkezden uzaklaştırmaya"
+        },
+        {
+          "id": "d3",
+          "label": "Denizciliği sona erdirmeye"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “Ticaret yollarının güvenliğini ve canlılığını artırmaya” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.seljuk-turkey-settlement.anatolian-seljuk-state.trade-policy.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.seljuk-turkey-settlement.trade-policy"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: Kervansarayların yaygınlaştırılması hangi amaca hizmet etmiştir?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Türkiye Selçuklularının Moğol baskısına girmesi, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.seljuk-turkey-settlement.anatolian-seljuk-state.kosedag-result.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Türkiye Selçuklularının Moğol baskısına girmesi"
+        },
+        {
+          "id": "d1",
+          "label": "Bizans’ın Anadolu’yu tamamen alması"
+        },
+        {
+          "id": "d2",
+          "label": "Osmanlı Devleti’nin kurulması"
+        },
+        {
+          "id": "d3",
+          "label": "Haçlıların Kudüs’ü geri alması"
+        }
+      ],
+      "prompt": "1243 Kösedağ Savaşı sonrasında hangi gelişme yaşanmıştır?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.seljuk-turkey-settlement.kosedag-result"
+      ],
+      "tag": "TARİH · TÜRKİYE SELÇUKLULARINDA DEVLET VE TİCARET"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. 1243 Kösedağ Savaşı sonrasında hangi gelişme yaşanmıştır sorusunun doğru karşılığı “Türkiye Selçuklularının Moğol baskısına girmesi” olmalıdır.",
+      "id": "exercise.history.seljuk-turkey-settlement.anatolian-seljuk-state.kosedag-result.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.seljuk-turkey-settlement.kosedag-result"
+      ],
+      "statement": "Bizans’ın Anadolu’yu tamamen alması, Kösedağ Savaşı’nın siyasi sonuçlarını açıklar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · TÜRKİYE SELÇUKLULARINDA DEVLET VE TİCARET"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, Türkiye Selçuklularında Devlet ve Ticaret başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.seljuk-turkey-settlement.anatolian-seljuk-state.kosedag-result.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Kervansarayların yaygınlaştırılması hangi amaca hizmet etmiştir?",
+          "right": "Ticaret yollarının güvenliğini ve canlılığını artırmaya"
+        },
+        {
+          "id": "pair-2",
+          "left": "1243 Kösedağ Savaşı sonrasında hangi gelişme yaşanmıştır?",
+          "right": "Türkiye Selçuklularının Moğol baskısına girmesi"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.seljuk-turkey-settlement.trade-policy",
+        "skill.history.seljuk-turkey-settlement.kosedag-result"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · TÜRKİYE SELÇUKLULARINDA DEVLET VE TİCARET",
+      "title": "Bilgi bağlarını eşleştir"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.seljuk-turkey-settlement.anatolia-conquest.manzikert-result.mcq01",
+        "exercise.history.seljuk-turkey-settlement.anatolia-conquest.manzikert-result.tf01",
+        "exercise.history.seljuk-turkey-settlement.anatolia-conquest.manzikert-result.fill01",
+        "exercise.history.seljuk-turkey-settlement.anatolia-conquest.first-beyliks-role.mcq01",
+        "exercise.history.seljuk-turkey-settlement.anatolia-conquest.first-beyliks-role.tf01",
+        "exercise.history.seljuk-turkey-settlement.anatolia-conquest.first-beyliks-role.match01"
+      ],
+      "id": "lesson.history.seljuk-turkey-settlement.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "Anadolu’nun Fethi ve Türkleşmesi",
+      "topicId": "tyt.history.seljuk-turkey-settlement.anatolia-conquest"
+    },
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.seljuk-turkey-settlement.anatolian-seljuk-state.trade-policy.mcq01",
+        "exercise.history.seljuk-turkey-settlement.anatolian-seljuk-state.trade-policy.tf01",
+        "exercise.history.seljuk-turkey-settlement.anatolian-seljuk-state.trade-policy.fill01",
+        "exercise.history.seljuk-turkey-settlement.anatolian-seljuk-state.kosedag-result.mcq01",
+        "exercise.history.seljuk-turkey-settlement.anatolian-seljuk-state.kosedag-result.tf01",
+        "exercise.history.seljuk-turkey-settlement.anatolian-seljuk-state.kosedag-result.match01"
+      ],
+      "id": "lesson.history.seljuk-turkey-settlement.002",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "Türkiye Selçuklularında Devlet ve Ticaret",
+      "topicId": "tyt.history.seljuk-turkey-settlement.anatolian-seljuk-state"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.history.seljuk-turkey-settlement.01",
+      "kind": "lesson",
+      "lessonId": "lesson.history.seljuk-turkey-settlement.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.history.first-turkish-islamic-states.02"
+      ],
+      "title": "Anadolu’nun Fethi ve Türkleşmesi",
+      "unitId": "tyt.history.seljuk-turkey-settlement"
+    },
+    {
+      "id": "path.history.seljuk-turkey-settlement.02",
+      "kind": "checkpoint",
+      "lessonId": "lesson.history.seljuk-turkey-settlement.002",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.history.seljuk-turkey-settlement.01"
+      ],
+      "title": "Yerleşme ve Devletleşme Sürecinde Selçuklu Türkiyesi Kontrolü",
+      "unitId": "tyt.history.seljuk-turkey-settlement"
+    }
+  ],
+  "skills": [
+    {
+      "description": "Malazgirt Savaşı’nın Anadolu tarihi açısından sonucunu yorumlar.",
+      "id": "skill.history.seljuk-turkey-settlement.manzikert-result",
+      "title": "Malazgirt Savaşı’nın Anadolu tarihi açısından sonucunu yorumlar",
+      "topicId": "tyt.history.seljuk-turkey-settlement.anatolia-conquest"
+    },
+    {
+      "description": "Anadolu’daki ilk Türk beyliklerinin Türkleşmeye katkısını açıklar.",
+      "id": "skill.history.seljuk-turkey-settlement.first-beyliks-role",
+      "title": "Anadolu’daki ilk Türk beyliklerinin Türkleşmeye katkısını açıklar",
+      "topicId": "tyt.history.seljuk-turkey-settlement.anatolia-conquest"
+    },
+    {
+      "description": "Türkiye Selçuklularının ticareti geliştirme politikalarını tanır.",
+      "id": "skill.history.seljuk-turkey-settlement.trade-policy",
+      "title": "Türkiye Selçuklularının ticareti geliştirme politikalarını tanır",
+      "topicId": "tyt.history.seljuk-turkey-settlement.anatolian-seljuk-state"
+    },
+    {
+      "description": "Kösedağ Savaşı’nın siyasi sonuçlarını açıklar.",
+      "id": "skill.history.seljuk-turkey-settlement.kosedag-result",
+      "title": "Kösedağ Savaşı’nın siyasi sonuçlarını açıklar",
+      "topicId": "tyt.history.seljuk-turkey-settlement.anatolian-seljuk-state"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.history.seljuk-turkey-settlement.manzikert-result",
+        "concept.history.seljuk-turkey-settlement.first-beyliks-role"
+      ],
+      "id": "tyt.history.seljuk-turkey-settlement.anatolia-conquest",
+      "skillIds": [
+        "skill.history.seljuk-turkey-settlement.manzikert-result",
+        "skill.history.seljuk-turkey-settlement.first-beyliks-role"
+      ],
+      "title": "Anadolu’nun Fethi ve Türkleşmesi",
+      "unitId": "tyt.history.seljuk-turkey-settlement"
+    },
+    {
+      "conceptIds": [
+        "concept.history.seljuk-turkey-settlement.trade-policy",
+        "concept.history.seljuk-turkey-settlement.kosedag-result"
+      ],
+      "id": "tyt.history.seljuk-turkey-settlement.anatolian-seljuk-state",
+      "skillIds": [
+        "skill.history.seljuk-turkey-settlement.trade-policy",
+        "skill.history.seljuk-turkey-settlement.kosedag-result"
+      ],
+      "title": "Türkiye Selçuklularında Devlet ve Ticaret",
+      "unitId": "tyt.history.seljuk-turkey-settlement"
+    }
+  ],
+  "unitId": "tyt.history.seljuk-turkey-settlement"
+}

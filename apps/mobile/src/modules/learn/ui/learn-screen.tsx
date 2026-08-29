@@ -1,7 +1,6 @@
 import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 
 import type { LearnViewModel, SubjectRow } from '@/modules/learn/model/learn-view-model';
-import type { ExamFilter } from '@/modules/home/ui/home-screen';
 import { AppText } from '@/shared/ui/components/app-text';
 import { HudChip } from '@/shared/ui/components/hud-chip';
 import { LockIcon, SubjectIcon } from '@/shared/ui/components/icons';
@@ -10,6 +9,8 @@ import { Screen } from '@/shared/ui/components/screen';
 import { SegmentedToggle } from '@/shared/ui/components/segmented-toggle';
 import { BottomTabBar, type AppTabKey } from '@/shared/ui/navigation/bottom-tab-bar';
 import { theme } from '@/shared/ui/theme/tokens';
+
+export type ExamFilter = 'ayt' | 'tyt';
 
 type LearnScreenProps = {
   exam: ExamFilter;

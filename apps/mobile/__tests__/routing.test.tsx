@@ -63,10 +63,10 @@ describe('shell tabs', () => {
 });
 
 describe('routes', () => {
-  it('opens a subject path from the home tab', async () => {
-    await renderWithSession(<IndexRoute />);
+  it('opens a subject path from the learn tab', async () => {
+    await renderWithSession(<LearnRoute />);
 
-    await fireEvent.press(screen.getByTestId('subject-tyt.history'));
+    await fireEvent.press(screen.getByTestId('learn-subject-tyt.history'));
 
     expect(mockPush).toHaveBeenCalledWith('/ogren/tyt.history');
   });

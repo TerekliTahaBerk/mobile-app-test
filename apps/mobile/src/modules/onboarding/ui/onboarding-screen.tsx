@@ -111,7 +111,7 @@ export function OnboardingScreen({ currentYear, onFinish, onSignIn }: Onboarding
           />
         </View>
         <View style={styles.welcomeStage}>
-          <Dino size={180} />
+          <Dino pose="graduation" size={180} />
           <AppText accessibilityRole="header" align="center" style={styles.summaryTitle} variant="headingXXL">
             Hazırsın, {name}.
           </AppText>

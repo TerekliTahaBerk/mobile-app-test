@@ -1,0 +1,862 @@
+{
+  "unitId": "tyt.religion.faith",
+  "topics": [
+    {
+      "id": "tyt.religion.faith.faith-basics",
+      "unitId": "tyt.religion.faith",
+      "title": "İman ve İnancın Temelleri",
+      "skillIds": [
+        "skill.religion.faith.faith-basics.interpret",
+        "skill.religion.faith.faith-basics.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.faith.faith-basics.iman"
+      ]
+    },
+    {
+      "id": "tyt.religion.faith.belief-principles",
+      "unitId": "tyt.religion.faith",
+      "title": "İmanın Esasları",
+      "skillIds": [
+        "skill.religion.faith.belief-principles.interpret",
+        "skill.religion.faith.belief-principles.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.faith.belief-principles.iman-esaslari"
+      ]
+    },
+    {
+      "id": "tyt.religion.faith.destiny-will",
+      "unitId": "tyt.religion.faith",
+      "title": "Kader, İrade ve Tevekkül",
+      "skillIds": [
+        "skill.religion.faith.destiny-will.interpret",
+        "skill.religion.faith.destiny-will.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.faith.destiny-will.irade-ve-sorumluluk"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "skill.religion.faith.faith-basics.interpret",
+      "title": "İman kavramını yalnız sözlü kabulden ayırır.",
+      "description": "İman kavramını yalnız sözlü kabulden ayırır.",
+      "topicId": "tyt.religion.faith.faith-basics"
+    },
+    {
+      "id": "skill.religion.faith.faith-basics.distinguish",
+      "title": "İnancın tutum ve davranışlarla ilişkisini kısa bir metinden çıkarır.",
+      "description": "İnancın tutum ve davranışlarla ilişkisini kısa bir metinden çıkarır.",
+      "topicId": "tyt.religion.faith.faith-basics"
+    },
+    {
+      "id": "skill.religion.faith.belief-principles.interpret",
+      "title": "İman esaslarını temel özellikleriyle ayırt eder.",
+      "description": "İman esaslarını temel özellikleriyle ayırt eder.",
+      "topicId": "tyt.religion.faith.belief-principles"
+    },
+    {
+      "id": "skill.religion.faith.belief-principles.distinguish",
+      "title": "Peygamberlik ve vahyin inanç bütünündeki yerini yorumlar.",
+      "description": "Peygamberlik ve vahyin inanç bütünündeki yerini yorumlar.",
+      "topicId": "tyt.religion.faith.belief-principles"
+    },
+    {
+      "id": "skill.religion.faith.destiny-will.interpret",
+      "title": "Kader inancı ile insan sorumluluğunu birlikte yorumlar.",
+      "description": "Kader inancı ile insan sorumluluğunu birlikte yorumlar.",
+      "topicId": "tyt.religion.faith.destiny-will"
+    },
+    {
+      "id": "skill.religion.faith.destiny-will.distinguish",
+      "title": "Tevekkül ile sorumluluktan kaçınmayı ayırt eder.",
+      "description": "Tevekkül ile sorumluluktan kaçınmayı ayırt eder.",
+      "topicId": "tyt.religion.faith.destiny-will"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "concept.religion.faith.faith-basics.iman",
+      "term": "iman",
+      "definition": "İslam inancına göre kişinin Allah’a güven ve bağlılıkla yönelmesi",
+      "topicId": "tyt.religion.faith.faith-basics"
+    },
+    {
+      "id": "concept.religion.faith.belief-principles.iman-esaslari",
+      "term": "iman esasları",
+      "definition": "İslam inancında Allah’a, meleklere, kitaplara, peygamberlere, ahirete, kader ve kazaya iman bütünü",
+      "topicId": "tyt.religion.faith.belief-principles"
+    },
+    {
+      "id": "concept.religion.faith.destiny-will.irade-ve-sorumluluk",
+      "term": "irade ve sorumluluk",
+      "definition": "İnsanın seçim yapabilmesi ve seçiminin sonucunu üstlenmesi",
+      "topicId": "tyt.religion.faith.destiny-will"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "lesson.religion.faith.faith-basics.001",
+      "topicId": "tyt.religion.faith.faith-basics",
+      "title": "İman ve İnancın Temelleri",
+      "subtitle": "İman kavramını yalnız sözlü kabulden ayırır. İnancın tutum ve davranışlarla ilişkisini kısa bir metinden çıkarır.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.faith.faith-basics.001.card01",
+        "exercise.religion.faith.faith-basics.001.mcq01",
+        "exercise.religion.faith.faith-basics.001.mcq02",
+        "exercise.religion.faith.faith-basics.001.mcq03",
+        "exercise.religion.faith.faith-basics.001.mcq04",
+        "exercise.religion.faith.faith-basics.001.tf01",
+        "exercise.religion.faith.faith-basics.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.religion.faith.belief-principles.001",
+      "topicId": "tyt.religion.faith.belief-principles",
+      "title": "İmanın Esasları",
+      "subtitle": "İman esaslarını temel özellikleriyle ayırt eder. Peygamberlik ve vahyin inanç bütünündeki yerini yorumlar.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.faith.belief-principles.001.card01",
+        "exercise.religion.faith.belief-principles.001.mcq01",
+        "exercise.religion.faith.belief-principles.001.mcq02",
+        "exercise.religion.faith.belief-principles.001.mcq03",
+        "exercise.religion.faith.belief-principles.001.mcq04",
+        "exercise.religion.faith.belief-principles.001.tf01",
+        "exercise.religion.faith.belief-principles.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.religion.faith.destiny-will.001",
+      "topicId": "tyt.religion.faith.destiny-will",
+      "title": "Kader, İrade ve Tevekkül",
+      "subtitle": "Kader inancı ile insan sorumluluğunu birlikte yorumlar. Tevekkül ile sorumluluktan kaçınmayı ayırt eder.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.faith.destiny-will.001.card01",
+        "exercise.religion.faith.destiny-will.001.mcq01",
+        "exercise.religion.faith.destiny-will.001.mcq02",
+        "exercise.religion.faith.destiny-will.001.mcq03",
+        "exercise.religion.faith.destiny-will.001.mcq04",
+        "exercise.religion.faith.destiny-will.001.tf01",
+        "exercise.religion.faith.destiny-will.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "id": "exercise.religion.faith.faith-basics.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "iman, İslam inancına göre kişinin Allah’a güven ve bağlılıkla yönelmesi.",
+      "skillIds": [
+        "skill.religion.faith.faith-basics.interpret",
+        "skill.religion.faith.faith-basics.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İMAN VE İNANCIN TEMELLERİ",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "iman",
+          "back": "İslam inancına göre kişinin Allah’a güven ve bağlılıkla yönelmesi",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.faith.faith-basics.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "iman, İslam inancına göre kişinin Allah’a güven ve bağlılıkla yönelmesi.",
+      "skillIds": [
+        "skill.religion.faith.faith-basics.interpret",
+        "skill.religion.faith.faith-basics.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İMAN VE İNANCIN TEMELLERİ",
+      "prompt": "“İslam inancına göre kişinin Allah’a güven ve bağlılıkla yönelmesi” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "iman"
+        },
+        {
+          "id": "b",
+          "label": "iman esasları"
+        },
+        {
+          "id": "c",
+          "label": "irade ve sorumluluk"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.faith.faith-basics.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada iman kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.faith.faith-basics.interpret",
+        "skill.religion.faith.faith-basics.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İMAN VE İNANCIN TEMELLERİ",
+      "prompt": "Bir öğrenci iman konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.faith.faith-basics.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "İman kavramını yalnız sözlü kabulden ayırır. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.faith.faith-basics.interpret",
+        "skill.religion.faith.faith-basics.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İMAN VE İNANCIN TEMELLERİ",
+      "prompt": "İman kavramını yalnız sözlü kabulden ayırır. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.faith.faith-basics.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "İnancın tutum ve davranışlarla ilişkisini kısa bir metinden çıkarır. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.faith.faith-basics.interpret",
+        "skill.religion.faith.faith-basics.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İMAN VE İNANCIN TEMELLERİ",
+      "prompt": "Bir açıklama, iman kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.faith.faith-basics.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. iman, İslam inancına göre kişinin Allah’a güven ve bağlılıkla yönelmesi; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.faith.faith-basics.interpret",
+        "skill.religion.faith.faith-basics.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İMAN VE İNANCIN TEMELLERİ",
+      "statement": "iman kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.faith.faith-basics.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.faith.faith-basics.interpret",
+        "skill.religion.faith.faith-basics.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İMAN VE İNANCIN TEMELLERİ",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "iman",
+          "right": "İslam inancına göre kişinin Allah’a güven ve bağlılıkla yönelmesi"
+        },
+        {
+          "id": "p2",
+          "left": "iman esasları",
+          "right": "İslam inancında Allah’a, meleklere, kitaplara, peygamberlere, ahirete, kader ve kazaya iman bütünü"
+        },
+        {
+          "id": "p3",
+          "left": "irade ve sorumluluk",
+          "right": "İnsanın seçim yapabilmesi ve seçiminin sonucunu üstlenmesi"
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.faith.belief-principles.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "iman esasları, İslam inancında Allah’a, meleklere, kitaplara, peygamberlere, ahirete, kader ve kazaya iman bütünü.",
+      "skillIds": [
+        "skill.religion.faith.belief-principles.interpret",
+        "skill.religion.faith.belief-principles.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İMANIN ESASLARI",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "iman esasları",
+          "back": "İslam inancında Allah’a, meleklere, kitaplara, peygamberlere, ahirete, kader ve kazaya iman bütünü",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.faith.belief-principles.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "iman esasları, İslam inancında Allah’a, meleklere, kitaplara, peygamberlere, ahirete, kader ve kazaya iman bütünü.",
+      "skillIds": [
+        "skill.religion.faith.belief-principles.interpret",
+        "skill.religion.faith.belief-principles.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İMANIN ESASLARI",
+      "prompt": "“İslam inancında Allah’a, meleklere, kitaplara, peygamberlere, ahirete, kader ve kazaya iman bütünü” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "iman"
+        },
+        {
+          "id": "b",
+          "label": "iman esasları"
+        },
+        {
+          "id": "c",
+          "label": "irade ve sorumluluk"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "b"
+    },
+    {
+      "id": "exercise.religion.faith.belief-principles.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada iman esasları kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.faith.belief-principles.interpret",
+        "skill.religion.faith.belief-principles.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İMANIN ESASLARI",
+      "prompt": "Bir öğrenci iman esasları konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.faith.belief-principles.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "İman esaslarını temel özellikleriyle ayırt eder. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.faith.belief-principles.interpret",
+        "skill.religion.faith.belief-principles.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İMANIN ESASLARI",
+      "prompt": "İman esaslarını temel özellikleriyle ayırt eder. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.faith.belief-principles.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "Peygamberlik ve vahyin inanç bütünündeki yerini yorumlar. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.faith.belief-principles.interpret",
+        "skill.religion.faith.belief-principles.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İMANIN ESASLARI",
+      "prompt": "Bir açıklama, iman esasları kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.faith.belief-principles.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. iman esasları, İslam inancında Allah’a, meleklere, kitaplara, peygamberlere, ahirete, kader ve kazaya iman bütünü; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.faith.belief-principles.interpret",
+        "skill.religion.faith.belief-principles.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İMANIN ESASLARI",
+      "statement": "iman esasları kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.faith.belief-principles.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.faith.belief-principles.interpret",
+        "skill.religion.faith.belief-principles.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İMANIN ESASLARI",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "iman",
+          "right": "İslam inancına göre kişinin Allah’a güven ve bağlılıkla yönelmesi"
+        },
+        {
+          "id": "p2",
+          "left": "iman esasları",
+          "right": "İslam inancında Allah’a, meleklere, kitaplara, peygamberlere, ahirete, kader ve kazaya iman bütünü"
+        },
+        {
+          "id": "p3",
+          "left": "irade ve sorumluluk",
+          "right": "İnsanın seçim yapabilmesi ve seçiminin sonucunu üstlenmesi"
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.faith.destiny-will.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "irade ve sorumluluk, İnsanın seçim yapabilmesi ve seçiminin sonucunu üstlenmesi.",
+      "skillIds": [
+        "skill.religion.faith.destiny-will.interpret",
+        "skill.religion.faith.destiny-will.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · KADER, İRADE VE TEVEKKÜL",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "irade ve sorumluluk",
+          "back": "İnsanın seçim yapabilmesi ve seçiminin sonucunu üstlenmesi",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.faith.destiny-will.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "irade ve sorumluluk, İnsanın seçim yapabilmesi ve seçiminin sonucunu üstlenmesi.",
+      "skillIds": [
+        "skill.religion.faith.destiny-will.interpret",
+        "skill.religion.faith.destiny-will.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · KADER, İRADE VE TEVEKKÜL",
+      "prompt": "“İnsanın seçim yapabilmesi ve seçiminin sonucunu üstlenmesi” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "iman"
+        },
+        {
+          "id": "b",
+          "label": "iman esasları"
+        },
+        {
+          "id": "c",
+          "label": "irade ve sorumluluk"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "c"
+    },
+    {
+      "id": "exercise.religion.faith.destiny-will.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada irade ve sorumluluk kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.faith.destiny-will.interpret",
+        "skill.religion.faith.destiny-will.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · KADER, İRADE VE TEVEKKÜL",
+      "prompt": "Bir öğrenci irade ve sorumluluk konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.faith.destiny-will.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Kader inancı ile insan sorumluluğunu birlikte yorumlar. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.faith.destiny-will.interpret",
+        "skill.religion.faith.destiny-will.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · KADER, İRADE VE TEVEKKÜL",
+      "prompt": "Kader inancı ile insan sorumluluğunu birlikte yorumlar. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.faith.destiny-will.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "Tevekkül ile sorumluluktan kaçınmayı ayırt eder. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.faith.destiny-will.interpret",
+        "skill.religion.faith.destiny-will.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · KADER, İRADE VE TEVEKKÜL",
+      "prompt": "Bir açıklama, irade ve sorumluluk kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.faith.destiny-will.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. irade ve sorumluluk, İnsanın seçim yapabilmesi ve seçiminin sonucunu üstlenmesi; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.faith.destiny-will.interpret",
+        "skill.religion.faith.destiny-will.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · KADER, İRADE VE TEVEKKÜL",
+      "statement": "irade ve sorumluluk kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.faith.destiny-will.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.faith.destiny-will.interpret",
+        "skill.religion.faith.destiny-will.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · KADER, İRADE VE TEVEKKÜL",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "iman",
+          "right": "İslam inancına göre kişinin Allah’a güven ve bağlılıkla yönelmesi"
+        },
+        {
+          "id": "p2",
+          "left": "iman esasları",
+          "right": "İslam inancında Allah’a, meleklere, kitaplara, peygamberlere, ahirete, kader ve kazaya iman bütünü"
+        },
+        {
+          "id": "p3",
+          "left": "irade ve sorumluluk",
+          "right": "İnsanın seçim yapabilmesi ve seçiminin sonucunu üstlenmesi"
+        }
+      ]
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.religion.faith.01",
+      "unitId": "tyt.religion.faith",
+      "kind": "lesson",
+      "title": "İman ve İnancın Temelleri",
+      "order": 1,
+      "lessonId": "lesson.religion.faith.faith-basics.001",
+      "prerequisiteIds": []
+    },
+    {
+      "id": "path.religion.faith.02",
+      "unitId": "tyt.religion.faith",
+      "kind": "lesson",
+      "title": "İmanın Esasları",
+      "order": 2,
+      "lessonId": "lesson.religion.faith.belief-principles.001",
+      "prerequisiteIds": [
+        "path.religion.faith.01"
+      ]
+    },
+    {
+      "id": "path.religion.faith.03",
+      "unitId": "tyt.religion.faith",
+      "kind": "lesson",
+      "title": "Kader, İrade ve Tevekkül",
+      "order": 3,
+      "lessonId": "lesson.religion.faith.destiny-will.001",
+      "prerequisiteIds": [
+        "path.religion.faith.02"
+      ]
+    }
+  ]
+}

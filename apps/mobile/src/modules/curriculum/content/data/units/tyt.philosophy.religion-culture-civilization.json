@@ -1,0 +1,848 @@
+{
+  "unitId": "tyt.philosophy.religion-culture-civilization",
+  "topics": [
+    {
+      "id": "tyt.philosophy.religion-culture-civilization.culture-values",
+      "unitId": "tyt.philosophy.religion-culture-civilization",
+      "title": "Kültür ve Değerlerin Aktarımı",
+      "skillIds": [
+        "skill.philosophy.religion-culture-civilization.culture-values.culture",
+        "skill.philosophy.religion-culture-civilization.culture-values.values-transfer"
+      ],
+      "conceptIds": [
+        "concept.philosophy.religion-culture-civilization.culture-values.kultur",
+        "concept.philosophy.religion-culture-civilization.culture-values.deger-aktarimi"
+      ]
+    },
+    {
+      "id": "tyt.philosophy.religion-culture-civilization.religion-culture",
+      "unitId": "tyt.philosophy.religion-culture-civilization",
+      "title": "Din ve Kültürel Hayat",
+      "skillIds": [
+        "skill.philosophy.religion-culture-civilization.religion-culture.religious-influence",
+        "skill.philosophy.religion-culture-civilization.religion-culture.diversity-common-values"
+      ],
+      "conceptIds": [
+        "concept.philosophy.religion-culture-civilization.religion-culture.din-kultur-etkilesimi",
+        "concept.philosophy.religion-culture-civilization.religion-culture.cesitlilik-ve-ortak-deger"
+      ]
+    },
+    {
+      "id": "tyt.philosophy.religion-culture-civilization.civilization-society",
+      "unitId": "tyt.philosophy.religion-culture-civilization",
+      "title": "Medeniyet ve Birey-Toplum İlişkisi",
+      "skillIds": [
+        "skill.philosophy.religion-culture-civilization.civilization-society.civilization",
+        "skill.philosophy.religion-culture-civilization.civilization-society.individual-society"
+      ],
+      "conceptIds": [
+        "concept.philosophy.religion-culture-civilization.civilization-society.medeniyet",
+        "concept.philosophy.religion-culture-civilization.civilization-society.birey-toplum-iliskisi"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "skill.philosophy.religion-culture-civilization.culture-values.culture",
+      "title": "Kültürü toplumsal örnekten yorumlar",
+      "description": "Dil, gelenek, sanat ve gündelik pratiklerin öğrenilen kültürel bir bütün oluşturduğunu yorumlar.",
+      "topicId": "tyt.philosophy.religion-culture-civilization.culture-values"
+    },
+    {
+      "id": "skill.philosophy.religion-culture-civilization.culture-values.values-transfer",
+      "title": "Değerlerin aktarımını yorumlar",
+      "description": "Ortak değerlerin eğitim, aile ve kurumlar yoluyla süreklilik kazanmasını örnekten çıkarır.",
+      "topicId": "tyt.philosophy.religion-culture-civilization.culture-values"
+    },
+    {
+      "id": "skill.philosophy.religion-culture-civilization.religion-culture.religious-influence",
+      "title": "Dinin kültürel hayata etkisini yorumlar",
+      "description": "Dinî inanış ve pratiklerin kültürün sanat, mimari ve dayanışma biçimleriyle etkileşimini yorumlar.",
+      "topicId": "tyt.philosophy.religion-culture-civilization.religion-culture"
+    },
+    {
+      "id": "skill.philosophy.religion-culture-civilization.religion-culture.diversity-common-values",
+      "title": "Kültürel çeşitlilik ve ortak değerleri bağdaştırır",
+      "description": "Farklı kültürel ifadelerle ortak yaşama değerlerinin birlikte bulunabileceğini çıkarır.",
+      "topicId": "tyt.philosophy.religion-culture-civilization.religion-culture"
+    },
+    {
+      "id": "skill.philosophy.religion-culture-civilization.civilization-society.civilization",
+      "title": "Medeniyet oluşumunu yorumlar",
+      "description": "Bilgi, kurum, değer ve üretimlerin uzun süreli birikiminin medeniyet oluşumundaki rolünü yorumlar.",
+      "topicId": "tyt.philosophy.religion-culture-civilization.civilization-society"
+    },
+    {
+      "id": "skill.philosophy.religion-culture-civilization.civilization-society.individual-society",
+      "title": "Birey ile toplumun karşılıklı etkisini yorumlar",
+      "description": "Bireyin kültürü edinirken onu dönüştürebildiğini, toplumun da bireyi biçimlendirdiğini çıkarır.",
+      "topicId": "tyt.philosophy.religion-culture-civilization.civilization-society"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "concept.philosophy.religion-culture-civilization.culture-values.kultur",
+      "term": "kültür",
+      "definition": "Dil, gelenek, sanat ve gündelik pratiklerin öğrenilen kültürel bir bütün oluşturduğunu yorumlar.",
+      "topicId": "tyt.philosophy.religion-culture-civilization.culture-values"
+    },
+    {
+      "id": "concept.philosophy.religion-culture-civilization.culture-values.deger-aktarimi",
+      "term": "değer aktarımı",
+      "definition": "Ortak değerlerin eğitim, aile ve kurumlar yoluyla süreklilik kazanmasını örnekten çıkarır.",
+      "topicId": "tyt.philosophy.religion-culture-civilization.culture-values"
+    },
+    {
+      "id": "concept.philosophy.religion-culture-civilization.religion-culture.din-kultur-etkilesimi",
+      "term": "din-kültür etkileşimi",
+      "definition": "Dinî inanış ve pratiklerin kültürün sanat, mimari ve dayanışma biçimleriyle etkileşimini yorumlar.",
+      "topicId": "tyt.philosophy.religion-culture-civilization.religion-culture"
+    },
+    {
+      "id": "concept.philosophy.religion-culture-civilization.religion-culture.cesitlilik-ve-ortak-deger",
+      "term": "çeşitlilik ve ortak değer",
+      "definition": "Farklı kültürel ifadelerle ortak yaşama değerlerinin birlikte bulunabileceğini çıkarır.",
+      "topicId": "tyt.philosophy.religion-culture-civilization.religion-culture"
+    },
+    {
+      "id": "concept.philosophy.religion-culture-civilization.civilization-society.medeniyet",
+      "term": "medeniyet",
+      "definition": "Bilgi, kurum, değer ve üretimlerin uzun süreli birikiminin medeniyet oluşumundaki rolünü yorumlar.",
+      "topicId": "tyt.philosophy.religion-culture-civilization.civilization-society"
+    },
+    {
+      "id": "concept.philosophy.religion-culture-civilization.civilization-society.birey-toplum-iliskisi",
+      "term": "birey-toplum ilişkisi",
+      "definition": "Bireyin kültürü edinirken onu dönüştürebildiğini, toplumun da bireyi biçimlendirdiğini çıkarır.",
+      "topicId": "tyt.philosophy.religion-culture-civilization.civilization-society"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "lesson.philosophy.religion-culture-civilization.culture-values.001",
+      "topicId": "tyt.philosophy.religion-culture-civilization.culture-values",
+      "title": "Kültür ve Değerlerin Aktarımı",
+      "subtitle": "Kültürü toplumsal örnekten yorumlar ve Değerlerin aktarımını yorumlar.",
+      "estimatedMinutes": 10,
+      "exerciseIds": [
+        "exercise.philosophy.religion-culture-civilization.culture-values.001.card01",
+        "exercise.philosophy.religion-culture-civilization.culture-values.001.mcq1",
+        "exercise.philosophy.religion-culture-civilization.culture-values.001.mcq2",
+        "exercise.philosophy.religion-culture-civilization.culture-values.001.mcq3",
+        "exercise.philosophy.religion-culture-civilization.culture-values.001.mcq4",
+        "exercise.philosophy.religion-culture-civilization.culture-values.001.tf01",
+        "exercise.philosophy.religion-culture-civilization.culture-values.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.philosophy.religion-culture-civilization.religion-culture.001",
+      "topicId": "tyt.philosophy.religion-culture-civilization.religion-culture",
+      "title": "Din ve Kültürel Hayat",
+      "subtitle": "Dinin kültürel hayata etkisini yorumlar ve Kültürel çeşitlilik ve ortak değerleri bağdaştırır.",
+      "estimatedMinutes": 10,
+      "exerciseIds": [
+        "exercise.philosophy.religion-culture-civilization.religion-culture.001.mcq1",
+        "exercise.philosophy.religion-culture-civilization.religion-culture.001.mcq2",
+        "exercise.philosophy.religion-culture-civilization.religion-culture.001.mcq3",
+        "exercise.philosophy.religion-culture-civilization.religion-culture.001.mcq4",
+        "exercise.philosophy.religion-culture-civilization.religion-culture.001.tf01",
+        "exercise.philosophy.religion-culture-civilization.religion-culture.001.match01",
+        "exercise.philosophy.religion-culture-civilization.religion-culture.001.blank01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.philosophy.religion-culture-civilization.civilization-society.001",
+      "topicId": "tyt.philosophy.religion-culture-civilization.civilization-society",
+      "title": "Medeniyet ve Birey-Toplum İlişkisi",
+      "subtitle": "Medeniyet oluşumunu yorumlar ve Birey ile toplumun karşılıklı etkisini yorumlar.",
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.philosophy.religion-culture-civilization.civilization-society.001.mcq1",
+        "exercise.philosophy.religion-culture-civilization.civilization-society.001.mcq2",
+        "exercise.philosophy.religion-culture-civilization.civilization-society.001.mcq3",
+        "exercise.philosophy.religion-culture-civilization.civilization-society.001.mcq4",
+        "exercise.philosophy.religion-culture-civilization.civilization-society.001.tf01",
+        "exercise.philosophy.religion-culture-civilization.civilization-society.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "id": "exercise.philosophy.religion-culture-civilization.culture-values.001.mcq1",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.religion-culture-civilization.culture-values.culture"
+      ],
+      "prompt": "Bir çocuk ailesinden dilini, bayramlaşma biçimlerini ve ortak sofra alışkanlıklarını öğrenirken bunları sonraki kuşağa da aktarır.\n\nBu süreç en çok hangi kavramla açıklanır?",
+      "tag": "FELSEFE · KÜLTÜR VE DEĞERLERİN AKTARIMI",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Bilimsel yasa"
+        },
+        {
+          "id": "opt-2",
+          "label": "Estetik yargı"
+        },
+        {
+          "id": "opt-3",
+          "label": "Egemenlik"
+        },
+        {
+          "id": "opt-4",
+          "label": "Kültür aktarımı"
+        }
+      ],
+      "correctOptionId": "opt-4",
+      "explanation": "Bir çocuk ailesinden dilini, bayramlaşma biçimlerini ve ortak sofra alışkanlıklarını öğrenirken bunları sonraki kuşağa da aktarır. Bu nedenle doğru ayrım “Kültür aktarımı”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.religion-culture-civilization.culture-values.001.mcq2",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.religion-culture-civilization.culture-values.culture"
+      ],
+      "prompt": "Bir çocuk ailesinden dilini, bayramlaşma biçimlerini ve ortak sofra alışkanlıklarını öğrenirken bunları sonraki kuşağa da aktarır.\n\nBir öğrenci bu görüşü “Bilimsel yasa” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · KÜLTÜR VE DEĞERLERİN AKTARIMI",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Estetik yargı"
+        },
+        {
+          "id": "opt-2",
+          "label": "Egemenlik"
+        },
+        {
+          "id": "opt-3",
+          "label": "Kültür aktarımı"
+        },
+        {
+          "id": "opt-4",
+          "label": "Bilimsel yasa"
+        }
+      ],
+      "correctOptionId": "opt-3",
+      "explanation": "Görüşte belirleyici ölçüt “kültür” çerçevesidir. “Bilimsel yasa” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.religion-culture-civilization.culture-values.001.mcq3",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.religion-culture-civilization.culture-values.values-transfer"
+      ],
+      "prompt": "Bir toplum yardımlaşmayı yalnız sözle övmekle kalmaz; okul, aile ve gönüllü kurumlar aracılığıyla gündelik uygulamaya dönüştürür.\n\nBu örnek neyi gösterir?",
+      "tag": "FELSEFE · KÜLTÜR VE DEĞERLERİN AKTARIMI",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Sanatın yalnız taklit olmasını"
+        },
+        {
+          "id": "opt-2",
+          "label": "Değerlerin kurumlar yoluyla aktarılmasını"
+        },
+        {
+          "id": "opt-3",
+          "label": "Kültürün değişmez olmasını"
+        },
+        {
+          "id": "opt-4",
+          "label": "Bilimin vahye dayanmasını"
+        }
+      ],
+      "correctOptionId": "opt-2",
+      "explanation": "Bir toplum yardımlaşmayı yalnız sözle övmekle kalmaz; okul, aile ve gönüllü kurumlar aracılığıyla gündelik uygulamaya dönüştürür. Bu nedenle doğru ayrım “Değerlerin kurumlar yoluyla aktarılmasını”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.religion-culture-civilization.culture-values.001.mcq4",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.religion-culture-civilization.culture-values.values-transfer"
+      ],
+      "prompt": "Bir toplum yardımlaşmayı yalnız sözle övmekle kalmaz; okul, aile ve gönüllü kurumlar aracılığıyla gündelik uygulamaya dönüştürür.\n\nBir öğrenci bu görüşü “Kültürün değişmez olmasını” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · KÜLTÜR VE DEĞERLERİN AKTARIMI",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Değerlerin kurumlar yoluyla aktarılmasını"
+        },
+        {
+          "id": "opt-2",
+          "label": "Kültürün değişmez olmasını"
+        },
+        {
+          "id": "opt-3",
+          "label": "Bilimin vahye dayanmasını"
+        },
+        {
+          "id": "opt-4",
+          "label": "Sanatın yalnız taklit olmasını"
+        }
+      ],
+      "correctOptionId": "opt-1",
+      "explanation": "Görüşte belirleyici ölçüt “değer aktarımı” çerçevesidir. “Kültürün değişmez olmasını” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.religion-culture-civilization.culture-values.001.tf01",
+      "kind": "trueFalse",
+      "skillIds": [
+        "skill.philosophy.religion-culture-civilization.culture-values.culture",
+        "skill.philosophy.religion-culture-civilization.culture-values.values-transfer"
+      ],
+      "statement": "kültür ile değer aktarımı aynı kavram değildir; bir metnin gerekçesine bakılarak birbirinden ayrılmalıdır.",
+      "tag": "FELSEFE · KÜLTÜR VE DEĞERLERİN AKTARIMI",
+      "correctAnswer": true,
+      "explanation": "Bu iki kavram aynı topic içinde ilişkili olsa da farklı sorulara veya ölçütlere karşılık gelir. Ayrım, yalnız anahtar kelimeye değil görüşün gerekçesine dayanır.",
+      "difficulty": 2,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.religion-culture-civilization.culture-values.001.match01",
+      "kind": "matching",
+      "skillIds": [
+        "skill.philosophy.religion-culture-civilization.culture-values.culture",
+        "skill.philosophy.religion-culture-civilization.culture-values.values-transfer"
+      ],
+      "title": "Görüşü temel vurgusuyla eşleştir",
+      "subtitle": "Her ifadeyi yalnız bir kavramla eşleştir.",
+      "tag": "FELSEFE · KÜLTÜR VE DEĞERLERİN AKTARIMI",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "kültür",
+          "right": "Dil, gelenek, sanat ve gündelik pratiklerin öğrenilen kültürel bir bütün oluşturduğunu yorumlar."
+        },
+        {
+          "id": "pair-2",
+          "left": "değer aktarımı",
+          "right": "Ortak değerlerin eğitim, aile ve kurumlar yoluyla süreklilik kazanmasını örnekten çıkarır."
+        }
+      ],
+      "explanation": "Eşleştirmeler kavramın adı ile ölçülebilir ayırt etme ölçütünü bağlar; görüşü yalnız ezberlemek yerine gerekçesiyle tanımayı sağlar.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.religion-culture-civilization.culture-values.001.card01",
+      "kind": "flashcard",
+      "skillIds": [
+        "skill.philosophy.religion-culture-civilization.culture-values.culture",
+        "skill.philosophy.religion-culture-civilization.culture-values.values-transfer"
+      ],
+      "tag": "FELSEFE · KÜLTÜR VE DEĞERLERİN AKTARIMI",
+      "cards": [
+        {
+          "id": "card-1",
+          "front": "kültür",
+          "back": "Dil, gelenek, sanat ve gündelik pratiklerin öğrenilen kültürel bir bütün oluşturduğunu yorumlar.",
+          "hint": "Kavramın bir metinde hangi ölçütle tanınacağını düşün."
+        },
+        {
+          "id": "card-2",
+          "front": "değer aktarımı",
+          "back": "Ortak değerlerin eğitim, aile ve kurumlar yoluyla süreklilik kazanmasını örnekten çıkarır.",
+          "hint": "Kavramın bir metinde hangi ölçütle tanınacağını düşün."
+        }
+      ],
+      "explanation": "Kartlar temel ayrımları ilk karşılaşmada tanıtır; scored skill coverage hesabına katılmaz.",
+      "difficulty": 1,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.religion-culture-civilization.religion-culture.001.mcq1",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.religion-culture-civilization.religion-culture.religious-influence"
+      ],
+      "prompt": "Aynı dinî gelenek farklı bölgelerde yerel müzik, mimari ve yemek kültürüyle farklı ifade biçimleri kazanabilir.\n\nBu durumdan hangi sonuca ulaşılır?",
+      "tag": "FELSEFE · DİN VE KÜLTÜREL HAYAT",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Din yalnız bireysel bir olgudur"
+        },
+        {
+          "id": "opt-2",
+          "label": "Yerel özellikler dini bütünüyle belirler"
+        },
+        {
+          "id": "opt-3",
+          "label": "Din ile kültür karşılıklı etkileşim içindedir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Bütün kültürler aynıdır"
+        }
+      ],
+      "correctOptionId": "opt-3",
+      "explanation": "Aynı dinî gelenek farklı bölgelerde yerel müzik, mimari ve yemek kültürüyle farklı ifade biçimleri kazanabilir. Bu nedenle doğru ayrım “Din ile kültür karşılıklı etkileşim içindedir”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.religion-culture-civilization.religion-culture.001.mcq2",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.religion-culture-civilization.religion-culture.religious-influence"
+      ],
+      "prompt": "Aynı dinî gelenek farklı bölgelerde yerel müzik, mimari ve yemek kültürüyle farklı ifade biçimleri kazanabilir.\n\nBir öğrenci bu görüşü “Bütün kültürler aynıdır” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · DİN VE KÜLTÜREL HAYAT",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Yerel özellikler dini bütünüyle belirler"
+        },
+        {
+          "id": "opt-2",
+          "label": "Din ile kültür karşılıklı etkileşim içindedir"
+        },
+        {
+          "id": "opt-3",
+          "label": "Bütün kültürler aynıdır"
+        },
+        {
+          "id": "opt-4",
+          "label": "Din yalnız bireysel bir olgudur"
+        }
+      ],
+      "correctOptionId": "opt-2",
+      "explanation": "Görüşte belirleyici ölçüt “din-kültür etkileşimi” çerçevesidir. “Bütün kültürler aynıdır” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.religion-culture-civilization.religion-culture.001.mcq3",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.religion-culture-civilization.religion-culture.diversity-common-values"
+      ],
+      "prompt": "Bir kentte farklı inanç ve geleneklere sahip gruplar kendi törenlerini sürdürürken ortak kamusal kurallarda saygı ve adaleti benimser.\n\nBu örnek hangi yargıyı destekler?",
+      "tag": "FELSEFE · DİN VE KÜLTÜREL HAYAT",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Çeşitlilik ortak değerlerle birlikte yaşayabilir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Ortak değer için tüm farklılıklar silinmelidir"
+        },
+        {
+          "id": "opt-3",
+          "label": "Kültür yalnız dine dayanır"
+        },
+        {
+          "id": "opt-4",
+          "label": "Her gelenek evrenseldir"
+        }
+      ],
+      "correctOptionId": "opt-1",
+      "explanation": "Bir kentte farklı inanç ve geleneklere sahip gruplar kendi törenlerini sürdürürken ortak kamusal kurallarda saygı ve adaleti benimser. Bu nedenle doğru ayrım “Çeşitlilik ortak değerlerle birlikte yaşayabilir”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.religion-culture-civilization.religion-culture.001.mcq4",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.religion-culture-civilization.religion-culture.diversity-common-values"
+      ],
+      "prompt": "Bir kentte farklı inanç ve geleneklere sahip gruplar kendi törenlerini sürdürürken ortak kamusal kurallarda saygı ve adaleti benimser.\n\nBir öğrenci bu görüşü “Ortak değer için tüm farklılıklar silinmelidir” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · DİN VE KÜLTÜREL HAYAT",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Ortak değer için tüm farklılıklar silinmelidir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Kültür yalnız dine dayanır"
+        },
+        {
+          "id": "opt-3",
+          "label": "Her gelenek evrenseldir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Çeşitlilik ortak değerlerle birlikte yaşayabilir"
+        }
+      ],
+      "correctOptionId": "opt-4",
+      "explanation": "Görüşte belirleyici ölçüt “çeşitlilik ve ortak değer” çerçevesidir. “Ortak değer için tüm farklılıklar silinmelidir” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.religion-culture-civilization.religion-culture.001.tf01",
+      "kind": "trueFalse",
+      "skillIds": [
+        "skill.philosophy.religion-culture-civilization.religion-culture.religious-influence",
+        "skill.philosophy.religion-culture-civilization.religion-culture.diversity-common-values"
+      ],
+      "statement": "din-kültür etkileşimi ile çeşitlilik ve ortak değer aynı kavram değildir; bir metnin gerekçesine bakılarak birbirinden ayrılmalıdır.",
+      "tag": "FELSEFE · DİN VE KÜLTÜREL HAYAT",
+      "correctAnswer": true,
+      "explanation": "Bu iki kavram aynı topic içinde ilişkili olsa da farklı sorulara veya ölçütlere karşılık gelir. Ayrım, yalnız anahtar kelimeye değil görüşün gerekçesine dayanır.",
+      "difficulty": 2,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.religion-culture-civilization.religion-culture.001.match01",
+      "kind": "matching",
+      "skillIds": [
+        "skill.philosophy.religion-culture-civilization.religion-culture.religious-influence",
+        "skill.philosophy.religion-culture-civilization.religion-culture.diversity-common-values"
+      ],
+      "title": "Görüşü temel vurgusuyla eşleştir",
+      "subtitle": "Her ifadeyi yalnız bir kavramla eşleştir.",
+      "tag": "FELSEFE · DİN VE KÜLTÜREL HAYAT",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "din-kültür etkileşimi",
+          "right": "Dinî inanış ve pratiklerin kültürün sanat, mimari ve dayanışma biçimleriyle etkileşimini yorumlar."
+        },
+        {
+          "id": "pair-2",
+          "left": "çeşitlilik ve ortak değer",
+          "right": "Farklı kültürel ifadelerle ortak yaşama değerlerinin birlikte bulunabileceğini çıkarır."
+        }
+      ],
+      "explanation": "Eşleştirmeler kavramın adı ile ölçülebilir ayırt etme ölçütünü bağlar; görüşü yalnız ezberlemek yerine gerekçesiyle tanımayı sağlar.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.religion-culture-civilization.religion-culture.001.blank01",
+      "kind": "fillBlank",
+      "skillIds": [
+        "skill.philosophy.religion-culture-civilization.religion-culture.religious-influence"
+      ],
+      "title": "Temel kavramı tamamla",
+      "hint": "Dinî inanış ve pratiklerin kültürün sanat, mimari ve dayanışma biçimleriyle etkileşimini yorumlar.",
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "din-kültür etkileşimi"
+        },
+        {
+          "id": "w-2",
+          "label": "çeşitlilik ve ortak değer"
+        },
+        {
+          "id": "w-3",
+          "label": "olgusal betimleme"
+        }
+      ],
+      "solutionTokenIds": [
+        "w-1"
+      ],
+      "explanation": "Tanım “din-kültür etkileşimi” kavramına karşılık gelir. Diğer seçenekler farklı bir ölçüt veya düşünme alanını belirtir.",
+      "difficulty": 1,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.religion-culture-civilization.civilization-society.001.mcq1",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.religion-culture-civilization.civilization-society.civilization"
+      ],
+      "prompt": "Yüzyıllar boyunca gelişen hukuk, eğitim, mimari, bilim ve şehir yaşamı farklı toplulukların katkılarıyla geniş bir birikim oluşturur.\n\nBu birikim hangi kavramla açıklanır?",
+      "tag": "FELSEFE · MEDENİYET VE BİREY-TOPLUM İLİŞKİSİ",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Teknik hipotez"
+        },
+        {
+          "id": "opt-2",
+          "label": "Bireysel sezgi"
+        },
+        {
+          "id": "opt-3",
+          "label": "Medeniyet"
+        },
+        {
+          "id": "opt-4",
+          "label": "Kişisel beğeni"
+        }
+      ],
+      "correctOptionId": "opt-3",
+      "explanation": "Yüzyıllar boyunca gelişen hukuk, eğitim, mimari, bilim ve şehir yaşamı farklı toplulukların katkılarıyla geniş bir birikim oluşturur. Bu nedenle doğru ayrım “Medeniyet”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.religion-culture-civilization.civilization-society.001.mcq2",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.religion-culture-civilization.civilization-society.civilization"
+      ],
+      "prompt": "Yüzyıllar boyunca gelişen hukuk, eğitim, mimari, bilim ve şehir yaşamı farklı toplulukların katkılarıyla geniş bir birikim oluşturur.\n\nBir öğrenci bu görüşü “Kişisel beğeni” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · MEDENİYET VE BİREY-TOPLUM İLİŞKİSİ",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Bireysel sezgi"
+        },
+        {
+          "id": "opt-2",
+          "label": "Medeniyet"
+        },
+        {
+          "id": "opt-3",
+          "label": "Kişisel beğeni"
+        },
+        {
+          "id": "opt-4",
+          "label": "Teknik hipotez"
+        }
+      ],
+      "correctOptionId": "opt-2",
+      "explanation": "Görüşte belirleyici ölçüt “medeniyet” çerçevesidir. “Kişisel beğeni” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.religion-culture-civilization.civilization-society.001.mcq3",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.religion-culture-civilization.civilization-society.individual-society"
+      ],
+      "prompt": "Genç bir sanatçı yaşadığı toplumun motiflerini öğrenir, sonra bunları yeni bir üslupla yorumlayarak toplumun kültürüne katkıda bulunur.\n\nBu örneğin temel düşüncesi nedir?",
+      "tag": "FELSEFE · MEDENİYET VE BİREY-TOPLUM İLİŞKİSİ",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Birey ve toplum birbirini karşılıklı etkiler"
+        },
+        {
+          "id": "opt-2",
+          "label": "Birey kültürden tamamen bağımsızdır"
+        },
+        {
+          "id": "opt-3",
+          "label": "Toplum hiç değişmez"
+        },
+        {
+          "id": "opt-4",
+          "label": "Sanat kültür dışıdır"
+        }
+      ],
+      "correctOptionId": "opt-1",
+      "explanation": "Genç bir sanatçı yaşadığı toplumun motiflerini öğrenir, sonra bunları yeni bir üslupla yorumlayarak toplumun kültürüne katkıda bulunur. Bu nedenle doğru ayrım “Birey ve toplum birbirini karşılıklı etkiler”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.religion-culture-civilization.civilization-society.001.mcq4",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.religion-culture-civilization.civilization-society.individual-society"
+      ],
+      "prompt": "Genç bir sanatçı yaşadığı toplumun motiflerini öğrenir, sonra bunları yeni bir üslupla yorumlayarak toplumun kültürüne katkıda bulunur.\n\nBir öğrenci bu görüşü “Birey kültürden tamamen bağımsızdır” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · MEDENİYET VE BİREY-TOPLUM İLİŞKİSİ",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Birey kültürden tamamen bağımsızdır"
+        },
+        {
+          "id": "opt-2",
+          "label": "Toplum hiç değişmez"
+        },
+        {
+          "id": "opt-3",
+          "label": "Sanat kültür dışıdır"
+        },
+        {
+          "id": "opt-4",
+          "label": "Birey ve toplum birbirini karşılıklı etkiler"
+        }
+      ],
+      "correctOptionId": "opt-4",
+      "explanation": "Görüşte belirleyici ölçüt “birey-toplum ilişkisi” çerçevesidir. “Birey kültürden tamamen bağımsızdır” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.religion-culture-civilization.civilization-society.001.tf01",
+      "kind": "trueFalse",
+      "skillIds": [
+        "skill.philosophy.religion-culture-civilization.civilization-society.civilization",
+        "skill.philosophy.religion-culture-civilization.civilization-society.individual-society"
+      ],
+      "statement": "medeniyet ile birey-toplum ilişkisi aynı kavram değildir; bir metnin gerekçesine bakılarak birbirinden ayrılmalıdır.",
+      "tag": "FELSEFE · MEDENİYET VE BİREY-TOPLUM İLİŞKİSİ",
+      "correctAnswer": true,
+      "explanation": "Bu iki kavram aynı topic içinde ilişkili olsa da farklı sorulara veya ölçütlere karşılık gelir. Ayrım, yalnız anahtar kelimeye değil görüşün gerekçesine dayanır.",
+      "difficulty": 2,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.religion-culture-civilization.civilization-society.001.match01",
+      "kind": "matching",
+      "skillIds": [
+        "skill.philosophy.religion-culture-civilization.civilization-society.civilization",
+        "skill.philosophy.religion-culture-civilization.civilization-society.individual-society"
+      ],
+      "title": "Görüşü temel vurgusuyla eşleştir",
+      "subtitle": "Her ifadeyi yalnız bir kavramla eşleştir.",
+      "tag": "FELSEFE · MEDENİYET VE BİREY-TOPLUM İLİŞKİSİ",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "medeniyet",
+          "right": "Bilgi, kurum, değer ve üretimlerin uzun süreli birikiminin medeniyet oluşumundaki rolünü yorumlar."
+        },
+        {
+          "id": "pair-2",
+          "left": "birey-toplum ilişkisi",
+          "right": "Bireyin kültürü edinirken onu dönüştürebildiğini, toplumun da bireyi biçimlendirdiğini çıkarır."
+        }
+      ],
+      "explanation": "Eşleştirmeler kavramın adı ile ölçülebilir ayırt etme ölçütünü bağlar; görüşü yalnız ezberlemek yerine gerekçesiyle tanımayı sağlar.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.philosophy.religion-culture-civilization.01",
+      "unitId": "tyt.philosophy.religion-culture-civilization",
+      "kind": "lesson",
+      "title": "Kültür ve Değerlerin Aktarımı",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.philosophy.ontology.03"
+      ],
+      "lessonId": "lesson.philosophy.religion-culture-civilization.culture-values.001"
+    },
+    {
+      "id": "path.philosophy.religion-culture-civilization.02",
+      "unitId": "tyt.philosophy.religion-culture-civilization",
+      "kind": "lesson",
+      "title": "Din ve Kültürel Hayat",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.philosophy.religion-culture-civilization.01"
+      ],
+      "lessonId": "lesson.philosophy.religion-culture-civilization.religion-culture.001"
+    },
+    {
+      "id": "path.philosophy.religion-culture-civilization.03",
+      "unitId": "tyt.philosophy.religion-culture-civilization",
+      "kind": "practice",
+      "title": "Medeniyet ve Birey-Toplum İlişkisi Uygulaması",
+      "order": 3,
+      "prerequisiteIds": [
+        "path.philosophy.religion-culture-civilization.02"
+      ],
+      "lessonId": "lesson.philosophy.religion-culture-civilization.civilization-society.001"
+    }
+  ]
+}

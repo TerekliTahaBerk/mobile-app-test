@@ -54,7 +54,9 @@ Shared primitives (`shared/ui/components`): `AppText`, `AppButton`, `Card`, `Pro
 - `HudChip` renders the streak and hearts counters, and speaks its own value — `∞` for an unlimited account.
 - `icons.tsx` transcribes the design's icon set one-for-one at its two source viewBoxes (20 and 24). Every icon is decorative; the control that owns it carries the label.
 
-Mascot: `shared/ui/dino/dino.tsx` and `dino-speech.tsx`.
+Mascot: `shared/ui/dino/dino.tsx` owns the general, writing, and graduation
+poses; `dino-speech.tsx` uses the writing pose for study prompts. Consumers
+select a semantic pose and never import mascot files directly.
 
 Motion (`shared/ui/motion`): `Bob`, `Pulse`, `Pop`, `Shake`, all on React Native's built-in `Animated`, all collapsing to a static frame under Reduce Motion. Only the current path node pulses.
 

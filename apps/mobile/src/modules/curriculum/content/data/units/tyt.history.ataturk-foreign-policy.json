@@ -1,0 +1,540 @@
+{
+  "concepts": [
+    {
+      "definition": "Barışçılığı",
+      "id": "concept.history.ataturk-foreign-policy.peace-realism",
+      "term": "Barışçılığı",
+      "topicId": "tyt.history.ataturk-foreign-policy.principles-and-problems"
+    },
+    {
+      "definition": "Musul’un Irak sınırları içinde kalması",
+      "id": "concept.history.ataturk-foreign-policy.mosul-outcome",
+      "term": "Musul’un Irak sınırları içinde kalması",
+      "topicId": "tyt.history.ataturk-foreign-policy.principles-and-problems"
+    },
+    {
+      "definition": "Boğazları silahlandırma ve geçişi düzenleme",
+      "id": "concept.history.ataturk-foreign-policy.montreux",
+      "term": "Boğazları silahlandırma ve geçişi düzenleme",
+      "topicId": "tyt.history.ataturk-foreign-policy.regional-pacts-straits-hatay"
+    },
+    {
+      "definition": "Diplomasi ve halk iradesine dayalı barışçı çözümün",
+      "id": "concept.history.ataturk-foreign-policy.hatay-process",
+      "term": "Diplomasi ve halk iradesine dayalı barışçı çözümün",
+      "topicId": "tyt.history.ataturk-foreign-policy.regional-pacts-straits-hatay"
+    }
+  ],
+  "exercises": [
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Barışçılığı, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.ataturk-foreign-policy.principles-and-problems.peace-realism.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Barışçılığı"
+        },
+        {
+          "id": "d1",
+          "label": "Yayılmacılığı"
+        },
+        {
+          "id": "d2",
+          "label": "Sömürgeciliği"
+        },
+        {
+          "id": "d3",
+          "label": "Yalnızlık politikasını"
+        }
+      ],
+      "prompt": "“Yurtta sulh, cihanda sulh” sözü dış politikada hangi yaklaşımı vurgular?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ataturk-foreign-policy.peace-realism"
+      ],
+      "tag": "TARİH · DIŞ POLİTİKA İLKELERİ VE LOZAN’DAN KALAN SORUNLAR"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. “Yurtta sulh, cihanda sulh” sözü dış politikada hangi yaklaşımı vurgular sorusunun doğru karşılığı “Barışçılığı” olmalıdır.",
+      "id": "exercise.history.ataturk-foreign-policy.principles-and-problems.peace-realism.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ataturk-foreign-policy.peace-realism"
+      ],
+      "statement": "Yayılmacılığı, Atatürk dönemi dış politikasında barışçılık ve gerçekçiliği yorumlar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · DIŞ POLİTİKA İLKELERİ VE LOZAN’DAN KALAN SORUNLAR"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "Barışçılığı"
+        },
+        {
+          "id": "d1",
+          "label": "Yayılmacılığı"
+        },
+        {
+          "id": "d2",
+          "label": "Sömürgeciliği"
+        },
+        {
+          "id": "d3",
+          "label": "Yalnızlık politikasını"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “Barışçılığı” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.ataturk-foreign-policy.principles-and-problems.peace-realism.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ataturk-foreign-policy.peace-realism"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: “Yurtta sulh, cihanda sulh” sözü dış politikada hangi yaklaşımı vurgular?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Musul’un Irak sınırları içinde kalması, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.ataturk-foreign-policy.principles-and-problems.mosul-outcome.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Musul’un Irak sınırları içinde kalması"
+        },
+        {
+          "id": "d1",
+          "label": "Musul’un Türkiye’ye katılması"
+        },
+        {
+          "id": "d2",
+          "label": "Musul’un bağımsız devlet olması"
+        },
+        {
+          "id": "d3",
+          "label": "Musul’un Suriye’ye bırakılması"
+        }
+      ],
+      "prompt": "1926 Ankara Antlaşması’yla Musul hakkında hangi sonuç kabul edilmiştir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ataturk-foreign-policy.mosul-outcome"
+      ],
+      "tag": "TARİH · DIŞ POLİTİKA İLKELERİ VE LOZAN’DAN KALAN SORUNLAR"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. 1926 Ankara Antlaşması’yla Musul hakkında hangi sonuç kabul edilmiştir sorusunun doğru karşılığı “Musul’un Irak sınırları içinde kalması” olmalıdır.",
+      "id": "exercise.history.ataturk-foreign-policy.principles-and-problems.mosul-outcome.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ataturk-foreign-policy.mosul-outcome"
+      ],
+      "statement": "Musul’un Türkiye’ye katılması, Musul Sorunu’nun çözümünü ve sonucunu açıklar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · DIŞ POLİTİKA İLKELERİ VE LOZAN’DAN KALAN SORUNLAR"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, Dış Politika İlkeleri ve Lozan’dan Kalan Sorunlar başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.ataturk-foreign-policy.principles-and-problems.mosul-outcome.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "“Yurtta sulh, cihanda sulh” sözü dış politikada hangi yaklaşımı vurgular?",
+          "right": "Barışçılığı"
+        },
+        {
+          "id": "pair-2",
+          "left": "1926 Ankara Antlaşması’yla Musul hakkında hangi sonuç kabul edilmiştir?",
+          "right": "Musul’un Irak sınırları içinde kalması"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ataturk-foreign-policy.peace-realism",
+        "skill.history.ataturk-foreign-policy.mosul-outcome"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · DIŞ POLİTİKA İLKELERİ VE LOZAN’DAN KALAN SORUNLAR",
+      "title": "Bilgi bağlarını eşleştir"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Boğazları silahlandırma ve geçişi düzenleme, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.ataturk-foreign-policy.regional-pacts-straits-hatay.montreux.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Boğazları silahlandırma ve geçişi düzenleme"
+        },
+        {
+          "id": "d1",
+          "label": "Musul’u yönetme"
+        },
+        {
+          "id": "d2",
+          "label": "On İki Ada’yı alma"
+        },
+        {
+          "id": "d3",
+          "label": "Kıbrıs’ı ilhak etme"
+        }
+      ],
+      "prompt": "1936 Montrö Sözleşmesi Türkiye’ye hangi hakkı geri vermiştir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ataturk-foreign-policy.montreux"
+      ],
+      "tag": "TARİH · BÖLGESEL PAKTLAR, BOĞAZLAR VE HATAY"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. 1936 Montrö Sözleşmesi Türkiye’ye hangi hakkı geri vermiştir sorusunun doğru karşılığı “Boğazları silahlandırma ve geçişi düzenleme” olmalıdır.",
+      "id": "exercise.history.ataturk-foreign-policy.regional-pacts-straits-hatay.montreux.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ataturk-foreign-policy.montreux"
+      ],
+      "statement": "Musul’u yönetme, Montrö Boğazlar Sözleşmesi’nin egemenlik açısından önemini yorumlar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · BÖLGESEL PAKTLAR, BOĞAZLAR VE HATAY"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "Boğazları silahlandırma ve geçişi düzenleme"
+        },
+        {
+          "id": "d1",
+          "label": "Musul’u yönetme"
+        },
+        {
+          "id": "d2",
+          "label": "On İki Ada’yı alma"
+        },
+        {
+          "id": "d3",
+          "label": "Kıbrıs’ı ilhak etme"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “Boğazları silahlandırma ve geçişi düzenleme” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.ataturk-foreign-policy.regional-pacts-straits-hatay.montreux.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ataturk-foreign-policy.montreux"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: 1936 Montrö Sözleşmesi Türkiye’ye hangi hakkı geri vermiştir?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Diplomasi ve halk iradesine dayalı barışçı çözümün, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.ataturk-foreign-policy.regional-pacts-straits-hatay.hatay-process.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Diplomasi ve halk iradesine dayalı barışçı çözümün"
+        },
+        {
+          "id": "d1",
+          "label": "Askerî işgalin"
+        },
+        {
+          "id": "d2",
+          "label": "Manda yönetiminin"
+        },
+        {
+          "id": "d3",
+          "label": "Gizli antlaşmaların"
+        }
+      ],
+      "prompt": "Hatay’ın Türkiye’ye katılması hangi yöntemin başarısını gösterir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ataturk-foreign-policy.hatay-process"
+      ],
+      "tag": "TARİH · BÖLGESEL PAKTLAR, BOĞAZLAR VE HATAY"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Hatay’ın Türkiye’ye katılması hangi yöntemin başarısını gösterir sorusunun doğru karşılığı “Diplomasi ve halk iradesine dayalı barışçı çözümün” olmalıdır.",
+      "id": "exercise.history.ataturk-foreign-policy.regional-pacts-straits-hatay.hatay-process.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ataturk-foreign-policy.hatay-process"
+      ],
+      "statement": "Askerî işgalin, Hatay’ın Türkiye’ye katılma sürecini diplomatik yöntemlerle ilişkilendirir kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · BÖLGESEL PAKTLAR, BOĞAZLAR VE HATAY"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, Bölgesel Paktlar, Boğazlar ve Hatay başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.ataturk-foreign-policy.regional-pacts-straits-hatay.hatay-process.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "1936 Montrö Sözleşmesi Türkiye’ye hangi hakkı geri vermiştir?",
+          "right": "Boğazları silahlandırma ve geçişi düzenleme"
+        },
+        {
+          "id": "pair-2",
+          "left": "Hatay’ın Türkiye’ye katılması hangi yöntemin başarısını gösterir?",
+          "right": "Diplomasi ve halk iradesine dayalı barışçı çözümün"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ataturk-foreign-policy.montreux",
+        "skill.history.ataturk-foreign-policy.hatay-process"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · BÖLGESEL PAKTLAR, BOĞAZLAR VE HATAY",
+      "title": "Bilgi bağlarını eşleştir"
+    },
+    {
+      "correctOrder": [
+        "event-1",
+        "event-2",
+        "event-3",
+        "event-4",
+        "event-5"
+      ],
+      "difficulty": 4,
+      "explanation": "Olaylar tarihleri dikkate alınarak eskiden yeniye sıralanır. Kronoloji, gelişmeler arasındaki neden-sonuç ilişkisini kurmak için temel bir çerçeve sunar.",
+      "id": "exercise.history.ataturk-foreign-policy.regional-pacts-straits-hatay.order01",
+      "items": [
+        {
+          "id": "event-1",
+          "label": "Ankara Antlaşması ve Musul’un çözümü (1926)"
+        },
+        {
+          "id": "event-2",
+          "label": "Milletler Cemiyetine katılma (1932)"
+        },
+        {
+          "id": "event-3",
+          "label": "Balkan Antantı (1934)"
+        },
+        {
+          "id": "event-4",
+          "label": "Montrö Boğazlar Sözleşmesi (1936)"
+        },
+        {
+          "id": "event-5",
+          "label": "Hatay’ın Türkiye’ye katılması (1939)"
+        }
+      ],
+      "kind": "ordering",
+      "prompt": "Gelişmeleri eskiden yeniye doğru sırala.",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ataturk-foreign-policy.montreux",
+        "skill.history.ataturk-foreign-policy.hatay-process"
+      ],
+      "tag": "TARİH · BÖLGESEL PAKTLAR, BOĞAZLAR VE HATAY"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.ataturk-foreign-policy.principles-and-problems.peace-realism.mcq01",
+        "exercise.history.ataturk-foreign-policy.principles-and-problems.peace-realism.tf01",
+        "exercise.history.ataturk-foreign-policy.principles-and-problems.peace-realism.fill01",
+        "exercise.history.ataturk-foreign-policy.principles-and-problems.mosul-outcome.mcq01",
+        "exercise.history.ataturk-foreign-policy.principles-and-problems.mosul-outcome.tf01",
+        "exercise.history.ataturk-foreign-policy.principles-and-problems.mosul-outcome.match01"
+      ],
+      "id": "lesson.history.ataturk-foreign-policy.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "Dış Politika İlkeleri ve Lozan’dan Kalan Sorunlar",
+      "topicId": "tyt.history.ataturk-foreign-policy.principles-and-problems"
+    },
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.ataturk-foreign-policy.regional-pacts-straits-hatay.montreux.mcq01",
+        "exercise.history.ataturk-foreign-policy.regional-pacts-straits-hatay.montreux.tf01",
+        "exercise.history.ataturk-foreign-policy.regional-pacts-straits-hatay.montreux.fill01",
+        "exercise.history.ataturk-foreign-policy.regional-pacts-straits-hatay.hatay-process.mcq01",
+        "exercise.history.ataturk-foreign-policy.regional-pacts-straits-hatay.hatay-process.tf01",
+        "exercise.history.ataturk-foreign-policy.regional-pacts-straits-hatay.hatay-process.match01",
+        "exercise.history.ataturk-foreign-policy.regional-pacts-straits-hatay.order01"
+      ],
+      "id": "lesson.history.ataturk-foreign-policy.002",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "Bölgesel Paktlar, Boğazlar ve Hatay",
+      "topicId": "tyt.history.ataturk-foreign-policy.regional-pacts-straits-hatay"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.history.ataturk-foreign-policy.01",
+      "kind": "lesson",
+      "lessonId": "lesson.history.ataturk-foreign-policy.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.history.ataturk-principles.02"
+      ],
+      "title": "Dış Politika İlkeleri ve Lozan’dan Kalan Sorunlar",
+      "unitId": "tyt.history.ataturk-foreign-policy"
+    },
+    {
+      "id": "path.history.ataturk-foreign-policy.02",
+      "kind": "checkpoint",
+      "lessonId": "lesson.history.ataturk-foreign-policy.002",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.history.ataturk-foreign-policy.01"
+      ],
+      "title": "Atatürk Dönemi Türk Dış Politikası Kontrolü",
+      "unitId": "tyt.history.ataturk-foreign-policy"
+    }
+  ],
+  "skills": [
+    {
+      "description": "Atatürk dönemi dış politikasında barışçılık ve gerçekçiliği yorumlar.",
+      "id": "skill.history.ataturk-foreign-policy.peace-realism",
+      "title": "Atatürk dönemi dış politikasında barışçılık ve gerçekçiliği yorumlar",
+      "topicId": "tyt.history.ataturk-foreign-policy.principles-and-problems"
+    },
+    {
+      "description": "Musul Sorunu’nun çözümünü ve sonucunu açıklar.",
+      "id": "skill.history.ataturk-foreign-policy.mosul-outcome",
+      "title": "Musul Sorunu’nun çözümünü ve sonucunu açıklar",
+      "topicId": "tyt.history.ataturk-foreign-policy.principles-and-problems"
+    },
+    {
+      "description": "Montrö Boğazlar Sözleşmesi’nin egemenlik açısından önemini yorumlar.",
+      "id": "skill.history.ataturk-foreign-policy.montreux",
+      "title": "Montrö Boğazlar Sözleşmesi’nin egemenlik açısından önemini yorumlar",
+      "topicId": "tyt.history.ataturk-foreign-policy.regional-pacts-straits-hatay"
+    },
+    {
+      "description": "Hatay’ın Türkiye’ye katılma sürecini diplomatik yöntemlerle ilişkilendirir.",
+      "id": "skill.history.ataturk-foreign-policy.hatay-process",
+      "title": "Hatay’ın Türkiye’ye katılma sürecini diplomatik yöntemlerle ilişkilendir",
+      "topicId": "tyt.history.ataturk-foreign-policy.regional-pacts-straits-hatay"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.history.ataturk-foreign-policy.peace-realism",
+        "concept.history.ataturk-foreign-policy.mosul-outcome"
+      ],
+      "id": "tyt.history.ataturk-foreign-policy.principles-and-problems",
+      "skillIds": [
+        "skill.history.ataturk-foreign-policy.peace-realism",
+        "skill.history.ataturk-foreign-policy.mosul-outcome"
+      ],
+      "title": "Dış Politika İlkeleri ve Lozan’dan Kalan Sorunlar",
+      "unitId": "tyt.history.ataturk-foreign-policy"
+    },
+    {
+      "conceptIds": [
+        "concept.history.ataturk-foreign-policy.montreux",
+        "concept.history.ataturk-foreign-policy.hatay-process"
+      ],
+      "id": "tyt.history.ataturk-foreign-policy.regional-pacts-straits-hatay",
+      "skillIds": [
+        "skill.history.ataturk-foreign-policy.montreux",
+        "skill.history.ataturk-foreign-policy.hatay-process"
+      ],
+      "title": "Bölgesel Paktlar, Boğazlar ve Hatay",
+      "unitId": "tyt.history.ataturk-foreign-policy"
+    }
+  ],
+  "unitId": "tyt.history.ataturk-foreign-policy"
+}

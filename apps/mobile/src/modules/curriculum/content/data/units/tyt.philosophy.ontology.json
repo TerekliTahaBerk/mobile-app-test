@@ -1,0 +1,882 @@
+{
+  "unitId": "tyt.philosophy.ontology",
+  "topics": [
+    {
+      "id": "tyt.philosophy.ontology.being-kinds",
+      "unitId": "tyt.philosophy.ontology",
+      "title": "Varlık Problemi ve Varlık Türleri",
+      "skillIds": [
+        "skill.philosophy.ontology.being-kinds.problem",
+        "skill.philosophy.ontology.being-kinds.real-ideal"
+      ],
+      "conceptIds": [
+        "concept.philosophy.ontology.being-kinds.varlik-problemi",
+        "concept.philosophy.ontology.being-kinds.gercek-ve-dusunsel-varlik"
+      ]
+    },
+    {
+      "id": "tyt.philosophy.ontology.substance",
+      "unitId": "tyt.philosophy.ontology",
+      "title": "Varlığın Temeli",
+      "skillIds": [
+        "skill.philosophy.ontology.substance.idealism-materialism",
+        "skill.philosophy.ontology.substance.dualism-nihilism"
+      ],
+      "conceptIds": [
+        "concept.philosophy.ontology.substance.idealizm-ve-materyalizm",
+        "concept.philosophy.ontology.substance.dualizm-ve-nihilizm"
+      ]
+    },
+    {
+      "id": "tyt.philosophy.ontology.unity-change",
+      "unitId": "tyt.philosophy.ontology",
+      "title": "Birlik, Çokluk ve Değişim",
+      "skillIds": [
+        "skill.philosophy.ontology.unity-change.one-many",
+        "skill.philosophy.ontology.unity-change.change-becoming"
+      ],
+      "conceptIds": [
+        "concept.philosophy.ontology.unity-change.birlik-ve-cokluk",
+        "concept.philosophy.ontology.unity-change.olusculuk"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "skill.philosophy.ontology.being-kinds.problem",
+      "title": "Varlık problemini tanır",
+      "description": "Bir metindeki “ne vardır ve var olanın temeli nedir?” problemini belirler.",
+      "topicId": "tyt.philosophy.ontology.being-kinds"
+    },
+    {
+      "id": "skill.philosophy.ontology.being-kinds.real-ideal",
+      "title": "Gerçek ve düşünsel varlığı ayırt eder",
+      "description": "Zihinden bağımsız var olanlarla düşünce içinde kurulan varlıkları örnekten ayırır.",
+      "topicId": "tyt.philosophy.ontology.being-kinds"
+    },
+    {
+      "id": "skill.philosophy.ontology.substance.idealism-materialism",
+      "title": "İdealizm ile materyalizmi ayırt eder",
+      "description": "Varlığın temelini düşünsel ya da maddi kabul eden görüşü metinden çıkarır.",
+      "topicId": "tyt.philosophy.ontology.substance"
+    },
+    {
+      "id": "skill.philosophy.ontology.substance.dualism-nihilism",
+      "title": "Düalizm ile nihilizmi ayırt eder",
+      "description": "Varlığı iki temel tözle açıklayan yaklaşım ile gerçek varlığı reddeden yaklaşımı ayırt eder.",
+      "topicId": "tyt.philosophy.ontology.substance"
+    },
+    {
+      "id": "skill.philosophy.ontology.unity-change.one-many",
+      "title": "Varlığın birliği ve çokluğu problemini yorumlar",
+      "description": "Görünürdeki çeşitliliğin tek ya da çok ilkeye dayanmasına ilişkin görüşü çıkarır.",
+      "topicId": "tyt.philosophy.ontology.unity-change"
+    },
+    {
+      "id": "skill.philosophy.ontology.unity-change.change-becoming",
+      "title": "Değişim ve oluş görüşünü yorumlar",
+      "description": "Varlığı durağan töz yerine sürekli değişim ve oluşla açıklayan yaklaşımı belirler.",
+      "topicId": "tyt.philosophy.ontology.unity-change"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "concept.philosophy.ontology.being-kinds.varlik-problemi",
+      "term": "varlık problemi",
+      "definition": "Bir metindeki “ne vardır ve var olanın temeli nedir?” problemini belirler.",
+      "topicId": "tyt.philosophy.ontology.being-kinds"
+    },
+    {
+      "id": "concept.philosophy.ontology.being-kinds.gercek-ve-dusunsel-varlik",
+      "term": "gerçek ve düşünsel varlık",
+      "definition": "Zihinden bağımsız var olanlarla düşünce içinde kurulan varlıkları örnekten ayırır.",
+      "topicId": "tyt.philosophy.ontology.being-kinds"
+    },
+    {
+      "id": "concept.philosophy.ontology.substance.idealizm-ve-materyalizm",
+      "term": "idealizm ve materyalizm",
+      "definition": "Varlığın temelini düşünsel ya da maddi kabul eden görüşü metinden çıkarır.",
+      "topicId": "tyt.philosophy.ontology.substance"
+    },
+    {
+      "id": "concept.philosophy.ontology.substance.dualizm-ve-nihilizm",
+      "term": "düalizm ve nihilizm",
+      "definition": "Varlığı iki temel tözle açıklayan yaklaşım ile gerçek varlığı reddeden yaklaşımı ayırt eder.",
+      "topicId": "tyt.philosophy.ontology.substance"
+    },
+    {
+      "id": "concept.philosophy.ontology.unity-change.birlik-ve-cokluk",
+      "term": "birlik ve çokluk",
+      "definition": "Görünürdeki çeşitliliğin tek ya da çok ilkeye dayanmasına ilişkin görüşü çıkarır.",
+      "topicId": "tyt.philosophy.ontology.unity-change"
+    },
+    {
+      "id": "concept.philosophy.ontology.unity-change.olusculuk",
+      "term": "oluşçuluk",
+      "definition": "Varlığı durağan töz yerine sürekli değişim ve oluşla açıklayan yaklaşımı belirler.",
+      "topicId": "tyt.philosophy.ontology.unity-change"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "lesson.philosophy.ontology.being-kinds.001",
+      "topicId": "tyt.philosophy.ontology.being-kinds",
+      "title": "Varlık Problemi ve Varlık Türleri",
+      "subtitle": "Varlık problemini tanır ve Gerçek ve düşünsel varlığı ayırt eder.",
+      "estimatedMinutes": 10,
+      "exerciseIds": [
+        "exercise.philosophy.ontology.being-kinds.001.card01",
+        "exercise.philosophy.ontology.being-kinds.001.mcq1",
+        "exercise.philosophy.ontology.being-kinds.001.mcq2",
+        "exercise.philosophy.ontology.being-kinds.001.mcq3",
+        "exercise.philosophy.ontology.being-kinds.001.mcq4",
+        "exercise.philosophy.ontology.being-kinds.001.tf01",
+        "exercise.philosophy.ontology.being-kinds.001.match01",
+        "exercise.philosophy.ontology.being-kinds.001.blank01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.philosophy.ontology.substance.001",
+      "topicId": "tyt.philosophy.ontology.substance",
+      "title": "Varlığın Temeli",
+      "subtitle": "İdealizm ile materyalizmi ayırt eder ve Düalizm ile nihilizmi ayırt eder.",
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.philosophy.ontology.substance.001.mcq1",
+        "exercise.philosophy.ontology.substance.001.mcq2",
+        "exercise.philosophy.ontology.substance.001.mcq3",
+        "exercise.philosophy.ontology.substance.001.mcq4",
+        "exercise.philosophy.ontology.substance.001.tf01",
+        "exercise.philosophy.ontology.substance.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.philosophy.ontology.unity-change.001",
+      "topicId": "tyt.philosophy.ontology.unity-change",
+      "title": "Birlik, Çokluk ve Değişim",
+      "subtitle": "Varlığın birliği ve çokluğu problemini yorumlar ve Değişim ve oluş görüşünü yorumlar.",
+      "estimatedMinutes": 10,
+      "exerciseIds": [
+        "exercise.philosophy.ontology.unity-change.001.mcq1",
+        "exercise.philosophy.ontology.unity-change.001.mcq2",
+        "exercise.philosophy.ontology.unity-change.001.mcq3",
+        "exercise.philosophy.ontology.unity-change.001.mcq4",
+        "exercise.philosophy.ontology.unity-change.001.tf01",
+        "exercise.philosophy.ontology.unity-change.001.match01",
+        "exercise.philosophy.ontology.unity-change.001.blank01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "id": "exercise.philosophy.ontology.being-kinds.001.mcq1",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.ontology.being-kinds.problem"
+      ],
+      "prompt": "Bir düşünür, tek tek var olanları sıralamak yerine bütün var olanların ortak temelini araştırır.\n\nBu araştırma hangi felsefe alanına aittir?",
+      "tag": "FELSEFE · VARLIK PROBLEMİ VE VARLIK TÜRLERİ",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Siyaset felsefesi"
+        },
+        {
+          "id": "opt-2",
+          "label": "Bilim felsefesi"
+        },
+        {
+          "id": "opt-3",
+          "label": "Varlık felsefesi"
+        },
+        {
+          "id": "opt-4",
+          "label": "Sanat felsefesi"
+        }
+      ],
+      "correctOptionId": "opt-3",
+      "explanation": "Bir düşünür, tek tek var olanları sıralamak yerine bütün var olanların ortak temelini araştırır. Bu nedenle doğru ayrım “Varlık felsefesi”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.ontology.being-kinds.001.mcq2",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.ontology.being-kinds.problem"
+      ],
+      "prompt": "Bir düşünür, tek tek var olanları sıralamak yerine bütün var olanların ortak temelini araştırır.\n\nBir öğrenci bu görüşü “Sanat felsefesi” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · VARLIK PROBLEMİ VE VARLIK TÜRLERİ",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Bilim felsefesi"
+        },
+        {
+          "id": "opt-2",
+          "label": "Varlık felsefesi"
+        },
+        {
+          "id": "opt-3",
+          "label": "Sanat felsefesi"
+        },
+        {
+          "id": "opt-4",
+          "label": "Siyaset felsefesi"
+        }
+      ],
+      "correctOptionId": "opt-2",
+      "explanation": "Görüşte belirleyici ölçüt “varlık problemi” çerçevesidir. “Sanat felsefesi” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.ontology.being-kinds.001.mcq3",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.ontology.being-kinds.real-ideal"
+      ],
+      "prompt": "Bir dağ, onu düşünen kişiden bağımsız olarak var olabilir; geometrik bir üçgenin kusursuz biçimi ise düşüncede kurulabilir.\n\nBu örnekte yapılan ayrım hangisidir?",
+      "tag": "FELSEFE · VARLIK PROBLEMİ VE VARLIK TÜRLERİ",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Gerçek varlık–düşünsel varlık"
+        },
+        {
+          "id": "opt-2",
+          "label": "Özne–ahlak yasası"
+        },
+        {
+          "id": "opt-3",
+          "label": "Güzel–hoş"
+        },
+        {
+          "id": "opt-4",
+          "label": "İktidar–egemenlik"
+        }
+      ],
+      "correctOptionId": "opt-1",
+      "explanation": "Bir dağ, onu düşünen kişiden bağımsız olarak var olabilir; geometrik bir üçgenin kusursuz biçimi ise düşüncede kurulabilir. Bu nedenle doğru ayrım “Gerçek varlık–düşünsel varlık”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.ontology.being-kinds.001.mcq4",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.ontology.being-kinds.real-ideal"
+      ],
+      "prompt": "Bir dağ, onu düşünen kişiden bağımsız olarak var olabilir; geometrik bir üçgenin kusursuz biçimi ise düşüncede kurulabilir.\n\nBir öğrenci bu görüşü “Özne–ahlak yasası” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · VARLIK PROBLEMİ VE VARLIK TÜRLERİ",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Özne–ahlak yasası"
+        },
+        {
+          "id": "opt-2",
+          "label": "Güzel–hoş"
+        },
+        {
+          "id": "opt-3",
+          "label": "İktidar–egemenlik"
+        },
+        {
+          "id": "opt-4",
+          "label": "Gerçek varlık–düşünsel varlık"
+        }
+      ],
+      "correctOptionId": "opt-4",
+      "explanation": "Görüşte belirleyici ölçüt “gerçek ve düşünsel varlık” çerçevesidir. “Özne–ahlak yasası” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.ontology.being-kinds.001.tf01",
+      "kind": "trueFalse",
+      "skillIds": [
+        "skill.philosophy.ontology.being-kinds.problem",
+        "skill.philosophy.ontology.being-kinds.real-ideal"
+      ],
+      "statement": "varlık problemi ile gerçek ve düşünsel varlık aynı kavram değildir; bir metnin gerekçesine bakılarak birbirinden ayrılmalıdır.",
+      "tag": "FELSEFE · VARLIK PROBLEMİ VE VARLIK TÜRLERİ",
+      "correctAnswer": true,
+      "explanation": "Bu iki kavram aynı topic içinde ilişkili olsa da farklı sorulara veya ölçütlere karşılık gelir. Ayrım, yalnız anahtar kelimeye değil görüşün gerekçesine dayanır.",
+      "difficulty": 2,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.ontology.being-kinds.001.match01",
+      "kind": "matching",
+      "skillIds": [
+        "skill.philosophy.ontology.being-kinds.problem",
+        "skill.philosophy.ontology.being-kinds.real-ideal"
+      ],
+      "title": "Görüşü temel vurgusuyla eşleştir",
+      "subtitle": "Her ifadeyi yalnız bir kavramla eşleştir.",
+      "tag": "FELSEFE · VARLIK PROBLEMİ VE VARLIK TÜRLERİ",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "varlık problemi",
+          "right": "Bir metindeki “ne vardır ve var olanın temeli nedir?” problemini belirler."
+        },
+        {
+          "id": "pair-2",
+          "left": "gerçek ve düşünsel varlık",
+          "right": "Zihinden bağımsız var olanlarla düşünce içinde kurulan varlıkları örnekten ayırır."
+        }
+      ],
+      "explanation": "Eşleştirmeler kavramın adı ile ölçülebilir ayırt etme ölçütünü bağlar; görüşü yalnız ezberlemek yerine gerekçesiyle tanımayı sağlar.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.ontology.being-kinds.001.blank01",
+      "kind": "fillBlank",
+      "skillIds": [
+        "skill.philosophy.ontology.being-kinds.problem"
+      ],
+      "title": "Temel kavramı tamamla",
+      "hint": "Bir metindeki “ne vardır ve var olanın temeli nedir?” problemini belirler.",
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "varlık problemi"
+        },
+        {
+          "id": "w-2",
+          "label": "gerçek ve düşünsel varlık"
+        },
+        {
+          "id": "w-3",
+          "label": "olgusal betimleme"
+        }
+      ],
+      "solutionTokenIds": [
+        "w-1"
+      ],
+      "explanation": "Tanım “varlık problemi” kavramına karşılık gelir. Diğer seçenekler farklı bir ölçüt veya düşünme alanını belirtir.",
+      "difficulty": 1,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.ontology.being-kinds.001.card01",
+      "kind": "flashcard",
+      "skillIds": [
+        "skill.philosophy.ontology.being-kinds.problem",
+        "skill.philosophy.ontology.being-kinds.real-ideal"
+      ],
+      "tag": "FELSEFE · VARLIK PROBLEMİ VE VARLIK TÜRLERİ",
+      "cards": [
+        {
+          "id": "card-1",
+          "front": "varlık problemi",
+          "back": "Bir metindeki “ne vardır ve var olanın temeli nedir?” problemini belirler.",
+          "hint": "Kavramın bir metinde hangi ölçütle tanınacağını düşün."
+        },
+        {
+          "id": "card-2",
+          "front": "gerçek ve düşünsel varlık",
+          "back": "Zihinden bağımsız var olanlarla düşünce içinde kurulan varlıkları örnekten ayırır.",
+          "hint": "Kavramın bir metinde hangi ölçütle tanınacağını düşün."
+        }
+      ],
+      "explanation": "Kartlar temel ayrımları ilk karşılaşmada tanıtır; scored skill coverage hesabına katılmaz.",
+      "difficulty": 1,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.ontology.substance.001.mcq1",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.ontology.substance.idealism-materialism"
+      ],
+      "prompt": "Bir görüşe göre gerçekliğin en temel yapısı maddidir; bilinç de maddi süreçlerden bağımsız bir töz değildir.\n\nBu görüş hangisine yakındır?",
+      "tag": "FELSEFE · VARLIĞIN TEMELİ",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Oluşçuluk"
+        },
+        {
+          "id": "opt-2",
+          "label": "Materyalizm"
+        },
+        {
+          "id": "opt-3",
+          "label": "İdealizm"
+        },
+        {
+          "id": "opt-4",
+          "label": "Düalizm"
+        }
+      ],
+      "correctOptionId": "opt-2",
+      "explanation": "Bir görüşe göre gerçekliğin en temel yapısı maddidir; bilinç de maddi süreçlerden bağımsız bir töz değildir. Bu nedenle doğru ayrım “Materyalizm”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.ontology.substance.001.mcq2",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.ontology.substance.idealism-materialism"
+      ],
+      "prompt": "Bir görüşe göre gerçekliğin en temel yapısı maddidir; bilinç de maddi süreçlerden bağımsız bir töz değildir.\n\nBir öğrenci bu görüşü “İdealizm” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · VARLIĞIN TEMELİ",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Materyalizm"
+        },
+        {
+          "id": "opt-2",
+          "label": "İdealizm"
+        },
+        {
+          "id": "opt-3",
+          "label": "Düalizm"
+        },
+        {
+          "id": "opt-4",
+          "label": "Oluşçuluk"
+        }
+      ],
+      "correctOptionId": "opt-1",
+      "explanation": "Görüşte belirleyici ölçüt “idealizm ve materyalizm” çerçevesidir. “İdealizm” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.ontology.substance.001.mcq3",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.ontology.substance.dualism-nihilism"
+      ],
+      "prompt": "Bir düşünür insanı açıklarken birbirine indirgenemeyen beden ve zihnin iki ayrı temel gerçeklik olduğunu savunur.\n\nBu yaklaşım hangisidir?",
+      "tag": "FELSEFE · VARLIĞIN TEMELİ",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Materyalizm"
+        },
+        {
+          "id": "opt-2",
+          "label": "Nihilizm"
+        },
+        {
+          "id": "opt-3",
+          "label": "Monizm"
+        },
+        {
+          "id": "opt-4",
+          "label": "Düalizm"
+        }
+      ],
+      "correctOptionId": "opt-4",
+      "explanation": "Bir düşünür insanı açıklarken birbirine indirgenemeyen beden ve zihnin iki ayrı temel gerçeklik olduğunu savunur. Bu nedenle doğru ayrım “Düalizm”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.ontology.substance.001.mcq4",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.ontology.substance.dualism-nihilism"
+      ],
+      "prompt": "Bir düşünür insanı açıklarken birbirine indirgenemeyen beden ve zihnin iki ayrı temel gerçeklik olduğunu savunur.\n\nBir öğrenci bu görüşü “Materyalizm” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · VARLIĞIN TEMELİ",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Nihilizm"
+        },
+        {
+          "id": "opt-2",
+          "label": "Monizm"
+        },
+        {
+          "id": "opt-3",
+          "label": "Düalizm"
+        },
+        {
+          "id": "opt-4",
+          "label": "Materyalizm"
+        }
+      ],
+      "correctOptionId": "opt-3",
+      "explanation": "Görüşte belirleyici ölçüt “düalizm ve nihilizm” çerçevesidir. “Materyalizm” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.ontology.substance.001.tf01",
+      "kind": "trueFalse",
+      "skillIds": [
+        "skill.philosophy.ontology.substance.idealism-materialism",
+        "skill.philosophy.ontology.substance.dualism-nihilism"
+      ],
+      "statement": "idealizm ve materyalizm ile düalizm ve nihilizm aynı kavram değildir; bir metnin gerekçesine bakılarak birbirinden ayrılmalıdır.",
+      "tag": "FELSEFE · VARLIĞIN TEMELİ",
+      "correctAnswer": true,
+      "explanation": "Bu iki kavram aynı topic içinde ilişkili olsa da farklı sorulara veya ölçütlere karşılık gelir. Ayrım, yalnız anahtar kelimeye değil görüşün gerekçesine dayanır.",
+      "difficulty": 2,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.ontology.substance.001.match01",
+      "kind": "matching",
+      "skillIds": [
+        "skill.philosophy.ontology.substance.idealism-materialism",
+        "skill.philosophy.ontology.substance.dualism-nihilism"
+      ],
+      "title": "Görüşü temel vurgusuyla eşleştir",
+      "subtitle": "Her ifadeyi yalnız bir kavramla eşleştir.",
+      "tag": "FELSEFE · VARLIĞIN TEMELİ",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "idealizm ve materyalizm",
+          "right": "Varlığın temelini düşünsel ya da maddi kabul eden görüşü metinden çıkarır."
+        },
+        {
+          "id": "pair-2",
+          "left": "düalizm ve nihilizm",
+          "right": "Varlığı iki temel tözle açıklayan yaklaşım ile gerçek varlığı reddeden yaklaşımı ayırt eder."
+        }
+      ],
+      "explanation": "Eşleştirmeler kavramın adı ile ölçülebilir ayırt etme ölçütünü bağlar; görüşü yalnız ezberlemek yerine gerekçesiyle tanımayı sağlar.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.ontology.unity-change.001.mcq1",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.ontology.unity-change.one-many"
+      ],
+      "prompt": "Çevremizde sayısız farklı şey bulunsa da bir görüş bunların tümünün aynı temel gerçekliğin farklı görünümleri olduğunu savunur.\n\nBu görüş hangi soruya yanıt verir?",
+      "tag": "FELSEFE · BİRLİK, ÇOKLUK VE DEĞİŞİM",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Devlet neden vardır?"
+        },
+        {
+          "id": "opt-2",
+          "label": "Varlık bir midir, çok mudur?"
+        },
+        {
+          "id": "opt-3",
+          "label": "Bilginin kaynağı nedir?"
+        },
+        {
+          "id": "opt-4",
+          "label": "Güzel öznel midir?"
+        }
+      ],
+      "correctOptionId": "opt-2",
+      "explanation": "Çevremizde sayısız farklı şey bulunsa da bir görüş bunların tümünün aynı temel gerçekliğin farklı görünümleri olduğunu savunur. Bu nedenle doğru ayrım “Varlık bir midir, çok mudur?”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.ontology.unity-change.001.mcq2",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.ontology.unity-change.one-many"
+      ],
+      "prompt": "Çevremizde sayısız farklı şey bulunsa da bir görüş bunların tümünün aynı temel gerçekliğin farklı görünümleri olduğunu savunur.\n\nBir öğrenci bu görüşü “Bilginin kaynağı nedir?” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · BİRLİK, ÇOKLUK VE DEĞİŞİM",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Varlık bir midir, çok mudur?"
+        },
+        {
+          "id": "opt-2",
+          "label": "Bilginin kaynağı nedir?"
+        },
+        {
+          "id": "opt-3",
+          "label": "Güzel öznel midir?"
+        },
+        {
+          "id": "opt-4",
+          "label": "Devlet neden vardır?"
+        }
+      ],
+      "correctOptionId": "opt-1",
+      "explanation": "Görüşte belirleyici ölçüt “birlik ve çokluk” çerçevesidir. “Bilginin kaynağı nedir?” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.ontology.unity-change.001.mcq3",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.ontology.unity-change.change-becoming"
+      ],
+      "prompt": "Bu yaklaşıma göre gerçeklik tamamlanmış ve değişmez bir yapı değil, karşılıklı etkiler içinde süren bir süreçtir.\n\nParçada hangi anlayış vurgulanmaktadır?",
+      "tag": "FELSEFE · BİRLİK, ÇOKLUK VE DEĞİŞİM",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Değişmezcilik"
+        },
+        {
+          "id": "opt-2",
+          "label": "Düalizm"
+        },
+        {
+          "id": "opt-3",
+          "label": "Nihilizm"
+        },
+        {
+          "id": "opt-4",
+          "label": "Oluşçuluk"
+        }
+      ],
+      "correctOptionId": "opt-4",
+      "explanation": "Bu yaklaşıma göre gerçeklik tamamlanmış ve değişmez bir yapı değil, karşılıklı etkiler içinde süren bir süreçtir. Bu nedenle doğru ayrım “Oluşçuluk”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.ontology.unity-change.001.mcq4",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.ontology.unity-change.change-becoming"
+      ],
+      "prompt": "Bu yaklaşıma göre gerçeklik tamamlanmış ve değişmez bir yapı değil, karşılıklı etkiler içinde süren bir süreçtir.\n\nBir öğrenci bu görüşü “Değişmezcilik” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · BİRLİK, ÇOKLUK VE DEĞİŞİM",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Düalizm"
+        },
+        {
+          "id": "opt-2",
+          "label": "Nihilizm"
+        },
+        {
+          "id": "opt-3",
+          "label": "Oluşçuluk"
+        },
+        {
+          "id": "opt-4",
+          "label": "Değişmezcilik"
+        }
+      ],
+      "correctOptionId": "opt-3",
+      "explanation": "Görüşte belirleyici ölçüt “oluşçuluk” çerçevesidir. “Değişmezcilik” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.ontology.unity-change.001.tf01",
+      "kind": "trueFalse",
+      "skillIds": [
+        "skill.philosophy.ontology.unity-change.one-many",
+        "skill.philosophy.ontology.unity-change.change-becoming"
+      ],
+      "statement": "birlik ve çokluk ile oluşçuluk aynı kavram değildir; bir metnin gerekçesine bakılarak birbirinden ayrılmalıdır.",
+      "tag": "FELSEFE · BİRLİK, ÇOKLUK VE DEĞİŞİM",
+      "correctAnswer": true,
+      "explanation": "Bu iki kavram aynı topic içinde ilişkili olsa da farklı sorulara veya ölçütlere karşılık gelir. Ayrım, yalnız anahtar kelimeye değil görüşün gerekçesine dayanır.",
+      "difficulty": 2,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.ontology.unity-change.001.match01",
+      "kind": "matching",
+      "skillIds": [
+        "skill.philosophy.ontology.unity-change.one-many",
+        "skill.philosophy.ontology.unity-change.change-becoming"
+      ],
+      "title": "Görüşü temel vurgusuyla eşleştir",
+      "subtitle": "Her ifadeyi yalnız bir kavramla eşleştir.",
+      "tag": "FELSEFE · BİRLİK, ÇOKLUK VE DEĞİŞİM",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "birlik ve çokluk",
+          "right": "Görünürdeki çeşitliliğin tek ya da çok ilkeye dayanmasına ilişkin görüşü çıkarır."
+        },
+        {
+          "id": "pair-2",
+          "left": "oluşçuluk",
+          "right": "Varlığı durağan töz yerine sürekli değişim ve oluşla açıklayan yaklaşımı belirler."
+        }
+      ],
+      "explanation": "Eşleştirmeler kavramın adı ile ölçülebilir ayırt etme ölçütünü bağlar; görüşü yalnız ezberlemek yerine gerekçesiyle tanımayı sağlar.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.ontology.unity-change.001.blank01",
+      "kind": "fillBlank",
+      "skillIds": [
+        "skill.philosophy.ontology.unity-change.one-many"
+      ],
+      "title": "Temel kavramı tamamla",
+      "hint": "Görünürdeki çeşitliliğin tek ya da çok ilkeye dayanmasına ilişkin görüşü çıkarır.",
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "birlik ve çokluk"
+        },
+        {
+          "id": "w-2",
+          "label": "oluşçuluk"
+        },
+        {
+          "id": "w-3",
+          "label": "olgusal betimleme"
+        }
+      ],
+      "solutionTokenIds": [
+        "w-1"
+      ],
+      "explanation": "Tanım “birlik ve çokluk” kavramına karşılık gelir. Diğer seçenekler farklı bir ölçüt veya düşünme alanını belirtir.",
+      "difficulty": 1,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.philosophy.ontology.01",
+      "unitId": "tyt.philosophy.ontology",
+      "kind": "lesson",
+      "title": "Varlık Problemi ve Varlık Türleri",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.philosophy.epistemology.03"
+      ],
+      "lessonId": "lesson.philosophy.ontology.being-kinds.001"
+    },
+    {
+      "id": "path.philosophy.ontology.02",
+      "unitId": "tyt.philosophy.ontology",
+      "kind": "lesson",
+      "title": "Varlığın Temeli",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.philosophy.ontology.01"
+      ],
+      "lessonId": "lesson.philosophy.ontology.substance.001"
+    },
+    {
+      "id": "path.philosophy.ontology.03",
+      "unitId": "tyt.philosophy.ontology",
+      "kind": "practice",
+      "title": "Birlik, Çokluk ve Değişim Uygulaması",
+      "order": 3,
+      "prerequisiteIds": [
+        "path.philosophy.ontology.02"
+      ],
+      "lessonId": "lesson.philosophy.ontology.unity-change.001"
+    }
+  ]
+}

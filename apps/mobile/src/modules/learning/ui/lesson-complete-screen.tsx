@@ -46,7 +46,7 @@ export function LessonCompleteScreen({
   return (
     <Screen background="celebration" includeBottomInset={false} testID="lesson-complete-screen">
       <View style={styles.stage}>
-        <Dino size={168} />
+        <Dino pose="graduation" size={168} />
         <AppText align="center" color="inverse" style={styles.title} variant="headingXXL">
           Harika!
         </AppText>

@@ -1,0 +1,540 @@
+{
+  "concepts": [
+    {
+      "definition": "TBMM’nin imzaladığı ilk uluslararası antlaşma olması",
+      "id": "concept.history.independence-war-treaties.eastern-front",
+      "term": "TBMM’nin imzaladığı ilk uluslararası antlaşma olması",
+      "topicId": "tyt.history.independence-war-treaties.fronts"
+    },
+    {
+      "definition": "Yunan ordusunun taarruz gücünün kırılması",
+      "id": "concept.history.independence-war-treaties.western-front",
+      "term": "Yunan ordusunun taarruz gücünün kırılması",
+      "topicId": "tyt.history.independence-war-treaties.fronts"
+    },
+    {
+      "definition": "Doğu Trakya",
+      "id": "concept.history.independence-war-treaties.mudanya-result",
+      "term": "Doğu Trakya",
+      "topicId": "tyt.history.independence-war-treaties.armistice-and-peace"
+    },
+    {
+      "definition": "Tam bağımsızlık",
+      "id": "concept.history.independence-war-treaties.lausanne-sovereignty",
+      "term": "Tam bağımsızlık",
+      "topicId": "tyt.history.independence-war-treaties.armistice-and-peace"
+    }
+  ],
+  "exercises": [
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "TBMM’nin imzaladığı ilk uluslararası antlaşma olması, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.independence-war-treaties.fronts.eastern-front.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "TBMM’nin imzaladığı ilk uluslararası antlaşma olması"
+        },
+        {
+          "id": "d1",
+          "label": "Batı Cephesi’ni kapatması"
+        },
+        {
+          "id": "d2",
+          "label": "Boğazlar sorununu çözmesi"
+        },
+        {
+          "id": "d3",
+          "label": "Musul’u Türkiye’ye bırakması"
+        }
+      ],
+      "prompt": "Gümrü Antlaşması’nın TBMM açısından önemi hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.independence-war-treaties.eastern-front"
+      ],
+      "tag": "TARİH · DOĞU, GÜNEY VE BATI CEPHELERİ"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Gümrü Antlaşması’nın TBMM açısından önemi hangisidir sorusunun doğru karşılığı “TBMM’nin imzaladığı ilk uluslararası antlaşma olması” olmalıdır.",
+      "id": "exercise.history.independence-war-treaties.fronts.eastern-front.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.independence-war-treaties.eastern-front"
+      ],
+      "statement": "Batı Cephesi’ni kapatması, Doğu Cephesi’nin askerî ve diplomatik sonucunu açıklar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · DOĞU, GÜNEY VE BATI CEPHELERİ"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "TBMM’nin imzaladığı ilk uluslararası antlaşma olması"
+        },
+        {
+          "id": "d1",
+          "label": "Batı Cephesi’ni kapatması"
+        },
+        {
+          "id": "d2",
+          "label": "Boğazlar sorununu çözmesi"
+        },
+        {
+          "id": "d3",
+          "label": "Musul’u Türkiye’ye bırakması"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “TBMM’nin imzaladığı ilk uluslararası antlaşma olması” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.independence-war-treaties.fronts.eastern-front.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.independence-war-treaties.eastern-front"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: Gümrü Antlaşması’nın TBMM açısından önemi hangisidir?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Yunan ordusunun taarruz gücünün kırılması, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.independence-war-treaties.fronts.western-front.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Yunan ordusunun taarruz gücünün kırılması"
+        },
+        {
+          "id": "d1",
+          "label": "Batı Cephesi’nin ilk kez açılması"
+        },
+        {
+          "id": "d2",
+          "label": "Mudanya Ateşkesinin savaştan önce imzalanması"
+        },
+        {
+          "id": "d3",
+          "label": "Sevr’in yürürlüğe girmesi"
+        }
+      ],
+      "prompt": "Sakarya Meydan Muharebesi’nin askerî sonucu hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.independence-war-treaties.western-front"
+      ],
+      "tag": "TARİH · DOĞU, GÜNEY VE BATI CEPHELERİ"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Sakarya Meydan Muharebesi’nin askerî sonucu hangisidir sorusunun doğru karşılığı “Yunan ordusunun taarruz gücünün kırılması” olmalıdır.",
+      "id": "exercise.history.independence-war-treaties.fronts.western-front.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.independence-war-treaties.western-front"
+      ],
+      "statement": "Batı Cephesi’nin ilk kez açılması, Batı Cephesi savaşlarını neden-sonuç ilişkisiyle yorumlar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · DOĞU, GÜNEY VE BATI CEPHELERİ"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, Doğu, Güney ve Batı Cepheleri başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.independence-war-treaties.fronts.western-front.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Gümrü Antlaşması’nın TBMM açısından önemi hangisidir?",
+          "right": "TBMM’nin imzaladığı ilk uluslararası antlaşma olması"
+        },
+        {
+          "id": "pair-2",
+          "left": "Sakarya Meydan Muharebesi’nin askerî sonucu hangisidir?",
+          "right": "Yunan ordusunun taarruz gücünün kırılması"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.independence-war-treaties.eastern-front",
+        "skill.history.independence-war-treaties.western-front"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · DOĞU, GÜNEY VE BATI CEPHELERİ",
+      "title": "Bilgi bağlarını eşleştir"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Doğu Trakya, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.independence-war-treaties.armistice-and-peace.mudanya-result.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Doğu Trakya"
+        },
+        {
+          "id": "d1",
+          "label": "Musul"
+        },
+        {
+          "id": "d2",
+          "label": "Hatay"
+        },
+        {
+          "id": "d3",
+          "label": "On İki Ada"
+        }
+      ],
+      "prompt": "Mudanya Ateşkesi’yle hangi bölge savaş yapılmadan Türkiye’ye bırakılmıştır?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.independence-war-treaties.mudanya-result"
+      ],
+      "tag": "TARİH · MUDANYA VE LOZAN"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Mudanya Ateşkesi’yle hangi bölge savaş yapılmadan Türkiye’ye bırakılmıştır sorusunun doğru karşılığı “Doğu Trakya” olmalıdır.",
+      "id": "exercise.history.independence-war-treaties.armistice-and-peace.mudanya-result.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.independence-war-treaties.mudanya-result"
+      ],
+      "statement": "Musul, Mudanya Ateşkes Antlaşması’nın sonucunu açıklar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · MUDANYA VE LOZAN"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "Doğu Trakya"
+        },
+        {
+          "id": "d1",
+          "label": "Musul"
+        },
+        {
+          "id": "d2",
+          "label": "Hatay"
+        },
+        {
+          "id": "d3",
+          "label": "On İki Ada"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “Doğu Trakya” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.independence-war-treaties.armistice-and-peace.mudanya-result.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.independence-war-treaties.mudanya-result"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: Mudanya Ateşkesi’yle hangi bölge savaş yapılmadan Türkiye’ye bırakılmıştır?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Tam bağımsızlık, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.independence-war-treaties.armistice-and-peace.lausanne-sovereignty.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Tam bağımsızlık"
+        },
+        {
+          "id": "d1",
+          "label": "Mandacılık"
+        },
+        {
+          "id": "d2",
+          "label": "Hanedan egemenliği"
+        },
+        {
+          "id": "d3",
+          "label": "Sömürgecilik"
+        }
+      ],
+      "prompt": "Lozan Antlaşması’nda kapitülasyonların kaldırılması hangi ilkeyle doğrudan ilgilidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.independence-war-treaties.lausanne-sovereignty"
+      ],
+      "tag": "TARİH · MUDANYA VE LOZAN"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Lozan Antlaşması’nda kapitülasyonların kaldırılması hangi ilkeyle doğrudan ilgilidir sorusunun doğru karşılığı “Tam bağımsızlık” olmalıdır.",
+      "id": "exercise.history.independence-war-treaties.armistice-and-peace.lausanne-sovereignty.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.independence-war-treaties.lausanne-sovereignty"
+      ],
+      "statement": "Mandacılık, Lozan Antlaşması’nın egemenlik açısından önemini yorumlar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · MUDANYA VE LOZAN"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, Mudanya ve Lozan başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.independence-war-treaties.armistice-and-peace.lausanne-sovereignty.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Mudanya Ateşkesi’yle hangi bölge savaş yapılmadan Türkiye’ye bırakılmıştır?",
+          "right": "Doğu Trakya"
+        },
+        {
+          "id": "pair-2",
+          "left": "Lozan Antlaşması’nda kapitülasyonların kaldırılması hangi ilkeyle doğrudan ilgilidir?",
+          "right": "Tam bağımsızlık"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.independence-war-treaties.mudanya-result",
+        "skill.history.independence-war-treaties.lausanne-sovereignty"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · MUDANYA VE LOZAN",
+      "title": "Bilgi bağlarını eşleştir"
+    },
+    {
+      "correctOrder": [
+        "event-1",
+        "event-2",
+        "event-3",
+        "event-4",
+        "event-5"
+      ],
+      "difficulty": 4,
+      "explanation": "Olaylar tarihleri dikkate alınarak eskiden yeniye sıralanır. Kronoloji, gelişmeler arasındaki neden-sonuç ilişkisini kurmak için temel bir çerçeve sunar.",
+      "id": "exercise.history.independence-war-treaties.fronts.order01",
+      "items": [
+        {
+          "id": "event-1",
+          "label": "I. İnönü Savaşı (Ocak 1921)"
+        },
+        {
+          "id": "event-2",
+          "label": "II. İnönü Savaşı (Mart 1921)"
+        },
+        {
+          "id": "event-3",
+          "label": "Sakarya Meydan Muharebesi (1921)"
+        },
+        {
+          "id": "event-4",
+          "label": "Büyük Taarruz (1922)"
+        },
+        {
+          "id": "event-5",
+          "label": "Mudanya Ateşkesi (1922)"
+        }
+      ],
+      "kind": "ordering",
+      "prompt": "Gelişmeleri eskiden yeniye doğru sırala.",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.independence-war-treaties.eastern-front",
+        "skill.history.independence-war-treaties.western-front"
+      ],
+      "tag": "TARİH · DOĞU, GÜNEY VE BATI CEPHELERİ"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.independence-war-treaties.fronts.eastern-front.mcq01",
+        "exercise.history.independence-war-treaties.fronts.eastern-front.tf01",
+        "exercise.history.independence-war-treaties.fronts.eastern-front.fill01",
+        "exercise.history.independence-war-treaties.fronts.western-front.mcq01",
+        "exercise.history.independence-war-treaties.fronts.western-front.tf01",
+        "exercise.history.independence-war-treaties.fronts.western-front.match01",
+        "exercise.history.independence-war-treaties.fronts.order01"
+      ],
+      "id": "lesson.history.independence-war-treaties.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "Doğu, Güney ve Batı Cepheleri",
+      "topicId": "tyt.history.independence-war-treaties.fronts"
+    },
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.independence-war-treaties.armistice-and-peace.mudanya-result.mcq01",
+        "exercise.history.independence-war-treaties.armistice-and-peace.mudanya-result.tf01",
+        "exercise.history.independence-war-treaties.armistice-and-peace.mudanya-result.fill01",
+        "exercise.history.independence-war-treaties.armistice-and-peace.lausanne-sovereignty.mcq01",
+        "exercise.history.independence-war-treaties.armistice-and-peace.lausanne-sovereignty.tf01",
+        "exercise.history.independence-war-treaties.armistice-and-peace.lausanne-sovereignty.match01"
+      ],
+      "id": "lesson.history.independence-war-treaties.002",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "Mudanya ve Lozan",
+      "topicId": "tyt.history.independence-war-treaties.armistice-and-peace"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.history.independence-war-treaties.01",
+      "kind": "lesson",
+      "lessonId": "lesson.history.independence-war-treaties.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.history.first-grand-national-assembly.02"
+      ],
+      "title": "Doğu, Güney ve Batı Cepheleri",
+      "unitId": "tyt.history.independence-war-treaties"
+    },
+    {
+      "id": "path.history.independence-war-treaties.02",
+      "kind": "checkpoint",
+      "lessonId": "lesson.history.independence-war-treaties.002",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.history.independence-war-treaties.01"
+      ],
+      "title": "Kurtuluş Savaşı ve Antlaşmalar Kontrolü",
+      "unitId": "tyt.history.independence-war-treaties"
+    }
+  ],
+  "skills": [
+    {
+      "description": "Doğu Cephesi’nin askerî ve diplomatik sonucunu açıklar.",
+      "id": "skill.history.independence-war-treaties.eastern-front",
+      "title": "Doğu Cephesi’nin askerî ve diplomatik sonucunu açıklar",
+      "topicId": "tyt.history.independence-war-treaties.fronts"
+    },
+    {
+      "description": "Batı Cephesi savaşlarını neden-sonuç ilişkisiyle yorumlar.",
+      "id": "skill.history.independence-war-treaties.western-front",
+      "title": "Batı Cephesi savaşlarını neden-sonuç ilişkisiyle yorumlar",
+      "topicId": "tyt.history.independence-war-treaties.fronts"
+    },
+    {
+      "description": "Mudanya Ateşkes Antlaşması’nın sonucunu açıklar.",
+      "id": "skill.history.independence-war-treaties.mudanya-result",
+      "title": "Mudanya Ateşkes Antlaşması’nın sonucunu açıklar",
+      "topicId": "tyt.history.independence-war-treaties.armistice-and-peace"
+    },
+    {
+      "description": "Lozan Antlaşması’nın egemenlik açısından önemini yorumlar.",
+      "id": "skill.history.independence-war-treaties.lausanne-sovereignty",
+      "title": "Lozan Antlaşması’nın egemenlik açısından önemini yorumlar",
+      "topicId": "tyt.history.independence-war-treaties.armistice-and-peace"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.history.independence-war-treaties.eastern-front",
+        "concept.history.independence-war-treaties.western-front"
+      ],
+      "id": "tyt.history.independence-war-treaties.fronts",
+      "skillIds": [
+        "skill.history.independence-war-treaties.eastern-front",
+        "skill.history.independence-war-treaties.western-front"
+      ],
+      "title": "Doğu, Güney ve Batı Cepheleri",
+      "unitId": "tyt.history.independence-war-treaties"
+    },
+    {
+      "conceptIds": [
+        "concept.history.independence-war-treaties.mudanya-result",
+        "concept.history.independence-war-treaties.lausanne-sovereignty"
+      ],
+      "id": "tyt.history.independence-war-treaties.armistice-and-peace",
+      "skillIds": [
+        "skill.history.independence-war-treaties.mudanya-result",
+        "skill.history.independence-war-treaties.lausanne-sovereignty"
+      ],
+      "title": "Mudanya ve Lozan",
+      "unitId": "tyt.history.independence-war-treaties"
+    }
+  ],
+  "unitId": "tyt.history.independence-war-treaties"
+}

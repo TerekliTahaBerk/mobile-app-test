@@ -1,0 +1,531 @@
+{
+  "concepts": [
+    {
+      "definition": "Termik alçak basınç gelişebilir",
+      "id": "concept.geography.pressure-winds.pressure",
+      "term": "Hava ısınarak yükselir",
+      "topicId": "tyt.geography.pressure-winds.pressure"
+    },
+    {
+      "definition": "Rüzgârın hızı artabilir",
+      "id": "concept.geography.pressure-winds.winds",
+      "term": "Basınç farkı büyür",
+      "topicId": "tyt.geography.pressure-winds.winds"
+    }
+  ],
+  "exercises": [
+    {
+      "correctOptionId": "opt-1",
+      "difficulty": 2,
+      "explanation": "Hava ısınarak yükselir durumunda termik alçak basınç gelişebilir. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.pressure-winds.pressure.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Termik alçak basınç gelişebilir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Bulutlanma ve yağış olasılığı azalır"
+        },
+        {
+          "id": "opt-3",
+          "label": "Basınç gradyanı ve rüzgâr hızı artabilir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Yüzeyde hava çevreye doğru hareket eder"
+        }
+      ],
+      "prompt": "Hava ısınarak yükselir. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.pressure-winds.pressure.interpret"
+      ],
+      "tag": "COĞRAFYA · BASINÇ MERKEZLERİ"
+    },
+    {
+      "correctOptionId": "opt-2",
+      "difficulty": 4,
+      "explanation": "Hava alçalır durumunda bulutlanma ve yağış olasılığı azalır. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.pressure-winds.pressure.001.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Termik alçak basınç gelişebilir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Bulutlanma ve yağış olasılığı azalır"
+        },
+        {
+          "id": "opt-3",
+          "label": "Basınç gradyanı ve rüzgâr hızı artabilir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Yüzeyde hava çevreye doğru hareket eder"
+        }
+      ],
+      "prompt": "Hava alçalır. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.pressure-winds.pressure.interpret"
+      ],
+      "tag": "COĞRAFYA · BASINÇ MERKEZLERİ"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 3,
+      "explanation": "İzobarlar sıklaşır ile basınç gradyanı ve rüzgâr hızı artabilir arasında doğrudan bir coğrafi ilişki vardır.",
+      "id": "exercise.geography.pressure-winds.pressure.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.pressure-winds.pressure.interpret"
+      ],
+      "statement": "İzobarlar sıklaşır; bunun sonucunda basınç gradyanı ve rüzgâr hızı artabilir.",
+      "tag": "COĞRAFYA · BASINÇ MERKEZLERİ"
+    },
+    {
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "Termik alçak basınç gelişebilir"
+        },
+        {
+          "id": "w-2",
+          "label": "Bulutlanma ve yağış olasılığı azalır"
+        },
+        {
+          "id": "w-3",
+          "label": "Basınç gradyanı ve rüzgâr hızı artabilir"
+        },
+        {
+          "id": "w-4",
+          "label": "Yüzeyde hava çevreye doğru hareket eder"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "Yüksek basınç merkezi oluşur koşulunun beklenen sonucu “Yüzeyde hava çevreye doğru hareket eder” ilişkisidir.",
+      "hint": "Yüksek basınç merkezi oluşur",
+      "id": "exercise.geography.pressure-winds.pressure.001.blank01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.pressure-winds.pressure.interpret"
+      ],
+      "solutionTokenIds": [
+        "w-4"
+      ],
+      "title": "Yüksek basınç merkezi oluşur durumunda sonuç"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Her koşul, kendisinden beklenen özgün coğrafi sonuçla eşleştirilir; aynı sonuç iki kez kullanılmaz.",
+      "id": "exercise.geography.pressure-winds.pressure.001.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Hava ısınarak yükselir",
+          "right": "Termik alçak basınç gelişebilir"
+        },
+        {
+          "id": "pair-2",
+          "left": "Hava alçalır",
+          "right": "Bulutlanma ve yağış olasılığı azalır"
+        },
+        {
+          "id": "pair-3",
+          "left": "İzobarlar sıklaşır",
+          "right": "Basınç gradyanı ve rüzgâr hızı artabilir"
+        },
+        {
+          "id": "pair-4",
+          "left": "Yüksek basınç merkezi oluşur",
+          "right": "Yüzeyde hava çevreye doğru hareket eder"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.pressure-winds.pressure.interpret"
+      ],
+      "subtitle": "Koşulu doğru coğrafi sonuçla birleştir.",
+      "tag": "COĞRAFYA · BASINÇ MERKEZLERİ",
+      "title": "İlişkiyi eşleştir"
+    },
+    {
+      "cards": [
+        {
+          "back": "Termik alçak basınç gelişebilir",
+          "front": "Hava ısınarak yükselir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-1"
+        },
+        {
+          "back": "Bulutlanma ve yağış olasılığı azalır",
+          "front": "Hava alçalır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-2"
+        },
+        {
+          "back": "Basınç gradyanı ve rüzgâr hızı artabilir",
+          "front": "İzobarlar sıklaşır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-3"
+        },
+        {
+          "back": "Yüzeyde hava çevreye doğru hareket eder",
+          "front": "Yüksek basınç merkezi oluşur",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-4"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Kartlar temel ilişkileri kısa tekrar için özetler; puanlanan skill coverage hesabına katılmaz.",
+      "id": "exercise.geography.pressure-winds.pressure.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.pressure-winds.pressure.interpret"
+      ],
+      "tag": "COĞRAFYA · BASINÇ MERKEZLERİ"
+    },
+    {
+      "correctOptionId": "opt-1",
+      "difficulty": 2,
+      "explanation": "Basınç farkı büyür durumunda rüzgârın hızı artabilir. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.pressure-winds.winds.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Rüzgârın hızı artabilir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Gündüz deniz meltemi görülür"
+        },
+        {
+          "id": "opt-3",
+          "label": "Föhn etkisi oluşabilir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Sürtünme rüzgâr hızını azaltır"
+        }
+      ],
+      "prompt": "Basınç farkı büyür. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.pressure-winds.winds.interpret"
+      ],
+      "tag": "COĞRAFYA · RÜZGÂRLARIN ÖZELLİKLERİ"
+    },
+    {
+      "correctOptionId": "opt-2",
+      "difficulty": 4,
+      "explanation": "Rüzgâr denizden karaya eser durumunda gündüz deniz meltemi görülür. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.pressure-winds.winds.001.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Rüzgârın hızı artabilir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Gündüz deniz meltemi görülür"
+        },
+        {
+          "id": "opt-3",
+          "label": "Föhn etkisi oluşabilir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Sürtünme rüzgâr hızını azaltır"
+        }
+      ],
+      "prompt": "Rüzgâr denizden karaya eser. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.pressure-winds.winds.interpret"
+      ],
+      "tag": "COĞRAFYA · RÜZGÂRLARIN ÖZELLİKLERİ"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 3,
+      "explanation": "Dağ yamacından alçalan hava ısınır ile föhn etkisi oluşabilir arasında doğrudan bir coğrafi ilişki vardır.",
+      "id": "exercise.geography.pressure-winds.winds.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.pressure-winds.winds.interpret"
+      ],
+      "statement": "Dağ yamacından alçalan hava ısınır; bunun sonucunda föhn etkisi oluşabilir.",
+      "tag": "COĞRAFYA · RÜZGÂRLARIN ÖZELLİKLERİ"
+    },
+    {
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "Rüzgârın hızı artabilir"
+        },
+        {
+          "id": "w-2",
+          "label": "Gündüz deniz meltemi görülür"
+        },
+        {
+          "id": "w-3",
+          "label": "Föhn etkisi oluşabilir"
+        },
+        {
+          "id": "w-4",
+          "label": "Sürtünme rüzgâr hızını azaltır"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "Yüzey pürüzlülüğü artar koşulunun beklenen sonucu “Sürtünme rüzgâr hızını azaltır” ilişkisidir.",
+      "hint": "Yüzey pürüzlülüğü artar",
+      "id": "exercise.geography.pressure-winds.winds.001.blank01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.pressure-winds.winds.interpret"
+      ],
+      "solutionTokenIds": [
+        "w-4"
+      ],
+      "title": "Yüzey pürüzlülüğü artar durumunda sonuç"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Her koşul, kendisinden beklenen özgün coğrafi sonuçla eşleştirilir; aynı sonuç iki kez kullanılmaz.",
+      "id": "exercise.geography.pressure-winds.winds.001.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Basınç farkı büyür",
+          "right": "Rüzgârın hızı artabilir"
+        },
+        {
+          "id": "pair-2",
+          "left": "Rüzgâr denizden karaya eser",
+          "right": "Gündüz deniz meltemi görülür"
+        },
+        {
+          "id": "pair-3",
+          "left": "Dağ yamacından alçalan hava ısınır",
+          "right": "Föhn etkisi oluşabilir"
+        },
+        {
+          "id": "pair-4",
+          "left": "Yüzey pürüzlülüğü artar",
+          "right": "Sürtünme rüzgâr hızını azaltır"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.pressure-winds.winds.interpret"
+      ],
+      "subtitle": "Koşulu doğru coğrafi sonuçla birleştir.",
+      "tag": "COĞRAFYA · RÜZGÂRLARIN ÖZELLİKLERİ",
+      "title": "İlişkiyi eşleştir"
+    },
+    {
+      "cards": [
+        {
+          "back": "Rüzgârın hızı artabilir",
+          "front": "Basınç farkı büyür",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-1"
+        },
+        {
+          "back": "Gündüz deniz meltemi görülür",
+          "front": "Rüzgâr denizden karaya eser",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-2"
+        },
+        {
+          "back": "Föhn etkisi oluşabilir",
+          "front": "Dağ yamacından alçalan hava ısınır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-3"
+        },
+        {
+          "back": "Sürtünme rüzgâr hızını azaltır",
+          "front": "Yüzey pürüzlülüğü artar",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-4"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Kartlar temel ilişkileri kısa tekrar için özetler; puanlanan skill coverage hesabına katılmaz.",
+      "id": "exercise.geography.pressure-winds.winds.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.pressure-winds.winds.interpret"
+      ],
+      "tag": "COĞRAFYA · RÜZGÂRLARIN ÖZELLİKLERİ"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.geography.pressure-winds.pressure.001.mcq01",
+        "exercise.geography.pressure-winds.pressure.001.mcq02",
+        "exercise.geography.pressure-winds.pressure.001.tf01",
+        "exercise.geography.pressure-winds.pressure.001.blank01",
+        "exercise.geography.pressure-winds.pressure.001.match01",
+        "exercise.geography.pressure-winds.pressure.001.card01"
+      ],
+      "id": "lesson.geography.pressure-winds.pressure.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Sıcaklık ve hava hareketlerinden basınç merkezi özelliklerini çıkarır.",
+      "title": "Basınç Merkezleri",
+      "topicId": "tyt.geography.pressure-winds.pressure"
+    },
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.geography.pressure-winds.winds.001.mcq01",
+        "exercise.geography.pressure-winds.winds.001.mcq02",
+        "exercise.geography.pressure-winds.winds.001.tf01",
+        "exercise.geography.pressure-winds.winds.001.blank01",
+        "exercise.geography.pressure-winds.winds.001.match01",
+        "exercise.geography.pressure-winds.winds.001.card01"
+      ],
+      "id": "lesson.geography.pressure-winds.winds.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Rüzgâr yönü ve hızını basınç, sürtünme ve yerel koşullarla ilişkilendirir.",
+      "title": "Rüzgârların Özellikleri",
+      "topicId": "tyt.geography.pressure-winds.winds"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.geography.pressure-winds.01",
+      "kind": "lesson",
+      "lessonId": "lesson.geography.pressure-winds.pressure.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.geography.climates.02"
+      ],
+      "title": "Basınç Merkezleri",
+      "unitId": "tyt.geography.pressure-winds"
+    },
+    {
+      "id": "path.geography.pressure-winds.02",
+      "kind": "practice",
+      "lessonId": "lesson.geography.pressure-winds.winds.001",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.geography.pressure-winds.01"
+      ],
+      "title": "Rüzgârların Özellikleri Uygulaması",
+      "unitId": "tyt.geography.pressure-winds"
+    }
+  ],
+  "skills": [
+    {
+      "description": "Sıcaklık ve hava hareketlerinden basınç merkezi özelliklerini çıkarır.",
+      "id": "skill.geography.pressure-winds.pressure.interpret",
+      "title": "Sıcaklık ve hava hareketlerinden basınç merkezi özelliklerini çıkarır.",
+      "topicId": "tyt.geography.pressure-winds.pressure"
+    },
+    {
+      "description": "Rüzgâr yönü ve hızını basınç, sürtünme ve yerel koşullarla ilişkilendirir.",
+      "id": "skill.geography.pressure-winds.winds.interpret",
+      "title": "Rüzgâr yönü ve hızını basınç, sürtünme ve yerel koşullarla ilişkilendirir.",
+      "topicId": "tyt.geography.pressure-winds.winds"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.geography.pressure-winds.pressure"
+      ],
+      "id": "tyt.geography.pressure-winds.pressure",
+      "skillIds": [
+        "skill.geography.pressure-winds.pressure.interpret"
+      ],
+      "title": "Basınç Merkezleri",
+      "unitId": "tyt.geography.pressure-winds"
+    },
+    {
+      "conceptIds": [
+        "concept.geography.pressure-winds.winds"
+      ],
+      "id": "tyt.geography.pressure-winds.winds",
+      "skillIds": [
+        "skill.geography.pressure-winds.winds.interpret"
+      ],
+      "title": "Rüzgârların Özellikleri",
+      "unitId": "tyt.geography.pressure-winds"
+    }
+  ],
+  "unitId": "tyt.geography.pressure-winds"
+}

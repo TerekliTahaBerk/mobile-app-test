@@ -1,0 +1,531 @@
+{
+  "concepts": [
+    {
+      "definition": "Ortalama yükselti genel olarak artar",
+      "id": "concept.geography.turkey-landforms.relief",
+      "term": "Türkiye’de doğuya gidilir",
+      "topicId": "tyt.geography.turkey-landforms.relief"
+    },
+    {
+      "definition": "Tarım ve yerleşme yoğunlaşabilir",
+      "id": "concept.geography.turkey-landforms.plains-rivers",
+      "term": "Geniş ve verimli alüvyal ova vardır",
+      "topicId": "tyt.geography.turkey-landforms.plains-rivers"
+    }
+  ],
+  "exercises": [
+    {
+      "correctOptionId": "opt-1",
+      "difficulty": 2,
+      "explanation": "Türkiye’de doğuya gidilir durumunda ortalama yükselti genel olarak artar. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.turkey-landforms.relief.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Ortalama yükselti genel olarak artar"
+        },
+        {
+          "id": "opt-2",
+          "label": "Kıyı ile iç kesimler arasında ulaşım zorlaşır"
+        },
+        {
+          "id": "opt-3",
+          "label": "Deniz etkisi iç kesimlere sokulabilir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Kısa mesafede iklim çeşitliliği artabilir"
+        }
+      ],
+      "prompt": "Türkiye’de doğuya gidilir. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.turkey-landforms.relief.interpret"
+      ],
+      "tag": "COĞRAFYA · YÜKSELTİ VE DAĞLARIN UZANIŞI"
+    },
+    {
+      "correctOptionId": "opt-2",
+      "difficulty": 4,
+      "explanation": "Karadeniz’de dağlar kıyıya paralel uzanır durumunda kıyı ile iç kesimler arasında ulaşım zorlaşır. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.turkey-landforms.relief.001.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Ortalama yükselti genel olarak artar"
+        },
+        {
+          "id": "opt-2",
+          "label": "Kıyı ile iç kesimler arasında ulaşım zorlaşır"
+        },
+        {
+          "id": "opt-3",
+          "label": "Deniz etkisi iç kesimlere sokulabilir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Kısa mesafede iklim çeşitliliği artabilir"
+        }
+      ],
+      "prompt": "Karadeniz’de dağlar kıyıya paralel uzanır. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.turkey-landforms.relief.interpret"
+      ],
+      "tag": "COĞRAFYA · YÜKSELTİ VE DAĞLARIN UZANIŞI"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 3,
+      "explanation": "Ege’de dağlar kıyıya dik uzanır ile deniz etkisi iç kesimlere sokulabilir arasında doğrudan bir coğrafi ilişki vardır.",
+      "id": "exercise.geography.turkey-landforms.relief.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.turkey-landforms.relief.interpret"
+      ],
+      "statement": "Ege’de dağlar kıyıya dik uzanır; bunun sonucunda deniz etkisi iç kesimlere sokulabilir.",
+      "tag": "COĞRAFYA · YÜKSELTİ VE DAĞLARIN UZANIŞI"
+    },
+    {
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "Ortalama yükselti genel olarak artar"
+        },
+        {
+          "id": "w-2",
+          "label": "Kıyı ile iç kesimler arasında ulaşım zorlaşır"
+        },
+        {
+          "id": "w-3",
+          "label": "Deniz etkisi iç kesimlere sokulabilir"
+        },
+        {
+          "id": "w-4",
+          "label": "Kısa mesafede iklim çeşitliliği artabilir"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "Yükselti ve engebe fazladır koşulunun beklenen sonucu “Kısa mesafede iklim çeşitliliği artabilir” ilişkisidir.",
+      "hint": "Yükselti ve engebe fazladır",
+      "id": "exercise.geography.turkey-landforms.relief.001.blank01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.turkey-landforms.relief.interpret"
+      ],
+      "solutionTokenIds": [
+        "w-4"
+      ],
+      "title": "Yükselti ve engebe fazladır durumunda sonuç"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Her koşul, kendisinden beklenen özgün coğrafi sonuçla eşleştirilir; aynı sonuç iki kez kullanılmaz.",
+      "id": "exercise.geography.turkey-landforms.relief.001.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Türkiye’de doğuya gidilir",
+          "right": "Ortalama yükselti genel olarak artar"
+        },
+        {
+          "id": "pair-2",
+          "left": "Karadeniz’de dağlar kıyıya paralel uzanır",
+          "right": "Kıyı ile iç kesimler arasında ulaşım zorlaşır"
+        },
+        {
+          "id": "pair-3",
+          "left": "Ege’de dağlar kıyıya dik uzanır",
+          "right": "Deniz etkisi iç kesimlere sokulabilir"
+        },
+        {
+          "id": "pair-4",
+          "left": "Yükselti ve engebe fazladır",
+          "right": "Kısa mesafede iklim çeşitliliği artabilir"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.turkey-landforms.relief.interpret"
+      ],
+      "subtitle": "Koşulu doğru coğrafi sonuçla birleştir.",
+      "tag": "COĞRAFYA · YÜKSELTİ VE DAĞLARIN UZANIŞI",
+      "title": "İlişkiyi eşleştir"
+    },
+    {
+      "cards": [
+        {
+          "back": "Ortalama yükselti genel olarak artar",
+          "front": "Türkiye’de doğuya gidilir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-1"
+        },
+        {
+          "back": "Kıyı ile iç kesimler arasında ulaşım zorlaşır",
+          "front": "Karadeniz’de dağlar kıyıya paralel uzanır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-2"
+        },
+        {
+          "back": "Deniz etkisi iç kesimlere sokulabilir",
+          "front": "Ege’de dağlar kıyıya dik uzanır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-3"
+        },
+        {
+          "back": "Kısa mesafede iklim çeşitliliği artabilir",
+          "front": "Yükselti ve engebe fazladır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-4"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Kartlar temel ilişkileri kısa tekrar için özetler; puanlanan skill coverage hesabına katılmaz.",
+      "id": "exercise.geography.turkey-landforms.relief.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.turkey-landforms.relief.interpret"
+      ],
+      "tag": "COĞRAFYA · YÜKSELTİ VE DAĞLARIN UZANIŞI"
+    },
+    {
+      "correctOptionId": "opt-1",
+      "difficulty": 2,
+      "explanation": "Geniş ve verimli alüvyal ova vardır durumunda tarım ve yerleşme yoğunlaşabilir. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.turkey-landforms.plains-rivers.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Tarım ve yerleşme yoğunlaşabilir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Hidroelektrik potansiyel artabilir"
+        },
+        {
+          "id": "opt-3",
+          "label": "Büyükbaş hayvancılık desteklenebilir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Ulaşımda yararlanma zorlaşır"
+        }
+      ],
+      "prompt": "Geniş ve verimli alüvyal ova vardır. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.turkey-landforms.plains-rivers.interpret"
+      ],
+      "tag": "COĞRAFYA · OVALAR, PLATOLAR VE AKARSULAR"
+    },
+    {
+      "correctOptionId": "opt-2",
+      "difficulty": 4,
+      "explanation": "Akarsu eğimi ve akış hızı fazladır durumunda hidroelektrik potansiyel artabilir. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.turkey-landforms.plains-rivers.001.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Tarım ve yerleşme yoğunlaşabilir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Hidroelektrik potansiyel artabilir"
+        },
+        {
+          "id": "opt-3",
+          "label": "Büyükbaş hayvancılık desteklenebilir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Ulaşımda yararlanma zorlaşır"
+        }
+      ],
+      "prompt": "Akarsu eğimi ve akış hızı fazladır. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.turkey-landforms.plains-rivers.interpret"
+      ],
+      "tag": "COĞRAFYA · OVALAR, PLATOLAR VE AKARSULAR"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 3,
+      "explanation": "Yüksek plato çayırlarla kaplıdır ile büyükbaş hayvancılık desteklenebilir arasında doğrudan bir coğrafi ilişki vardır.",
+      "id": "exercise.geography.turkey-landforms.plains-rivers.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.turkey-landforms.plains-rivers.interpret"
+      ],
+      "statement": "Yüksek plato çayırlarla kaplıdır; bunun sonucunda büyükbaş hayvancılık desteklenebilir.",
+      "tag": "COĞRAFYA · OVALAR, PLATOLAR VE AKARSULAR"
+    },
+    {
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "Tarım ve yerleşme yoğunlaşabilir"
+        },
+        {
+          "id": "w-2",
+          "label": "Hidroelektrik potansiyel artabilir"
+        },
+        {
+          "id": "w-3",
+          "label": "Büyükbaş hayvancılık desteklenebilir"
+        },
+        {
+          "id": "w-4",
+          "label": "Ulaşımda yararlanma zorlaşır"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "Akarsuların rejimi düzensizdir koşulunun beklenen sonucu “Ulaşımda yararlanma zorlaşır” ilişkisidir.",
+      "hint": "Akarsuların rejimi düzensizdir",
+      "id": "exercise.geography.turkey-landforms.plains-rivers.001.blank01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.turkey-landforms.plains-rivers.interpret"
+      ],
+      "solutionTokenIds": [
+        "w-4"
+      ],
+      "title": "Akarsuların rejimi düzensizdir durumunda sonuç"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Her koşul, kendisinden beklenen özgün coğrafi sonuçla eşleştirilir; aynı sonuç iki kez kullanılmaz.",
+      "id": "exercise.geography.turkey-landforms.plains-rivers.001.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Geniş ve verimli alüvyal ova vardır",
+          "right": "Tarım ve yerleşme yoğunlaşabilir"
+        },
+        {
+          "id": "pair-2",
+          "left": "Akarsu eğimi ve akış hızı fazladır",
+          "right": "Hidroelektrik potansiyel artabilir"
+        },
+        {
+          "id": "pair-3",
+          "left": "Yüksek plato çayırlarla kaplıdır",
+          "right": "Büyükbaş hayvancılık desteklenebilir"
+        },
+        {
+          "id": "pair-4",
+          "left": "Akarsuların rejimi düzensizdir",
+          "right": "Ulaşımda yararlanma zorlaşır"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.turkey-landforms.plains-rivers.interpret"
+      ],
+      "subtitle": "Koşulu doğru coğrafi sonuçla birleştir.",
+      "tag": "COĞRAFYA · OVALAR, PLATOLAR VE AKARSULAR",
+      "title": "İlişkiyi eşleştir"
+    },
+    {
+      "cards": [
+        {
+          "back": "Tarım ve yerleşme yoğunlaşabilir",
+          "front": "Geniş ve verimli alüvyal ova vardır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-1"
+        },
+        {
+          "back": "Hidroelektrik potansiyel artabilir",
+          "front": "Akarsu eğimi ve akış hızı fazladır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-2"
+        },
+        {
+          "back": "Büyükbaş hayvancılık desteklenebilir",
+          "front": "Yüksek plato çayırlarla kaplıdır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-3"
+        },
+        {
+          "back": "Ulaşımda yararlanma zorlaşır",
+          "front": "Akarsuların rejimi düzensizdir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-4"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Kartlar temel ilişkileri kısa tekrar için özetler; puanlanan skill coverage hesabına katılmaz.",
+      "id": "exercise.geography.turkey-landforms.plains-rivers.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.turkey-landforms.plains-rivers.interpret"
+      ],
+      "tag": "COĞRAFYA · OVALAR, PLATOLAR VE AKARSULAR"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.geography.turkey-landforms.relief.001.mcq01",
+        "exercise.geography.turkey-landforms.relief.001.mcq02",
+        "exercise.geography.turkey-landforms.relief.001.tf01",
+        "exercise.geography.turkey-landforms.relief.001.blank01",
+        "exercise.geography.turkey-landforms.relief.001.match01",
+        "exercise.geography.turkey-landforms.relief.001.card01"
+      ],
+      "id": "lesson.geography.turkey-landforms.relief.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Türkiye’nin yükselti ve dağ uzanışı özelliklerinden iklim ve ulaşım sonuçları çıkarır.",
+      "title": "Yükselti ve Dağların Uzanışı",
+      "topicId": "tyt.geography.turkey-landforms.relief"
+    },
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.geography.turkey-landforms.plains-rivers.001.mcq01",
+        "exercise.geography.turkey-landforms.plains-rivers.001.mcq02",
+        "exercise.geography.turkey-landforms.plains-rivers.001.tf01",
+        "exercise.geography.turkey-landforms.plains-rivers.001.blank01",
+        "exercise.geography.turkey-landforms.plains-rivers.001.match01",
+        "exercise.geography.turkey-landforms.plains-rivers.001.card01"
+      ],
+      "id": "lesson.geography.turkey-landforms.plains-rivers.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Türkiye’nin yer şekillerini tarım, enerji ve ulaşım olanaklarıyla ilişkilendirir.",
+      "title": "Ovalar, Platolar ve Akarsular",
+      "topicId": "tyt.geography.turkey-landforms.plains-rivers"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.geography.turkey-landforms.01",
+      "kind": "lesson",
+      "lessonId": "lesson.geography.turkey-landforms.relief.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.geography.settlement.02"
+      ],
+      "title": "Yükselti ve Dağların Uzanışı",
+      "unitId": "tyt.geography.turkey-landforms"
+    },
+    {
+      "id": "path.geography.turkey-landforms.02",
+      "kind": "practice",
+      "lessonId": "lesson.geography.turkey-landforms.plains-rivers.001",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.geography.turkey-landforms.01"
+      ],
+      "title": "Ovalar, Platolar ve Akarsular Uygulaması",
+      "unitId": "tyt.geography.turkey-landforms"
+    }
+  ],
+  "skills": [
+    {
+      "description": "Türkiye’nin yükselti ve dağ uzanışı özelliklerinden iklim ve ulaşım sonuçları çıkarır.",
+      "id": "skill.geography.turkey-landforms.relief.interpret",
+      "title": "Türkiye’nin yükselti ve dağ uzanışı özelliklerinden iklim ve ulaşım sonuçları çıkarır.",
+      "topicId": "tyt.geography.turkey-landforms.relief"
+    },
+    {
+      "description": "Türkiye’nin yer şekillerini tarım, enerji ve ulaşım olanaklarıyla ilişkilendirir.",
+      "id": "skill.geography.turkey-landforms.plains-rivers.interpret",
+      "title": "Türkiye’nin yer şekillerini tarım, enerji ve ulaşım olanaklarıyla ilişkilendirir.",
+      "topicId": "tyt.geography.turkey-landforms.plains-rivers"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.geography.turkey-landforms.relief"
+      ],
+      "id": "tyt.geography.turkey-landforms.relief",
+      "skillIds": [
+        "skill.geography.turkey-landforms.relief.interpret"
+      ],
+      "title": "Yükselti ve Dağların Uzanışı",
+      "unitId": "tyt.geography.turkey-landforms"
+    },
+    {
+      "conceptIds": [
+        "concept.geography.turkey-landforms.plains-rivers"
+      ],
+      "id": "tyt.geography.turkey-landforms.plains-rivers",
+      "skillIds": [
+        "skill.geography.turkey-landforms.plains-rivers.interpret"
+      ],
+      "title": "Ovalar, Platolar ve Akarsular",
+      "unitId": "tyt.geography.turkey-landforms"
+    }
+  ],
+  "unitId": "tyt.geography.turkey-landforms"
+}

@@ -2,7 +2,7 @@ import { useRouter } from 'expo-router';
 import { useState } from 'react';
 
 import { homePreviewData, type HomeViewModel } from '@/modules/home/model/home-view-model';
-import { HomeScreen, type ExamFilter } from '@/modules/home/ui/home-screen';
+import { HomeScreen } from '@/modules/home/ui/home-screen';
 import { useHearts } from '@/modules/hearts/application/hearts-store';
 import { useLessonSession } from '@/modules/learning/application/lesson-session-store';
 import type { DailyPlan } from '@/modules/learning/domain/daily-plan';
@@ -65,9 +65,8 @@ function DurableHomeRoute() {
 
 function HomeShell({ plan, viewModel }: { plan: DailyPlan | null; viewModel: HomeViewModel }) {
   const router = useRouter();
-  const { begin, beginDailyPlan, beginReview, resume } = useLessonSession();
+  const { begin, beginDailyPlan, resume } = useLessonSession();
   const onSelectTab = useTabNavigation('anasayfa');
-  const [exam, setExam] = useState<ExamFilter>('tyt');
   const [actionError, setActionError] = useState<Error | null>(null);
 
   if (actionError !== null) {
@@ -85,14 +84,10 @@ function HomeShell({ plan, viewModel }: { plan: DailyPlan | null; viewModel: Hom
 
   return (
     <HomeScreen
-      exam={exam}
-      onChangeExam={setExam}
       onContinue={(card) => {
         const open = async () => {
           if (card.action.kind === 'lesson') {
             begin(card.action.lessonId, card.action.pathNodeId);
-          } else if (card.action.kind === 'review') {
-            beginReview(card.action.skillId);
           } else if (!(await resume(card.action.sessionId))) {
             throw new Error('Etkin çalışma artık bulunamıyor.');
           }
@@ -104,7 +99,6 @@ function HomeShell({ plan, viewModel }: { plan: DailyPlan | null; viewModel: Hom
         });
       }}
       onOpenLeague={() => router.replace('/lig')}
-      onOpenSubject={(subjectId) => router.push(`/ogren/${subjectId}`)}
       onSelectTab={onSelectTab}
       onStartDailyPlan={() => {
         try {
@@ -122,7 +116,6 @@ function HomeShell({ plan, viewModel }: { plan: DailyPlan | null; viewModel: Hom
           setActionError(cause instanceof Error ? cause : new Error(String(cause)));
         }
       }}
-      showExamToggle={APP_MODE === 'designPreview'}
       viewModel={viewModel}
     />
   );

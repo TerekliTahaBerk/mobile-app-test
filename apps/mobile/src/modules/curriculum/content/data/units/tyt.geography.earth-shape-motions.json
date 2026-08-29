@@ -1,0 +1,531 @@
+{
+  "concepts": [
+    {
+      "definition": "Paralellerin çevresi kısalır",
+      "id": "concept.geography.earth-shape-motions.shape-daily",
+      "term": "Ekvator’dan kutuplara gidilir",
+      "topicId": "tyt.geography.earth-shape-motions.shape-daily"
+    },
+    {
+      "definition": "Mevsimler oluşur",
+      "id": "concept.geography.earth-shape-motions.annual-seasons",
+      "term": "Eksen eğikliği ile yıllık hareket birlikte etki eder",
+      "topicId": "tyt.geography.earth-shape-motions.annual-seasons"
+    }
+  ],
+  "exercises": [
+    {
+      "correctOptionId": "opt-1",
+      "difficulty": 2,
+      "explanation": "Ekvator’dan kutuplara gidilir durumunda paralellerin çevresi kısalır. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.earth-shape-motions.shape-daily.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Paralellerin çevresi kısalır"
+        },
+        {
+          "id": "opt-2",
+          "label": "Doğudaki merkezlerde yerel saat ileridir"
+        },
+        {
+          "id": "opt-3",
+          "label": "Günlük hareket etkilidir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Dünya’nın küresel şekli etkilidir"
+        }
+      ],
+      "prompt": "Ekvator’dan kutuplara gidilir. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.earth-shape-motions.shape-daily.interpret"
+      ],
+      "tag": "COĞRAFYA · DÜNYA’NIN ŞEKLİ VE GÜNLÜK HAREKET"
+    },
+    {
+      "correctOptionId": "opt-2",
+      "difficulty": 4,
+      "explanation": "Dünya batıdan doğuya döner durumunda doğudaki merkezlerde yerel saat ileridir. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.earth-shape-motions.shape-daily.001.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Paralellerin çevresi kısalır"
+        },
+        {
+          "id": "opt-2",
+          "label": "Doğudaki merkezlerde yerel saat ileridir"
+        },
+        {
+          "id": "opt-3",
+          "label": "Günlük hareket etkilidir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Dünya’nın küresel şekli etkilidir"
+        }
+      ],
+      "prompt": "Dünya batıdan doğuya döner. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.earth-shape-motions.shape-daily.interpret"
+      ],
+      "tag": "COĞRAFYA · DÜNYA’NIN ŞEKLİ VE GÜNLÜK HAREKET"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 3,
+      "explanation": "Gece ve gündüz birbirini izler ile günlük hareket etkilidir arasında doğrudan bir coğrafi ilişki vardır.",
+      "id": "exercise.geography.earth-shape-motions.shape-daily.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.earth-shape-motions.shape-daily.interpret"
+      ],
+      "statement": "Gece ve gündüz birbirini izler; bunun sonucunda günlük hareket etkilidir.",
+      "tag": "COĞRAFYA · DÜNYA’NIN ŞEKLİ VE GÜNLÜK HAREKET"
+    },
+    {
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "Paralellerin çevresi kısalır"
+        },
+        {
+          "id": "w-2",
+          "label": "Doğudaki merkezlerde yerel saat ileridir"
+        },
+        {
+          "id": "w-3",
+          "label": "Günlük hareket etkilidir"
+        },
+        {
+          "id": "w-4",
+          "label": "Dünya’nın küresel şekli etkilidir"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "Güneş ışınlarının düşme açısı enleme göre değişir koşulunun beklenen sonucu “Dünya’nın küresel şekli etkilidir” ilişkisidir.",
+      "hint": "Güneş ışınlarının düşme açısı enleme göre değişir",
+      "id": "exercise.geography.earth-shape-motions.shape-daily.001.blank01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.earth-shape-motions.shape-daily.interpret"
+      ],
+      "solutionTokenIds": [
+        "w-4"
+      ],
+      "title": "Güneş ışınlarının düşme açısı enleme göre değişir durumunda sonuç"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Her koşul, kendisinden beklenen özgün coğrafi sonuçla eşleştirilir; aynı sonuç iki kez kullanılmaz.",
+      "id": "exercise.geography.earth-shape-motions.shape-daily.001.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Ekvator’dan kutuplara gidilir",
+          "right": "Paralellerin çevresi kısalır"
+        },
+        {
+          "id": "pair-2",
+          "left": "Dünya batıdan doğuya döner",
+          "right": "Doğudaki merkezlerde yerel saat ileridir"
+        },
+        {
+          "id": "pair-3",
+          "left": "Gece ve gündüz birbirini izler",
+          "right": "Günlük hareket etkilidir"
+        },
+        {
+          "id": "pair-4",
+          "left": "Güneş ışınlarının düşme açısı enleme göre değişir",
+          "right": "Dünya’nın küresel şekli etkilidir"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.earth-shape-motions.shape-daily.interpret"
+      ],
+      "subtitle": "Koşulu doğru coğrafi sonuçla birleştir.",
+      "tag": "COĞRAFYA · DÜNYA’NIN ŞEKLİ VE GÜNLÜK HAREKET",
+      "title": "İlişkiyi eşleştir"
+    },
+    {
+      "cards": [
+        {
+          "back": "Paralellerin çevresi kısalır",
+          "front": "Ekvator’dan kutuplara gidilir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-1"
+        },
+        {
+          "back": "Doğudaki merkezlerde yerel saat ileridir",
+          "front": "Dünya batıdan doğuya döner",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-2"
+        },
+        {
+          "back": "Günlük hareket etkilidir",
+          "front": "Gece ve gündüz birbirini izler",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-3"
+        },
+        {
+          "back": "Dünya’nın küresel şekli etkilidir",
+          "front": "Güneş ışınlarının düşme açısı enleme göre değişir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-4"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Kartlar temel ilişkileri kısa tekrar için özetler; puanlanan skill coverage hesabına katılmaz.",
+      "id": "exercise.geography.earth-shape-motions.shape-daily.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.earth-shape-motions.shape-daily.interpret"
+      ],
+      "tag": "COĞRAFYA · DÜNYA’NIN ŞEKLİ VE GÜNLÜK HAREKET"
+    },
+    {
+      "correctOptionId": "opt-1",
+      "difficulty": 2,
+      "explanation": "Eksen eğikliği ile yıllık hareket birlikte etki eder durumunda mevsimler oluşur. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.earth-shape-motions.annual-seasons.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Mevsimler oluşur"
+        },
+        {
+          "id": "opt-2",
+          "label": "Kuzeyde yılın en uzun gündüzü yaşanır"
+        },
+        {
+          "id": "opt-3",
+          "label": "Gece ve gündüz süreleri eşitlenir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Öğle gölge boyu kısalır"
+        }
+      ],
+      "prompt": "Eksen eğikliği ile yıllık hareket birlikte etki eder. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.earth-shape-motions.annual-seasons.interpret"
+      ],
+      "tag": "COĞRAFYA · YILLIK HAREKET VE MEVSİMLER"
+    },
+    {
+      "correctOptionId": "opt-2",
+      "difficulty": 4,
+      "explanation": "21 Haziran’da Kuzey Yarım Küre Güneş’e dönüktür durumunda kuzeyde yılın en uzun gündüzü yaşanır. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.earth-shape-motions.annual-seasons.001.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Mevsimler oluşur"
+        },
+        {
+          "id": "opt-2",
+          "label": "Kuzeyde yılın en uzun gündüzü yaşanır"
+        },
+        {
+          "id": "opt-3",
+          "label": "Gece ve gündüz süreleri eşitlenir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Öğle gölge boyu kısalır"
+        }
+      ],
+      "prompt": "21 Haziran’da Kuzey Yarım Küre Güneş’e dönüktür. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.earth-shape-motions.annual-seasons.interpret"
+      ],
+      "tag": "COĞRAFYA · YILLIK HAREKET VE MEVSİMLER"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 3,
+      "explanation": "Ekinoks tarihinde aydınlanma çemberi kutuplardan geçer ile gece ve gündüz süreleri eşitlenir arasında doğrudan bir coğrafi ilişki vardır.",
+      "id": "exercise.geography.earth-shape-motions.annual-seasons.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.earth-shape-motions.annual-seasons.interpret"
+      ],
+      "statement": "Ekinoks tarihinde aydınlanma çemberi kutuplardan geçer; bunun sonucunda gece ve gündüz süreleri eşitlenir.",
+      "tag": "COĞRAFYA · YILLIK HAREKET VE MEVSİMLER"
+    },
+    {
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "Mevsimler oluşur"
+        },
+        {
+          "id": "w-2",
+          "label": "Kuzeyde yılın en uzun gündüzü yaşanır"
+        },
+        {
+          "id": "w-3",
+          "label": "Gece ve gündüz süreleri eşitlenir"
+        },
+        {
+          "id": "w-4",
+          "label": "Öğle gölge boyu kısalır"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "Güneş ışınları daha büyük açıyla gelir koşulunun beklenen sonucu “Öğle gölge boyu kısalır” ilişkisidir.",
+      "hint": "Güneş ışınları daha büyük açıyla gelir",
+      "id": "exercise.geography.earth-shape-motions.annual-seasons.001.blank01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.earth-shape-motions.annual-seasons.interpret"
+      ],
+      "solutionTokenIds": [
+        "w-4"
+      ],
+      "title": "Güneş ışınları daha büyük açıyla gelir durumunda sonuç"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Her koşul, kendisinden beklenen özgün coğrafi sonuçla eşleştirilir; aynı sonuç iki kez kullanılmaz.",
+      "id": "exercise.geography.earth-shape-motions.annual-seasons.001.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Eksen eğikliği ile yıllık hareket birlikte etki eder",
+          "right": "Mevsimler oluşur"
+        },
+        {
+          "id": "pair-2",
+          "left": "21 Haziran’da Kuzey Yarım Küre Güneş’e dönüktür",
+          "right": "Kuzeyde yılın en uzun gündüzü yaşanır"
+        },
+        {
+          "id": "pair-3",
+          "left": "Ekinoks tarihinde aydınlanma çemberi kutuplardan geçer",
+          "right": "Gece ve gündüz süreleri eşitlenir"
+        },
+        {
+          "id": "pair-4",
+          "left": "Güneş ışınları daha büyük açıyla gelir",
+          "right": "Öğle gölge boyu kısalır"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.earth-shape-motions.annual-seasons.interpret"
+      ],
+      "subtitle": "Koşulu doğru coğrafi sonuçla birleştir.",
+      "tag": "COĞRAFYA · YILLIK HAREKET VE MEVSİMLER",
+      "title": "İlişkiyi eşleştir"
+    },
+    {
+      "cards": [
+        {
+          "back": "Mevsimler oluşur",
+          "front": "Eksen eğikliği ile yıllık hareket birlikte etki eder",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-1"
+        },
+        {
+          "back": "Kuzeyde yılın en uzun gündüzü yaşanır",
+          "front": "21 Haziran’da Kuzey Yarım Küre Güneş’e dönüktür",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-2"
+        },
+        {
+          "back": "Gece ve gündüz süreleri eşitlenir",
+          "front": "Ekinoks tarihinde aydınlanma çemberi kutuplardan geçer",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-3"
+        },
+        {
+          "back": "Öğle gölge boyu kısalır",
+          "front": "Güneş ışınları daha büyük açıyla gelir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-4"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Kartlar temel ilişkileri kısa tekrar için özetler; puanlanan skill coverage hesabına katılmaz.",
+      "id": "exercise.geography.earth-shape-motions.annual-seasons.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.earth-shape-motions.annual-seasons.interpret"
+      ],
+      "tag": "COĞRAFYA · YILLIK HAREKET VE MEVSİMLER"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.geography.earth-shape-motions.shape-daily.001.mcq01",
+        "exercise.geography.earth-shape-motions.shape-daily.001.mcq02",
+        "exercise.geography.earth-shape-motions.shape-daily.001.tf01",
+        "exercise.geography.earth-shape-motions.shape-daily.001.blank01",
+        "exercise.geography.earth-shape-motions.shape-daily.001.match01",
+        "exercise.geography.earth-shape-motions.shape-daily.001.card01"
+      ],
+      "id": "lesson.geography.earth-shape-motions.shape-daily.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Dünya’nın şekli ile günlük hareketinin coğrafi sonuçlarını ayırt eder.",
+      "title": "Dünya’nın Şekli ve Günlük Hareket",
+      "topicId": "tyt.geography.earth-shape-motions.shape-daily"
+    },
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.geography.earth-shape-motions.annual-seasons.001.mcq01",
+        "exercise.geography.earth-shape-motions.annual-seasons.001.mcq02",
+        "exercise.geography.earth-shape-motions.annual-seasons.001.tf01",
+        "exercise.geography.earth-shape-motions.annual-seasons.001.blank01",
+        "exercise.geography.earth-shape-motions.annual-seasons.001.match01",
+        "exercise.geography.earth-shape-motions.annual-seasons.001.card01"
+      ],
+      "id": "lesson.geography.earth-shape-motions.annual-seasons.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Eksen eğikliği ve yıllık hareketin mevsim, aydınlanma ve süre sonuçlarını yorumlar.",
+      "title": "Yıllık Hareket ve Mevsimler",
+      "topicId": "tyt.geography.earth-shape-motions.annual-seasons"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.geography.earth-shape-motions.01",
+      "kind": "lesson",
+      "lessonId": "lesson.geography.earth-shape-motions.shape-daily.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.geography.nature-human.02"
+      ],
+      "title": "Dünya’nın Şekli ve Günlük Hareket",
+      "unitId": "tyt.geography.earth-shape-motions"
+    },
+    {
+      "id": "path.geography.earth-shape-motions.02",
+      "kind": "practice",
+      "lessonId": "lesson.geography.earth-shape-motions.annual-seasons.001",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.geography.earth-shape-motions.01"
+      ],
+      "title": "Yıllık Hareket ve Mevsimler Uygulaması",
+      "unitId": "tyt.geography.earth-shape-motions"
+    }
+  ],
+  "skills": [
+    {
+      "description": "Dünya’nın şekli ile günlük hareketinin coğrafi sonuçlarını ayırt eder.",
+      "id": "skill.geography.earth-shape-motions.shape-daily.interpret",
+      "title": "Dünya’nın şekli ile günlük hareketinin coğrafi sonuçlarını ayırt eder.",
+      "topicId": "tyt.geography.earth-shape-motions.shape-daily"
+    },
+    {
+      "description": "Eksen eğikliği ve yıllık hareketin mevsim, aydınlanma ve süre sonuçlarını yorumlar.",
+      "id": "skill.geography.earth-shape-motions.annual-seasons.interpret",
+      "title": "Eksen eğikliği ve yıllık hareketin mevsim, aydınlanma ve süre sonuçlarını yorumlar.",
+      "topicId": "tyt.geography.earth-shape-motions.annual-seasons"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.geography.earth-shape-motions.shape-daily"
+      ],
+      "id": "tyt.geography.earth-shape-motions.shape-daily",
+      "skillIds": [
+        "skill.geography.earth-shape-motions.shape-daily.interpret"
+      ],
+      "title": "Dünya’nın Şekli ve Günlük Hareket",
+      "unitId": "tyt.geography.earth-shape-motions"
+    },
+    {
+      "conceptIds": [
+        "concept.geography.earth-shape-motions.annual-seasons"
+      ],
+      "id": "tyt.geography.earth-shape-motions.annual-seasons",
+      "skillIds": [
+        "skill.geography.earth-shape-motions.annual-seasons.interpret"
+      ],
+      "title": "Yıllık Hareket ve Mevsimler",
+      "unitId": "tyt.geography.earth-shape-motions"
+    }
+  ],
+  "unitId": "tyt.geography.earth-shape-motions"
+}

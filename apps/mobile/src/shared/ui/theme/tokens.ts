@@ -276,6 +276,14 @@ const colors = {
       soft: palette.chemistrySoft,
       border: palette.chemistryBorder,
     },
+    religion: {
+      primary: '#527D68',
+      depth: '#365846',
+      ink: '#3F6753',
+      deep: '#294638',
+      soft: '#EAF2ED',
+      border: '#D3E3D9',
+    },
   },
 } as const;
 

@@ -86,7 +86,17 @@ The project intentionally carries **no schema-validation dependency**. The bundl
 
 ## Current state
 
-The bundle contains 11 original Tarih lessons across 3 units and 11 chained path
-nodes, including practice and checkpoint nodes. Every lesson and exercise is
-`draft`; none is production academic content. Catalogue entries without units
-are not usable curriculum and production screens do not present them as such.
+The bundle contains the 25-unit 2027 TYT Tarih draft: 49 topics, 96 measurable
+skills, 55 lessons, 55 chained path nodes and 331 exercises. Every lesson and
+exercise is `draft`; none is production academic content. The three original
+unit IDs and their authored records were retained, while the curriculum order
+and cross-unit prerequisites now follow the 2027 draft scope. Catalogue entries
+without units are not usable curriculum and production screens do not present
+them as such.
+
+The bundle also contains a 15-unit 2027 TYT Din Kültürü ve Ahlak Bilgisi
+AI-assisted draft under the stable subject id `tyt.religion`: 45 topics, 90
+measurable skills, 45 lessons, 45 chained path nodes and 315 exercises. Direct
+verse/hadith quotations and numbered source references are intentionally absent
+from this first draft. Every lesson and exercise remains `draft` until a DKAB
+teacher or theology subject-matter reviewer approves it.

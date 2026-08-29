@@ -1,0 +1,862 @@
+{
+  "unitId": "tyt.religion.prophet-life",
+  "topics": [
+    {
+      "id": "tyt.religion.prophet-life.periods-message",
+      "unitId": "tyt.religion.prophet-life",
+      "title": "Hayatının Temel Dönemleri ve Tebliğ",
+      "skillIds": [
+        "skill.religion.prophet-life.periods-message.interpret",
+        "skill.religion.prophet-life.periods-message.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.prophet-life.periods-message.teblig"
+      ]
+    },
+    {
+      "id": "tyt.religion.prophet-life.social-relations",
+      "unitId": "tyt.religion.prophet-life",
+      "title": "Toplumsal İlişkiler ve İstişare",
+      "skillIds": [
+        "skill.religion.prophet-life.social-relations.interpret",
+        "skill.religion.prophet-life.social-relations.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.prophet-life.social-relations.istisare"
+      ]
+    },
+    {
+      "id": "tyt.religion.prophet-life.exemplary-character",
+      "unitId": "tyt.religion.prophet-life",
+      "title": "Güvenilirlik, Sabır ve Örnek Kişilik",
+      "skillIds": [
+        "skill.religion.prophet-life.exemplary-character.interpret",
+        "skill.religion.prophet-life.exemplary-character.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.prophet-life.exemplary-character.guvenilirlik"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "skill.religion.prophet-life.periods-message.interpret",
+      "title": "Mekke ve Medine dönemlerinin temel özelliklerini ayırt eder.",
+      "description": "Mekke ve Medine dönemlerinin temel özelliklerini ayırt eder.",
+      "topicId": "tyt.religion.prophet-life.periods-message"
+    },
+    {
+      "id": "skill.religion.prophet-life.periods-message.distinguish",
+      "title": "Hicretin yalnız yer değiştirme olmadığını toplumsal sonuçlarıyla yorumlar.",
+      "description": "Hicretin yalnız yer değiştirme olmadığını toplumsal sonuçlarıyla yorumlar.",
+      "topicId": "tyt.religion.prophet-life.periods-message"
+    },
+    {
+      "id": "skill.religion.prophet-life.social-relations.interpret",
+      "title": "İstişarenin ortak sorumluluğa katkısını yorumlar.",
+      "description": "İstişarenin ortak sorumluluğa katkısını yorumlar.",
+      "topicId": "tyt.religion.prophet-life.social-relations"
+    },
+    {
+      "id": "skill.religion.prophet-life.social-relations.distinguish",
+      "title": "Adalet ve merhametin toplumsal ilişkilerdeki yansımasını çıkarır.",
+      "description": "Adalet ve merhametin toplumsal ilişkilerdeki yansımasını çıkarır.",
+      "topicId": "tyt.religion.prophet-life.social-relations"
+    },
+    {
+      "id": "skill.religion.prophet-life.exemplary-character.interpret",
+      "title": "Hz. Muhammed’in örnekliğini davranış ilkeleri üzerinden yorumlar.",
+      "description": "Hz. Muhammed’in örnekliğini davranış ilkeleri üzerinden yorumlar.",
+      "topicId": "tyt.religion.prophet-life.exemplary-character"
+    },
+    {
+      "id": "skill.religion.prophet-life.exemplary-character.distinguish",
+      "title": "Sabır ile pasif kalmayı birbirinden ayırt eder.",
+      "description": "Sabır ile pasif kalmayı birbirinden ayırt eder.",
+      "topicId": "tyt.religion.prophet-life.exemplary-character"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "concept.religion.prophet-life.periods-message.teblig",
+      "term": "tebliğ",
+      "definition": "peygamberin kendisine bildirilen ilahî mesajı insanlara ulaştırma görevi",
+      "topicId": "tyt.religion.prophet-life.periods-message"
+    },
+    {
+      "id": "concept.religion.prophet-life.social-relations.istisare",
+      "term": "istişare",
+      "definition": "karar öncesinde ilgili kişilerin görüşlerine başvurma",
+      "topicId": "tyt.religion.prophet-life.social-relations"
+    },
+    {
+      "id": "concept.religion.prophet-life.exemplary-character.guvenilirlik",
+      "term": "güvenilirlik",
+      "definition": "söz ve davranışlarda güvene layık olma",
+      "topicId": "tyt.religion.prophet-life.exemplary-character"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "lesson.religion.prophet-life.periods-message.001",
+      "topicId": "tyt.religion.prophet-life.periods-message",
+      "title": "Hayatının Temel Dönemleri ve Tebliğ",
+      "subtitle": "Mekke ve Medine dönemlerinin temel özelliklerini ayırt eder. Hicretin yalnız yer değiştirme olmadığını toplumsal sonuçlarıyla yorumlar.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.prophet-life.periods-message.001.card01",
+        "exercise.religion.prophet-life.periods-message.001.mcq01",
+        "exercise.religion.prophet-life.periods-message.001.mcq02",
+        "exercise.religion.prophet-life.periods-message.001.mcq03",
+        "exercise.religion.prophet-life.periods-message.001.mcq04",
+        "exercise.religion.prophet-life.periods-message.001.tf01",
+        "exercise.religion.prophet-life.periods-message.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.religion.prophet-life.social-relations.001",
+      "topicId": "tyt.religion.prophet-life.social-relations",
+      "title": "Toplumsal İlişkiler ve İstişare",
+      "subtitle": "İstişarenin ortak sorumluluğa katkısını yorumlar. Adalet ve merhametin toplumsal ilişkilerdeki yansımasını çıkarır.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.prophet-life.social-relations.001.card01",
+        "exercise.religion.prophet-life.social-relations.001.mcq01",
+        "exercise.religion.prophet-life.social-relations.001.mcq02",
+        "exercise.religion.prophet-life.social-relations.001.mcq03",
+        "exercise.religion.prophet-life.social-relations.001.mcq04",
+        "exercise.religion.prophet-life.social-relations.001.tf01",
+        "exercise.religion.prophet-life.social-relations.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.religion.prophet-life.exemplary-character.001",
+      "topicId": "tyt.religion.prophet-life.exemplary-character",
+      "title": "Güvenilirlik, Sabır ve Örnek Kişilik",
+      "subtitle": "Hz. Muhammed’in örnekliğini davranış ilkeleri üzerinden yorumlar. Sabır ile pasif kalmayı birbirinden ayırt eder.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.prophet-life.exemplary-character.001.card01",
+        "exercise.religion.prophet-life.exemplary-character.001.mcq01",
+        "exercise.religion.prophet-life.exemplary-character.001.mcq02",
+        "exercise.religion.prophet-life.exemplary-character.001.mcq03",
+        "exercise.religion.prophet-life.exemplary-character.001.mcq04",
+        "exercise.religion.prophet-life.exemplary-character.001.tf01",
+        "exercise.religion.prophet-life.exemplary-character.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "id": "exercise.religion.prophet-life.periods-message.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "tebliğ, peygamberin kendisine bildirilen ilahî mesajı insanlara ulaştırma görevi.",
+      "skillIds": [
+        "skill.religion.prophet-life.periods-message.interpret",
+        "skill.religion.prophet-life.periods-message.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · HAYATININ TEMEL DÖNEMLERİ VE TEBLİĞ",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "tebliğ",
+          "back": "peygamberin kendisine bildirilen ilahî mesajı insanlara ulaştırma görevi",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.prophet-life.periods-message.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "tebliğ, peygamberin kendisine bildirilen ilahî mesajı insanlara ulaştırma görevi.",
+      "skillIds": [
+        "skill.religion.prophet-life.periods-message.interpret",
+        "skill.religion.prophet-life.periods-message.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · HAYATININ TEMEL DÖNEMLERİ VE TEBLİĞ",
+      "prompt": "“Peygamberin kendisine bildirilen ilahî mesajı insanlara ulaştırma görevi” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "tebliğ"
+        },
+        {
+          "id": "b",
+          "label": "istişare"
+        },
+        {
+          "id": "c",
+          "label": "güvenilirlik"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.prophet-life.periods-message.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada tebliğ kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.prophet-life.periods-message.interpret",
+        "skill.religion.prophet-life.periods-message.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · HAYATININ TEMEL DÖNEMLERİ VE TEBLİĞ",
+      "prompt": "Bir öğrenci tebliğ konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.prophet-life.periods-message.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Mekke ve Medine dönemlerinin temel özelliklerini ayırt eder. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.prophet-life.periods-message.interpret",
+        "skill.religion.prophet-life.periods-message.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · HAYATININ TEMEL DÖNEMLERİ VE TEBLİĞ",
+      "prompt": "Mekke ve Medine dönemlerinin temel özelliklerini ayırt eder. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.prophet-life.periods-message.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "Hicretin yalnız yer değiştirme olmadığını toplumsal sonuçlarıyla yorumlar. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.prophet-life.periods-message.interpret",
+        "skill.religion.prophet-life.periods-message.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · HAYATININ TEMEL DÖNEMLERİ VE TEBLİĞ",
+      "prompt": "Bir açıklama, tebliğ kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.prophet-life.periods-message.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. tebliğ, peygamberin kendisine bildirilen ilahî mesajı insanlara ulaştırma görevi; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.prophet-life.periods-message.interpret",
+        "skill.religion.prophet-life.periods-message.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · HAYATININ TEMEL DÖNEMLERİ VE TEBLİĞ",
+      "statement": "tebliğ kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.prophet-life.periods-message.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.prophet-life.periods-message.interpret",
+        "skill.religion.prophet-life.periods-message.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · HAYATININ TEMEL DÖNEMLERİ VE TEBLİĞ",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "tebliğ",
+          "right": "peygamberin kendisine bildirilen ilahî mesajı insanlara ulaştırma görevi"
+        },
+        {
+          "id": "p2",
+          "left": "istişare",
+          "right": "karar öncesinde ilgili kişilerin görüşlerine başvurma"
+        },
+        {
+          "id": "p3",
+          "left": "güvenilirlik",
+          "right": "söz ve davranışlarda güvene layık olma"
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.prophet-life.social-relations.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "istişare, karar öncesinde ilgili kişilerin görüşlerine başvurma.",
+      "skillIds": [
+        "skill.religion.prophet-life.social-relations.interpret",
+        "skill.religion.prophet-life.social-relations.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TOPLUMSAL İLİŞKİLER VE İSTİŞARE",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "istişare",
+          "back": "karar öncesinde ilgili kişilerin görüşlerine başvurma",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.prophet-life.social-relations.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "istişare, karar öncesinde ilgili kişilerin görüşlerine başvurma.",
+      "skillIds": [
+        "skill.religion.prophet-life.social-relations.interpret",
+        "skill.religion.prophet-life.social-relations.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TOPLUMSAL İLİŞKİLER VE İSTİŞARE",
+      "prompt": "“Karar öncesinde ilgili kişilerin görüşlerine başvurma” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "tebliğ"
+        },
+        {
+          "id": "b",
+          "label": "istişare"
+        },
+        {
+          "id": "c",
+          "label": "güvenilirlik"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "b"
+    },
+    {
+      "id": "exercise.religion.prophet-life.social-relations.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada istişare kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.prophet-life.social-relations.interpret",
+        "skill.religion.prophet-life.social-relations.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TOPLUMSAL İLİŞKİLER VE İSTİŞARE",
+      "prompt": "Bir öğrenci istişare konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.prophet-life.social-relations.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "İstişarenin ortak sorumluluğa katkısını yorumlar. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.prophet-life.social-relations.interpret",
+        "skill.religion.prophet-life.social-relations.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TOPLUMSAL İLİŞKİLER VE İSTİŞARE",
+      "prompt": "İstişarenin ortak sorumluluğa katkısını yorumlar. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.prophet-life.social-relations.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "Adalet ve merhametin toplumsal ilişkilerdeki yansımasını çıkarır. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.prophet-life.social-relations.interpret",
+        "skill.religion.prophet-life.social-relations.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TOPLUMSAL İLİŞKİLER VE İSTİŞARE",
+      "prompt": "Bir açıklama, istişare kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.prophet-life.social-relations.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. istişare, karar öncesinde ilgili kişilerin görüşlerine başvurma; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.prophet-life.social-relations.interpret",
+        "skill.religion.prophet-life.social-relations.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TOPLUMSAL İLİŞKİLER VE İSTİŞARE",
+      "statement": "istişare kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.prophet-life.social-relations.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.prophet-life.social-relations.interpret",
+        "skill.religion.prophet-life.social-relations.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TOPLUMSAL İLİŞKİLER VE İSTİŞARE",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "tebliğ",
+          "right": "peygamberin kendisine bildirilen ilahî mesajı insanlara ulaştırma görevi"
+        },
+        {
+          "id": "p2",
+          "left": "istişare",
+          "right": "karar öncesinde ilgili kişilerin görüşlerine başvurma"
+        },
+        {
+          "id": "p3",
+          "left": "güvenilirlik",
+          "right": "söz ve davranışlarda güvene layık olma"
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.prophet-life.exemplary-character.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "güvenilirlik, söz ve davranışlarda güvene layık olma.",
+      "skillIds": [
+        "skill.religion.prophet-life.exemplary-character.interpret",
+        "skill.religion.prophet-life.exemplary-character.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · GÜVENİLİRLİK, SABIR VE ÖRNEK KİŞİLİK",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "güvenilirlik",
+          "back": "söz ve davranışlarda güvene layık olma",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.prophet-life.exemplary-character.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "güvenilirlik, söz ve davranışlarda güvene layık olma.",
+      "skillIds": [
+        "skill.religion.prophet-life.exemplary-character.interpret",
+        "skill.religion.prophet-life.exemplary-character.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · GÜVENİLİRLİK, SABIR VE ÖRNEK KİŞİLİK",
+      "prompt": "“Söz ve davranışlarda güvene layık olma” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "tebliğ"
+        },
+        {
+          "id": "b",
+          "label": "istişare"
+        },
+        {
+          "id": "c",
+          "label": "güvenilirlik"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "c"
+    },
+    {
+      "id": "exercise.religion.prophet-life.exemplary-character.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada güvenilirlik kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.prophet-life.exemplary-character.interpret",
+        "skill.religion.prophet-life.exemplary-character.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · GÜVENİLİRLİK, SABIR VE ÖRNEK KİŞİLİK",
+      "prompt": "Bir öğrenci güvenilirlik konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.prophet-life.exemplary-character.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Hz. Muhammed’in örnekliğini davranış ilkeleri üzerinden yorumlar. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.prophet-life.exemplary-character.interpret",
+        "skill.religion.prophet-life.exemplary-character.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · GÜVENİLİRLİK, SABIR VE ÖRNEK KİŞİLİK",
+      "prompt": "Hz. Muhammed’in örnekliğini davranış ilkeleri üzerinden yorumlar. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.prophet-life.exemplary-character.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "Sabır ile pasif kalmayı birbirinden ayırt eder. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.prophet-life.exemplary-character.interpret",
+        "skill.religion.prophet-life.exemplary-character.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · GÜVENİLİRLİK, SABIR VE ÖRNEK KİŞİLİK",
+      "prompt": "Bir açıklama, güvenilirlik kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.prophet-life.exemplary-character.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. güvenilirlik, söz ve davranışlarda güvene layık olma; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.prophet-life.exemplary-character.interpret",
+        "skill.religion.prophet-life.exemplary-character.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · GÜVENİLİRLİK, SABIR VE ÖRNEK KİŞİLİK",
+      "statement": "güvenilirlik kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.prophet-life.exemplary-character.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.prophet-life.exemplary-character.interpret",
+        "skill.religion.prophet-life.exemplary-character.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · GÜVENİLİRLİK, SABIR VE ÖRNEK KİŞİLİK",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "tebliğ",
+          "right": "peygamberin kendisine bildirilen ilahî mesajı insanlara ulaştırma görevi"
+        },
+        {
+          "id": "p2",
+          "left": "istişare",
+          "right": "karar öncesinde ilgili kişilerin görüşlerine başvurma"
+        },
+        {
+          "id": "p3",
+          "left": "güvenilirlik",
+          "right": "söz ve davranışlarda güvene layık olma"
+        }
+      ]
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.religion.prophet-life.01",
+      "unitId": "tyt.religion.prophet-life",
+      "kind": "lesson",
+      "title": "Hayatının Temel Dönemleri ve Tebliğ",
+      "order": 1,
+      "lessonId": "lesson.religion.prophet-life.periods-message.001",
+      "prerequisiteIds": []
+    },
+    {
+      "id": "path.religion.prophet-life.02",
+      "unitId": "tyt.religion.prophet-life",
+      "kind": "lesson",
+      "title": "Toplumsal İlişkiler ve İstişare",
+      "order": 2,
+      "lessonId": "lesson.religion.prophet-life.social-relations.001",
+      "prerequisiteIds": [
+        "path.religion.prophet-life.01"
+      ]
+    },
+    {
+      "id": "path.religion.prophet-life.03",
+      "unitId": "tyt.religion.prophet-life",
+      "kind": "lesson",
+      "title": "Güvenilirlik, Sabır ve Örnek Kişilik",
+      "order": 3,
+      "lessonId": "lesson.religion.prophet-life.exemplary-character.001",
+      "prerequisiteIds": [
+        "path.religion.prophet-life.02"
+      ]
+    }
+  ]
+}

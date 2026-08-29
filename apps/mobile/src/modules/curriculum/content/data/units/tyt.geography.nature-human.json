@@ -1,0 +1,529 @@
+{
+  "concepts": [
+    {
+      "definition": "Yerleşmeler su kaynakları çevresinde toplanabilir",
+      "id": "concept.geography.nature-human.interaction",
+      "term": "Kurak iklimde su kaynakları sınırlıdır",
+      "topicId": "tyt.geography.nature-human.interaction"
+    },
+    {
+      "definition": "Dağılış ilkesi kullanılır",
+      "id": "concept.geography.nature-human.spatial-thinking",
+      "term": "Bir olayın nerelerde görüldüğü incelenir",
+      "topicId": "tyt.geography.nature-human.spatial-thinking"
+    }
+  ],
+  "exercises": [
+    {
+      "correctOptionId": "opt-1",
+      "difficulty": 2,
+      "explanation": "Kurak iklimde su kaynakları sınırlıdır durumunda yerleşmeler su kaynakları çevresinde toplanabilir. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.nature-human.interaction.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Yerleşmeler su kaynakları çevresinde toplanabilir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Kurak alanda tarımsal üretim çeşitlenebilir"
+        },
+        {
+          "id": "opt-3",
+          "label": "Erozyon riski artabilir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Doğal koşulların etkisi azalabilir ama ortadan kalkmaz"
+        }
+      ],
+      "prompt": "Kurak iklimde su kaynakları sınırlıdır. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.nature-human.interaction.interpret"
+      ],
+      "tag": "COĞRAFYA · DOĞA VE İNSAN ETKİLEŞİMİ"
+    },
+    {
+      "correctOptionId": "opt-2",
+      "difficulty": 4,
+      "explanation": "Sulama yatırımı yapılır durumunda kurak alanda tarımsal üretim çeşitlenebilir. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.nature-human.interaction.001.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Yerleşmeler su kaynakları çevresinde toplanabilir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Kurak alanda tarımsal üretim çeşitlenebilir"
+        },
+        {
+          "id": "opt-3",
+          "label": "Erozyon riski artabilir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Doğal koşulların etkisi azalabilir ama ortadan kalkmaz"
+        }
+      ],
+      "prompt": "Sulama yatırımı yapılır. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.nature-human.interaction.interpret"
+      ],
+      "tag": "COĞRAFYA · DOĞA VE İNSAN ETKİLEŞİMİ"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 3,
+      "explanation": "Eğimli arazi yanlış kullanılır ile erozyon riski artabilir arasında doğrudan bir coğrafi ilişki vardır.",
+      "id": "exercise.geography.nature-human.interaction.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.nature-human.interaction.interpret"
+      ],
+      "statement": "Eğimli arazi yanlış kullanılır; bunun sonucunda erozyon riski artabilir.",
+      "tag": "COĞRAFYA · DOĞA VE İNSAN ETKİLEŞİMİ"
+    },
+    {
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "Yerleşmeler su kaynakları çevresinde toplanabilir"
+        },
+        {
+          "id": "w-2",
+          "label": "Kurak alanda tarımsal üretim çeşitlenebilir"
+        },
+        {
+          "id": "w-3",
+          "label": "Erozyon riski artabilir"
+        },
+        {
+          "id": "w-4",
+          "label": "Doğal koşulların etkisi azalabilir ama ortadan kalkmaz"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "İnsanlar çevreyi teknolojiyle dönüştürür koşulunun beklenen sonucu “Doğal koşulların etkisi azalabilir ama ortadan kalkmaz” ilişkisidir.",
+      "hint": "İnsanlar çevreyi teknolojiyle dönüştürür",
+      "id": "exercise.geography.nature-human.interaction.001.blank01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.nature-human.interaction.interpret"
+      ],
+      "solutionTokenIds": [
+        "w-4"
+      ],
+      "title": "İnsanlar çevreyi teknolojiyle dönüştürür durumunda sonuç"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Her koşul, kendisinden beklenen özgün coğrafi sonuçla eşleştirilir; aynı sonuç iki kez kullanılmaz.",
+      "id": "exercise.geography.nature-human.interaction.001.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Kurak iklimde su kaynakları sınırlıdır",
+          "right": "Yerleşmeler su kaynakları çevresinde toplanabilir"
+        },
+        {
+          "id": "pair-2",
+          "left": "Sulama yatırımı yapılır",
+          "right": "Kurak alanda tarımsal üretim çeşitlenebilir"
+        },
+        {
+          "id": "pair-3",
+          "left": "Eğimli arazi yanlış kullanılır",
+          "right": "Erozyon riski artabilir"
+        },
+        {
+          "id": "pair-4",
+          "left": "İnsanlar çevreyi teknolojiyle dönüştürür",
+          "right": "Doğal koşulların etkisi azalabilir ama ortadan kalkmaz"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.nature-human.interaction.interpret"
+      ],
+      "subtitle": "Koşulu doğru coğrafi sonuçla birleştir.",
+      "tag": "COĞRAFYA · DOĞA VE İNSAN ETKİLEŞİMİ",
+      "title": "İlişkiyi eşleştir"
+    },
+    {
+      "cards": [
+        {
+          "back": "Yerleşmeler su kaynakları çevresinde toplanabilir",
+          "front": "Kurak iklimde su kaynakları sınırlıdır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-1"
+        },
+        {
+          "back": "Kurak alanda tarımsal üretim çeşitlenebilir",
+          "front": "Sulama yatırımı yapılır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-2"
+        },
+        {
+          "back": "Erozyon riski artabilir",
+          "front": "Eğimli arazi yanlış kullanılır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-3"
+        },
+        {
+          "back": "Doğal koşulların etkisi azalabilir ama ortadan kalkmaz",
+          "front": "İnsanlar çevreyi teknolojiyle dönüştürür",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-4"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Kartlar temel ilişkileri kısa tekrar için özetler; puanlanan skill coverage hesabına katılmaz.",
+      "id": "exercise.geography.nature-human.interaction.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.nature-human.interaction.interpret"
+      ],
+      "tag": "COĞRAFYA · DOĞA VE İNSAN ETKİLEŞİMİ"
+    },
+    {
+      "correctOptionId": "opt-1",
+      "difficulty": 2,
+      "explanation": "Bir olayın nerelerde görüldüğü incelenir durumunda dağılış ilkesi kullanılır. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.nature-human.spatial-thinking.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Dağılış ilkesi kullanılır"
+        },
+        {
+          "id": "opt-2",
+          "label": "Karşılıklı ilgi kurulur"
+        },
+        {
+          "id": "opt-3",
+          "label": "Nedensellik ilkesi kullanılır"
+        },
+        {
+          "id": "opt-4",
+          "label": "Mekânsal düşünme geliştirilir"
+        }
+      ],
+      "prompt": "Bir olayın nerelerde görüldüğü incelenir. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.nature-human.spatial-thinking.interpret"
+      ],
+      "tag": "COĞRAFYA · COĞRAFYANIN YAKLAŞIMI"
+    },
+    {
+      "correctOptionId": "opt-2",
+      "difficulty": 4,
+      "explanation": "İklim ile tarım ürünü birlikte ele alınır durumunda karşılıklı ilgi kurulur. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.nature-human.spatial-thinking.001.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Dağılış ilkesi kullanılır"
+        },
+        {
+          "id": "opt-2",
+          "label": "Karşılıklı ilgi kurulur"
+        },
+        {
+          "id": "opt-3",
+          "label": "Nedensellik ilkesi kullanılır"
+        },
+        {
+          "id": "opt-4",
+          "label": "Mekânsal düşünme geliştirilir"
+        }
+      ],
+      "prompt": "İklim ile tarım ürünü birlikte ele alınır. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.nature-human.spatial-thinking.interpret"
+      ],
+      "tag": "COĞRAFYA · COĞRAFYANIN YAKLAŞIMI"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 3,
+      "explanation": "Bir sonucun oluşma nedeni araştırılır ile nedensellik ilkesi kullanılır arasında doğrudan bir coğrafi ilişki vardır.",
+      "id": "exercise.geography.nature-human.spatial-thinking.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.nature-human.spatial-thinking.interpret"
+      ],
+      "statement": "Bir sonucun oluşma nedeni araştırılır; bunun sonucunda nedensellik ilkesi kullanılır.",
+      "tag": "COĞRAFYA · COĞRAFYANIN YAKLAŞIMI"
+    },
+    {
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "Dağılış ilkesi kullanılır"
+        },
+        {
+          "id": "w-2",
+          "label": "Karşılıklı ilgi kurulur"
+        },
+        {
+          "id": "w-3",
+          "label": "Nedensellik ilkesi kullanılır"
+        },
+        {
+          "id": "w-4",
+          "label": "Mekânsal düşünme geliştirilir"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "Yerler konum ve özellikleriyle karşılaştırılır koşulunun beklenen sonucu “Mekânsal düşünme geliştirilir” ilişkisidir.",
+      "hint": "Yerler konum ve özellikleriyle karşılaştırılır",
+      "id": "exercise.geography.nature-human.spatial-thinking.001.blank01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.nature-human.spatial-thinking.interpret"
+      ],
+      "solutionTokenIds": [
+        "w-4"
+      ],
+      "title": "Yerler konum ve özellikleriyle karşılaştırılır durumunda sonuç"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Her koşul, kendisinden beklenen özgün coğrafi sonuçla eşleştirilir; aynı sonuç iki kez kullanılmaz.",
+      "id": "exercise.geography.nature-human.spatial-thinking.001.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Bir olayın nerelerde görüldüğü incelenir",
+          "right": "Dağılış ilkesi kullanılır"
+        },
+        {
+          "id": "pair-2",
+          "left": "İklim ile tarım ürünü birlikte ele alınır",
+          "right": "Karşılıklı ilgi kurulur"
+        },
+        {
+          "id": "pair-3",
+          "left": "Bir sonucun oluşma nedeni araştırılır",
+          "right": "Nedensellik ilkesi kullanılır"
+        },
+        {
+          "id": "pair-4",
+          "left": "Yerler konum ve özellikleriyle karşılaştırılır",
+          "right": "Mekânsal düşünme geliştirilir"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.nature-human.spatial-thinking.interpret"
+      ],
+      "subtitle": "Koşulu doğru coğrafi sonuçla birleştir.",
+      "tag": "COĞRAFYA · COĞRAFYANIN YAKLAŞIMI",
+      "title": "İlişkiyi eşleştir"
+    },
+    {
+      "cards": [
+        {
+          "back": "Dağılış ilkesi kullanılır",
+          "front": "Bir olayın nerelerde görüldüğü incelenir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-1"
+        },
+        {
+          "back": "Karşılıklı ilgi kurulur",
+          "front": "İklim ile tarım ürünü birlikte ele alınır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-2"
+        },
+        {
+          "back": "Nedensellik ilkesi kullanılır",
+          "front": "Bir sonucun oluşma nedeni araştırılır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-3"
+        },
+        {
+          "back": "Mekânsal düşünme geliştirilir",
+          "front": "Yerler konum ve özellikleriyle karşılaştırılır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-4"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Kartlar temel ilişkileri kısa tekrar için özetler; puanlanan skill coverage hesabına katılmaz.",
+      "id": "exercise.geography.nature-human.spatial-thinking.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.nature-human.spatial-thinking.interpret"
+      ],
+      "tag": "COĞRAFYA · COĞRAFYANIN YAKLAŞIMI"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.geography.nature-human.interaction.001.mcq01",
+        "exercise.geography.nature-human.interaction.001.mcq02",
+        "exercise.geography.nature-human.interaction.001.tf01",
+        "exercise.geography.nature-human.interaction.001.blank01",
+        "exercise.geography.nature-human.interaction.001.match01",
+        "exercise.geography.nature-human.interaction.001.card01"
+      ],
+      "id": "lesson.geography.nature-human.interaction.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Doğal ve beşerî süreçler arasındaki karşılıklı etkileşimi örneklerden yorumlar.",
+      "title": "Doğa ve İnsan Etkileşimi",
+      "topicId": "tyt.geography.nature-human.interaction"
+    },
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.geography.nature-human.spatial-thinking.001.mcq01",
+        "exercise.geography.nature-human.spatial-thinking.001.mcq02",
+        "exercise.geography.nature-human.spatial-thinking.001.tf01",
+        "exercise.geography.nature-human.spatial-thinking.001.blank01",
+        "exercise.geography.nature-human.spatial-thinking.001.match01",
+        "exercise.geography.nature-human.spatial-thinking.001.card01"
+      ],
+      "id": "lesson.geography.nature-human.spatial-thinking.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Coğrafi olayları dağılış, bağlantı ve neden-sonuç ilkeleriyle çözümler.",
+      "title": "Coğrafyanın Yaklaşımı",
+      "topicId": "tyt.geography.nature-human.spatial-thinking"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.geography.nature-human.01",
+      "kind": "lesson",
+      "lessonId": "lesson.geography.nature-human.interaction.001",
+      "order": 1,
+      "prerequisiteIds": [],
+      "title": "Doğa ve İnsan Etkileşimi",
+      "unitId": "tyt.geography.nature-human"
+    },
+    {
+      "id": "path.geography.nature-human.02",
+      "kind": "practice",
+      "lessonId": "lesson.geography.nature-human.spatial-thinking.001",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.geography.nature-human.01"
+      ],
+      "title": "Coğrafyanın Yaklaşımı Uygulaması",
+      "unitId": "tyt.geography.nature-human"
+    }
+  ],
+  "skills": [
+    {
+      "description": "Doğal ve beşerî süreçler arasındaki karşılıklı etkileşimi örneklerden yorumlar.",
+      "id": "skill.geography.nature-human.interaction.interpret",
+      "title": "Doğal ve beşerî süreçler arasındaki karşılıklı etkileşimi örneklerden yorumlar.",
+      "topicId": "tyt.geography.nature-human.interaction"
+    },
+    {
+      "description": "Coğrafi olayları dağılış, bağlantı ve neden-sonuç ilkeleriyle çözümler.",
+      "id": "skill.geography.nature-human.spatial-thinking.interpret",
+      "title": "Coğrafi olayları dağılış, bağlantı ve neden-sonuç ilkeleriyle çözümler.",
+      "topicId": "tyt.geography.nature-human.spatial-thinking"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.geography.nature-human.interaction"
+      ],
+      "id": "tyt.geography.nature-human.interaction",
+      "skillIds": [
+        "skill.geography.nature-human.interaction.interpret"
+      ],
+      "title": "Doğa ve İnsan Etkileşimi",
+      "unitId": "tyt.geography.nature-human"
+    },
+    {
+      "conceptIds": [
+        "concept.geography.nature-human.spatial-thinking"
+      ],
+      "id": "tyt.geography.nature-human.spatial-thinking",
+      "skillIds": [
+        "skill.geography.nature-human.spatial-thinking.interpret"
+      ],
+      "title": "Coğrafyanın Yaklaşımı",
+      "unitId": "tyt.geography.nature-human"
+    }
+  ],
+  "unitId": "tyt.geography.nature-human"
+}

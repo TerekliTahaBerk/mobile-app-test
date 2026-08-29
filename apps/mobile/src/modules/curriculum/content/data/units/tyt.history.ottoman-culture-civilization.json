@@ -1,0 +1,493 @@
+{
+  "concepts": [
+    {
+      "definition": "Devlet işlerinin görüşülüp karara bağlanması",
+      "id": "concept.history.ottoman-culture-civilization.divan-function",
+      "term": "Devlet işlerinin görüşülüp karara bağlanması",
+      "topicId": "tyt.history.ottoman-culture-civilization.state-society"
+    },
+    {
+      "definition": "Dinî aidiyete",
+      "id": "concept.history.ottoman-culture-civilization.millet-system",
+      "term": "Dinî aidiyete",
+      "topicId": "tyt.history.ottoman-culture-civilization.state-society"
+    },
+    {
+      "definition": "Vergi gelirleriyle eyalet askeri yetiştirilmesi",
+      "id": "concept.history.ottoman-culture-civilization.timar-purpose",
+      "term": "Vergi gelirleriyle eyalet askeri yetiştirilmesi",
+      "topicId": "tyt.history.ottoman-culture-civilization.land-economy-education"
+    },
+    {
+      "definition": "Eğitim, sağlık ve yardımlaşma hizmetlerinin finansmanını",
+      "id": "concept.history.ottoman-culture-civilization.waqf-function",
+      "term": "Eğitim, sağlık ve yardımlaşma hizmetlerinin finansmanını",
+      "topicId": "tyt.history.ottoman-culture-civilization.land-economy-education"
+    }
+  ],
+  "exercises": [
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Devlet işlerinin görüşülüp karara bağlanması, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.ottoman-culture-civilization.state-society.divan-function.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Devlet işlerinin görüşülüp karara bağlanması"
+        },
+        {
+          "id": "d1",
+          "label": "Yalnızca dinî eğitim vermek"
+        },
+        {
+          "id": "d2",
+          "label": "Esnaf fiyatlarını tek başına belirlemek"
+        },
+        {
+          "id": "d3",
+          "label": "Köylerde vergi toplamak"
+        }
+      ],
+      "prompt": "Divan-ı Hümayun’un temel işlevi hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-culture-civilization.divan-function"
+      ],
+      "tag": "TARİH · DEVLET TEŞKİLATI VE TOPLUM"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Divan-ı Hümayun’un temel işlevi hangisidir sorusunun doğru karşılığı “Devlet işlerinin görüşülüp karara bağlanması” olmalıdır.",
+      "id": "exercise.history.ottoman-culture-civilization.state-society.divan-function.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-culture-civilization.divan-function"
+      ],
+      "statement": "Yalnızca dinî eğitim vermek, Divan-ı Hümayun’un yönetimdeki işlevini açıklar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · DEVLET TEŞKİLATI VE TOPLUM"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "Devlet işlerinin görüşülüp karara bağlanması"
+        },
+        {
+          "id": "d1",
+          "label": "Yalnızca dinî eğitim vermek"
+        },
+        {
+          "id": "d2",
+          "label": "Esnaf fiyatlarını tek başına belirlemek"
+        },
+        {
+          "id": "d3",
+          "label": "Köylerde vergi toplamak"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “Devlet işlerinin görüşülüp karara bağlanması” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.ottoman-culture-civilization.state-society.divan-function.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-culture-civilization.divan-function"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: Divan-ı Hümayun’un temel işlevi hangisidir?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Dinî aidiyete, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.ottoman-culture-civilization.state-society.millet-system.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Dinî aidiyete"
+        },
+        {
+          "id": "d1",
+          "label": "Mesleğe"
+        },
+        {
+          "id": "d2",
+          "label": "Toprak büyüklüğüne"
+        },
+        {
+          "id": "d3",
+          "label": "Askerlik süresine"
+        }
+      ],
+      "prompt": "Osmanlı millet sistemi toplulukları esas olarak hangi ölçüte göre örgütlemiştir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-culture-civilization.millet-system"
+      ],
+      "tag": "TARİH · DEVLET TEŞKİLATI VE TOPLUM"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Osmanlı millet sistemi toplulukları esas olarak hangi ölçüte göre örgütlemiştir sorusunun doğru karşılığı “Dinî aidiyete” olmalıdır.",
+      "id": "exercise.history.ottoman-culture-civilization.state-society.millet-system.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-culture-civilization.millet-system"
+      ],
+      "statement": "Mesleğe, Millet sisteminin toplumsal düzendeki yerini yorumlar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · DEVLET TEŞKİLATI VE TOPLUM"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, Devlet Teşkilatı ve Toplum başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.ottoman-culture-civilization.state-society.millet-system.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Divan-ı Hümayun’un temel işlevi hangisidir?",
+          "right": "Devlet işlerinin görüşülüp karara bağlanması"
+        },
+        {
+          "id": "pair-2",
+          "left": "Osmanlı millet sistemi toplulukları esas olarak hangi ölçüte göre örgütlemiştir?",
+          "right": "Dinî aidiyete"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-culture-civilization.divan-function",
+        "skill.history.ottoman-culture-civilization.millet-system"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · DEVLET TEŞKİLATI VE TOPLUM",
+      "title": "Bilgi bağlarını eşleştir"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Vergi gelirleriyle eyalet askeri yetiştirilmesi, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.ottoman-culture-civilization.land-economy-education.timar-purpose.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Vergi gelirleriyle eyalet askeri yetiştirilmesi"
+        },
+        {
+          "id": "d1",
+          "label": "Merkez hazinesinden maaşlı donanma kurulması"
+        },
+        {
+          "id": "d2",
+          "label": "Toprağın özel mülkiyete tamamen geçmesi"
+        },
+        {
+          "id": "d3",
+          "label": "Loncaların kaldırılması"
+        }
+      ],
+      "prompt": "Tımar sisteminin temel sonuçlarından biri hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-culture-civilization.timar-purpose"
+      ],
+      "tag": "TARİH · TOPRAK, EKONOMİ VE EĞİTİM"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Tımar sisteminin temel sonuçlarından biri hangisidir sorusunun doğru karşılığı “Vergi gelirleriyle eyalet askeri yetiştirilmesi” olmalıdır.",
+      "id": "exercise.history.ottoman-culture-civilization.land-economy-education.timar-purpose.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-culture-civilization.timar-purpose"
+      ],
+      "statement": "Merkez hazinesinden maaşlı donanma kurulması, Tımar sisteminin askerî ve ekonomik işlevlerini açıklar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · TOPRAK, EKONOMİ VE EĞİTİM"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "Vergi gelirleriyle eyalet askeri yetiştirilmesi"
+        },
+        {
+          "id": "d1",
+          "label": "Merkez hazinesinden maaşlı donanma kurulması"
+        },
+        {
+          "id": "d2",
+          "label": "Toprağın özel mülkiyete tamamen geçmesi"
+        },
+        {
+          "id": "d3",
+          "label": "Loncaların kaldırılması"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “Vergi gelirleriyle eyalet askeri yetiştirilmesi” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.ottoman-culture-civilization.land-economy-education.timar-purpose.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-culture-civilization.timar-purpose"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: Tımar sisteminin temel sonuçlarından biri hangisidir?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Eğitim, sağlık ve yardımlaşma hizmetlerinin finansmanını, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.ottoman-culture-civilization.land-economy-education.waqf-function.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Eğitim, sağlık ve yardımlaşma hizmetlerinin finansmanını"
+        },
+        {
+          "id": "d1",
+          "label": "Saltanatın seçimle belirlenmesini"
+        },
+        {
+          "id": "d2",
+          "label": "Tımar arazilerinin satılmasını"
+        },
+        {
+          "id": "d3",
+          "label": "Dış borçların yönetilmesini"
+        }
+      ],
+      "prompt": "Osmanlı vakıflarının yaygınlaşması hangi ihtiyacı karşılamıştır?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-culture-civilization.waqf-function"
+      ],
+      "tag": "TARİH · TOPRAK, EKONOMİ VE EĞİTİM"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Osmanlı vakıflarının yaygınlaşması hangi ihtiyacı karşılamıştır sorusunun doğru karşılığı “Eğitim, sağlık ve yardımlaşma hizmetlerinin finansmanını” olmalıdır.",
+      "id": "exercise.history.ottoman-culture-civilization.land-economy-education.waqf-function.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-culture-civilization.waqf-function"
+      ],
+      "statement": "Saltanatın seçimle belirlenmesini, Vakıfların sosyal hizmetlerdeki rolünü yorumlar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · TOPRAK, EKONOMİ VE EĞİTİM"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, Toprak, Ekonomi ve Eğitim başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.ottoman-culture-civilization.land-economy-education.waqf-function.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Tımar sisteminin temel sonuçlarından biri hangisidir?",
+          "right": "Vergi gelirleriyle eyalet askeri yetiştirilmesi"
+        },
+        {
+          "id": "pair-2",
+          "left": "Osmanlı vakıflarının yaygınlaşması hangi ihtiyacı karşılamıştır?",
+          "right": "Eğitim, sağlık ve yardımlaşma hizmetlerinin finansmanını"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-culture-civilization.timar-purpose",
+        "skill.history.ottoman-culture-civilization.waqf-function"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · TOPRAK, EKONOMİ VE EĞİTİM",
+      "title": "Bilgi bağlarını eşleştir"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.ottoman-culture-civilization.state-society.divan-function.mcq01",
+        "exercise.history.ottoman-culture-civilization.state-society.divan-function.tf01",
+        "exercise.history.ottoman-culture-civilization.state-society.divan-function.fill01",
+        "exercise.history.ottoman-culture-civilization.state-society.millet-system.mcq01",
+        "exercise.history.ottoman-culture-civilization.state-society.millet-system.tf01",
+        "exercise.history.ottoman-culture-civilization.state-society.millet-system.match01"
+      ],
+      "id": "lesson.history.ottoman-culture-civilization.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "Devlet Teşkilatı ve Toplum",
+      "topicId": "tyt.history.ottoman-culture-civilization.state-society"
+    },
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.ottoman-culture-civilization.land-economy-education.timar-purpose.mcq01",
+        "exercise.history.ottoman-culture-civilization.land-economy-education.timar-purpose.tf01",
+        "exercise.history.ottoman-culture-civilization.land-economy-education.timar-purpose.fill01",
+        "exercise.history.ottoman-culture-civilization.land-economy-education.waqf-function.mcq01",
+        "exercise.history.ottoman-culture-civilization.land-economy-education.waqf-function.tf01",
+        "exercise.history.ottoman-culture-civilization.land-economy-education.waqf-function.match01"
+      ],
+      "id": "lesson.history.ottoman-culture-civilization.002",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "Toprak, Ekonomi ve Eğitim",
+      "topicId": "tyt.history.ottoman-culture-civilization.land-economy-education"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.history.ottoman-culture-civilization.01",
+      "kind": "lesson",
+      "lessonId": "lesson.history.ottoman-culture-civilization.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.history.longest-century.02"
+      ],
+      "title": "Devlet Teşkilatı ve Toplum",
+      "unitId": "tyt.history.ottoman-culture-civilization"
+    },
+    {
+      "id": "path.history.ottoman-culture-civilization.02",
+      "kind": "checkpoint",
+      "lessonId": "lesson.history.ottoman-culture-civilization.002",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.history.ottoman-culture-civilization.01"
+      ],
+      "title": "Osmanlı Kültür ve Medeniyeti Kontrolü",
+      "unitId": "tyt.history.ottoman-culture-civilization"
+    }
+  ],
+  "skills": [
+    {
+      "description": "Divan-ı Hümayun’un yönetimdeki işlevini açıklar.",
+      "id": "skill.history.ottoman-culture-civilization.divan-function",
+      "title": "Divan-ı Hümayun’un yönetimdeki işlevini açıklar",
+      "topicId": "tyt.history.ottoman-culture-civilization.state-society"
+    },
+    {
+      "description": "Millet sisteminin toplumsal düzendeki yerini yorumlar.",
+      "id": "skill.history.ottoman-culture-civilization.millet-system",
+      "title": "Millet sisteminin toplumsal düzendeki yerini yorumlar",
+      "topicId": "tyt.history.ottoman-culture-civilization.state-society"
+    },
+    {
+      "description": "Tımar sisteminin askerî ve ekonomik işlevlerini açıklar.",
+      "id": "skill.history.ottoman-culture-civilization.timar-purpose",
+      "title": "Tımar sisteminin askerî ve ekonomik işlevlerini açıklar",
+      "topicId": "tyt.history.ottoman-culture-civilization.land-economy-education"
+    },
+    {
+      "description": "Vakıfların sosyal hizmetlerdeki rolünü yorumlar.",
+      "id": "skill.history.ottoman-culture-civilization.waqf-function",
+      "title": "Vakıfların sosyal hizmetlerdeki rolünü yorumlar",
+      "topicId": "tyt.history.ottoman-culture-civilization.land-economy-education"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.history.ottoman-culture-civilization.divan-function",
+        "concept.history.ottoman-culture-civilization.millet-system"
+      ],
+      "id": "tyt.history.ottoman-culture-civilization.state-society",
+      "skillIds": [
+        "skill.history.ottoman-culture-civilization.divan-function",
+        "skill.history.ottoman-culture-civilization.millet-system"
+      ],
+      "title": "Devlet Teşkilatı ve Toplum",
+      "unitId": "tyt.history.ottoman-culture-civilization"
+    },
+    {
+      "conceptIds": [
+        "concept.history.ottoman-culture-civilization.timar-purpose",
+        "concept.history.ottoman-culture-civilization.waqf-function"
+      ],
+      "id": "tyt.history.ottoman-culture-civilization.land-economy-education",
+      "skillIds": [
+        "skill.history.ottoman-culture-civilization.timar-purpose",
+        "skill.history.ottoman-culture-civilization.waqf-function"
+      ],
+      "title": "Toprak, Ekonomi ve Eğitim",
+      "unitId": "tyt.history.ottoman-culture-civilization"
+    }
+  ],
+  "unitId": "tyt.history.ottoman-culture-civilization"
+}

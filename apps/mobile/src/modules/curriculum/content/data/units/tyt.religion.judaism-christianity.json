@@ -1,0 +1,862 @@
+{
+  "unitId": "tyt.religion.judaism-christianity",
+  "topics": [
+    {
+      "id": "tyt.religion.judaism-christianity.judaism",
+      "unitId": "tyt.religion.judaism-christianity",
+      "title": "Yahudiliğin Temel Özellikleri",
+      "skillIds": [
+        "skill.religion.judaism-christianity.judaism.interpret",
+        "skill.religion.judaism-christianity.judaism.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.judaism-christianity.judaism.yahudilik"
+      ]
+    },
+    {
+      "id": "tyt.religion.judaism-christianity.christianity",
+      "unitId": "tyt.religion.judaism-christianity",
+      "title": "Hristiyanlığın Temel Özellikleri",
+      "skillIds": [
+        "skill.religion.judaism-christianity.christianity.interpret",
+        "skill.religion.judaism-christianity.christianity.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.judaism-christianity.christianity.hristiyanlik"
+      ]
+    },
+    {
+      "id": "tyt.religion.judaism-christianity.respectful-comparison",
+      "unitId": "tyt.religion.judaism-christianity",
+      "title": "Tarafsız Karşılaştırma ve Kavramlar",
+      "skillIds": [
+        "skill.religion.judaism-christianity.respectful-comparison.interpret",
+        "skill.religion.judaism-christianity.respectful-comparison.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.judaism-christianity.respectful-comparison.dini-cogulculuk"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "skill.religion.judaism-christianity.judaism.interpret",
+      "title": "Yahudiliğin temel inanç ve ibadet özelliklerini genel hatlarıyla ayırt eder.",
+      "description": "Yahudiliğin temel inanç ve ibadet özelliklerini genel hatlarıyla ayırt eder.",
+      "topicId": "tyt.religion.judaism-christianity.judaism"
+    },
+    {
+      "id": "skill.religion.judaism-christianity.judaism.distinguish",
+      "title": "Tevrat ve sinagog kavramlarını doğru bağlamda ilişkilendirir.",
+      "description": "Tevrat ve sinagog kavramlarını doğru bağlamda ilişkilendirir.",
+      "topicId": "tyt.religion.judaism-christianity.judaism"
+    },
+    {
+      "id": "skill.religion.judaism-christianity.christianity.interpret",
+      "title": "Hristiyanlığın temel inanç ve ibadet özelliklerini genel hatlarıyla ayırt eder.",
+      "description": "Hristiyanlığın temel inanç ve ibadet özelliklerini genel hatlarıyla ayırt eder.",
+      "topicId": "tyt.religion.judaism-christianity.christianity"
+    },
+    {
+      "id": "skill.religion.judaism-christianity.christianity.distinguish",
+      "title": "İncil ve kilise kavramlarını doğru bağlamda ilişkilendirir.",
+      "description": "İncil ve kilise kavramlarını doğru bağlamda ilişkilendirir.",
+      "topicId": "tyt.religion.judaism-christianity.christianity"
+    },
+    {
+      "id": "skill.religion.judaism-christianity.respectful-comparison.interpret",
+      "title": "Yahudilik ve Hristiyanlığı temel kavramları bakımından karşılaştırır.",
+      "description": "Yahudilik ve Hristiyanlığı temel kavramları bakımından karşılaştırır.",
+      "topicId": "tyt.religion.judaism-christianity.respectful-comparison"
+    },
+    {
+      "id": "skill.religion.judaism-christianity.respectful-comparison.distinguish",
+      "title": "Dinler hakkında genelleyici ve aşağılayıcı dili ayırt eder.",
+      "description": "Dinler hakkında genelleyici ve aşağılayıcı dili ayırt eder.",
+      "topicId": "tyt.religion.judaism-christianity.respectful-comparison"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "concept.religion.judaism-christianity.judaism.yahudilik",
+      "term": "Yahudilik",
+      "definition": "tarihsel kökleri İsrailoğulları geleneğine uzanan tek tanrılı dinî gelenek",
+      "topicId": "tyt.religion.judaism-christianity.judaism"
+    },
+    {
+      "id": "concept.religion.judaism-christianity.christianity.hristiyanlik",
+      "term": "Hristiyanlık",
+      "definition": "Hz. İsa’nın hayatı ve öğretisi etrafında gelişen dünya dini",
+      "topicId": "tyt.religion.judaism-christianity.christianity"
+    },
+    {
+      "id": "concept.religion.judaism-christianity.respectful-comparison.dini-cogulculuk",
+      "term": "dinî çoğulculuk",
+      "definition": "farklı dinî geleneklerin kendi tarih ve kavramları içinde saygıyla incelenmesi",
+      "topicId": "tyt.religion.judaism-christianity.respectful-comparison"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "lesson.religion.judaism-christianity.judaism.001",
+      "topicId": "tyt.religion.judaism-christianity.judaism",
+      "title": "Yahudiliğin Temel Özellikleri",
+      "subtitle": "Yahudiliğin temel inanç ve ibadet özelliklerini genel hatlarıyla ayırt eder. Tevrat ve sinagog kavramlarını doğru bağlamda ilişkilendirir.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.judaism-christianity.judaism.001.card01",
+        "exercise.religion.judaism-christianity.judaism.001.mcq01",
+        "exercise.religion.judaism-christianity.judaism.001.mcq02",
+        "exercise.religion.judaism-christianity.judaism.001.mcq03",
+        "exercise.religion.judaism-christianity.judaism.001.mcq04",
+        "exercise.religion.judaism-christianity.judaism.001.tf01",
+        "exercise.religion.judaism-christianity.judaism.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.religion.judaism-christianity.christianity.001",
+      "topicId": "tyt.religion.judaism-christianity.christianity",
+      "title": "Hristiyanlığın Temel Özellikleri",
+      "subtitle": "Hristiyanlığın temel inanç ve ibadet özelliklerini genel hatlarıyla ayırt eder. İncil ve kilise kavramlarını doğru bağlamda ilişkilendirir.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.judaism-christianity.christianity.001.card01",
+        "exercise.religion.judaism-christianity.christianity.001.mcq01",
+        "exercise.religion.judaism-christianity.christianity.001.mcq02",
+        "exercise.religion.judaism-christianity.christianity.001.mcq03",
+        "exercise.religion.judaism-christianity.christianity.001.mcq04",
+        "exercise.religion.judaism-christianity.christianity.001.tf01",
+        "exercise.religion.judaism-christianity.christianity.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.religion.judaism-christianity.respectful-comparison.001",
+      "topicId": "tyt.religion.judaism-christianity.respectful-comparison",
+      "title": "Tarafsız Karşılaştırma ve Kavramlar",
+      "subtitle": "Yahudilik ve Hristiyanlığı temel kavramları bakımından karşılaştırır. Dinler hakkında genelleyici ve aşağılayıcı dili ayırt eder.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.judaism-christianity.respectful-comparison.001.card01",
+        "exercise.religion.judaism-christianity.respectful-comparison.001.mcq01",
+        "exercise.religion.judaism-christianity.respectful-comparison.001.mcq02",
+        "exercise.religion.judaism-christianity.respectful-comparison.001.mcq03",
+        "exercise.religion.judaism-christianity.respectful-comparison.001.mcq04",
+        "exercise.religion.judaism-christianity.respectful-comparison.001.tf01",
+        "exercise.religion.judaism-christianity.respectful-comparison.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "id": "exercise.religion.judaism-christianity.judaism.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "Yahudilik, tarihsel kökleri İsrailoğulları geleneğine uzanan tek tanrılı dinî gelenek.",
+      "skillIds": [
+        "skill.religion.judaism-christianity.judaism.interpret",
+        "skill.religion.judaism-christianity.judaism.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · YAHUDİLİĞİN TEMEL ÖZELLİKLERİ",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "Yahudilik",
+          "back": "tarihsel kökleri İsrailoğulları geleneğine uzanan tek tanrılı dinî gelenek",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.judaism-christianity.judaism.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "Yahudilik, tarihsel kökleri İsrailoğulları geleneğine uzanan tek tanrılı dinî gelenek.",
+      "skillIds": [
+        "skill.religion.judaism-christianity.judaism.interpret",
+        "skill.religion.judaism-christianity.judaism.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · YAHUDİLİĞİN TEMEL ÖZELLİKLERİ",
+      "prompt": "“Tarihsel kökleri İsrailoğulları geleneğine uzanan tek tanrılı dinî gelenek” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Yahudilik"
+        },
+        {
+          "id": "b",
+          "label": "Hristiyanlık"
+        },
+        {
+          "id": "c",
+          "label": "dinî çoğulculuk"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.judaism-christianity.judaism.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada Yahudilik kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.judaism-christianity.judaism.interpret",
+        "skill.religion.judaism-christianity.judaism.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · YAHUDİLİĞİN TEMEL ÖZELLİKLERİ",
+      "prompt": "Bir öğrenci Yahudilik konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.judaism-christianity.judaism.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Yahudiliğin temel inanç ve ibadet özelliklerini genel hatlarıyla ayırt eder. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.judaism-christianity.judaism.interpret",
+        "skill.religion.judaism-christianity.judaism.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · YAHUDİLİĞİN TEMEL ÖZELLİKLERİ",
+      "prompt": "Yahudiliğin temel inanç ve ibadet özelliklerini genel hatlarıyla ayırt eder. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.judaism-christianity.judaism.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "Tevrat ve sinagog kavramlarını doğru bağlamda ilişkilendirir. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.judaism-christianity.judaism.interpret",
+        "skill.religion.judaism-christianity.judaism.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · YAHUDİLİĞİN TEMEL ÖZELLİKLERİ",
+      "prompt": "Bir açıklama, Yahudilik kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.judaism-christianity.judaism.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. Yahudilik, tarihsel kökleri İsrailoğulları geleneğine uzanan tek tanrılı dinî gelenek; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.judaism-christianity.judaism.interpret",
+        "skill.religion.judaism-christianity.judaism.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · YAHUDİLİĞİN TEMEL ÖZELLİKLERİ",
+      "statement": "Yahudilik kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.judaism-christianity.judaism.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.judaism-christianity.judaism.interpret",
+        "skill.religion.judaism-christianity.judaism.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · YAHUDİLİĞİN TEMEL ÖZELLİKLERİ",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "Yahudilik",
+          "right": "tarihsel kökleri İsrailoğulları geleneğine uzanan tek tanrılı dinî gelenek"
+        },
+        {
+          "id": "p2",
+          "left": "Hristiyanlık",
+          "right": "Hz. İsa’nın hayatı ve öğretisi etrafında gelişen dünya dini"
+        },
+        {
+          "id": "p3",
+          "left": "dinî çoğulculuk",
+          "right": "farklı dinî geleneklerin kendi tarih ve kavramları içinde saygıyla incelenmesi"
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.judaism-christianity.christianity.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "Hristiyanlık, Hz. İsa’nın hayatı ve öğretisi etrafında gelişen dünya dini.",
+      "skillIds": [
+        "skill.religion.judaism-christianity.christianity.interpret",
+        "skill.religion.judaism-christianity.christianity.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · HRİSTİYANLIĞIN TEMEL ÖZELLİKLERİ",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "Hristiyanlık",
+          "back": "Hz. İsa’nın hayatı ve öğretisi etrafında gelişen dünya dini",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.judaism-christianity.christianity.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "Hristiyanlık, Hz. İsa’nın hayatı ve öğretisi etrafında gelişen dünya dini.",
+      "skillIds": [
+        "skill.religion.judaism-christianity.christianity.interpret",
+        "skill.religion.judaism-christianity.christianity.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · HRİSTİYANLIĞIN TEMEL ÖZELLİKLERİ",
+      "prompt": "“Hz. İsa’nın hayatı ve öğretisi etrafında gelişen dünya dini” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Yahudilik"
+        },
+        {
+          "id": "b",
+          "label": "Hristiyanlık"
+        },
+        {
+          "id": "c",
+          "label": "dinî çoğulculuk"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "b"
+    },
+    {
+      "id": "exercise.religion.judaism-christianity.christianity.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada Hristiyanlık kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.judaism-christianity.christianity.interpret",
+        "skill.religion.judaism-christianity.christianity.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · HRİSTİYANLIĞIN TEMEL ÖZELLİKLERİ",
+      "prompt": "Bir öğrenci Hristiyanlık konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.judaism-christianity.christianity.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Hristiyanlığın temel inanç ve ibadet özelliklerini genel hatlarıyla ayırt eder. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.judaism-christianity.christianity.interpret",
+        "skill.religion.judaism-christianity.christianity.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · HRİSTİYANLIĞIN TEMEL ÖZELLİKLERİ",
+      "prompt": "Hristiyanlığın temel inanç ve ibadet özelliklerini genel hatlarıyla ayırt eder. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.judaism-christianity.christianity.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "İncil ve kilise kavramlarını doğru bağlamda ilişkilendirir. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.judaism-christianity.christianity.interpret",
+        "skill.religion.judaism-christianity.christianity.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · HRİSTİYANLIĞIN TEMEL ÖZELLİKLERİ",
+      "prompt": "Bir açıklama, Hristiyanlık kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.judaism-christianity.christianity.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. Hristiyanlık, Hz. İsa’nın hayatı ve öğretisi etrafında gelişen dünya dini; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.judaism-christianity.christianity.interpret",
+        "skill.religion.judaism-christianity.christianity.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · HRİSTİYANLIĞIN TEMEL ÖZELLİKLERİ",
+      "statement": "Hristiyanlık kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.judaism-christianity.christianity.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.judaism-christianity.christianity.interpret",
+        "skill.religion.judaism-christianity.christianity.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · HRİSTİYANLIĞIN TEMEL ÖZELLİKLERİ",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "Yahudilik",
+          "right": "tarihsel kökleri İsrailoğulları geleneğine uzanan tek tanrılı dinî gelenek"
+        },
+        {
+          "id": "p2",
+          "left": "Hristiyanlık",
+          "right": "Hz. İsa’nın hayatı ve öğretisi etrafında gelişen dünya dini"
+        },
+        {
+          "id": "p3",
+          "left": "dinî çoğulculuk",
+          "right": "farklı dinî geleneklerin kendi tarih ve kavramları içinde saygıyla incelenmesi"
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.judaism-christianity.respectful-comparison.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "dinî çoğulculuk, farklı dinî geleneklerin kendi tarih ve kavramları içinde saygıyla incelenmesi.",
+      "skillIds": [
+        "skill.religion.judaism-christianity.respectful-comparison.interpret",
+        "skill.religion.judaism-christianity.respectful-comparison.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TARAFSIZ KARŞILAŞTIRMA VE KAVRAMLAR",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "dinî çoğulculuk",
+          "back": "farklı dinî geleneklerin kendi tarih ve kavramları içinde saygıyla incelenmesi",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.judaism-christianity.respectful-comparison.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "dinî çoğulculuk, farklı dinî geleneklerin kendi tarih ve kavramları içinde saygıyla incelenmesi.",
+      "skillIds": [
+        "skill.religion.judaism-christianity.respectful-comparison.interpret",
+        "skill.religion.judaism-christianity.respectful-comparison.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TARAFSIZ KARŞILAŞTIRMA VE KAVRAMLAR",
+      "prompt": "“Farklı dinî geleneklerin kendi tarih ve kavramları içinde saygıyla incelenmesi” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Yahudilik"
+        },
+        {
+          "id": "b",
+          "label": "Hristiyanlık"
+        },
+        {
+          "id": "c",
+          "label": "dinî çoğulculuk"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "c"
+    },
+    {
+      "id": "exercise.religion.judaism-christianity.respectful-comparison.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada dinî çoğulculuk kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.judaism-christianity.respectful-comparison.interpret",
+        "skill.religion.judaism-christianity.respectful-comparison.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TARAFSIZ KARŞILAŞTIRMA VE KAVRAMLAR",
+      "prompt": "Bir öğrenci dinî çoğulculuk konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.judaism-christianity.respectful-comparison.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Yahudilik ve Hristiyanlığı temel kavramları bakımından karşılaştırır. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.judaism-christianity.respectful-comparison.interpret",
+        "skill.religion.judaism-christianity.respectful-comparison.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TARAFSIZ KARŞILAŞTIRMA VE KAVRAMLAR",
+      "prompt": "Yahudilik ve Hristiyanlığı temel kavramları bakımından karşılaştırır. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.judaism-christianity.respectful-comparison.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "Dinler hakkında genelleyici ve aşağılayıcı dili ayırt eder. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.judaism-christianity.respectful-comparison.interpret",
+        "skill.religion.judaism-christianity.respectful-comparison.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TARAFSIZ KARŞILAŞTIRMA VE KAVRAMLAR",
+      "prompt": "Bir açıklama, dinî çoğulculuk kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.judaism-christianity.respectful-comparison.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. dinî çoğulculuk, farklı dinî geleneklerin kendi tarih ve kavramları içinde saygıyla incelenmesi; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.judaism-christianity.respectful-comparison.interpret",
+        "skill.religion.judaism-christianity.respectful-comparison.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TARAFSIZ KARŞILAŞTIRMA VE KAVRAMLAR",
+      "statement": "dinî çoğulculuk kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.judaism-christianity.respectful-comparison.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.judaism-christianity.respectful-comparison.interpret",
+        "skill.religion.judaism-christianity.respectful-comparison.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TARAFSIZ KARŞILAŞTIRMA VE KAVRAMLAR",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "Yahudilik",
+          "right": "tarihsel kökleri İsrailoğulları geleneğine uzanan tek tanrılı dinî gelenek"
+        },
+        {
+          "id": "p2",
+          "left": "Hristiyanlık",
+          "right": "Hz. İsa’nın hayatı ve öğretisi etrafında gelişen dünya dini"
+        },
+        {
+          "id": "p3",
+          "left": "dinî çoğulculuk",
+          "right": "farklı dinî geleneklerin kendi tarih ve kavramları içinde saygıyla incelenmesi"
+        }
+      ]
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.religion.judaism-christianity.01",
+      "unitId": "tyt.religion.judaism-christianity",
+      "kind": "lesson",
+      "title": "Yahudiliğin Temel Özellikleri",
+      "order": 1,
+      "lessonId": "lesson.religion.judaism-christianity.judaism.001",
+      "prerequisiteIds": []
+    },
+    {
+      "id": "path.religion.judaism-christianity.02",
+      "unitId": "tyt.religion.judaism-christianity",
+      "kind": "lesson",
+      "title": "Hristiyanlığın Temel Özellikleri",
+      "order": 2,
+      "lessonId": "lesson.religion.judaism-christianity.christianity.001",
+      "prerequisiteIds": [
+        "path.religion.judaism-christianity.01"
+      ]
+    },
+    {
+      "id": "path.religion.judaism-christianity.03",
+      "unitId": "tyt.religion.judaism-christianity",
+      "kind": "lesson",
+      "title": "Tarafsız Karşılaştırma ve Kavramlar",
+      "order": 3,
+      "lessonId": "lesson.religion.judaism-christianity.respectful-comparison.001",
+      "prerequisiteIds": [
+        "path.religion.judaism-christianity.02"
+      ]
+    }
+  ]
+}

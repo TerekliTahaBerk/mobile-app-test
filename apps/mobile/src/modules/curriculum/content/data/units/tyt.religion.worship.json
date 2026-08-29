@@ -1,0 +1,862 @@
+{
+  "unitId": "tyt.religion.worship",
+  "topics": [
+    {
+      "id": "tyt.religion.worship.meaning-intention",
+      "unitId": "tyt.religion.worship",
+      "title": "İbadet, Niyet ve Samimiyet",
+      "skillIds": [
+        "skill.religion.worship.meaning-intention.interpret",
+        "skill.religion.worship.meaning-intention.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.worship.meaning-intention.ibadet-bilinci"
+      ]
+    },
+    {
+      "id": "tyt.religion.worship.basic-worship",
+      "unitId": "tyt.religion.worship",
+      "title": "Temel İbadetler ve Sorumluluk",
+      "skillIds": [
+        "skill.religion.worship.basic-worship.interpret",
+        "skill.religion.worship.basic-worship.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.worship.basic-worship.temel-ibadetler"
+      ]
+    },
+    {
+      "id": "tyt.religion.worship.individual-social",
+      "unitId": "tyt.religion.worship",
+      "title": "İbadetin Bireysel ve Toplumsal Etkileri",
+      "skillIds": [
+        "skill.religion.worship.individual-social.interpret",
+        "skill.religion.worship.individual-social.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.worship.individual-social.dayanisma"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "skill.religion.worship.meaning-intention.interpret",
+      "title": "Niyet ve samimiyetin ibadetteki yerini yorumlar.",
+      "description": "Niyet ve samimiyetin ibadetteki yerini yorumlar.",
+      "topicId": "tyt.religion.worship.meaning-intention"
+    },
+    {
+      "id": "skill.religion.worship.meaning-intention.distinguish",
+      "title": "İbadeti yalnız biçimsel davranışa indirgeyen yaklaşımı ayırt eder.",
+      "description": "İbadeti yalnız biçimsel davranışa indirgeyen yaklaşımı ayırt eder.",
+      "topicId": "tyt.religion.worship.meaning-intention"
+    },
+    {
+      "id": "skill.religion.worship.basic-worship.interpret",
+      "title": "Temel ibadetleri amaç ve özellikleri bakımından ayırt eder.",
+      "description": "Temel ibadetleri amaç ve özellikleri bakımından ayırt eder.",
+      "topicId": "tyt.religion.worship.basic-worship"
+    },
+    {
+      "id": "skill.religion.worship.basic-worship.distinguish",
+      "title": "İbadet ile düzenli sorumluluk arasındaki ilişkiyi kurar.",
+      "description": "İbadet ile düzenli sorumluluk arasındaki ilişkiyi kurar.",
+      "topicId": "tyt.religion.worship.basic-worship"
+    },
+    {
+      "id": "skill.religion.worship.individual-social.interpret",
+      "title": "İbadetin bireysel etkilerini örnek üzerinden yorumlar.",
+      "description": "İbadetin bireysel etkilerini örnek üzerinden yorumlar.",
+      "topicId": "tyt.religion.worship.individual-social"
+    },
+    {
+      "id": "skill.religion.worship.individual-social.distinguish",
+      "title": "İbadetin paylaşma ve dayanışmaya katkısını çıkarır.",
+      "description": "İbadetin paylaşma ve dayanışmaya katkısını çıkarır.",
+      "topicId": "tyt.religion.worship.individual-social"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "concept.religion.worship.meaning-intention.ibadet-bilinci",
+      "term": "ibadet bilinci",
+      "definition": "İbadeti bilinçli, iyi niyetli ve samimi bir kulluk yönelişi olarak kavrama",
+      "topicId": "tyt.religion.worship.meaning-intention"
+    },
+    {
+      "id": "concept.religion.worship.basic-worship.temel-ibadetler",
+      "term": "temel ibadetler",
+      "definition": "namaz, oruç, zekât ve hac gibi ibadetlerin ortak kulluk ve sorumluluk boyutu",
+      "topicId": "tyt.religion.worship.basic-worship"
+    },
+    {
+      "id": "concept.religion.worship.individual-social.dayanisma",
+      "term": "dayanışma",
+      "definition": "paylaşma ve ortak sorumluluk yoluyla toplumsal bağları güçlendirme",
+      "topicId": "tyt.religion.worship.individual-social"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "lesson.religion.worship.meaning-intention.001",
+      "topicId": "tyt.religion.worship.meaning-intention",
+      "title": "İbadet, Niyet ve Samimiyet",
+      "subtitle": "Niyet ve samimiyetin ibadetteki yerini yorumlar. İbadeti yalnız biçimsel davranışa indirgeyen yaklaşımı ayırt eder.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.worship.meaning-intention.001.card01",
+        "exercise.religion.worship.meaning-intention.001.mcq01",
+        "exercise.religion.worship.meaning-intention.001.mcq02",
+        "exercise.religion.worship.meaning-intention.001.mcq03",
+        "exercise.religion.worship.meaning-intention.001.mcq04",
+        "exercise.religion.worship.meaning-intention.001.tf01",
+        "exercise.religion.worship.meaning-intention.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.religion.worship.basic-worship.001",
+      "topicId": "tyt.religion.worship.basic-worship",
+      "title": "Temel İbadetler ve Sorumluluk",
+      "subtitle": "Temel ibadetleri amaç ve özellikleri bakımından ayırt eder. İbadet ile düzenli sorumluluk arasındaki ilişkiyi kurar.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.worship.basic-worship.001.card01",
+        "exercise.religion.worship.basic-worship.001.mcq01",
+        "exercise.religion.worship.basic-worship.001.mcq02",
+        "exercise.religion.worship.basic-worship.001.mcq03",
+        "exercise.religion.worship.basic-worship.001.mcq04",
+        "exercise.religion.worship.basic-worship.001.tf01",
+        "exercise.religion.worship.basic-worship.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.religion.worship.individual-social.001",
+      "topicId": "tyt.religion.worship.individual-social",
+      "title": "İbadetin Bireysel ve Toplumsal Etkileri",
+      "subtitle": "İbadetin bireysel etkilerini örnek üzerinden yorumlar. İbadetin paylaşma ve dayanışmaya katkısını çıkarır.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.worship.individual-social.001.card01",
+        "exercise.religion.worship.individual-social.001.mcq01",
+        "exercise.religion.worship.individual-social.001.mcq02",
+        "exercise.religion.worship.individual-social.001.mcq03",
+        "exercise.religion.worship.individual-social.001.mcq04",
+        "exercise.religion.worship.individual-social.001.tf01",
+        "exercise.religion.worship.individual-social.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "id": "exercise.religion.worship.meaning-intention.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "ibadet bilinci, İbadeti bilinçli, iyi niyetli ve samimi bir kulluk yönelişi olarak kavrama.",
+      "skillIds": [
+        "skill.religion.worship.meaning-intention.interpret",
+        "skill.religion.worship.meaning-intention.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İBADET, NİYET VE SAMİMİYET",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "ibadet bilinci",
+          "back": "İbadeti bilinçli, iyi niyetli ve samimi bir kulluk yönelişi olarak kavrama",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.worship.meaning-intention.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "ibadet bilinci, İbadeti bilinçli, iyi niyetli ve samimi bir kulluk yönelişi olarak kavrama.",
+      "skillIds": [
+        "skill.religion.worship.meaning-intention.interpret",
+        "skill.religion.worship.meaning-intention.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İBADET, NİYET VE SAMİMİYET",
+      "prompt": "“İbadeti bilinçli, iyi niyetli ve samimi bir kulluk yönelişi olarak kavrama” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "ibadet bilinci"
+        },
+        {
+          "id": "b",
+          "label": "temel ibadetler"
+        },
+        {
+          "id": "c",
+          "label": "dayanışma"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.worship.meaning-intention.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada ibadet bilinci kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.worship.meaning-intention.interpret",
+        "skill.religion.worship.meaning-intention.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İBADET, NİYET VE SAMİMİYET",
+      "prompt": "Bir öğrenci ibadet bilinci konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.worship.meaning-intention.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Niyet ve samimiyetin ibadetteki yerini yorumlar. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.worship.meaning-intention.interpret",
+        "skill.religion.worship.meaning-intention.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İBADET, NİYET VE SAMİMİYET",
+      "prompt": "Niyet ve samimiyetin ibadetteki yerini yorumlar. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.worship.meaning-intention.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "İbadeti yalnız biçimsel davranışa indirgeyen yaklaşımı ayırt eder. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.worship.meaning-intention.interpret",
+        "skill.religion.worship.meaning-intention.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İBADET, NİYET VE SAMİMİYET",
+      "prompt": "Bir açıklama, ibadet bilinci kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.worship.meaning-intention.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. ibadet bilinci, İbadeti bilinçli, iyi niyetli ve samimi bir kulluk yönelişi olarak kavrama; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.worship.meaning-intention.interpret",
+        "skill.religion.worship.meaning-intention.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İBADET, NİYET VE SAMİMİYET",
+      "statement": "ibadet bilinci kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.worship.meaning-intention.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.worship.meaning-intention.interpret",
+        "skill.religion.worship.meaning-intention.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İBADET, NİYET VE SAMİMİYET",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "ibadet bilinci",
+          "right": "İbadeti bilinçli, iyi niyetli ve samimi bir kulluk yönelişi olarak kavrama"
+        },
+        {
+          "id": "p2",
+          "left": "temel ibadetler",
+          "right": "namaz, oruç, zekât ve hac gibi ibadetlerin ortak kulluk ve sorumluluk boyutu"
+        },
+        {
+          "id": "p3",
+          "left": "dayanışma",
+          "right": "paylaşma ve ortak sorumluluk yoluyla toplumsal bağları güçlendirme"
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.worship.basic-worship.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "temel ibadetler, namaz, oruç, zekât ve hac gibi ibadetlerin ortak kulluk ve sorumluluk boyutu.",
+      "skillIds": [
+        "skill.religion.worship.basic-worship.interpret",
+        "skill.religion.worship.basic-worship.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TEMEL İBADETLER VE SORUMLULUK",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "temel ibadetler",
+          "back": "namaz, oruç, zekât ve hac gibi ibadetlerin ortak kulluk ve sorumluluk boyutu",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.worship.basic-worship.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "temel ibadetler, namaz, oruç, zekât ve hac gibi ibadetlerin ortak kulluk ve sorumluluk boyutu.",
+      "skillIds": [
+        "skill.religion.worship.basic-worship.interpret",
+        "skill.religion.worship.basic-worship.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TEMEL İBADETLER VE SORUMLULUK",
+      "prompt": "“Namaz, oruç, zekât ve hac gibi ibadetlerin ortak kulluk ve sorumluluk boyutu” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "ibadet bilinci"
+        },
+        {
+          "id": "b",
+          "label": "temel ibadetler"
+        },
+        {
+          "id": "c",
+          "label": "dayanışma"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "b"
+    },
+    {
+      "id": "exercise.religion.worship.basic-worship.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada temel ibadetler kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.worship.basic-worship.interpret",
+        "skill.religion.worship.basic-worship.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TEMEL İBADETLER VE SORUMLULUK",
+      "prompt": "Bir öğrenci temel ibadetler konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.worship.basic-worship.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Temel ibadetleri amaç ve özellikleri bakımından ayırt eder. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.worship.basic-worship.interpret",
+        "skill.religion.worship.basic-worship.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TEMEL İBADETLER VE SORUMLULUK",
+      "prompt": "Temel ibadetleri amaç ve özellikleri bakımından ayırt eder. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.worship.basic-worship.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "İbadet ile düzenli sorumluluk arasındaki ilişkiyi kurar. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.worship.basic-worship.interpret",
+        "skill.religion.worship.basic-worship.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TEMEL İBADETLER VE SORUMLULUK",
+      "prompt": "Bir açıklama, temel ibadetler kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.worship.basic-worship.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. temel ibadetler, namaz, oruç, zekât ve hac gibi ibadetlerin ortak kulluk ve sorumluluk boyutu; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.worship.basic-worship.interpret",
+        "skill.religion.worship.basic-worship.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TEMEL İBADETLER VE SORUMLULUK",
+      "statement": "temel ibadetler kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.worship.basic-worship.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.worship.basic-worship.interpret",
+        "skill.religion.worship.basic-worship.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · TEMEL İBADETLER VE SORUMLULUK",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "ibadet bilinci",
+          "right": "İbadeti bilinçli, iyi niyetli ve samimi bir kulluk yönelişi olarak kavrama"
+        },
+        {
+          "id": "p2",
+          "left": "temel ibadetler",
+          "right": "namaz, oruç, zekât ve hac gibi ibadetlerin ortak kulluk ve sorumluluk boyutu"
+        },
+        {
+          "id": "p3",
+          "left": "dayanışma",
+          "right": "paylaşma ve ortak sorumluluk yoluyla toplumsal bağları güçlendirme"
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.worship.individual-social.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "dayanışma, paylaşma ve ortak sorumluluk yoluyla toplumsal bağları güçlendirme.",
+      "skillIds": [
+        "skill.religion.worship.individual-social.interpret",
+        "skill.religion.worship.individual-social.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İBADETİN BİREYSEL VE TOPLUMSAL ETKİLERİ",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "dayanışma",
+          "back": "paylaşma ve ortak sorumluluk yoluyla toplumsal bağları güçlendirme",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.worship.individual-social.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "dayanışma, paylaşma ve ortak sorumluluk yoluyla toplumsal bağları güçlendirme.",
+      "skillIds": [
+        "skill.religion.worship.individual-social.interpret",
+        "skill.religion.worship.individual-social.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İBADETİN BİREYSEL VE TOPLUMSAL ETKİLERİ",
+      "prompt": "“Paylaşma ve ortak sorumluluk yoluyla toplumsal bağları güçlendirme” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "ibadet bilinci"
+        },
+        {
+          "id": "b",
+          "label": "temel ibadetler"
+        },
+        {
+          "id": "c",
+          "label": "dayanışma"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "c"
+    },
+    {
+      "id": "exercise.religion.worship.individual-social.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada dayanışma kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.worship.individual-social.interpret",
+        "skill.religion.worship.individual-social.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İBADETİN BİREYSEL VE TOPLUMSAL ETKİLERİ",
+      "prompt": "Bir öğrenci dayanışma konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.worship.individual-social.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "İbadetin bireysel etkilerini örnek üzerinden yorumlar. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.worship.individual-social.interpret",
+        "skill.religion.worship.individual-social.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İBADETİN BİREYSEL VE TOPLUMSAL ETKİLERİ",
+      "prompt": "İbadetin bireysel etkilerini örnek üzerinden yorumlar. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.worship.individual-social.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "İbadetin paylaşma ve dayanışmaya katkısını çıkarır. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.worship.individual-social.interpret",
+        "skill.religion.worship.individual-social.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İBADETİN BİREYSEL VE TOPLUMSAL ETKİLERİ",
+      "prompt": "Bir açıklama, dayanışma kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.worship.individual-social.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. dayanışma, paylaşma ve ortak sorumluluk yoluyla toplumsal bağları güçlendirme; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.worship.individual-social.interpret",
+        "skill.religion.worship.individual-social.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İBADETİN BİREYSEL VE TOPLUMSAL ETKİLERİ",
+      "statement": "dayanışma kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.worship.individual-social.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.worship.individual-social.interpret",
+        "skill.religion.worship.individual-social.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İBADETİN BİREYSEL VE TOPLUMSAL ETKİLERİ",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "ibadet bilinci",
+          "right": "İbadeti bilinçli, iyi niyetli ve samimi bir kulluk yönelişi olarak kavrama"
+        },
+        {
+          "id": "p2",
+          "left": "temel ibadetler",
+          "right": "namaz, oruç, zekât ve hac gibi ibadetlerin ortak kulluk ve sorumluluk boyutu"
+        },
+        {
+          "id": "p3",
+          "left": "dayanışma",
+          "right": "paylaşma ve ortak sorumluluk yoluyla toplumsal bağları güçlendirme"
+        }
+      ]
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.religion.worship.01",
+      "unitId": "tyt.religion.worship",
+      "kind": "lesson",
+      "title": "İbadet, Niyet ve Samimiyet",
+      "order": 1,
+      "lessonId": "lesson.religion.worship.meaning-intention.001",
+      "prerequisiteIds": []
+    },
+    {
+      "id": "path.religion.worship.02",
+      "unitId": "tyt.religion.worship",
+      "kind": "lesson",
+      "title": "Temel İbadetler ve Sorumluluk",
+      "order": 2,
+      "lessonId": "lesson.religion.worship.basic-worship.001",
+      "prerequisiteIds": [
+        "path.religion.worship.01"
+      ]
+    },
+    {
+      "id": "path.religion.worship.03",
+      "unitId": "tyt.religion.worship",
+      "kind": "lesson",
+      "title": "İbadetin Bireysel ve Toplumsal Etkileri",
+      "order": 3,
+      "lessonId": "lesson.religion.worship.individual-social.001",
+      "prerequisiteIds": [
+        "path.religion.worship.02"
+      ]
+    }
+  ]
+}

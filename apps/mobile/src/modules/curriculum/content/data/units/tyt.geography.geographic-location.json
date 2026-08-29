@@ -1,0 +1,531 @@
+{
+  "concepts": [
+    {
+      "definition": "Yerel saatleri aynıdır",
+      "id": "concept.geography.geographic-location.latitude-longitude",
+      "term": "İki merkez aynı boylam üzerindedir",
+      "topicId": "tyt.geography.geographic-location.latitude-longitude"
+    },
+    {
+      "definition": "Kuzey Yarım Küre orta kuşağındadır",
+      "id": "concept.geography.geographic-location.turkey-location",
+      "term": "Türkiye 36°–42° kuzey paralellerindedir",
+      "topicId": "tyt.geography.geographic-location.turkey-location"
+    }
+  ],
+  "exercises": [
+    {
+      "correctOptionId": "opt-1",
+      "difficulty": 2,
+      "explanation": "İki merkez aynı boylam üzerindedir durumunda yerel saatleri aynıdır. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.geographic-location.latitude-longitude.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Yerel saatleri aynıdır"
+        },
+        {
+          "id": "opt-2",
+          "label": "Çizgisel hız azalır"
+        },
+        {
+          "id": "opt-3",
+          "label": "Güneş ışınlarının geliş açısı genel olarak küçülür"
+        },
+        {
+          "id": "opt-4",
+          "label": "Yerel saat farkı 60 dakikadır"
+        }
+      ],
+      "prompt": "İki merkez aynı boylam üzerindedir. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.geographic-location.latitude-longitude.interpret"
+      ],
+      "tag": "COĞRAFYA · ENLEM VE BOYLAM"
+    },
+    {
+      "correctOptionId": "opt-2",
+      "difficulty": 4,
+      "explanation": "Ekvator’dan kutuplara gidilir durumunda çizgisel hız azalır. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.geographic-location.latitude-longitude.001.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Yerel saatleri aynıdır"
+        },
+        {
+          "id": "opt-2",
+          "label": "Çizgisel hız azalır"
+        },
+        {
+          "id": "opt-3",
+          "label": "Güneş ışınlarının geliş açısı genel olarak küçülür"
+        },
+        {
+          "id": "opt-4",
+          "label": "Yerel saat farkı 60 dakikadır"
+        }
+      ],
+      "prompt": "Ekvator’dan kutuplara gidilir. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.geographic-location.latitude-longitude.interpret"
+      ],
+      "tag": "COĞRAFYA · ENLEM VE BOYLAM"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 3,
+      "explanation": "Enlem derecesi büyür ile güneş ışınlarının geliş açısı genel olarak küçülür arasında doğrudan bir coğrafi ilişki vardır.",
+      "id": "exercise.geography.geographic-location.latitude-longitude.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.geographic-location.latitude-longitude.interpret"
+      ],
+      "statement": "Enlem derecesi büyür; bunun sonucunda güneş ışınlarının geliş açısı genel olarak küçülür.",
+      "tag": "COĞRAFYA · ENLEM VE BOYLAM"
+    },
+    {
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "Yerel saatleri aynıdır"
+        },
+        {
+          "id": "w-2",
+          "label": "Çizgisel hız azalır"
+        },
+        {
+          "id": "w-3",
+          "label": "Güneş ışınlarının geliş açısı genel olarak küçülür"
+        },
+        {
+          "id": "w-4",
+          "label": "Yerel saat farkı 60 dakikadır"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "Boylam farkı 15 derecedir koşulunun beklenen sonucu “Yerel saat farkı 60 dakikadır” ilişkisidir.",
+      "hint": "Boylam farkı 15 derecedir",
+      "id": "exercise.geography.geographic-location.latitude-longitude.001.blank01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.geographic-location.latitude-longitude.interpret"
+      ],
+      "solutionTokenIds": [
+        "w-4"
+      ],
+      "title": "Boylam farkı 15 derecedir durumunda sonuç"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Her koşul, kendisinden beklenen özgün coğrafi sonuçla eşleştirilir; aynı sonuç iki kez kullanılmaz.",
+      "id": "exercise.geography.geographic-location.latitude-longitude.001.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "İki merkez aynı boylam üzerindedir",
+          "right": "Yerel saatleri aynıdır"
+        },
+        {
+          "id": "pair-2",
+          "left": "Ekvator’dan kutuplara gidilir",
+          "right": "Çizgisel hız azalır"
+        },
+        {
+          "id": "pair-3",
+          "left": "Enlem derecesi büyür",
+          "right": "Güneş ışınlarının geliş açısı genel olarak küçülür"
+        },
+        {
+          "id": "pair-4",
+          "left": "Boylam farkı 15 derecedir",
+          "right": "Yerel saat farkı 60 dakikadır"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.geographic-location.latitude-longitude.interpret"
+      ],
+      "subtitle": "Koşulu doğru coğrafi sonuçla birleştir.",
+      "tag": "COĞRAFYA · ENLEM VE BOYLAM",
+      "title": "İlişkiyi eşleştir"
+    },
+    {
+      "cards": [
+        {
+          "back": "Yerel saatleri aynıdır",
+          "front": "İki merkez aynı boylam üzerindedir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-1"
+        },
+        {
+          "back": "Çizgisel hız azalır",
+          "front": "Ekvator’dan kutuplara gidilir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-2"
+        },
+        {
+          "back": "Güneş ışınlarının geliş açısı genel olarak küçülür",
+          "front": "Enlem derecesi büyür",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-3"
+        },
+        {
+          "back": "Yerel saat farkı 60 dakikadır",
+          "front": "Boylam farkı 15 derecedir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-4"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Kartlar temel ilişkileri kısa tekrar için özetler; puanlanan skill coverage hesabına katılmaz.",
+      "id": "exercise.geography.geographic-location.latitude-longitude.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.geographic-location.latitude-longitude.interpret"
+      ],
+      "tag": "COĞRAFYA · ENLEM VE BOYLAM"
+    },
+    {
+      "correctOptionId": "opt-1",
+      "difficulty": 2,
+      "explanation": "Türkiye 36°–42° kuzey paralellerindedir durumunda kuzey yarım küre orta kuşağındadır. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.geographic-location.turkey-location.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Kuzey Yarım Küre orta kuşağındadır"
+        },
+        {
+          "id": "opt-2",
+          "label": "Deniz ulaşımı ve kıyı iklimleri çeşitlenir"
+        },
+        {
+          "id": "opt-3",
+          "label": "Yerel saat farkı 76 dakikadır"
+        },
+        {
+          "id": "opt-4",
+          "label": "Ulaşım ve jeopolitik önemi artar"
+        }
+      ],
+      "prompt": "Türkiye 36°–42° kuzey paralellerindedir. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.geographic-location.turkey-location.interpret"
+      ],
+      "tag": "COĞRAFYA · TÜRKİYE’NİN KONUMU"
+    },
+    {
+      "correctOptionId": "opt-2",
+      "difficulty": 4,
+      "explanation": "Türkiye üç tarafı denizlerle çevrilidir durumunda deniz ulaşımı ve kıyı iklimleri çeşitlenir. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.geographic-location.turkey-location.001.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Kuzey Yarım Küre orta kuşağındadır"
+        },
+        {
+          "id": "opt-2",
+          "label": "Deniz ulaşımı ve kıyı iklimleri çeşitlenir"
+        },
+        {
+          "id": "opt-3",
+          "label": "Yerel saat farkı 76 dakikadır"
+        },
+        {
+          "id": "opt-4",
+          "label": "Ulaşım ve jeopolitik önemi artar"
+        }
+      ],
+      "prompt": "Türkiye üç tarafı denizlerle çevrilidir. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.geographic-location.turkey-location.interpret"
+      ],
+      "tag": "COĞRAFYA · TÜRKİYE’NİN KONUMU"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 3,
+      "explanation": "Doğu ile batı arasında 19 meridyen farkı vardır ile yerel saat farkı 76 dakikadır arasında doğrudan bir coğrafi ilişki vardır.",
+      "id": "exercise.geography.geographic-location.turkey-location.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.geographic-location.turkey-location.interpret"
+      ],
+      "statement": "Doğu ile batı arasında 19 meridyen farkı vardır; bunun sonucunda yerel saat farkı 76 dakikadır.",
+      "tag": "COĞRAFYA · TÜRKİYE’NİN KONUMU"
+    },
+    {
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "Kuzey Yarım Küre orta kuşağındadır"
+        },
+        {
+          "id": "w-2",
+          "label": "Deniz ulaşımı ve kıyı iklimleri çeşitlenir"
+        },
+        {
+          "id": "w-3",
+          "label": "Yerel saat farkı 76 dakikadır"
+        },
+        {
+          "id": "w-4",
+          "label": "Ulaşım ve jeopolitik önemi artar"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "Kıtalar arası geçiş alanında bulunur koşulunun beklenen sonucu “Ulaşım ve jeopolitik önemi artar” ilişkisidir.",
+      "hint": "Kıtalar arası geçiş alanında bulunur",
+      "id": "exercise.geography.geographic-location.turkey-location.001.blank01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.geographic-location.turkey-location.interpret"
+      ],
+      "solutionTokenIds": [
+        "w-4"
+      ],
+      "title": "Kıtalar arası geçiş alanında bulunur durumunda sonuç"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Her koşul, kendisinden beklenen özgün coğrafi sonuçla eşleştirilir; aynı sonuç iki kez kullanılmaz.",
+      "id": "exercise.geography.geographic-location.turkey-location.001.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Türkiye 36°–42° kuzey paralellerindedir",
+          "right": "Kuzey Yarım Küre orta kuşağındadır"
+        },
+        {
+          "id": "pair-2",
+          "left": "Türkiye üç tarafı denizlerle çevrilidir",
+          "right": "Deniz ulaşımı ve kıyı iklimleri çeşitlenir"
+        },
+        {
+          "id": "pair-3",
+          "left": "Doğu ile batı arasında 19 meridyen farkı vardır",
+          "right": "Yerel saat farkı 76 dakikadır"
+        },
+        {
+          "id": "pair-4",
+          "left": "Kıtalar arası geçiş alanında bulunur",
+          "right": "Ulaşım ve jeopolitik önemi artar"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.geographic-location.turkey-location.interpret"
+      ],
+      "subtitle": "Koşulu doğru coğrafi sonuçla birleştir.",
+      "tag": "COĞRAFYA · TÜRKİYE’NİN KONUMU",
+      "title": "İlişkiyi eşleştir"
+    },
+    {
+      "cards": [
+        {
+          "back": "Kuzey Yarım Küre orta kuşağındadır",
+          "front": "Türkiye 36°–42° kuzey paralellerindedir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-1"
+        },
+        {
+          "back": "Deniz ulaşımı ve kıyı iklimleri çeşitlenir",
+          "front": "Türkiye üç tarafı denizlerle çevrilidir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-2"
+        },
+        {
+          "back": "Yerel saat farkı 76 dakikadır",
+          "front": "Doğu ile batı arasında 19 meridyen farkı vardır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-3"
+        },
+        {
+          "back": "Ulaşım ve jeopolitik önemi artar",
+          "front": "Kıtalar arası geçiş alanında bulunur",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-4"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Kartlar temel ilişkileri kısa tekrar için özetler; puanlanan skill coverage hesabına katılmaz.",
+      "id": "exercise.geography.geographic-location.turkey-location.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.geographic-location.turkey-location.interpret"
+      ],
+      "tag": "COĞRAFYA · TÜRKİYE’NİN KONUMU"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.geography.geographic-location.latitude-longitude.001.mcq01",
+        "exercise.geography.geographic-location.latitude-longitude.001.mcq02",
+        "exercise.geography.geographic-location.latitude-longitude.001.tf01",
+        "exercise.geography.geographic-location.latitude-longitude.001.blank01",
+        "exercise.geography.geographic-location.latitude-longitude.001.match01",
+        "exercise.geography.geographic-location.latitude-longitude.001.card01"
+      ],
+      "id": "lesson.geography.geographic-location.latitude-longitude.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Enlem etkileri ile boylamın yerel saat sonucunu ayırt eder.",
+      "title": "Enlem ve Boylam",
+      "topicId": "tyt.geography.geographic-location.latitude-longitude"
+    },
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.geography.geographic-location.turkey-location.001.mcq01",
+        "exercise.geography.geographic-location.turkey-location.001.mcq02",
+        "exercise.geography.geographic-location.turkey-location.001.tf01",
+        "exercise.geography.geographic-location.turkey-location.001.blank01",
+        "exercise.geography.geographic-location.turkey-location.001.match01",
+        "exercise.geography.geographic-location.turkey-location.001.card01"
+      ],
+      "id": "lesson.geography.geographic-location.turkey-location.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Türkiye’nin matematik ve özel konum sonuçlarını verilen özelliklerden çıkarır.",
+      "title": "Türkiye’nin Konumu",
+      "topicId": "tyt.geography.geographic-location.turkey-location"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.geography.geographic-location.01",
+      "kind": "lesson",
+      "lessonId": "lesson.geography.geographic-location.latitude-longitude.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.geography.earth-shape-motions.02"
+      ],
+      "title": "Enlem ve Boylam",
+      "unitId": "tyt.geography.geographic-location"
+    },
+    {
+      "id": "path.geography.geographic-location.02",
+      "kind": "practice",
+      "lessonId": "lesson.geography.geographic-location.turkey-location.001",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.geography.geographic-location.01"
+      ],
+      "title": "Türkiye’nin Konumu Uygulaması",
+      "unitId": "tyt.geography.geographic-location"
+    }
+  ],
+  "skills": [
+    {
+      "description": "Enlem etkileri ile boylamın yerel saat sonucunu ayırt eder.",
+      "id": "skill.geography.geographic-location.latitude-longitude.interpret",
+      "title": "Enlem etkileri ile boylamın yerel saat sonucunu ayırt eder.",
+      "topicId": "tyt.geography.geographic-location.latitude-longitude"
+    },
+    {
+      "description": "Türkiye’nin matematik ve özel konum sonuçlarını verilen özelliklerden çıkarır.",
+      "id": "skill.geography.geographic-location.turkey-location.interpret",
+      "title": "Türkiye’nin matematik ve özel konum sonuçlarını verilen özelliklerden çıkarır.",
+      "topicId": "tyt.geography.geographic-location.turkey-location"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.geography.geographic-location.latitude-longitude"
+      ],
+      "id": "tyt.geography.geographic-location.latitude-longitude",
+      "skillIds": [
+        "skill.geography.geographic-location.latitude-longitude.interpret"
+      ],
+      "title": "Enlem ve Boylam",
+      "unitId": "tyt.geography.geographic-location"
+    },
+    {
+      "conceptIds": [
+        "concept.geography.geographic-location.turkey-location"
+      ],
+      "id": "tyt.geography.geographic-location.turkey-location",
+      "skillIds": [
+        "skill.geography.geographic-location.turkey-location.interpret"
+      ],
+      "title": "Türkiye’nin Konumu",
+      "unitId": "tyt.geography.geographic-location"
+    }
+  ],
+  "unitId": "tyt.geography.geographic-location"
+}

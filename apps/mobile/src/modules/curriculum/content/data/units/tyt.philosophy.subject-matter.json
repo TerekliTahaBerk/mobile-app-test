@@ -1,0 +1,880 @@
+{
+  "unitId": "tyt.philosophy.subject-matter",
+  "topics": [
+    {
+      "id": "tyt.philosophy.subject-matter.meaning-inquiry",
+      "unitId": "tyt.philosophy.subject-matter",
+      "title": "Felsefenin Anlamı ve Sorgulama",
+      "skillIds": [
+        "skill.philosophy.subject-matter.meaning-inquiry.questioning",
+        "skill.philosophy.subject-matter.meaning-inquiry.philosophical-problem"
+      ],
+      "conceptIds": [
+        "concept.philosophy.subject-matter.meaning-inquiry.sorgulama",
+        "concept.philosophy.subject-matter.meaning-inquiry.felsefi-problem"
+      ]
+    },
+    {
+      "id": "tyt.philosophy.subject-matter.thinking-features",
+      "unitId": "tyt.philosophy.subject-matter",
+      "title": "Felsefi Düşüncenin Özellikleri",
+      "skillIds": [
+        "skill.philosophy.subject-matter.thinking-features.features",
+        "skill.philosophy.subject-matter.thinking-features.reflexive-systematic"
+      ],
+      "conceptIds": [
+        "concept.philosophy.subject-matter.thinking-features.tutarlilik",
+        "concept.philosophy.subject-matter.thinking-features.refleksif-dusunme"
+      ]
+    },
+    {
+      "id": "tyt.philosophy.subject-matter.functions-relations",
+      "unitId": "tyt.philosophy.subject-matter",
+      "title": "Felsefenin İşlevleri ve Diğer Alanlar",
+      "skillIds": [
+        "skill.philosophy.subject-matter.functions-relations.functions",
+        "skill.philosophy.subject-matter.functions-relations.compare-fields"
+      ],
+      "conceptIds": [
+        "concept.philosophy.subject-matter.functions-relations.felsefenin-islevi",
+        "concept.philosophy.subject-matter.functions-relations.alan-ayrimi"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "skill.philosophy.subject-matter.meaning-inquiry.questioning",
+      "title": "Felsefi sorgulamayı tanır",
+      "description": "Merakla başlayan bir düşünmenin kabulleri gerekçeleriyle sorguladığını örnekten belirler.",
+      "topicId": "tyt.philosophy.subject-matter.meaning-inquiry"
+    },
+    {
+      "id": "skill.philosophy.subject-matter.meaning-inquiry.philosophical-problem",
+      "title": "Felsefi problemi ayırt eder",
+      "description": "Cevabı tek bir olguya indirgenemeyen kavramsal soruları felsefi problem olarak ayırt eder.",
+      "topicId": "tyt.philosophy.subject-matter.meaning-inquiry"
+    },
+    {
+      "id": "skill.philosophy.subject-matter.thinking-features.features",
+      "title": "Felsefi düşünmenin özelliklerini yorumlar",
+      "description": "Eleştirel, tutarlı, sistemli ve refleksif düşünme özelliklerini kısa metinden çıkarır.",
+      "topicId": "tyt.philosophy.subject-matter.thinking-features"
+    },
+    {
+      "id": "skill.philosophy.subject-matter.thinking-features.reflexive-systematic",
+      "title": "Refleksif ve sistemli düşünmeyi ayırt eder",
+      "description": "Düşünmenin kendi dayanaklarına yönelmesi ile görüşlerin düzenli bir bütün kurmasını ayırt eder.",
+      "topicId": "tyt.philosophy.subject-matter.thinking-features"
+    },
+    {
+      "id": "skill.philosophy.subject-matter.functions-relations.functions",
+      "title": "Felsefenin işlevlerini yorumlar",
+      "description": "Felsefenin bireysel ve toplumsal işlevlerini verilen durum üzerinden yorumlar.",
+      "topicId": "tyt.philosophy.subject-matter.functions-relations"
+    },
+    {
+      "id": "skill.philosophy.subject-matter.functions-relations.compare-fields",
+      "title": "Felsefeyi bilim, din ve sanattan ayırır",
+      "description": "Felsefenin soru ve yöntemini bilim, din ve sanatın yaklaşımlarından ayırt eder.",
+      "topicId": "tyt.philosophy.subject-matter.functions-relations"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "concept.philosophy.subject-matter.meaning-inquiry.sorgulama",
+      "term": "sorgulama",
+      "definition": "Merakla başlayan bir düşünmenin kabulleri gerekçeleriyle sorguladığını örnekten belirler.",
+      "topicId": "tyt.philosophy.subject-matter.meaning-inquiry"
+    },
+    {
+      "id": "concept.philosophy.subject-matter.meaning-inquiry.felsefi-problem",
+      "term": "felsefi problem",
+      "definition": "Cevabı tek bir olguya indirgenemeyen kavramsal soruları felsefi problem olarak ayırt eder.",
+      "topicId": "tyt.philosophy.subject-matter.meaning-inquiry"
+    },
+    {
+      "id": "concept.philosophy.subject-matter.thinking-features.tutarlilik",
+      "term": "tutarlılık",
+      "definition": "Eleştirel, tutarlı, sistemli ve refleksif düşünme özelliklerini kısa metinden çıkarır.",
+      "topicId": "tyt.philosophy.subject-matter.thinking-features"
+    },
+    {
+      "id": "concept.philosophy.subject-matter.thinking-features.refleksif-dusunme",
+      "term": "refleksif düşünme",
+      "definition": "Düşünmenin kendi dayanaklarına yönelmesi ile görüşlerin düzenli bir bütün kurmasını ayırt eder.",
+      "topicId": "tyt.philosophy.subject-matter.thinking-features"
+    },
+    {
+      "id": "concept.philosophy.subject-matter.functions-relations.felsefenin-islevi",
+      "term": "felsefenin işlevi",
+      "definition": "Felsefenin bireysel ve toplumsal işlevlerini verilen durum üzerinden yorumlar.",
+      "topicId": "tyt.philosophy.subject-matter.functions-relations"
+    },
+    {
+      "id": "concept.philosophy.subject-matter.functions-relations.alan-ayrimi",
+      "term": "alan ayrımı",
+      "definition": "Felsefenin soru ve yöntemini bilim, din ve sanatın yaklaşımlarından ayırt eder.",
+      "topicId": "tyt.philosophy.subject-matter.functions-relations"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "lesson.philosophy.subject-matter.meaning-inquiry.001",
+      "topicId": "tyt.philosophy.subject-matter.meaning-inquiry",
+      "title": "Felsefenin Anlamı ve Sorgulama",
+      "subtitle": "Felsefi sorgulamayı tanır ve Felsefi problemi ayırt eder.",
+      "estimatedMinutes": 10,
+      "exerciseIds": [
+        "exercise.philosophy.subject-matter.meaning-inquiry.001.card01",
+        "exercise.philosophy.subject-matter.meaning-inquiry.001.mcq1",
+        "exercise.philosophy.subject-matter.meaning-inquiry.001.mcq2",
+        "exercise.philosophy.subject-matter.meaning-inquiry.001.mcq3",
+        "exercise.philosophy.subject-matter.meaning-inquiry.001.mcq4",
+        "exercise.philosophy.subject-matter.meaning-inquiry.001.tf01",
+        "exercise.philosophy.subject-matter.meaning-inquiry.001.match01",
+        "exercise.philosophy.subject-matter.meaning-inquiry.001.blank01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.philosophy.subject-matter.thinking-features.001",
+      "topicId": "tyt.philosophy.subject-matter.thinking-features",
+      "title": "Felsefi Düşüncenin Özellikleri",
+      "subtitle": "Felsefi düşünmenin özelliklerini yorumlar ve Refleksif ve sistemli düşünmeyi ayırt eder.",
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.philosophy.subject-matter.thinking-features.001.mcq1",
+        "exercise.philosophy.subject-matter.thinking-features.001.mcq2",
+        "exercise.philosophy.subject-matter.thinking-features.001.mcq3",
+        "exercise.philosophy.subject-matter.thinking-features.001.mcq4",
+        "exercise.philosophy.subject-matter.thinking-features.001.tf01",
+        "exercise.philosophy.subject-matter.thinking-features.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.philosophy.subject-matter.functions-relations.001",
+      "topicId": "tyt.philosophy.subject-matter.functions-relations",
+      "title": "Felsefenin İşlevleri ve Diğer Alanlar",
+      "subtitle": "Felsefenin işlevlerini yorumlar ve Felsefeyi bilim, din ve sanattan ayırır.",
+      "estimatedMinutes": 10,
+      "exerciseIds": [
+        "exercise.philosophy.subject-matter.functions-relations.001.mcq1",
+        "exercise.philosophy.subject-matter.functions-relations.001.mcq2",
+        "exercise.philosophy.subject-matter.functions-relations.001.mcq3",
+        "exercise.philosophy.subject-matter.functions-relations.001.mcq4",
+        "exercise.philosophy.subject-matter.functions-relations.001.tf01",
+        "exercise.philosophy.subject-matter.functions-relations.001.match01",
+        "exercise.philosophy.subject-matter.functions-relations.001.blank01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "id": "exercise.philosophy.subject-matter.meaning-inquiry.001.mcq1",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.subject-matter.meaning-inquiry.questioning"
+      ],
+      "prompt": "Bir öğrenci, herkesin doğru saydığı bir yargının hangi gerekçelere dayandığını ve başka türlü düşünülüp düşünülemeyeceğini araştırır.\n\nBu tutumda öne çıkan felsefi özellik hangisidir?",
+      "tag": "FELSEFE · FELSEFENİN ANLAMI VE SORGULAMA",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Ezberleme"
+        },
+        {
+          "id": "opt-2",
+          "label": "Sorgulama"
+        },
+        {
+          "id": "opt-3",
+          "label": "Otoriteye uyma"
+        },
+        {
+          "id": "opt-4",
+          "label": "Salt gözlem"
+        }
+      ],
+      "correctOptionId": "opt-2",
+      "explanation": "Bir öğrenci, herkesin doğru saydığı bir yargının hangi gerekçelere dayandığını ve başka türlü düşünülüp düşünülemeyeceğini araştırır. Bu nedenle doğru ayrım “Sorgulama”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.subject-matter.meaning-inquiry.001.mcq2",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.subject-matter.meaning-inquiry.questioning"
+      ],
+      "prompt": "Bir öğrenci, herkesin doğru saydığı bir yargının hangi gerekçelere dayandığını ve başka türlü düşünülüp düşünülemeyeceğini araştırır.\n\nBir öğrenci bu görüşü “Otoriteye uyma” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · FELSEFENİN ANLAMI VE SORGULAMA",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Sorgulama"
+        },
+        {
+          "id": "opt-2",
+          "label": "Otoriteye uyma"
+        },
+        {
+          "id": "opt-3",
+          "label": "Salt gözlem"
+        },
+        {
+          "id": "opt-4",
+          "label": "Ezberleme"
+        }
+      ],
+      "correctOptionId": "opt-1",
+      "explanation": "Görüşte belirleyici ölçüt “sorgulama” çerçevesidir. “Otoriteye uyma” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.subject-matter.meaning-inquiry.001.mcq3",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.subject-matter.meaning-inquiry.philosophical-problem"
+      ],
+      "prompt": "“İyi bir yaşamı iyi yapan nedir?” sorusu, tek bir ölçümle sonuçlandırılamaz; kavramların ve gerekçelerin tartışılmasını ister.\n\nBu sorunun felsefi sayılmasının temel nedeni nedir?",
+      "tag": "FELSEFE · FELSEFENİN ANLAMI VE SORGULAMA",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Laboratuvarda hemen sınanması"
+        },
+        {
+          "id": "opt-2",
+          "label": "Yalnız geçmişi anlatması"
+        },
+        {
+          "id": "opt-3",
+          "label": "Tek bir otoritece cevaplanması"
+        },
+        {
+          "id": "opt-4",
+          "label": "Kavramsal ve gerekçeli tartışmaya açık olması"
+        }
+      ],
+      "correctOptionId": "opt-4",
+      "explanation": "“İyi bir yaşamı iyi yapan nedir?” sorusu, tek bir ölçümle sonuçlandırılamaz; kavramların ve gerekçelerin tartışılmasını ister. Bu nedenle doğru ayrım “Kavramsal ve gerekçeli tartışmaya açık olması”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.subject-matter.meaning-inquiry.001.mcq4",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.subject-matter.meaning-inquiry.philosophical-problem"
+      ],
+      "prompt": "“İyi bir yaşamı iyi yapan nedir?” sorusu, tek bir ölçümle sonuçlandırılamaz; kavramların ve gerekçelerin tartışılmasını ister.\n\nBir öğrenci bu görüşü “Laboratuvarda hemen sınanması” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · FELSEFENİN ANLAMI VE SORGULAMA",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Yalnız geçmişi anlatması"
+        },
+        {
+          "id": "opt-2",
+          "label": "Tek bir otoritece cevaplanması"
+        },
+        {
+          "id": "opt-3",
+          "label": "Kavramsal ve gerekçeli tartışmaya açık olması"
+        },
+        {
+          "id": "opt-4",
+          "label": "Laboratuvarda hemen sınanması"
+        }
+      ],
+      "correctOptionId": "opt-3",
+      "explanation": "Görüşte belirleyici ölçüt “felsefi problem” çerçevesidir. “Laboratuvarda hemen sınanması” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.subject-matter.meaning-inquiry.001.tf01",
+      "kind": "trueFalse",
+      "skillIds": [
+        "skill.philosophy.subject-matter.meaning-inquiry.questioning",
+        "skill.philosophy.subject-matter.meaning-inquiry.philosophical-problem"
+      ],
+      "statement": "sorgulama ile felsefi problem aynı kavram değildir; bir metnin gerekçesine bakılarak birbirinden ayrılmalıdır.",
+      "tag": "FELSEFE · FELSEFENİN ANLAMI VE SORGULAMA",
+      "correctAnswer": true,
+      "explanation": "Bu iki kavram aynı topic içinde ilişkili olsa da farklı sorulara veya ölçütlere karşılık gelir. Ayrım, yalnız anahtar kelimeye değil görüşün gerekçesine dayanır.",
+      "difficulty": 2,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.subject-matter.meaning-inquiry.001.match01",
+      "kind": "matching",
+      "skillIds": [
+        "skill.philosophy.subject-matter.meaning-inquiry.questioning",
+        "skill.philosophy.subject-matter.meaning-inquiry.philosophical-problem"
+      ],
+      "title": "Görüşü temel vurgusuyla eşleştir",
+      "subtitle": "Her ifadeyi yalnız bir kavramla eşleştir.",
+      "tag": "FELSEFE · FELSEFENİN ANLAMI VE SORGULAMA",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "sorgulama",
+          "right": "Merakla başlayan bir düşünmenin kabulleri gerekçeleriyle sorguladığını örnekten belirler."
+        },
+        {
+          "id": "pair-2",
+          "left": "felsefi problem",
+          "right": "Cevabı tek bir olguya indirgenemeyen kavramsal soruları felsefi problem olarak ayırt eder."
+        }
+      ],
+      "explanation": "Eşleştirmeler kavramın adı ile ölçülebilir ayırt etme ölçütünü bağlar; görüşü yalnız ezberlemek yerine gerekçesiyle tanımayı sağlar.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.subject-matter.meaning-inquiry.001.blank01",
+      "kind": "fillBlank",
+      "skillIds": [
+        "skill.philosophy.subject-matter.meaning-inquiry.questioning"
+      ],
+      "title": "Temel kavramı tamamla",
+      "hint": "Merakla başlayan bir düşünmenin kabulleri gerekçeleriyle sorguladığını örnekten belirler.",
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "sorgulama"
+        },
+        {
+          "id": "w-2",
+          "label": "felsefi problem"
+        },
+        {
+          "id": "w-3",
+          "label": "olgusal betimleme"
+        }
+      ],
+      "solutionTokenIds": [
+        "w-1"
+      ],
+      "explanation": "Tanım “sorgulama” kavramına karşılık gelir. Diğer seçenekler farklı bir ölçüt veya düşünme alanını belirtir.",
+      "difficulty": 1,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.subject-matter.meaning-inquiry.001.card01",
+      "kind": "flashcard",
+      "skillIds": [
+        "skill.philosophy.subject-matter.meaning-inquiry.questioning",
+        "skill.philosophy.subject-matter.meaning-inquiry.philosophical-problem"
+      ],
+      "tag": "FELSEFE · FELSEFENİN ANLAMI VE SORGULAMA",
+      "cards": [
+        {
+          "id": "card-1",
+          "front": "sorgulama",
+          "back": "Merakla başlayan bir düşünmenin kabulleri gerekçeleriyle sorguladığını örnekten belirler.",
+          "hint": "Kavramın bir metinde hangi ölçütle tanınacağını düşün."
+        },
+        {
+          "id": "card-2",
+          "front": "felsefi problem",
+          "back": "Cevabı tek bir olguya indirgenemeyen kavramsal soruları felsefi problem olarak ayırt eder.",
+          "hint": "Kavramın bir metinde hangi ölçütle tanınacağını düşün."
+        }
+      ],
+      "explanation": "Kartlar temel ayrımları ilk karşılaşmada tanıtır; scored skill coverage hesabına katılmaz.",
+      "difficulty": 1,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.subject-matter.thinking-features.001.mcq1",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.subject-matter.thinking-features.features"
+      ],
+      "prompt": "Bir düşünür görüşlerini birbirini destekleyen öncüller hâlinde kurar ve vardığı sonuçların önceki kabulleriyle çelişmemesine dikkat eder.\n\nBu parçada hangi özellik öne çıkmaktadır?",
+      "tag": "FELSEFE · FELSEFİ DÜŞÜNCENİN ÖZELLİKLERİ",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Deneysellik"
+        },
+        {
+          "id": "opt-2",
+          "label": "Rastlantısallık"
+        },
+        {
+          "id": "opt-3",
+          "label": "Tutarlılık"
+        },
+        {
+          "id": "opt-4",
+          "label": "Dogmatiklik"
+        }
+      ],
+      "correctOptionId": "opt-3",
+      "explanation": "Bir düşünür görüşlerini birbirini destekleyen öncüller hâlinde kurar ve vardığı sonuçların önceki kabulleriyle çelişmemesine dikkat eder. Bu nedenle doğru ayrım “Tutarlılık”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.subject-matter.thinking-features.001.mcq2",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.subject-matter.thinking-features.features"
+      ],
+      "prompt": "Bir düşünür görüşlerini birbirini destekleyen öncüller hâlinde kurar ve vardığı sonuçların önceki kabulleriyle çelişmemesine dikkat eder.\n\nBir öğrenci bu görüşü “Dogmatiklik” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · FELSEFİ DÜŞÜNCENİN ÖZELLİKLERİ",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Rastlantısallık"
+        },
+        {
+          "id": "opt-2",
+          "label": "Tutarlılık"
+        },
+        {
+          "id": "opt-3",
+          "label": "Dogmatiklik"
+        },
+        {
+          "id": "opt-4",
+          "label": "Deneysellik"
+        }
+      ],
+      "correctOptionId": "opt-2",
+      "explanation": "Görüşte belirleyici ölçüt “tutarlılık” çerçevesidir. “Dogmatiklik” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.subject-matter.thinking-features.001.mcq3",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.subject-matter.thinking-features.reflexive-systematic"
+      ],
+      "prompt": "Bir kişi adalet hakkındaki görüşünü savunurken yalnız toplumu değil, kendi “adalet” kavramını nasıl kurduğunu da incelemeye başlar.\n\nBu tutum en çok hangi kavramla açıklanır?",
+      "tag": "FELSEFE · FELSEFİ DÜŞÜNCENİN ÖZELLİKLERİ",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Refleksif düşünme"
+        },
+        {
+          "id": "opt-2",
+          "label": "Taklit"
+        },
+        {
+          "id": "opt-3",
+          "label": "Sezgiye teslim olma"
+        },
+        {
+          "id": "opt-4",
+          "label": "Olguları sayma"
+        }
+      ],
+      "correctOptionId": "opt-1",
+      "explanation": "Bir kişi adalet hakkındaki görüşünü savunurken yalnız toplumu değil, kendi “adalet” kavramını nasıl kurduğunu da incelemeye başlar. Bu nedenle doğru ayrım “Refleksif düşünme”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.subject-matter.thinking-features.001.mcq4",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.subject-matter.thinking-features.reflexive-systematic"
+      ],
+      "prompt": "Bir kişi adalet hakkındaki görüşünü savunurken yalnız toplumu değil, kendi “adalet” kavramını nasıl kurduğunu da incelemeye başlar.\n\nBir öğrenci bu görüşü “Taklit” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · FELSEFİ DÜŞÜNCENİN ÖZELLİKLERİ",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Taklit"
+        },
+        {
+          "id": "opt-2",
+          "label": "Sezgiye teslim olma"
+        },
+        {
+          "id": "opt-3",
+          "label": "Olguları sayma"
+        },
+        {
+          "id": "opt-4",
+          "label": "Refleksif düşünme"
+        }
+      ],
+      "correctOptionId": "opt-4",
+      "explanation": "Görüşte belirleyici ölçüt “refleksif düşünme” çerçevesidir. “Taklit” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.subject-matter.thinking-features.001.tf01",
+      "kind": "trueFalse",
+      "skillIds": [
+        "skill.philosophy.subject-matter.thinking-features.features",
+        "skill.philosophy.subject-matter.thinking-features.reflexive-systematic"
+      ],
+      "statement": "tutarlılık ile refleksif düşünme aynı kavram değildir; bir metnin gerekçesine bakılarak birbirinden ayrılmalıdır.",
+      "tag": "FELSEFE · FELSEFİ DÜŞÜNCENİN ÖZELLİKLERİ",
+      "correctAnswer": true,
+      "explanation": "Bu iki kavram aynı topic içinde ilişkili olsa da farklı sorulara veya ölçütlere karşılık gelir. Ayrım, yalnız anahtar kelimeye değil görüşün gerekçesine dayanır.",
+      "difficulty": 2,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.subject-matter.thinking-features.001.match01",
+      "kind": "matching",
+      "skillIds": [
+        "skill.philosophy.subject-matter.thinking-features.features",
+        "skill.philosophy.subject-matter.thinking-features.reflexive-systematic"
+      ],
+      "title": "Görüşü temel vurgusuyla eşleştir",
+      "subtitle": "Her ifadeyi yalnız bir kavramla eşleştir.",
+      "tag": "FELSEFE · FELSEFİ DÜŞÜNCENİN ÖZELLİKLERİ",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "tutarlılık",
+          "right": "Eleştirel, tutarlı, sistemli ve refleksif düşünme özelliklerini kısa metinden çıkarır."
+        },
+        {
+          "id": "pair-2",
+          "left": "refleksif düşünme",
+          "right": "Düşünmenin kendi dayanaklarına yönelmesi ile görüşlerin düzenli bir bütün kurmasını ayırt eder."
+        }
+      ],
+      "explanation": "Eşleştirmeler kavramın adı ile ölçülebilir ayırt etme ölçütünü bağlar; görüşü yalnız ezberlemek yerine gerekçesiyle tanımayı sağlar.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.subject-matter.functions-relations.001.mcq1",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.subject-matter.functions-relations.functions"
+      ],
+      "prompt": "Bir toplum, teknolojinin sunduğu imkânları kullanmadan önce bunların özgürlük ve adalet üzerindeki etkilerini tartışır.\n\nBu örnek felsefenin hangi işlevini gösterir?",
+      "tag": "FELSEFE · FELSEFENİN İŞLEVLERİ VE DİĞER ALANLAR",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Kesin teknik sonuç üretme"
+        },
+        {
+          "id": "opt-2",
+          "label": "İnancı zorunlu kılma"
+        },
+        {
+          "id": "opt-3",
+          "label": "Sanat eserini fiyatlandırma"
+        },
+        {
+          "id": "opt-4",
+          "label": "Ortak yaşamı eleştirel değerlendirme"
+        }
+      ],
+      "correctOptionId": "opt-4",
+      "explanation": "Bir toplum, teknolojinin sunduğu imkânları kullanmadan önce bunların özgürlük ve adalet üzerindeki etkilerini tartışır. Bu nedenle doğru ayrım “Ortak yaşamı eleştirel değerlendirme”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.subject-matter.functions-relations.001.mcq2",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.subject-matter.functions-relations.functions"
+      ],
+      "prompt": "Bir toplum, teknolojinin sunduğu imkânları kullanmadan önce bunların özgürlük ve adalet üzerindeki etkilerini tartışır.\n\nBir öğrenci bu görüşü “Kesin teknik sonuç üretme” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · FELSEFENİN İŞLEVLERİ VE DİĞER ALANLAR",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "İnancı zorunlu kılma"
+        },
+        {
+          "id": "opt-2",
+          "label": "Sanat eserini fiyatlandırma"
+        },
+        {
+          "id": "opt-3",
+          "label": "Ortak yaşamı eleştirel değerlendirme"
+        },
+        {
+          "id": "opt-4",
+          "label": "Kesin teknik sonuç üretme"
+        }
+      ],
+      "correctOptionId": "opt-3",
+      "explanation": "Görüşte belirleyici ölçüt “felsefenin işlevi” çerçevesidir. “Kesin teknik sonuç üretme” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.subject-matter.functions-relations.001.mcq3",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.subject-matter.functions-relations.compare-fields"
+      ],
+      "prompt": "Bilim insanı belirli bir olayın hangi koşullarda gerçekleştiğini deneyle araştırırken filozof, “Bilimsel açıklamanın sınırı nedir?” diye sorar.\n\nBu karşılaştırmadan hangi sonuca ulaşılır?",
+      "tag": "FELSEFE · FELSEFENİN İŞLEVLERİ VE DİĞER ALANLAR",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "İki alanın yöntemi bütünüyle aynıdır"
+        },
+        {
+          "id": "opt-2",
+          "label": "Felsefe bilimin kavram ve sınırlarını da sorgular"
+        },
+        {
+          "id": "opt-3",
+          "label": "Felsefe her zaman deney yapar"
+        },
+        {
+          "id": "opt-4",
+          "label": "Bilim değer sorularını kesin çözer"
+        }
+      ],
+      "correctOptionId": "opt-2",
+      "explanation": "Bilim insanı belirli bir olayın hangi koşullarda gerçekleştiğini deneyle araştırırken filozof, “Bilimsel açıklamanın sınırı nedir?” diye sorar. Bu nedenle doğru ayrım “Felsefe bilimin kavram ve sınırlarını da sorgular”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.subject-matter.functions-relations.001.mcq4",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.subject-matter.functions-relations.compare-fields"
+      ],
+      "prompt": "Bilim insanı belirli bir olayın hangi koşullarda gerçekleştiğini deneyle araştırırken filozof, “Bilimsel açıklamanın sınırı nedir?” diye sorar.\n\nBir öğrenci bu görüşü “Felsefe her zaman deney yapar” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · FELSEFENİN İŞLEVLERİ VE DİĞER ALANLAR",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Felsefe bilimin kavram ve sınırlarını da sorgular"
+        },
+        {
+          "id": "opt-2",
+          "label": "Felsefe her zaman deney yapar"
+        },
+        {
+          "id": "opt-3",
+          "label": "Bilim değer sorularını kesin çözer"
+        },
+        {
+          "id": "opt-4",
+          "label": "İki alanın yöntemi bütünüyle aynıdır"
+        }
+      ],
+      "correctOptionId": "opt-1",
+      "explanation": "Görüşte belirleyici ölçüt “alan ayrımı” çerçevesidir. “Felsefe her zaman deney yapar” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.subject-matter.functions-relations.001.tf01",
+      "kind": "trueFalse",
+      "skillIds": [
+        "skill.philosophy.subject-matter.functions-relations.functions",
+        "skill.philosophy.subject-matter.functions-relations.compare-fields"
+      ],
+      "statement": "felsefenin işlevi ile alan ayrımı aynı kavram değildir; bir metnin gerekçesine bakılarak birbirinden ayrılmalıdır.",
+      "tag": "FELSEFE · FELSEFENİN İŞLEVLERİ VE DİĞER ALANLAR",
+      "correctAnswer": true,
+      "explanation": "Bu iki kavram aynı topic içinde ilişkili olsa da farklı sorulara veya ölçütlere karşılık gelir. Ayrım, yalnız anahtar kelimeye değil görüşün gerekçesine dayanır.",
+      "difficulty": 2,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.subject-matter.functions-relations.001.match01",
+      "kind": "matching",
+      "skillIds": [
+        "skill.philosophy.subject-matter.functions-relations.functions",
+        "skill.philosophy.subject-matter.functions-relations.compare-fields"
+      ],
+      "title": "Görüşü temel vurgusuyla eşleştir",
+      "subtitle": "Her ifadeyi yalnız bir kavramla eşleştir.",
+      "tag": "FELSEFE · FELSEFENİN İŞLEVLERİ VE DİĞER ALANLAR",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "felsefenin işlevi",
+          "right": "Felsefenin bireysel ve toplumsal işlevlerini verilen durum üzerinden yorumlar."
+        },
+        {
+          "id": "pair-2",
+          "left": "alan ayrımı",
+          "right": "Felsefenin soru ve yöntemini bilim, din ve sanatın yaklaşımlarından ayırt eder."
+        }
+      ],
+      "explanation": "Eşleştirmeler kavramın adı ile ölçülebilir ayırt etme ölçütünü bağlar; görüşü yalnız ezberlemek yerine gerekçesiyle tanımayı sağlar.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.subject-matter.functions-relations.001.blank01",
+      "kind": "fillBlank",
+      "skillIds": [
+        "skill.philosophy.subject-matter.functions-relations.functions"
+      ],
+      "title": "Temel kavramı tamamla",
+      "hint": "Felsefenin bireysel ve toplumsal işlevlerini verilen durum üzerinden yorumlar.",
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "felsefenin işlevi"
+        },
+        {
+          "id": "w-2",
+          "label": "alan ayrımı"
+        },
+        {
+          "id": "w-3",
+          "label": "olgusal betimleme"
+        }
+      ],
+      "solutionTokenIds": [
+        "w-1"
+      ],
+      "explanation": "Tanım “felsefenin işlevi” kavramına karşılık gelir. Diğer seçenekler farklı bir ölçüt veya düşünme alanını belirtir.",
+      "difficulty": 1,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.philosophy.subject-matter.01",
+      "unitId": "tyt.philosophy.subject-matter",
+      "kind": "lesson",
+      "title": "Felsefenin Anlamı ve Sorgulama",
+      "order": 1,
+      "prerequisiteIds": [],
+      "lessonId": "lesson.philosophy.subject-matter.meaning-inquiry.001"
+    },
+    {
+      "id": "path.philosophy.subject-matter.02",
+      "unitId": "tyt.philosophy.subject-matter",
+      "kind": "lesson",
+      "title": "Felsefi Düşüncenin Özellikleri",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.philosophy.subject-matter.01"
+      ],
+      "lessonId": "lesson.philosophy.subject-matter.thinking-features.001"
+    },
+    {
+      "id": "path.philosophy.subject-matter.03",
+      "unitId": "tyt.philosophy.subject-matter",
+      "kind": "practice",
+      "title": "Felsefenin İşlevleri ve Diğer Alanlar Uygulaması",
+      "order": 3,
+      "prerequisiteIds": [
+        "path.philosophy.subject-matter.02"
+      ],
+      "lessonId": "lesson.philosophy.subject-matter.functions-relations.001"
+    }
+  ]
+}

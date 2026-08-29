@@ -294,6 +294,7 @@ export type SubjectIconName =
   | 'math'
   | 'philosophy'
   | 'physics'
+  | 'religion'
   | 'turkish';
 
 export function SubjectIcon({
@@ -375,6 +376,13 @@ export function SubjectIcon({
             strokeWidth={1.7}
           />
           <Path d="M12 8v9" stroke={color} strokeWidth={1.7} />
+        </Glyph24>
+      );
+    case 'religion':
+      return (
+        <Glyph24 size={size}>
+          <Path d="M4 6.5c3.2-.8 5.8-.2 8 1.6v11c-2.2-1.8-4.8-2.4-8-1.6z" stroke={color} strokeWidth={1.7} />
+          <Path d="M20 6.5c-3.2-.8-5.8-.2-8 1.6v11c2.2-1.8 4.8-2.4 8-1.6z" stroke={color} strokeWidth={1.7} />
         </Glyph24>
       );
   }

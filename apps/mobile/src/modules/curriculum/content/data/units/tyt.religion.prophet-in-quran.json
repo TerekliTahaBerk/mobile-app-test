@@ -1,0 +1,862 @@
+{
+  "unitId": "tyt.religion.prophet-in-quran",
+  "topics": [
+    {
+      "id": "tyt.religion.prophet-in-quran.messenger-human",
+      "unitId": "tyt.religion.prophet-in-quran",
+      "title": "Peygamber ve İnsan Oluşu",
+      "skillIds": [
+        "skill.religion.prophet-in-quran.messenger-human.interpret",
+        "skill.religion.prophet-in-quran.messenger-human.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.prophet-in-quran.messenger-human.beser-peygamber"
+      ]
+    },
+    {
+      "id": "tyt.religion.prophet-in-quran.explanation-example",
+      "unitId": "tyt.religion.prophet-in-quran",
+      "title": "Açıklama ve Örneklik",
+      "skillIds": [
+        "skill.religion.prophet-in-quran.explanation-example.interpret",
+        "skill.religion.prophet-in-quran.explanation-example.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.prophet-in-quran.explanation-example.orneklik"
+      ]
+    },
+    {
+      "id": "tyt.religion.prophet-in-quran.mercy-warning",
+      "unitId": "tyt.religion.prophet-in-quran",
+      "title": "Rahmet, Uyarı ve Müjde",
+      "skillIds": [
+        "skill.religion.prophet-in-quran.mercy-warning.interpret",
+        "skill.religion.prophet-in-quran.mercy-warning.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.prophet-in-quran.mercy-warning.uyari-ve-mujde"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "skill.religion.prophet-in-quran.messenger-human.interpret",
+      "title": "Hz. Muhammed’in insan oluşu ile peygamberlik görevini ayırt eder.",
+      "description": "Hz. Muhammed’in insan oluşu ile peygamberlik görevini ayırt eder.",
+      "topicId": "tyt.religion.prophet-in-quran.messenger-human"
+    },
+    {
+      "id": "skill.religion.prophet-in-quran.messenger-human.distinguish",
+      "title": "Peygambere insanüstü özellikler yükleyen yorumu değerlendirir.",
+      "description": "Peygambere insanüstü özellikler yükleyen yorumu değerlendirir.",
+      "topicId": "tyt.religion.prophet-in-quran.messenger-human"
+    },
+    {
+      "id": "skill.religion.prophet-in-quran.explanation-example.interpret",
+      "title": "Peygamberin açıklama ve örnek olma görevlerini ayırt eder.",
+      "description": "Peygamberin açıklama ve örnek olma görevlerini ayırt eder.",
+      "topicId": "tyt.religion.prophet-in-quran.explanation-example"
+    },
+    {
+      "id": "skill.religion.prophet-in-quran.explanation-example.distinguish",
+      "title": "Sünnetin örneklik boyutunu davranış bağlamında yorumlar.",
+      "description": "Sünnetin örneklik boyutunu davranış bağlamında yorumlar.",
+      "topicId": "tyt.religion.prophet-in-quran.explanation-example"
+    },
+    {
+      "id": "skill.religion.prophet-in-quran.mercy-warning.interpret",
+      "title": "Rahmet ile uyarıcılık görevlerini birlikte yorumlar.",
+      "description": "Rahmet ile uyarıcılık görevlerini birlikte yorumlar.",
+      "topicId": "tyt.religion.prophet-in-quran.mercy-warning"
+    },
+    {
+      "id": "skill.religion.prophet-in-quran.mercy-warning.distinguish",
+      "title": "Tebliğde umut ve sorumluluk dengesini çıkarır.",
+      "description": "Tebliğde umut ve sorumluluk dengesini çıkarır.",
+      "topicId": "tyt.religion.prophet-in-quran.mercy-warning"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "concept.religion.prophet-in-quran.messenger-human.beser-peygamber",
+      "term": "beşer peygamber",
+      "definition": "Hz. Muhammed’in insan olmakla birlikte vahyi tebliğle görevlendirilmesi",
+      "topicId": "tyt.religion.prophet-in-quran.messenger-human"
+    },
+    {
+      "id": "concept.religion.prophet-in-quran.explanation-example.orneklik",
+      "term": "örneklik",
+      "definition": "ilahî mesajın davranış ve tutumlarla yaşanabilir biçimde gösterilmesi",
+      "topicId": "tyt.religion.prophet-in-quran.explanation-example"
+    },
+    {
+      "id": "concept.religion.prophet-in-quran.mercy-warning.uyari-ve-mujde",
+      "term": "uyarı ve müjde",
+      "definition": "insanı sonuçlar konusunda bilinçlendirirken iyiliğe yönelten dengeli çağrı",
+      "topicId": "tyt.religion.prophet-in-quran.mercy-warning"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "lesson.religion.prophet-in-quran.messenger-human.001",
+      "topicId": "tyt.religion.prophet-in-quran.messenger-human",
+      "title": "Peygamber ve İnsan Oluşu",
+      "subtitle": "Hz. Muhammed’in insan oluşu ile peygamberlik görevini ayırt eder. Peygambere insanüstü özellikler yükleyen yorumu değerlendirir.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.prophet-in-quran.messenger-human.001.card01",
+        "exercise.religion.prophet-in-quran.messenger-human.001.mcq01",
+        "exercise.religion.prophet-in-quran.messenger-human.001.mcq02",
+        "exercise.religion.prophet-in-quran.messenger-human.001.mcq03",
+        "exercise.religion.prophet-in-quran.messenger-human.001.mcq04",
+        "exercise.religion.prophet-in-quran.messenger-human.001.tf01",
+        "exercise.religion.prophet-in-quran.messenger-human.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.religion.prophet-in-quran.explanation-example.001",
+      "topicId": "tyt.religion.prophet-in-quran.explanation-example",
+      "title": "Açıklama ve Örneklik",
+      "subtitle": "Peygamberin açıklama ve örnek olma görevlerini ayırt eder. Sünnetin örneklik boyutunu davranış bağlamında yorumlar.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.prophet-in-quran.explanation-example.001.card01",
+        "exercise.religion.prophet-in-quran.explanation-example.001.mcq01",
+        "exercise.religion.prophet-in-quran.explanation-example.001.mcq02",
+        "exercise.religion.prophet-in-quran.explanation-example.001.mcq03",
+        "exercise.religion.prophet-in-quran.explanation-example.001.mcq04",
+        "exercise.religion.prophet-in-quran.explanation-example.001.tf01",
+        "exercise.religion.prophet-in-quran.explanation-example.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.religion.prophet-in-quran.mercy-warning.001",
+      "topicId": "tyt.religion.prophet-in-quran.mercy-warning",
+      "title": "Rahmet, Uyarı ve Müjde",
+      "subtitle": "Rahmet ile uyarıcılık görevlerini birlikte yorumlar. Tebliğde umut ve sorumluluk dengesini çıkarır.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.prophet-in-quran.mercy-warning.001.card01",
+        "exercise.religion.prophet-in-quran.mercy-warning.001.mcq01",
+        "exercise.religion.prophet-in-quran.mercy-warning.001.mcq02",
+        "exercise.religion.prophet-in-quran.mercy-warning.001.mcq03",
+        "exercise.religion.prophet-in-quran.mercy-warning.001.mcq04",
+        "exercise.religion.prophet-in-quran.mercy-warning.001.tf01",
+        "exercise.religion.prophet-in-quran.mercy-warning.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "id": "exercise.religion.prophet-in-quran.messenger-human.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "beşer peygamber, Hz. Muhammed’in insan olmakla birlikte vahyi tebliğle görevlendirilmesi.",
+      "skillIds": [
+        "skill.religion.prophet-in-quran.messenger-human.interpret",
+        "skill.religion.prophet-in-quran.messenger-human.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · PEYGAMBER VE İNSAN OLUŞU",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "beşer peygamber",
+          "back": "Hz. Muhammed’in insan olmakla birlikte vahyi tebliğle görevlendirilmesi",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.prophet-in-quran.messenger-human.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "beşer peygamber, Hz. Muhammed’in insan olmakla birlikte vahyi tebliğle görevlendirilmesi.",
+      "skillIds": [
+        "skill.religion.prophet-in-quran.messenger-human.interpret",
+        "skill.religion.prophet-in-quran.messenger-human.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · PEYGAMBER VE İNSAN OLUŞU",
+      "prompt": "“Hz. Muhammed’in insan olmakla birlikte vahyi tebliğle görevlendirilmesi” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "beşer peygamber"
+        },
+        {
+          "id": "b",
+          "label": "örneklik"
+        },
+        {
+          "id": "c",
+          "label": "uyarı ve müjde"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.prophet-in-quran.messenger-human.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada beşer peygamber kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.prophet-in-quran.messenger-human.interpret",
+        "skill.religion.prophet-in-quran.messenger-human.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · PEYGAMBER VE İNSAN OLUŞU",
+      "prompt": "Bir öğrenci beşer peygamber konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.prophet-in-quran.messenger-human.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Hz. Muhammed’in insan oluşu ile peygamberlik görevini ayırt eder. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.prophet-in-quran.messenger-human.interpret",
+        "skill.religion.prophet-in-quran.messenger-human.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · PEYGAMBER VE İNSAN OLUŞU",
+      "prompt": "Hz. Muhammed’in insan oluşu ile peygamberlik görevini ayırt eder. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.prophet-in-quran.messenger-human.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "Peygambere insanüstü özellikler yükleyen yorumu değerlendirir. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.prophet-in-quran.messenger-human.interpret",
+        "skill.religion.prophet-in-quran.messenger-human.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · PEYGAMBER VE İNSAN OLUŞU",
+      "prompt": "Bir açıklama, beşer peygamber kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.prophet-in-quran.messenger-human.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. beşer peygamber, Hz. Muhammed’in insan olmakla birlikte vahyi tebliğle görevlendirilmesi; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.prophet-in-quran.messenger-human.interpret",
+        "skill.religion.prophet-in-quran.messenger-human.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · PEYGAMBER VE İNSAN OLUŞU",
+      "statement": "beşer peygamber kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.prophet-in-quran.messenger-human.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.prophet-in-quran.messenger-human.interpret",
+        "skill.religion.prophet-in-quran.messenger-human.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · PEYGAMBER VE İNSAN OLUŞU",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "beşer peygamber",
+          "right": "Hz. Muhammed’in insan olmakla birlikte vahyi tebliğle görevlendirilmesi"
+        },
+        {
+          "id": "p2",
+          "left": "örneklik",
+          "right": "ilahî mesajın davranış ve tutumlarla yaşanabilir biçimde gösterilmesi"
+        },
+        {
+          "id": "p3",
+          "left": "uyarı ve müjde",
+          "right": "insanı sonuçlar konusunda bilinçlendirirken iyiliğe yönelten dengeli çağrı"
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.prophet-in-quran.explanation-example.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "örneklik, ilahî mesajın davranış ve tutumlarla yaşanabilir biçimde gösterilmesi.",
+      "skillIds": [
+        "skill.religion.prophet-in-quran.explanation-example.interpret",
+        "skill.religion.prophet-in-quran.explanation-example.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · AÇIKLAMA VE ÖRNEKLİK",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "örneklik",
+          "back": "ilahî mesajın davranış ve tutumlarla yaşanabilir biçimde gösterilmesi",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.prophet-in-quran.explanation-example.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "örneklik, ilahî mesajın davranış ve tutumlarla yaşanabilir biçimde gösterilmesi.",
+      "skillIds": [
+        "skill.religion.prophet-in-quran.explanation-example.interpret",
+        "skill.religion.prophet-in-quran.explanation-example.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · AÇIKLAMA VE ÖRNEKLİK",
+      "prompt": "“Ilahî mesajın davranış ve tutumlarla yaşanabilir biçimde gösterilmesi” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "beşer peygamber"
+        },
+        {
+          "id": "b",
+          "label": "örneklik"
+        },
+        {
+          "id": "c",
+          "label": "uyarı ve müjde"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "b"
+    },
+    {
+      "id": "exercise.religion.prophet-in-quran.explanation-example.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada örneklik kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.prophet-in-quran.explanation-example.interpret",
+        "skill.religion.prophet-in-quran.explanation-example.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · AÇIKLAMA VE ÖRNEKLİK",
+      "prompt": "Bir öğrenci örneklik konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.prophet-in-quran.explanation-example.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Peygamberin açıklama ve örnek olma görevlerini ayırt eder. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.prophet-in-quran.explanation-example.interpret",
+        "skill.religion.prophet-in-quran.explanation-example.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · AÇIKLAMA VE ÖRNEKLİK",
+      "prompt": "Peygamberin açıklama ve örnek olma görevlerini ayırt eder. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.prophet-in-quran.explanation-example.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "Sünnetin örneklik boyutunu davranış bağlamında yorumlar. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.prophet-in-quran.explanation-example.interpret",
+        "skill.religion.prophet-in-quran.explanation-example.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · AÇIKLAMA VE ÖRNEKLİK",
+      "prompt": "Bir açıklama, örneklik kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.prophet-in-quran.explanation-example.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. örneklik, ilahî mesajın davranış ve tutumlarla yaşanabilir biçimde gösterilmesi; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.prophet-in-quran.explanation-example.interpret",
+        "skill.religion.prophet-in-quran.explanation-example.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · AÇIKLAMA VE ÖRNEKLİK",
+      "statement": "örneklik kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.prophet-in-quran.explanation-example.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.prophet-in-quran.explanation-example.interpret",
+        "skill.religion.prophet-in-quran.explanation-example.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · AÇIKLAMA VE ÖRNEKLİK",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "beşer peygamber",
+          "right": "Hz. Muhammed’in insan olmakla birlikte vahyi tebliğle görevlendirilmesi"
+        },
+        {
+          "id": "p2",
+          "left": "örneklik",
+          "right": "ilahî mesajın davranış ve tutumlarla yaşanabilir biçimde gösterilmesi"
+        },
+        {
+          "id": "p3",
+          "left": "uyarı ve müjde",
+          "right": "insanı sonuçlar konusunda bilinçlendirirken iyiliğe yönelten dengeli çağrı"
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.prophet-in-quran.mercy-warning.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "uyarı ve müjde, insanı sonuçlar konusunda bilinçlendirirken iyiliğe yönelten dengeli çağrı.",
+      "skillIds": [
+        "skill.religion.prophet-in-quran.mercy-warning.interpret",
+        "skill.religion.prophet-in-quran.mercy-warning.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · RAHMET, UYARI VE MÜJDE",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "uyarı ve müjde",
+          "back": "insanı sonuçlar konusunda bilinçlendirirken iyiliğe yönelten dengeli çağrı",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.prophet-in-quran.mercy-warning.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "uyarı ve müjde, insanı sonuçlar konusunda bilinçlendirirken iyiliğe yönelten dengeli çağrı.",
+      "skillIds": [
+        "skill.religion.prophet-in-quran.mercy-warning.interpret",
+        "skill.religion.prophet-in-quran.mercy-warning.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · RAHMET, UYARI VE MÜJDE",
+      "prompt": "“Insanı sonuçlar konusunda bilinçlendirirken iyiliğe yönelten dengeli çağrı” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "beşer peygamber"
+        },
+        {
+          "id": "b",
+          "label": "örneklik"
+        },
+        {
+          "id": "c",
+          "label": "uyarı ve müjde"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "c"
+    },
+    {
+      "id": "exercise.religion.prophet-in-quran.mercy-warning.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada uyarı ve müjde kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.prophet-in-quran.mercy-warning.interpret",
+        "skill.religion.prophet-in-quran.mercy-warning.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · RAHMET, UYARI VE MÜJDE",
+      "prompt": "Bir öğrenci uyarı ve müjde konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.prophet-in-quran.mercy-warning.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Rahmet ile uyarıcılık görevlerini birlikte yorumlar. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.prophet-in-quran.mercy-warning.interpret",
+        "skill.religion.prophet-in-quran.mercy-warning.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · RAHMET, UYARI VE MÜJDE",
+      "prompt": "Rahmet ile uyarıcılık görevlerini birlikte yorumlar. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.prophet-in-quran.mercy-warning.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "Tebliğde umut ve sorumluluk dengesini çıkarır. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.prophet-in-quran.mercy-warning.interpret",
+        "skill.religion.prophet-in-quran.mercy-warning.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · RAHMET, UYARI VE MÜJDE",
+      "prompt": "Bir açıklama, uyarı ve müjde kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.prophet-in-quran.mercy-warning.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. uyarı ve müjde, insanı sonuçlar konusunda bilinçlendirirken iyiliğe yönelten dengeli çağrı; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.prophet-in-quran.mercy-warning.interpret",
+        "skill.religion.prophet-in-quran.mercy-warning.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · RAHMET, UYARI VE MÜJDE",
+      "statement": "uyarı ve müjde kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.prophet-in-quran.mercy-warning.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.prophet-in-quran.mercy-warning.interpret",
+        "skill.religion.prophet-in-quran.mercy-warning.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · RAHMET, UYARI VE MÜJDE",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "beşer peygamber",
+          "right": "Hz. Muhammed’in insan olmakla birlikte vahyi tebliğle görevlendirilmesi"
+        },
+        {
+          "id": "p2",
+          "left": "örneklik",
+          "right": "ilahî mesajın davranış ve tutumlarla yaşanabilir biçimde gösterilmesi"
+        },
+        {
+          "id": "p3",
+          "left": "uyarı ve müjde",
+          "right": "insanı sonuçlar konusunda bilinçlendirirken iyiliğe yönelten dengeli çağrı"
+        }
+      ]
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.religion.prophet-in-quran.01",
+      "unitId": "tyt.religion.prophet-in-quran",
+      "kind": "lesson",
+      "title": "Peygamber ve İnsan Oluşu",
+      "order": 1,
+      "lessonId": "lesson.religion.prophet-in-quran.messenger-human.001",
+      "prerequisiteIds": []
+    },
+    {
+      "id": "path.religion.prophet-in-quran.02",
+      "unitId": "tyt.religion.prophet-in-quran",
+      "kind": "lesson",
+      "title": "Açıklama ve Örneklik",
+      "order": 2,
+      "lessonId": "lesson.religion.prophet-in-quran.explanation-example.001",
+      "prerequisiteIds": [
+        "path.religion.prophet-in-quran.01"
+      ]
+    },
+    {
+      "id": "path.religion.prophet-in-quran.03",
+      "unitId": "tyt.religion.prophet-in-quran",
+      "kind": "lesson",
+      "title": "Rahmet, Uyarı ve Müjde",
+      "order": 3,
+      "lessonId": "lesson.religion.prophet-in-quran.mercy-warning.001",
+      "prerequisiteIds": [
+        "path.religion.prophet-in-quran.02"
+      ]
+    }
+  ]
+}

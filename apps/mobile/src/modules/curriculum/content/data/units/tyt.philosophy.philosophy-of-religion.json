@@ -1,0 +1,882 @@
+{
+  "unitId": "tyt.philosophy.philosophy-of-religion",
+  "topics": [
+    {
+      "id": "tyt.philosophy.philosophy-of-religion.scope-reason",
+      "unitId": "tyt.philosophy.philosophy-of-religion",
+      "title": "Din Felsefesinin Konusu ve İnanç-Akıl İlişkisi",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-religion.scope-reason.philosophy-theology",
+        "skill.philosophy.philosophy-of-religion.scope-reason.faith-reason-revelation"
+      ],
+      "conceptIds": [
+        "concept.philosophy.philosophy-of-religion.scope-reason.din-felsefesi-ve-teoloji",
+        "concept.philosophy.philosophy-of-religion.scope-reason.iman-akil-vahiy"
+      ]
+    },
+    {
+      "id": "tyt.philosophy.philosophy-of-religion.god-universe",
+      "unitId": "tyt.philosophy.philosophy-of-religion",
+      "title": "Tanrı’nın Varlığı ve Evren-Tanrı İlişkisi",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-religion.god-universe.arguments",
+        "skill.philosophy.philosophy-of-religion.god-universe.positions"
+      ],
+      "conceptIds": [
+        "concept.philosophy.philosophy-of-religion.god-universe.tanri-argumanlari",
+        "concept.philosophy.philosophy-of-religion.god-universe.teizm-deizm-panteizm"
+      ]
+    },
+    {
+      "id": "tyt.philosophy.philosophy-of-religion.critique-problems",
+      "unitId": "tyt.philosophy.philosophy-of-religion",
+      "title": "Ateizm, Agnostisizm ve Temel Problemler",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-religion.critique-problems.atheism-agnosticism",
+        "skill.philosophy.philosophy-of-religion.critique-problems.evil-immortality"
+      ],
+      "conceptIds": [
+        "concept.philosophy.philosophy-of-religion.critique-problems.ateizm-ve-agnostisizm",
+        "concept.philosophy.philosophy-of-religion.critique-problems.kotuluk-ve-olumsuzluk-problemi"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "skill.philosophy.philosophy-of-religion.scope-reason.philosophy-theology",
+      "title": "Din felsefesi ile teolojiyi ayırt eder",
+      "description": "Dini tarafsız ve eleştirel inceleyen felsefi yaklaşım ile belirli bir inancın içinden hareket eden teolojiyi ayırt eder.",
+      "topicId": "tyt.philosophy.philosophy-of-religion.scope-reason"
+    },
+    {
+      "id": "skill.philosophy.philosophy-of-religion.scope-reason.faith-reason-revelation",
+      "title": "İman, akıl ve vahiy ilişkisini yorumlar",
+      "description": "Dinî bilginin iman, akıl ve vahiy ile ilişkilendirilme biçimlerini tarafsızca yorumlar.",
+      "topicId": "tyt.philosophy.philosophy-of-religion.scope-reason"
+    },
+    {
+      "id": "skill.philosophy.philosophy-of-religion.god-universe.arguments",
+      "title": "Tanrı’nın varlığına ilişkin argümanları tanır",
+      "description": "Kozmolojik, ontolojik ve düzen-amaç temelli akıl yürütmeleri müfredat düzeyinde ayırt eder.",
+      "topicId": "tyt.philosophy.philosophy-of-religion.god-universe"
+    },
+    {
+      "id": "skill.philosophy.philosophy-of-religion.god-universe.positions",
+      "title": "Teizm, deizm ve panteizmi ayırt eder",
+      "description": "Tanrı’nın evrenle ilişkisine dair teizm, deizm ve panteizm görüşlerini ayırt eder.",
+      "topicId": "tyt.philosophy.philosophy-of-religion.god-universe"
+    },
+    {
+      "id": "skill.philosophy.philosophy-of-religion.critique-problems.atheism-agnosticism",
+      "title": "Ateizm ile agnostisizmi ayırt eder",
+      "description": "Tanrı’nın varlığını reddeden görüş ile bu konuda bilginin mümkün olmadığını savunan görüşü ayırt eder.",
+      "topicId": "tyt.philosophy.philosophy-of-religion.critique-problems"
+    },
+    {
+      "id": "skill.philosophy.philosophy-of-religion.critique-problems.evil-immortality",
+      "title": "Kötülük ve ruhun ölümsüzlüğü problemlerini tanır",
+      "description": "Acı ve kötülüğün Tanrı anlayışıyla bağdaştırılması ile ölüm sonrası benlik tartışmasını ayırt eder.",
+      "topicId": "tyt.philosophy.philosophy-of-religion.critique-problems"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "concept.philosophy.philosophy-of-religion.scope-reason.din-felsefesi-ve-teoloji",
+      "term": "din felsefesi ve teoloji",
+      "definition": "Dini tarafsız ve eleştirel inceleyen felsefi yaklaşım ile belirli bir inancın içinden hareket eden teolojiyi ayırt eder.",
+      "topicId": "tyt.philosophy.philosophy-of-religion.scope-reason"
+    },
+    {
+      "id": "concept.philosophy.philosophy-of-religion.scope-reason.iman-akil-vahiy",
+      "term": "iman-akıl-vahiy",
+      "definition": "Dinî bilginin iman, akıl ve vahiy ile ilişkilendirilme biçimlerini tarafsızca yorumlar.",
+      "topicId": "tyt.philosophy.philosophy-of-religion.scope-reason"
+    },
+    {
+      "id": "concept.philosophy.philosophy-of-religion.god-universe.tanri-argumanlari",
+      "term": "Tanrı argümanları",
+      "definition": "Kozmolojik, ontolojik ve düzen-amaç temelli akıl yürütmeleri müfredat düzeyinde ayırt eder.",
+      "topicId": "tyt.philosophy.philosophy-of-religion.god-universe"
+    },
+    {
+      "id": "concept.philosophy.philosophy-of-religion.god-universe.teizm-deizm-panteizm",
+      "term": "teizm deizm panteizm",
+      "definition": "Tanrı’nın evrenle ilişkisine dair teizm, deizm ve panteizm görüşlerini ayırt eder.",
+      "topicId": "tyt.philosophy.philosophy-of-religion.god-universe"
+    },
+    {
+      "id": "concept.philosophy.philosophy-of-religion.critique-problems.ateizm-ve-agnostisizm",
+      "term": "ateizm ve agnostisizm",
+      "definition": "Tanrı’nın varlığını reddeden görüş ile bu konuda bilginin mümkün olmadığını savunan görüşü ayırt eder.",
+      "topicId": "tyt.philosophy.philosophy-of-religion.critique-problems"
+    },
+    {
+      "id": "concept.philosophy.philosophy-of-religion.critique-problems.kotuluk-ve-olumsuzluk-problemi",
+      "term": "kötülük ve ölümsüzlük problemi",
+      "definition": "Acı ve kötülüğün Tanrı anlayışıyla bağdaştırılması ile ölüm sonrası benlik tartışmasını ayırt eder.",
+      "topicId": "tyt.philosophy.philosophy-of-religion.critique-problems"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "lesson.philosophy.philosophy-of-religion.scope-reason.001",
+      "topicId": "tyt.philosophy.philosophy-of-religion.scope-reason",
+      "title": "Din Felsefesinin Konusu ve İnanç-Akıl İlişkisi",
+      "subtitle": "Din felsefesi ile teolojiyi ayırt eder ve İman, akıl ve vahiy ilişkisini yorumlar.",
+      "estimatedMinutes": 10,
+      "exerciseIds": [
+        "exercise.philosophy.philosophy-of-religion.scope-reason.001.card01",
+        "exercise.philosophy.philosophy-of-religion.scope-reason.001.mcq1",
+        "exercise.philosophy.philosophy-of-religion.scope-reason.001.mcq2",
+        "exercise.philosophy.philosophy-of-religion.scope-reason.001.mcq3",
+        "exercise.philosophy.philosophy-of-religion.scope-reason.001.mcq4",
+        "exercise.philosophy.philosophy-of-religion.scope-reason.001.tf01",
+        "exercise.philosophy.philosophy-of-religion.scope-reason.001.match01",
+        "exercise.philosophy.philosophy-of-religion.scope-reason.001.blank01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.philosophy.philosophy-of-religion.god-universe.001",
+      "topicId": "tyt.philosophy.philosophy-of-religion.god-universe",
+      "title": "Tanrı’nın Varlığı ve Evren-Tanrı İlişkisi",
+      "subtitle": "Tanrı’nın varlığına ilişkin argümanları tanır ve Teizm, deizm ve panteizmi ayırt eder.",
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.philosophy.philosophy-of-religion.god-universe.001.mcq1",
+        "exercise.philosophy.philosophy-of-religion.god-universe.001.mcq2",
+        "exercise.philosophy.philosophy-of-religion.god-universe.001.mcq3",
+        "exercise.philosophy.philosophy-of-religion.god-universe.001.mcq4",
+        "exercise.philosophy.philosophy-of-religion.god-universe.001.tf01",
+        "exercise.philosophy.philosophy-of-religion.god-universe.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.philosophy.philosophy-of-religion.critique-problems.001",
+      "topicId": "tyt.philosophy.philosophy-of-religion.critique-problems",
+      "title": "Ateizm, Agnostisizm ve Temel Problemler",
+      "subtitle": "Ateizm ile agnostisizmi ayırt eder ve Kötülük ve ruhun ölümsüzlüğü problemlerini tanır.",
+      "estimatedMinutes": 10,
+      "exerciseIds": [
+        "exercise.philosophy.philosophy-of-religion.critique-problems.001.mcq1",
+        "exercise.philosophy.philosophy-of-religion.critique-problems.001.mcq2",
+        "exercise.philosophy.philosophy-of-religion.critique-problems.001.mcq3",
+        "exercise.philosophy.philosophy-of-religion.critique-problems.001.mcq4",
+        "exercise.philosophy.philosophy-of-religion.critique-problems.001.tf01",
+        "exercise.philosophy.philosophy-of-religion.critique-problems.001.match01",
+        "exercise.philosophy.philosophy-of-religion.critique-problems.001.blank01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "id": "exercise.philosophy.philosophy-of-religion.scope-reason.001.mcq1",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-religion.scope-reason.philosophy-theology"
+      ],
+      "prompt": "Bir araştırmacı herhangi bir inancı doğrulamayı amaçlamadan iman, vahiy ve akıl arasındaki ilişkiyi farklı görüşler üzerinden tartışır.\n\nBu çalışma hangi alana aittir?",
+      "tag": "FELSEFE · DİN FELSEFESİNİN KONUSU VE İNANÇ-AKIL İLİŞKİSİ",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Dinî vaaz"
+        },
+        {
+          "id": "opt-2",
+          "label": "Deneysel psikoloji"
+        },
+        {
+          "id": "opt-3",
+          "label": "Din felsefesi"
+        },
+        {
+          "id": "opt-4",
+          "label": "Teoloji"
+        }
+      ],
+      "correctOptionId": "opt-3",
+      "explanation": "Bir araştırmacı herhangi bir inancı doğrulamayı amaçlamadan iman, vahiy ve akıl arasındaki ilişkiyi farklı görüşler üzerinden tartışır. Bu nedenle doğru ayrım “Din felsefesi”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.philosophy-of-religion.scope-reason.001.mcq2",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-religion.scope-reason.philosophy-theology"
+      ],
+      "prompt": "Bir araştırmacı herhangi bir inancı doğrulamayı amaçlamadan iman, vahiy ve akıl arasındaki ilişkiyi farklı görüşler üzerinden tartışır.\n\nBir öğrenci bu görüşü “Teoloji” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · DİN FELSEFESİNİN KONUSU VE İNANÇ-AKIL İLİŞKİSİ",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Deneysel psikoloji"
+        },
+        {
+          "id": "opt-2",
+          "label": "Din felsefesi"
+        },
+        {
+          "id": "opt-3",
+          "label": "Teoloji"
+        },
+        {
+          "id": "opt-4",
+          "label": "Dinî vaaz"
+        }
+      ],
+      "correctOptionId": "opt-2",
+      "explanation": "Görüşte belirleyici ölçüt “din felsefesi ve teoloji” çerçevesidir. “Teoloji” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.philosophy-of-religion.scope-reason.001.mcq3",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-religion.scope-reason.faith-reason-revelation"
+      ],
+      "prompt": "Bir görüş, vahyin inanç için temel olduğunu; aklın ise inanç önermelerini anlamlandırma ve tutarlılıklarını tartışmada rol oynadığını savunur.\n\nBu görüşten hangi sonuç çıkar?",
+      "tag": "FELSEFE · DİN FELSEFESİNİN KONUSU VE İNANÇ-AKIL İLİŞKİSİ",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "İman ile akla farklı ama ilişkili roller verilir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Akıl bütün inançları deneyle kanıtlar"
+        },
+        {
+          "id": "opt-3",
+          "label": "Vahiy bilimsel teoriyle aynıdır"
+        },
+        {
+          "id": "opt-4",
+          "label": "İnanç yalnız estetik beğenidir"
+        }
+      ],
+      "correctOptionId": "opt-1",
+      "explanation": "Bir görüş, vahyin inanç için temel olduğunu; aklın ise inanç önermelerini anlamlandırma ve tutarlılıklarını tartışmada rol oynadığını savunur. Bu nedenle doğru ayrım “İman ile akla farklı ama ilişkili roller verilir”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.philosophy-of-religion.scope-reason.001.mcq4",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-religion.scope-reason.faith-reason-revelation"
+      ],
+      "prompt": "Bir görüş, vahyin inanç için temel olduğunu; aklın ise inanç önermelerini anlamlandırma ve tutarlılıklarını tartışmada rol oynadığını savunur.\n\nBir öğrenci bu görüşü “Akıl bütün inançları deneyle kanıtlar” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · DİN FELSEFESİNİN KONUSU VE İNANÇ-AKIL İLİŞKİSİ",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Akıl bütün inançları deneyle kanıtlar"
+        },
+        {
+          "id": "opt-2",
+          "label": "Vahiy bilimsel teoriyle aynıdır"
+        },
+        {
+          "id": "opt-3",
+          "label": "İnanç yalnız estetik beğenidir"
+        },
+        {
+          "id": "opt-4",
+          "label": "İman ile akla farklı ama ilişkili roller verilir"
+        }
+      ],
+      "correctOptionId": "opt-4",
+      "explanation": "Görüşte belirleyici ölçüt “iman-akıl-vahiy” çerçevesidir. “Akıl bütün inançları deneyle kanıtlar” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.philosophy-of-religion.scope-reason.001.tf01",
+      "kind": "trueFalse",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-religion.scope-reason.philosophy-theology",
+        "skill.philosophy.philosophy-of-religion.scope-reason.faith-reason-revelation"
+      ],
+      "statement": "din felsefesi ve teoloji ile iman-akıl-vahiy aynı kavram değildir; bir metnin gerekçesine bakılarak birbirinden ayrılmalıdır.",
+      "tag": "FELSEFE · DİN FELSEFESİNİN KONUSU VE İNANÇ-AKIL İLİŞKİSİ",
+      "correctAnswer": true,
+      "explanation": "Bu iki kavram aynı topic içinde ilişkili olsa da farklı sorulara veya ölçütlere karşılık gelir. Ayrım, yalnız anahtar kelimeye değil görüşün gerekçesine dayanır.",
+      "difficulty": 2,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.philosophy-of-religion.scope-reason.001.match01",
+      "kind": "matching",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-religion.scope-reason.philosophy-theology",
+        "skill.philosophy.philosophy-of-religion.scope-reason.faith-reason-revelation"
+      ],
+      "title": "Görüşü temel vurgusuyla eşleştir",
+      "subtitle": "Her ifadeyi yalnız bir kavramla eşleştir.",
+      "tag": "FELSEFE · DİN FELSEFESİNİN KONUSU VE İNANÇ-AKIL İLİŞKİSİ",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "din felsefesi ve teoloji",
+          "right": "Dini tarafsız ve eleştirel inceleyen felsefi yaklaşım ile belirli bir inancın içinden hareket eden teolojiyi ayırt eder."
+        },
+        {
+          "id": "pair-2",
+          "left": "iman-akıl-vahiy",
+          "right": "Dinî bilginin iman, akıl ve vahiy ile ilişkilendirilme biçimlerini tarafsızca yorumlar."
+        }
+      ],
+      "explanation": "Eşleştirmeler kavramın adı ile ölçülebilir ayırt etme ölçütünü bağlar; görüşü yalnız ezberlemek yerine gerekçesiyle tanımayı sağlar.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.philosophy-of-religion.scope-reason.001.blank01",
+      "kind": "fillBlank",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-religion.scope-reason.philosophy-theology"
+      ],
+      "title": "Temel kavramı tamamla",
+      "hint": "Dini tarafsız ve eleştirel inceleyen felsefi yaklaşım ile belirli bir inancın içinden hareket eden teolojiyi ayırt eder.",
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "din felsefesi ve teoloji"
+        },
+        {
+          "id": "w-2",
+          "label": "iman-akıl-vahiy"
+        },
+        {
+          "id": "w-3",
+          "label": "olgusal betimleme"
+        }
+      ],
+      "solutionTokenIds": [
+        "w-1"
+      ],
+      "explanation": "Tanım “din felsefesi ve teoloji” kavramına karşılık gelir. Diğer seçenekler farklı bir ölçüt veya düşünme alanını belirtir.",
+      "difficulty": 1,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.philosophy-of-religion.scope-reason.001.card01",
+      "kind": "flashcard",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-religion.scope-reason.philosophy-theology",
+        "skill.philosophy.philosophy-of-religion.scope-reason.faith-reason-revelation"
+      ],
+      "tag": "FELSEFE · DİN FELSEFESİNİN KONUSU VE İNANÇ-AKIL İLİŞKİSİ",
+      "cards": [
+        {
+          "id": "card-1",
+          "front": "din felsefesi ve teoloji",
+          "back": "Dini tarafsız ve eleştirel inceleyen felsefi yaklaşım ile belirli bir inancın içinden hareket eden teolojiyi ayırt eder.",
+          "hint": "Kavramın bir metinde hangi ölçütle tanınacağını düşün."
+        },
+        {
+          "id": "card-2",
+          "front": "iman-akıl-vahiy",
+          "back": "Dinî bilginin iman, akıl ve vahiy ile ilişkilendirilme biçimlerini tarafsızca yorumlar.",
+          "hint": "Kavramın bir metinde hangi ölçütle tanınacağını düşün."
+        }
+      ],
+      "explanation": "Kartlar temel ayrımları ilk karşılaşmada tanıtır; scored skill coverage hesabına katılmaz.",
+      "difficulty": 1,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.philosophy-of-religion.god-universe.001.mcq1",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-religion.god-universe.arguments"
+      ],
+      "prompt": "Bir akıl yürütme, evrendeki her oluşun bir nedeni olduğunu ve nedenler dizisinin kendisi için açıklama gerektirdiğini ileri sürer.\n\nBu akıl yürütme hangisine yakındır?",
+      "tag": "FELSEFE · TANRI’NIN VARLIĞI VE EVREN-TANRI İLİŞKİSİ",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Pragmatik yöntem"
+        },
+        {
+          "id": "opt-2",
+          "label": "Kozmolojik argüman"
+        },
+        {
+          "id": "opt-3",
+          "label": "Ontolojik argüman"
+        },
+        {
+          "id": "opt-4",
+          "label": "Estetik argüman"
+        }
+      ],
+      "correctOptionId": "opt-2",
+      "explanation": "Bir akıl yürütme, evrendeki her oluşun bir nedeni olduğunu ve nedenler dizisinin kendisi için açıklama gerektirdiğini ileri sürer. Bu nedenle doğru ayrım “Kozmolojik argüman”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.philosophy-of-religion.god-universe.001.mcq2",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-religion.god-universe.arguments"
+      ],
+      "prompt": "Bir akıl yürütme, evrendeki her oluşun bir nedeni olduğunu ve nedenler dizisinin kendisi için açıklama gerektirdiğini ileri sürer.\n\nBir öğrenci bu görüşü “Ontolojik argüman” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · TANRI’NIN VARLIĞI VE EVREN-TANRI İLİŞKİSİ",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Kozmolojik argüman"
+        },
+        {
+          "id": "opt-2",
+          "label": "Ontolojik argüman"
+        },
+        {
+          "id": "opt-3",
+          "label": "Estetik argüman"
+        },
+        {
+          "id": "opt-4",
+          "label": "Pragmatik yöntem"
+        }
+      ],
+      "correctOptionId": "opt-1",
+      "explanation": "Görüşte belirleyici ölçüt “Tanrı argümanları” çerçevesidir. “Ontolojik argüman” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.philosophy-of-religion.god-universe.001.mcq3",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-religion.god-universe.positions"
+      ],
+      "prompt": "Bir görüş Tanrı’nın evreni yarattığını, fakat yaratılıştan sonra evrene vahiy veya müdahaleyle yönelmediğini savunur.\n\nBu görüş hangisidir?",
+      "tag": "FELSEFE · TANRI’NIN VARLIĞI VE EVREN-TANRI İLİŞKİSİ",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Teizm"
+        },
+        {
+          "id": "opt-2",
+          "label": "Panteizm"
+        },
+        {
+          "id": "opt-3",
+          "label": "Agnostisizm"
+        },
+        {
+          "id": "opt-4",
+          "label": "Deizm"
+        }
+      ],
+      "correctOptionId": "opt-4",
+      "explanation": "Bir görüş Tanrı’nın evreni yarattığını, fakat yaratılıştan sonra evrene vahiy veya müdahaleyle yönelmediğini savunur. Bu nedenle doğru ayrım “Deizm”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.philosophy-of-religion.god-universe.001.mcq4",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-religion.god-universe.positions"
+      ],
+      "prompt": "Bir görüş Tanrı’nın evreni yarattığını, fakat yaratılıştan sonra evrene vahiy veya müdahaleyle yönelmediğini savunur.\n\nBir öğrenci bu görüşü “Teizm” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · TANRI’NIN VARLIĞI VE EVREN-TANRI İLİŞKİSİ",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Panteizm"
+        },
+        {
+          "id": "opt-2",
+          "label": "Agnostisizm"
+        },
+        {
+          "id": "opt-3",
+          "label": "Deizm"
+        },
+        {
+          "id": "opt-4",
+          "label": "Teizm"
+        }
+      ],
+      "correctOptionId": "opt-3",
+      "explanation": "Görüşte belirleyici ölçüt “teizm deizm panteizm” çerçevesidir. “Teizm” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.philosophy-of-religion.god-universe.001.tf01",
+      "kind": "trueFalse",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-religion.god-universe.arguments",
+        "skill.philosophy.philosophy-of-religion.god-universe.positions"
+      ],
+      "statement": "Tanrı argümanları ile teizm deizm panteizm aynı kavram değildir; bir metnin gerekçesine bakılarak birbirinden ayrılmalıdır.",
+      "tag": "FELSEFE · TANRI’NIN VARLIĞI VE EVREN-TANRI İLİŞKİSİ",
+      "correctAnswer": true,
+      "explanation": "Bu iki kavram aynı topic içinde ilişkili olsa da farklı sorulara veya ölçütlere karşılık gelir. Ayrım, yalnız anahtar kelimeye değil görüşün gerekçesine dayanır.",
+      "difficulty": 2,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.philosophy-of-religion.god-universe.001.match01",
+      "kind": "matching",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-religion.god-universe.arguments",
+        "skill.philosophy.philosophy-of-religion.god-universe.positions"
+      ],
+      "title": "Görüşü temel vurgusuyla eşleştir",
+      "subtitle": "Her ifadeyi yalnız bir kavramla eşleştir.",
+      "tag": "FELSEFE · TANRI’NIN VARLIĞI VE EVREN-TANRI İLİŞKİSİ",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Tanrı argümanları",
+          "right": "Kozmolojik, ontolojik ve düzen-amaç temelli akıl yürütmeleri müfredat düzeyinde ayırt eder."
+        },
+        {
+          "id": "pair-2",
+          "left": "teizm deizm panteizm",
+          "right": "Tanrı’nın evrenle ilişkisine dair teizm, deizm ve panteizm görüşlerini ayırt eder."
+        }
+      ],
+      "explanation": "Eşleştirmeler kavramın adı ile ölçülebilir ayırt etme ölçütünü bağlar; görüşü yalnız ezberlemek yerine gerekçesiyle tanımayı sağlar.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.philosophy-of-religion.critique-problems.001.mcq1",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-religion.critique-problems.atheism-agnosticism"
+      ],
+      "prompt": "Bir düşünür Tanrı’nın varlığı ya da yokluğu hakkında insanın kesin bilgiye ulaşamayacağını savunur ve hükmü askıya alır.\n\nBu yaklaşım hangisidir?",
+      "tag": "FELSEFE · ATEİZM, AGNOSTİSİZM VE TEMEL PROBLEMLER",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Teizm"
+        },
+        {
+          "id": "opt-2",
+          "label": "Panteizm"
+        },
+        {
+          "id": "opt-3",
+          "label": "Agnostisizm"
+        },
+        {
+          "id": "opt-4",
+          "label": "Ateizm"
+        }
+      ],
+      "correctOptionId": "opt-3",
+      "explanation": "Bir düşünür Tanrı’nın varlığı ya da yokluğu hakkında insanın kesin bilgiye ulaşamayacağını savunur ve hükmü askıya alır. Bu nedenle doğru ayrım “Agnostisizm”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.philosophy-of-religion.critique-problems.001.mcq2",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-religion.critique-problems.atheism-agnosticism"
+      ],
+      "prompt": "Bir düşünür Tanrı’nın varlığı ya da yokluğu hakkında insanın kesin bilgiye ulaşamayacağını savunur ve hükmü askıya alır.\n\nBir öğrenci bu görüşü “Ateizm” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · ATEİZM, AGNOSTİSİZM VE TEMEL PROBLEMLER",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Panteizm"
+        },
+        {
+          "id": "opt-2",
+          "label": "Agnostisizm"
+        },
+        {
+          "id": "opt-3",
+          "label": "Ateizm"
+        },
+        {
+          "id": "opt-4",
+          "label": "Teizm"
+        }
+      ],
+      "correctOptionId": "opt-2",
+      "explanation": "Görüşte belirleyici ölçüt “ateizm ve agnostisizm” çerçevesidir. “Ateizm” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.philosophy-of-religion.critique-problems.001.mcq3",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-religion.critique-problems.evil-immortality"
+      ],
+      "prompt": "Bir tartışma, dünyadaki acıların mutlak iyi ve güçlü bir Tanrı düşüncesiyle nasıl bağdaştırılabileceğini sorar.\n\nBu tartışmanın temel problemi nedir?",
+      "tag": "FELSEFE · ATEİZM, AGNOSTİSİZM VE TEMEL PROBLEMLER",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Kötülük problemi"
+        },
+        {
+          "id": "opt-2",
+          "label": "Ruhun ölümsüzlüğü"
+        },
+        {
+          "id": "opt-3",
+          "label": "Bilginin kaynağı"
+        },
+        {
+          "id": "opt-4",
+          "label": "Sanatın işlevi"
+        }
+      ],
+      "correctOptionId": "opt-1",
+      "explanation": "Bir tartışma, dünyadaki acıların mutlak iyi ve güçlü bir Tanrı düşüncesiyle nasıl bağdaştırılabileceğini sorar. Bu nedenle doğru ayrım “Kötülük problemi”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.philosophy-of-religion.critique-problems.001.mcq4",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-religion.critique-problems.evil-immortality"
+      ],
+      "prompt": "Bir tartışma, dünyadaki acıların mutlak iyi ve güçlü bir Tanrı düşüncesiyle nasıl bağdaştırılabileceğini sorar.\n\nBir öğrenci bu görüşü “Ruhun ölümsüzlüğü” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · ATEİZM, AGNOSTİSİZM VE TEMEL PROBLEMLER",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Ruhun ölümsüzlüğü"
+        },
+        {
+          "id": "opt-2",
+          "label": "Bilginin kaynağı"
+        },
+        {
+          "id": "opt-3",
+          "label": "Sanatın işlevi"
+        },
+        {
+          "id": "opt-4",
+          "label": "Kötülük problemi"
+        }
+      ],
+      "correctOptionId": "opt-4",
+      "explanation": "Görüşte belirleyici ölçüt “kötülük ve ölümsüzlük problemi” çerçevesidir. “Ruhun ölümsüzlüğü” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.philosophy-of-religion.critique-problems.001.tf01",
+      "kind": "trueFalse",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-religion.critique-problems.atheism-agnosticism",
+        "skill.philosophy.philosophy-of-religion.critique-problems.evil-immortality"
+      ],
+      "statement": "ateizm ve agnostisizm ile kötülük ve ölümsüzlük problemi aynı kavram değildir; bir metnin gerekçesine bakılarak birbirinden ayrılmalıdır.",
+      "tag": "FELSEFE · ATEİZM, AGNOSTİSİZM VE TEMEL PROBLEMLER",
+      "correctAnswer": true,
+      "explanation": "Bu iki kavram aynı topic içinde ilişkili olsa da farklı sorulara veya ölçütlere karşılık gelir. Ayrım, yalnız anahtar kelimeye değil görüşün gerekçesine dayanır.",
+      "difficulty": 2,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.philosophy-of-religion.critique-problems.001.match01",
+      "kind": "matching",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-religion.critique-problems.atheism-agnosticism",
+        "skill.philosophy.philosophy-of-religion.critique-problems.evil-immortality"
+      ],
+      "title": "Görüşü temel vurgusuyla eşleştir",
+      "subtitle": "Her ifadeyi yalnız bir kavramla eşleştir.",
+      "tag": "FELSEFE · ATEİZM, AGNOSTİSİZM VE TEMEL PROBLEMLER",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "ateizm ve agnostisizm",
+          "right": "Tanrı’nın varlığını reddeden görüş ile bu konuda bilginin mümkün olmadığını savunan görüşü ayırt eder."
+        },
+        {
+          "id": "pair-2",
+          "left": "kötülük ve ölümsüzlük problemi",
+          "right": "Acı ve kötülüğün Tanrı anlayışıyla bağdaştırılması ile ölüm sonrası benlik tartışmasını ayırt eder."
+        }
+      ],
+      "explanation": "Eşleştirmeler kavramın adı ile ölçülebilir ayırt etme ölçütünü bağlar; görüşü yalnız ezberlemek yerine gerekçesiyle tanımayı sağlar.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.philosophy-of-religion.critique-problems.001.blank01",
+      "kind": "fillBlank",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-religion.critique-problems.atheism-agnosticism"
+      ],
+      "title": "Temel kavramı tamamla",
+      "hint": "Tanrı’nın varlığını reddeden görüş ile bu konuda bilginin mümkün olmadığını savunan görüşü ayırt eder.",
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "ateizm ve agnostisizm"
+        },
+        {
+          "id": "w-2",
+          "label": "kötülük ve ölümsüzlük problemi"
+        },
+        {
+          "id": "w-3",
+          "label": "olgusal betimleme"
+        }
+      ],
+      "solutionTokenIds": [
+        "w-1"
+      ],
+      "explanation": "Tanım “ateizm ve agnostisizm” kavramına karşılık gelir. Diğer seçenekler farklı bir ölçüt veya düşünme alanını belirtir.",
+      "difficulty": 1,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.philosophy.philosophy-of-religion.01",
+      "unitId": "tyt.philosophy.philosophy-of-religion",
+      "kind": "lesson",
+      "title": "Din Felsefesinin Konusu ve İnanç-Akıl İlişkisi",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.philosophy.aesthetics.03"
+      ],
+      "lessonId": "lesson.philosophy.philosophy-of-religion.scope-reason.001"
+    },
+    {
+      "id": "path.philosophy.philosophy-of-religion.02",
+      "unitId": "tyt.philosophy.philosophy-of-religion",
+      "kind": "lesson",
+      "title": "Tanrı’nın Varlığı ve Evren-Tanrı İlişkisi",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.philosophy.philosophy-of-religion.01"
+      ],
+      "lessonId": "lesson.philosophy.philosophy-of-religion.god-universe.001"
+    },
+    {
+      "id": "path.philosophy.philosophy-of-religion.03",
+      "unitId": "tyt.philosophy.philosophy-of-religion",
+      "kind": "practice",
+      "title": "Ateizm, Agnostisizm ve Temel Problemler Uygulaması",
+      "order": 3,
+      "prerequisiteIds": [
+        "path.philosophy.philosophy-of-religion.02"
+      ],
+      "lessonId": "lesson.philosophy.philosophy-of-religion.critique-problems.001"
+    }
+  ]
+}

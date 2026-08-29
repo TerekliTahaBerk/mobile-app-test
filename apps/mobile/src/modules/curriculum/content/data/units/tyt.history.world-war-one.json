@@ -1,0 +1,493 @@
+{
+  "concepts": [
+    {
+      "definition": "Sömürgecilik ve silahlanma yarışı",
+      "id": "concept.history.world-war-one.war-causes",
+      "term": "Sömürgecilik ve silahlanma yarışı",
+      "topicId": "tyt.history.world-war-one.causes-and-entry"
+    },
+    {
+      "definition": "Yakın dönemde kaybettiği toprakları geri almak",
+      "id": "concept.history.world-war-one.ottoman-entry",
+      "term": "Yakın dönemde kaybettiği toprakları geri almak",
+      "topicId": "tyt.history.world-war-one.causes-and-entry"
+    },
+    {
+      "definition": "Boğazları geçip Rusya’ya yardım ulaştırmak",
+      "id": "concept.history.world-war-one.fronts-compare",
+      "term": "Boğazları geçip Rusya’ya yardım ulaştırmak",
+      "topicId": "tyt.history.world-war-one.fronts-and-results"
+    },
+    {
+      "definition": "Bazı imparatorlukların yıkılması ve yeni devletlerin kurulması",
+      "id": "concept.history.world-war-one.war-results",
+      "term": "Bazı imparatorlukların yıkılması ve yeni devletlerin kurulması",
+      "topicId": "tyt.history.world-war-one.fronts-and-results"
+    }
+  ],
+  "exercises": [
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Sömürgecilik ve silahlanma yarışı, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.world-war-one.causes-and-entry.war-causes.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Sömürgecilik ve silahlanma yarışı"
+        },
+        {
+          "id": "d1",
+          "label": "Milletler Cemiyetinin kurulması"
+        },
+        {
+          "id": "d2",
+          "label": "Wilson İlkelerinin yayımlanması"
+        },
+        {
+          "id": "d3",
+          "label": "Versailles Antlaşmasının imzalanması"
+        }
+      ],
+      "prompt": "I. Dünya Savaşı’nın genel nedenlerinden biri hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.world-war-one.war-causes"
+      ],
+      "tag": "TARİH · SAVAŞIN NEDENLERİ VE OSMANLI’NIN KATILMASI"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. I. Dünya Savaşı’nın genel nedenlerinden biri hangisidir sorusunun doğru karşılığı “Sömürgecilik ve silahlanma yarışı” olmalıdır.",
+      "id": "exercise.history.world-war-one.causes-and-entry.war-causes.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.world-war-one.war-causes"
+      ],
+      "statement": "Milletler Cemiyetinin kurulması, I. Dünya Savaşı’nın genel ve özel nedenlerini ayırt eder kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · SAVAŞIN NEDENLERİ VE OSMANLI’NIN KATILMASI"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "Sömürgecilik ve silahlanma yarışı"
+        },
+        {
+          "id": "d1",
+          "label": "Milletler Cemiyetinin kurulması"
+        },
+        {
+          "id": "d2",
+          "label": "Wilson İlkelerinin yayımlanması"
+        },
+        {
+          "id": "d3",
+          "label": "Versailles Antlaşmasının imzalanması"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “Sömürgecilik ve silahlanma yarışı” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.world-war-one.causes-and-entry.war-causes.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.world-war-one.war-causes"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: I. Dünya Savaşı’nın genel nedenlerinden biri hangisidir?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Yakın dönemde kaybettiği toprakları geri almak, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.world-war-one.causes-and-entry.ottoman-entry.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Yakın dönemde kaybettiği toprakları geri almak"
+        },
+        {
+          "id": "d1",
+          "label": "Kapitülasyonları genişletmek"
+        },
+        {
+          "id": "d2",
+          "label": "Balkan devletlerinin tamamını İtilaf grubuna katmak"
+        },
+        {
+          "id": "d3",
+          "label": "Sömürge yarışından çekilmek"
+        }
+      ],
+      "prompt": "Osmanlı Devleti’nin I. Dünya Savaşı’na girerken hedeflerinden biri hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.world-war-one.ottoman-entry"
+      ],
+      "tag": "TARİH · SAVAŞIN NEDENLERİ VE OSMANLI’NIN KATILMASI"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Osmanlı Devleti’nin I. Dünya Savaşı’na girerken hedeflerinden biri hangisidir sorusunun doğru karşılığı “Yakın dönemde kaybettiği toprakları geri almak” olmalıdır.",
+      "id": "exercise.history.world-war-one.causes-and-entry.ottoman-entry.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.world-war-one.ottoman-entry"
+      ],
+      "statement": "Kapitülasyonları genişletmek, Osmanlı Devleti’nin savaşa girme nedenlerini yorumlar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · SAVAŞIN NEDENLERİ VE OSMANLI’NIN KATILMASI"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, Savaşın Nedenleri ve Osmanlı’nın Katılması başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.world-war-one.causes-and-entry.ottoman-entry.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "I. Dünya Savaşı’nın genel nedenlerinden biri hangisidir?",
+          "right": "Sömürgecilik ve silahlanma yarışı"
+        },
+        {
+          "id": "pair-2",
+          "left": "Osmanlı Devleti’nin I. Dünya Savaşı’na girerken hedeflerinden biri hangisidir?",
+          "right": "Yakın dönemde kaybettiği toprakları geri almak"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.world-war-one.war-causes",
+        "skill.history.world-war-one.ottoman-entry"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · SAVAŞIN NEDENLERİ VE OSMANLI’NIN KATILMASI",
+      "title": "Bilgi bağlarını eşleştir"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Boğazları geçip Rusya’ya yardım ulaştırmak, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.world-war-one.fronts-and-results.fronts-compare.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Boğazları geçip Rusya’ya yardım ulaştırmak"
+        },
+        {
+          "id": "d1",
+          "label": "Süveyş Kanalı’nı Osmanlılara bırakmak"
+        },
+        {
+          "id": "d2",
+          "label": "Kafkasya’dan İran’a ulaşmak"
+        },
+        {
+          "id": "d3",
+          "label": "Hicaz’da Osmanlı egemenliğini güçlendirmek"
+        }
+      ],
+      "prompt": "Çanakkale Cephesi’nin İtilaf Devletleri açısından temel amacı hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.world-war-one.fronts-compare"
+      ],
+      "tag": "TARİH · CEPHELER VE SAVAŞIN SONUÇLARI"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Çanakkale Cephesi’nin İtilaf Devletleri açısından temel amacı hangisidir sorusunun doğru karşılığı “Boğazları geçip Rusya’ya yardım ulaştırmak” olmalıdır.",
+      "id": "exercise.history.world-war-one.fronts-and-results.fronts-compare.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.world-war-one.fronts-compare"
+      ],
+      "statement": "Süveyş Kanalı’nı Osmanlılara bırakmak, Osmanlı Devleti’nin savaştığı cepheleri amaç ve sonuçlarıyla eşleştirir kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · CEPHELER VE SAVAŞIN SONUÇLARI"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "Boğazları geçip Rusya’ya yardım ulaştırmak"
+        },
+        {
+          "id": "d1",
+          "label": "Süveyş Kanalı’nı Osmanlılara bırakmak"
+        },
+        {
+          "id": "d2",
+          "label": "Kafkasya’dan İran’a ulaşmak"
+        },
+        {
+          "id": "d3",
+          "label": "Hicaz’da Osmanlı egemenliğini güçlendirmek"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “Boğazları geçip Rusya’ya yardım ulaştırmak” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.world-war-one.fronts-and-results.fronts-compare.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.world-war-one.fronts-compare"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: Çanakkale Cephesi’nin İtilaf Devletleri açısından temel amacı hangisidir?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Bazı imparatorlukların yıkılması ve yeni devletlerin kurulması, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.world-war-one.fronts-and-results.war-results.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Bazı imparatorlukların yıkılması ve yeni devletlerin kurulması"
+        },
+        {
+          "id": "d1",
+          "label": "Sömürgeciliğin tamamen sona ermesi"
+        },
+        {
+          "id": "d2",
+          "label": "Avrupa’da kalıcı barışın kurulması"
+        },
+        {
+          "id": "d3",
+          "label": "Milliyetçilik akımının etkisini yitirmesi"
+        }
+      ],
+      "prompt": "I. Dünya Savaşı’nın siyasi sonuçlarından biri hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.world-war-one.war-results"
+      ],
+      "tag": "TARİH · CEPHELER VE SAVAŞIN SONUÇLARI"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. I. Dünya Savaşı’nın siyasi sonuçlarından biri hangisidir sorusunun doğru karşılığı “Bazı imparatorlukların yıkılması ve yeni devletlerin kurulması” olmalıdır.",
+      "id": "exercise.history.world-war-one.fronts-and-results.war-results.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.world-war-one.war-results"
+      ],
+      "statement": "Sömürgeciliğin tamamen sona ermesi, I. Dünya Savaşı’nın siyasi sonuçlarını yorumlar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · CEPHELER VE SAVAŞIN SONUÇLARI"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, Cepheler ve Savaşın Sonuçları başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.world-war-one.fronts-and-results.war-results.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Çanakkale Cephesi’nin İtilaf Devletleri açısından temel amacı hangisidir?",
+          "right": "Boğazları geçip Rusya’ya yardım ulaştırmak"
+        },
+        {
+          "id": "pair-2",
+          "left": "I. Dünya Savaşı’nın siyasi sonuçlarından biri hangisidir?",
+          "right": "Bazı imparatorlukların yıkılması ve yeni devletlerin kurulması"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.world-war-one.fronts-compare",
+        "skill.history.world-war-one.war-results"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · CEPHELER VE SAVAŞIN SONUÇLARI",
+      "title": "Bilgi bağlarını eşleştir"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.world-war-one.causes-and-entry.war-causes.mcq01",
+        "exercise.history.world-war-one.causes-and-entry.war-causes.tf01",
+        "exercise.history.world-war-one.causes-and-entry.war-causes.fill01",
+        "exercise.history.world-war-one.causes-and-entry.ottoman-entry.mcq01",
+        "exercise.history.world-war-one.causes-and-entry.ottoman-entry.tf01",
+        "exercise.history.world-war-one.causes-and-entry.ottoman-entry.match01"
+      ],
+      "id": "lesson.history.world-war-one.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "Savaşın Nedenleri ve Osmanlı’nın Katılması",
+      "topicId": "tyt.history.world-war-one.causes-and-entry"
+    },
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.world-war-one.fronts-and-results.fronts-compare.mcq01",
+        "exercise.history.world-war-one.fronts-and-results.fronts-compare.tf01",
+        "exercise.history.world-war-one.fronts-and-results.fronts-compare.fill01",
+        "exercise.history.world-war-one.fronts-and-results.war-results.mcq01",
+        "exercise.history.world-war-one.fronts-and-results.war-results.tf01",
+        "exercise.history.world-war-one.fronts-and-results.war-results.match01"
+      ],
+      "id": "lesson.history.world-war-one.002",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "Cepheler ve Savaşın Sonuçları",
+      "topicId": "tyt.history.world-war-one.fronts-and-results"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.history.world-war-one.01",
+      "kind": "lesson",
+      "lessonId": "lesson.history.world-war-one.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.history.ottoman-twentieth-century.02"
+      ],
+      "title": "Savaşın Nedenleri ve Osmanlı’nın Katılması",
+      "unitId": "tyt.history.world-war-one"
+    },
+    {
+      "id": "path.history.world-war-one.02",
+      "kind": "checkpoint",
+      "lessonId": "lesson.history.world-war-one.002",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.history.world-war-one.01"
+      ],
+      "title": "I. Dünya Savaşı Kontrolü",
+      "unitId": "tyt.history.world-war-one"
+    }
+  ],
+  "skills": [
+    {
+      "description": "I. Dünya Savaşı’nın genel ve özel nedenlerini ayırt eder.",
+      "id": "skill.history.world-war-one.war-causes",
+      "title": "I. Dünya Savaşı’nın genel ve özel nedenlerini ayırt eder",
+      "topicId": "tyt.history.world-war-one.causes-and-entry"
+    },
+    {
+      "description": "Osmanlı Devleti’nin savaşa girme nedenlerini yorumlar.",
+      "id": "skill.history.world-war-one.ottoman-entry",
+      "title": "Osmanlı Devleti’nin savaşa girme nedenlerini yorumlar",
+      "topicId": "tyt.history.world-war-one.causes-and-entry"
+    },
+    {
+      "description": "Osmanlı Devleti’nin savaştığı cepheleri amaç ve sonuçlarıyla eşleştirir.",
+      "id": "skill.history.world-war-one.fronts-compare",
+      "title": "Osmanlı Devleti’nin savaştığı cepheleri amaç ve sonuçlarıyla eşleştirir",
+      "topicId": "tyt.history.world-war-one.fronts-and-results"
+    },
+    {
+      "description": "I. Dünya Savaşı’nın siyasi sonuçlarını yorumlar.",
+      "id": "skill.history.world-war-one.war-results",
+      "title": "I. Dünya Savaşı’nın siyasi sonuçlarını yorumlar",
+      "topicId": "tyt.history.world-war-one.fronts-and-results"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.history.world-war-one.war-causes",
+        "concept.history.world-war-one.ottoman-entry"
+      ],
+      "id": "tyt.history.world-war-one.causes-and-entry",
+      "skillIds": [
+        "skill.history.world-war-one.war-causes",
+        "skill.history.world-war-one.ottoman-entry"
+      ],
+      "title": "Savaşın Nedenleri ve Osmanlı’nın Katılması",
+      "unitId": "tyt.history.world-war-one"
+    },
+    {
+      "conceptIds": [
+        "concept.history.world-war-one.fronts-compare",
+        "concept.history.world-war-one.war-results"
+      ],
+      "id": "tyt.history.world-war-one.fronts-and-results",
+      "skillIds": [
+        "skill.history.world-war-one.fronts-compare",
+        "skill.history.world-war-one.war-results"
+      ],
+      "title": "Cepheler ve Savaşın Sonuçları",
+      "unitId": "tyt.history.world-war-one"
+    }
+  ],
+  "unitId": "tyt.history.world-war-one"
+}

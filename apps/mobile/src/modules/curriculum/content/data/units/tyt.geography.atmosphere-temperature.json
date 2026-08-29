@@ -1,0 +1,531 @@
+{
+  "concepts": [
+    {
+      "definition": "Troposfer esas katmandır",
+      "id": "concept.geography.atmosphere-temperature.atmosphere",
+      "term": "Hava olayları incelenir",
+      "topicId": "tyt.geography.atmosphere-temperature.atmosphere"
+    },
+    {
+      "definition": "Sıcaklık genel olarak azalır",
+      "id": "concept.geography.atmosphere-temperature.temperature-factors",
+      "term": "Yükselti artar",
+      "topicId": "tyt.geography.atmosphere-temperature.temperature-factors"
+    }
+  ],
+  "exercises": [
+    {
+      "correctOptionId": "opt-1",
+      "difficulty": 2,
+      "explanation": "Hava olayları incelenir durumunda troposfer esas katmandır. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.atmosphere-temperature.atmosphere.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Troposfer esas katmandır"
+        },
+        {
+          "id": "opt-2",
+          "label": "Stratosfer öne çıkar"
+        },
+        {
+          "id": "opt-3",
+          "label": "Dünya’nın aşırı ısınıp soğuması sınırlanır"
+        },
+        {
+          "id": "opt-4",
+          "label": "Basınç azalır"
+        }
+      ],
+      "prompt": "Hava olayları incelenir. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.atmosphere-temperature.atmosphere.interpret"
+      ],
+      "tag": "COĞRAFYA · ATMOSFERİN YAPISI"
+    },
+    {
+      "correctOptionId": "opt-2",
+      "difficulty": 4,
+      "explanation": "Ozon yoğunluğu değerlendirilir durumunda stratosfer öne çıkar. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.atmosphere-temperature.atmosphere.001.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Troposfer esas katmandır"
+        },
+        {
+          "id": "opt-2",
+          "label": "Stratosfer öne çıkar"
+        },
+        {
+          "id": "opt-3",
+          "label": "Dünya’nın aşırı ısınıp soğuması sınırlanır"
+        },
+        {
+          "id": "opt-4",
+          "label": "Basınç azalır"
+        }
+      ],
+      "prompt": "Ozon yoğunluğu değerlendirilir. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.atmosphere-temperature.atmosphere.interpret"
+      ],
+      "tag": "COĞRAFYA · ATMOSFERİN YAPISI"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 3,
+      "explanation": "Atmosfer sera etkisi oluşturur ile dünya’nın aşırı ısınıp soğuması sınırlanır arasında doğrudan bir coğrafi ilişki vardır.",
+      "id": "exercise.geography.atmosphere-temperature.atmosphere.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.atmosphere-temperature.atmosphere.interpret"
+      ],
+      "statement": "Atmosfer sera etkisi oluşturur; bunun sonucunda dünya’nın aşırı ısınıp soğuması sınırlanır.",
+      "tag": "COĞRAFYA · ATMOSFERİN YAPISI"
+    },
+    {
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "Troposfer esas katmandır"
+        },
+        {
+          "id": "w-2",
+          "label": "Stratosfer öne çıkar"
+        },
+        {
+          "id": "w-3",
+          "label": "Dünya’nın aşırı ısınıp soğuması sınırlanır"
+        },
+        {
+          "id": "w-4",
+          "label": "Basınç azalır"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "Yükseldikçe troposferde hava seyrekleşir koşulunun beklenen sonucu “Basınç azalır” ilişkisidir.",
+      "hint": "Yükseldikçe troposferde hava seyrekleşir",
+      "id": "exercise.geography.atmosphere-temperature.atmosphere.001.blank01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.atmosphere-temperature.atmosphere.interpret"
+      ],
+      "solutionTokenIds": [
+        "w-4"
+      ],
+      "title": "Yükseldikçe troposferde hava seyrekleşir durumunda sonuç"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Her koşul, kendisinden beklenen özgün coğrafi sonuçla eşleştirilir; aynı sonuç iki kez kullanılmaz.",
+      "id": "exercise.geography.atmosphere-temperature.atmosphere.001.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Hava olayları incelenir",
+          "right": "Troposfer esas katmandır"
+        },
+        {
+          "id": "pair-2",
+          "left": "Ozon yoğunluğu değerlendirilir",
+          "right": "Stratosfer öne çıkar"
+        },
+        {
+          "id": "pair-3",
+          "left": "Atmosfer sera etkisi oluşturur",
+          "right": "Dünya’nın aşırı ısınıp soğuması sınırlanır"
+        },
+        {
+          "id": "pair-4",
+          "left": "Yükseldikçe troposferde hava seyrekleşir",
+          "right": "Basınç azalır"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.atmosphere-temperature.atmosphere.interpret"
+      ],
+      "subtitle": "Koşulu doğru coğrafi sonuçla birleştir.",
+      "tag": "COĞRAFYA · ATMOSFERİN YAPISI",
+      "title": "İlişkiyi eşleştir"
+    },
+    {
+      "cards": [
+        {
+          "back": "Troposfer esas katmandır",
+          "front": "Hava olayları incelenir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-1"
+        },
+        {
+          "back": "Stratosfer öne çıkar",
+          "front": "Ozon yoğunluğu değerlendirilir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-2"
+        },
+        {
+          "back": "Dünya’nın aşırı ısınıp soğuması sınırlanır",
+          "front": "Atmosfer sera etkisi oluşturur",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-3"
+        },
+        {
+          "back": "Basınç azalır",
+          "front": "Yükseldikçe troposferde hava seyrekleşir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-4"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Kartlar temel ilişkileri kısa tekrar için özetler; puanlanan skill coverage hesabına katılmaz.",
+      "id": "exercise.geography.atmosphere-temperature.atmosphere.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.atmosphere-temperature.atmosphere.interpret"
+      ],
+      "tag": "COĞRAFYA · ATMOSFERİN YAPISI"
+    },
+    {
+      "correctOptionId": "opt-1",
+      "difficulty": 2,
+      "explanation": "Yükselti artar durumunda sıcaklık genel olarak azalır. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.atmosphere-temperature.temperature-factors.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Sıcaklık genel olarak azalır"
+        },
+        {
+          "id": "opt-2",
+          "label": "Yıllık sıcaklık farkı azalır"
+        },
+        {
+          "id": "opt-3",
+          "label": "Bakı nedeniyle daha fazla enerji alabilir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Işınların atmosferde aldığı yol uzar ve enerji kaybı artar"
+        }
+      ],
+      "prompt": "Yükselti artar. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.atmosphere-temperature.temperature-factors.interpret"
+      ],
+      "tag": "COĞRAFYA · SICAKLIĞIN DAĞILIŞI"
+    },
+    {
+      "correctOptionId": "opt-2",
+      "difficulty": 4,
+      "explanation": "Deniz etkisi güçlenir durumunda yıllık sıcaklık farkı azalır. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.atmosphere-temperature.temperature-factors.001.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Sıcaklık genel olarak azalır"
+        },
+        {
+          "id": "opt-2",
+          "label": "Yıllık sıcaklık farkı azalır"
+        },
+        {
+          "id": "opt-3",
+          "label": "Bakı nedeniyle daha fazla enerji alabilir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Işınların atmosferde aldığı yol uzar ve enerji kaybı artar"
+        }
+      ],
+      "prompt": "Deniz etkisi güçlenir. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.atmosphere-temperature.temperature-factors.interpret"
+      ],
+      "tag": "COĞRAFYA · SICAKLIĞIN DAĞILIŞI"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 3,
+      "explanation": "Kuzey Yarım Küre’de güneye bakan yamaç incelenir ile bakı nedeniyle daha fazla enerji alabilir arasında doğrudan bir coğrafi ilişki vardır.",
+      "id": "exercise.geography.atmosphere-temperature.temperature-factors.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.atmosphere-temperature.temperature-factors.interpret"
+      ],
+      "statement": "Kuzey Yarım Küre’de güneye bakan yamaç incelenir; bunun sonucunda bakı nedeniyle daha fazla enerji alabilir.",
+      "tag": "COĞRAFYA · SICAKLIĞIN DAĞILIŞI"
+    },
+    {
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "Sıcaklık genel olarak azalır"
+        },
+        {
+          "id": "w-2",
+          "label": "Yıllık sıcaklık farkı azalır"
+        },
+        {
+          "id": "w-3",
+          "label": "Bakı nedeniyle daha fazla enerji alabilir"
+        },
+        {
+          "id": "w-4",
+          "label": "Işınların atmosferde aldığı yol uzar ve enerji kaybı artar"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "Kutuplara yaklaşıldıkça ışın açısı küçülür; ışınların atmosferde aldığı yol uzar ve yüzeye aktarılan enerji azalır.",
+      "hint": "Kutuplara yaklaşıldıkça ışın açısı küçülür",
+      "id": "exercise.geography.atmosphere-temperature.temperature-factors.001.blank01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.atmosphere-temperature.temperature-factors.interpret"
+      ],
+      "solutionTokenIds": [
+        "w-4"
+      ],
+      "title": "Kutuplara yaklaşıldıkça ışın açısı küçülür durumunda sonuç"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Her koşul, kendisinden beklenen özgün coğrafi sonuçla eşleştirilir; aynı sonuç iki kez kullanılmaz.",
+      "id": "exercise.geography.atmosphere-temperature.temperature-factors.001.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Yükselti artar",
+          "right": "Sıcaklık genel olarak azalır"
+        },
+        {
+          "id": "pair-2",
+          "left": "Deniz etkisi güçlenir",
+          "right": "Yıllık sıcaklık farkı azalır"
+        },
+        {
+          "id": "pair-3",
+          "left": "Kuzey Yarım Küre’de güneye bakan yamaç incelenir",
+          "right": "Bakı nedeniyle daha fazla enerji alabilir"
+        },
+        {
+          "id": "pair-4",
+          "left": "Kutuplara yaklaşıldıkça ışın açısı küçülür",
+          "right": "Işınların atmosferde aldığı yol uzar ve enerji kaybı artar"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.atmosphere-temperature.temperature-factors.interpret"
+      ],
+      "subtitle": "Koşulu doğru coğrafi sonuçla birleştir.",
+      "tag": "COĞRAFYA · SICAKLIĞIN DAĞILIŞI",
+      "title": "İlişkiyi eşleştir"
+    },
+    {
+      "cards": [
+        {
+          "back": "Sıcaklık genel olarak azalır",
+          "front": "Yükselti artar",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-1"
+        },
+        {
+          "back": "Yıllık sıcaklık farkı azalır",
+          "front": "Deniz etkisi güçlenir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-2"
+        },
+        {
+          "back": "Bakı nedeniyle daha fazla enerji alabilir",
+          "front": "Kuzey Yarım Küre’de güneye bakan yamaç incelenir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-3"
+        },
+        {
+          "back": "Işınların atmosferde aldığı yol uzar ve enerji kaybı artar",
+          "front": "Kutuplara yaklaşıldıkça ışın açısı küçülür",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-4"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Kartlar temel ilişkileri kısa tekrar için özetler; puanlanan skill coverage hesabına katılmaz.",
+      "id": "exercise.geography.atmosphere-temperature.temperature-factors.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.atmosphere-temperature.temperature-factors.interpret"
+      ],
+      "tag": "COĞRAFYA · SICAKLIĞIN DAĞILIŞI"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.geography.atmosphere-temperature.atmosphere.001.mcq01",
+        "exercise.geography.atmosphere-temperature.atmosphere.001.mcq02",
+        "exercise.geography.atmosphere-temperature.atmosphere.001.tf01",
+        "exercise.geography.atmosphere-temperature.atmosphere.001.blank01",
+        "exercise.geography.atmosphere-temperature.atmosphere.001.match01",
+        "exercise.geography.atmosphere-temperature.atmosphere.001.card01"
+      ],
+      "id": "lesson.geography.atmosphere-temperature.atmosphere.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Atmosfer katmanlarının temel işlevlerini ve yaşam üzerindeki etkilerini ayırt eder.",
+      "title": "Atmosferin Yapısı",
+      "topicId": "tyt.geography.atmosphere-temperature.atmosphere"
+    },
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.geography.atmosphere-temperature.temperature-factors.001.mcq01",
+        "exercise.geography.atmosphere-temperature.temperature-factors.001.mcq02",
+        "exercise.geography.atmosphere-temperature.temperature-factors.001.tf01",
+        "exercise.geography.atmosphere-temperature.temperature-factors.001.blank01",
+        "exercise.geography.atmosphere-temperature.temperature-factors.001.match01",
+        "exercise.geography.atmosphere-temperature.temperature-factors.001.card01"
+      ],
+      "id": "lesson.geography.atmosphere-temperature.temperature-factors.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Enlem, yükselti, denizellik ve bakının sıcaklığa etkisini karşılaştırır.",
+      "title": "Sıcaklığın Dağılışı",
+      "topicId": "tyt.geography.atmosphere-temperature.temperature-factors"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.geography.atmosphere-temperature.01",
+      "kind": "lesson",
+      "lessonId": "lesson.geography.atmosphere-temperature.atmosphere.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.geography.map-knowledge.02"
+      ],
+      "title": "Atmosferin Yapısı",
+      "unitId": "tyt.geography.atmosphere-temperature"
+    },
+    {
+      "id": "path.geography.atmosphere-temperature.02",
+      "kind": "practice",
+      "lessonId": "lesson.geography.atmosphere-temperature.temperature-factors.001",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.geography.atmosphere-temperature.01"
+      ],
+      "title": "Sıcaklığın Dağılışı Uygulaması",
+      "unitId": "tyt.geography.atmosphere-temperature"
+    }
+  ],
+  "skills": [
+    {
+      "description": "Atmosfer katmanlarının temel işlevlerini ve yaşam üzerindeki etkilerini ayırt eder.",
+      "id": "skill.geography.atmosphere-temperature.atmosphere.interpret",
+      "title": "Atmosfer katmanlarının temel işlevlerini ve yaşam üzerindeki etkilerini ayırt eder.",
+      "topicId": "tyt.geography.atmosphere-temperature.atmosphere"
+    },
+    {
+      "description": "Enlem, yükselti, denizellik ve bakının sıcaklığa etkisini karşılaştırır.",
+      "id": "skill.geography.atmosphere-temperature.temperature-factors.interpret",
+      "title": "Enlem, yükselti, denizellik ve bakının sıcaklığa etkisini karşılaştırır.",
+      "topicId": "tyt.geography.atmosphere-temperature.temperature-factors"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.geography.atmosphere-temperature.atmosphere"
+      ],
+      "id": "tyt.geography.atmosphere-temperature.atmosphere",
+      "skillIds": [
+        "skill.geography.atmosphere-temperature.atmosphere.interpret"
+      ],
+      "title": "Atmosferin Yapısı",
+      "unitId": "tyt.geography.atmosphere-temperature"
+    },
+    {
+      "conceptIds": [
+        "concept.geography.atmosphere-temperature.temperature-factors"
+      ],
+      "id": "tyt.geography.atmosphere-temperature.temperature-factors",
+      "skillIds": [
+        "skill.geography.atmosphere-temperature.temperature-factors.interpret"
+      ],
+      "title": "Sıcaklığın Dağılışı",
+      "unitId": "tyt.geography.atmosphere-temperature"
+    }
+  ],
+  "unitId": "tyt.geography.atmosphere-temperature"
+}

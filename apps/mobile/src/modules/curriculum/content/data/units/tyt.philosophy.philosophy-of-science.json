@@ -1,0 +1,882 @@
+{
+  "unitId": "tyt.philosophy.philosophy-of-science",
+  "topics": [
+    {
+      "id": "tyt.philosophy.philosophy-of-science.science-method",
+      "unitId": "tyt.philosophy.philosophy-of-science",
+      "title": "Bilimsel Bilgi ve Yöntem",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-science.science-method.science-philosophy",
+        "skill.philosophy.philosophy-of-science.science-method.observation-experiment"
+      ],
+      "conceptIds": [
+        "concept.philosophy.philosophy-of-science.science-method.bilim-ve-felsefe",
+        "concept.philosophy.philosophy-of-science.science-method.gozlem-deney-hipotez"
+      ]
+    },
+    {
+      "id": "tyt.philosophy.philosophy-of-science.theory-testing",
+      "unitId": "tyt.philosophy.philosophy-of-science",
+      "title": "Teori, Yasa ve Bilimsellik Ölçütleri",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-science.theory-testing.theory-law",
+        "skill.philosophy.philosophy-of-science.theory-testing.verification-falsification"
+      ],
+      "conceptIds": [
+        "concept.philosophy.philosophy-of-science.theory-testing.teori-ve-yasa",
+        "concept.philosophy.philosophy-of-science.theory-testing.dogrulanabilirlik-ve-yanlislanabilirlik"
+      ]
+    },
+    {
+      "id": "tyt.philosophy.philosophy-of-science.development-values",
+      "unitId": "tyt.philosophy.philosophy-of-science",
+      "title": "Bilimsel Gelişme, Paradigma ve Değerler",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-science.development-values.positivism-paradigm",
+        "skill.philosophy.philosophy-of-science.development-values.science-values"
+      ],
+      "conceptIds": [
+        "concept.philosophy.philosophy-of-science.development-values.pozitivizm-ve-paradigma",
+        "concept.philosophy.philosophy-of-science.development-values.bilim-ve-deger"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "skill.philosophy.philosophy-of-science.science-method.science-philosophy",
+      "title": "Bilim ile felsefeyi ayırt eder",
+      "description": "Bilimin olguları test eden yöntemiyle felsefenin kavram, temel ve sınır sorgulamasını ayırt eder.",
+      "topicId": "tyt.philosophy.philosophy-of-science.science-method"
+    },
+    {
+      "id": "skill.philosophy.philosophy-of-science.science-method.observation-experiment",
+      "title": "Gözlem, deney ve hipotezi ilişkilendirir",
+      "description": "Bilimsel araştırmada gözlemden probleme, sınanabilir hipoteze ve kontrollü deneye uzanan ilişkiyi yorumlar.",
+      "topicId": "tyt.philosophy.philosophy-of-science.science-method"
+    },
+    {
+      "id": "skill.philosophy.philosophy-of-science.theory-testing.theory-law",
+      "title": "Teori ile yasayı doğru ilişkilendirir",
+      "description": "Teorinin kanıtlanınca yasaya dönüşmediğini; yasa ve teorinin farklı açıklama görevleri bulunduğunu ayırt eder.",
+      "topicId": "tyt.philosophy.philosophy-of-science.theory-testing"
+    },
+    {
+      "id": "skill.philosophy.philosophy-of-science.theory-testing.verification-falsification",
+      "title": "Doğrulanabilirlik ile yanlışlanabilirliği ayırt eder",
+      "description": "Bir iddianın desteklenmesi ile onu çürütebilecek olası gözlemin belirtilmesi ölçütlerini ayırt eder.",
+      "topicId": "tyt.philosophy.philosophy-of-science.theory-testing"
+    },
+    {
+      "id": "skill.philosophy.philosophy-of-science.development-values.positivism-paradigm",
+      "title": "Pozitivizm ile paradigma yaklaşımını yorumlar",
+      "description": "Bilgiyi gözlenebilir olgularla sınırlayan görüş ile bilim topluluğunun ortak çerçevesini vurgulayan yaklaşımı ayırt eder.",
+      "topicId": "tyt.philosophy.philosophy-of-science.development-values"
+    },
+    {
+      "id": "skill.philosophy.philosophy-of-science.development-values.science-values",
+      "title": "Bilim ve değer ilişkisini yorumlar",
+      "description": "Bilimsel bulguların betimleyici olması ile araştırma ve uygulama seçimlerinin etik/toplumsal değerler içerebilmesini ayırt eder.",
+      "topicId": "tyt.philosophy.philosophy-of-science.development-values"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "concept.philosophy.philosophy-of-science.science-method.bilim-ve-felsefe",
+      "term": "bilim ve felsefe",
+      "definition": "Bilimin olguları test eden yöntemiyle felsefenin kavram, temel ve sınır sorgulamasını ayırt eder.",
+      "topicId": "tyt.philosophy.philosophy-of-science.science-method"
+    },
+    {
+      "id": "concept.philosophy.philosophy-of-science.science-method.gozlem-deney-hipotez",
+      "term": "gözlem deney hipotez",
+      "definition": "Bilimsel araştırmada gözlemden probleme, sınanabilir hipoteze ve kontrollü deneye uzanan ilişkiyi yorumlar.",
+      "topicId": "tyt.philosophy.philosophy-of-science.science-method"
+    },
+    {
+      "id": "concept.philosophy.philosophy-of-science.theory-testing.teori-ve-yasa",
+      "term": "teori ve yasa",
+      "definition": "Teorinin kanıtlanınca yasaya dönüşmediğini; yasa ve teorinin farklı açıklama görevleri bulunduğunu ayırt eder.",
+      "topicId": "tyt.philosophy.philosophy-of-science.theory-testing"
+    },
+    {
+      "id": "concept.philosophy.philosophy-of-science.theory-testing.dogrulanabilirlik-ve-yanlislanabilirlik",
+      "term": "doğrulanabilirlik ve yanlışlanabilirlik",
+      "definition": "Bir iddianın desteklenmesi ile onu çürütebilecek olası gözlemin belirtilmesi ölçütlerini ayırt eder.",
+      "topicId": "tyt.philosophy.philosophy-of-science.theory-testing"
+    },
+    {
+      "id": "concept.philosophy.philosophy-of-science.development-values.pozitivizm-ve-paradigma",
+      "term": "pozitivizm ve paradigma",
+      "definition": "Bilgiyi gözlenebilir olgularla sınırlayan görüş ile bilim topluluğunun ortak çerçevesini vurgulayan yaklaşımı ayırt eder.",
+      "topicId": "tyt.philosophy.philosophy-of-science.development-values"
+    },
+    {
+      "id": "concept.philosophy.philosophy-of-science.development-values.bilim-ve-deger",
+      "term": "bilim ve değer",
+      "definition": "Bilimsel bulguların betimleyici olması ile araştırma ve uygulama seçimlerinin etik/toplumsal değerler içerebilmesini ayırt eder.",
+      "topicId": "tyt.philosophy.philosophy-of-science.development-values"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "lesson.philosophy.philosophy-of-science.science-method.001",
+      "topicId": "tyt.philosophy.philosophy-of-science.science-method",
+      "title": "Bilimsel Bilgi ve Yöntem",
+      "subtitle": "Bilim ile felsefeyi ayırt eder ve Gözlem, deney ve hipotezi ilişkilendirir.",
+      "estimatedMinutes": 10,
+      "exerciseIds": [
+        "exercise.philosophy.philosophy-of-science.science-method.001.card01",
+        "exercise.philosophy.philosophy-of-science.science-method.001.mcq1",
+        "exercise.philosophy.philosophy-of-science.science-method.001.mcq2",
+        "exercise.philosophy.philosophy-of-science.science-method.001.mcq3",
+        "exercise.philosophy.philosophy-of-science.science-method.001.mcq4",
+        "exercise.philosophy.philosophy-of-science.science-method.001.tf01",
+        "exercise.philosophy.philosophy-of-science.science-method.001.match01",
+        "exercise.philosophy.philosophy-of-science.science-method.001.blank01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.philosophy.philosophy-of-science.theory-testing.001",
+      "topicId": "tyt.philosophy.philosophy-of-science.theory-testing",
+      "title": "Teori, Yasa ve Bilimsellik Ölçütleri",
+      "subtitle": "Teori ile yasayı doğru ilişkilendirir ve Doğrulanabilirlik ile yanlışlanabilirliği ayırt eder.",
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.philosophy.philosophy-of-science.theory-testing.001.mcq1",
+        "exercise.philosophy.philosophy-of-science.theory-testing.001.mcq2",
+        "exercise.philosophy.philosophy-of-science.theory-testing.001.mcq3",
+        "exercise.philosophy.philosophy-of-science.theory-testing.001.mcq4",
+        "exercise.philosophy.philosophy-of-science.theory-testing.001.tf01",
+        "exercise.philosophy.philosophy-of-science.theory-testing.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.philosophy.philosophy-of-science.development-values.001",
+      "topicId": "tyt.philosophy.philosophy-of-science.development-values",
+      "title": "Bilimsel Gelişme, Paradigma ve Değerler",
+      "subtitle": "Pozitivizm ile paradigma yaklaşımını yorumlar ve Bilim ve değer ilişkisini yorumlar.",
+      "estimatedMinutes": 10,
+      "exerciseIds": [
+        "exercise.philosophy.philosophy-of-science.development-values.001.mcq1",
+        "exercise.philosophy.philosophy-of-science.development-values.001.mcq2",
+        "exercise.philosophy.philosophy-of-science.development-values.001.mcq3",
+        "exercise.philosophy.philosophy-of-science.development-values.001.mcq4",
+        "exercise.philosophy.philosophy-of-science.development-values.001.tf01",
+        "exercise.philosophy.philosophy-of-science.development-values.001.match01",
+        "exercise.philosophy.philosophy-of-science.development-values.001.blank01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "id": "exercise.philosophy.philosophy-of-science.science-method.001.mcq1",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-science.science-method.science-philosophy"
+      ],
+      "prompt": "Bir ekip ilacın etkisini kontrollü deneyle ölçer; başka bir çalışma “Bir kanıtı bilimsel yapan nedir?” sorusunu tartışır.\n\nİkinci çalışma hangi alana aittir?",
+      "tag": "FELSEFE · BİLİMSEL BİLGİ VE YÖNTEM",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Bilim felsefesi"
+        },
+        {
+          "id": "opt-2",
+          "label": "Deneysel farmakoloji"
+        },
+        {
+          "id": "opt-3",
+          "label": "Sanat eleştirisi"
+        },
+        {
+          "id": "opt-4",
+          "label": "Siyaset bilimi"
+        }
+      ],
+      "correctOptionId": "opt-1",
+      "explanation": "Bir ekip ilacın etkisini kontrollü deneyle ölçer; başka bir çalışma “Bir kanıtı bilimsel yapan nedir?” sorusunu tartışır. Bu nedenle doğru ayrım “Bilim felsefesi”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.philosophy-of-science.science-method.001.mcq2",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-science.science-method.science-philosophy"
+      ],
+      "prompt": "Bir ekip ilacın etkisini kontrollü deneyle ölçer; başka bir çalışma “Bir kanıtı bilimsel yapan nedir?” sorusunu tartışır.\n\nBir öğrenci bu görüşü “Deneysel farmakoloji” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · BİLİMSEL BİLGİ VE YÖNTEM",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Deneysel farmakoloji"
+        },
+        {
+          "id": "opt-2",
+          "label": "Sanat eleştirisi"
+        },
+        {
+          "id": "opt-3",
+          "label": "Siyaset bilimi"
+        },
+        {
+          "id": "opt-4",
+          "label": "Bilim felsefesi"
+        }
+      ],
+      "correctOptionId": "opt-4",
+      "explanation": "Görüşte belirleyici ölçüt “bilim ve felsefe” çerçevesidir. “Deneysel farmakoloji” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.philosophy-of-science.science-method.001.mcq3",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-science.science-method.observation-experiment"
+      ],
+      "prompt": "Araştırmacı bitkilerin ışığa yöneldiğini fark eder, ışık yönünün büyümeyi etkilediğini öne sürer ve diğer koşulları sabit tutarak bunu sınar.\n\nÖne sürülen sınanabilir açıklama nedir?",
+      "tag": "FELSEFE · BİLİMSEL BİLGİ VE YÖNTEM",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Paradigma"
+        },
+        {
+          "id": "opt-2",
+          "label": "Değer yargısı"
+        },
+        {
+          "id": "opt-3",
+          "label": "Hipotez"
+        },
+        {
+          "id": "opt-4",
+          "label": "Yasa"
+        }
+      ],
+      "correctOptionId": "opt-3",
+      "explanation": "Araştırmacı bitkilerin ışığa yöneldiğini fark eder, ışık yönünün büyümeyi etkilediğini öne sürer ve diğer koşulları sabit tutarak bunu sınar. Bu nedenle doğru ayrım “Hipotez”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.philosophy-of-science.science-method.001.mcq4",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-science.science-method.observation-experiment"
+      ],
+      "prompt": "Araştırmacı bitkilerin ışığa yöneldiğini fark eder, ışık yönünün büyümeyi etkilediğini öne sürer ve diğer koşulları sabit tutarak bunu sınar.\n\nBir öğrenci bu görüşü “Yasa” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · BİLİMSEL BİLGİ VE YÖNTEM",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Değer yargısı"
+        },
+        {
+          "id": "opt-2",
+          "label": "Hipotez"
+        },
+        {
+          "id": "opt-3",
+          "label": "Yasa"
+        },
+        {
+          "id": "opt-4",
+          "label": "Paradigma"
+        }
+      ],
+      "correctOptionId": "opt-2",
+      "explanation": "Görüşte belirleyici ölçüt “gözlem deney hipotez” çerçevesidir. “Yasa” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.philosophy-of-science.science-method.001.tf01",
+      "kind": "trueFalse",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-science.science-method.science-philosophy",
+        "skill.philosophy.philosophy-of-science.science-method.observation-experiment"
+      ],
+      "statement": "bilim ve felsefe ile gözlem deney hipotez aynı kavram değildir; bir metnin gerekçesine bakılarak birbirinden ayrılmalıdır.",
+      "tag": "FELSEFE · BİLİMSEL BİLGİ VE YÖNTEM",
+      "correctAnswer": true,
+      "explanation": "Bu iki kavram aynı topic içinde ilişkili olsa da farklı sorulara veya ölçütlere karşılık gelir. Ayrım, yalnız anahtar kelimeye değil görüşün gerekçesine dayanır.",
+      "difficulty": 2,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.philosophy-of-science.science-method.001.match01",
+      "kind": "matching",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-science.science-method.science-philosophy",
+        "skill.philosophy.philosophy-of-science.science-method.observation-experiment"
+      ],
+      "title": "Görüşü temel vurgusuyla eşleştir",
+      "subtitle": "Her ifadeyi yalnız bir kavramla eşleştir.",
+      "tag": "FELSEFE · BİLİMSEL BİLGİ VE YÖNTEM",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "bilim ve felsefe",
+          "right": "Bilimin olguları test eden yöntemiyle felsefenin kavram, temel ve sınır sorgulamasını ayırt eder."
+        },
+        {
+          "id": "pair-2",
+          "left": "gözlem deney hipotez",
+          "right": "Bilimsel araştırmada gözlemden probleme, sınanabilir hipoteze ve kontrollü deneye uzanan ilişkiyi yorumlar."
+        }
+      ],
+      "explanation": "Eşleştirmeler kavramın adı ile ölçülebilir ayırt etme ölçütünü bağlar; görüşü yalnız ezberlemek yerine gerekçesiyle tanımayı sağlar.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.philosophy-of-science.science-method.001.blank01",
+      "kind": "fillBlank",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-science.science-method.science-philosophy"
+      ],
+      "title": "Temel kavramı tamamla",
+      "hint": "Bilimin olguları test eden yöntemiyle felsefenin kavram, temel ve sınır sorgulamasını ayırt eder.",
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "bilim ve felsefe"
+        },
+        {
+          "id": "w-2",
+          "label": "gözlem deney hipotez"
+        },
+        {
+          "id": "w-3",
+          "label": "olgusal betimleme"
+        }
+      ],
+      "solutionTokenIds": [
+        "w-1"
+      ],
+      "explanation": "Tanım “bilim ve felsefe” kavramına karşılık gelir. Diğer seçenekler farklı bir ölçüt veya düşünme alanını belirtir.",
+      "difficulty": 1,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.philosophy-of-science.science-method.001.card01",
+      "kind": "flashcard",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-science.science-method.science-philosophy",
+        "skill.philosophy.philosophy-of-science.science-method.observation-experiment"
+      ],
+      "tag": "FELSEFE · BİLİMSEL BİLGİ VE YÖNTEM",
+      "cards": [
+        {
+          "id": "card-1",
+          "front": "bilim ve felsefe",
+          "back": "Bilimin olguları test eden yöntemiyle felsefenin kavram, temel ve sınır sorgulamasını ayırt eder.",
+          "hint": "Kavramın bir metinde hangi ölçütle tanınacağını düşün."
+        },
+        {
+          "id": "card-2",
+          "front": "gözlem deney hipotez",
+          "back": "Bilimsel araştırmada gözlemden probleme, sınanabilir hipoteze ve kontrollü deneye uzanan ilişkiyi yorumlar.",
+          "hint": "Kavramın bir metinde hangi ölçütle tanınacağını düşün."
+        }
+      ],
+      "explanation": "Kartlar temel ayrımları ilk karşılaşmada tanıtır; scored skill coverage hesabına katılmaz.",
+      "difficulty": 1,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.philosophy-of-science.theory-testing.001.mcq1",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-science.theory-testing.theory-law"
+      ],
+      "prompt": "Bir öğrenci “Yeterince kanıtlanan teori zamanla yasaya dönüşür.” der. Öğretmeni teori ve yasanın farklı sorulara yanıt verdiğini açıklar.\n\nÖğretmenin düzeltmesi hangi yargıya dayanır?",
+      "tag": "FELSEFE · TEORİ, YASA VE BİLİMSELLİK ÖLÇÜTLERİ",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Yasalar hiçbir gözleme dayanmaz"
+        },
+        {
+          "id": "opt-2",
+          "label": "Teoriler sınanamaz"
+        },
+        {
+          "id": "opt-3",
+          "label": "Teori ve yasa bilimsel bilginin farklı türleridir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Her teori eksik bir yasadır"
+        }
+      ],
+      "correctOptionId": "opt-3",
+      "explanation": "Bir öğrenci “Yeterince kanıtlanan teori zamanla yasaya dönüşür. Bu nedenle doğru ayrım “Teori ve yasa bilimsel bilginin farklı türleridir”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.philosophy-of-science.theory-testing.001.mcq2",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-science.theory-testing.theory-law"
+      ],
+      "prompt": "Bir öğrenci “Yeterince kanıtlanan teori zamanla yasaya dönüşür.” der. Öğretmeni teori ve yasanın farklı sorulara yanıt verdiğini açıklar.\n\nBir öğrenci bu görüşü “Her teori eksik bir yasadır” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · TEORİ, YASA VE BİLİMSELLİK ÖLÇÜTLERİ",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Teoriler sınanamaz"
+        },
+        {
+          "id": "opt-2",
+          "label": "Teori ve yasa bilimsel bilginin farklı türleridir"
+        },
+        {
+          "id": "opt-3",
+          "label": "Her teori eksik bir yasadır"
+        },
+        {
+          "id": "opt-4",
+          "label": "Yasalar hiçbir gözleme dayanmaz"
+        }
+      ],
+      "correctOptionId": "opt-2",
+      "explanation": "Görüşte belirleyici ölçüt “teori ve yasa” çerçevesidir. “Her teori eksik bir yasadır” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.philosophy-of-science.theory-testing.001.mcq3",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-science.theory-testing.verification-falsification"
+      ],
+      "prompt": "Bir kuramcı, görüşünü doğrulayan örnekleri toplamakla yetinmez; hangi olası bulgunun görüşünü yanlış saydıracağını da açıklar.\n\nBu tutum hangi ölçütü öne çıkarır?",
+      "tag": "FELSEFE · TEORİ, YASA VE BİLİMSELLİK ÖLÇÜTLERİ",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Yanlışlanabilirlik"
+        },
+        {
+          "id": "opt-2",
+          "label": "Salt doğrulama"
+        },
+        {
+          "id": "opt-3",
+          "label": "Estetik beğeni"
+        },
+        {
+          "id": "opt-4",
+          "label": "Otoriteye uygunluk"
+        }
+      ],
+      "correctOptionId": "opt-1",
+      "explanation": "Bir kuramcı, görüşünü doğrulayan örnekleri toplamakla yetinmez; hangi olası bulgunun görüşünü yanlış saydıracağını da açıklar. Bu nedenle doğru ayrım “Yanlışlanabilirlik”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.philosophy-of-science.theory-testing.001.mcq4",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-science.theory-testing.verification-falsification"
+      ],
+      "prompt": "Bir kuramcı, görüşünü doğrulayan örnekleri toplamakla yetinmez; hangi olası bulgunun görüşünü yanlış saydıracağını da açıklar.\n\nBir öğrenci bu görüşü “Salt doğrulama” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · TEORİ, YASA VE BİLİMSELLİK ÖLÇÜTLERİ",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Salt doğrulama"
+        },
+        {
+          "id": "opt-2",
+          "label": "Estetik beğeni"
+        },
+        {
+          "id": "opt-3",
+          "label": "Otoriteye uygunluk"
+        },
+        {
+          "id": "opt-4",
+          "label": "Yanlışlanabilirlik"
+        }
+      ],
+      "correctOptionId": "opt-4",
+      "explanation": "Görüşte belirleyici ölçüt “doğrulanabilirlik ve yanlışlanabilirlik” çerçevesidir. “Salt doğrulama” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.philosophy-of-science.theory-testing.001.tf01",
+      "kind": "trueFalse",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-science.theory-testing.theory-law",
+        "skill.philosophy.philosophy-of-science.theory-testing.verification-falsification"
+      ],
+      "statement": "teori ve yasa ile doğrulanabilirlik ve yanlışlanabilirlik aynı kavram değildir; bir metnin gerekçesine bakılarak birbirinden ayrılmalıdır.",
+      "tag": "FELSEFE · TEORİ, YASA VE BİLİMSELLİK ÖLÇÜTLERİ",
+      "correctAnswer": true,
+      "explanation": "Bu iki kavram aynı topic içinde ilişkili olsa da farklı sorulara veya ölçütlere karşılık gelir. Ayrım, yalnız anahtar kelimeye değil görüşün gerekçesine dayanır.",
+      "difficulty": 2,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.philosophy-of-science.theory-testing.001.match01",
+      "kind": "matching",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-science.theory-testing.theory-law",
+        "skill.philosophy.philosophy-of-science.theory-testing.verification-falsification"
+      ],
+      "title": "Görüşü temel vurgusuyla eşleştir",
+      "subtitle": "Her ifadeyi yalnız bir kavramla eşleştir.",
+      "tag": "FELSEFE · TEORİ, YASA VE BİLİMSELLİK ÖLÇÜTLERİ",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "teori ve yasa",
+          "right": "Teorinin kanıtlanınca yasaya dönüşmediğini; yasa ve teorinin farklı açıklama görevleri bulunduğunu ayırt eder."
+        },
+        {
+          "id": "pair-2",
+          "left": "doğrulanabilirlik ve yanlışlanabilirlik",
+          "right": "Bir iddianın desteklenmesi ile onu çürütebilecek olası gözlemin belirtilmesi ölçütlerini ayırt eder."
+        }
+      ],
+      "explanation": "Eşleştirmeler kavramın adı ile ölçülebilir ayırt etme ölçütünü bağlar; görüşü yalnız ezberlemek yerine gerekçesiyle tanımayı sağlar.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.philosophy-of-science.development-values.001.mcq1",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-science.development-values.positivism-paradigm"
+      ],
+      "prompt": "Bir dönemde bilim insanları hangi soruların anlamlı, hangi yöntemlerin geçerli olduğunu ortak bir kavramsal çerçeve içinde değerlendirir.\n\nBu çerçeve hangi kavramla adlandırılır?",
+      "tag": "FELSEFE · BİLİMSEL GELİŞME, PARADİGMA VE DEĞERLER",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Paradigma"
+        },
+        {
+          "id": "opt-2",
+          "label": "Hipotez"
+        },
+        {
+          "id": "opt-3",
+          "label": "Yasa"
+        },
+        {
+          "id": "opt-4",
+          "label": "Dogmatizm"
+        }
+      ],
+      "correctOptionId": "opt-1",
+      "explanation": "Bir dönemde bilim insanları hangi soruların anlamlı, hangi yöntemlerin geçerli olduğunu ortak bir kavramsal çerçeve içinde değerlendirir. Bu nedenle doğru ayrım “Paradigma”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.philosophy-of-science.development-values.001.mcq2",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-science.development-values.positivism-paradigm"
+      ],
+      "prompt": "Bir dönemde bilim insanları hangi soruların anlamlı, hangi yöntemlerin geçerli olduğunu ortak bir kavramsal çerçeve içinde değerlendirir.\n\nBir öğrenci bu görüşü “Hipotez” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · BİLİMSEL GELİŞME, PARADİGMA VE DEĞERLER",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Hipotez"
+        },
+        {
+          "id": "opt-2",
+          "label": "Yasa"
+        },
+        {
+          "id": "opt-3",
+          "label": "Dogmatizm"
+        },
+        {
+          "id": "opt-4",
+          "label": "Paradigma"
+        }
+      ],
+      "correctOptionId": "opt-4",
+      "explanation": "Görüşte belirleyici ölçüt “pozitivizm ve paradigma” çerçevesidir. “Hipotez” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.philosophy-of-science.development-values.001.mcq3",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-science.development-values.science-values"
+      ],
+      "prompt": "Bir teknoloji teknik olarak mümkün ve etkili olabilir; yine de kimlerin verisini kullanacağı ve risklerin nasıl paylaşılacağı etik değerlendirme ister.\n\nBu örnek hangi sonucu destekler?",
+      "tag": "FELSEFE · BİLİMSEL GELİŞME, PARADİGMA VE DEĞERLER",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Etik sorular deneyle kesin çözülür"
+        },
+        {
+          "id": "opt-2",
+          "label": "Değerler gözlemin yerini almalıdır"
+        },
+        {
+          "id": "opt-3",
+          "label": "Bilimsel uygulamalar değer tartışmalarından bütünüyle bağımsız değildir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Bilimsel bulgular yalnız kişisel kanaattir"
+        }
+      ],
+      "correctOptionId": "opt-3",
+      "explanation": "Bir teknoloji teknik olarak mümkün ve etkili olabilir; yine de kimlerin verisini kullanacağı ve risklerin nasıl paylaşılacağı etik değerlendirme ister. Bu nedenle doğru ayrım “Bilimsel uygulamalar değer tartışmalarından bütünüyle bağımsız değildir”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.philosophy-of-science.development-values.001.mcq4",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-science.development-values.science-values"
+      ],
+      "prompt": "Bir teknoloji teknik olarak mümkün ve etkili olabilir; yine de kimlerin verisini kullanacağı ve risklerin nasıl paylaşılacağı etik değerlendirme ister.\n\nBir öğrenci bu görüşü “Bilimsel bulgular yalnız kişisel kanaattir” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · BİLİMSEL GELİŞME, PARADİGMA VE DEĞERLER",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Değerler gözlemin yerini almalıdır"
+        },
+        {
+          "id": "opt-2",
+          "label": "Bilimsel uygulamalar değer tartışmalarından bütünüyle bağımsız değildir"
+        },
+        {
+          "id": "opt-3",
+          "label": "Bilimsel bulgular yalnız kişisel kanaattir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Etik sorular deneyle kesin çözülür"
+        }
+      ],
+      "correctOptionId": "opt-2",
+      "explanation": "Görüşte belirleyici ölçüt “bilim ve değer” çerçevesidir. “Bilimsel bulgular yalnız kişisel kanaattir” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.philosophy-of-science.development-values.001.tf01",
+      "kind": "trueFalse",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-science.development-values.positivism-paradigm",
+        "skill.philosophy.philosophy-of-science.development-values.science-values"
+      ],
+      "statement": "pozitivizm ve paradigma ile bilim ve değer aynı kavram değildir; bir metnin gerekçesine bakılarak birbirinden ayrılmalıdır.",
+      "tag": "FELSEFE · BİLİMSEL GELİŞME, PARADİGMA VE DEĞERLER",
+      "correctAnswer": true,
+      "explanation": "Bu iki kavram aynı topic içinde ilişkili olsa da farklı sorulara veya ölçütlere karşılık gelir. Ayrım, yalnız anahtar kelimeye değil görüşün gerekçesine dayanır.",
+      "difficulty": 2,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.philosophy-of-science.development-values.001.match01",
+      "kind": "matching",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-science.development-values.positivism-paradigm",
+        "skill.philosophy.philosophy-of-science.development-values.science-values"
+      ],
+      "title": "Görüşü temel vurgusuyla eşleştir",
+      "subtitle": "Her ifadeyi yalnız bir kavramla eşleştir.",
+      "tag": "FELSEFE · BİLİMSEL GELİŞME, PARADİGMA VE DEĞERLER",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "pozitivizm ve paradigma",
+          "right": "Bilgiyi gözlenebilir olgularla sınırlayan görüş ile bilim topluluğunun ortak çerçevesini vurgulayan yaklaşımı ayırt eder."
+        },
+        {
+          "id": "pair-2",
+          "left": "bilim ve değer",
+          "right": "Bilimsel bulguların betimleyici olması ile araştırma ve uygulama seçimlerinin etik/toplumsal değerler içerebilmesini ayırt eder."
+        }
+      ],
+      "explanation": "Eşleştirmeler kavramın adı ile ölçülebilir ayırt etme ölçütünü bağlar; görüşü yalnız ezberlemek yerine gerekçesiyle tanımayı sağlar.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.philosophy-of-science.development-values.001.blank01",
+      "kind": "fillBlank",
+      "skillIds": [
+        "skill.philosophy.philosophy-of-science.development-values.positivism-paradigm"
+      ],
+      "title": "Temel kavramı tamamla",
+      "hint": "Bilgiyi gözlenebilir olgularla sınırlayan görüş ile bilim topluluğunun ortak çerçevesini vurgulayan yaklaşımı ayırt eder.",
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "pozitivizm ve paradigma"
+        },
+        {
+          "id": "w-2",
+          "label": "bilim ve değer"
+        },
+        {
+          "id": "w-3",
+          "label": "olgusal betimleme"
+        }
+      ],
+      "solutionTokenIds": [
+        "w-1"
+      ],
+      "explanation": "Tanım “pozitivizm ve paradigma” kavramına karşılık gelir. Diğer seçenekler farklı bir ölçüt veya düşünme alanını belirtir.",
+      "difficulty": 1,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.philosophy.philosophy-of-science.01",
+      "unitId": "tyt.philosophy.philosophy-of-science",
+      "kind": "lesson",
+      "title": "Bilimsel Bilgi ve Yöntem",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.philosophy.political-philosophy.03"
+      ],
+      "lessonId": "lesson.philosophy.philosophy-of-science.science-method.001"
+    },
+    {
+      "id": "path.philosophy.philosophy-of-science.02",
+      "unitId": "tyt.philosophy.philosophy-of-science",
+      "kind": "lesson",
+      "title": "Teori, Yasa ve Bilimsellik Ölçütleri",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.philosophy.philosophy-of-science.01"
+      ],
+      "lessonId": "lesson.philosophy.philosophy-of-science.theory-testing.001"
+    },
+    {
+      "id": "path.philosophy.philosophy-of-science.03",
+      "unitId": "tyt.philosophy.philosophy-of-science",
+      "kind": "practice",
+      "title": "Bilimsel Gelişme, Paradigma ve Değerler Uygulaması",
+      "order": 3,
+      "prerequisiteIds": [
+        "path.philosophy.philosophy-of-science.02"
+      ],
+      "lessonId": "lesson.philosophy.philosophy-of-science.development-values.001"
+    }
+  ]
+}

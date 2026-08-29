@@ -1,0 +1,535 @@
+{
+  "concepts": [
+    {
+      "definition": "Gaza ve fetih alanı bulmasını",
+      "id": "concept.history.ottoman-from-beylik-to-state.foundation-conditions",
+      "term": "Gaza ve fetih alanı bulmasını",
+      "topicId": "tyt.history.ottoman-from-beylik-to-state.foundation-and-rumelia"
+    },
+    {
+      "definition": "Fetihleri kalıcılaştırmak ve güvenliği sağlamak",
+      "id": "concept.history.ottoman-from-beylik-to-state.rumelia-settlement",
+      "term": "Fetihleri kalıcılaştırmak ve güvenliği sağlamak",
+      "topicId": "tyt.history.ottoman-from-beylik-to-state.foundation-and-rumelia"
+    },
+    {
+      "definition": "Merkezî otoritenin güçlenmesini",
+      "id": "concept.history.ottoman-from-beylik-to-state.devshirme-central",
+      "term": "Merkezî otoritenin güçlenmesini",
+      "topicId": "tyt.history.ottoman-from-beylik-to-state.centralization-and-crisis"
+    },
+    {
+      "definition": "Fetret Devri’nin başlaması",
+      "id": "concept.history.ottoman-from-beylik-to-state.ankara-interregnum",
+      "term": "Fetret Devri’nin başlaması",
+      "topicId": "tyt.history.ottoman-from-beylik-to-state.centralization-and-crisis"
+    }
+  ],
+  "exercises": [
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Gaza ve fetih alanı bulmasını, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.ottoman-from-beylik-to-state.foundation-and-rumelia.foundation-conditions.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Gaza ve fetih alanı bulmasını"
+        },
+        {
+          "id": "d1",
+          "label": "Moğol desteğiyle denizlere egemen olmasını"
+        },
+        {
+          "id": "d2",
+          "label": "Avrupa’da siyasi birliği kurmasını"
+        },
+        {
+          "id": "d3",
+          "label": "İpek Yolu’nu tamamen denetlemesini"
+        }
+      ],
+      "prompt": "Osmanlı Beyliği’nin Bizans sınırında kurulması hangi imkânı sağlamıştır?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-from-beylik-to-state.foundation-conditions"
+      ],
+      "tag": "TARİH · KURULUŞ VE RUMELİ’YE GEÇİŞ"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Osmanlı Beyliği’nin Bizans sınırında kurulması hangi imkânı sağlamıştır sorusunun doğru karşılığı “Gaza ve fetih alanı bulmasını” olmalıdır.",
+      "id": "exercise.history.ottoman-from-beylik-to-state.foundation-and-rumelia.foundation-conditions.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-from-beylik-to-state.foundation-conditions"
+      ],
+      "statement": "Moğol desteğiyle denizlere egemen olmasını, Osmanlı Beyliği’nin büyümesini kolaylaştıran koşulları yorumlar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · KURULUŞ VE RUMELİ’YE GEÇİŞ"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "Gaza ve fetih alanı bulmasını"
+        },
+        {
+          "id": "d1",
+          "label": "Moğol desteğiyle denizlere egemen olmasını"
+        },
+        {
+          "id": "d2",
+          "label": "Avrupa’da siyasi birliği kurmasını"
+        },
+        {
+          "id": "d3",
+          "label": "İpek Yolu’nu tamamen denetlemesini"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “Gaza ve fetih alanı bulmasını” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.ottoman-from-beylik-to-state.foundation-and-rumelia.foundation-conditions.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-from-beylik-to-state.foundation-conditions"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: Osmanlı Beyliği’nin Bizans sınırında kurulması hangi imkânı sağlamıştır?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Fetihleri kalıcılaştırmak ve güvenliği sağlamak, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.ottoman-from-beylik-to-state.foundation-and-rumelia.rumelia-settlement.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Fetihleri kalıcılaştırmak ve güvenliği sağlamak"
+        },
+        {
+          "id": "d1",
+          "label": "Anadolu’yu nüfussuz bırakmak"
+        },
+        {
+          "id": "d2",
+          "label": "Ticaret yollarını kapatmak"
+        },
+        {
+          "id": "d3",
+          "label": "Devşirme sistemini sona erdirmek"
+        }
+      ],
+      "prompt": "Osmanlı iskân politikasının Rumeli’deki temel amacı hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-from-beylik-to-state.rumelia-settlement"
+      ],
+      "tag": "TARİH · KURULUŞ VE RUMELİ’YE GEÇİŞ"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Osmanlı iskân politikasının Rumeli’deki temel amacı hangisidir sorusunun doğru karşılığı “Fetihleri kalıcılaştırmak ve güvenliği sağlamak” olmalıdır.",
+      "id": "exercise.history.ottoman-from-beylik-to-state.foundation-and-rumelia.rumelia-settlement.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-from-beylik-to-state.rumelia-settlement"
+      ],
+      "statement": "Anadolu’yu nüfussuz bırakmak, Rumeli’de iskân politikasının amaçlarını açıklar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · KURULUŞ VE RUMELİ’YE GEÇİŞ"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, Kuruluş ve Rumeli’ye Geçiş başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.ottoman-from-beylik-to-state.foundation-and-rumelia.rumelia-settlement.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Osmanlı Beyliği’nin Bizans sınırında kurulması hangi imkânı sağlamıştır?",
+          "right": "Gaza ve fetih alanı bulmasını"
+        },
+        {
+          "id": "pair-2",
+          "left": "Osmanlı iskân politikasının Rumeli’deki temel amacı hangisidir?",
+          "right": "Fetihleri kalıcılaştırmak ve güvenliği sağlamak"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-from-beylik-to-state.foundation-conditions",
+        "skill.history.ottoman-from-beylik-to-state.rumelia-settlement"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · KURULUŞ VE RUMELİ’YE GEÇİŞ",
+      "title": "Bilgi bağlarını eşleştir"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Merkezî otoritenin güçlenmesini, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.ottoman-from-beylik-to-state.centralization-and-crisis.devshirme-central.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Merkezî otoritenin güçlenmesini"
+        },
+        {
+          "id": "d1",
+          "label": "Tımar sisteminin hemen kaldırılmasını"
+        },
+        {
+          "id": "d2",
+          "label": "Beyliklerin bağımsızlaşmasını"
+        },
+        {
+          "id": "d3",
+          "label": "Tahtın seçimle belirlenmesini"
+        }
+      ],
+      "prompt": "Kapıkulu askerlerinin doğrudan padişaha bağlı olması hangi sonucu desteklemiştir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-from-beylik-to-state.devshirme-central"
+      ],
+      "tag": "TARİH · MERKEZÎLEŞME VE FETRET DEVRİ"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Kapıkulu askerlerinin doğrudan padişaha bağlı olması hangi sonucu desteklemiştir sorusunun doğru karşılığı “Merkezî otoritenin güçlenmesini” olmalıdır.",
+      "id": "exercise.history.ottoman-from-beylik-to-state.centralization-and-crisis.devshirme-central.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-from-beylik-to-state.devshirme-central"
+      ],
+      "statement": "Tımar sisteminin hemen kaldırılmasını, Devşirme ve kapıkulu sisteminin merkezî otoriteye etkisini yorumlar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · MERKEZÎLEŞME VE FETRET DEVRİ"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "Merkezî otoritenin güçlenmesini"
+        },
+        {
+          "id": "d1",
+          "label": "Tımar sisteminin hemen kaldırılmasını"
+        },
+        {
+          "id": "d2",
+          "label": "Beyliklerin bağımsızlaşmasını"
+        },
+        {
+          "id": "d3",
+          "label": "Tahtın seçimle belirlenmesini"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “Merkezî otoritenin güçlenmesini” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.ottoman-from-beylik-to-state.centralization-and-crisis.devshirme-central.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-from-beylik-to-state.devshirme-central"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: Kapıkulu askerlerinin doğrudan padişaha bağlı olması hangi sonucu desteklemiştir?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Fetret Devri’nin başlaması, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.ottoman-from-beylik-to-state.centralization-and-crisis.ankara-interregnum.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Fetret Devri’nin başlaması"
+        },
+        {
+          "id": "d1",
+          "label": "İstanbul’un fethedilmesi"
+        },
+        {
+          "id": "d2",
+          "label": "Halifeliğin Osmanlılara geçmesi"
+        },
+        {
+          "id": "d3",
+          "label": "Kapitülasyonların verilmesi"
+        }
+      ],
+      "prompt": "1402 Ankara Savaşı’nın Osmanlı siyasi hayatındaki doğrudan sonucu hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-from-beylik-to-state.ankara-interregnum"
+      ],
+      "tag": "TARİH · MERKEZÎLEŞME VE FETRET DEVRİ"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. 1402 Ankara Savaşı’nın Osmanlı siyasi hayatındaki doğrudan sonucu hangisidir sorusunun doğru karşılığı “Fetret Devri’nin başlaması” olmalıdır.",
+      "id": "exercise.history.ottoman-from-beylik-to-state.centralization-and-crisis.ankara-interregnum.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-from-beylik-to-state.ankara-interregnum"
+      ],
+      "statement": "İstanbul’un fethedilmesi, Ankara Savaşı ile Fetret Devri arasındaki ilişkiyi kurar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · MERKEZÎLEŞME VE FETRET DEVRİ"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, Merkezîleşme ve Fetret Devri başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.ottoman-from-beylik-to-state.centralization-and-crisis.ankara-interregnum.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Kapıkulu askerlerinin doğrudan padişaha bağlı olması hangi sonucu desteklemiştir?",
+          "right": "Merkezî otoritenin güçlenmesini"
+        },
+        {
+          "id": "pair-2",
+          "left": "1402 Ankara Savaşı’nın Osmanlı siyasi hayatındaki doğrudan sonucu hangisidir?",
+          "right": "Fetret Devri’nin başlaması"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-from-beylik-to-state.devshirme-central",
+        "skill.history.ottoman-from-beylik-to-state.ankara-interregnum"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · MERKEZÎLEŞME VE FETRET DEVRİ",
+      "title": "Bilgi bağlarını eşleştir"
+    },
+    {
+      "correctOrder": [
+        "event-1",
+        "event-2",
+        "event-3",
+        "event-4"
+      ],
+      "difficulty": 4,
+      "explanation": "Olaylar tarihleri dikkate alınarak eskiden yeniye sıralanır. Kronoloji, gelişmeler arasındaki neden-sonuç ilişkisini kurmak için temel bir çerçeve sunar.",
+      "id": "exercise.history.ottoman-from-beylik-to-state.foundation-and-rumelia.order01",
+      "items": [
+        {
+          "id": "event-1",
+          "label": "Koyunhisar Savaşı (1302)"
+        },
+        {
+          "id": "event-2",
+          "label": "Bursa’nın fethi (1326)"
+        },
+        {
+          "id": "event-3",
+          "label": "Rumeli’ye geçiş (1353)"
+        },
+        {
+          "id": "event-4",
+          "label": "Ankara Savaşı (1402)"
+        }
+      ],
+      "kind": "ordering",
+      "prompt": "Gelişmeleri eskiden yeniye doğru sırala.",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ottoman-from-beylik-to-state.foundation-conditions",
+        "skill.history.ottoman-from-beylik-to-state.rumelia-settlement"
+      ],
+      "tag": "TARİH · KURULUŞ VE RUMELİ’YE GEÇİŞ"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.ottoman-from-beylik-to-state.foundation-and-rumelia.foundation-conditions.mcq01",
+        "exercise.history.ottoman-from-beylik-to-state.foundation-and-rumelia.foundation-conditions.tf01",
+        "exercise.history.ottoman-from-beylik-to-state.foundation-and-rumelia.foundation-conditions.fill01",
+        "exercise.history.ottoman-from-beylik-to-state.foundation-and-rumelia.rumelia-settlement.mcq01",
+        "exercise.history.ottoman-from-beylik-to-state.foundation-and-rumelia.rumelia-settlement.tf01",
+        "exercise.history.ottoman-from-beylik-to-state.foundation-and-rumelia.rumelia-settlement.match01",
+        "exercise.history.ottoman-from-beylik-to-state.foundation-and-rumelia.order01"
+      ],
+      "id": "lesson.history.ottoman-from-beylik-to-state.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "Kuruluş ve Rumeli’ye Geçiş",
+      "topicId": "tyt.history.ottoman-from-beylik-to-state.foundation-and-rumelia"
+    },
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.ottoman-from-beylik-to-state.centralization-and-crisis.devshirme-central.mcq01",
+        "exercise.history.ottoman-from-beylik-to-state.centralization-and-crisis.devshirme-central.tf01",
+        "exercise.history.ottoman-from-beylik-to-state.centralization-and-crisis.devshirme-central.fill01",
+        "exercise.history.ottoman-from-beylik-to-state.centralization-and-crisis.ankara-interregnum.mcq01",
+        "exercise.history.ottoman-from-beylik-to-state.centralization-and-crisis.ankara-interregnum.tf01",
+        "exercise.history.ottoman-from-beylik-to-state.centralization-and-crisis.ankara-interregnum.match01"
+      ],
+      "id": "lesson.history.ottoman-from-beylik-to-state.002",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "Merkezîleşme ve Fetret Devri",
+      "topicId": "tyt.history.ottoman-from-beylik-to-state.centralization-and-crisis"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.history.ottoman-from-beylik-to-state.01",
+      "kind": "lesson",
+      "lessonId": "lesson.history.ottoman-from-beylik-to-state.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.history.seljuk-turkey-settlement.02"
+      ],
+      "title": "Kuruluş ve Rumeli’ye Geçiş",
+      "unitId": "tyt.history.ottoman-from-beylik-to-state"
+    },
+    {
+      "id": "path.history.ottoman-from-beylik-to-state.02",
+      "kind": "checkpoint",
+      "lessonId": "lesson.history.ottoman-from-beylik-to-state.002",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.history.ottoman-from-beylik-to-state.01"
+      ],
+      "title": "Beylikten Devlete Osmanlı Siyaseti (1300-1453) Kontrolü",
+      "unitId": "tyt.history.ottoman-from-beylik-to-state"
+    }
+  ],
+  "skills": [
+    {
+      "description": "Osmanlı Beyliği’nin büyümesini kolaylaştıran koşulları yorumlar.",
+      "id": "skill.history.ottoman-from-beylik-to-state.foundation-conditions",
+      "title": "Osmanlı Beyliği’nin büyümesini kolaylaştıran koşulları yorumlar",
+      "topicId": "tyt.history.ottoman-from-beylik-to-state.foundation-and-rumelia"
+    },
+    {
+      "description": "Rumeli’de iskân politikasının amaçlarını açıklar.",
+      "id": "skill.history.ottoman-from-beylik-to-state.rumelia-settlement",
+      "title": "Rumeli’de iskân politikasının amaçlarını açıklar",
+      "topicId": "tyt.history.ottoman-from-beylik-to-state.foundation-and-rumelia"
+    },
+    {
+      "description": "Devşirme ve kapıkulu sisteminin merkezî otoriteye etkisini yorumlar.",
+      "id": "skill.history.ottoman-from-beylik-to-state.devshirme-central",
+      "title": "Devşirme ve kapıkulu sisteminin merkezî otoriteye etkisini yorumlar",
+      "topicId": "tyt.history.ottoman-from-beylik-to-state.centralization-and-crisis"
+    },
+    {
+      "description": "Ankara Savaşı ile Fetret Devri arasındaki ilişkiyi kurar.",
+      "id": "skill.history.ottoman-from-beylik-to-state.ankara-interregnum",
+      "title": "Ankara Savaşı ile Fetret Devri arasındaki ilişkiyi kurar",
+      "topicId": "tyt.history.ottoman-from-beylik-to-state.centralization-and-crisis"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.history.ottoman-from-beylik-to-state.foundation-conditions",
+        "concept.history.ottoman-from-beylik-to-state.rumelia-settlement"
+      ],
+      "id": "tyt.history.ottoman-from-beylik-to-state.foundation-and-rumelia",
+      "skillIds": [
+        "skill.history.ottoman-from-beylik-to-state.foundation-conditions",
+        "skill.history.ottoman-from-beylik-to-state.rumelia-settlement"
+      ],
+      "title": "Kuruluş ve Rumeli’ye Geçiş",
+      "unitId": "tyt.history.ottoman-from-beylik-to-state"
+    },
+    {
+      "conceptIds": [
+        "concept.history.ottoman-from-beylik-to-state.devshirme-central",
+        "concept.history.ottoman-from-beylik-to-state.ankara-interregnum"
+      ],
+      "id": "tyt.history.ottoman-from-beylik-to-state.centralization-and-crisis",
+      "skillIds": [
+        "skill.history.ottoman-from-beylik-to-state.devshirme-central",
+        "skill.history.ottoman-from-beylik-to-state.ankara-interregnum"
+      ],
+      "title": "Merkezîleşme ve Fetret Devri",
+      "unitId": "tyt.history.ottoman-from-beylik-to-state"
+    }
+  ],
+  "unitId": "tyt.history.ottoman-from-beylik-to-state"
+}

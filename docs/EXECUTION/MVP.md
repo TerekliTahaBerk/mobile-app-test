@@ -22,7 +22,7 @@ All of its data is presentation-only preview state under each module's `model/` 
 
 **Release Phase 1 — COMPLETE.** Milestones 3 and 4. The app carries real curriculum contracts, a validated 10-lesson Tarih draft bundle, and a deterministic pure-TypeScript lesson engine wired end to end through the approved screens.
 
-**Release Phase 2 — COMPLETE.** Milestones 5, 6, and 7. The production pilot is accountless and local-first. SQLite preserves active sessions, attempts, ledger XP, real path state, İz, mastery, review schedules, and mistakes. Home uses the deterministic recommendation order `mistake → review → resume → new lesson`. League, Plus, quests, hearts, and gems remain available only in design preview and are hidden in production.
+**Release Phase 2 — COMPLETE.** Milestones 5, 6, and 7. The production pilot is accountless and local-first. SQLite preserves active sessions, attempts, ledger XP, real path state, İz, mastery, review schedules, and mistakes. Home uses the deterministic recommendation order `mistake → review → resume → new lesson`. Plus, quests, hearts, and gems remain available only in design preview. Lig remains discoverable but shows no standings until the backend described in [LEAGUE.md](LEAGUE.md) is complete.
 
 Milestones 1–7 are complete and Milestone 8 has an internal foundation. The app is not release-ready:
 human-reviewed curriculum breadth, deployed production observability, native/accessibility hardening,

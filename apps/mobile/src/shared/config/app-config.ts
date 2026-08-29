@@ -2,11 +2,12 @@
  * Build-mode configuration.
  *
  * The app carries approved screens for features that do not work yet: the
- * league ranks invented people, Premium shows benefits with no billing behind
+ * league preview ranks invented people, Premium shows benefits with no billing behind
  * them, and the hearts limit has no way for a learner to lift it. All three
- * stay in the codebase and stay reachable while designing, but none may reach a
- * pilot build — advertising a purchase that cannot be made, a ranking that is
- * fiction, or a limit with no escape is not something a release should do.
+ * stay in the codebase and stay reachable while designing, but their fictional
+ * or unusable behaviour may not reach a pilot build. Lig itself remains a
+ * stable destination with an honest pending state; only its preview standings
+ * are gated.
  *
  * This is deliberately a compile-time constant rather than a flag service.
  * Remote configuration is a later milestone.

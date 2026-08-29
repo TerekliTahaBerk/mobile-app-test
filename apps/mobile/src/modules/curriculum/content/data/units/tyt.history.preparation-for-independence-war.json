@@ -1,0 +1,540 @@
+{
+  "concepts": [
+    {
+      "definition": "Millî egemenliği",
+      "id": "concept.history.preparation-for-independence-war.amasya-purpose",
+      "term": "Millî egemenliği",
+      "topicId": "tyt.history.preparation-for-independence-war.circulars-congresses"
+    },
+    {
+      "definition": "Kuvâ-yı Millîye etkin, millî iradeyi hâkim kılmak esastır",
+      "id": "concept.history.preparation-for-independence-war.erzurum-national",
+      "term": "Kuvâ-yı Millîye etkin, millî iradeyi hâkim kılmak esastır",
+      "topicId": "tyt.history.preparation-for-independence-war.circulars-congresses"
+    },
+    {
+      "definition": "Hükûmet gibi yürütme yetkisi kullandığını",
+      "id": "concept.history.preparation-for-independence-war.representation-board",
+      "term": "Hükûmet gibi yürütme yetkisi kullandığını",
+      "topicId": "tyt.history.preparation-for-independence-war.representation-and-misak"
+    },
+    {
+      "definition": "Millî Mücadele’nin siyasi ve sınırsal hedeflerini belirlemek",
+      "id": "concept.history.preparation-for-independence-war.misak-national",
+      "term": "Millî Mücadele’nin siyasi ve sınırsal hedeflerini belirlemek",
+      "topicId": "tyt.history.preparation-for-independence-war.representation-and-misak"
+    }
+  ],
+  "exercises": [
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Millî egemenliği, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.preparation-for-independence-war.circulars-congresses.amasya-purpose.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Millî egemenliği"
+        },
+        {
+          "id": "d1",
+          "label": "Saltanat otoritesini"
+        },
+        {
+          "id": "d2",
+          "label": "Manda yönetimini"
+        },
+        {
+          "id": "d3",
+          "label": "Bölgesel kurtuluşu"
+        }
+      ],
+      "prompt": "Amasya Genelgesi’ndeki “milletin istiklalini yine milletin azim ve kararı kurtaracaktır” ilkesi neyi vurgular?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.preparation-for-independence-war.amasya-purpose"
+      ],
+      "tag": "TARİH · GENELGELER VE KONGRELER"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Amasya Genelgesi’ndeki “milletin istiklalini yine milletin azim ve kararı kurtaracaktır” ilkesi neyi vurgular sorusunun doğru karşılığı “Millî egemenliği” olmalıdır.",
+      "id": "exercise.history.preparation-for-independence-war.circulars-congresses.amasya-purpose.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.preparation-for-independence-war.amasya-purpose"
+      ],
+      "statement": "Saltanat otoritesini, Amasya Genelgesi’nin Millî Mücadele’deki yerini açıklar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · GENELGELER VE KONGRELER"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "Millî egemenliği"
+        },
+        {
+          "id": "d1",
+          "label": "Saltanat otoritesini"
+        },
+        {
+          "id": "d2",
+          "label": "Manda yönetimini"
+        },
+        {
+          "id": "d3",
+          "label": "Bölgesel kurtuluşu"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “Millî egemenliği” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.preparation-for-independence-war.circulars-congresses.amasya-purpose.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.preparation-for-independence-war.amasya-purpose"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: Amasya Genelgesi’ndeki “milletin istiklalini yine milletin azim ve kararı kurtaracaktır” ilkesi neyi vurgular?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Kuvâ-yı Millîye etkin, millî iradeyi hâkim kılmak esastır, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.preparation-for-independence-war.circulars-congresses.erzurum-national.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Kuvâ-yı Millîye etkin, millî iradeyi hâkim kılmak esastır"
+        },
+        {
+          "id": "d1",
+          "label": "Manda ve himaye kabul edilmelidir"
+        },
+        {
+          "id": "d2",
+          "label": "Doğu illeri ayrı bir devlet olmalıdır"
+        },
+        {
+          "id": "d3",
+          "label": "İstanbul Hükûmeti tek karar merciidir"
+        }
+      ],
+      "prompt": "Erzurum Kongresi’nde alınan hangi karar ulusal egemenlik anlayışını yansıtır?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.preparation-for-independence-war.erzurum-national"
+      ],
+      "tag": "TARİH · GENELGELER VE KONGRELER"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Erzurum Kongresi’nde alınan hangi karar ulusal egemenlik anlayışını yansıtır sorusunun doğru karşılığı “Kuvâ-yı Millîye etkin, millî iradeyi hâkim kılmak esastır” olmalıdır.",
+      "id": "exercise.history.preparation-for-independence-war.circulars-congresses.erzurum-national.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.preparation-for-independence-war.erzurum-national"
+      ],
+      "statement": "Manda ve himaye kabul edilmelidir, Erzurum Kongresi’nin bölgesel toplanıp ulusal kararlar almasını yorumlar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · GENELGELER VE KONGRELER"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, Genelgeler ve Kongreler başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.preparation-for-independence-war.circulars-congresses.erzurum-national.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Amasya Genelgesi’ndeki “milletin istiklalini yine milletin azim ve kararı kurtaracaktır” ilkesi neyi vurgular?",
+          "right": "Millî egemenliği"
+        },
+        {
+          "id": "pair-2",
+          "left": "Erzurum Kongresi’nde alınan hangi karar ulusal egemenlik anlayışını yansıtır?",
+          "right": "Kuvâ-yı Millîye etkin, millî iradeyi hâkim kılmak esastır"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.preparation-for-independence-war.amasya-purpose",
+        "skill.history.preparation-for-independence-war.erzurum-national"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · GENELGELER VE KONGRELER",
+      "title": "Bilgi bağlarını eşleştir"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Hükûmet gibi yürütme yetkisi kullandığını, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.preparation-for-independence-war.representation-and-misak.representation-board.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Hükûmet gibi yürütme yetkisi kullandığını"
+        },
+        {
+          "id": "d1",
+          "label": "Saltanatı kaldırdığını"
+        },
+        {
+          "id": "d2",
+          "label": "Anayasa hazırladığını"
+        },
+        {
+          "id": "d3",
+          "label": "Dış borçları sildiğini"
+        }
+      ],
+      "prompt": "Temsil Heyetinin Ali Fuat Paşa’yı Batı Cephesi komutanlığına ataması neyi gösterir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.preparation-for-independence-war.representation-board"
+      ],
+      "tag": "TARİH · TEMSİL HEYETİ VE MİSAK-I MİLLÎ"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Temsil Heyetinin Ali Fuat Paşa’yı Batı Cephesi komutanlığına ataması neyi gösterir sorusunun doğru karşılığı “Hükûmet gibi yürütme yetkisi kullandığını” olmalıdır.",
+      "id": "exercise.history.preparation-for-independence-war.representation-and-misak.representation-board.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.preparation-for-independence-war.representation-board"
+      ],
+      "statement": "Saltanatı kaldırdığını, Temsil Heyetinin yürütme işlevini örneklerle açıklar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · TEMSİL HEYETİ VE MİSAK-I MİLLÎ"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "Hükûmet gibi yürütme yetkisi kullandığını"
+        },
+        {
+          "id": "d1",
+          "label": "Saltanatı kaldırdığını"
+        },
+        {
+          "id": "d2",
+          "label": "Anayasa hazırladığını"
+        },
+        {
+          "id": "d3",
+          "label": "Dış borçları sildiğini"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “Hükûmet gibi yürütme yetkisi kullandığını” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.preparation-for-independence-war.representation-and-misak.representation-board.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.preparation-for-independence-war.representation-board"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: Temsil Heyetinin Ali Fuat Paşa’yı Batı Cephesi komutanlığına ataması neyi gösterir?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Millî Mücadele’nin siyasi ve sınırsal hedeflerini belirlemek, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.preparation-for-independence-war.representation-and-misak.misak-national.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Millî Mücadele’nin siyasi ve sınırsal hedeflerini belirlemek"
+        },
+        {
+          "id": "d1",
+          "label": "Saltanatı kaldırmak"
+        },
+        {
+          "id": "d2",
+          "label": "Cumhuriyeti ilan etmek"
+        },
+        {
+          "id": "d3",
+          "label": "Düzenli orduyu kurmak"
+        }
+      ],
+      "prompt": "Misak-ı Millî’nin temel işlevi hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.preparation-for-independence-war.misak-national"
+      ],
+      "tag": "TARİH · TEMSİL HEYETİ VE MİSAK-I MİLLÎ"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Misak-ı Millî’nin temel işlevi hangisidir sorusunun doğru karşılığı “Millî Mücadele’nin siyasi ve sınırsal hedeflerini belirlemek” olmalıdır.",
+      "id": "exercise.history.preparation-for-independence-war.representation-and-misak.misak-national.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.preparation-for-independence-war.misak-national"
+      ],
+      "statement": "Saltanatı kaldırmak, Misak-ı Millî’nin temel kararlarını ve önemini açıklar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · TEMSİL HEYETİ VE MİSAK-I MİLLÎ"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, Temsil Heyeti ve Misak-ı Millî başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.preparation-for-independence-war.representation-and-misak.misak-national.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Temsil Heyetinin Ali Fuat Paşa’yı Batı Cephesi komutanlığına ataması neyi gösterir?",
+          "right": "Hükûmet gibi yürütme yetkisi kullandığını"
+        },
+        {
+          "id": "pair-2",
+          "left": "Misak-ı Millî’nin temel işlevi hangisidir?",
+          "right": "Millî Mücadele’nin siyasi ve sınırsal hedeflerini belirlemek"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.preparation-for-independence-war.representation-board",
+        "skill.history.preparation-for-independence-war.misak-national"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · TEMSİL HEYETİ VE MİSAK-I MİLLÎ",
+      "title": "Bilgi bağlarını eşleştir"
+    },
+    {
+      "correctOrder": [
+        "event-1",
+        "event-2",
+        "event-3",
+        "event-4",
+        "event-5"
+      ],
+      "difficulty": 4,
+      "explanation": "Olaylar tarihleri dikkate alınarak eskiden yeniye sıralanır. Kronoloji, gelişmeler arasındaki neden-sonuç ilişkisini kurmak için temel bir çerçeve sunar.",
+      "id": "exercise.history.preparation-for-independence-war.circulars-congresses.order01",
+      "items": [
+        {
+          "id": "event-1",
+          "label": "Amasya Genelgesi (Haziran 1919)"
+        },
+        {
+          "id": "event-2",
+          "label": "Erzurum Kongresi (Temmuz 1919)"
+        },
+        {
+          "id": "event-3",
+          "label": "Sivas Kongresi (Eylül 1919)"
+        },
+        {
+          "id": "event-4",
+          "label": "Amasya Görüşmeleri (Ekim 1919)"
+        },
+        {
+          "id": "event-5",
+          "label": "Misak-ı Millî (Ocak 1920)"
+        }
+      ],
+      "kind": "ordering",
+      "prompt": "Gelişmeleri eskiden yeniye doğru sırala.",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.preparation-for-independence-war.amasya-purpose",
+        "skill.history.preparation-for-independence-war.erzurum-national"
+      ],
+      "tag": "TARİH · GENELGELER VE KONGRELER"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.preparation-for-independence-war.circulars-congresses.amasya-purpose.mcq01",
+        "exercise.history.preparation-for-independence-war.circulars-congresses.amasya-purpose.tf01",
+        "exercise.history.preparation-for-independence-war.circulars-congresses.amasya-purpose.fill01",
+        "exercise.history.preparation-for-independence-war.circulars-congresses.erzurum-national.mcq01",
+        "exercise.history.preparation-for-independence-war.circulars-congresses.erzurum-national.tf01",
+        "exercise.history.preparation-for-independence-war.circulars-congresses.erzurum-national.match01",
+        "exercise.history.preparation-for-independence-war.circulars-congresses.order01"
+      ],
+      "id": "lesson.history.preparation-for-independence-war.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "Genelgeler ve Kongreler",
+      "topicId": "tyt.history.preparation-for-independence-war.circulars-congresses"
+    },
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.preparation-for-independence-war.representation-and-misak.representation-board.mcq01",
+        "exercise.history.preparation-for-independence-war.representation-and-misak.representation-board.tf01",
+        "exercise.history.preparation-for-independence-war.representation-and-misak.representation-board.fill01",
+        "exercise.history.preparation-for-independence-war.representation-and-misak.misak-national.mcq01",
+        "exercise.history.preparation-for-independence-war.representation-and-misak.misak-national.tf01",
+        "exercise.history.preparation-for-independence-war.representation-and-misak.misak-national.match01"
+      ],
+      "id": "lesson.history.preparation-for-independence-war.002",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "Temsil Heyeti ve Misak-ı Millî",
+      "topicId": "tyt.history.preparation-for-independence-war.representation-and-misak"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.history.preparation-for-independence-war.01",
+      "kind": "lesson",
+      "lessonId": "lesson.history.preparation-for-independence-war.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.history.armistice-occupations-societies.02"
+      ],
+      "title": "Genelgeler ve Kongreler",
+      "unitId": "tyt.history.preparation-for-independence-war"
+    },
+    {
+      "id": "path.history.preparation-for-independence-war.02",
+      "kind": "checkpoint",
+      "lessonId": "lesson.history.preparation-for-independence-war.002",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.history.preparation-for-independence-war.01"
+      ],
+      "title": "Kurtuluş Savaşı’na Hazırlık Dönemi Kontrolü",
+      "unitId": "tyt.history.preparation-for-independence-war"
+    }
+  ],
+  "skills": [
+    {
+      "description": "Amasya Genelgesi’nin Millî Mücadele’deki yerini açıklar.",
+      "id": "skill.history.preparation-for-independence-war.amasya-purpose",
+      "title": "Amasya Genelgesi’nin Millî Mücadele’deki yerini açıklar",
+      "topicId": "tyt.history.preparation-for-independence-war.circulars-congresses"
+    },
+    {
+      "description": "Erzurum Kongresi’nin bölgesel toplanıp ulusal kararlar almasını yorumlar.",
+      "id": "skill.history.preparation-for-independence-war.erzurum-national",
+      "title": "Erzurum Kongresi’nin bölgesel toplanıp ulusal kararlar almasını yorumlar",
+      "topicId": "tyt.history.preparation-for-independence-war.circulars-congresses"
+    },
+    {
+      "description": "Temsil Heyetinin yürütme işlevini örneklerle açıklar.",
+      "id": "skill.history.preparation-for-independence-war.representation-board",
+      "title": "Temsil Heyetinin yürütme işlevini örneklerle açıklar",
+      "topicId": "tyt.history.preparation-for-independence-war.representation-and-misak"
+    },
+    {
+      "description": "Misak-ı Millî’nin temel kararlarını ve önemini açıklar.",
+      "id": "skill.history.preparation-for-independence-war.misak-national",
+      "title": "Misak-ı Millî’nin temel kararlarını ve önemini açıklar",
+      "topicId": "tyt.history.preparation-for-independence-war.representation-and-misak"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.history.preparation-for-independence-war.amasya-purpose",
+        "concept.history.preparation-for-independence-war.erzurum-national"
+      ],
+      "id": "tyt.history.preparation-for-independence-war.circulars-congresses",
+      "skillIds": [
+        "skill.history.preparation-for-independence-war.amasya-purpose",
+        "skill.history.preparation-for-independence-war.erzurum-national"
+      ],
+      "title": "Genelgeler ve Kongreler",
+      "unitId": "tyt.history.preparation-for-independence-war"
+    },
+    {
+      "conceptIds": [
+        "concept.history.preparation-for-independence-war.representation-board",
+        "concept.history.preparation-for-independence-war.misak-national"
+      ],
+      "id": "tyt.history.preparation-for-independence-war.representation-and-misak",
+      "skillIds": [
+        "skill.history.preparation-for-independence-war.representation-board",
+        "skill.history.preparation-for-independence-war.misak-national"
+      ],
+      "title": "Temsil Heyeti ve Misak-ı Millî",
+      "unitId": "tyt.history.preparation-for-independence-war"
+    }
+  ],
+  "unitId": "tyt.history.preparation-for-independence-war"
+}

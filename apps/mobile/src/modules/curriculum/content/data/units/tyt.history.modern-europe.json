@@ -1,0 +1,535 @@
+{
+  "concepts": [
+    {
+      "definition": "Akıl ve deney",
+      "id": "concept.history.modern-europe.enlightenment-reason",
+      "term": "Akıl ve deney",
+      "topicId": "tyt.history.modern-europe.enlightenment-revolutions"
+    },
+    {
+      "definition": "Milliyetçilik",
+      "id": "concept.history.modern-europe.french-revolution",
+      "term": "Milliyetçilik",
+      "topicId": "tyt.history.modern-europe.enlightenment-revolutions"
+    },
+    {
+      "definition": "Makineleşmiş fabrika üretiminin yaygınlaşması",
+      "id": "concept.history.modern-europe.industrial-production",
+      "term": "Makineleşmiş fabrika üretiminin yaygınlaşması",
+      "topicId": "tyt.history.modern-europe.industry-and-imperialism"
+    },
+    {
+      "definition": "Ham madde ve pazar",
+      "id": "concept.history.modern-europe.imperialism-needs",
+      "term": "Ham madde ve pazar",
+      "topicId": "tyt.history.modern-europe.industry-and-imperialism"
+    }
+  ],
+  "exercises": [
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Akıl ve deney, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.modern-europe.enlightenment-revolutions.enlightenment-reason.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Akıl ve deney"
+        },
+        {
+          "id": "d1",
+          "label": "Soyluluk ayrıcalıkları"
+        },
+        {
+          "id": "d2",
+          "label": "Mutlak itaat"
+        },
+        {
+          "id": "d3",
+          "label": "Kilise dogmaları"
+        }
+      ],
+      "prompt": "Aydınlanma düşüncesinde bilginin temel kaynağı olarak ne vurgulanmıştır?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.modern-europe.enlightenment-reason"
+      ],
+      "tag": "TARİH · AYDINLANMA VE SİYASİ DEVRİMLER"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Aydınlanma düşüncesinde bilginin temel kaynağı olarak ne vurgulanmıştır sorusunun doğru karşılığı “Akıl ve deney” olmalıdır.",
+      "id": "exercise.history.modern-europe.enlightenment-revolutions.enlightenment-reason.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.modern-europe.enlightenment-reason"
+      ],
+      "statement": "Soyluluk ayrıcalıkları, Aydınlanma düşüncesinin temel ilkelerini açıklar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · AYDINLANMA VE SİYASİ DEVRİMLER"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "Akıl ve deney"
+        },
+        {
+          "id": "d1",
+          "label": "Soyluluk ayrıcalıkları"
+        },
+        {
+          "id": "d2",
+          "label": "Mutlak itaat"
+        },
+        {
+          "id": "d3",
+          "label": "Kilise dogmaları"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “Akıl ve deney” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.modern-europe.enlightenment-revolutions.enlightenment-reason.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.modern-europe.enlightenment-reason"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: Aydınlanma düşüncesinde bilginin temel kaynağı olarak ne vurgulanmıştır?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Milliyetçilik, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.modern-europe.enlightenment-revolutions.french-revolution.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Milliyetçilik"
+        },
+        {
+          "id": "d1",
+          "label": "Merkantilizm"
+        },
+        {
+          "id": "d2",
+          "label": "Feodalite"
+        },
+        {
+          "id": "d3",
+          "label": "Skolastik düşünce"
+        }
+      ],
+      "prompt": "Fransız İhtilali’nin çok uluslu imparatorlukları en fazla etkileyen ilkesi hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.modern-europe.french-revolution"
+      ],
+      "tag": "TARİH · AYDINLANMA VE SİYASİ DEVRİMLER"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Fransız İhtilali’nin çok uluslu imparatorlukları en fazla etkileyen ilkesi hangisidir sorusunun doğru karşılığı “Milliyetçilik” olmalıdır.",
+      "id": "exercise.history.modern-europe.enlightenment-revolutions.french-revolution.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.modern-europe.french-revolution"
+      ],
+      "statement": "Merkantilizm, Fransız İhtilali’nin siyasi etkilerini yorumlar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · AYDINLANMA VE SİYASİ DEVRİMLER"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, Aydınlanma ve Siyasi Devrimler başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.modern-europe.enlightenment-revolutions.french-revolution.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Aydınlanma düşüncesinde bilginin temel kaynağı olarak ne vurgulanmıştır?",
+          "right": "Akıl ve deney"
+        },
+        {
+          "id": "pair-2",
+          "left": "Fransız İhtilali’nin çok uluslu imparatorlukları en fazla etkileyen ilkesi hangisidir?",
+          "right": "Milliyetçilik"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.modern-europe.enlightenment-reason",
+        "skill.history.modern-europe.french-revolution"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · AYDINLANMA VE SİYASİ DEVRİMLER",
+      "title": "Bilgi bağlarını eşleştir"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Makineleşmiş fabrika üretiminin yaygınlaşması, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.modern-europe.industry-and-imperialism.industrial-production.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Makineleşmiş fabrika üretiminin yaygınlaşması"
+        },
+        {
+          "id": "d1",
+          "label": "Lonca üretiminin tek model olması"
+        },
+        {
+          "id": "d2",
+          "label": "Kent nüfusunun azalması"
+        },
+        {
+          "id": "d3",
+          "label": "Ham madde ihtiyacının sona ermesi"
+        }
+      ],
+      "prompt": "Sanayi Devrimi’yle üretimde belirginleşen değişim hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.modern-europe.industrial-production"
+      ],
+      "tag": "TARİH · SANAYİ DEVRİMİ VE EMPERYALİZM"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Sanayi Devrimi’yle üretimde belirginleşen değişim hangisidir sorusunun doğru karşılığı “Makineleşmiş fabrika üretiminin yaygınlaşması” olmalıdır.",
+      "id": "exercise.history.modern-europe.industry-and-imperialism.industrial-production.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.modern-europe.industrial-production"
+      ],
+      "statement": "Lonca üretiminin tek model olması, Sanayi Devrimi’nin üretim ve toplum yapısına etkisini açıklar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · SANAYİ DEVRİMİ VE EMPERYALİZM"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "Makineleşmiş fabrika üretiminin yaygınlaşması"
+        },
+        {
+          "id": "d1",
+          "label": "Lonca üretiminin tek model olması"
+        },
+        {
+          "id": "d2",
+          "label": "Kent nüfusunun azalması"
+        },
+        {
+          "id": "d3",
+          "label": "Ham madde ihtiyacının sona ermesi"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “Makineleşmiş fabrika üretiminin yaygınlaşması” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.modern-europe.industry-and-imperialism.industrial-production.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.modern-europe.industrial-production"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: Sanayi Devrimi’yle üretimde belirginleşen değişim hangisidir?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Ham madde ve pazar, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.modern-europe.industry-and-imperialism.imperialism-needs.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Ham madde ve pazar"
+        },
+        {
+          "id": "d1",
+          "label": "Feodal toprak düzeni"
+        },
+        {
+          "id": "d2",
+          "label": "Mezhep birliği"
+        },
+        {
+          "id": "d3",
+          "label": "Göçebe iş gücü"
+        }
+      ],
+      "prompt": "Sanayileşen devletlerin sömürge arayışını hızlandıran temel ihtiyaç hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.modern-europe.imperialism-needs"
+      ],
+      "tag": "TARİH · SANAYİ DEVRİMİ VE EMPERYALİZM"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Sanayileşen devletlerin sömürge arayışını hızlandıran temel ihtiyaç hangisidir sorusunun doğru karşılığı “Ham madde ve pazar” olmalıdır.",
+      "id": "exercise.history.modern-europe.industry-and-imperialism.imperialism-needs.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.modern-europe.imperialism-needs"
+      ],
+      "statement": "Feodal toprak düzeni, Sanayileşme ile sömürgecilik arasındaki ilişkiyi yorumlar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · SANAYİ DEVRİMİ VE EMPERYALİZM"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, Sanayi Devrimi ve Emperyalizm başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.modern-europe.industry-and-imperialism.imperialism-needs.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Sanayi Devrimi’yle üretimde belirginleşen değişim hangisidir?",
+          "right": "Makineleşmiş fabrika üretiminin yaygınlaşması"
+        },
+        {
+          "id": "pair-2",
+          "left": "Sanayileşen devletlerin sömürge arayışını hızlandıran temel ihtiyaç hangisidir?",
+          "right": "Ham madde ve pazar"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.modern-europe.industrial-production",
+        "skill.history.modern-europe.imperialism-needs"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · SANAYİ DEVRİMİ VE EMPERYALİZM",
+      "title": "Bilgi bağlarını eşleştir"
+    },
+    {
+      "correctOrder": [
+        "event-1",
+        "event-2",
+        "event-3",
+        "event-4"
+      ],
+      "difficulty": 4,
+      "explanation": "Olaylar tarihleri dikkate alınarak eskiden yeniye sıralanır. Kronoloji, gelişmeler arasındaki neden-sonuç ilişkisini kurmak için temel bir çerçeve sunar.",
+      "id": "exercise.history.modern-europe.enlightenment-revolutions.order01",
+      "items": [
+        {
+          "id": "event-1",
+          "label": "Amerikan Bağımsızlık Bildirgesi (1776)"
+        },
+        {
+          "id": "event-2",
+          "label": "Fransız İhtilali (1789)"
+        },
+        {
+          "id": "event-3",
+          "label": "Viyana Kongresi (1815)"
+        },
+        {
+          "id": "event-4",
+          "label": "1848 İhtilalleri"
+        }
+      ],
+      "kind": "ordering",
+      "prompt": "Gelişmeleri eskiden yeniye doğru sırala.",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.modern-europe.enlightenment-reason",
+        "skill.history.modern-europe.french-revolution"
+      ],
+      "tag": "TARİH · AYDINLANMA VE SİYASİ DEVRİMLER"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.modern-europe.enlightenment-revolutions.enlightenment-reason.mcq01",
+        "exercise.history.modern-europe.enlightenment-revolutions.enlightenment-reason.tf01",
+        "exercise.history.modern-europe.enlightenment-revolutions.enlightenment-reason.fill01",
+        "exercise.history.modern-europe.enlightenment-revolutions.french-revolution.mcq01",
+        "exercise.history.modern-europe.enlightenment-revolutions.french-revolution.tf01",
+        "exercise.history.modern-europe.enlightenment-revolutions.french-revolution.match01",
+        "exercise.history.modern-europe.enlightenment-revolutions.order01"
+      ],
+      "id": "lesson.history.modern-europe.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "Aydınlanma ve Siyasi Devrimler",
+      "topicId": "tyt.history.modern-europe.enlightenment-revolutions"
+    },
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.modern-europe.industry-and-imperialism.industrial-production.mcq01",
+        "exercise.history.modern-europe.industry-and-imperialism.industrial-production.tf01",
+        "exercise.history.modern-europe.industry-and-imperialism.industrial-production.fill01",
+        "exercise.history.modern-europe.industry-and-imperialism.imperialism-needs.mcq01",
+        "exercise.history.modern-europe.industry-and-imperialism.imperialism-needs.tf01",
+        "exercise.history.modern-europe.industry-and-imperialism.imperialism-needs.match01"
+      ],
+      "id": "lesson.history.modern-europe.002",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "Sanayi Devrimi ve Emperyalizm",
+      "topicId": "tyt.history.modern-europe.industry-and-imperialism"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.history.modern-europe.01",
+      "kind": "lesson",
+      "lessonId": "lesson.history.modern-europe.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.history.early-modern-europe.02"
+      ],
+      "title": "Aydınlanma ve Siyasi Devrimler",
+      "unitId": "tyt.history.modern-europe"
+    },
+    {
+      "id": "path.history.modern-europe.02",
+      "kind": "checkpoint",
+      "lessonId": "lesson.history.modern-europe.002",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.history.modern-europe.01"
+      ],
+      "title": "Yakın Çağ Avrupa Tarihi Kontrolü",
+      "unitId": "tyt.history.modern-europe"
+    }
+  ],
+  "skills": [
+    {
+      "description": "Aydınlanma düşüncesinin temel ilkelerini açıklar.",
+      "id": "skill.history.modern-europe.enlightenment-reason",
+      "title": "Aydınlanma düşüncesinin temel ilkelerini açıklar",
+      "topicId": "tyt.history.modern-europe.enlightenment-revolutions"
+    },
+    {
+      "description": "Fransız İhtilali’nin siyasi etkilerini yorumlar.",
+      "id": "skill.history.modern-europe.french-revolution",
+      "title": "Fransız İhtilali’nin siyasi etkilerini yorumlar",
+      "topicId": "tyt.history.modern-europe.enlightenment-revolutions"
+    },
+    {
+      "description": "Sanayi Devrimi’nin üretim ve toplum yapısına etkisini açıklar.",
+      "id": "skill.history.modern-europe.industrial-production",
+      "title": "Sanayi Devrimi’nin üretim ve toplum yapısına etkisini açıklar",
+      "topicId": "tyt.history.modern-europe.industry-and-imperialism"
+    },
+    {
+      "description": "Sanayileşme ile sömürgecilik arasındaki ilişkiyi yorumlar.",
+      "id": "skill.history.modern-europe.imperialism-needs",
+      "title": "Sanayileşme ile sömürgecilik arasındaki ilişkiyi yorumlar",
+      "topicId": "tyt.history.modern-europe.industry-and-imperialism"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.history.modern-europe.enlightenment-reason",
+        "concept.history.modern-europe.french-revolution"
+      ],
+      "id": "tyt.history.modern-europe.enlightenment-revolutions",
+      "skillIds": [
+        "skill.history.modern-europe.enlightenment-reason",
+        "skill.history.modern-europe.french-revolution"
+      ],
+      "title": "Aydınlanma ve Siyasi Devrimler",
+      "unitId": "tyt.history.modern-europe"
+    },
+    {
+      "conceptIds": [
+        "concept.history.modern-europe.industrial-production",
+        "concept.history.modern-europe.imperialism-needs"
+      ],
+      "id": "tyt.history.modern-europe.industry-and-imperialism",
+      "skillIds": [
+        "skill.history.modern-europe.industrial-production",
+        "skill.history.modern-europe.imperialism-needs"
+      ],
+      "title": "Sanayi Devrimi ve Emperyalizm",
+      "unitId": "tyt.history.modern-europe"
+    }
+  ],
+  "unitId": "tyt.history.modern-europe"
+}

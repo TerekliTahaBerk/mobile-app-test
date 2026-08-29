@@ -5,6 +5,7 @@ import { HomeScreen } from '@/modules/home/ui/home-screen';
 import { learnPreviewData } from '@/modules/learn/model/learn-view-model';
 import { LearnScreen } from '@/modules/learn/ui/learn-screen';
 import { leaguePreviewData } from '@/modules/league/model/league-view-model';
+import { LeaguePendingScreen } from '@/modules/league/ui/league-pending-screen';
 import { LeagueScreen } from '@/modules/league/ui/league-screen';
 import { ProfileScreen } from '@/modules/profile/ui/profile-screen';
 import { evaluateBadges } from '@/modules/progress/domain/badge-policy';
@@ -13,11 +14,8 @@ describe('Ana Sayfa', () => {
   function renderHome(overrides: Partial<Parameters<typeof HomeScreen>[0]> = {}) {
     return render(
       <HomeScreen
-        exam="tyt"
-        onChangeExam={jest.fn()}
         onContinue={jest.fn()}
         onOpenLeague={jest.fn()}
-        onOpenSubject={jest.fn()}
         onSelectTab={jest.fn()}
         onStartDailyPlan={jest.fn()}
         viewModel={homePreviewData}
@@ -56,14 +54,23 @@ describe('Ana Sayfa', () => {
     expect(onStartDailyPlan).toHaveBeenCalledTimes(1);
   });
 
-  it('offers the unfinished round instead of a plan when one is waiting', async () => {
+  it('keeps today visible but makes the unfinished round the first action', async () => {
     const onContinue = jest.fn();
+    const viewModel = {
+      ...homePreviewData,
+      continueCard: {
+        ...homePreviewData.continueCard!,
+        action: { kind: 'resume' as const, sessionId: 'active-session' },
+      },
+    };
 
-    await renderHome({ onContinue, viewModel: { ...homePreviewData, dailyPlan: null } });
+    await renderHome({ onContinue, viewModel });
     await fireEvent.press(screen.getByTestId('home-continue'));
 
-    expect(onContinue).toHaveBeenCalledWith(homePreviewData.continueCard);
-    expect(screen.queryByTestId('home-daily-plan')).toBeNull();
+    expect(onContinue).toHaveBeenCalledWith(viewModel.continueCard);
+    expect(screen.getByTestId('home-daily-plan').props.accessibilityState).toMatchObject({
+      disabled: true,
+    });
   });
 
   it('shows no primary action when there is neither a plan nor a round', async () => {
@@ -75,21 +82,23 @@ describe('Ana Sayfa', () => {
     expect(screen.queryByTestId('home-daily-plan')).toBeNull();
   });
 
-  it('opens a subject that has content and refuses one that does not', async () => {
-    const onOpenSubject = jest.fn();
-    const subjects = [
-      homePreviewData.subjects[0]!,
-      { ...homePreviewData.subjects[1]!, level: null },
-    ];
+  it('keeps subject discovery in Öğren instead of duplicating it', async () => {
+    await renderHome();
 
-    await renderHome({ onOpenSubject, viewModel: { ...homePreviewData, subjects } });
+    expect(screen.queryByText('Dersler')).toBeNull();
+    expect(screen.queryByTestId('subject-tyt.history')).toBeNull();
+    expect(screen.getByText('Bugünkü ilerleme')).toBeTruthy();
+    expect(screen.getByText('Tekrar zamanı')).toBeTruthy();
+  });
 
-    await fireEvent.press(screen.getByTestId('subject-tyt.history'));
-    expect(onOpenSubject).toHaveBeenCalledWith('tyt.history');
+  it('keeps the weekly league reachable after the study plan', async () => {
+    const onOpenLeague = jest.fn();
 
-    const pending = screen.getByTestId('subject-tyt.math');
-    expect(pending.props.accessibilityState).toMatchObject({ disabled: true });
-    expect(screen.getByLabelText('Matematik, yakında')).toBeTruthy();
+    await renderHome({ onOpenLeague });
+    expect(screen.getByText('Haftalık XP sıralaması')).toBeTruthy();
+
+    await fireEvent.press(screen.getByTestId('home-league-row'));
+    expect(onOpenLeague).toHaveBeenCalledTimes(1);
   });
 
   it('shows an unlimited heart count as such', async () => {
@@ -177,6 +186,15 @@ describe('Öğren', () => {
 });
 
 describe('Lig', () => {
+  it('keeps the app shell available while real standings are pending', async () => {
+    await render(<LeaguePendingScreen onSelectTab={jest.fn()} />);
+
+    expect(screen.getByText('Lig hazırlanıyor')).toBeTruthy();
+    expect(screen.getByTestId('tab-lig').props.accessibilityState).toMatchObject({
+      selected: true,
+    });
+  });
+
   it('ranks every row in words, not by tint alone', async () => {
     await render(<LeagueScreen onSelectTab={jest.fn()} viewModel={leaguePreviewData} />);
 

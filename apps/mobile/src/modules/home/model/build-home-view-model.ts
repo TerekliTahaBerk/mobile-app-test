@@ -1,12 +1,8 @@
 import { getContentIndex } from '@/modules/curriculum/content/content-source';
 import { initialFor } from '@/modules/learner/domain/learner-profile';
 import { buildDailyPlanCard } from '@/modules/learning/model/daily-plan-card';
-import type { HomeViewModel, SubjectTile } from '@/modules/home/model/home-view-model';
-import type {
-  ProgressDashboard,
-  SubjectProgress,
-} from '@/modules/progress/application/use-progress-dashboard';
-import { subjectTheme } from '@/shared/ui/theme/subject-theme';
+import type { HomeViewModel, PersonalizedCard } from '@/modules/home/model/home-view-model';
+import type { ProgressDashboard } from '@/modules/progress/application/use-progress-dashboard';
 
 /**
  * Turns the live dashboard into what Ana Sayfa renders.
@@ -18,58 +14,39 @@ import { subjectTheme } from '@/shared/ui/theme/subject-theme';
 export function buildHomeViewModel(
   dashboard: ProgressDashboard,
   hearts: number | null,
-  examId = 'tyt',
 ): HomeViewModel {
   const index = getContentIndex();
   const name = dashboard.profile?.displayName ?? null;
-  // Catalogue-only entries remain available to design/content tooling, but a
-  // production learner sees only subjects with an authored path they can use.
-  const subjects = (dashboard.byExam.get(examId) ?? []).filter((entry) => entry.totalUnits > 0);
 
   return {
     continueCard: buildContinueCard(dashboard),
-    // A half-finished round outranks a fresh plan: finishing what you started
-    // is the one thing the learner already committed to.
-    dailyPlan:
-      dashboard.recommendation.kind === 'resume'
-        ? null
-        : buildDailyPlanCard(dashboard.dailyPlan),
+    dailyPlan: buildDailyPlanCard(dashboard.dailyPlan),
+    dailyProgress: dashboard.dailyProgress,
     greeting: name === null ? 'Merhaba' : `Merhaba, ${name}`,
     hearts,
     initial: name === null ? '?' : initialFor(name),
-    // The league needs a real leaderboard service; until then the row is absent
-    // rather than showing a rank that was never earned against anyone.
-    leagueRank: null,
+    // The route stays discoverable while its backend is pending, but Home never
+    // invents a rank or opponent for a production learner.
+    leagueCard: {
+      detail: 'Haftalık sıralama altyapısı hazırlanıyor.',
+      kind: 'pending',
+      title: 'Lig',
+    },
     level: dashboard.level.level,
     levelProgress: dashboard.level.progress,
+    personalizedCard: buildPersonalizedCard(dashboard),
     streak: dashboard.streak.current,
-    subjects: subjects.map(toTile),
     xpForLevel: dashboard.level.xpForLevel,
     xpIntoLevel: dashboard.level.xpIntoLevel,
   };
 
   function buildContinueCard(source: ProgressDashboard): HomeViewModel['continueCard'] {
-    const recommendation = source.recommendation;
-    if (recommendation.kind === 'none') {
-      return null;
-    }
+    const active = source.activeSession;
+    const step = source.nextStep;
+    const lessonId = active?.lessonId ?? step?.node.lessonId;
+    if (lessonId === undefined) return null;
 
-    if (recommendation.kind === 'mistake' || recommendation.kind === 'review') {
-      const skill = index.getSkill(recommendation.skillId);
-      const topic = index.getTopic(skill.topicId);
-      const unit = index.getUnit(topic.unitId);
-      const subject = index.getSubjectOfUnit(unit.id);
-
-      return {
-        action: { kind: 'review', skillId: recommendation.skillId },
-        actionLabel: 'Tekrarla',
-        detail: `${unit.title} · ${skill.title}`,
-        eyebrow: recommendation.kind === 'mistake' ? 'HATANI PEKİŞTİR' : 'TEKRAR ZAMANI',
-        subjectTitle: `TYT ${subject.title}`,
-      };
-    }
-
-    const lesson = index.getLesson(recommendation.lessonId);
+    const lesson = index.getLesson(lessonId);
     const topic = index.getTopic(lesson.topicId);
     const unit = index.getUnit(topic.unitId);
     const subject = index.getSubjectOfUnit(unit.id);
@@ -78,9 +55,9 @@ export function buildHomeViewModel(
       ?.paths.find((candidate) => candidate.unitId === unit.id);
     const percent = Math.round((path?.completion ?? 0) * 100);
 
-    if (recommendation.kind === 'resume') {
+    if (active !== null) {
       return {
-        action: { kind: 'resume', sessionId: recommendation.sessionId },
+        action: { kind: 'resume', sessionId: active.sessionId },
         actionLabel: 'Devam',
         detail: `${unit.title} · %${percent}`,
         eyebrow: 'KALDIĞIN YERDEN',
@@ -88,15 +65,15 @@ export function buildHomeViewModel(
       };
     }
 
-    if (recommendation.pathNodeId === undefined) {
+    if (step === null || step.node.lessonId === undefined) {
       return null;
     }
 
     return {
       action: {
         kind: 'lesson',
-        lessonId: recommendation.lessonId,
-        pathNodeId: recommendation.pathNodeId,
+        lessonId: step.node.lessonId,
+        pathNodeId: step.node.id,
       },
       actionLabel: 'Başla',
       detail: `${unit.title} · %${percent}`,
@@ -106,14 +83,38 @@ export function buildHomeViewModel(
   }
 }
 
-function toTile(entry: SubjectProgress): SubjectTile {
-  const available = entry.totalUnits > 0;
+function buildPersonalizedCard(dashboard: ProgressDashboard): PersonalizedCard | null {
+  const review = dashboard.dailyPlan.parts.find((part) => part.kind === 'review');
+  if (review !== undefined) {
+    return {
+      actionLabel: 'Plana geç',
+      detail: `${review.exercises.length} zamanı gelen soru bugünkü planında hazır.`,
+      eyebrow: 'SANA ÖZEL',
+      kind: 'review',
+      title: 'Tekrar zamanı',
+    };
+  }
 
-  return {
-    id: entry.subject.id,
-    level: available ? entry.level.level : null,
-    progress: entry.progress,
-    subjectTheme: subjectTheme(entry.subject.themeKey),
-    title: entry.subject.title,
-  };
+  const weak = dashboard.dailyPlan.parts.find((part) => part.kind === 'weakTopic');
+  if (weak !== undefined) {
+    return {
+      actionLabel: 'Güçlendir',
+      detail: `${weak.topicTitles[0] ?? 'Zorlandığın konu'} için ${weak.exercises.length} soruluk kısa çalışma hazır.`,
+      eyebrow: 'SANA ÖZEL',
+      kind: 'weakTopic',
+      title: 'Bunu güçlendirelim',
+    };
+  }
+
+  if (!dashboard.streak.todayQualified && dashboard.dailyPlan.exercises.length > 0) {
+    return {
+      actionLabel: 'Başla',
+      detail: 'Bugünkü hedefin için kısa bir çalışma yeterli.',
+      eyebrow: 'BUGÜN',
+      kind: 'streak',
+      title: dashboard.streak.current > 0 ? 'Serini koru' : 'Serini başlat',
+    };
+  }
+
+  return null;
 }

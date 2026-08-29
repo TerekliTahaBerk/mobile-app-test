@@ -6,6 +6,7 @@ import { HudChip } from '@/shared/ui/components/hud-chip';
 import { ProgressBar } from '@/shared/ui/components/progress-bar';
 import { SegmentedToggle } from '@/shared/ui/components/segmented-toggle';
 import { StepProgress } from '@/shared/ui/components/step-progress';
+import { Dino } from '@/shared/ui/dino/dino';
 
 describe('design primitives', () => {
   it('prevents disabled button interaction and exposes its state', async () => {
@@ -75,6 +76,14 @@ describe('design primitives', () => {
 
     await render(<HudChip kind="hearts" value={null} />);
     expect(screen.getByLabelText('Sınırsız can')).toBeTruthy();
+  });
+
+  it('selects the mascot pose semantically', async () => {
+    await render(<Dino accessibilityLabel="Çalışma rehberi Dino" pose="writing" size={72} />);
+    expect(screen.getByTestId('dino-writing')).toBeTruthy();
+
+    await render(<Dino accessibilityLabel="Mezuniyet Dino" pose="graduation" size={96} />);
+    expect(screen.getByTestId('dino-graduation')).toBeTruthy();
   });
 
   it('marks the chosen segment as selected', async () => {

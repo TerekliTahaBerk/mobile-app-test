@@ -278,7 +278,7 @@
       "lessonId": "lesson.history.medieval.001",
       "order": 1,
       "prerequisiteIds": [
-        "path.history.first-turkish-states.06"
+        "path.history.first-human-periods.02"
       ],
       "title": "Feodalite",
       "unitId": "tyt.history.medieval-world"

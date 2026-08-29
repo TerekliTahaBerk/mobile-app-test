@@ -1,0 +1,862 @@
+{
+  "unitId": "tyt.religion.indian-chinese-religions",
+  "topics": [
+    {
+      "id": "tyt.religion.indian-chinese-religions.hinduism",
+      "unitId": "tyt.religion.indian-chinese-religions",
+      "title": "Hinduizm ve Temel Kavramları",
+      "skillIds": [
+        "skill.religion.indian-chinese-religions.hinduism.interpret",
+        "skill.religion.indian-chinese-religions.hinduism.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.indian-chinese-religions.hinduism.hinduizm"
+      ]
+    },
+    {
+      "id": "tyt.religion.indian-chinese-religions.buddhism",
+      "unitId": "tyt.religion.indian-chinese-religions",
+      "title": "Budizm ve Temel Kavramları",
+      "skillIds": [
+        "skill.religion.indian-chinese-religions.buddhism.interpret",
+        "skill.religion.indian-chinese-religions.buddhism.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.indian-chinese-religions.buddhism.budizm"
+      ]
+    },
+    {
+      "id": "tyt.religion.indian-chinese-religions.confucianism-taoism",
+      "unitId": "tyt.religion.indian-chinese-religions",
+      "title": "Konfüçyanizm ve Taoizm",
+      "skillIds": [
+        "skill.religion.indian-chinese-religions.confucianism-taoism.interpret",
+        "skill.religion.indian-chinese-religions.confucianism-taoism.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.indian-chinese-religions.confucianism-taoism.cin-dini-ve-felsefi-gelenekleri"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "skill.religion.indian-chinese-religions.hinduism.interpret",
+      "title": "Hinduizmin karma, samsara ve dharma kavramlarını bağlamında ayırt eder.",
+      "description": "Hinduizmin karma, samsara ve dharma kavramlarını bağlamında ayırt eder.",
+      "topicId": "tyt.religion.indian-chinese-religions.hinduism"
+    },
+    {
+      "id": "skill.religion.indian-chinese-religions.hinduism.distinguish",
+      "title": "Hinduizmi tek biçimli bir gelenek gibi sunan genellemeyi değerlendirir.",
+      "description": "Hinduizmi tek biçimli bir gelenek gibi sunan genellemeyi değerlendirir.",
+      "topicId": "tyt.religion.indian-chinese-religions.hinduism"
+    },
+    {
+      "id": "skill.religion.indian-chinese-religions.buddhism.interpret",
+      "title": "Budizmin nirvana ve karma kavramlarını genel hatlarıyla ayırt eder.",
+      "description": "Budizmin nirvana ve karma kavramlarını genel hatlarıyla ayırt eder.",
+      "topicId": "tyt.religion.indian-chinese-religions.buddhism"
+    },
+    {
+      "id": "skill.religion.indian-chinese-religions.buddhism.distinguish",
+      "title": "Budizmi Hinduizmle özdeşleştiren yaklaşımı ayırt eder.",
+      "description": "Budizmi Hinduizmle özdeşleştiren yaklaşımı ayırt eder.",
+      "topicId": "tyt.religion.indian-chinese-religions.buddhism"
+    },
+    {
+      "id": "skill.religion.indian-chinese-religions.confucianism-taoism.interpret",
+      "title": "Konfüçyanizm ile Taoizmin temel vurgularını ayırt eder.",
+      "description": "Konfüçyanizm ile Taoizmin temel vurgularını ayırt eder.",
+      "topicId": "tyt.religion.indian-chinese-religions.confucianism-taoism"
+    },
+    {
+      "id": "skill.religion.indian-chinese-religions.confucianism-taoism.distinguish",
+      "title": "Yin-yang kavramını karşıtların dengesi bağlamında yorumlar.",
+      "description": "Yin-yang kavramını karşıtların dengesi bağlamında yorumlar.",
+      "topicId": "tyt.religion.indian-chinese-religions.confucianism-taoism"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "concept.religion.indian-chinese-religions.hinduism.hinduizm",
+      "term": "Hinduizm",
+      "definition": "Hindistan’da uzun tarihsel süreçte gelişmiş, çeşitli inanç ve uygulamaları barındıran dinî gelenekler bütünü",
+      "topicId": "tyt.religion.indian-chinese-religions.hinduism"
+    },
+    {
+      "id": "concept.religion.indian-chinese-religions.buddhism.budizm",
+      "term": "Budizm",
+      "definition": "Siddhartha Gautama’nın öğretisi çevresinde gelişen ve ıstıraptan kurtuluşu konu edinen gelenek",
+      "topicId": "tyt.religion.indian-chinese-religions.buddhism"
+    },
+    {
+      "id": "concept.religion.indian-chinese-religions.confucianism-taoism.cin-dini-ve-felsefi-gelenekleri",
+      "term": "Çin dinî ve felsefi gelenekleri",
+      "definition": "toplumsal uyum, erdem ve doğayla denge gibi farklı vurgular taşıyan tarihsel gelenekler",
+      "topicId": "tyt.religion.indian-chinese-religions.confucianism-taoism"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "lesson.religion.indian-chinese-religions.hinduism.001",
+      "topicId": "tyt.religion.indian-chinese-religions.hinduism",
+      "title": "Hinduizm ve Temel Kavramları",
+      "subtitle": "Hinduizmin karma, samsara ve dharma kavramlarını bağlamında ayırt eder. Hinduizmi tek biçimli bir gelenek gibi sunan genellemeyi değerlendirir.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.indian-chinese-religions.hinduism.001.card01",
+        "exercise.religion.indian-chinese-religions.hinduism.001.mcq01",
+        "exercise.religion.indian-chinese-religions.hinduism.001.mcq02",
+        "exercise.religion.indian-chinese-religions.hinduism.001.mcq03",
+        "exercise.religion.indian-chinese-religions.hinduism.001.mcq04",
+        "exercise.religion.indian-chinese-religions.hinduism.001.tf01",
+        "exercise.religion.indian-chinese-religions.hinduism.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.religion.indian-chinese-religions.buddhism.001",
+      "topicId": "tyt.religion.indian-chinese-religions.buddhism",
+      "title": "Budizm ve Temel Kavramları",
+      "subtitle": "Budizmin nirvana ve karma kavramlarını genel hatlarıyla ayırt eder. Budizmi Hinduizmle özdeşleştiren yaklaşımı ayırt eder.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.indian-chinese-religions.buddhism.001.card01",
+        "exercise.religion.indian-chinese-religions.buddhism.001.mcq01",
+        "exercise.religion.indian-chinese-religions.buddhism.001.mcq02",
+        "exercise.religion.indian-chinese-religions.buddhism.001.mcq03",
+        "exercise.religion.indian-chinese-religions.buddhism.001.mcq04",
+        "exercise.religion.indian-chinese-religions.buddhism.001.tf01",
+        "exercise.religion.indian-chinese-religions.buddhism.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.religion.indian-chinese-religions.confucianism-taoism.001",
+      "topicId": "tyt.religion.indian-chinese-religions.confucianism-taoism",
+      "title": "Konfüçyanizm ve Taoizm",
+      "subtitle": "Konfüçyanizm ile Taoizmin temel vurgularını ayırt eder. Yin-yang kavramını karşıtların dengesi bağlamında yorumlar.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.indian-chinese-religions.confucianism-taoism.001.card01",
+        "exercise.religion.indian-chinese-religions.confucianism-taoism.001.mcq01",
+        "exercise.religion.indian-chinese-religions.confucianism-taoism.001.mcq02",
+        "exercise.religion.indian-chinese-religions.confucianism-taoism.001.mcq03",
+        "exercise.religion.indian-chinese-religions.confucianism-taoism.001.mcq04",
+        "exercise.religion.indian-chinese-religions.confucianism-taoism.001.tf01",
+        "exercise.religion.indian-chinese-religions.confucianism-taoism.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "id": "exercise.religion.indian-chinese-religions.hinduism.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "Hinduizm, Hindistan’da uzun tarihsel süreçte gelişmiş, çeşitli inanç ve uygulamaları barındıran dinî gelenekler bütünü.",
+      "skillIds": [
+        "skill.religion.indian-chinese-religions.hinduism.interpret",
+        "skill.religion.indian-chinese-religions.hinduism.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · HİNDUİZM VE TEMEL KAVRAMLARI",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "Hinduizm",
+          "back": "Hindistan’da uzun tarihsel süreçte gelişmiş, çeşitli inanç ve uygulamaları barındıran dinî gelenekler bütünü",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.indian-chinese-religions.hinduism.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "Hinduizm, Hindistan’da uzun tarihsel süreçte gelişmiş, çeşitli inanç ve uygulamaları barındıran dinî gelenekler bütünü.",
+      "skillIds": [
+        "skill.religion.indian-chinese-religions.hinduism.interpret",
+        "skill.religion.indian-chinese-religions.hinduism.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · HİNDUİZM VE TEMEL KAVRAMLARI",
+      "prompt": "“Hindistan’da uzun tarihsel süreçte gelişmiş, çeşitli inanç ve uygulamaları barındıran dinî gelenekler bütünü” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Hinduizm"
+        },
+        {
+          "id": "b",
+          "label": "Budizm"
+        },
+        {
+          "id": "c",
+          "label": "Çin dinî ve felsefi gelenekleri"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.indian-chinese-religions.hinduism.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada Hinduizm kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.indian-chinese-religions.hinduism.interpret",
+        "skill.religion.indian-chinese-religions.hinduism.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · HİNDUİZM VE TEMEL KAVRAMLARI",
+      "prompt": "Bir öğrenci Hinduizm konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.indian-chinese-religions.hinduism.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Hinduizmin karma, samsara ve dharma kavramlarını bağlamında ayırt eder. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.indian-chinese-religions.hinduism.interpret",
+        "skill.religion.indian-chinese-religions.hinduism.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · HİNDUİZM VE TEMEL KAVRAMLARI",
+      "prompt": "Hinduizmin karma, samsara ve dharma kavramlarını bağlamında ayırt eder. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.indian-chinese-religions.hinduism.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "Hinduizmi tek biçimli bir gelenek gibi sunan genellemeyi değerlendirir. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.indian-chinese-religions.hinduism.interpret",
+        "skill.religion.indian-chinese-religions.hinduism.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · HİNDUİZM VE TEMEL KAVRAMLARI",
+      "prompt": "Bir açıklama, Hinduizm kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.indian-chinese-religions.hinduism.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. Hinduizm, Hindistan’da uzun tarihsel süreçte gelişmiş, çeşitli inanç ve uygulamaları barındıran dinî gelenekler bütünü; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.indian-chinese-religions.hinduism.interpret",
+        "skill.religion.indian-chinese-religions.hinduism.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · HİNDUİZM VE TEMEL KAVRAMLARI",
+      "statement": "Hinduizm kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.indian-chinese-religions.hinduism.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.indian-chinese-religions.hinduism.interpret",
+        "skill.religion.indian-chinese-religions.hinduism.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · HİNDUİZM VE TEMEL KAVRAMLARI",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "Hinduizm",
+          "right": "Hindistan’da uzun tarihsel süreçte gelişmiş, çeşitli inanç ve uygulamaları barındıran dinî gelenekler bütünü"
+        },
+        {
+          "id": "p2",
+          "left": "Budizm",
+          "right": "Siddhartha Gautama’nın öğretisi çevresinde gelişen ve ıstıraptan kurtuluşu konu edinen gelenek"
+        },
+        {
+          "id": "p3",
+          "left": "Çin dinî ve felsefi gelenekleri",
+          "right": "toplumsal uyum, erdem ve doğayla denge gibi farklı vurgular taşıyan tarihsel gelenekler"
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.indian-chinese-religions.buddhism.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "Budizm, Siddhartha Gautama’nın öğretisi çevresinde gelişen ve ıstıraptan kurtuluşu konu edinen gelenek.",
+      "skillIds": [
+        "skill.religion.indian-chinese-religions.buddhism.interpret",
+        "skill.religion.indian-chinese-religions.buddhism.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · BUDİZM VE TEMEL KAVRAMLARI",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "Budizm",
+          "back": "Siddhartha Gautama’nın öğretisi çevresinde gelişen ve ıstıraptan kurtuluşu konu edinen gelenek",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.indian-chinese-religions.buddhism.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "Budizm, Siddhartha Gautama’nın öğretisi çevresinde gelişen ve ıstıraptan kurtuluşu konu edinen gelenek.",
+      "skillIds": [
+        "skill.religion.indian-chinese-religions.buddhism.interpret",
+        "skill.religion.indian-chinese-religions.buddhism.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · BUDİZM VE TEMEL KAVRAMLARI",
+      "prompt": "“Siddhartha Gautama’nın öğretisi çevresinde gelişen ve ıstıraptan kurtuluşu konu edinen gelenek” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Hinduizm"
+        },
+        {
+          "id": "b",
+          "label": "Budizm"
+        },
+        {
+          "id": "c",
+          "label": "Çin dinî ve felsefi gelenekleri"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "b"
+    },
+    {
+      "id": "exercise.religion.indian-chinese-religions.buddhism.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada Budizm kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.indian-chinese-religions.buddhism.interpret",
+        "skill.religion.indian-chinese-religions.buddhism.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · BUDİZM VE TEMEL KAVRAMLARI",
+      "prompt": "Bir öğrenci Budizm konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.indian-chinese-religions.buddhism.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Budizmin nirvana ve karma kavramlarını genel hatlarıyla ayırt eder. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.indian-chinese-religions.buddhism.interpret",
+        "skill.religion.indian-chinese-religions.buddhism.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · BUDİZM VE TEMEL KAVRAMLARI",
+      "prompt": "Budizmin nirvana ve karma kavramlarını genel hatlarıyla ayırt eder. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.indian-chinese-religions.buddhism.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "Budizmi Hinduizmle özdeşleştiren yaklaşımı ayırt eder. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.indian-chinese-religions.buddhism.interpret",
+        "skill.religion.indian-chinese-religions.buddhism.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · BUDİZM VE TEMEL KAVRAMLARI",
+      "prompt": "Bir açıklama, Budizm kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.indian-chinese-religions.buddhism.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. Budizm, Siddhartha Gautama’nın öğretisi çevresinde gelişen ve ıstıraptan kurtuluşu konu edinen gelenek; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.indian-chinese-religions.buddhism.interpret",
+        "skill.religion.indian-chinese-religions.buddhism.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · BUDİZM VE TEMEL KAVRAMLARI",
+      "statement": "Budizm kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.indian-chinese-religions.buddhism.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.indian-chinese-religions.buddhism.interpret",
+        "skill.religion.indian-chinese-religions.buddhism.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · BUDİZM VE TEMEL KAVRAMLARI",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "Hinduizm",
+          "right": "Hindistan’da uzun tarihsel süreçte gelişmiş, çeşitli inanç ve uygulamaları barındıran dinî gelenekler bütünü"
+        },
+        {
+          "id": "p2",
+          "left": "Budizm",
+          "right": "Siddhartha Gautama’nın öğretisi çevresinde gelişen ve ıstıraptan kurtuluşu konu edinen gelenek"
+        },
+        {
+          "id": "p3",
+          "left": "Çin dinî ve felsefi gelenekleri",
+          "right": "toplumsal uyum, erdem ve doğayla denge gibi farklı vurgular taşıyan tarihsel gelenekler"
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.indian-chinese-religions.confucianism-taoism.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "Çin dinî ve felsefi gelenekleri, toplumsal uyum, erdem ve doğayla denge gibi farklı vurgular taşıyan tarihsel gelenekler.",
+      "skillIds": [
+        "skill.religion.indian-chinese-religions.confucianism-taoism.interpret",
+        "skill.religion.indian-chinese-religions.confucianism-taoism.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · KONFÜÇYANİZM VE TAOİZM",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "Çin dinî ve felsefi gelenekleri",
+          "back": "toplumsal uyum, erdem ve doğayla denge gibi farklı vurgular taşıyan tarihsel gelenekler",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.indian-chinese-religions.confucianism-taoism.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "Çin dinî ve felsefi gelenekleri, toplumsal uyum, erdem ve doğayla denge gibi farklı vurgular taşıyan tarihsel gelenekler.",
+      "skillIds": [
+        "skill.religion.indian-chinese-religions.confucianism-taoism.interpret",
+        "skill.religion.indian-chinese-religions.confucianism-taoism.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · KONFÜÇYANİZM VE TAOİZM",
+      "prompt": "“Toplumsal uyum, erdem ve doğayla denge gibi farklı vurgular taşıyan tarihsel gelenekler” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Hinduizm"
+        },
+        {
+          "id": "b",
+          "label": "Budizm"
+        },
+        {
+          "id": "c",
+          "label": "Çin dinî ve felsefi gelenekleri"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "c"
+    },
+    {
+      "id": "exercise.religion.indian-chinese-religions.confucianism-taoism.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada Çin dinî ve felsefi gelenekleri kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.indian-chinese-religions.confucianism-taoism.interpret",
+        "skill.religion.indian-chinese-religions.confucianism-taoism.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · KONFÜÇYANİZM VE TAOİZM",
+      "prompt": "Bir öğrenci Çin dinî ve felsefi gelenekleri konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.indian-chinese-religions.confucianism-taoism.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Konfüçyanizm ile Taoizmin temel vurgularını ayırt eder. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.indian-chinese-religions.confucianism-taoism.interpret",
+        "skill.religion.indian-chinese-religions.confucianism-taoism.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · KONFÜÇYANİZM VE TAOİZM",
+      "prompt": "Konfüçyanizm ile Taoizmin temel vurgularını ayırt eder. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.indian-chinese-religions.confucianism-taoism.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "Yin-yang kavramını karşıtların dengesi bağlamında yorumlar. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.indian-chinese-religions.confucianism-taoism.interpret",
+        "skill.religion.indian-chinese-religions.confucianism-taoism.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · KONFÜÇYANİZM VE TAOİZM",
+      "prompt": "Bir açıklama, Çin dinî ve felsefi gelenekleri kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.indian-chinese-religions.confucianism-taoism.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. Çin dinî ve felsefi gelenekleri, toplumsal uyum, erdem ve doğayla denge gibi farklı vurgular taşıyan tarihsel gelenekler; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.indian-chinese-religions.confucianism-taoism.interpret",
+        "skill.religion.indian-chinese-religions.confucianism-taoism.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · KONFÜÇYANİZM VE TAOİZM",
+      "statement": "Çin dinî ve felsefi gelenekleri kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.indian-chinese-religions.confucianism-taoism.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.indian-chinese-religions.confucianism-taoism.interpret",
+        "skill.religion.indian-chinese-religions.confucianism-taoism.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · KONFÜÇYANİZM VE TAOİZM",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "Hinduizm",
+          "right": "Hindistan’da uzun tarihsel süreçte gelişmiş, çeşitli inanç ve uygulamaları barındıran dinî gelenekler bütünü"
+        },
+        {
+          "id": "p2",
+          "left": "Budizm",
+          "right": "Siddhartha Gautama’nın öğretisi çevresinde gelişen ve ıstıraptan kurtuluşu konu edinen gelenek"
+        },
+        {
+          "id": "p3",
+          "left": "Çin dinî ve felsefi gelenekleri",
+          "right": "toplumsal uyum, erdem ve doğayla denge gibi farklı vurgular taşıyan tarihsel gelenekler"
+        }
+      ]
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.religion.indian-chinese-religions.01",
+      "unitId": "tyt.religion.indian-chinese-religions",
+      "kind": "lesson",
+      "title": "Hinduizm ve Temel Kavramları",
+      "order": 1,
+      "lessonId": "lesson.religion.indian-chinese-religions.hinduism.001",
+      "prerequisiteIds": []
+    },
+    {
+      "id": "path.religion.indian-chinese-religions.02",
+      "unitId": "tyt.religion.indian-chinese-religions",
+      "kind": "lesson",
+      "title": "Budizm ve Temel Kavramları",
+      "order": 2,
+      "lessonId": "lesson.religion.indian-chinese-religions.buddhism.001",
+      "prerequisiteIds": [
+        "path.religion.indian-chinese-religions.01"
+      ]
+    },
+    {
+      "id": "path.religion.indian-chinese-religions.03",
+      "unitId": "tyt.religion.indian-chinese-religions",
+      "kind": "lesson",
+      "title": "Konfüçyanizm ve Taoizm",
+      "order": 3,
+      "lessonId": "lesson.religion.indian-chinese-religions.confucianism-taoism.001",
+      "prerequisiteIds": [
+        "path.religion.indian-chinese-religions.02"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,862 @@
+{
+  "unitId": "tyt.religion.belief-issues",
+  "topics": [
+    {
+      "id": "tyt.religion.belief-issues.freedom-evil",
+      "unitId": "tyt.religion.belief-issues",
+      "title": "Özgür İrade ve Kötülük Sorusu",
+      "skillIds": [
+        "skill.religion.belief-issues.freedom-evil.interpret",
+        "skill.religion.belief-issues.freedom-evil.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.belief-issues.freedom-evil.ozgur-irade"
+      ]
+    },
+    {
+      "id": "tyt.religion.belief-issues.belief-life",
+      "unitId": "tyt.religion.belief-issues",
+      "title": "İnanç ve Hayat İlişkisi",
+      "skillIds": [
+        "skill.religion.belief-issues.belief-life.interpret",
+        "skill.religion.belief-issues.belief-life.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.belief-issues.belief-life.inanc-davranis-tutarliligi"
+      ]
+    },
+    {
+      "id": "tyt.religion.belief-issues.superstition",
+      "unitId": "tyt.religion.belief-issues",
+      "title": "Hurafe ve Batıl İnanış",
+      "skillIds": [
+        "skill.religion.belief-issues.superstition.interpret",
+        "skill.religion.belief-issues.superstition.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.belief-issues.superstition.hurafe"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "skill.religion.belief-issues.freedom-evil.interpret",
+      "title": "Kötülük sorununu özgür irade ve sorumluluk bağlamında tartışır.",
+      "description": "Kötülük sorununu özgür irade ve sorumluluk bağlamında tartışır.",
+      "topicId": "tyt.religion.belief-issues.freedom-evil"
+    },
+    {
+      "id": "skill.religion.belief-issues.freedom-evil.distinguish",
+      "title": "Her olumsuz sonucu kaderle açıklayan indirgemeyi ayırt eder.",
+      "description": "Her olumsuz sonucu kaderle açıklayan indirgemeyi ayırt eder.",
+      "topicId": "tyt.religion.belief-issues.freedom-evil"
+    },
+    {
+      "id": "skill.religion.belief-issues.belief-life.interpret",
+      "title": "İnanç ile davranış arasındaki tutarlılığı örnekten yorumlar.",
+      "description": "İnanç ile davranış arasındaki tutarlılığı örnekten yorumlar.",
+      "topicId": "tyt.religion.belief-issues.belief-life"
+    },
+    {
+      "id": "skill.religion.belief-issues.belief-life.distinguish",
+      "title": "Dinî söylem ile ahlaki eylem arasındaki farkı ayırt eder.",
+      "description": "Dinî söylem ile ahlaki eylem arasındaki farkı ayırt eder.",
+      "topicId": "tyt.religion.belief-issues.belief-life"
+    },
+    {
+      "id": "skill.religion.belief-issues.superstition.interpret",
+      "title": "Hurafe ile dinî bilgiyi dayanak bakımından ayırt eder.",
+      "description": "Hurafe ile dinî bilgiyi dayanak bakımından ayırt eder.",
+      "topicId": "tyt.religion.belief-issues.superstition"
+    },
+    {
+      "id": "skill.religion.belief-issues.superstition.distinguish",
+      "title": "Bilimsel olmayan iddiayı dinî zorunluluk gibi sunan yaklaşımı değerlendirir.",
+      "description": "Bilimsel olmayan iddiayı dinî zorunluluk gibi sunan yaklaşımı değerlendirir.",
+      "topicId": "tyt.religion.belief-issues.superstition"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "concept.religion.belief-issues.freedom-evil.ozgur-irade",
+      "term": "özgür irade",
+      "definition": "insanın seçenekler arasında tercih yapabilme yetisi",
+      "topicId": "tyt.religion.belief-issues.freedom-evil"
+    },
+    {
+      "id": "concept.religion.belief-issues.belief-life.inanc-davranis-tutarliligi",
+      "term": "inanç-davranış tutarlılığı",
+      "definition": "benimsenen ilkelerin günlük seçim ve davranışlarda görünür olması",
+      "topicId": "tyt.religion.belief-issues.belief-life"
+    },
+    {
+      "id": "concept.religion.belief-issues.superstition.hurafe",
+      "term": "hurafe",
+      "definition": "dinin güvenilir kaynaklarına dayanmadan dinî nitelik kazandırılan inanış veya uygulama",
+      "topicId": "tyt.religion.belief-issues.superstition"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "lesson.religion.belief-issues.freedom-evil.001",
+      "topicId": "tyt.religion.belief-issues.freedom-evil",
+      "title": "Özgür İrade ve Kötülük Sorusu",
+      "subtitle": "Kötülük sorununu özgür irade ve sorumluluk bağlamında tartışır. Her olumsuz sonucu kaderle açıklayan indirgemeyi ayırt eder.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.belief-issues.freedom-evil.001.card01",
+        "exercise.religion.belief-issues.freedom-evil.001.mcq01",
+        "exercise.religion.belief-issues.freedom-evil.001.mcq02",
+        "exercise.religion.belief-issues.freedom-evil.001.mcq03",
+        "exercise.religion.belief-issues.freedom-evil.001.mcq04",
+        "exercise.religion.belief-issues.freedom-evil.001.tf01",
+        "exercise.religion.belief-issues.freedom-evil.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.religion.belief-issues.belief-life.001",
+      "topicId": "tyt.religion.belief-issues.belief-life",
+      "title": "İnanç ve Hayat İlişkisi",
+      "subtitle": "İnanç ile davranış arasındaki tutarlılığı örnekten yorumlar. Dinî söylem ile ahlaki eylem arasındaki farkı ayırt eder.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.belief-issues.belief-life.001.card01",
+        "exercise.religion.belief-issues.belief-life.001.mcq01",
+        "exercise.religion.belief-issues.belief-life.001.mcq02",
+        "exercise.religion.belief-issues.belief-life.001.mcq03",
+        "exercise.religion.belief-issues.belief-life.001.mcq04",
+        "exercise.religion.belief-issues.belief-life.001.tf01",
+        "exercise.religion.belief-issues.belief-life.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.religion.belief-issues.superstition.001",
+      "topicId": "tyt.religion.belief-issues.superstition",
+      "title": "Hurafe ve Batıl İnanış",
+      "subtitle": "Hurafe ile dinî bilgiyi dayanak bakımından ayırt eder. Bilimsel olmayan iddiayı dinî zorunluluk gibi sunan yaklaşımı değerlendirir.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.belief-issues.superstition.001.card01",
+        "exercise.religion.belief-issues.superstition.001.mcq01",
+        "exercise.religion.belief-issues.superstition.001.mcq02",
+        "exercise.religion.belief-issues.superstition.001.mcq03",
+        "exercise.religion.belief-issues.superstition.001.mcq04",
+        "exercise.religion.belief-issues.superstition.001.tf01",
+        "exercise.religion.belief-issues.superstition.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "id": "exercise.religion.belief-issues.freedom-evil.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "özgür irade, insanın seçenekler arasında tercih yapabilme yetisi.",
+      "skillIds": [
+        "skill.religion.belief-issues.freedom-evil.interpret",
+        "skill.religion.belief-issues.freedom-evil.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ÖZGÜR İRADE VE KÖTÜLÜK SORUSU",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "özgür irade",
+          "back": "insanın seçenekler arasında tercih yapabilme yetisi",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.belief-issues.freedom-evil.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "özgür irade, insanın seçenekler arasında tercih yapabilme yetisi.",
+      "skillIds": [
+        "skill.religion.belief-issues.freedom-evil.interpret",
+        "skill.religion.belief-issues.freedom-evil.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ÖZGÜR İRADE VE KÖTÜLÜK SORUSU",
+      "prompt": "“Insanın seçenekler arasında tercih yapabilme yetisi” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "özgür irade"
+        },
+        {
+          "id": "b",
+          "label": "inanç-davranış tutarlılığı"
+        },
+        {
+          "id": "c",
+          "label": "hurafe"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.belief-issues.freedom-evil.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada özgür irade kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.belief-issues.freedom-evil.interpret",
+        "skill.religion.belief-issues.freedom-evil.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ÖZGÜR İRADE VE KÖTÜLÜK SORUSU",
+      "prompt": "Bir öğrenci özgür irade konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.belief-issues.freedom-evil.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Kötülük sorununu özgür irade ve sorumluluk bağlamında tartışır. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.belief-issues.freedom-evil.interpret",
+        "skill.religion.belief-issues.freedom-evil.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ÖZGÜR İRADE VE KÖTÜLÜK SORUSU",
+      "prompt": "Kötülük sorununu özgür irade ve sorumluluk bağlamında tartışır. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.belief-issues.freedom-evil.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "Her olumsuz sonucu kaderle açıklayan indirgemeyi ayırt eder. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.belief-issues.freedom-evil.interpret",
+        "skill.religion.belief-issues.freedom-evil.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ÖZGÜR İRADE VE KÖTÜLÜK SORUSU",
+      "prompt": "Bir açıklama, özgür irade kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.belief-issues.freedom-evil.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. özgür irade, insanın seçenekler arasında tercih yapabilme yetisi; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.belief-issues.freedom-evil.interpret",
+        "skill.religion.belief-issues.freedom-evil.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ÖZGÜR İRADE VE KÖTÜLÜK SORUSU",
+      "statement": "özgür irade kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.belief-issues.freedom-evil.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.belief-issues.freedom-evil.interpret",
+        "skill.religion.belief-issues.freedom-evil.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ÖZGÜR İRADE VE KÖTÜLÜK SORUSU",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "özgür irade",
+          "right": "insanın seçenekler arasında tercih yapabilme yetisi"
+        },
+        {
+          "id": "p2",
+          "left": "inanç-davranış tutarlılığı",
+          "right": "benimsenen ilkelerin günlük seçim ve davranışlarda görünür olması"
+        },
+        {
+          "id": "p3",
+          "left": "hurafe",
+          "right": "dinin güvenilir kaynaklarına dayanmadan dinî nitelik kazandırılan inanış veya uygulama"
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.belief-issues.belief-life.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "inanç-davranış tutarlılığı, benimsenen ilkelerin günlük seçim ve davranışlarda görünür olması.",
+      "skillIds": [
+        "skill.religion.belief-issues.belief-life.interpret",
+        "skill.religion.belief-issues.belief-life.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İNANÇ VE HAYAT İLİŞKİSİ",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "inanç-davranış tutarlılığı",
+          "back": "benimsenen ilkelerin günlük seçim ve davranışlarda görünür olması",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.belief-issues.belief-life.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "inanç-davranış tutarlılığı, benimsenen ilkelerin günlük seçim ve davranışlarda görünür olması.",
+      "skillIds": [
+        "skill.religion.belief-issues.belief-life.interpret",
+        "skill.religion.belief-issues.belief-life.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İNANÇ VE HAYAT İLİŞKİSİ",
+      "prompt": "“Benimsenen ilkelerin günlük seçim ve davranışlarda görünür olması” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "özgür irade"
+        },
+        {
+          "id": "b",
+          "label": "inanç-davranış tutarlılığı"
+        },
+        {
+          "id": "c",
+          "label": "hurafe"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "b"
+    },
+    {
+      "id": "exercise.religion.belief-issues.belief-life.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada inanç-davranış tutarlılığı kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.belief-issues.belief-life.interpret",
+        "skill.religion.belief-issues.belief-life.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İNANÇ VE HAYAT İLİŞKİSİ",
+      "prompt": "Bir öğrenci inanç-davranış tutarlılığı konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.belief-issues.belief-life.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "İnanç ile davranış arasındaki tutarlılığı örnekten yorumlar. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.belief-issues.belief-life.interpret",
+        "skill.religion.belief-issues.belief-life.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İNANÇ VE HAYAT İLİŞKİSİ",
+      "prompt": "İnanç ile davranış arasındaki tutarlılığı örnekten yorumlar. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.belief-issues.belief-life.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "Dinî söylem ile ahlaki eylem arasındaki farkı ayırt eder. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.belief-issues.belief-life.interpret",
+        "skill.religion.belief-issues.belief-life.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İNANÇ VE HAYAT İLİŞKİSİ",
+      "prompt": "Bir açıklama, inanç-davranış tutarlılığı kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.belief-issues.belief-life.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. inanç-davranış tutarlılığı, benimsenen ilkelerin günlük seçim ve davranışlarda görünür olması; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.belief-issues.belief-life.interpret",
+        "skill.religion.belief-issues.belief-life.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İNANÇ VE HAYAT İLİŞKİSİ",
+      "statement": "inanç-davranış tutarlılığı kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.belief-issues.belief-life.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.belief-issues.belief-life.interpret",
+        "skill.religion.belief-issues.belief-life.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İNANÇ VE HAYAT İLİŞKİSİ",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "özgür irade",
+          "right": "insanın seçenekler arasında tercih yapabilme yetisi"
+        },
+        {
+          "id": "p2",
+          "left": "inanç-davranış tutarlılığı",
+          "right": "benimsenen ilkelerin günlük seçim ve davranışlarda görünür olması"
+        },
+        {
+          "id": "p3",
+          "left": "hurafe",
+          "right": "dinin güvenilir kaynaklarına dayanmadan dinî nitelik kazandırılan inanış veya uygulama"
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.belief-issues.superstition.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "hurafe, dinin güvenilir kaynaklarına dayanmadan dinî nitelik kazandırılan inanış veya uygulama.",
+      "skillIds": [
+        "skill.religion.belief-issues.superstition.interpret",
+        "skill.religion.belief-issues.superstition.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · HURAFE VE BATIL İNANIŞ",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "hurafe",
+          "back": "dinin güvenilir kaynaklarına dayanmadan dinî nitelik kazandırılan inanış veya uygulama",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.belief-issues.superstition.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "hurafe, dinin güvenilir kaynaklarına dayanmadan dinî nitelik kazandırılan inanış veya uygulama.",
+      "skillIds": [
+        "skill.religion.belief-issues.superstition.interpret",
+        "skill.religion.belief-issues.superstition.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · HURAFE VE BATIL İNANIŞ",
+      "prompt": "“Dinin güvenilir kaynaklarına dayanmadan dinî nitelik kazandırılan inanış veya uygulama” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "özgür irade"
+        },
+        {
+          "id": "b",
+          "label": "inanç-davranış tutarlılığı"
+        },
+        {
+          "id": "c",
+          "label": "hurafe"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "c"
+    },
+    {
+      "id": "exercise.religion.belief-issues.superstition.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada hurafe kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.belief-issues.superstition.interpret",
+        "skill.religion.belief-issues.superstition.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · HURAFE VE BATIL İNANIŞ",
+      "prompt": "Bir öğrenci hurafe konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.belief-issues.superstition.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Hurafe ile dinî bilgiyi dayanak bakımından ayırt eder. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.belief-issues.superstition.interpret",
+        "skill.religion.belief-issues.superstition.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · HURAFE VE BATIL İNANIŞ",
+      "prompt": "Hurafe ile dinî bilgiyi dayanak bakımından ayırt eder. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.belief-issues.superstition.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "Bilimsel olmayan iddiayı dinî zorunluluk gibi sunan yaklaşımı değerlendirir. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.belief-issues.superstition.interpret",
+        "skill.religion.belief-issues.superstition.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · HURAFE VE BATIL İNANIŞ",
+      "prompt": "Bir açıklama, hurafe kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.belief-issues.superstition.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. hurafe, dinin güvenilir kaynaklarına dayanmadan dinî nitelik kazandırılan inanış veya uygulama; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.belief-issues.superstition.interpret",
+        "skill.religion.belief-issues.superstition.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · HURAFE VE BATIL İNANIŞ",
+      "statement": "hurafe kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.belief-issues.superstition.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.belief-issues.superstition.interpret",
+        "skill.religion.belief-issues.superstition.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · HURAFE VE BATIL İNANIŞ",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "özgür irade",
+          "right": "insanın seçenekler arasında tercih yapabilme yetisi"
+        },
+        {
+          "id": "p2",
+          "left": "inanç-davranış tutarlılığı",
+          "right": "benimsenen ilkelerin günlük seçim ve davranışlarda görünür olması"
+        },
+        {
+          "id": "p3",
+          "left": "hurafe",
+          "right": "dinin güvenilir kaynaklarına dayanmadan dinî nitelik kazandırılan inanış veya uygulama"
+        }
+      ]
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.religion.belief-issues.01",
+      "unitId": "tyt.religion.belief-issues",
+      "kind": "lesson",
+      "title": "Özgür İrade ve Kötülük Sorusu",
+      "order": 1,
+      "lessonId": "lesson.religion.belief-issues.freedom-evil.001",
+      "prerequisiteIds": []
+    },
+    {
+      "id": "path.religion.belief-issues.02",
+      "unitId": "tyt.religion.belief-issues",
+      "kind": "lesson",
+      "title": "İnanç ve Hayat İlişkisi",
+      "order": 2,
+      "lessonId": "lesson.religion.belief-issues.belief-life.001",
+      "prerequisiteIds": [
+        "path.religion.belief-issues.01"
+      ]
+    },
+    {
+      "id": "path.religion.belief-issues.03",
+      "unitId": "tyt.religion.belief-issues",
+      "kind": "lesson",
+      "title": "Hurafe ve Batıl İnanış",
+      "order": 3,
+      "lessonId": "lesson.religion.belief-issues.superstition.001",
+      "prerequisiteIds": [
+        "path.religion.belief-issues.02"
+      ]
+    }
+  ]
+}

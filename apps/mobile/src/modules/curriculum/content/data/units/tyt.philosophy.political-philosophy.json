@@ -1,0 +1,848 @@
+{
+  "unitId": "tyt.philosophy.political-philosophy",
+  "topics": [
+    {
+      "id": "tyt.philosophy.political-philosophy.power-legitimacy",
+      "unitId": "tyt.philosophy.political-philosophy",
+      "title": "Devlet, İktidar, Egemenlik ve Meşruiyet",
+      "skillIds": [
+        "skill.philosophy.political-philosophy.power-legitimacy.power-sovereignty",
+        "skill.philosophy.political-philosophy.power-legitimacy.legitimacy"
+      ],
+      "conceptIds": [
+        "concept.philosophy.political-philosophy.power-legitimacy.iktidar-ve-egemenlik",
+        "concept.philosophy.political-philosophy.power-legitimacy.mesruiyet"
+      ]
+    },
+    {
+      "id": "tyt.philosophy.political-philosophy.rights-justice",
+      "unitId": "tyt.philosophy.political-philosophy",
+      "title": "Hak, Özgürlük, Eşitlik ve Adalet",
+      "skillIds": [
+        "skill.philosophy.political-philosophy.rights-justice.rights-freedom",
+        "skill.philosophy.political-philosophy.rights-justice.equality-justice"
+      ],
+      "conceptIds": [
+        "concept.philosophy.political-philosophy.rights-justice.hak-ve-ozgurluk",
+        "concept.philosophy.political-philosophy.rights-justice.esitlik-ve-adalet"
+      ]
+    },
+    {
+      "id": "tyt.philosophy.political-philosophy.state-ideal-order",
+      "unitId": "tyt.philosophy.political-philosophy",
+      "title": "Birey-Devlet İlişkisi ve İdeal Düzen",
+      "skillIds": [
+        "skill.philosophy.political-philosophy.state-ideal-order.individual-state",
+        "skill.philosophy.political-philosophy.state-ideal-order.utopia"
+      ],
+      "conceptIds": [
+        "concept.philosophy.political-philosophy.state-ideal-order.birey-ve-devlet",
+        "concept.philosophy.political-philosophy.state-ideal-order.utopya"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "skill.philosophy.political-philosophy.power-legitimacy.power-sovereignty",
+      "title": "İktidar ile egemenliği ayırt eder",
+      "description": "Kararları uygulatma gücü ile devletin ülke üzerindeki üstün ve sürekli yetkisini ayırt eder.",
+      "topicId": "tyt.philosophy.political-philosophy.power-legitimacy"
+    },
+    {
+      "id": "skill.philosophy.political-philosophy.power-legitimacy.legitimacy",
+      "title": "Meşruiyet problemini yorumlar",
+      "description": "Siyasal yönetimin hangi gerekçeyle haklı ve kabul edilebilir sayıldığı problemini örnekten çıkarır.",
+      "topicId": "tyt.philosophy.political-philosophy.power-legitimacy"
+    },
+    {
+      "id": "skill.philosophy.political-philosophy.rights-justice.rights-freedom",
+      "title": "Hak ile özgürlüğü ilişkilendirir",
+      "description": "Bireyin seçim alanı ile bu alanı güvenceye alan hak ve sınırları durum üzerinden yorumlar.",
+      "topicId": "tyt.philosophy.political-philosophy.rights-justice"
+    },
+    {
+      "id": "skill.philosophy.political-philosophy.rights-justice.equality-justice",
+      "title": "Eşitlik ile adaleti ayırt eder",
+      "description": "Herkese aynı davranmak ile ilgili farklılıkları gözeterek hakkaniyetli düzenleme yapmak arasındaki ayrımı yorumlar.",
+      "topicId": "tyt.philosophy.political-philosophy.rights-justice"
+    },
+    {
+      "id": "skill.philosophy.political-philosophy.state-ideal-order.individual-state",
+      "title": "Birey-devlet ilişkisini karşılaştırır",
+      "description": "Devletin güvenlik ve ortak yarar amacıyla yetki kullanması ile bireysel özgürlüklerin korunması arasındaki dengeyi yorumlar.",
+      "topicId": "tyt.philosophy.political-philosophy.state-ideal-order"
+    },
+    {
+      "id": "skill.philosophy.political-philosophy.state-ideal-order.utopia",
+      "title": "Ütopyayı ve ideal düzen arayışını yorumlar",
+      "description": "Ütopyaların mevcut düzeni eleştiren ideal toplum tasarımları olduğunu örnekten çıkarır.",
+      "topicId": "tyt.philosophy.political-philosophy.state-ideal-order"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "concept.philosophy.political-philosophy.power-legitimacy.iktidar-ve-egemenlik",
+      "term": "iktidar ve egemenlik",
+      "definition": "Kararları uygulatma gücü ile devletin ülke üzerindeki üstün ve sürekli yetkisini ayırt eder.",
+      "topicId": "tyt.philosophy.political-philosophy.power-legitimacy"
+    },
+    {
+      "id": "concept.philosophy.political-philosophy.power-legitimacy.mesruiyet",
+      "term": "meşruiyet",
+      "definition": "Siyasal yönetimin hangi gerekçeyle haklı ve kabul edilebilir sayıldığı problemini örnekten çıkarır.",
+      "topicId": "tyt.philosophy.political-philosophy.power-legitimacy"
+    },
+    {
+      "id": "concept.philosophy.political-philosophy.rights-justice.hak-ve-ozgurluk",
+      "term": "hak ve özgürlük",
+      "definition": "Bireyin seçim alanı ile bu alanı güvenceye alan hak ve sınırları durum üzerinden yorumlar.",
+      "topicId": "tyt.philosophy.political-philosophy.rights-justice"
+    },
+    {
+      "id": "concept.philosophy.political-philosophy.rights-justice.esitlik-ve-adalet",
+      "term": "eşitlik ve adalet",
+      "definition": "Herkese aynı davranmak ile ilgili farklılıkları gözeterek hakkaniyetli düzenleme yapmak arasındaki ayrımı yorumlar.",
+      "topicId": "tyt.philosophy.political-philosophy.rights-justice"
+    },
+    {
+      "id": "concept.philosophy.political-philosophy.state-ideal-order.birey-ve-devlet",
+      "term": "birey ve devlet",
+      "definition": "Devletin güvenlik ve ortak yarar amacıyla yetki kullanması ile bireysel özgürlüklerin korunması arasındaki dengeyi yorumlar.",
+      "topicId": "tyt.philosophy.political-philosophy.state-ideal-order"
+    },
+    {
+      "id": "concept.philosophy.political-philosophy.state-ideal-order.utopya",
+      "term": "ütopya",
+      "definition": "Ütopyaların mevcut düzeni eleştiren ideal toplum tasarımları olduğunu örnekten çıkarır.",
+      "topicId": "tyt.philosophy.political-philosophy.state-ideal-order"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "lesson.philosophy.political-philosophy.power-legitimacy.001",
+      "topicId": "tyt.philosophy.political-philosophy.power-legitimacy",
+      "title": "Devlet, İktidar, Egemenlik ve Meşruiyet",
+      "subtitle": "İktidar ile egemenliği ayırt eder ve Meşruiyet problemini yorumlar.",
+      "estimatedMinutes": 10,
+      "exerciseIds": [
+        "exercise.philosophy.political-philosophy.power-legitimacy.001.card01",
+        "exercise.philosophy.political-philosophy.power-legitimacy.001.mcq1",
+        "exercise.philosophy.political-philosophy.power-legitimacy.001.mcq2",
+        "exercise.philosophy.political-philosophy.power-legitimacy.001.mcq3",
+        "exercise.philosophy.political-philosophy.power-legitimacy.001.mcq4",
+        "exercise.philosophy.political-philosophy.power-legitimacy.001.tf01",
+        "exercise.philosophy.political-philosophy.power-legitimacy.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.philosophy.political-philosophy.rights-justice.001",
+      "topicId": "tyt.philosophy.political-philosophy.rights-justice",
+      "title": "Hak, Özgürlük, Eşitlik ve Adalet",
+      "subtitle": "Hak ile özgürlüğü ilişkilendirir ve Eşitlik ile adaleti ayırt eder.",
+      "estimatedMinutes": 10,
+      "exerciseIds": [
+        "exercise.philosophy.political-philosophy.rights-justice.001.mcq1",
+        "exercise.philosophy.political-philosophy.rights-justice.001.mcq2",
+        "exercise.philosophy.political-philosophy.rights-justice.001.mcq3",
+        "exercise.philosophy.political-philosophy.rights-justice.001.mcq4",
+        "exercise.philosophy.political-philosophy.rights-justice.001.tf01",
+        "exercise.philosophy.political-philosophy.rights-justice.001.match01",
+        "exercise.philosophy.political-philosophy.rights-justice.001.blank01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.philosophy.political-philosophy.state-ideal-order.001",
+      "topicId": "tyt.philosophy.political-philosophy.state-ideal-order",
+      "title": "Birey-Devlet İlişkisi ve İdeal Düzen",
+      "subtitle": "Birey-devlet ilişkisini karşılaştırır ve Ütopyayı ve ideal düzen arayışını yorumlar.",
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.philosophy.political-philosophy.state-ideal-order.001.mcq1",
+        "exercise.philosophy.political-philosophy.state-ideal-order.001.mcq2",
+        "exercise.philosophy.political-philosophy.state-ideal-order.001.mcq3",
+        "exercise.philosophy.political-philosophy.state-ideal-order.001.mcq4",
+        "exercise.philosophy.political-philosophy.state-ideal-order.001.tf01",
+        "exercise.philosophy.political-philosophy.state-ideal-order.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "id": "exercise.philosophy.political-philosophy.power-legitimacy.001.mcq1",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.political-philosophy.power-legitimacy.power-sovereignty"
+      ],
+      "prompt": "Bir belediye başkanı belirli hizmetleri yürütme gücüne sahiptir; devletin ülke çapındaki en üstün kural koyma yetkisi ise daha kapsamlıdır.\n\nİkinci yetki hangi kavramla açıklanır?",
+      "tag": "FELSEFE · DEVLET, İKTİDAR, EGEMENLİK VE MEŞRUİYET",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Ütopya"
+        },
+        {
+          "id": "opt-2",
+          "label": "Egemenlik"
+        },
+        {
+          "id": "opt-3",
+          "label": "İktidar"
+        },
+        {
+          "id": "opt-4",
+          "label": "Eşitlik"
+        }
+      ],
+      "correctOptionId": "opt-2",
+      "explanation": "Bir belediye başkanı belirli hizmetleri yürütme gücüne sahiptir; devletin ülke çapındaki en üstün kural koyma yetkisi ise daha kapsamlıdır. Bu nedenle doğru ayrım “Egemenlik”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.political-philosophy.power-legitimacy.001.mcq2",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.political-philosophy.power-legitimacy.power-sovereignty"
+      ],
+      "prompt": "Bir belediye başkanı belirli hizmetleri yürütme gücüne sahiptir; devletin ülke çapındaki en üstün kural koyma yetkisi ise daha kapsamlıdır.\n\nBir öğrenci bu görüşü “İktidar” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · DEVLET, İKTİDAR, EGEMENLİK VE MEŞRUİYET",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Egemenlik"
+        },
+        {
+          "id": "opt-2",
+          "label": "İktidar"
+        },
+        {
+          "id": "opt-3",
+          "label": "Eşitlik"
+        },
+        {
+          "id": "opt-4",
+          "label": "Ütopya"
+        }
+      ],
+      "correctOptionId": "opt-1",
+      "explanation": "Görüşte belirleyici ölçüt “iktidar ve egemenlik” çerçevesidir. “İktidar” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.political-philosophy.power-legitimacy.001.mcq3",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.political-philosophy.power-legitimacy.legitimacy"
+      ],
+      "prompt": "Bir yönetim yalnız zor kullanma kapasitesine değil, yurttaşların kabul ettiği hukuk kurallarına ve hesap verme düzenine dayanır.\n\nBu örnekte hangi sorun öne çıkar?",
+      "tag": "FELSEFE · DEVLET, İKTİDAR, EGEMENLİK VE MEŞRUİYET",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Estetik yargı"
+        },
+        {
+          "id": "opt-2",
+          "label": "Bilginin imkânı"
+        },
+        {
+          "id": "opt-3",
+          "label": "Varlığın çokluğu"
+        },
+        {
+          "id": "opt-4",
+          "label": "Meşruiyet"
+        }
+      ],
+      "correctOptionId": "opt-4",
+      "explanation": "Bir yönetim yalnız zor kullanma kapasitesine değil, yurttaşların kabul ettiği hukuk kurallarına ve hesap verme düzenine dayanır. Bu nedenle doğru ayrım “Meşruiyet”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.political-philosophy.power-legitimacy.001.mcq4",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.political-philosophy.power-legitimacy.legitimacy"
+      ],
+      "prompt": "Bir yönetim yalnız zor kullanma kapasitesine değil, yurttaşların kabul ettiği hukuk kurallarına ve hesap verme düzenine dayanır.\n\nBir öğrenci bu görüşü “Estetik yargı” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · DEVLET, İKTİDAR, EGEMENLİK VE MEŞRUİYET",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Bilginin imkânı"
+        },
+        {
+          "id": "opt-2",
+          "label": "Varlığın çokluğu"
+        },
+        {
+          "id": "opt-3",
+          "label": "Meşruiyet"
+        },
+        {
+          "id": "opt-4",
+          "label": "Estetik yargı"
+        }
+      ],
+      "correctOptionId": "opt-3",
+      "explanation": "Görüşte belirleyici ölçüt “meşruiyet” çerçevesidir. “Estetik yargı” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.political-philosophy.power-legitimacy.001.tf01",
+      "kind": "trueFalse",
+      "skillIds": [
+        "skill.philosophy.political-philosophy.power-legitimacy.power-sovereignty",
+        "skill.philosophy.political-philosophy.power-legitimacy.legitimacy"
+      ],
+      "statement": "iktidar ve egemenlik ile meşruiyet aynı kavram değildir; bir metnin gerekçesine bakılarak birbirinden ayrılmalıdır.",
+      "tag": "FELSEFE · DEVLET, İKTİDAR, EGEMENLİK VE MEŞRUİYET",
+      "correctAnswer": true,
+      "explanation": "Bu iki kavram aynı topic içinde ilişkili olsa da farklı sorulara veya ölçütlere karşılık gelir. Ayrım, yalnız anahtar kelimeye değil görüşün gerekçesine dayanır.",
+      "difficulty": 2,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.political-philosophy.power-legitimacy.001.match01",
+      "kind": "matching",
+      "skillIds": [
+        "skill.philosophy.political-philosophy.power-legitimacy.power-sovereignty",
+        "skill.philosophy.political-philosophy.power-legitimacy.legitimacy"
+      ],
+      "title": "Görüşü temel vurgusuyla eşleştir",
+      "subtitle": "Her ifadeyi yalnız bir kavramla eşleştir.",
+      "tag": "FELSEFE · DEVLET, İKTİDAR, EGEMENLİK VE MEŞRUİYET",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "iktidar ve egemenlik",
+          "right": "Kararları uygulatma gücü ile devletin ülke üzerindeki üstün ve sürekli yetkisini ayırt eder."
+        },
+        {
+          "id": "pair-2",
+          "left": "meşruiyet",
+          "right": "Siyasal yönetimin hangi gerekçeyle haklı ve kabul edilebilir sayıldığı problemini örnekten çıkarır."
+        }
+      ],
+      "explanation": "Eşleştirmeler kavramın adı ile ölçülebilir ayırt etme ölçütünü bağlar; görüşü yalnız ezberlemek yerine gerekçesiyle tanımayı sağlar.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.political-philosophy.power-legitimacy.001.card01",
+      "kind": "flashcard",
+      "skillIds": [
+        "skill.philosophy.political-philosophy.power-legitimacy.power-sovereignty",
+        "skill.philosophy.political-philosophy.power-legitimacy.legitimacy"
+      ],
+      "tag": "FELSEFE · DEVLET, İKTİDAR, EGEMENLİK VE MEŞRUİYET",
+      "cards": [
+        {
+          "id": "card-1",
+          "front": "iktidar ve egemenlik",
+          "back": "Kararları uygulatma gücü ile devletin ülke üzerindeki üstün ve sürekli yetkisini ayırt eder.",
+          "hint": "Kavramın bir metinde hangi ölçütle tanınacağını düşün."
+        },
+        {
+          "id": "card-2",
+          "front": "meşruiyet",
+          "back": "Siyasal yönetimin hangi gerekçeyle haklı ve kabul edilebilir sayıldığı problemini örnekten çıkarır.",
+          "hint": "Kavramın bir metinde hangi ölçütle tanınacağını düşün."
+        }
+      ],
+      "explanation": "Kartlar temel ayrımları ilk karşılaşmada tanıtır; scored skill coverage hesabına katılmaz.",
+      "difficulty": 1,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.political-philosophy.rights-justice.001.mcq1",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.political-philosophy.rights-justice.rights-freedom"
+      ],
+      "prompt": "Herkes düşüncesini açıklayabilir; ancak bu özgürlük başkasına doğrudan zarar verme hakkı doğurmaz ve hukukça güvence altına alınır.\n\nBu örnek hangi ilişkiyi gösterir?",
+      "tag": "FELSEFE · HAK, ÖZGÜRLÜK, EŞİTLİK VE ADALET",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Hakkın yalnız güçten doğmasını"
+        },
+        {
+          "id": "opt-2",
+          "label": "Eşitliğin tüm farkları silmesini"
+        },
+        {
+          "id": "opt-3",
+          "label": "Özgürlüğün hak ve sorumluluklarla birlikte ele alınmasını"
+        },
+        {
+          "id": "opt-4",
+          "label": "Özgürlüğün sınırsız olmasını"
+        }
+      ],
+      "correctOptionId": "opt-3",
+      "explanation": "Herkes düşüncesini açıklayabilir; ancak bu özgürlük başkasına doğrudan zarar verme hakkı doğurmaz ve hukukça güvence altına alınır. Bu nedenle doğru ayrım “Özgürlüğün hak ve sorumluluklarla birlikte ele alınmasını”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.political-philosophy.rights-justice.001.mcq2",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.political-philosophy.rights-justice.rights-freedom"
+      ],
+      "prompt": "Herkes düşüncesini açıklayabilir; ancak bu özgürlük başkasına doğrudan zarar verme hakkı doğurmaz ve hukukça güvence altına alınır.\n\nBir öğrenci bu görüşü “Özgürlüğün sınırsız olmasını” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · HAK, ÖZGÜRLÜK, EŞİTLİK VE ADALET",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Eşitliğin tüm farkları silmesini"
+        },
+        {
+          "id": "opt-2",
+          "label": "Özgürlüğün hak ve sorumluluklarla birlikte ele alınmasını"
+        },
+        {
+          "id": "opt-3",
+          "label": "Özgürlüğün sınırsız olmasını"
+        },
+        {
+          "id": "opt-4",
+          "label": "Hakkın yalnız güçten doğmasını"
+        }
+      ],
+      "correctOptionId": "opt-2",
+      "explanation": "Görüşte belirleyici ölçüt “hak ve özgürlük” çerçevesidir. “Özgürlüğün sınırsız olmasını” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.political-philosophy.rights-justice.001.mcq3",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.political-philosophy.rights-justice.equality-justice"
+      ],
+      "prompt": "Bir sınavda herkese aynı süre verilir; görme engelli bir öğrenciye erişilebilirlik için ek süre sağlanır.\n\nEk süre uygulaması en iyi hangi kavramla açıklanır?",
+      "tag": "FELSEFE · HAK, ÖZGÜRLÜK, EŞİTLİK VE ADALET",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Adalet"
+        },
+        {
+          "id": "opt-2",
+          "label": "Mutlak aynılık"
+        },
+        {
+          "id": "opt-3",
+          "label": "Egemenlik"
+        },
+        {
+          "id": "opt-4",
+          "label": "İktidar"
+        }
+      ],
+      "correctOptionId": "opt-1",
+      "explanation": "Bir sınavda herkese aynı süre verilir; görme engelli bir öğrenciye erişilebilirlik için ek süre sağlanır. Bu nedenle doğru ayrım “Adalet”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.political-philosophy.rights-justice.001.mcq4",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.political-philosophy.rights-justice.equality-justice"
+      ],
+      "prompt": "Bir sınavda herkese aynı süre verilir; görme engelli bir öğrenciye erişilebilirlik için ek süre sağlanır.\n\nBir öğrenci bu görüşü “Mutlak aynılık” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · HAK, ÖZGÜRLÜK, EŞİTLİK VE ADALET",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Mutlak aynılık"
+        },
+        {
+          "id": "opt-2",
+          "label": "Egemenlik"
+        },
+        {
+          "id": "opt-3",
+          "label": "İktidar"
+        },
+        {
+          "id": "opt-4",
+          "label": "Adalet"
+        }
+      ],
+      "correctOptionId": "opt-4",
+      "explanation": "Görüşte belirleyici ölçüt “eşitlik ve adalet” çerçevesidir. “Mutlak aynılık” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.political-philosophy.rights-justice.001.tf01",
+      "kind": "trueFalse",
+      "skillIds": [
+        "skill.philosophy.political-philosophy.rights-justice.rights-freedom",
+        "skill.philosophy.political-philosophy.rights-justice.equality-justice"
+      ],
+      "statement": "hak ve özgürlük ile eşitlik ve adalet aynı kavram değildir; bir metnin gerekçesine bakılarak birbirinden ayrılmalıdır.",
+      "tag": "FELSEFE · HAK, ÖZGÜRLÜK, EŞİTLİK VE ADALET",
+      "correctAnswer": true,
+      "explanation": "Bu iki kavram aynı topic içinde ilişkili olsa da farklı sorulara veya ölçütlere karşılık gelir. Ayrım, yalnız anahtar kelimeye değil görüşün gerekçesine dayanır.",
+      "difficulty": 2,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.political-philosophy.rights-justice.001.match01",
+      "kind": "matching",
+      "skillIds": [
+        "skill.philosophy.political-philosophy.rights-justice.rights-freedom",
+        "skill.philosophy.political-philosophy.rights-justice.equality-justice"
+      ],
+      "title": "Görüşü temel vurgusuyla eşleştir",
+      "subtitle": "Her ifadeyi yalnız bir kavramla eşleştir.",
+      "tag": "FELSEFE · HAK, ÖZGÜRLÜK, EŞİTLİK VE ADALET",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "hak ve özgürlük",
+          "right": "Bireyin seçim alanı ile bu alanı güvenceye alan hak ve sınırları durum üzerinden yorumlar."
+        },
+        {
+          "id": "pair-2",
+          "left": "eşitlik ve adalet",
+          "right": "Herkese aynı davranmak ile ilgili farklılıkları gözeterek hakkaniyetli düzenleme yapmak arasındaki ayrımı yorumlar."
+        }
+      ],
+      "explanation": "Eşleştirmeler kavramın adı ile ölçülebilir ayırt etme ölçütünü bağlar; görüşü yalnız ezberlemek yerine gerekçesiyle tanımayı sağlar.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.political-philosophy.rights-justice.001.blank01",
+      "kind": "fillBlank",
+      "skillIds": [
+        "skill.philosophy.political-philosophy.rights-justice.rights-freedom"
+      ],
+      "title": "Temel kavramı tamamla",
+      "hint": "Bireyin seçim alanı ile bu alanı güvenceye alan hak ve sınırları durum üzerinden yorumlar.",
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "hak ve özgürlük"
+        },
+        {
+          "id": "w-2",
+          "label": "eşitlik ve adalet"
+        },
+        {
+          "id": "w-3",
+          "label": "olgusal betimleme"
+        }
+      ],
+      "solutionTokenIds": [
+        "w-1"
+      ],
+      "explanation": "Tanım “hak ve özgürlük” kavramına karşılık gelir. Diğer seçenekler farklı bir ölçüt veya düşünme alanını belirtir.",
+      "difficulty": 1,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.political-philosophy.state-ideal-order.001.mcq1",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.political-philosophy.state-ideal-order.individual-state"
+      ],
+      "prompt": "Bir yasa kamu güvenliğini amaçlasa da bütün yurttaşların özel yaşamını gerekçesiz biçimde sürekli izlemeye izin veriyor.\n\nBu durum hangi gerilimi doğurur?",
+      "tag": "FELSEFE · BİREY-DEVLET İLİŞKİSİ VE İDEAL DÜZEN",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Akıl ile deney tartışması"
+        },
+        {
+          "id": "opt-2",
+          "label": "Kamu yararı ile bireysel özgürlük arasındaki gerilim"
+        },
+        {
+          "id": "opt-3",
+          "label": "Güzel ile hoş arasındaki ayrım"
+        },
+        {
+          "id": "opt-4",
+          "label": "Teori ile yasa ilişkisi"
+        }
+      ],
+      "correctOptionId": "opt-2",
+      "explanation": "Bir yasa kamu güvenliğini amaçlasa da bütün yurttaşların özel yaşamını gerekçesiz biçimde sürekli izlemeye izin veriyor. Bu nedenle doğru ayrım “Kamu yararı ile bireysel özgürlük arasındaki gerilim”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.political-philosophy.state-ideal-order.001.mcq2",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.political-philosophy.state-ideal-order.individual-state"
+      ],
+      "prompt": "Bir yasa kamu güvenliğini amaçlasa da bütün yurttaşların özel yaşamını gerekçesiz biçimde sürekli izlemeye izin veriyor.\n\nBir öğrenci bu görüşü “Güzel ile hoş arasındaki ayrım” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · BİREY-DEVLET İLİŞKİSİ VE İDEAL DÜZEN",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Kamu yararı ile bireysel özgürlük arasındaki gerilim"
+        },
+        {
+          "id": "opt-2",
+          "label": "Güzel ile hoş arasındaki ayrım"
+        },
+        {
+          "id": "opt-3",
+          "label": "Teori ile yasa ilişkisi"
+        },
+        {
+          "id": "opt-4",
+          "label": "Akıl ile deney tartışması"
+        }
+      ],
+      "correctOptionId": "opt-1",
+      "explanation": "Görüşte belirleyici ölçüt “birey ve devlet” çerçevesidir. “Güzel ile hoş arasındaki ayrım” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.political-philosophy.state-ideal-order.001.mcq3",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.political-philosophy.state-ideal-order.utopia"
+      ],
+      "prompt": "Bir yazar, özel çıkarların ortak iyiyi zedelemediği ve kurumların adaleti güvenceye aldığı varsayımsal bir toplum tasarlar.\n\nBu tasarımın felsefi işlevi nedir?",
+      "tag": "FELSEFE · BİREY-DEVLET İLİŞKİSİ VE İDEAL DÜZEN",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Geleceği kesin olarak haber vermek"
+        },
+        {
+          "id": "opt-2",
+          "label": "Bilimsel yasa kanıtlamak"
+        },
+        {
+          "id": "opt-3",
+          "label": "Tarihsel olayı aynen aktarmak"
+        },
+        {
+          "id": "opt-4",
+          "label": "Mevcut düzeni ideal bir model üzerinden sorgulamak"
+        }
+      ],
+      "correctOptionId": "opt-4",
+      "explanation": "Bir yazar, özel çıkarların ortak iyiyi zedelemediği ve kurumların adaleti güvenceye aldığı varsayımsal bir toplum tasarlar. Bu nedenle doğru ayrım “Mevcut düzeni ideal bir model üzerinden sorgulamak”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.political-philosophy.state-ideal-order.001.mcq4",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.political-philosophy.state-ideal-order.utopia"
+      ],
+      "prompt": "Bir yazar, özel çıkarların ortak iyiyi zedelemediği ve kurumların adaleti güvenceye aldığı varsayımsal bir toplum tasarlar.\n\nBir öğrenci bu görüşü “Geleceği kesin olarak haber vermek” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · BİREY-DEVLET İLİŞKİSİ VE İDEAL DÜZEN",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Bilimsel yasa kanıtlamak"
+        },
+        {
+          "id": "opt-2",
+          "label": "Tarihsel olayı aynen aktarmak"
+        },
+        {
+          "id": "opt-3",
+          "label": "Mevcut düzeni ideal bir model üzerinden sorgulamak"
+        },
+        {
+          "id": "opt-4",
+          "label": "Geleceği kesin olarak haber vermek"
+        }
+      ],
+      "correctOptionId": "opt-3",
+      "explanation": "Görüşte belirleyici ölçüt “ütopya” çerçevesidir. “Geleceği kesin olarak haber vermek” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.political-philosophy.state-ideal-order.001.tf01",
+      "kind": "trueFalse",
+      "skillIds": [
+        "skill.philosophy.political-philosophy.state-ideal-order.individual-state",
+        "skill.philosophy.political-philosophy.state-ideal-order.utopia"
+      ],
+      "statement": "birey ve devlet ile ütopya aynı kavram değildir; bir metnin gerekçesine bakılarak birbirinden ayrılmalıdır.",
+      "tag": "FELSEFE · BİREY-DEVLET İLİŞKİSİ VE İDEAL DÜZEN",
+      "correctAnswer": true,
+      "explanation": "Bu iki kavram aynı topic içinde ilişkili olsa da farklı sorulara veya ölçütlere karşılık gelir. Ayrım, yalnız anahtar kelimeye değil görüşün gerekçesine dayanır.",
+      "difficulty": 2,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.political-philosophy.state-ideal-order.001.match01",
+      "kind": "matching",
+      "skillIds": [
+        "skill.philosophy.political-philosophy.state-ideal-order.individual-state",
+        "skill.philosophy.political-philosophy.state-ideal-order.utopia"
+      ],
+      "title": "Görüşü temel vurgusuyla eşleştir",
+      "subtitle": "Her ifadeyi yalnız bir kavramla eşleştir.",
+      "tag": "FELSEFE · BİREY-DEVLET İLİŞKİSİ VE İDEAL DÜZEN",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "birey ve devlet",
+          "right": "Devletin güvenlik ve ortak yarar amacıyla yetki kullanması ile bireysel özgürlüklerin korunması arasındaki dengeyi yorumlar."
+        },
+        {
+          "id": "pair-2",
+          "left": "ütopya",
+          "right": "Ütopyaların mevcut düzeni eleştiren ideal toplum tasarımları olduğunu örnekten çıkarır."
+        }
+      ],
+      "explanation": "Eşleştirmeler kavramın adı ile ölçülebilir ayırt etme ölçütünü bağlar; görüşü yalnız ezberlemek yerine gerekçesiyle tanımayı sağlar.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.philosophy.political-philosophy.01",
+      "unitId": "tyt.philosophy.political-philosophy",
+      "kind": "lesson",
+      "title": "Devlet, İktidar, Egemenlik ve Meşruiyet",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.philosophy.philosophy-of-religion.03"
+      ],
+      "lessonId": "lesson.philosophy.political-philosophy.power-legitimacy.001"
+    },
+    {
+      "id": "path.philosophy.political-philosophy.02",
+      "unitId": "tyt.philosophy.political-philosophy",
+      "kind": "lesson",
+      "title": "Hak, Özgürlük, Eşitlik ve Adalet",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.philosophy.political-philosophy.01"
+      ],
+      "lessonId": "lesson.philosophy.political-philosophy.rights-justice.001"
+    },
+    {
+      "id": "path.philosophy.political-philosophy.03",
+      "unitId": "tyt.philosophy.political-philosophy",
+      "kind": "practice",
+      "title": "Birey-Devlet İlişkisi ve İdeal Düzen Uygulaması",
+      "order": 3,
+      "prerequisiteIds": [
+        "path.philosophy.political-philosophy.02"
+      ],
+      "lessonId": "lesson.philosophy.political-philosophy.state-ideal-order.001"
+    }
+  ]
+}

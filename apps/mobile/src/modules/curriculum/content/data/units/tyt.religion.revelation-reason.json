@@ -1,0 +1,862 @@
+{
+  "unitId": "tyt.religion.revelation-reason",
+  "topics": [
+    {
+      "id": "tyt.religion.revelation-reason.sources-knowledge",
+      "unitId": "tyt.religion.revelation-reason",
+      "title": "Vahiy, Akıl ve Bilgi",
+      "skillIds": [
+        "skill.religion.revelation-reason.sources-knowledge.interpret",
+        "skill.religion.revelation-reason.sources-knowledge.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.revelation-reason.sources-knowledge.vahiy"
+      ]
+    },
+    {
+      "id": "tyt.religion.revelation-reason.thinking-questioning",
+      "unitId": "tyt.religion.revelation-reason",
+      "title": "Düşünme, Sorgulama ve Delil",
+      "skillIds": [
+        "skill.religion.revelation-reason.thinking-questioning.interpret",
+        "skill.religion.revelation-reason.thinking-questioning.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.revelation-reason.thinking-questioning.dusunme"
+      ]
+    },
+    {
+      "id": "tyt.religion.revelation-reason.reason-responsibility",
+      "unitId": "tyt.religion.revelation-reason",
+      "title": "Akıl ve İnsan Sorumluluğu",
+      "skillIds": [
+        "skill.religion.revelation-reason.reason-responsibility.interpret",
+        "skill.religion.revelation-reason.reason-responsibility.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.revelation-reason.reason-responsibility.akli-sorumluluk"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "skill.religion.revelation-reason.sources-knowledge.interpret",
+      "title": "Vahiy ve aklı bilgi kaynakları bakımından ayırt eder.",
+      "description": "Vahiy ve aklı bilgi kaynakları bakımından ayırt eder.",
+      "topicId": "tyt.religion.revelation-reason.sources-knowledge"
+    },
+    {
+      "id": "skill.religion.revelation-reason.sources-knowledge.distinguish",
+      "title": "Akıl ile vahyi zorunlu karşıt sayan yaklaşımı değerlendirir.",
+      "description": "Akıl ile vahyi zorunlu karşıt sayan yaklaşımı değerlendirir.",
+      "topicId": "tyt.religion.revelation-reason.sources-knowledge"
+    },
+    {
+      "id": "skill.religion.revelation-reason.thinking-questioning.interpret",
+      "title": "Bir iddianın gerekçesini sorgulamanın önemini yorumlar.",
+      "description": "Bir iddianın gerekçesini sorgulamanın önemini yorumlar.",
+      "topicId": "tyt.religion.revelation-reason.thinking-questioning"
+    },
+    {
+      "id": "skill.religion.revelation-reason.thinking-questioning.distinguish",
+      "title": "Taklit ile bilinçli kabulü ayırt eder.",
+      "description": "Taklit ile bilinçli kabulü ayırt eder.",
+      "topicId": "tyt.religion.revelation-reason.thinking-questioning"
+    },
+    {
+      "id": "skill.religion.revelation-reason.reason-responsibility.interpret",
+      "title": "Akıl sahibi olma ile sorumluluk arasındaki ilişkiyi kurar.",
+      "description": "Akıl sahibi olma ile sorumluluk arasındaki ilişkiyi kurar.",
+      "topicId": "tyt.religion.revelation-reason.reason-responsibility"
+    },
+    {
+      "id": "skill.religion.revelation-reason.reason-responsibility.distinguish",
+      "title": "Bilgiden davranışsal sonuç çıkarır.",
+      "description": "Bilgiden davranışsal sonuç çıkarır.",
+      "topicId": "tyt.religion.revelation-reason.reason-responsibility"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "concept.religion.revelation-reason.sources-knowledge.vahiy",
+      "term": "vahiy",
+      "definition": "İslam inancına göre Allah’ın peygamberlere bildirdiği ilahî mesaj",
+      "topicId": "tyt.religion.revelation-reason.sources-knowledge"
+    },
+    {
+      "id": "concept.religion.revelation-reason.thinking-questioning.dusunme",
+      "term": "düşünme",
+      "definition": "bilgileri ilişkilendirme, gerekçeleri değerlendirme ve sonuç çıkarma etkinliği",
+      "topicId": "tyt.religion.revelation-reason.thinking-questioning"
+    },
+    {
+      "id": "concept.religion.revelation-reason.reason-responsibility.akli-sorumluluk",
+      "term": "akli sorumluluk",
+      "definition": "insanın anlama ve seçme yeteneğini davranışlarından sorumlu olmanın temeli sayma",
+      "topicId": "tyt.religion.revelation-reason.reason-responsibility"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "lesson.religion.revelation-reason.sources-knowledge.001",
+      "topicId": "tyt.religion.revelation-reason.sources-knowledge",
+      "title": "Vahiy, Akıl ve Bilgi",
+      "subtitle": "Vahiy ve aklı bilgi kaynakları bakımından ayırt eder. Akıl ile vahyi zorunlu karşıt sayan yaklaşımı değerlendirir.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.revelation-reason.sources-knowledge.001.card01",
+        "exercise.religion.revelation-reason.sources-knowledge.001.mcq01",
+        "exercise.religion.revelation-reason.sources-knowledge.001.mcq02",
+        "exercise.religion.revelation-reason.sources-knowledge.001.mcq03",
+        "exercise.religion.revelation-reason.sources-knowledge.001.mcq04",
+        "exercise.religion.revelation-reason.sources-knowledge.001.tf01",
+        "exercise.religion.revelation-reason.sources-knowledge.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.religion.revelation-reason.thinking-questioning.001",
+      "topicId": "tyt.religion.revelation-reason.thinking-questioning",
+      "title": "Düşünme, Sorgulama ve Delil",
+      "subtitle": "Bir iddianın gerekçesini sorgulamanın önemini yorumlar. Taklit ile bilinçli kabulü ayırt eder.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.revelation-reason.thinking-questioning.001.card01",
+        "exercise.religion.revelation-reason.thinking-questioning.001.mcq01",
+        "exercise.religion.revelation-reason.thinking-questioning.001.mcq02",
+        "exercise.religion.revelation-reason.thinking-questioning.001.mcq03",
+        "exercise.religion.revelation-reason.thinking-questioning.001.mcq04",
+        "exercise.religion.revelation-reason.thinking-questioning.001.tf01",
+        "exercise.religion.revelation-reason.thinking-questioning.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.religion.revelation-reason.reason-responsibility.001",
+      "topicId": "tyt.religion.revelation-reason.reason-responsibility",
+      "title": "Akıl ve İnsan Sorumluluğu",
+      "subtitle": "Akıl sahibi olma ile sorumluluk arasındaki ilişkiyi kurar. Bilgiden davranışsal sonuç çıkarır.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.revelation-reason.reason-responsibility.001.card01",
+        "exercise.religion.revelation-reason.reason-responsibility.001.mcq01",
+        "exercise.religion.revelation-reason.reason-responsibility.001.mcq02",
+        "exercise.religion.revelation-reason.reason-responsibility.001.mcq03",
+        "exercise.religion.revelation-reason.reason-responsibility.001.mcq04",
+        "exercise.religion.revelation-reason.reason-responsibility.001.tf01",
+        "exercise.religion.revelation-reason.reason-responsibility.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "id": "exercise.religion.revelation-reason.sources-knowledge.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "vahiy, İslam inancına göre Allah’ın peygamberlere bildirdiği ilahî mesaj.",
+      "skillIds": [
+        "skill.religion.revelation-reason.sources-knowledge.interpret",
+        "skill.religion.revelation-reason.sources-knowledge.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · VAHİY, AKIL VE BİLGİ",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "vahiy",
+          "back": "İslam inancına göre Allah’ın peygamberlere bildirdiği ilahî mesaj",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.revelation-reason.sources-knowledge.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "vahiy, İslam inancına göre Allah’ın peygamberlere bildirdiği ilahî mesaj.",
+      "skillIds": [
+        "skill.religion.revelation-reason.sources-knowledge.interpret",
+        "skill.religion.revelation-reason.sources-knowledge.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · VAHİY, AKIL VE BİLGİ",
+      "prompt": "“İslam inancına göre Allah’ın peygamberlere bildirdiği ilahî mesaj” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "vahiy"
+        },
+        {
+          "id": "b",
+          "label": "düşünme"
+        },
+        {
+          "id": "c",
+          "label": "akli sorumluluk"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.revelation-reason.sources-knowledge.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada vahiy kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.revelation-reason.sources-knowledge.interpret",
+        "skill.religion.revelation-reason.sources-knowledge.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · VAHİY, AKIL VE BİLGİ",
+      "prompt": "Bir öğrenci vahiy konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.revelation-reason.sources-knowledge.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Vahiy ve aklı bilgi kaynakları bakımından ayırt eder. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.revelation-reason.sources-knowledge.interpret",
+        "skill.religion.revelation-reason.sources-knowledge.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · VAHİY, AKIL VE BİLGİ",
+      "prompt": "Vahiy ve aklı bilgi kaynakları bakımından ayırt eder. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.revelation-reason.sources-knowledge.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "Akıl ile vahyi zorunlu karşıt sayan yaklaşımı değerlendirir. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.revelation-reason.sources-knowledge.interpret",
+        "skill.religion.revelation-reason.sources-knowledge.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · VAHİY, AKIL VE BİLGİ",
+      "prompt": "Bir açıklama, vahiy kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.revelation-reason.sources-knowledge.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. vahiy, İslam inancına göre Allah’ın peygamberlere bildirdiği ilahî mesaj; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.revelation-reason.sources-knowledge.interpret",
+        "skill.religion.revelation-reason.sources-knowledge.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · VAHİY, AKIL VE BİLGİ",
+      "statement": "vahiy kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.revelation-reason.sources-knowledge.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.revelation-reason.sources-knowledge.interpret",
+        "skill.religion.revelation-reason.sources-knowledge.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · VAHİY, AKIL VE BİLGİ",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "vahiy",
+          "right": "İslam inancına göre Allah’ın peygamberlere bildirdiği ilahî mesaj"
+        },
+        {
+          "id": "p2",
+          "left": "düşünme",
+          "right": "bilgileri ilişkilendirme, gerekçeleri değerlendirme ve sonuç çıkarma etkinliği"
+        },
+        {
+          "id": "p3",
+          "left": "akli sorumluluk",
+          "right": "insanın anlama ve seçme yeteneğini davranışlarından sorumlu olmanın temeli sayma"
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.revelation-reason.thinking-questioning.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "düşünme, bilgileri ilişkilendirme, gerekçeleri değerlendirme ve sonuç çıkarma etkinliği.",
+      "skillIds": [
+        "skill.religion.revelation-reason.thinking-questioning.interpret",
+        "skill.religion.revelation-reason.thinking-questioning.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · DÜŞÜNME, SORGULAMA VE DELİL",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "düşünme",
+          "back": "bilgileri ilişkilendirme, gerekçeleri değerlendirme ve sonuç çıkarma etkinliği",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.revelation-reason.thinking-questioning.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "düşünme, bilgileri ilişkilendirme, gerekçeleri değerlendirme ve sonuç çıkarma etkinliği.",
+      "skillIds": [
+        "skill.religion.revelation-reason.thinking-questioning.interpret",
+        "skill.religion.revelation-reason.thinking-questioning.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · DÜŞÜNME, SORGULAMA VE DELİL",
+      "prompt": "“Bilgileri ilişkilendirme, gerekçeleri değerlendirme ve sonuç çıkarma etkinliği” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "vahiy"
+        },
+        {
+          "id": "b",
+          "label": "düşünme"
+        },
+        {
+          "id": "c",
+          "label": "akli sorumluluk"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "b"
+    },
+    {
+      "id": "exercise.religion.revelation-reason.thinking-questioning.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada düşünme kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.revelation-reason.thinking-questioning.interpret",
+        "skill.religion.revelation-reason.thinking-questioning.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · DÜŞÜNME, SORGULAMA VE DELİL",
+      "prompt": "Bir öğrenci düşünme konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.revelation-reason.thinking-questioning.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bir iddianın gerekçesini sorgulamanın önemini yorumlar. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.revelation-reason.thinking-questioning.interpret",
+        "skill.religion.revelation-reason.thinking-questioning.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · DÜŞÜNME, SORGULAMA VE DELİL",
+      "prompt": "Bir iddianın gerekçesini sorgulamanın önemini yorumlar. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.revelation-reason.thinking-questioning.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "Taklit ile bilinçli kabulü ayırt eder. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.revelation-reason.thinking-questioning.interpret",
+        "skill.religion.revelation-reason.thinking-questioning.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · DÜŞÜNME, SORGULAMA VE DELİL",
+      "prompt": "Bir açıklama, düşünme kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.revelation-reason.thinking-questioning.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. düşünme, bilgileri ilişkilendirme, gerekçeleri değerlendirme ve sonuç çıkarma etkinliği; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.revelation-reason.thinking-questioning.interpret",
+        "skill.religion.revelation-reason.thinking-questioning.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · DÜŞÜNME, SORGULAMA VE DELİL",
+      "statement": "düşünme kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.revelation-reason.thinking-questioning.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.revelation-reason.thinking-questioning.interpret",
+        "skill.religion.revelation-reason.thinking-questioning.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · DÜŞÜNME, SORGULAMA VE DELİL",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "vahiy",
+          "right": "İslam inancına göre Allah’ın peygamberlere bildirdiği ilahî mesaj"
+        },
+        {
+          "id": "p2",
+          "left": "düşünme",
+          "right": "bilgileri ilişkilendirme, gerekçeleri değerlendirme ve sonuç çıkarma etkinliği"
+        },
+        {
+          "id": "p3",
+          "left": "akli sorumluluk",
+          "right": "insanın anlama ve seçme yeteneğini davranışlarından sorumlu olmanın temeli sayma"
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.revelation-reason.reason-responsibility.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "akli sorumluluk, insanın anlama ve seçme yeteneğini davranışlarından sorumlu olmanın temeli sayma.",
+      "skillIds": [
+        "skill.religion.revelation-reason.reason-responsibility.interpret",
+        "skill.religion.revelation-reason.reason-responsibility.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · AKIL VE İNSAN SORUMLULUĞU",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "akli sorumluluk",
+          "back": "insanın anlama ve seçme yeteneğini davranışlarından sorumlu olmanın temeli sayma",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.revelation-reason.reason-responsibility.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "akli sorumluluk, insanın anlama ve seçme yeteneğini davranışlarından sorumlu olmanın temeli sayma.",
+      "skillIds": [
+        "skill.religion.revelation-reason.reason-responsibility.interpret",
+        "skill.religion.revelation-reason.reason-responsibility.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · AKIL VE İNSAN SORUMLULUĞU",
+      "prompt": "“Insanın anlama ve seçme yeteneğini davranışlarından sorumlu olmanın temeli sayma” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "vahiy"
+        },
+        {
+          "id": "b",
+          "label": "düşünme"
+        },
+        {
+          "id": "c",
+          "label": "akli sorumluluk"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "c"
+    },
+    {
+      "id": "exercise.religion.revelation-reason.reason-responsibility.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada akli sorumluluk kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.revelation-reason.reason-responsibility.interpret",
+        "skill.religion.revelation-reason.reason-responsibility.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · AKIL VE İNSAN SORUMLULUĞU",
+      "prompt": "Bir öğrenci akli sorumluluk konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.revelation-reason.reason-responsibility.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Akıl sahibi olma ile sorumluluk arasındaki ilişkiyi kurar. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.revelation-reason.reason-responsibility.interpret",
+        "skill.religion.revelation-reason.reason-responsibility.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · AKIL VE İNSAN SORUMLULUĞU",
+      "prompt": "Akıl sahibi olma ile sorumluluk arasındaki ilişkiyi kurar. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.revelation-reason.reason-responsibility.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "Bilgiden davranışsal sonuç çıkarır. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.revelation-reason.reason-responsibility.interpret",
+        "skill.religion.revelation-reason.reason-responsibility.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · AKIL VE İNSAN SORUMLULUĞU",
+      "prompt": "Bir açıklama, akli sorumluluk kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.revelation-reason.reason-responsibility.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. akli sorumluluk, insanın anlama ve seçme yeteneğini davranışlarından sorumlu olmanın temeli sayma; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.revelation-reason.reason-responsibility.interpret",
+        "skill.religion.revelation-reason.reason-responsibility.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · AKIL VE İNSAN SORUMLULUĞU",
+      "statement": "akli sorumluluk kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.revelation-reason.reason-responsibility.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.revelation-reason.reason-responsibility.interpret",
+        "skill.religion.revelation-reason.reason-responsibility.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · AKIL VE İNSAN SORUMLULUĞU",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "vahiy",
+          "right": "İslam inancına göre Allah’ın peygamberlere bildirdiği ilahî mesaj"
+        },
+        {
+          "id": "p2",
+          "left": "düşünme",
+          "right": "bilgileri ilişkilendirme, gerekçeleri değerlendirme ve sonuç çıkarma etkinliği"
+        },
+        {
+          "id": "p3",
+          "left": "akli sorumluluk",
+          "right": "insanın anlama ve seçme yeteneğini davranışlarından sorumlu olmanın temeli sayma"
+        }
+      ]
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.religion.revelation-reason.01",
+      "unitId": "tyt.religion.revelation-reason",
+      "kind": "lesson",
+      "title": "Vahiy, Akıl ve Bilgi",
+      "order": 1,
+      "lessonId": "lesson.religion.revelation-reason.sources-knowledge.001",
+      "prerequisiteIds": []
+    },
+    {
+      "id": "path.religion.revelation-reason.02",
+      "unitId": "tyt.religion.revelation-reason",
+      "kind": "lesson",
+      "title": "Düşünme, Sorgulama ve Delil",
+      "order": 2,
+      "lessonId": "lesson.religion.revelation-reason.thinking-questioning.001",
+      "prerequisiteIds": [
+        "path.religion.revelation-reason.01"
+      ]
+    },
+    {
+      "id": "path.religion.revelation-reason.03",
+      "unitId": "tyt.religion.revelation-reason",
+      "kind": "lesson",
+      "title": "Akıl ve İnsan Sorumluluğu",
+      "order": 3,
+      "lessonId": "lesson.religion.revelation-reason.reason-responsibility.001",
+      "prerequisiteIds": [
+        "path.religion.revelation-reason.02"
+      ]
+    }
+  ]
+}

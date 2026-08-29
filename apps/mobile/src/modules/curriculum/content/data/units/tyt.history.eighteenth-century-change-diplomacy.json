@@ -1,0 +1,535 @@
+{
+  "concepts": [
+    {
+      "definition": "Avrupa’daki gelişmeleri yerinde izlemek",
+      "id": "concept.history.eighteenth-century-change-diplomacy.temporary-embassies",
+      "term": "Avrupa’daki gelişmeleri yerinde izlemek",
+      "topicId": "tyt.history.eighteenth-century-change-diplomacy.tulip-era"
+    },
+    {
+      "definition": "Basılı eserlerin daha hızlı çoğaltılmasını",
+      "id": "concept.history.eighteenth-century-change-diplomacy.printing-press",
+      "term": "Basılı eserlerin daha hızlı çoğaltılmasını",
+      "topicId": "tyt.history.eighteenth-century-change-diplomacy.tulip-era"
+    },
+    {
+      "definition": "Büyük ölçekli toprak kayıplarının kabulünü",
+      "id": "concept.history.eighteenth-century-change-diplomacy.karlofca-effect",
+      "term": "Büyük ölçekli toprak kayıplarının kabulünü",
+      "topicId": "tyt.history.eighteenth-century-change-diplomacy.balance-diplomacy"
+    },
+    {
+      "definition": "Kırım’ın bağımsız sayılarak Osmanlı’dan kopması",
+      "id": "concept.history.eighteenth-century-change-diplomacy.kucuk-kaynarca",
+      "term": "Kırım’ın bağımsız sayılarak Osmanlı’dan kopması",
+      "topicId": "tyt.history.eighteenth-century-change-diplomacy.balance-diplomacy"
+    }
+  ],
+  "exercises": [
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Avrupa’daki gelişmeleri yerinde izlemek, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.eighteenth-century-change-diplomacy.tulip-era.temporary-embassies.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Avrupa’daki gelişmeleri yerinde izlemek"
+        },
+        {
+          "id": "d1",
+          "label": "Avrupa devletlerini Osmanlı eyaleti yapmak"
+        },
+        {
+          "id": "d2",
+          "label": "Kapitülasyonları kaldırmak"
+        },
+        {
+          "id": "d3",
+          "label": "Yeniçeri Ocağını kapatmak"
+        }
+      ],
+      "prompt": "Lale Devri’nde Avrupa başkentlerine elçiler gönderilmesinin temel amacı hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.eighteenth-century-change-diplomacy.temporary-embassies"
+      ],
+      "tag": "TARİH · LALE DEVRİ VE BATI İLE ETKİLEŞİM"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Lale Devri’nde Avrupa başkentlerine elçiler gönderilmesinin temel amacı hangisidir sorusunun doğru karşılığı “Avrupa’daki gelişmeleri yerinde izlemek” olmalıdır.",
+      "id": "exercise.history.eighteenth-century-change-diplomacy.tulip-era.temporary-embassies.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.eighteenth-century-change-diplomacy.temporary-embassies"
+      ],
+      "statement": "Avrupa devletlerini Osmanlı eyaleti yapmak, Geçici elçiliklerin bilgi aktarımındaki rolünü açıklar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · LALE DEVRİ VE BATI İLE ETKİLEŞİM"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "Avrupa’daki gelişmeleri yerinde izlemek"
+        },
+        {
+          "id": "d1",
+          "label": "Avrupa devletlerini Osmanlı eyaleti yapmak"
+        },
+        {
+          "id": "d2",
+          "label": "Kapitülasyonları kaldırmak"
+        },
+        {
+          "id": "d3",
+          "label": "Yeniçeri Ocağını kapatmak"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “Avrupa’daki gelişmeleri yerinde izlemek” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.eighteenth-century-change-diplomacy.tulip-era.temporary-embassies.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.eighteenth-century-change-diplomacy.temporary-embassies"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: Lale Devri’nde Avrupa başkentlerine elçiler gönderilmesinin temel amacı hangisidir?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Basılı eserlerin daha hızlı çoğaltılmasını, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.eighteenth-century-change-diplomacy.tulip-era.printing-press.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Basılı eserlerin daha hızlı çoğaltılmasını"
+        },
+        {
+          "id": "d1",
+          "label": "El yazması eserlerin yasaklanmasını"
+        },
+        {
+          "id": "d2",
+          "label": "Dinî eserlerin ilk anda basılmasını"
+        },
+        {
+          "id": "d3",
+          "label": "Okuryazarlığın hemen evrenselleşmesini"
+        }
+      ],
+      "prompt": "İbrahim Müteferrika matbaasının kurulması hangi sonucu desteklemiştir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.eighteenth-century-change-diplomacy.printing-press"
+      ],
+      "tag": "TARİH · LALE DEVRİ VE BATI İLE ETKİLEŞİM"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. İbrahim Müteferrika matbaasının kurulması hangi sonucu desteklemiştir sorusunun doğru karşılığı “Basılı eserlerin daha hızlı çoğaltılmasını” olmalıdır.",
+      "id": "exercise.history.eighteenth-century-change-diplomacy.tulip-era.printing-press.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.eighteenth-century-change-diplomacy.printing-press"
+      ],
+      "statement": "El yazması eserlerin yasaklanmasını, Müteferrika Matbaası’nın bilgi dolaşımına etkisini yorumlar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · LALE DEVRİ VE BATI İLE ETKİLEŞİM"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, Lale Devri ve Batı ile Etkileşim başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.eighteenth-century-change-diplomacy.tulip-era.printing-press.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Lale Devri’nde Avrupa başkentlerine elçiler gönderilmesinin temel amacı hangisidir?",
+          "right": "Avrupa’daki gelişmeleri yerinde izlemek"
+        },
+        {
+          "id": "pair-2",
+          "left": "İbrahim Müteferrika matbaasının kurulması hangi sonucu desteklemiştir?",
+          "right": "Basılı eserlerin daha hızlı çoğaltılmasını"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.eighteenth-century-change-diplomacy.temporary-embassies",
+        "skill.history.eighteenth-century-change-diplomacy.printing-press"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · LALE DEVRİ VE BATI İLE ETKİLEŞİM",
+      "title": "Bilgi bağlarını eşleştir"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Büyük ölçekli toprak kayıplarının kabulünü, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.eighteenth-century-change-diplomacy.balance-diplomacy.karlofca-effect.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Büyük ölçekli toprak kayıplarının kabulünü"
+        },
+        {
+          "id": "d1",
+          "label": "Balkan egemenliğinin ilk kez kurulmasını"
+        },
+        {
+          "id": "d2",
+          "label": "Halifeliğin Osmanlılara geçmesini"
+        },
+        {
+          "id": "d3",
+          "label": "Devletin savaşsız dağılmasını"
+        }
+      ],
+      "prompt": "1699 Karlofça Antlaşması Osmanlı tarihinde hangi dönümü simgeler?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.eighteenth-century-change-diplomacy.karlofca-effect"
+      ],
+      "tag": "TARİH · SAVAŞLAR, ANTLAŞMALAR VE DENGE ARAYIŞI"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. 1699 Karlofça Antlaşması Osmanlı tarihinde hangi dönümü simgeler sorusunun doğru karşılığı “Büyük ölçekli toprak kayıplarının kabulünü” olmalıdır.",
+      "id": "exercise.history.eighteenth-century-change-diplomacy.balance-diplomacy.karlofca-effect.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.eighteenth-century-change-diplomacy.karlofca-effect"
+      ],
+      "statement": "Balkan egemenliğinin ilk kez kurulmasını, Karlofça Antlaşması’nın Osmanlı siyasetine etkisini yorumlar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · SAVAŞLAR, ANTLAŞMALAR VE DENGE ARAYIŞI"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "Büyük ölçekli toprak kayıplarının kabulünü"
+        },
+        {
+          "id": "d1",
+          "label": "Balkan egemenliğinin ilk kez kurulmasını"
+        },
+        {
+          "id": "d2",
+          "label": "Halifeliğin Osmanlılara geçmesini"
+        },
+        {
+          "id": "d3",
+          "label": "Devletin savaşsız dağılmasını"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “Büyük ölçekli toprak kayıplarının kabulünü” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.eighteenth-century-change-diplomacy.balance-diplomacy.karlofca-effect.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.eighteenth-century-change-diplomacy.karlofca-effect"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: 1699 Karlofça Antlaşması Osmanlı tarihinde hangi dönümü simgeler?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Kırım’ın bağımsız sayılarak Osmanlı’dan kopması, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.eighteenth-century-change-diplomacy.balance-diplomacy.kucuk-kaynarca.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Kırım’ın bağımsız sayılarak Osmanlı’dan kopması"
+        },
+        {
+          "id": "d1",
+          "label": "Kırım’ın doğrudan Osmanlı eyaleti olması"
+        },
+        {
+          "id": "d2",
+          "label": "Rusya’nın Karadeniz’den çekilmesi"
+        },
+        {
+          "id": "d3",
+          "label": "Boğazların tamamen kapatılması"
+        }
+      ],
+      "prompt": "1774 Küçük Kaynarca Antlaşması’nın sonucu hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.eighteenth-century-change-diplomacy.kucuk-kaynarca"
+      ],
+      "tag": "TARİH · SAVAŞLAR, ANTLAŞMALAR VE DENGE ARAYIŞI"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. 1774 Küçük Kaynarca Antlaşması’nın sonucu hangisidir sorusunun doğru karşılığı “Kırım’ın bağımsız sayılarak Osmanlı’dan kopması” olmalıdır.",
+      "id": "exercise.history.eighteenth-century-change-diplomacy.balance-diplomacy.kucuk-kaynarca.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.eighteenth-century-change-diplomacy.kucuk-kaynarca"
+      ],
+      "statement": "Kırım’ın doğrudan Osmanlı eyaleti olması, Küçük Kaynarca Antlaşması’nın sonuçlarını ayırt eder kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · SAVAŞLAR, ANTLAŞMALAR VE DENGE ARAYIŞI"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, Savaşlar, Antlaşmalar ve Denge Arayışı başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.eighteenth-century-change-diplomacy.balance-diplomacy.kucuk-kaynarca.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "1699 Karlofça Antlaşması Osmanlı tarihinde hangi dönümü simgeler?",
+          "right": "Büyük ölçekli toprak kayıplarının kabulünü"
+        },
+        {
+          "id": "pair-2",
+          "left": "1774 Küçük Kaynarca Antlaşması’nın sonucu hangisidir?",
+          "right": "Kırım’ın bağımsız sayılarak Osmanlı’dan kopması"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.eighteenth-century-change-diplomacy.karlofca-effect",
+        "skill.history.eighteenth-century-change-diplomacy.kucuk-kaynarca"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · SAVAŞLAR, ANTLAŞMALAR VE DENGE ARAYIŞI",
+      "title": "Bilgi bağlarını eşleştir"
+    },
+    {
+      "correctOrder": [
+        "event-1",
+        "event-2",
+        "event-3",
+        "event-4"
+      ],
+      "difficulty": 4,
+      "explanation": "Olaylar tarihleri dikkate alınarak eskiden yeniye sıralanır. Kronoloji, gelişmeler arasındaki neden-sonuç ilişkisini kurmak için temel bir çerçeve sunar.",
+      "id": "exercise.history.eighteenth-century-change-diplomacy.balance-diplomacy.order01",
+      "items": [
+        {
+          "id": "event-1",
+          "label": "Karlofça Antlaşması (1699)"
+        },
+        {
+          "id": "event-2",
+          "label": "Lale Devri’nin başlaması (1718)"
+        },
+        {
+          "id": "event-3",
+          "label": "Küçük Kaynarca Antlaşması (1774)"
+        },
+        {
+          "id": "event-4",
+          "label": "Nizam-ı Cedid’in kurulması (1792)"
+        }
+      ],
+      "kind": "ordering",
+      "prompt": "Gelişmeleri eskiden yeniye doğru sırala.",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.eighteenth-century-change-diplomacy.karlofca-effect",
+        "skill.history.eighteenth-century-change-diplomacy.kucuk-kaynarca"
+      ],
+      "tag": "TARİH · SAVAŞLAR, ANTLAŞMALAR VE DENGE ARAYIŞI"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.eighteenth-century-change-diplomacy.tulip-era.temporary-embassies.mcq01",
+        "exercise.history.eighteenth-century-change-diplomacy.tulip-era.temporary-embassies.tf01",
+        "exercise.history.eighteenth-century-change-diplomacy.tulip-era.temporary-embassies.fill01",
+        "exercise.history.eighteenth-century-change-diplomacy.tulip-era.printing-press.mcq01",
+        "exercise.history.eighteenth-century-change-diplomacy.tulip-era.printing-press.tf01",
+        "exercise.history.eighteenth-century-change-diplomacy.tulip-era.printing-press.match01"
+      ],
+      "id": "lesson.history.eighteenth-century-change-diplomacy.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "Lale Devri ve Batı ile Etkileşim",
+      "topicId": "tyt.history.eighteenth-century-change-diplomacy.tulip-era"
+    },
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.eighteenth-century-change-diplomacy.balance-diplomacy.karlofca-effect.mcq01",
+        "exercise.history.eighteenth-century-change-diplomacy.balance-diplomacy.karlofca-effect.tf01",
+        "exercise.history.eighteenth-century-change-diplomacy.balance-diplomacy.karlofca-effect.fill01",
+        "exercise.history.eighteenth-century-change-diplomacy.balance-diplomacy.kucuk-kaynarca.mcq01",
+        "exercise.history.eighteenth-century-change-diplomacy.balance-diplomacy.kucuk-kaynarca.tf01",
+        "exercise.history.eighteenth-century-change-diplomacy.balance-diplomacy.kucuk-kaynarca.match01",
+        "exercise.history.eighteenth-century-change-diplomacy.balance-diplomacy.order01"
+      ],
+      "id": "lesson.history.eighteenth-century-change-diplomacy.002",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "Savaşlar, Antlaşmalar ve Denge Arayışı",
+      "topicId": "tyt.history.eighteenth-century-change-diplomacy.balance-diplomacy"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.history.eighteenth-century-change-diplomacy.01",
+      "kind": "lesson",
+      "lessonId": "lesson.history.eighteenth-century-change-diplomacy.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.history.ottoman-search-years.02"
+      ],
+      "title": "Lale Devri ve Batı ile Etkileşim",
+      "unitId": "tyt.history.eighteenth-century-change-diplomacy"
+    },
+    {
+      "id": "path.history.eighteenth-century-change-diplomacy.02",
+      "kind": "checkpoint",
+      "lessonId": "lesson.history.eighteenth-century-change-diplomacy.002",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.history.eighteenth-century-change-diplomacy.01"
+      ],
+      "title": "18. Yüzyılda Değişim ve Diplomasi Kontrolü",
+      "unitId": "tyt.history.eighteenth-century-change-diplomacy"
+    }
+  ],
+  "skills": [
+    {
+      "description": "Geçici elçiliklerin bilgi aktarımındaki rolünü açıklar.",
+      "id": "skill.history.eighteenth-century-change-diplomacy.temporary-embassies",
+      "title": "Geçici elçiliklerin bilgi aktarımındaki rolünü açıklar",
+      "topicId": "tyt.history.eighteenth-century-change-diplomacy.tulip-era"
+    },
+    {
+      "description": "Müteferrika Matbaası’nın bilgi dolaşımına etkisini yorumlar.",
+      "id": "skill.history.eighteenth-century-change-diplomacy.printing-press",
+      "title": "Müteferrika Matbaası’nın bilgi dolaşımına etkisini yorumlar",
+      "topicId": "tyt.history.eighteenth-century-change-diplomacy.tulip-era"
+    },
+    {
+      "description": "Karlofça Antlaşması’nın Osmanlı siyasetine etkisini yorumlar.",
+      "id": "skill.history.eighteenth-century-change-diplomacy.karlofca-effect",
+      "title": "Karlofça Antlaşması’nın Osmanlı siyasetine etkisini yorumlar",
+      "topicId": "tyt.history.eighteenth-century-change-diplomacy.balance-diplomacy"
+    },
+    {
+      "description": "Küçük Kaynarca Antlaşması’nın sonuçlarını ayırt eder.",
+      "id": "skill.history.eighteenth-century-change-diplomacy.kucuk-kaynarca",
+      "title": "Küçük Kaynarca Antlaşması’nın sonuçlarını ayırt eder",
+      "topicId": "tyt.history.eighteenth-century-change-diplomacy.balance-diplomacy"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.history.eighteenth-century-change-diplomacy.temporary-embassies",
+        "concept.history.eighteenth-century-change-diplomacy.printing-press"
+      ],
+      "id": "tyt.history.eighteenth-century-change-diplomacy.tulip-era",
+      "skillIds": [
+        "skill.history.eighteenth-century-change-diplomacy.temporary-embassies",
+        "skill.history.eighteenth-century-change-diplomacy.printing-press"
+      ],
+      "title": "Lale Devri ve Batı ile Etkileşim",
+      "unitId": "tyt.history.eighteenth-century-change-diplomacy"
+    },
+    {
+      "conceptIds": [
+        "concept.history.eighteenth-century-change-diplomacy.karlofca-effect",
+        "concept.history.eighteenth-century-change-diplomacy.kucuk-kaynarca"
+      ],
+      "id": "tyt.history.eighteenth-century-change-diplomacy.balance-diplomacy",
+      "skillIds": [
+        "skill.history.eighteenth-century-change-diplomacy.karlofca-effect",
+        "skill.history.eighteenth-century-change-diplomacy.kucuk-kaynarca"
+      ],
+      "title": "Savaşlar, Antlaşmalar ve Denge Arayışı",
+      "unitId": "tyt.history.eighteenth-century-change-diplomacy"
+    }
+  ],
+  "unitId": "tyt.history.eighteenth-century-change-diplomacy"
+}

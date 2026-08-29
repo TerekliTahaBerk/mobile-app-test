@@ -1,0 +1,862 @@
+{
+  "unitId": "tyt.religion.morality-values",
+  "topics": [
+    {
+      "id": "tyt.religion.morality-values.moral-agency",
+      "unitId": "tyt.religion.morality-values",
+      "title": "Ahlak, Değer ve Sorumluluk",
+      "skillIds": [
+        "skill.religion.morality-values.moral-agency.interpret",
+        "skill.religion.morality-values.moral-agency.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.morality-values.moral-agency.ahlaki-sorumluluk"
+      ]
+    },
+    {
+      "id": "tyt.religion.morality-values.justice-trust",
+      "unitId": "tyt.religion.morality-values",
+      "title": "Adalet, Doğruluk ve Güven",
+      "skillIds": [
+        "skill.religion.morality-values.justice-trust.interpret",
+        "skill.religion.morality-values.justice-trust.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.morality-values.justice-trust.adalet"
+      ]
+    },
+    {
+      "id": "tyt.religion.morality-values.mercy-rights",
+      "unitId": "tyt.religion.morality-values",
+      "title": "Merhamet, Yardımlaşma ve Kul Hakkı",
+      "skillIds": [
+        "skill.religion.morality-values.mercy-rights.interpret",
+        "skill.religion.morality-values.mercy-rights.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.morality-values.mercy-rights.kul-hakki"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "skill.religion.morality-values.moral-agency.interpret",
+      "title": "Ahlaki değer ile davranış arasındaki ilişkiyi kurar.",
+      "description": "Ahlaki değer ile davranış arasındaki ilişkiyi kurar.",
+      "topicId": "tyt.religion.morality-values.moral-agency"
+    },
+    {
+      "id": "skill.religion.morality-values.moral-agency.distinguish",
+      "title": "Sorumluluğu niyet ve sonuç boyutlarıyla yorumlar.",
+      "description": "Sorumluluğu niyet ve sonuç boyutlarıyla yorumlar.",
+      "topicId": "tyt.religion.morality-values.moral-agency"
+    },
+    {
+      "id": "skill.religion.morality-values.justice-trust.interpret",
+      "title": "Adalet ile eşit davranmayı bağlama göre ayırt eder.",
+      "description": "Adalet ile eşit davranmayı bağlama göre ayırt eder.",
+      "topicId": "tyt.religion.morality-values.justice-trust"
+    },
+    {
+      "id": "skill.religion.morality-values.justice-trust.distinguish",
+      "title": "Doğruluk ve güven arasındaki ilişkiyi günlük örnekten çıkarır.",
+      "description": "Doğruluk ve güven arasındaki ilişkiyi günlük örnekten çıkarır.",
+      "topicId": "tyt.religion.morality-values.justice-trust"
+    },
+    {
+      "id": "skill.religion.morality-values.mercy-rights.interpret",
+      "title": "Merhamet ile yardım davranışını ilişkilendirir.",
+      "description": "Merhamet ile yardım davranışını ilişkilendirir.",
+      "topicId": "tyt.religion.morality-values.mercy-rights"
+    },
+    {
+      "id": "skill.religion.morality-values.mercy-rights.distinguish",
+      "title": "Kul hakkı ihlalini günlük hayat örneklerinde ayırt eder.",
+      "description": "Kul hakkı ihlalini günlük hayat örneklerinde ayırt eder.",
+      "topicId": "tyt.religion.morality-values.mercy-rights"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "concept.religion.morality-values.moral-agency.ahlaki-sorumluluk",
+      "term": "ahlaki sorumluluk",
+      "definition": "kişinin özgürce yaptığı davranışların sonuçlarını ahlaki ölçülerle üstlenmesi",
+      "topicId": "tyt.religion.morality-values.moral-agency"
+    },
+    {
+      "id": "concept.religion.morality-values.justice-trust.adalet",
+      "term": "adalet",
+      "definition": "hak ve sorumlulukları gözeterek dengeli ve hakkaniyetli davranma",
+      "topicId": "tyt.religion.morality-values.justice-trust"
+    },
+    {
+      "id": "concept.religion.morality-values.mercy-rights.kul-hakki",
+      "term": "kul hakkı",
+      "definition": "başkasının maddi veya manevi hakkını gözetme sorumluluğu",
+      "topicId": "tyt.religion.morality-values.mercy-rights"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "lesson.religion.morality-values.moral-agency.001",
+      "topicId": "tyt.religion.morality-values.moral-agency",
+      "title": "Ahlak, Değer ve Sorumluluk",
+      "subtitle": "Ahlaki değer ile davranış arasındaki ilişkiyi kurar. Sorumluluğu niyet ve sonuç boyutlarıyla yorumlar.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.morality-values.moral-agency.001.card01",
+        "exercise.religion.morality-values.moral-agency.001.mcq01",
+        "exercise.religion.morality-values.moral-agency.001.mcq02",
+        "exercise.religion.morality-values.moral-agency.001.mcq03",
+        "exercise.religion.morality-values.moral-agency.001.mcq04",
+        "exercise.religion.morality-values.moral-agency.001.tf01",
+        "exercise.religion.morality-values.moral-agency.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.religion.morality-values.justice-trust.001",
+      "topicId": "tyt.religion.morality-values.justice-trust",
+      "title": "Adalet, Doğruluk ve Güven",
+      "subtitle": "Adalet ile eşit davranmayı bağlama göre ayırt eder. Doğruluk ve güven arasındaki ilişkiyi günlük örnekten çıkarır.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.morality-values.justice-trust.001.card01",
+        "exercise.religion.morality-values.justice-trust.001.mcq01",
+        "exercise.religion.morality-values.justice-trust.001.mcq02",
+        "exercise.religion.morality-values.justice-trust.001.mcq03",
+        "exercise.religion.morality-values.justice-trust.001.mcq04",
+        "exercise.religion.morality-values.justice-trust.001.tf01",
+        "exercise.religion.morality-values.justice-trust.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.religion.morality-values.mercy-rights.001",
+      "topicId": "tyt.religion.morality-values.mercy-rights",
+      "title": "Merhamet, Yardımlaşma ve Kul Hakkı",
+      "subtitle": "Merhamet ile yardım davranışını ilişkilendirir. Kul hakkı ihlalini günlük hayat örneklerinde ayırt eder.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.morality-values.mercy-rights.001.card01",
+        "exercise.religion.morality-values.mercy-rights.001.mcq01",
+        "exercise.religion.morality-values.mercy-rights.001.mcq02",
+        "exercise.religion.morality-values.mercy-rights.001.mcq03",
+        "exercise.religion.morality-values.mercy-rights.001.mcq04",
+        "exercise.religion.morality-values.mercy-rights.001.tf01",
+        "exercise.religion.morality-values.mercy-rights.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "id": "exercise.religion.morality-values.moral-agency.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "ahlaki sorumluluk, kişinin özgürce yaptığı davranışların sonuçlarını ahlaki ölçülerle üstlenmesi.",
+      "skillIds": [
+        "skill.religion.morality-values.moral-agency.interpret",
+        "skill.religion.morality-values.moral-agency.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · AHLAK, DEĞER VE SORUMLULUK",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "ahlaki sorumluluk",
+          "back": "kişinin özgürce yaptığı davranışların sonuçlarını ahlaki ölçülerle üstlenmesi",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.morality-values.moral-agency.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "ahlaki sorumluluk, kişinin özgürce yaptığı davranışların sonuçlarını ahlaki ölçülerle üstlenmesi.",
+      "skillIds": [
+        "skill.religion.morality-values.moral-agency.interpret",
+        "skill.religion.morality-values.moral-agency.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · AHLAK, DEĞER VE SORUMLULUK",
+      "prompt": "“Kişinin özgürce yaptığı davranışların sonuçlarını ahlaki ölçülerle üstlenmesi” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "ahlaki sorumluluk"
+        },
+        {
+          "id": "b",
+          "label": "adalet"
+        },
+        {
+          "id": "c",
+          "label": "kul hakkı"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.morality-values.moral-agency.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada ahlaki sorumluluk kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.morality-values.moral-agency.interpret",
+        "skill.religion.morality-values.moral-agency.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · AHLAK, DEĞER VE SORUMLULUK",
+      "prompt": "Bir öğrenci ahlaki sorumluluk konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.morality-values.moral-agency.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Ahlaki değer ile davranış arasındaki ilişkiyi kurar. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.morality-values.moral-agency.interpret",
+        "skill.religion.morality-values.moral-agency.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · AHLAK, DEĞER VE SORUMLULUK",
+      "prompt": "Ahlaki değer ile davranış arasındaki ilişkiyi kurar. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.morality-values.moral-agency.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "Sorumluluğu niyet ve sonuç boyutlarıyla yorumlar. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.morality-values.moral-agency.interpret",
+        "skill.religion.morality-values.moral-agency.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · AHLAK, DEĞER VE SORUMLULUK",
+      "prompt": "Bir açıklama, ahlaki sorumluluk kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.morality-values.moral-agency.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. ahlaki sorumluluk, kişinin özgürce yaptığı davranışların sonuçlarını ahlaki ölçülerle üstlenmesi; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.morality-values.moral-agency.interpret",
+        "skill.religion.morality-values.moral-agency.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · AHLAK, DEĞER VE SORUMLULUK",
+      "statement": "ahlaki sorumluluk kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.morality-values.moral-agency.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.morality-values.moral-agency.interpret",
+        "skill.religion.morality-values.moral-agency.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · AHLAK, DEĞER VE SORUMLULUK",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "ahlaki sorumluluk",
+          "right": "kişinin özgürce yaptığı davranışların sonuçlarını ahlaki ölçülerle üstlenmesi"
+        },
+        {
+          "id": "p2",
+          "left": "adalet",
+          "right": "hak ve sorumlulukları gözeterek dengeli ve hakkaniyetli davranma"
+        },
+        {
+          "id": "p3",
+          "left": "kul hakkı",
+          "right": "başkasının maddi veya manevi hakkını gözetme sorumluluğu"
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.morality-values.justice-trust.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "adalet, hak ve sorumlulukları gözeterek dengeli ve hakkaniyetli davranma.",
+      "skillIds": [
+        "skill.religion.morality-values.justice-trust.interpret",
+        "skill.religion.morality-values.justice-trust.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ADALET, DOĞRULUK VE GÜVEN",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "adalet",
+          "back": "hak ve sorumlulukları gözeterek dengeli ve hakkaniyetli davranma",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.morality-values.justice-trust.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "adalet, hak ve sorumlulukları gözeterek dengeli ve hakkaniyetli davranma.",
+      "skillIds": [
+        "skill.religion.morality-values.justice-trust.interpret",
+        "skill.religion.morality-values.justice-trust.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ADALET, DOĞRULUK VE GÜVEN",
+      "prompt": "“Hak ve sorumlulukları gözeterek dengeli ve hakkaniyetli davranma” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "ahlaki sorumluluk"
+        },
+        {
+          "id": "b",
+          "label": "adalet"
+        },
+        {
+          "id": "c",
+          "label": "kul hakkı"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "b"
+    },
+    {
+      "id": "exercise.religion.morality-values.justice-trust.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada adalet kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.morality-values.justice-trust.interpret",
+        "skill.religion.morality-values.justice-trust.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ADALET, DOĞRULUK VE GÜVEN",
+      "prompt": "Bir öğrenci adalet konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.morality-values.justice-trust.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Adalet ile eşit davranmayı bağlama göre ayırt eder. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.morality-values.justice-trust.interpret",
+        "skill.religion.morality-values.justice-trust.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ADALET, DOĞRULUK VE GÜVEN",
+      "prompt": "Adalet ile eşit davranmayı bağlama göre ayırt eder. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.morality-values.justice-trust.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "Doğruluk ve güven arasındaki ilişkiyi günlük örnekten çıkarır. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.morality-values.justice-trust.interpret",
+        "skill.religion.morality-values.justice-trust.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ADALET, DOĞRULUK VE GÜVEN",
+      "prompt": "Bir açıklama, adalet kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.morality-values.justice-trust.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. adalet, hak ve sorumlulukları gözeterek dengeli ve hakkaniyetli davranma; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.morality-values.justice-trust.interpret",
+        "skill.religion.morality-values.justice-trust.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ADALET, DOĞRULUK VE GÜVEN",
+      "statement": "adalet kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.morality-values.justice-trust.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.morality-values.justice-trust.interpret",
+        "skill.religion.morality-values.justice-trust.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ADALET, DOĞRULUK VE GÜVEN",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "ahlaki sorumluluk",
+          "right": "kişinin özgürce yaptığı davranışların sonuçlarını ahlaki ölçülerle üstlenmesi"
+        },
+        {
+          "id": "p2",
+          "left": "adalet",
+          "right": "hak ve sorumlulukları gözeterek dengeli ve hakkaniyetli davranma"
+        },
+        {
+          "id": "p3",
+          "left": "kul hakkı",
+          "right": "başkasının maddi veya manevi hakkını gözetme sorumluluğu"
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.morality-values.mercy-rights.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "kul hakkı, başkasının maddi veya manevi hakkını gözetme sorumluluğu.",
+      "skillIds": [
+        "skill.religion.morality-values.mercy-rights.interpret",
+        "skill.religion.morality-values.mercy-rights.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · MERHAMET, YARDIMLAŞMA VE KUL HAKKI",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "kul hakkı",
+          "back": "başkasının maddi veya manevi hakkını gözetme sorumluluğu",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.morality-values.mercy-rights.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "kul hakkı, başkasının maddi veya manevi hakkını gözetme sorumluluğu.",
+      "skillIds": [
+        "skill.religion.morality-values.mercy-rights.interpret",
+        "skill.religion.morality-values.mercy-rights.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · MERHAMET, YARDIMLAŞMA VE KUL HAKKI",
+      "prompt": "“Başkasının maddi veya manevi hakkını gözetme sorumluluğu” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "ahlaki sorumluluk"
+        },
+        {
+          "id": "b",
+          "label": "adalet"
+        },
+        {
+          "id": "c",
+          "label": "kul hakkı"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "c"
+    },
+    {
+      "id": "exercise.religion.morality-values.mercy-rights.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada kul hakkı kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.morality-values.mercy-rights.interpret",
+        "skill.religion.morality-values.mercy-rights.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · MERHAMET, YARDIMLAŞMA VE KUL HAKKI",
+      "prompt": "Bir öğrenci kul hakkı konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.morality-values.mercy-rights.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Merhamet ile yardım davranışını ilişkilendirir. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.morality-values.mercy-rights.interpret",
+        "skill.religion.morality-values.mercy-rights.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · MERHAMET, YARDIMLAŞMA VE KUL HAKKI",
+      "prompt": "Merhamet ile yardım davranışını ilişkilendirir. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.morality-values.mercy-rights.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "Kul hakkı ihlalini günlük hayat örneklerinde ayırt eder. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.morality-values.mercy-rights.interpret",
+        "skill.religion.morality-values.mercy-rights.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · MERHAMET, YARDIMLAŞMA VE KUL HAKKI",
+      "prompt": "Bir açıklama, kul hakkı kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.morality-values.mercy-rights.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. kul hakkı, başkasının maddi veya manevi hakkını gözetme sorumluluğu; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.morality-values.mercy-rights.interpret",
+        "skill.religion.morality-values.mercy-rights.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · MERHAMET, YARDIMLAŞMA VE KUL HAKKI",
+      "statement": "kul hakkı kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.morality-values.mercy-rights.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.morality-values.mercy-rights.interpret",
+        "skill.religion.morality-values.mercy-rights.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · MERHAMET, YARDIMLAŞMA VE KUL HAKKI",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "ahlaki sorumluluk",
+          "right": "kişinin özgürce yaptığı davranışların sonuçlarını ahlaki ölçülerle üstlenmesi"
+        },
+        {
+          "id": "p2",
+          "left": "adalet",
+          "right": "hak ve sorumlulukları gözeterek dengeli ve hakkaniyetli davranma"
+        },
+        {
+          "id": "p3",
+          "left": "kul hakkı",
+          "right": "başkasının maddi veya manevi hakkını gözetme sorumluluğu"
+        }
+      ]
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.religion.morality-values.01",
+      "unitId": "tyt.religion.morality-values",
+      "kind": "lesson",
+      "title": "Ahlak, Değer ve Sorumluluk",
+      "order": 1,
+      "lessonId": "lesson.religion.morality-values.moral-agency.001",
+      "prerequisiteIds": []
+    },
+    {
+      "id": "path.religion.morality-values.02",
+      "unitId": "tyt.religion.morality-values",
+      "kind": "lesson",
+      "title": "Adalet, Doğruluk ve Güven",
+      "order": 2,
+      "lessonId": "lesson.religion.morality-values.justice-trust.001",
+      "prerequisiteIds": [
+        "path.religion.morality-values.01"
+      ]
+    },
+    {
+      "id": "path.religion.morality-values.03",
+      "unitId": "tyt.religion.morality-values",
+      "kind": "lesson",
+      "title": "Merhamet, Yardımlaşma ve Kul Hakkı",
+      "order": 3,
+      "lessonId": "lesson.religion.morality-values.mercy-rights.001",
+      "prerequisiteIds": [
+        "path.religion.morality-values.02"
+      ]
+    }
+  ]
+}

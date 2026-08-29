@@ -1,0 +1,531 @@
+{
+  "concepts": [
+    {
+      "definition": "Toplu yerleşme gelişebilir",
+      "id": "concept.geography.settlement.patterns",
+      "term": "Su kaynakları sınırlı düzlükte evler kuyunun çevresindedir",
+      "topicId": "tyt.geography.settlement.patterns"
+    },
+    {
+      "definition": "Doğal koşullar yerleşmeyi destekler",
+      "id": "concept.geography.settlement.factors",
+      "term": "Eğim azalır ve suya erişim kolaylaşır",
+      "topicId": "tyt.geography.settlement.factors"
+    }
+  ],
+  "exercises": [
+    {
+      "correctOptionId": "opt-1",
+      "difficulty": 2,
+      "explanation": "Su kaynakları sınırlı düzlükte evler kuyunun çevresindedir durumunda toplu yerleşme gelişebilir. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.settlement.patterns.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Toplu yerleşme gelişebilir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Dağınık yerleşme gelişebilir"
+        },
+        {
+          "id": "opt-3",
+          "label": "Geçici yerleşmedir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Kentsel yerleşme özelliği güçlenir"
+        }
+      ],
+      "prompt": "Su kaynakları sınırlı düzlükte evler kuyunun çevresindedir. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.settlement.patterns.interpret"
+      ],
+      "tag": "COĞRAFYA · YERLEŞME TÜRLERİ"
+    },
+    {
+      "correctOptionId": "opt-2",
+      "difficulty": 4,
+      "explanation": "Engebeli ve suyun bol olduğu alanda evler uzak aralıklıdır durumunda dağınık yerleşme gelişebilir. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.settlement.patterns.001.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Toplu yerleşme gelişebilir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Dağınık yerleşme gelişebilir"
+        },
+        {
+          "id": "opt-3",
+          "label": "Geçici yerleşmedir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Kentsel yerleşme özelliği güçlenir"
+        }
+      ],
+      "prompt": "Engebeli ve suyun bol olduğu alanda evler uzak aralıklıdır. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.settlement.patterns.interpret"
+      ],
+      "tag": "COĞRAFYA · YERLEŞME TÜRLERİ"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 3,
+      "explanation": "Yayla yalnız yaz mevsiminde kullanılır ile geçici yerleşmedir arasında doğrudan bir coğrafi ilişki vardır.",
+      "id": "exercise.geography.settlement.patterns.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.settlement.patterns.interpret"
+      ],
+      "statement": "Yayla yalnız yaz mevsiminde kullanılır; bunun sonucunda geçici yerleşmedir.",
+      "tag": "COĞRAFYA · YERLEŞME TÜRLERİ"
+    },
+    {
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "Toplu yerleşme gelişebilir"
+        },
+        {
+          "id": "w-2",
+          "label": "Dağınık yerleşme gelişebilir"
+        },
+        {
+          "id": "w-3",
+          "label": "Geçici yerleşmedir"
+        },
+        {
+          "id": "w-4",
+          "label": "Kentsel yerleşme özelliği güçlenir"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "Sanayi ve hizmetler baskındır koşulunun beklenen sonucu “Kentsel yerleşme özelliği güçlenir” ilişkisidir.",
+      "hint": "Sanayi ve hizmetler baskındır",
+      "id": "exercise.geography.settlement.patterns.001.blank01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.settlement.patterns.interpret"
+      ],
+      "solutionTokenIds": [
+        "w-4"
+      ],
+      "title": "Sanayi ve hizmetler baskındır durumunda sonuç"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Her koşul, kendisinden beklenen özgün coğrafi sonuçla eşleştirilir; aynı sonuç iki kez kullanılmaz.",
+      "id": "exercise.geography.settlement.patterns.001.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Su kaynakları sınırlı düzlükte evler kuyunun çevresindedir",
+          "right": "Toplu yerleşme gelişebilir"
+        },
+        {
+          "id": "pair-2",
+          "left": "Engebeli ve suyun bol olduğu alanda evler uzak aralıklıdır",
+          "right": "Dağınık yerleşme gelişebilir"
+        },
+        {
+          "id": "pair-3",
+          "left": "Yayla yalnız yaz mevsiminde kullanılır",
+          "right": "Geçici yerleşmedir"
+        },
+        {
+          "id": "pair-4",
+          "left": "Sanayi ve hizmetler baskındır",
+          "right": "Kentsel yerleşme özelliği güçlenir"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.settlement.patterns.interpret"
+      ],
+      "subtitle": "Koşulu doğru coğrafi sonuçla birleştir.",
+      "tag": "COĞRAFYA · YERLEŞME TÜRLERİ",
+      "title": "İlişkiyi eşleştir"
+    },
+    {
+      "cards": [
+        {
+          "back": "Toplu yerleşme gelişebilir",
+          "front": "Su kaynakları sınırlı düzlükte evler kuyunun çevresindedir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-1"
+        },
+        {
+          "back": "Dağınık yerleşme gelişebilir",
+          "front": "Engebeli ve suyun bol olduğu alanda evler uzak aralıklıdır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-2"
+        },
+        {
+          "back": "Geçici yerleşmedir",
+          "front": "Yayla yalnız yaz mevsiminde kullanılır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-3"
+        },
+        {
+          "back": "Kentsel yerleşme özelliği güçlenir",
+          "front": "Sanayi ve hizmetler baskındır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-4"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Kartlar temel ilişkileri kısa tekrar için özetler; puanlanan skill coverage hesabına katılmaz.",
+      "id": "exercise.geography.settlement.patterns.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.settlement.patterns.interpret"
+      ],
+      "tag": "COĞRAFYA · YERLEŞME TÜRLERİ"
+    },
+    {
+      "correctOptionId": "opt-1",
+      "difficulty": 2,
+      "explanation": "Eğim azalır ve suya erişim kolaylaşır durumunda doğal koşullar yerleşmeyi destekler. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.settlement.factors.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Doğal koşullar yerleşmeyi destekler"
+        },
+        {
+          "id": "opt-2",
+          "label": "Beşerî çekicilik artar"
+        },
+        {
+          "id": "opt-3",
+          "label": "Yerleşme güvenliği azalır"
+        },
+        {
+          "id": "opt-4",
+          "label": "İstihdam kaynaklı yerleşme büyüyebilir"
+        }
+      ],
+      "prompt": "Eğim azalır ve suya erişim kolaylaşır. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.settlement.factors.interpret"
+      ],
+      "tag": "COĞRAFYA · YERLEŞMEYİ ETKİLEYEN FAKTÖRLER"
+    },
+    {
+      "correctOptionId": "opt-2",
+      "difficulty": 4,
+      "explanation": "Ulaşım kavşağı oluşur durumunda beşerî çekicilik artar. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.settlement.factors.001.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Doğal koşullar yerleşmeyi destekler"
+        },
+        {
+          "id": "opt-2",
+          "label": "Beşerî çekicilik artar"
+        },
+        {
+          "id": "opt-3",
+          "label": "Yerleşme güvenliği azalır"
+        },
+        {
+          "id": "opt-4",
+          "label": "İstihdam kaynaklı yerleşme büyüyebilir"
+        }
+      ],
+      "prompt": "Ulaşım kavşağı oluşur. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.settlement.factors.interpret"
+      ],
+      "tag": "COĞRAFYA · YERLEŞMEYİ ETKİLEYEN FAKTÖRLER"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 3,
+      "explanation": "Çığ riski yüksek yamaç seçilir ile yerleşme güvenliği azalır arasında doğrudan bir coğrafi ilişki vardır.",
+      "id": "exercise.geography.settlement.factors.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.settlement.factors.interpret"
+      ],
+      "statement": "Çığ riski yüksek yamaç seçilir; bunun sonucunda yerleşme güvenliği azalır.",
+      "tag": "COĞRAFYA · YERLEŞMEYİ ETKİLEYEN FAKTÖRLER"
+    },
+    {
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "Doğal koşullar yerleşmeyi destekler"
+        },
+        {
+          "id": "w-2",
+          "label": "Beşerî çekicilik artar"
+        },
+        {
+          "id": "w-3",
+          "label": "Yerleşme güvenliği azalır"
+        },
+        {
+          "id": "w-4",
+          "label": "İstihdam kaynaklı yerleşme büyüyebilir"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "Yeni sanayi tesisi açılır koşulunun beklenen sonucu “İstihdam kaynaklı yerleşme büyüyebilir” ilişkisidir.",
+      "hint": "Yeni sanayi tesisi açılır",
+      "id": "exercise.geography.settlement.factors.001.blank01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.settlement.factors.interpret"
+      ],
+      "solutionTokenIds": [
+        "w-4"
+      ],
+      "title": "Yeni sanayi tesisi açılır durumunda sonuç"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Her koşul, kendisinden beklenen özgün coğrafi sonuçla eşleştirilir; aynı sonuç iki kez kullanılmaz.",
+      "id": "exercise.geography.settlement.factors.001.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Eğim azalır ve suya erişim kolaylaşır",
+          "right": "Doğal koşullar yerleşmeyi destekler"
+        },
+        {
+          "id": "pair-2",
+          "left": "Ulaşım kavşağı oluşur",
+          "right": "Beşerî çekicilik artar"
+        },
+        {
+          "id": "pair-3",
+          "left": "Çığ riski yüksek yamaç seçilir",
+          "right": "Yerleşme güvenliği azalır"
+        },
+        {
+          "id": "pair-4",
+          "left": "Yeni sanayi tesisi açılır",
+          "right": "İstihdam kaynaklı yerleşme büyüyebilir"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.settlement.factors.interpret"
+      ],
+      "subtitle": "Koşulu doğru coğrafi sonuçla birleştir.",
+      "tag": "COĞRAFYA · YERLEŞMEYİ ETKİLEYEN FAKTÖRLER",
+      "title": "İlişkiyi eşleştir"
+    },
+    {
+      "cards": [
+        {
+          "back": "Doğal koşullar yerleşmeyi destekler",
+          "front": "Eğim azalır ve suya erişim kolaylaşır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-1"
+        },
+        {
+          "back": "Beşerî çekicilik artar",
+          "front": "Ulaşım kavşağı oluşur",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-2"
+        },
+        {
+          "back": "Yerleşme güvenliği azalır",
+          "front": "Çığ riski yüksek yamaç seçilir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-3"
+        },
+        {
+          "back": "İstihdam kaynaklı yerleşme büyüyebilir",
+          "front": "Yeni sanayi tesisi açılır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-4"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Kartlar temel ilişkileri kısa tekrar için özetler; puanlanan skill coverage hesabına katılmaz.",
+      "id": "exercise.geography.settlement.factors.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.settlement.factors.interpret"
+      ],
+      "tag": "COĞRAFYA · YERLEŞMEYİ ETKİLEYEN FAKTÖRLER"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.geography.settlement.patterns.001.mcq01",
+        "exercise.geography.settlement.patterns.001.mcq02",
+        "exercise.geography.settlement.patterns.001.tf01",
+        "exercise.geography.settlement.patterns.001.blank01",
+        "exercise.geography.settlement.patterns.001.match01",
+        "exercise.geography.settlement.patterns.001.card01"
+      ],
+      "id": "lesson.geography.settlement.patterns.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Kır-kent, toplu-dağınık ve geçici-sürekli yerleşmeleri özelliklerinden ayırt eder.",
+      "title": "Yerleşme Türleri",
+      "topicId": "tyt.geography.settlement.patterns"
+    },
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.geography.settlement.factors.001.mcq01",
+        "exercise.geography.settlement.factors.001.mcq02",
+        "exercise.geography.settlement.factors.001.tf01",
+        "exercise.geography.settlement.factors.001.blank01",
+        "exercise.geography.settlement.factors.001.match01",
+        "exercise.geography.settlement.factors.001.card01"
+      ],
+      "id": "lesson.geography.settlement.factors.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Yerleşme yeri ve dokusunu belirleyen doğal ve beşerî faktörleri ayırır.",
+      "title": "Yerleşmeyi Etkileyen Faktörler",
+      "topicId": "tyt.geography.settlement.factors"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.geography.settlement.01",
+      "kind": "lesson",
+      "lessonId": "lesson.geography.settlement.patterns.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.geography.migration.02"
+      ],
+      "title": "Yerleşme Türleri",
+      "unitId": "tyt.geography.settlement"
+    },
+    {
+      "id": "path.geography.settlement.02",
+      "kind": "practice",
+      "lessonId": "lesson.geography.settlement.factors.001",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.geography.settlement.01"
+      ],
+      "title": "Yerleşmeyi Etkileyen Faktörler Uygulaması",
+      "unitId": "tyt.geography.settlement"
+    }
+  ],
+  "skills": [
+    {
+      "description": "Kır-kent, toplu-dağınık ve geçici-sürekli yerleşmeleri özelliklerinden ayırt eder.",
+      "id": "skill.geography.settlement.patterns.interpret",
+      "title": "Kır-kent, toplu-dağınık ve geçici-sürekli yerleşmeleri özelliklerinden ayırt eder.",
+      "topicId": "tyt.geography.settlement.patterns"
+    },
+    {
+      "description": "Yerleşme yeri ve dokusunu belirleyen doğal ve beşerî faktörleri ayırır.",
+      "id": "skill.geography.settlement.factors.interpret",
+      "title": "Yerleşme yeri ve dokusunu belirleyen doğal ve beşerî faktörleri ayırır.",
+      "topicId": "tyt.geography.settlement.factors"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.geography.settlement.patterns"
+      ],
+      "id": "tyt.geography.settlement.patterns",
+      "skillIds": [
+        "skill.geography.settlement.patterns.interpret"
+      ],
+      "title": "Yerleşme Türleri",
+      "unitId": "tyt.geography.settlement"
+    },
+    {
+      "conceptIds": [
+        "concept.geography.settlement.factors"
+      ],
+      "id": "tyt.geography.settlement.factors",
+      "skillIds": [
+        "skill.geography.settlement.factors.interpret"
+      ],
+      "title": "Yerleşmeyi Etkileyen Faktörler",
+      "unitId": "tyt.geography.settlement"
+    }
+  ],
+  "unitId": "tyt.geography.settlement"
+}

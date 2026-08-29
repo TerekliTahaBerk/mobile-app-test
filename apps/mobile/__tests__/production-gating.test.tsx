@@ -39,24 +39,18 @@ describe('build-mode route gates', () => {
     ).toBeTruthy();
   });
 
-  it('omits the league navigation entry in production', async () => {
+  it('keeps the league destination stable without exposing fictional standings', async () => {
     await render(
       <HomeScreen
-        exam="tyt"
-        onChangeExam={jest.fn()}
         onContinue={jest.fn()}
         onOpenLeague={jest.fn()}
-        onOpenSubject={jest.fn()}
         onSelectTab={jest.fn()}
         onStartDailyPlan={jest.fn()}
         viewModel={homePreviewData}
       />,
     );
 
-    if (APP_MODE === 'productionPilot') {
-      expect(screen.queryByTestId('tab-lig')).toBeNull();
-    } else {
-      expect(screen.getByTestId('tab-lig')).toBeTruthy();
-    }
+    expect(screen.getByTestId('tab-lig')).toBeTruthy();
+    expect(screen.getByTestId('home-league-row')).toBeTruthy();
   });
 });

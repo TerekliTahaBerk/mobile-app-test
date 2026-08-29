@@ -77,6 +77,7 @@ export type SubjectThemeKey =
   | 'math'
   | 'philosophy'
   | 'physics'
+  | 'religion'
   | 'turkish';
 
 export type Subject = {

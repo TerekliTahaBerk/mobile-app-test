@@ -1,0 +1,531 @@
+{
+  "concepts": [
+    {
+      "definition": "Karasallık etkisi güçlü olabilir",
+      "id": "concept.geography.climates.climate-data",
+      "term": "Yıllık sıcaklık farkı çok büyüktür",
+      "topicId": "tyt.geography.climates.climate-data"
+    },
+    {
+      "definition": "Maki yaygın doğal bitki örtüsüdür",
+      "id": "concept.geography.climates.climate-vegetation",
+      "term": "Akdeniz iklimi görülür",
+      "topicId": "tyt.geography.climates.climate-vegetation"
+    }
+  ],
+  "exercises": [
+    {
+      "correctOptionId": "opt-1",
+      "difficulty": 2,
+      "explanation": "Yıllık sıcaklık farkı çok büyüktür durumunda karasallık etkisi güçlü olabilir. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.climates.climate-data.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Karasallık etkisi güçlü olabilir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Ekvatoral iklim olasılığı artar"
+        },
+        {
+          "id": "opt-3",
+          "label": "Akdeniz iklimi göstergesidir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Denizellik etkisi düşünülebilir"
+        }
+      ],
+      "prompt": "Yıllık sıcaklık farkı çok büyüktür. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.climates.climate-data.interpret"
+      ],
+      "tag": "COĞRAFYA · İKLİM VERİSİ OKUMA"
+    },
+    {
+      "correctOptionId": "opt-2",
+      "difficulty": 4,
+      "explanation": "Yağış yıl boyunca düzenlidir ve sıcaklık yüksektir durumunda ekvatoral iklim olasılığı artar. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.climates.climate-data.001.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Karasallık etkisi güçlü olabilir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Ekvatoral iklim olasılığı artar"
+        },
+        {
+          "id": "opt-3",
+          "label": "Akdeniz iklimi göstergesidir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Denizellik etkisi düşünülebilir"
+        }
+      ],
+      "prompt": "Yağış yıl boyunca düzenlidir ve sıcaklık yüksektir. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.climates.climate-data.interpret"
+      ],
+      "tag": "COĞRAFYA · İKLİM VERİSİ OKUMA"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 3,
+      "explanation": "Yazlar kurak, kışlar yağışlıdır ile akdeniz iklimi göstergesidir arasında doğrudan bir coğrafi ilişki vardır.",
+      "id": "exercise.geography.climates.climate-data.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.climates.climate-data.interpret"
+      ],
+      "statement": "Yazlar kurak, kışlar yağışlıdır; bunun sonucunda akdeniz iklimi göstergesidir.",
+      "tag": "COĞRAFYA · İKLİM VERİSİ OKUMA"
+    },
+    {
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "Karasallık etkisi güçlü olabilir"
+        },
+        {
+          "id": "w-2",
+          "label": "Ekvatoral iklim olasılığı artar"
+        },
+        {
+          "id": "w-3",
+          "label": "Akdeniz iklimi göstergesidir"
+        },
+        {
+          "id": "w-4",
+          "label": "Denizellik etkisi düşünülebilir"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "Kış sıcaklığı çok düşmez ve fark azdır koşulunun beklenen sonucu “Denizellik etkisi düşünülebilir” ilişkisidir.",
+      "hint": "Kış sıcaklığı çok düşmez ve fark azdır",
+      "id": "exercise.geography.climates.climate-data.001.blank01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.climates.climate-data.interpret"
+      ],
+      "solutionTokenIds": [
+        "w-4"
+      ],
+      "title": "Kış sıcaklığı çok düşmez ve fark azdır durumunda sonuç"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Her koşul, kendisinden beklenen özgün coğrafi sonuçla eşleştirilir; aynı sonuç iki kez kullanılmaz.",
+      "id": "exercise.geography.climates.climate-data.001.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Yıllık sıcaklık farkı çok büyüktür",
+          "right": "Karasallık etkisi güçlü olabilir"
+        },
+        {
+          "id": "pair-2",
+          "left": "Yağış yıl boyunca düzenlidir ve sıcaklık yüksektir",
+          "right": "Ekvatoral iklim olasılığı artar"
+        },
+        {
+          "id": "pair-3",
+          "left": "Yazlar kurak, kışlar yağışlıdır",
+          "right": "Akdeniz iklimi göstergesidir"
+        },
+        {
+          "id": "pair-4",
+          "left": "Kış sıcaklığı çok düşmez ve fark azdır",
+          "right": "Denizellik etkisi düşünülebilir"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.climates.climate-data.interpret"
+      ],
+      "subtitle": "Koşulu doğru coğrafi sonuçla birleştir.",
+      "tag": "COĞRAFYA · İKLİM VERİSİ OKUMA",
+      "title": "İlişkiyi eşleştir"
+    },
+    {
+      "cards": [
+        {
+          "back": "Karasallık etkisi güçlü olabilir",
+          "front": "Yıllık sıcaklık farkı çok büyüktür",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-1"
+        },
+        {
+          "back": "Ekvatoral iklim olasılığı artar",
+          "front": "Yağış yıl boyunca düzenlidir ve sıcaklık yüksektir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-2"
+        },
+        {
+          "back": "Akdeniz iklimi göstergesidir",
+          "front": "Yazlar kurak, kışlar yağışlıdır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-3"
+        },
+        {
+          "back": "Denizellik etkisi düşünülebilir",
+          "front": "Kış sıcaklığı çok düşmez ve fark azdır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-4"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Kartlar temel ilişkileri kısa tekrar için özetler; puanlanan skill coverage hesabına katılmaz.",
+      "id": "exercise.geography.climates.climate-data.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.climates.climate-data.interpret"
+      ],
+      "tag": "COĞRAFYA · İKLİM VERİSİ OKUMA"
+    },
+    {
+      "correctOptionId": "opt-1",
+      "difficulty": 2,
+      "explanation": "Akdeniz iklimi görülür durumunda maki yaygın doğal bitki örtüsüdür. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.climates.climate-vegetation.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Maki yaygın doğal bitki örtüsüdür"
+        },
+        {
+          "id": "opt-2",
+          "label": "Geniş yapraklı yağmur ormanları gelişir"
+        },
+        {
+          "id": "opt-3",
+          "label": "Çayır örtüsü gelişebilir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Kurakçıl bitkiler ve seyrek örtü görülür"
+        }
+      ],
+      "prompt": "Akdeniz iklimi görülür. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.climates.climate-vegetation.interpret"
+      ],
+      "tag": "COĞRAFYA · İKLİM VE BİTKİ ÖRTÜSÜ"
+    },
+    {
+      "correctOptionId": "opt-2",
+      "difficulty": 4,
+      "explanation": "Yıl boyu sıcak ve yağışlı koşullar vardır durumunda geniş yapraklı yağmur ormanları gelişir. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.climates.climate-vegetation.001.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Maki yaygın doğal bitki örtüsüdür"
+        },
+        {
+          "id": "opt-2",
+          "label": "Geniş yapraklı yağmur ormanları gelişir"
+        },
+        {
+          "id": "opt-3",
+          "label": "Çayır örtüsü gelişebilir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Kurakçıl bitkiler ve seyrek örtü görülür"
+        }
+      ],
+      "prompt": "Yıl boyu sıcak ve yağışlı koşullar vardır. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.climates.climate-vegetation.interpret"
+      ],
+      "tag": "COĞRAFYA · İKLİM VE BİTKİ ÖRTÜSÜ"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 3,
+      "explanation": "Yaz yağışlı karasal koşullar görülür ile çayır örtüsü gelişebilir arasında doğrudan bir coğrafi ilişki vardır.",
+      "id": "exercise.geography.climates.climate-vegetation.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.climates.climate-vegetation.interpret"
+      ],
+      "statement": "Yaz yağışlı karasal koşullar görülür; bunun sonucunda çayır örtüsü gelişebilir.",
+      "tag": "COĞRAFYA · İKLİM VE BİTKİ ÖRTÜSÜ"
+    },
+    {
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "Maki yaygın doğal bitki örtüsüdür"
+        },
+        {
+          "id": "w-2",
+          "label": "Geniş yapraklı yağmur ormanları gelişir"
+        },
+        {
+          "id": "w-3",
+          "label": "Çayır örtüsü gelişebilir"
+        },
+        {
+          "id": "w-4",
+          "label": "Kurakçıl bitkiler ve seyrek örtü görülür"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "Yağış çok azdır koşulunun beklenen sonucu “Kurakçıl bitkiler ve seyrek örtü görülür” ilişkisidir.",
+      "hint": "Yağış çok azdır",
+      "id": "exercise.geography.climates.climate-vegetation.001.blank01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.climates.climate-vegetation.interpret"
+      ],
+      "solutionTokenIds": [
+        "w-4"
+      ],
+      "title": "Yağış çok azdır durumunda sonuç"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Her koşul, kendisinden beklenen özgün coğrafi sonuçla eşleştirilir; aynı sonuç iki kez kullanılmaz.",
+      "id": "exercise.geography.climates.climate-vegetation.001.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Akdeniz iklimi görülür",
+          "right": "Maki yaygın doğal bitki örtüsüdür"
+        },
+        {
+          "id": "pair-2",
+          "left": "Yıl boyu sıcak ve yağışlı koşullar vardır",
+          "right": "Geniş yapraklı yağmur ormanları gelişir"
+        },
+        {
+          "id": "pair-3",
+          "left": "Yaz yağışlı karasal koşullar görülür",
+          "right": "Çayır örtüsü gelişebilir"
+        },
+        {
+          "id": "pair-4",
+          "left": "Yağış çok azdır",
+          "right": "Kurakçıl bitkiler ve seyrek örtü görülür"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.climates.climate-vegetation.interpret"
+      ],
+      "subtitle": "Koşulu doğru coğrafi sonuçla birleştir.",
+      "tag": "COĞRAFYA · İKLİM VE BİTKİ ÖRTÜSÜ",
+      "title": "İlişkiyi eşleştir"
+    },
+    {
+      "cards": [
+        {
+          "back": "Maki yaygın doğal bitki örtüsüdür",
+          "front": "Akdeniz iklimi görülür",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-1"
+        },
+        {
+          "back": "Geniş yapraklı yağmur ormanları gelişir",
+          "front": "Yıl boyu sıcak ve yağışlı koşullar vardır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-2"
+        },
+        {
+          "back": "Çayır örtüsü gelişebilir",
+          "front": "Yaz yağışlı karasal koşullar görülür",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-3"
+        },
+        {
+          "back": "Kurakçıl bitkiler ve seyrek örtü görülür",
+          "front": "Yağış çok azdır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-4"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Kartlar temel ilişkileri kısa tekrar için özetler; puanlanan skill coverage hesabına katılmaz.",
+      "id": "exercise.geography.climates.climate-vegetation.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.climates.climate-vegetation.interpret"
+      ],
+      "tag": "COĞRAFYA · İKLİM VE BİTKİ ÖRTÜSÜ"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.geography.climates.climate-data.001.mcq01",
+        "exercise.geography.climates.climate-data.001.mcq02",
+        "exercise.geography.climates.climate-data.001.tf01",
+        "exercise.geography.climates.climate-data.001.blank01",
+        "exercise.geography.climates.climate-data.001.match01",
+        "exercise.geography.climates.climate-data.001.card01"
+      ],
+      "id": "lesson.geography.climates.climate-data.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Sıcaklık ve yağış verilerinden iklim özelliklerini çıkarır.",
+      "title": "İklim Verisi Okuma",
+      "topicId": "tyt.geography.climates.climate-data"
+    },
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.geography.climates.climate-vegetation.001.mcq01",
+        "exercise.geography.climates.climate-vegetation.001.mcq02",
+        "exercise.geography.climates.climate-vegetation.001.tf01",
+        "exercise.geography.climates.climate-vegetation.001.blank01",
+        "exercise.geography.climates.climate-vegetation.001.match01",
+        "exercise.geography.climates.climate-vegetation.001.card01"
+      ],
+      "id": "lesson.geography.climates.climate-vegetation.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "İklim koşulları ile doğal bitki örtüsü arasındaki ilişkiyi yorumlar.",
+      "title": "İklim ve Bitki Örtüsü",
+      "topicId": "tyt.geography.climates.climate-vegetation"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.geography.climates.01",
+      "kind": "lesson",
+      "lessonId": "lesson.geography.climates.climate-data.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.geography.atmosphere-temperature.02"
+      ],
+      "title": "İklim Verisi Okuma",
+      "unitId": "tyt.geography.climates"
+    },
+    {
+      "id": "path.geography.climates.02",
+      "kind": "practice",
+      "lessonId": "lesson.geography.climates.climate-vegetation.001",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.geography.climates.01"
+      ],
+      "title": "İklim ve Bitki Örtüsü Uygulaması",
+      "unitId": "tyt.geography.climates"
+    }
+  ],
+  "skills": [
+    {
+      "description": "Sıcaklık ve yağış verilerinden iklim özelliklerini çıkarır.",
+      "id": "skill.geography.climates.climate-data.interpret",
+      "title": "Sıcaklık ve yağış verilerinden iklim özelliklerini çıkarır.",
+      "topicId": "tyt.geography.climates.climate-data"
+    },
+    {
+      "description": "İklim koşulları ile doğal bitki örtüsü arasındaki ilişkiyi yorumlar.",
+      "id": "skill.geography.climates.climate-vegetation.interpret",
+      "title": "İklim koşulları ile doğal bitki örtüsü arasındaki ilişkiyi yorumlar.",
+      "topicId": "tyt.geography.climates.climate-vegetation"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.geography.climates.climate-data"
+      ],
+      "id": "tyt.geography.climates.climate-data",
+      "skillIds": [
+        "skill.geography.climates.climate-data.interpret"
+      ],
+      "title": "İklim Verisi Okuma",
+      "unitId": "tyt.geography.climates"
+    },
+    {
+      "conceptIds": [
+        "concept.geography.climates.climate-vegetation"
+      ],
+      "id": "tyt.geography.climates.climate-vegetation",
+      "skillIds": [
+        "skill.geography.climates.climate-vegetation.interpret"
+      ],
+      "title": "İklim ve Bitki Örtüsü",
+      "unitId": "tyt.geography.climates"
+    }
+  ],
+  "unitId": "tyt.geography.climates"
+}

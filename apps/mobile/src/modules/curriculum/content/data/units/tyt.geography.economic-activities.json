@@ -1,0 +1,531 @@
+{
+  "concepts": [
+    {
+      "definition": "Akdeniz iklimi destekleyicidir",
+      "id": "concept.geography.economic-activities.primary",
+      "term": "Yaz kuraklığı isteyen zeytin yetiştirilir",
+      "topicId": "tyt.geography.economic-activities.primary"
+    },
+    {
+      "definition": "Sanayi tesisi kaynağa yakın kurulabilir",
+      "id": "concept.geography.economic-activities.industry-services",
+      "term": "Ham madde ağır ve hacimlidir",
+      "topicId": "tyt.geography.economic-activities.industry-services"
+    }
+  ],
+  "exercises": [
+    {
+      "correctOptionId": "opt-1",
+      "difficulty": 2,
+      "explanation": "Yaz kuraklığı isteyen zeytin yetiştirilir durumunda akdeniz iklimi destekleyicidir. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.economic-activities.primary.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Akdeniz iklimi destekleyicidir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Büyükbaş mera hayvancılığı gelişebilir"
+        },
+        {
+          "id": "opt-3",
+          "label": "Ormancılık faaliyetleri gelişebilir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Madencilik yapılabilir"
+        }
+      ],
+      "prompt": "Yaz kuraklığı isteyen zeytin yetiştirilir. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.economic-activities.primary.interpret"
+      ],
+      "tag": "COĞRAFYA · TARIM, HAYVANCILIK VE MADENCİLİK"
+    },
+    {
+      "correctOptionId": "opt-2",
+      "difficulty": 4,
+      "explanation": "Geniş çayırlar bulunur durumunda büyükbaş mera hayvancılığı gelişebilir. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.economic-activities.primary.001.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Akdeniz iklimi destekleyicidir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Büyükbaş mera hayvancılığı gelişebilir"
+        },
+        {
+          "id": "opt-3",
+          "label": "Ormancılık faaliyetleri gelişebilir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Madencilik yapılabilir"
+        }
+      ],
+      "prompt": "Geniş çayırlar bulunur. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.economic-activities.primary.interpret"
+      ],
+      "tag": "COĞRAFYA · TARIM, HAYVANCILIK VE MADENCİLİK"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 3,
+      "explanation": "Orman varlığı zengindir ile ormancılık faaliyetleri gelişebilir arasında doğrudan bir coğrafi ilişki vardır.",
+      "id": "exercise.geography.economic-activities.primary.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.economic-activities.primary.interpret"
+      ],
+      "statement": "Orman varlığı zengindir; bunun sonucunda ormancılık faaliyetleri gelişebilir.",
+      "tag": "COĞRAFYA · TARIM, HAYVANCILIK VE MADENCİLİK"
+    },
+    {
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "Akdeniz iklimi destekleyicidir"
+        },
+        {
+          "id": "w-2",
+          "label": "Büyükbaş mera hayvancılığı gelişebilir"
+        },
+        {
+          "id": "w-3",
+          "label": "Ormancılık faaliyetleri gelişebilir"
+        },
+        {
+          "id": "w-4",
+          "label": "Madencilik yapılabilir"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "Yer altı kaynağı ekonomik rezerv oluşturur koşulunun beklenen sonucu “Madencilik yapılabilir” ilişkisidir.",
+      "hint": "Yer altı kaynağı ekonomik rezerv oluşturur",
+      "id": "exercise.geography.economic-activities.primary.001.blank01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.economic-activities.primary.interpret"
+      ],
+      "solutionTokenIds": [
+        "w-4"
+      ],
+      "title": "Yer altı kaynağı ekonomik rezerv oluşturur durumunda sonuç"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Her koşul, kendisinden beklenen özgün coğrafi sonuçla eşleştirilir; aynı sonuç iki kez kullanılmaz.",
+      "id": "exercise.geography.economic-activities.primary.001.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Yaz kuraklığı isteyen zeytin yetiştirilir",
+          "right": "Akdeniz iklimi destekleyicidir"
+        },
+        {
+          "id": "pair-2",
+          "left": "Geniş çayırlar bulunur",
+          "right": "Büyükbaş mera hayvancılığı gelişebilir"
+        },
+        {
+          "id": "pair-3",
+          "left": "Orman varlığı zengindir",
+          "right": "Ormancılık faaliyetleri gelişebilir"
+        },
+        {
+          "id": "pair-4",
+          "left": "Yer altı kaynağı ekonomik rezerv oluşturur",
+          "right": "Madencilik yapılabilir"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.economic-activities.primary.interpret"
+      ],
+      "subtitle": "Koşulu doğru coğrafi sonuçla birleştir.",
+      "tag": "COĞRAFYA · TARIM, HAYVANCILIK VE MADENCİLİK",
+      "title": "İlişkiyi eşleştir"
+    },
+    {
+      "cards": [
+        {
+          "back": "Akdeniz iklimi destekleyicidir",
+          "front": "Yaz kuraklığı isteyen zeytin yetiştirilir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-1"
+        },
+        {
+          "back": "Büyükbaş mera hayvancılığı gelişebilir",
+          "front": "Geniş çayırlar bulunur",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-2"
+        },
+        {
+          "back": "Ormancılık faaliyetleri gelişebilir",
+          "front": "Orman varlığı zengindir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-3"
+        },
+        {
+          "back": "Madencilik yapılabilir",
+          "front": "Yer altı kaynağı ekonomik rezerv oluşturur",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-4"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Kartlar temel ilişkileri kısa tekrar için özetler; puanlanan skill coverage hesabına katılmaz.",
+      "id": "exercise.geography.economic-activities.primary.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.economic-activities.primary.interpret"
+      ],
+      "tag": "COĞRAFYA · TARIM, HAYVANCILIK VE MADENCİLİK"
+    },
+    {
+      "correctOptionId": "opt-1",
+      "difficulty": 2,
+      "explanation": "Ham madde ağır ve hacimlidir durumunda sanayi tesisi kaynağa yakın kurulabilir. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.economic-activities.industry-services.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Sanayi tesisi kaynağa yakın kurulabilir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Güneş enerjisi potansiyeli artar"
+        },
+        {
+          "id": "opt-3",
+          "label": "Turizm türleri çeşitlenebilir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Ticaret ve lojistik gelişebilir"
+        }
+      ],
+      "prompt": "Ham madde ağır ve hacimlidir. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.economic-activities.industry-services.interpret"
+      ],
+      "tag": "COĞRAFYA · SANAYİ, ENERJİ VE HİZMETLER"
+    },
+    {
+      "correctOptionId": "opt-2",
+      "difficulty": 4,
+      "explanation": "Güneşlenme süresi uzundur durumunda güneş enerjisi potansiyeli artar. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.economic-activities.industry-services.001.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Sanayi tesisi kaynağa yakın kurulabilir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Güneş enerjisi potansiyeli artar"
+        },
+        {
+          "id": "opt-3",
+          "label": "Turizm türleri çeşitlenebilir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Ticaret ve lojistik gelişebilir"
+        }
+      ],
+      "prompt": "Güneşlenme süresi uzundur. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.economic-activities.industry-services.interpret"
+      ],
+      "tag": "COĞRAFYA · SANAYİ, ENERJİ VE HİZMETLER"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 3,
+      "explanation": "Doğal ve kültürel çekicilik çeşitlidir ile turizm türleri çeşitlenebilir arasında doğrudan bir coğrafi ilişki vardır.",
+      "id": "exercise.geography.economic-activities.industry-services.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.economic-activities.industry-services.interpret"
+      ],
+      "statement": "Doğal ve kültürel çekicilik çeşitlidir; bunun sonucunda turizm türleri çeşitlenebilir.",
+      "tag": "COĞRAFYA · SANAYİ, ENERJİ VE HİZMETLER"
+    },
+    {
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "Sanayi tesisi kaynağa yakın kurulabilir"
+        },
+        {
+          "id": "w-2",
+          "label": "Güneş enerjisi potansiyeli artar"
+        },
+        {
+          "id": "w-3",
+          "label": "Turizm türleri çeşitlenebilir"
+        },
+        {
+          "id": "w-4",
+          "label": "Ticaret ve lojistik gelişebilir"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "Ulaşım kavşağı ve büyük pazar vardır koşulunun beklenen sonucu “Ticaret ve lojistik gelişebilir” ilişkisidir.",
+      "hint": "Ulaşım kavşağı ve büyük pazar vardır",
+      "id": "exercise.geography.economic-activities.industry-services.001.blank01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.economic-activities.industry-services.interpret"
+      ],
+      "solutionTokenIds": [
+        "w-4"
+      ],
+      "title": "Ulaşım kavşağı ve büyük pazar vardır durumunda sonuç"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Her koşul, kendisinden beklenen özgün coğrafi sonuçla eşleştirilir; aynı sonuç iki kez kullanılmaz.",
+      "id": "exercise.geography.economic-activities.industry-services.001.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Ham madde ağır ve hacimlidir",
+          "right": "Sanayi tesisi kaynağa yakın kurulabilir"
+        },
+        {
+          "id": "pair-2",
+          "left": "Güneşlenme süresi uzundur",
+          "right": "Güneş enerjisi potansiyeli artar"
+        },
+        {
+          "id": "pair-3",
+          "left": "Doğal ve kültürel çekicilik çeşitlidir",
+          "right": "Turizm türleri çeşitlenebilir"
+        },
+        {
+          "id": "pair-4",
+          "left": "Ulaşım kavşağı ve büyük pazar vardır",
+          "right": "Ticaret ve lojistik gelişebilir"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.economic-activities.industry-services.interpret"
+      ],
+      "subtitle": "Koşulu doğru coğrafi sonuçla birleştir.",
+      "tag": "COĞRAFYA · SANAYİ, ENERJİ VE HİZMETLER",
+      "title": "İlişkiyi eşleştir"
+    },
+    {
+      "cards": [
+        {
+          "back": "Sanayi tesisi kaynağa yakın kurulabilir",
+          "front": "Ham madde ağır ve hacimlidir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-1"
+        },
+        {
+          "back": "Güneş enerjisi potansiyeli artar",
+          "front": "Güneşlenme süresi uzundur",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-2"
+        },
+        {
+          "back": "Turizm türleri çeşitlenebilir",
+          "front": "Doğal ve kültürel çekicilik çeşitlidir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-3"
+        },
+        {
+          "back": "Ticaret ve lojistik gelişebilir",
+          "front": "Ulaşım kavşağı ve büyük pazar vardır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-4"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Kartlar temel ilişkileri kısa tekrar için özetler; puanlanan skill coverage hesabına katılmaz.",
+      "id": "exercise.geography.economic-activities.industry-services.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.economic-activities.industry-services.interpret"
+      ],
+      "tag": "COĞRAFYA · SANAYİ, ENERJİ VE HİZMETLER"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.geography.economic-activities.primary.001.mcq01",
+        "exercise.geography.economic-activities.primary.001.mcq02",
+        "exercise.geography.economic-activities.primary.001.tf01",
+        "exercise.geography.economic-activities.primary.001.blank01",
+        "exercise.geography.economic-activities.primary.001.match01",
+        "exercise.geography.economic-activities.primary.001.card01"
+      ],
+      "id": "lesson.geography.economic-activities.primary.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Doğal koşullar ve kaynaklarla birincil ekonomik faaliyetler arasında ilişki kurar.",
+      "title": "Tarım, Hayvancılık ve Madencilik",
+      "topicId": "tyt.geography.economic-activities.primary"
+    },
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.geography.economic-activities.industry-services.001.mcq01",
+        "exercise.geography.economic-activities.industry-services.001.mcq02",
+        "exercise.geography.economic-activities.industry-services.001.tf01",
+        "exercise.geography.economic-activities.industry-services.001.blank01",
+        "exercise.geography.economic-activities.industry-services.001.match01",
+        "exercise.geography.economic-activities.industry-services.001.card01"
+      ],
+      "id": "lesson.geography.economic-activities.industry-services.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Ham madde, enerji, pazar, ulaşım ve nüfusun ekonomik faaliyetlere etkisini yorumlar.",
+      "title": "Sanayi, Enerji ve Hizmetler",
+      "topicId": "tyt.geography.economic-activities.industry-services"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.geography.economic-activities.01",
+      "kind": "lesson",
+      "lessonId": "lesson.geography.economic-activities.primary.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.geography.turkey-landforms.02"
+      ],
+      "title": "Tarım, Hayvancılık ve Madencilik",
+      "unitId": "tyt.geography.economic-activities"
+    },
+    {
+      "id": "path.geography.economic-activities.02",
+      "kind": "practice",
+      "lessonId": "lesson.geography.economic-activities.industry-services.001",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.geography.economic-activities.01"
+      ],
+      "title": "Sanayi, Enerji ve Hizmetler Uygulaması",
+      "unitId": "tyt.geography.economic-activities"
+    }
+  ],
+  "skills": [
+    {
+      "description": "Doğal koşullar ve kaynaklarla birincil ekonomik faaliyetler arasında ilişki kurar.",
+      "id": "skill.geography.economic-activities.primary.interpret",
+      "title": "Doğal koşullar ve kaynaklarla birincil ekonomik faaliyetler arasında ilişki kurar.",
+      "topicId": "tyt.geography.economic-activities.primary"
+    },
+    {
+      "description": "Ham madde, enerji, pazar, ulaşım ve nüfusun ekonomik faaliyetlere etkisini yorumlar.",
+      "id": "skill.geography.economic-activities.industry-services.interpret",
+      "title": "Ham madde, enerji, pazar, ulaşım ve nüfusun ekonomik faaliyetlere etkisini yorumlar.",
+      "topicId": "tyt.geography.economic-activities.industry-services"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.geography.economic-activities.primary"
+      ],
+      "id": "tyt.geography.economic-activities.primary",
+      "skillIds": [
+        "skill.geography.economic-activities.primary.interpret"
+      ],
+      "title": "Tarım, Hayvancılık ve Madencilik",
+      "unitId": "tyt.geography.economic-activities"
+    },
+    {
+      "conceptIds": [
+        "concept.geography.economic-activities.industry-services"
+      ],
+      "id": "tyt.geography.economic-activities.industry-services",
+      "skillIds": [
+        "skill.geography.economic-activities.industry-services.interpret"
+      ],
+      "title": "Sanayi, Enerji ve Hizmetler",
+      "unitId": "tyt.geography.economic-activities"
+    }
+  ],
+  "unitId": "tyt.geography.economic-activities"
+}

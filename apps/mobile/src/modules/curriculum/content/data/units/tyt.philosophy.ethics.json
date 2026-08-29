@@ -1,0 +1,882 @@
+{
+  "unitId": "tyt.philosophy.ethics",
+  "topics": [
+    {
+      "id": "tyt.philosophy.ethics.action-freedom",
+      "unitId": "tyt.philosophy.ethics",
+      "title": "Ahlaki Eylem, Özgürlük ve Sorumluluk",
+      "skillIds": [
+        "skill.philosophy.ethics.action-freedom.freedom-responsibility",
+        "skill.philosophy.ethics.action-freedom.conscience-action"
+      ],
+      "conceptIds": [
+        "concept.philosophy.ethics.action-freedom.ozgurluk-ve-sorumluluk",
+        "concept.philosophy.ethics.action-freedom.vicdan"
+      ]
+    },
+    {
+      "id": "tyt.philosophy.ethics.moral-law",
+      "unitId": "tyt.philosophy.ethics",
+      "title": "Ahlak Yasası ve Özgür İrade",
+      "skillIds": [
+        "skill.philosophy.ethics.moral-law.universal-law",
+        "skill.philosophy.ethics.moral-law.determinism-autonomy"
+      ],
+      "conceptIds": [
+        "concept.philosophy.ethics.moral-law.evrensel-ahlak-yasasi",
+        "concept.philosophy.ethics.moral-law.ozgur-irade-yaklasimlari"
+      ]
+    },
+    {
+      "id": "tyt.philosophy.ethics.aim-good",
+      "unitId": "tyt.philosophy.ethics",
+      "title": "Ahlaki Eylemin Amacı",
+      "skillIds": [
+        "skill.philosophy.ethics.aim-good.pleasure-utility",
+        "skill.philosophy.ethics.aim-good.duty-egoism"
+      ],
+      "conceptIds": [
+        "concept.philosophy.ethics.aim-good.hedonizm-ve-utilitarizm",
+        "concept.philosophy.ethics.aim-good.odev-ahlaki-ve-egoizm"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "skill.philosophy.ethics.action-freedom.freedom-responsibility",
+      "title": "Özgürlük ve sorumluluk ilişkisini yorumlar",
+      "description": "Bir eylemin özgür seçim ve sonuçlarını üstlenme bakımından ahlaki sorumluluğunu yorumlar.",
+      "topicId": "tyt.philosophy.ethics.action-freedom"
+    },
+    {
+      "id": "skill.philosophy.ethics.action-freedom.conscience-action",
+      "title": "Vicdanın ahlaki eylemdeki rolünü yorumlar",
+      "description": "Vicdanın kişinin kendi eylemini ahlaki ölçülerle değerlendirmesindeki rolünü örnekten çıkarır.",
+      "topicId": "tyt.philosophy.ethics.action-freedom"
+    },
+    {
+      "id": "skill.philosophy.ethics.moral-law.universal-law",
+      "title": "Evrensel ahlak yasası problemini yorumlar",
+      "description": "Bir ahlak ilkesinin herkes için geçerli olup olamayacağına ilişkin görüşleri ayırt eder.",
+      "topicId": "tyt.philosophy.ethics.moral-law"
+    },
+    {
+      "id": "skill.philosophy.ethics.moral-law.determinism-autonomy",
+      "title": "Determinizm, indeterminizm ve otodeterminizmi ayırt eder",
+      "description": "İnsan eylemlerini zorunlu nedenlerle, nedensel belirsizlikle veya öz belirlemeyle açıklayan görüşleri ayırt eder.",
+      "topicId": "tyt.philosophy.ethics.moral-law"
+    },
+    {
+      "id": "skill.philosophy.ethics.aim-good.pleasure-utility",
+      "title": "Hedonizm ile utilitarizmi ayırt eder",
+      "description": "Bireysel hazzı amaçlayan görüş ile en çok kişi için yararı gözeten görüşü ayırt eder.",
+      "topicId": "tyt.philosophy.ethics.aim-good"
+    },
+    {
+      "id": "skill.philosophy.ethics.aim-good.duty-egoism",
+      "title": "Ödev ahlakı ile egoizmi ayırt eder",
+      "description": "Eylemi ilkeye saygıdan yapma ile kişinin kendi çıkarını temel almasını ayırt eder.",
+      "topicId": "tyt.philosophy.ethics.aim-good"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "concept.philosophy.ethics.action-freedom.ozgurluk-ve-sorumluluk",
+      "term": "özgürlük ve sorumluluk",
+      "definition": "Bir eylemin özgür seçim ve sonuçlarını üstlenme bakımından ahlaki sorumluluğunu yorumlar.",
+      "topicId": "tyt.philosophy.ethics.action-freedom"
+    },
+    {
+      "id": "concept.philosophy.ethics.action-freedom.vicdan",
+      "term": "vicdan",
+      "definition": "Vicdanın kişinin kendi eylemini ahlaki ölçülerle değerlendirmesindeki rolünü örnekten çıkarır.",
+      "topicId": "tyt.philosophy.ethics.action-freedom"
+    },
+    {
+      "id": "concept.philosophy.ethics.moral-law.evrensel-ahlak-yasasi",
+      "term": "evrensel ahlak yasası",
+      "definition": "Bir ahlak ilkesinin herkes için geçerli olup olamayacağına ilişkin görüşleri ayırt eder.",
+      "topicId": "tyt.philosophy.ethics.moral-law"
+    },
+    {
+      "id": "concept.philosophy.ethics.moral-law.ozgur-irade-yaklasimlari",
+      "term": "özgür irade yaklaşımları",
+      "definition": "İnsan eylemlerini zorunlu nedenlerle, nedensel belirsizlikle veya öz belirlemeyle açıklayan görüşleri ayırt eder.",
+      "topicId": "tyt.philosophy.ethics.moral-law"
+    },
+    {
+      "id": "concept.philosophy.ethics.aim-good.hedonizm-ve-utilitarizm",
+      "term": "hedonizm ve utilitarizm",
+      "definition": "Bireysel hazzı amaçlayan görüş ile en çok kişi için yararı gözeten görüşü ayırt eder.",
+      "topicId": "tyt.philosophy.ethics.aim-good"
+    },
+    {
+      "id": "concept.philosophy.ethics.aim-good.odev-ahlaki-ve-egoizm",
+      "term": "ödev ahlakı ve egoizm",
+      "definition": "Eylemi ilkeye saygıdan yapma ile kişinin kendi çıkarını temel almasını ayırt eder.",
+      "topicId": "tyt.philosophy.ethics.aim-good"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "lesson.philosophy.ethics.action-freedom.001",
+      "topicId": "tyt.philosophy.ethics.action-freedom",
+      "title": "Ahlaki Eylem, Özgürlük ve Sorumluluk",
+      "subtitle": "Özgürlük ve sorumluluk ilişkisini yorumlar ve Vicdanın ahlaki eylemdeki rolünü yorumlar.",
+      "estimatedMinutes": 10,
+      "exerciseIds": [
+        "exercise.philosophy.ethics.action-freedom.001.card01",
+        "exercise.philosophy.ethics.action-freedom.001.mcq1",
+        "exercise.philosophy.ethics.action-freedom.001.mcq2",
+        "exercise.philosophy.ethics.action-freedom.001.mcq3",
+        "exercise.philosophy.ethics.action-freedom.001.mcq4",
+        "exercise.philosophy.ethics.action-freedom.001.tf01",
+        "exercise.philosophy.ethics.action-freedom.001.match01",
+        "exercise.philosophy.ethics.action-freedom.001.blank01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.philosophy.ethics.moral-law.001",
+      "topicId": "tyt.philosophy.ethics.moral-law",
+      "title": "Ahlak Yasası ve Özgür İrade",
+      "subtitle": "Evrensel ahlak yasası problemini yorumlar ve Determinizm, indeterminizm ve otodeterminizmi ayırt eder.",
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.philosophy.ethics.moral-law.001.mcq1",
+        "exercise.philosophy.ethics.moral-law.001.mcq2",
+        "exercise.philosophy.ethics.moral-law.001.mcq3",
+        "exercise.philosophy.ethics.moral-law.001.mcq4",
+        "exercise.philosophy.ethics.moral-law.001.tf01",
+        "exercise.philosophy.ethics.moral-law.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.philosophy.ethics.aim-good.001",
+      "topicId": "tyt.philosophy.ethics.aim-good",
+      "title": "Ahlaki Eylemin Amacı",
+      "subtitle": "Hedonizm ile utilitarizmi ayırt eder ve Ödev ahlakı ile egoizmi ayırt eder.",
+      "estimatedMinutes": 10,
+      "exerciseIds": [
+        "exercise.philosophy.ethics.aim-good.001.mcq1",
+        "exercise.philosophy.ethics.aim-good.001.mcq2",
+        "exercise.philosophy.ethics.aim-good.001.mcq3",
+        "exercise.philosophy.ethics.aim-good.001.mcq4",
+        "exercise.philosophy.ethics.aim-good.001.tf01",
+        "exercise.philosophy.ethics.aim-good.001.match01",
+        "exercise.philosophy.ethics.aim-good.001.blank01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "id": "exercise.philosophy.ethics.action-freedom.001.mcq1",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.ethics.action-freedom.freedom-responsibility"
+      ],
+      "prompt": "Bir çalışan seçenekleri değerlendirdikten sonra haksız bir talebi reddeder ve kararının doğuracağı sonuçları üstlenir.\n\nBu durumda ahlaki sorumluluğu mümkün kılan temel unsur nedir?",
+      "tag": "FELSEFE · AHLAKİ EYLEM, ÖZGÜRLÜK VE SORUMLULUK",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Sonucun herkesçe beğenilmesi"
+        },
+        {
+          "id": "opt-2",
+          "label": "Eylemin haz vermesi"
+        },
+        {
+          "id": "opt-3",
+          "label": "Yasanın hiç bulunmaması"
+        },
+        {
+          "id": "opt-4",
+          "label": "Özgür seçimde bulunabilmesi"
+        }
+      ],
+      "correctOptionId": "opt-4",
+      "explanation": "Bir çalışan seçenekleri değerlendirdikten sonra haksız bir talebi reddeder ve kararının doğuracağı sonuçları üstlenir. Bu nedenle doğru ayrım “Özgür seçimde bulunabilmesi”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.ethics.action-freedom.001.mcq2",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.ethics.action-freedom.freedom-responsibility"
+      ],
+      "prompt": "Bir çalışan seçenekleri değerlendirdikten sonra haksız bir talebi reddeder ve kararının doğuracağı sonuçları üstlenir.\n\nBir öğrenci bu görüşü “Sonucun herkesçe beğenilmesi” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · AHLAKİ EYLEM, ÖZGÜRLÜK VE SORUMLULUK",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Eylemin haz vermesi"
+        },
+        {
+          "id": "opt-2",
+          "label": "Yasanın hiç bulunmaması"
+        },
+        {
+          "id": "opt-3",
+          "label": "Özgür seçimde bulunabilmesi"
+        },
+        {
+          "id": "opt-4",
+          "label": "Sonucun herkesçe beğenilmesi"
+        }
+      ],
+      "correctOptionId": "opt-3",
+      "explanation": "Görüşte belirleyici ölçüt “özgürlük ve sorumluluk” çerçevesidir. “Sonucun herkesçe beğenilmesi” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.ethics.action-freedom.001.mcq3",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.ethics.action-freedom.conscience-action"
+      ],
+      "prompt": "Kimse görmediği hâlde verdiği sözü tutmayan biri, davranışını kendi benimsediği ölçülerle sorgular ve rahatsızlık duyar.\n\nBu iç değerlendirme en çok hangi kavramla açıklanır?",
+      "tag": "FELSEFE · AHLAKİ EYLEM, ÖZGÜRLÜK VE SORUMLULUK",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Bilimsel yöntem"
+        },
+        {
+          "id": "opt-2",
+          "label": "Vicdan"
+        },
+        {
+          "id": "opt-3",
+          "label": "Egemenlik"
+        },
+        {
+          "id": "opt-4",
+          "label": "Estetik haz"
+        }
+      ],
+      "correctOptionId": "opt-2",
+      "explanation": "Kimse görmediği hâlde verdiği sözü tutmayan biri, davranışını kendi benimsediği ölçülerle sorgular ve rahatsızlık duyar. Bu nedenle doğru ayrım “Vicdan”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.ethics.action-freedom.001.mcq4",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.ethics.action-freedom.conscience-action"
+      ],
+      "prompt": "Kimse görmediği hâlde verdiği sözü tutmayan biri, davranışını kendi benimsediği ölçülerle sorgular ve rahatsızlık duyar.\n\nBir öğrenci bu görüşü “Egemenlik” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · AHLAKİ EYLEM, ÖZGÜRLÜK VE SORUMLULUK",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Vicdan"
+        },
+        {
+          "id": "opt-2",
+          "label": "Egemenlik"
+        },
+        {
+          "id": "opt-3",
+          "label": "Estetik haz"
+        },
+        {
+          "id": "opt-4",
+          "label": "Bilimsel yöntem"
+        }
+      ],
+      "correctOptionId": "opt-1",
+      "explanation": "Görüşte belirleyici ölçüt “vicdan” çerçevesidir. “Egemenlik” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.ethics.action-freedom.001.tf01",
+      "kind": "trueFalse",
+      "skillIds": [
+        "skill.philosophy.ethics.action-freedom.freedom-responsibility",
+        "skill.philosophy.ethics.action-freedom.conscience-action"
+      ],
+      "statement": "özgürlük ve sorumluluk ile vicdan aynı kavram değildir; bir metnin gerekçesine bakılarak birbirinden ayrılmalıdır.",
+      "tag": "FELSEFE · AHLAKİ EYLEM, ÖZGÜRLÜK VE SORUMLULUK",
+      "correctAnswer": true,
+      "explanation": "Bu iki kavram aynı topic içinde ilişkili olsa da farklı sorulara veya ölçütlere karşılık gelir. Ayrım, yalnız anahtar kelimeye değil görüşün gerekçesine dayanır.",
+      "difficulty": 2,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.ethics.action-freedom.001.match01",
+      "kind": "matching",
+      "skillIds": [
+        "skill.philosophy.ethics.action-freedom.freedom-responsibility",
+        "skill.philosophy.ethics.action-freedom.conscience-action"
+      ],
+      "title": "Görüşü temel vurgusuyla eşleştir",
+      "subtitle": "Her ifadeyi yalnız bir kavramla eşleştir.",
+      "tag": "FELSEFE · AHLAKİ EYLEM, ÖZGÜRLÜK VE SORUMLULUK",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "özgürlük ve sorumluluk",
+          "right": "Bir eylemin özgür seçim ve sonuçlarını üstlenme bakımından ahlaki sorumluluğunu yorumlar."
+        },
+        {
+          "id": "pair-2",
+          "left": "vicdan",
+          "right": "Vicdanın kişinin kendi eylemini ahlaki ölçülerle değerlendirmesindeki rolünü örnekten çıkarır."
+        }
+      ],
+      "explanation": "Eşleştirmeler kavramın adı ile ölçülebilir ayırt etme ölçütünü bağlar; görüşü yalnız ezberlemek yerine gerekçesiyle tanımayı sağlar.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.ethics.action-freedom.001.blank01",
+      "kind": "fillBlank",
+      "skillIds": [
+        "skill.philosophy.ethics.action-freedom.freedom-responsibility"
+      ],
+      "title": "Temel kavramı tamamla",
+      "hint": "Bir eylemin özgür seçim ve sonuçlarını üstlenme bakımından ahlaki sorumluluğunu yorumlar.",
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "özgürlük ve sorumluluk"
+        },
+        {
+          "id": "w-2",
+          "label": "vicdan"
+        },
+        {
+          "id": "w-3",
+          "label": "olgusal betimleme"
+        }
+      ],
+      "solutionTokenIds": [
+        "w-1"
+      ],
+      "explanation": "Tanım “özgürlük ve sorumluluk” kavramına karşılık gelir. Diğer seçenekler farklı bir ölçüt veya düşünme alanını belirtir.",
+      "difficulty": 1,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.ethics.action-freedom.001.card01",
+      "kind": "flashcard",
+      "skillIds": [
+        "skill.philosophy.ethics.action-freedom.freedom-responsibility",
+        "skill.philosophy.ethics.action-freedom.conscience-action"
+      ],
+      "tag": "FELSEFE · AHLAKİ EYLEM, ÖZGÜRLÜK VE SORUMLULUK",
+      "cards": [
+        {
+          "id": "card-1",
+          "front": "özgürlük ve sorumluluk",
+          "back": "Bir eylemin özgür seçim ve sonuçlarını üstlenme bakımından ahlaki sorumluluğunu yorumlar.",
+          "hint": "Kavramın bir metinde hangi ölçütle tanınacağını düşün."
+        },
+        {
+          "id": "card-2",
+          "front": "vicdan",
+          "back": "Vicdanın kişinin kendi eylemini ahlaki ölçülerle değerlendirmesindeki rolünü örnekten çıkarır.",
+          "hint": "Kavramın bir metinde hangi ölçütle tanınacağını düşün."
+        }
+      ],
+      "explanation": "Kartlar temel ayrımları ilk karşılaşmada tanıtır; scored skill coverage hesabına katılmaz.",
+      "difficulty": 1,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.ethics.moral-law.001.mcq1",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.ethics.moral-law.universal-law"
+      ],
+      "prompt": "Bir kişi, yalnız kendisi için ayrıcalık istemek yerine eylem ilkesinin aynı durumda bulunan herkes için geçerli olabilmesini arar.\n\nBu tutum hangi probleme ilişkindir?",
+      "tag": "FELSEFE · AHLAK YASASI VE ÖZGÜR İRADE",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Evrensel ahlak yasası"
+        },
+        {
+          "id": "opt-2",
+          "label": "Varlığın birliği"
+        },
+        {
+          "id": "opt-3",
+          "label": "Sanatın taklit oluşu"
+        },
+        {
+          "id": "opt-4",
+          "label": "Bilginin kaynağı"
+        }
+      ],
+      "correctOptionId": "opt-1",
+      "explanation": "Bir kişi, yalnız kendisi için ayrıcalık istemek yerine eylem ilkesinin aynı durumda bulunan herkes için geçerli olabilmesini arar. Bu nedenle doğru ayrım “Evrensel ahlak yasası”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.ethics.moral-law.001.mcq2",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.ethics.moral-law.universal-law"
+      ],
+      "prompt": "Bir kişi, yalnız kendisi için ayrıcalık istemek yerine eylem ilkesinin aynı durumda bulunan herkes için geçerli olabilmesini arar.\n\nBir öğrenci bu görüşü “Varlığın birliği” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · AHLAK YASASI VE ÖZGÜR İRADE",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Varlığın birliği"
+        },
+        {
+          "id": "opt-2",
+          "label": "Sanatın taklit oluşu"
+        },
+        {
+          "id": "opt-3",
+          "label": "Bilginin kaynağı"
+        },
+        {
+          "id": "opt-4",
+          "label": "Evrensel ahlak yasası"
+        }
+      ],
+      "correctOptionId": "opt-4",
+      "explanation": "Görüşte belirleyici ölçüt “evrensel ahlak yasası” çerçevesidir. “Varlığın birliği” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.ethics.moral-law.001.mcq3",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.ethics.moral-law.determinism-autonomy"
+      ],
+      "prompt": "Bir görüş, insanın koşullardan bütünüyle bağımsız olmadığını; fakat aklıyla amaç koyup kendi karakterini geliştirerek davranışını belirleyebildiğini savunur.\n\nBu görüş hangisine yakındır?",
+      "tag": "FELSEFE · AHLAK YASASI VE ÖZGÜR İRADE",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "İndeterminizm"
+        },
+        {
+          "id": "opt-2",
+          "label": "Fatalizm"
+        },
+        {
+          "id": "opt-3",
+          "label": "Otodeterminizm"
+        },
+        {
+          "id": "opt-4",
+          "label": "Katı determinizm"
+        }
+      ],
+      "correctOptionId": "opt-3",
+      "explanation": "Bir görüş, insanın koşullardan bütünüyle bağımsız olmadığını; fakat aklıyla amaç koyup kendi karakterini geliştirerek davranışını belirleyebildiğini savunur. Bu nedenle doğru ayrım “Otodeterminizm”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.ethics.moral-law.001.mcq4",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.ethics.moral-law.determinism-autonomy"
+      ],
+      "prompt": "Bir görüş, insanın koşullardan bütünüyle bağımsız olmadığını; fakat aklıyla amaç koyup kendi karakterini geliştirerek davranışını belirleyebildiğini savunur.\n\nBir öğrenci bu görüşü “Katı determinizm” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · AHLAK YASASI VE ÖZGÜR İRADE",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Fatalizm"
+        },
+        {
+          "id": "opt-2",
+          "label": "Otodeterminizm"
+        },
+        {
+          "id": "opt-3",
+          "label": "Katı determinizm"
+        },
+        {
+          "id": "opt-4",
+          "label": "İndeterminizm"
+        }
+      ],
+      "correctOptionId": "opt-2",
+      "explanation": "Görüşte belirleyici ölçüt “özgür irade yaklaşımları” çerçevesidir. “Katı determinizm” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.ethics.moral-law.001.tf01",
+      "kind": "trueFalse",
+      "skillIds": [
+        "skill.philosophy.ethics.moral-law.universal-law",
+        "skill.philosophy.ethics.moral-law.determinism-autonomy"
+      ],
+      "statement": "evrensel ahlak yasası ile özgür irade yaklaşımları aynı kavram değildir; bir metnin gerekçesine bakılarak birbirinden ayrılmalıdır.",
+      "tag": "FELSEFE · AHLAK YASASI VE ÖZGÜR İRADE",
+      "correctAnswer": true,
+      "explanation": "Bu iki kavram aynı topic içinde ilişkili olsa da farklı sorulara veya ölçütlere karşılık gelir. Ayrım, yalnız anahtar kelimeye değil görüşün gerekçesine dayanır.",
+      "difficulty": 2,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.ethics.moral-law.001.match01",
+      "kind": "matching",
+      "skillIds": [
+        "skill.philosophy.ethics.moral-law.universal-law",
+        "skill.philosophy.ethics.moral-law.determinism-autonomy"
+      ],
+      "title": "Görüşü temel vurgusuyla eşleştir",
+      "subtitle": "Her ifadeyi yalnız bir kavramla eşleştir.",
+      "tag": "FELSEFE · AHLAK YASASI VE ÖZGÜR İRADE",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "evrensel ahlak yasası",
+          "right": "Bir ahlak ilkesinin herkes için geçerli olup olamayacağına ilişkin görüşleri ayırt eder."
+        },
+        {
+          "id": "pair-2",
+          "left": "özgür irade yaklaşımları",
+          "right": "İnsan eylemlerini zorunlu nedenlerle, nedensel belirsizlikle veya öz belirlemeyle açıklayan görüşleri ayırt eder."
+        }
+      ],
+      "explanation": "Eşleştirmeler kavramın adı ile ölçülebilir ayırt etme ölçütünü bağlar; görüşü yalnız ezberlemek yerine gerekçesiyle tanımayı sağlar.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.ethics.aim-good.001.mcq1",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.ethics.aim-good.pleasure-utility"
+      ],
+      "prompt": "Bir yönetici iki seçenekten, kişisel olarak daha az hoşuna gitse bile toplumun daha büyük bölümünün iyiliğini artıranı seçer.\n\nBu karar hangi yaklaşıma daha yakındır?",
+      "tag": "FELSEFE · AHLAKİ EYLEMİN AMACI",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Hedonizm"
+        },
+        {
+          "id": "opt-2",
+          "label": "Egoizm"
+        },
+        {
+          "id": "opt-3",
+          "label": "Ödev ahlakı"
+        },
+        {
+          "id": "opt-4",
+          "label": "Utilitarizm"
+        }
+      ],
+      "correctOptionId": "opt-4",
+      "explanation": "Bir yönetici iki seçenekten, kişisel olarak daha az hoşuna gitse bile toplumun daha büyük bölümünün iyiliğini artıranı seçer. Bu nedenle doğru ayrım “Utilitarizm”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.ethics.aim-good.001.mcq2",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.ethics.aim-good.pleasure-utility"
+      ],
+      "prompt": "Bir yönetici iki seçenekten, kişisel olarak daha az hoşuna gitse bile toplumun daha büyük bölümünün iyiliğini artıranı seçer.\n\nBir öğrenci bu görüşü “Hedonizm” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · AHLAKİ EYLEMİN AMACI",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Egoizm"
+        },
+        {
+          "id": "opt-2",
+          "label": "Ödev ahlakı"
+        },
+        {
+          "id": "opt-3",
+          "label": "Utilitarizm"
+        },
+        {
+          "id": "opt-4",
+          "label": "Hedonizm"
+        }
+      ],
+      "correctOptionId": "opt-3",
+      "explanation": "Görüşte belirleyici ölçüt “hedonizm ve utilitarizm” çerçevesidir. “Hedonizm” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.ethics.aim-good.001.mcq3",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.ethics.aim-good.duty-egoism"
+      ],
+      "prompt": "Bir kişi hiçbir ödül beklemeden, sonucu kendi aleyhine olsa da verdiği sözü tutmayı bir ilke gereği zorunlu görür.\n\nBu tutum hangi anlayışla daha çok örtüşür?",
+      "tag": "FELSEFE · AHLAKİ EYLEMİN AMACI",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Nihilizm"
+        },
+        {
+          "id": "opt-2",
+          "label": "Ödev ahlakı"
+        },
+        {
+          "id": "opt-3",
+          "label": "Egoizm"
+        },
+        {
+          "id": "opt-4",
+          "label": "Hedonizm"
+        }
+      ],
+      "correctOptionId": "opt-2",
+      "explanation": "Bir kişi hiçbir ödül beklemeden, sonucu kendi aleyhine olsa da verdiği sözü tutmayı bir ilke gereği zorunlu görür. Bu nedenle doğru ayrım “Ödev ahlakı”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.ethics.aim-good.001.mcq4",
+      "kind": "multipleChoice",
+      "skillIds": [
+        "skill.philosophy.ethics.aim-good.duty-egoism"
+      ],
+      "prompt": "Bir kişi hiçbir ödül beklemeden, sonucu kendi aleyhine olsa da verdiği sözü tutmayı bir ilke gereği zorunlu görür.\n\nBir öğrenci bu görüşü “Egoizm” ile açıklıyor. Öğrencinin yorumunu düzelten seçenek hangisidir?",
+      "tag": "FELSEFE · AHLAKİ EYLEMİN AMACI",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Ödev ahlakı"
+        },
+        {
+          "id": "opt-2",
+          "label": "Egoizm"
+        },
+        {
+          "id": "opt-3",
+          "label": "Hedonizm"
+        },
+        {
+          "id": "opt-4",
+          "label": "Nihilizm"
+        }
+      ],
+      "correctOptionId": "opt-1",
+      "explanation": "Görüşte belirleyici ölçüt “ödev ahlakı ve egoizm” çerçevesidir. “Egoizm” benzer bir tartışmada kullanılabilse de bu metnin temel vurgusunu karşılamaz.",
+      "difficulty": 4,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.ethics.aim-good.001.tf01",
+      "kind": "trueFalse",
+      "skillIds": [
+        "skill.philosophy.ethics.aim-good.pleasure-utility",
+        "skill.philosophy.ethics.aim-good.duty-egoism"
+      ],
+      "statement": "hedonizm ve utilitarizm ile ödev ahlakı ve egoizm aynı kavram değildir; bir metnin gerekçesine bakılarak birbirinden ayrılmalıdır.",
+      "tag": "FELSEFE · AHLAKİ EYLEMİN AMACI",
+      "correctAnswer": true,
+      "explanation": "Bu iki kavram aynı topic içinde ilişkili olsa da farklı sorulara veya ölçütlere karşılık gelir. Ayrım, yalnız anahtar kelimeye değil görüşün gerekçesine dayanır.",
+      "difficulty": 2,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.ethics.aim-good.001.match01",
+      "kind": "matching",
+      "skillIds": [
+        "skill.philosophy.ethics.aim-good.pleasure-utility",
+        "skill.philosophy.ethics.aim-good.duty-egoism"
+      ],
+      "title": "Görüşü temel vurgusuyla eşleştir",
+      "subtitle": "Her ifadeyi yalnız bir kavramla eşleştir.",
+      "tag": "FELSEFE · AHLAKİ EYLEMİN AMACI",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "hedonizm ve utilitarizm",
+          "right": "Bireysel hazzı amaçlayan görüş ile en çok kişi için yararı gözeten görüşü ayırt eder."
+        },
+        {
+          "id": "pair-2",
+          "left": "ödev ahlakı ve egoizm",
+          "right": "Eylemi ilkeye saygıdan yapma ile kişinin kendi çıkarını temel almasını ayırt eder."
+        }
+      ],
+      "explanation": "Eşleştirmeler kavramın adı ile ölçülebilir ayırt etme ölçütünü bağlar; görüşü yalnız ezberlemek yerine gerekçesiyle tanımayı sağlar.",
+      "difficulty": 3,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "exercise.philosophy.ethics.aim-good.001.blank01",
+      "kind": "fillBlank",
+      "skillIds": [
+        "skill.philosophy.ethics.aim-good.pleasure-utility"
+      ],
+      "title": "Temel kavramı tamamla",
+      "hint": "Bireysel hazzı amaçlayan görüş ile en çok kişi için yararı gözeten görüşü ayırt eder.",
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "hedonizm ve utilitarizm"
+        },
+        {
+          "id": "w-2",
+          "label": "ödev ahlakı ve egoizm"
+        },
+        {
+          "id": "w-3",
+          "label": "olgusal betimleme"
+        }
+      ],
+      "solutionTokenIds": [
+        "w-1"
+      ],
+      "explanation": "Tanım “hedonizm ve utilitarizm” kavramına karşılık gelir. Diğer seçenekler farklı bir ölçüt veya düşünme alanını belirtir.",
+      "difficulty": 1,
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Felsefe kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.philosophy.ethics.01",
+      "unitId": "tyt.philosophy.ethics",
+      "kind": "lesson",
+      "title": "Ahlaki Eylem, Özgürlük ve Sorumluluk",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.philosophy.religion-culture-civilization.03"
+      ],
+      "lessonId": "lesson.philosophy.ethics.action-freedom.001"
+    },
+    {
+      "id": "path.philosophy.ethics.02",
+      "unitId": "tyt.philosophy.ethics",
+      "kind": "lesson",
+      "title": "Ahlak Yasası ve Özgür İrade",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.philosophy.ethics.01"
+      ],
+      "lessonId": "lesson.philosophy.ethics.moral-law.001"
+    },
+    {
+      "id": "path.philosophy.ethics.03",
+      "unitId": "tyt.philosophy.ethics",
+      "kind": "practice",
+      "title": "Ahlaki Eylemin Amacı Uygulaması",
+      "order": 3,
+      "prerequisiteIds": [
+        "path.philosophy.ethics.02"
+      ],
+      "lessonId": "lesson.philosophy.ethics.aim-good.001"
+    }
+  ]
+}

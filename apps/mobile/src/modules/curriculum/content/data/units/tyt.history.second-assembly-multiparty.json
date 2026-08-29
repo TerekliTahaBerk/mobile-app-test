@@ -1,0 +1,493 @@
+{
+  "concepts": [
+    {
+      "definition": "Millî Mücadele’nin merkezi ve güvenli bir konumda olması",
+      "id": "concept.history.second-assembly-multiparty.ankara-capital",
+      "term": "Millî Mücadele’nin merkezi ve güvenli bir konumda olması",
+      "topicId": "tyt.history.second-assembly-multiparty.second-assembly-republic"
+    },
+    {
+      "definition": "Devlet başkanlığı ve hükûmet kurma sorununu",
+      "id": "concept.history.second-assembly-multiparty.republic-government",
+      "term": "Devlet başkanlığı ve hükûmet kurma sorununu",
+      "topicId": "tyt.history.second-assembly-multiparty.second-assembly-republic"
+    },
+    {
+      "definition": "Çok partili siyasi hayata geçiş arayışının",
+      "id": "concept.history.second-assembly-multiparty.progressive-party",
+      "term": "Çok partili siyasi hayata geçiş arayışının",
+      "topicId": "tyt.history.second-assembly-multiparty.multiparty-attempts"
+    },
+    {
+      "definition": "Hükûmeti denetleyecek bir muhalefet oluşturmak",
+      "id": "concept.history.second-assembly-multiparty.free-party",
+      "term": "Hükûmeti denetleyecek bir muhalefet oluşturmak",
+      "topicId": "tyt.history.second-assembly-multiparty.multiparty-attempts"
+    }
+  ],
+  "exercises": [
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Millî Mücadele’nin merkezi ve güvenli bir konumda olması, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.second-assembly-multiparty.second-assembly-republic.ankara-capital.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Millî Mücadele’nin merkezi ve güvenli bir konumda olması"
+        },
+        {
+          "id": "d1",
+          "label": "Osmanlı hanedanının merkezi olması"
+        },
+        {
+          "id": "d2",
+          "label": "Deniz ticaretinin en büyük limanı olması"
+        },
+        {
+          "id": "d3",
+          "label": "Hilafetin tarihî merkezi olması"
+        }
+      ],
+      "prompt": "Ankara’nın başkent seçilmesinde hangi etken belirleyicidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.second-assembly-multiparty.ankara-capital"
+      ],
+      "tag": "TARİH · II. TBMM VE CUMHURİYETİN KURUMSALLAŞMASI"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Ankara’nın başkent seçilmesinde hangi etken belirleyicidir sorusunun doğru karşılığı “Millî Mücadele’nin merkezi ve güvenli bir konumda olması” olmalıdır.",
+      "id": "exercise.history.second-assembly-multiparty.second-assembly-republic.ankara-capital.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.second-assembly-multiparty.ankara-capital"
+      ],
+      "statement": "Osmanlı hanedanının merkezi olması, Ankara’nın başkent olmasının siyasi anlamını yorumlar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · II. TBMM VE CUMHURİYETİN KURUMSALLAŞMASI"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "Millî Mücadele’nin merkezi ve güvenli bir konumda olması"
+        },
+        {
+          "id": "d1",
+          "label": "Osmanlı hanedanının merkezi olması"
+        },
+        {
+          "id": "d2",
+          "label": "Deniz ticaretinin en büyük limanı olması"
+        },
+        {
+          "id": "d3",
+          "label": "Hilafetin tarihî merkezi olması"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “Millî Mücadele’nin merkezi ve güvenli bir konumda olması” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.second-assembly-multiparty.second-assembly-republic.ankara-capital.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.second-assembly-multiparty.ankara-capital"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: Ankara’nın başkent seçilmesinde hangi etken belirleyicidir?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Devlet başkanlığı ve hükûmet kurma sorununu, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.second-assembly-multiparty.second-assembly-republic.republic-government.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Devlet başkanlığı ve hükûmet kurma sorununu"
+        },
+        {
+          "id": "d1",
+          "label": "Musul sorununu"
+        },
+        {
+          "id": "d2",
+          "label": "Boğazlar sorununu"
+        },
+        {
+          "id": "d3",
+          "label": "Hatay sorununu"
+        }
+      ],
+      "prompt": "29 Ekim 1923’te Cumhuriyetin ilanı hangi sorunu doğrudan çözmüştür?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.second-assembly-multiparty.republic-government"
+      ],
+      "tag": "TARİH · II. TBMM VE CUMHURİYETİN KURUMSALLAŞMASI"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. 29 Ekim 1923’te Cumhuriyetin ilanı hangi sorunu doğrudan çözmüştür sorusunun doğru karşılığı “Devlet başkanlığı ve hükûmet kurma sorununu” olmalıdır.",
+      "id": "exercise.history.second-assembly-multiparty.second-assembly-republic.republic-government.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.second-assembly-multiparty.republic-government"
+      ],
+      "statement": "Musul sorununu, Cumhuriyetin ilanının hükûmet sistemine etkisini açıklar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · II. TBMM VE CUMHURİYETİN KURUMSALLAŞMASI"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, II. TBMM ve Cumhuriyetin Kurumsallaşması başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.second-assembly-multiparty.second-assembly-republic.republic-government.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Ankara’nın başkent seçilmesinde hangi etken belirleyicidir?",
+          "right": "Millî Mücadele’nin merkezi ve güvenli bir konumda olması"
+        },
+        {
+          "id": "pair-2",
+          "left": "29 Ekim 1923’te Cumhuriyetin ilanı hangi sorunu doğrudan çözmüştür?",
+          "right": "Devlet başkanlığı ve hükûmet kurma sorununu"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.second-assembly-multiparty.ankara-capital",
+        "skill.history.second-assembly-multiparty.republic-government"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · II. TBMM VE CUMHURİYETİN KURUMSALLAŞMASI",
+      "title": "Bilgi bağlarını eşleştir"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Çok partili siyasi hayata geçiş arayışının, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.second-assembly-multiparty.multiparty-attempts.progressive-party.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Çok partili siyasi hayata geçiş arayışının"
+        },
+        {
+          "id": "d1",
+          "label": "Saltanatı geri getirme kararının"
+        },
+        {
+          "id": "d2",
+          "label": "Meclisi kapatma amacının"
+        },
+        {
+          "id": "d3",
+          "label": "Tek dereceli seçimin sona ermesinin"
+        }
+      ],
+      "prompt": "Terakkiperver Cumhuriyet Fırkasının kurulması neyin göstergesidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.second-assembly-multiparty.progressive-party"
+      ],
+      "tag": "TARİH · ÇOK PARTİLİ HAYAT DENEMELERİ"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Terakkiperver Cumhuriyet Fırkasının kurulması neyin göstergesidir sorusunun doğru karşılığı “Çok partili siyasi hayata geçiş arayışının” olmalıdır.",
+      "id": "exercise.history.second-assembly-multiparty.multiparty-attempts.progressive-party.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.second-assembly-multiparty.progressive-party"
+      ],
+      "statement": "Saltanatı geri getirme kararının, Terakkiperver Cumhuriyet Fırkasının siyasi hayattaki yerini açıklar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · ÇOK PARTİLİ HAYAT DENEMELERİ"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "Çok partili siyasi hayata geçiş arayışının"
+        },
+        {
+          "id": "d1",
+          "label": "Saltanatı geri getirme kararının"
+        },
+        {
+          "id": "d2",
+          "label": "Meclisi kapatma amacının"
+        },
+        {
+          "id": "d3",
+          "label": "Tek dereceli seçimin sona ermesinin"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “Çok partili siyasi hayata geçiş arayışının” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.second-assembly-multiparty.multiparty-attempts.progressive-party.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.second-assembly-multiparty.progressive-party"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: Terakkiperver Cumhuriyet Fırkasının kurulması neyin göstergesidir?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Hükûmeti denetleyecek bir muhalefet oluşturmak, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.second-assembly-multiparty.multiparty-attempts.free-party.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Hükûmeti denetleyecek bir muhalefet oluşturmak"
+        },
+        {
+          "id": "d1",
+          "label": "Cumhuriyeti kaldırmak"
+        },
+        {
+          "id": "d2",
+          "label": "Meclisi süresiz kapatmak"
+        },
+        {
+          "id": "d3",
+          "label": "Saltanatı yeniden kurmak"
+        }
+      ],
+      "prompt": "Serbest Cumhuriyet Fırkasının kurulmasında temel siyasi amaç hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.second-assembly-multiparty.free-party"
+      ],
+      "tag": "TARİH · ÇOK PARTİLİ HAYAT DENEMELERİ"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Serbest Cumhuriyet Fırkasının kurulmasında temel siyasi amaç hangisidir sorusunun doğru karşılığı “Hükûmeti denetleyecek bir muhalefet oluşturmak” olmalıdır.",
+      "id": "exercise.history.second-assembly-multiparty.multiparty-attempts.free-party.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.second-assembly-multiparty.free-party"
+      ],
+      "statement": "Cumhuriyeti kaldırmak, Serbest Cumhuriyet Fırkası deneyiminin amacını yorumlar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · ÇOK PARTİLİ HAYAT DENEMELERİ"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, Çok Partili Hayat Denemeleri başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.second-assembly-multiparty.multiparty-attempts.free-party.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Terakkiperver Cumhuriyet Fırkasının kurulması neyin göstergesidir?",
+          "right": "Çok partili siyasi hayata geçiş arayışının"
+        },
+        {
+          "id": "pair-2",
+          "left": "Serbest Cumhuriyet Fırkasının kurulmasında temel siyasi amaç hangisidir?",
+          "right": "Hükûmeti denetleyecek bir muhalefet oluşturmak"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.second-assembly-multiparty.progressive-party",
+        "skill.history.second-assembly-multiparty.free-party"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · ÇOK PARTİLİ HAYAT DENEMELERİ",
+      "title": "Bilgi bağlarını eşleştir"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.second-assembly-multiparty.second-assembly-republic.ankara-capital.mcq01",
+        "exercise.history.second-assembly-multiparty.second-assembly-republic.ankara-capital.tf01",
+        "exercise.history.second-assembly-multiparty.second-assembly-republic.ankara-capital.fill01",
+        "exercise.history.second-assembly-multiparty.second-assembly-republic.republic-government.mcq01",
+        "exercise.history.second-assembly-multiparty.second-assembly-republic.republic-government.tf01",
+        "exercise.history.second-assembly-multiparty.second-assembly-republic.republic-government.match01"
+      ],
+      "id": "lesson.history.second-assembly-multiparty.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "II. TBMM ve Cumhuriyetin Kurumsallaşması",
+      "topicId": "tyt.history.second-assembly-multiparty.second-assembly-republic"
+    },
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.second-assembly-multiparty.multiparty-attempts.progressive-party.mcq01",
+        "exercise.history.second-assembly-multiparty.multiparty-attempts.progressive-party.tf01",
+        "exercise.history.second-assembly-multiparty.multiparty-attempts.progressive-party.fill01",
+        "exercise.history.second-assembly-multiparty.multiparty-attempts.free-party.mcq01",
+        "exercise.history.second-assembly-multiparty.multiparty-attempts.free-party.tf01",
+        "exercise.history.second-assembly-multiparty.multiparty-attempts.free-party.match01"
+      ],
+      "id": "lesson.history.second-assembly-multiparty.002",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "Çok Partili Hayat Denemeleri",
+      "topicId": "tyt.history.second-assembly-multiparty.multiparty-attempts"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.history.second-assembly-multiparty.01",
+      "kind": "lesson",
+      "lessonId": "lesson.history.second-assembly-multiparty.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.history.independence-war-treaties.02"
+      ],
+      "title": "II. TBMM ve Cumhuriyetin Kurumsallaşması",
+      "unitId": "tyt.history.second-assembly-multiparty"
+    },
+    {
+      "id": "path.history.second-assembly-multiparty.02",
+      "kind": "checkpoint",
+      "lessonId": "lesson.history.second-assembly-multiparty.002",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.history.second-assembly-multiparty.01"
+      ],
+      "title": "II. TBMM Dönemi ve Çok Partili Hayata Geçiş Kontrolü",
+      "unitId": "tyt.history.second-assembly-multiparty"
+    }
+  ],
+  "skills": [
+    {
+      "description": "Ankara’nın başkent olmasının siyasi anlamını yorumlar.",
+      "id": "skill.history.second-assembly-multiparty.ankara-capital",
+      "title": "Ankara’nın başkent olmasının siyasi anlamını yorumlar",
+      "topicId": "tyt.history.second-assembly-multiparty.second-assembly-republic"
+    },
+    {
+      "description": "Cumhuriyetin ilanının hükûmet sistemine etkisini açıklar.",
+      "id": "skill.history.second-assembly-multiparty.republic-government",
+      "title": "Cumhuriyetin ilanının hükûmet sistemine etkisini açıklar",
+      "topicId": "tyt.history.second-assembly-multiparty.second-assembly-republic"
+    },
+    {
+      "description": "Terakkiperver Cumhuriyet Fırkasının siyasi hayattaki yerini açıklar.",
+      "id": "skill.history.second-assembly-multiparty.progressive-party",
+      "title": "Terakkiperver Cumhuriyet Fırkasının siyasi hayattaki yerini açıklar",
+      "topicId": "tyt.history.second-assembly-multiparty.multiparty-attempts"
+    },
+    {
+      "description": "Serbest Cumhuriyet Fırkası deneyiminin amacını yorumlar.",
+      "id": "skill.history.second-assembly-multiparty.free-party",
+      "title": "Serbest Cumhuriyet Fırkası deneyiminin amacını yorumlar",
+      "topicId": "tyt.history.second-assembly-multiparty.multiparty-attempts"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.history.second-assembly-multiparty.ankara-capital",
+        "concept.history.second-assembly-multiparty.republic-government"
+      ],
+      "id": "tyt.history.second-assembly-multiparty.second-assembly-republic",
+      "skillIds": [
+        "skill.history.second-assembly-multiparty.ankara-capital",
+        "skill.history.second-assembly-multiparty.republic-government"
+      ],
+      "title": "II. TBMM ve Cumhuriyetin Kurumsallaşması",
+      "unitId": "tyt.history.second-assembly-multiparty"
+    },
+    {
+      "conceptIds": [
+        "concept.history.second-assembly-multiparty.progressive-party",
+        "concept.history.second-assembly-multiparty.free-party"
+      ],
+      "id": "tyt.history.second-assembly-multiparty.multiparty-attempts",
+      "skillIds": [
+        "skill.history.second-assembly-multiparty.progressive-party",
+        "skill.history.second-assembly-multiparty.free-party"
+      ],
+      "title": "Çok Partili Hayat Denemeleri",
+      "unitId": "tyt.history.second-assembly-multiparty"
+    }
+  ],
+  "unitId": "tyt.history.second-assembly-multiparty"
+}

@@ -1,0 +1,493 @@
+{
+  "concepts": [
+    {
+      "definition": "TBMM’nin",
+      "id": "concept.history.first-grand-national-assembly.assembly-sovereignty",
+      "term": "TBMM’nin",
+      "topicId": "tyt.history.first-grand-national-assembly.assembly-authority"
+    },
+    {
+      "definition": "Hızlı karar alıp uygulamakla",
+      "id": "concept.history.first-grand-national-assembly.powers-unity",
+      "term": "Hızlı karar alıp uygulamakla",
+      "topicId": "tyt.history.first-grand-national-assembly.assembly-authority"
+    },
+    {
+      "definition": "TBMM otoritesine karşı ayaklanmaları önlemek",
+      "id": "concept.history.first-grand-national-assembly.rebellions-measures",
+      "term": "TBMM otoritesine karşı ayaklanmaları önlemek",
+      "topicId": "tyt.history.first-grand-national-assembly.rebellions-and-army"
+    },
+    {
+      "definition": "Dağınık birliklerle işgal ordusuna karşı ortak harekât yürütülememesi",
+      "id": "concept.history.first-grand-national-assembly.regular-army",
+      "term": "Dağınık birliklerle işgal ordusuna karşı ortak harekât yürütülememesi",
+      "topicId": "tyt.history.first-grand-national-assembly.rebellions-and-army"
+    }
+  ],
+  "exercises": [
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "TBMM’nin, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.first-grand-national-assembly.assembly-authority.assembly-sovereignty.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "TBMM’nin"
+        },
+        {
+          "id": "d1",
+          "label": "Saltanatın"
+        },
+        {
+          "id": "d2",
+          "label": "Düyun-u Umumiyenin"
+        },
+        {
+          "id": "d3",
+          "label": "Divan-ı Hümayunun"
+        }
+      ],
+      "prompt": "“Egemenlik kayıtsız şartsız milletindir” anlayışı hangi kurumun meşruiyet temelidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.first-grand-national-assembly.assembly-sovereignty"
+      ],
+      "tag": "TARİH · MECLİSİN AÇILIŞI VE YETKİLERİ"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. “Egemenlik kayıtsız şartsız milletindir” anlayışı hangi kurumun meşruiyet temelidir sorusunun doğru karşılığı “TBMM’nin” olmalıdır.",
+      "id": "exercise.history.first-grand-national-assembly.assembly-authority.assembly-sovereignty.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.first-grand-national-assembly.assembly-sovereignty"
+      ],
+      "statement": "Saltanatın, I. TBMM’nin millî egemenlik anlayışını açıklar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · MECLİSİN AÇILIŞI VE YETKİLERİ"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "TBMM’nin"
+        },
+        {
+          "id": "d1",
+          "label": "Saltanatın"
+        },
+        {
+          "id": "d2",
+          "label": "Düyun-u Umumiyenin"
+        },
+        {
+          "id": "d3",
+          "label": "Divan-ı Hümayunun"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “TBMM’nin” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.first-grand-national-assembly.assembly-authority.assembly-sovereignty.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.first-grand-national-assembly.assembly-sovereignty"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: “Egemenlik kayıtsız şartsız milletindir” anlayışı hangi kurumun meşruiyet temelidir?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Hızlı karar alıp uygulamakla, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.first-grand-national-assembly.assembly-authority.powers-unity.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Hızlı karar alıp uygulamakla"
+        },
+        {
+          "id": "d1",
+          "label": "Padişahın yetkilerini artırmakla"
+        },
+        {
+          "id": "d2",
+          "label": "Yerel yönetimleri bağımsızlaştırmakla"
+        },
+        {
+          "id": "d3",
+          "label": "Siyasi partileri zorunlu kılmakla"
+        }
+      ],
+      "prompt": "I. TBMM’de yasama ve yürütme yetkilerinin Mecliste toplanması hangi amaçla ilişkilidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.first-grand-national-assembly.powers-unity"
+      ],
+      "tag": "TARİH · MECLİSİN AÇILIŞI VE YETKİLERİ"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. I. TBMM’de yasama ve yürütme yetkilerinin Mecliste toplanması hangi amaçla ilişkilidir sorusunun doğru karşılığı “Hızlı karar alıp uygulamakla” olmalıdır.",
+      "id": "exercise.history.first-grand-national-assembly.assembly-authority.powers-unity.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.first-grand-national-assembly.powers-unity"
+      ],
+      "statement": "Padişahın yetkilerini artırmakla, Güçler birliği ilkesinin savaş koşullarındaki işlevini yorumlar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · MECLİSİN AÇILIŞI VE YETKİLERİ"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, Meclisin Açılışı ve Yetkileri başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.first-grand-national-assembly.assembly-authority.powers-unity.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "“Egemenlik kayıtsız şartsız milletindir” anlayışı hangi kurumun meşruiyet temelidir?",
+          "right": "TBMM’nin"
+        },
+        {
+          "id": "pair-2",
+          "left": "I. TBMM’de yasama ve yürütme yetkilerinin Mecliste toplanması hangi amaçla ilişkilidir?",
+          "right": "Hızlı karar alıp uygulamakla"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.first-grand-national-assembly.assembly-sovereignty",
+        "skill.history.first-grand-national-assembly.powers-unity"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · MECLİSİN AÇILIŞI VE YETKİLERİ",
+      "title": "Bilgi bağlarını eşleştir"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "TBMM otoritesine karşı ayaklanmaları önlemek, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.first-grand-national-assembly.rebellions-and-army.rebellions-measures.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "TBMM otoritesine karşı ayaklanmaları önlemek"
+        },
+        {
+          "id": "d1",
+          "label": "Kapitülasyonları genişletmek"
+        },
+        {
+          "id": "d2",
+          "label": "Saltanatı kaldırmak"
+        },
+        {
+          "id": "d3",
+          "label": "Dış borç almak"
+        }
+      ],
+      "prompt": "Hıyanet-i Vataniye Kanunu’nun çıkarılma amacı hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.first-grand-national-assembly.rebellions-measures"
+      ],
+      "tag": "TARİH · AYAKLANMALAR VE DÜZENLİ ORDU"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Hıyanet-i Vataniye Kanunu’nun çıkarılma amacı hangisidir sorusunun doğru karşılığı “TBMM otoritesine karşı ayaklanmaları önlemek” olmalıdır.",
+      "id": "exercise.history.first-grand-national-assembly.rebellions-and-army.rebellions-measures.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.first-grand-national-assembly.rebellions-measures"
+      ],
+      "statement": "Kapitülasyonları genişletmek, TBMM’nin ayaklanmalara karşı aldığı önlemleri açıklar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · AYAKLANMALAR VE DÜZENLİ ORDU"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "TBMM otoritesine karşı ayaklanmaları önlemek"
+        },
+        {
+          "id": "d1",
+          "label": "Kapitülasyonları genişletmek"
+        },
+        {
+          "id": "d2",
+          "label": "Saltanatı kaldırmak"
+        },
+        {
+          "id": "d3",
+          "label": "Dış borç almak"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “TBMM otoritesine karşı ayaklanmaları önlemek” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.first-grand-national-assembly.rebellions-and-army.rebellions-measures.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.first-grand-national-assembly.rebellions-measures"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: Hıyanet-i Vataniye Kanunu’nun çıkarılma amacı hangisidir?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Dağınık birliklerle işgal ordusuna karşı ortak harekât yürütülememesi, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.first-grand-national-assembly.rebellions-and-army.regular-army.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Dağınık birliklerle işgal ordusuna karşı ortak harekât yürütülememesi"
+        },
+        {
+          "id": "d1",
+          "label": "Kuvâ-yı Millîyenin hiç direniş göstermemesi"
+        },
+        {
+          "id": "d2",
+          "label": "TBMM’nin savaşı sona erdirmesi"
+        },
+        {
+          "id": "d3",
+          "label": "Mondros’un ordunun büyütülmesini istemesi"
+        }
+      ],
+      "prompt": "Düzenli ordunun kurulmasını zorunlu kılan temel durum hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.first-grand-national-assembly.regular-army"
+      ],
+      "tag": "TARİH · AYAKLANMALAR VE DÜZENLİ ORDU"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Düzenli ordunun kurulmasını zorunlu kılan temel durum hangisidir sorusunun doğru karşılığı “Dağınık birliklerle işgal ordusuna karşı ortak harekât yürütülememesi” olmalıdır.",
+      "id": "exercise.history.first-grand-national-assembly.rebellions-and-army.regular-army.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.first-grand-national-assembly.regular-army"
+      ],
+      "statement": "Kuvâ-yı Millîyenin hiç direniş göstermemesi, Kuvâ-yı Millîyeden düzenli orduya geçiş nedenlerini yorumlar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · AYAKLANMALAR VE DÜZENLİ ORDU"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, Ayaklanmalar ve Düzenli Ordu başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.first-grand-national-assembly.rebellions-and-army.regular-army.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Hıyanet-i Vataniye Kanunu’nun çıkarılma amacı hangisidir?",
+          "right": "TBMM otoritesine karşı ayaklanmaları önlemek"
+        },
+        {
+          "id": "pair-2",
+          "left": "Düzenli ordunun kurulmasını zorunlu kılan temel durum hangisidir?",
+          "right": "Dağınık birliklerle işgal ordusuna karşı ortak harekât yürütülememesi"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.first-grand-national-assembly.rebellions-measures",
+        "skill.history.first-grand-national-assembly.regular-army"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · AYAKLANMALAR VE DÜZENLİ ORDU",
+      "title": "Bilgi bağlarını eşleştir"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.first-grand-national-assembly.assembly-authority.assembly-sovereignty.mcq01",
+        "exercise.history.first-grand-national-assembly.assembly-authority.assembly-sovereignty.tf01",
+        "exercise.history.first-grand-national-assembly.assembly-authority.assembly-sovereignty.fill01",
+        "exercise.history.first-grand-national-assembly.assembly-authority.powers-unity.mcq01",
+        "exercise.history.first-grand-national-assembly.assembly-authority.powers-unity.tf01",
+        "exercise.history.first-grand-national-assembly.assembly-authority.powers-unity.match01"
+      ],
+      "id": "lesson.history.first-grand-national-assembly.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "Meclisin Açılışı ve Yetkileri",
+      "topicId": "tyt.history.first-grand-national-assembly.assembly-authority"
+    },
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.first-grand-national-assembly.rebellions-and-army.rebellions-measures.mcq01",
+        "exercise.history.first-grand-national-assembly.rebellions-and-army.rebellions-measures.tf01",
+        "exercise.history.first-grand-national-assembly.rebellions-and-army.rebellions-measures.fill01",
+        "exercise.history.first-grand-national-assembly.rebellions-and-army.regular-army.mcq01",
+        "exercise.history.first-grand-national-assembly.rebellions-and-army.regular-army.tf01",
+        "exercise.history.first-grand-national-assembly.rebellions-and-army.regular-army.match01"
+      ],
+      "id": "lesson.history.first-grand-national-assembly.002",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "Ayaklanmalar ve Düzenli Ordu",
+      "topicId": "tyt.history.first-grand-national-assembly.rebellions-and-army"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.history.first-grand-national-assembly.01",
+      "kind": "lesson",
+      "lessonId": "lesson.history.first-grand-national-assembly.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.history.preparation-for-independence-war.02"
+      ],
+      "title": "Meclisin Açılışı ve Yetkileri",
+      "unitId": "tyt.history.first-grand-national-assembly"
+    },
+    {
+      "id": "path.history.first-grand-national-assembly.02",
+      "kind": "checkpoint",
+      "lessonId": "lesson.history.first-grand-national-assembly.002",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.history.first-grand-national-assembly.01"
+      ],
+      "title": "I. TBMM Dönemi Kontrolü",
+      "unitId": "tyt.history.first-grand-national-assembly"
+    }
+  ],
+  "skills": [
+    {
+      "description": "I. TBMM’nin millî egemenlik anlayışını açıklar.",
+      "id": "skill.history.first-grand-national-assembly.assembly-sovereignty",
+      "title": "I. TBMM’nin millî egemenlik anlayışını açıklar",
+      "topicId": "tyt.history.first-grand-national-assembly.assembly-authority"
+    },
+    {
+      "description": "Güçler birliği ilkesinin savaş koşullarındaki işlevini yorumlar.",
+      "id": "skill.history.first-grand-national-assembly.powers-unity",
+      "title": "Güçler birliği ilkesinin savaş koşullarındaki işlevini yorumlar",
+      "topicId": "tyt.history.first-grand-national-assembly.assembly-authority"
+    },
+    {
+      "description": "TBMM’nin ayaklanmalara karşı aldığı önlemleri açıklar.",
+      "id": "skill.history.first-grand-national-assembly.rebellions-measures",
+      "title": "TBMM’nin ayaklanmalara karşı aldığı önlemleri açıklar",
+      "topicId": "tyt.history.first-grand-national-assembly.rebellions-and-army"
+    },
+    {
+      "description": "Kuvâ-yı Millîyeden düzenli orduya geçiş nedenlerini yorumlar.",
+      "id": "skill.history.first-grand-national-assembly.regular-army",
+      "title": "Kuvâ-yı Millîyeden düzenli orduya geçiş nedenlerini yorumlar",
+      "topicId": "tyt.history.first-grand-national-assembly.rebellions-and-army"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.history.first-grand-national-assembly.assembly-sovereignty",
+        "concept.history.first-grand-national-assembly.powers-unity"
+      ],
+      "id": "tyt.history.first-grand-national-assembly.assembly-authority",
+      "skillIds": [
+        "skill.history.first-grand-national-assembly.assembly-sovereignty",
+        "skill.history.first-grand-national-assembly.powers-unity"
+      ],
+      "title": "Meclisin Açılışı ve Yetkileri",
+      "unitId": "tyt.history.first-grand-national-assembly"
+    },
+    {
+      "conceptIds": [
+        "concept.history.first-grand-national-assembly.rebellions-measures",
+        "concept.history.first-grand-national-assembly.regular-army"
+      ],
+      "id": "tyt.history.first-grand-national-assembly.rebellions-and-army",
+      "skillIds": [
+        "skill.history.first-grand-national-assembly.rebellions-measures",
+        "skill.history.first-grand-national-assembly.regular-army"
+      ],
+      "title": "Ayaklanmalar ve Düzenli Ordu",
+      "unitId": "tyt.history.first-grand-national-assembly"
+    }
+  ],
+  "unitId": "tyt.history.first-grand-national-assembly"
+}

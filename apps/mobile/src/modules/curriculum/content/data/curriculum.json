@@ -1,6 +1,6 @@
 {
-  "contentVersion": "0.2.0-draft",
-  "curriculumVersion": "2026.1-draft",
+  "contentVersion": "0.6.0-draft",
+  "curriculumVersion": "2027.1-draft",
   "exams": [
     {
       "id": "tyt",
@@ -12,7 +12,8 @@
         "tyt.philosophy",
         "tyt.physics",
         "tyt.chemistry",
-        "tyt.biology"
+        "tyt.biology",
+        "tyt.religion"
       ],
       "title": "TYT"
     },
@@ -38,8 +39,30 @@
       "title": "Tarih",
       "unitIds": [
         "tyt.history.time-and-history",
+        "tyt.history.first-human-periods",
+        "tyt.history.medieval-world",
         "tyt.history.first-turkish-states",
-        "tyt.history.medieval-world"
+        "tyt.history.birth-of-islamic-civilization",
+        "tyt.history.first-turkish-islamic-states",
+        "tyt.history.seljuk-turkey-settlement",
+        "tyt.history.ottoman-from-beylik-to-state",
+        "tyt.history.ottoman-world-power",
+        "tyt.history.early-modern-europe",
+        "tyt.history.modern-europe",
+        "tyt.history.ottoman-search-years",
+        "tyt.history.eighteenth-century-change-diplomacy",
+        "tyt.history.longest-century",
+        "tyt.history.ottoman-culture-civilization",
+        "tyt.history.ottoman-twentieth-century",
+        "tyt.history.world-war-one",
+        "tyt.history.armistice-occupations-societies",
+        "tyt.history.preparation-for-independence-war",
+        "tyt.history.first-grand-national-assembly",
+        "tyt.history.independence-war-treaties",
+        "tyt.history.second-assembly-multiparty",
+        "tyt.history.turkish-revolution",
+        "tyt.history.ataturk-principles",
+        "tyt.history.ataturk-foreign-policy"
       ]
     },
     {
@@ -61,14 +84,44 @@
       "id": "tyt.geography",
       "themeKey": "geography",
       "title": "Coğrafya",
-      "unitIds": []
+      "unitIds": [
+        "tyt.geography.nature-human",
+        "tyt.geography.earth-shape-motions",
+        "tyt.geography.geographic-location",
+        "tyt.geography.map-knowledge",
+        "tyt.geography.atmosphere-temperature",
+        "tyt.geography.climates",
+        "tyt.geography.pressure-winds",
+        "tyt.geography.humidity-precipitation",
+        "tyt.geography.internal-external-forces",
+        "tyt.geography.water-soil-plants",
+        "tyt.geography.population",
+        "tyt.geography.migration",
+        "tyt.geography.settlement",
+        "tyt.geography.turkey-landforms",
+        "tyt.geography.economic-activities",
+        "tyt.geography.regions",
+        "tyt.geography.international-routes",
+        "tyt.geography.environment-society",
+        "tyt.geography.natural-disasters"
+      ]
     },
     {
       "examId": "tyt",
       "id": "tyt.philosophy",
       "themeKey": "philosophy",
       "title": "Felsefe",
-      "unitIds": []
+      "unitIds": [
+        "tyt.philosophy.subject-matter",
+        "tyt.philosophy.epistemology",
+        "tyt.philosophy.ontology",
+        "tyt.philosophy.religion-culture-civilization",
+        "tyt.philosophy.ethics",
+        "tyt.philosophy.aesthetics",
+        "tyt.philosophy.philosophy-of-religion",
+        "tyt.philosophy.political-philosophy",
+        "tyt.philosophy.philosophy-of-science"
+      ]
     },
     {
       "examId": "tyt",
@@ -125,6 +178,29 @@
       "themeKey": "history",
       "title": "Tarih",
       "unitIds": []
+    },
+    {
+      "examId": "tyt",
+      "id": "tyt.religion",
+      "themeKey": "religion",
+      "title": "Din Kültürü ve Ahlak Bilgisi",
+      "unitIds": [
+        "tyt.religion.faith",
+        "tyt.religion.worship",
+        "tyt.religion.morality-values",
+        "tyt.religion.religion-culture-civilization",
+        "tyt.religion.prophet-life",
+        "tyt.religion.revelation-reason",
+        "tyt.religion.world-afterlife",
+        "tyt.religion.prophet-in-quran",
+        "tyt.religion.belief-issues",
+        "tyt.religion.judaism-christianity",
+        "tyt.religion.islam-science",
+        "tyt.religion.islam-anatolia",
+        "tyt.religion.sufi-interpretations",
+        "tyt.religion.contemporary-issues",
+        "tyt.religion.indian-chinese-religions"
+      ]
     }
   ],
   "units": [
@@ -138,6 +214,23 @@
       ]
     },
     {
+      "id": "tyt.history.first-human-periods",
+      "subjectId": "tyt.history",
+      "title": "İnsanlığın İlk Dönemleri",
+      "topicIds": [
+        "tyt.history.first-human-periods.from-hunter-to-farmer",
+        "tyt.history.first-human-periods.writing-and-civilizations"
+      ]
+    },
+    {
+      "id": "tyt.history.medieval-world",
+      "subjectId": "tyt.history",
+      "title": "Orta Çağ'da Dünya",
+      "topicIds": [
+        "tyt.history.medieval-world.feudalism"
+      ]
+    },
+    {
       "id": "tyt.history.first-turkish-states",
       "subjectId": "tyt.history",
       "title": "İlk ve Orta Çağlarda Türk Dünyası",
@@ -147,11 +240,603 @@
       ]
     },
     {
-      "id": "tyt.history.medieval-world",
+      "id": "tyt.history.birth-of-islamic-civilization",
       "subjectId": "tyt.history",
-      "title": "Orta Çağ'da Dünya",
+      "title": "İslam Medeniyetinin Doğuşu",
       "topicIds": [
-        "tyt.history.medieval-world.feudalism"
+        "tyt.history.birth-of-islamic-civilization.arabia-and-revelation",
+        "tyt.history.birth-of-islamic-civilization.caliphates-and-expansion"
+      ]
+    },
+    {
+      "id": "tyt.history.first-turkish-islamic-states",
+      "subjectId": "tyt.history",
+      "title": "İlk Türk İslam Devletleri",
+      "topicIds": [
+        "tyt.history.first-turkish-islamic-states.karakhanids-ghaznavids",
+        "tyt.history.first-turkish-islamic-states.great-seljuks"
+      ]
+    },
+    {
+      "id": "tyt.history.seljuk-turkey-settlement",
+      "subjectId": "tyt.history",
+      "title": "Yerleşme ve Devletleşme Sürecinde Selçuklu Türkiyesi",
+      "topicIds": [
+        "tyt.history.seljuk-turkey-settlement.anatolia-conquest",
+        "tyt.history.seljuk-turkey-settlement.anatolian-seljuk-state"
+      ]
+    },
+    {
+      "id": "tyt.history.ottoman-from-beylik-to-state",
+      "subjectId": "tyt.history",
+      "title": "Beylikten Devlete Osmanlı Siyaseti (1300-1453)",
+      "topicIds": [
+        "tyt.history.ottoman-from-beylik-to-state.foundation-and-rumelia",
+        "tyt.history.ottoman-from-beylik-to-state.centralization-and-crisis"
+      ]
+    },
+    {
+      "id": "tyt.history.ottoman-world-power",
+      "subjectId": "tyt.history",
+      "title": "Dünya Gücü Osmanlı Devleti (1453-1600)",
+      "topicIds": [
+        "tyt.history.ottoman-world-power.conquest-and-central-power",
+        "tyt.history.ottoman-world-power.east-west-and-seas"
+      ]
+    },
+    {
+      "id": "tyt.history.early-modern-europe",
+      "subjectId": "tyt.history",
+      "title": "Yeni Çağ Avrupa Tarihi",
+      "topicIds": [
+        "tyt.history.early-modern-europe.renaissance-reformation",
+        "tyt.history.early-modern-europe.discoveries-and-power"
+      ]
+    },
+    {
+      "id": "tyt.history.modern-europe",
+      "subjectId": "tyt.history",
+      "title": "Yakın Çağ Avrupa Tarihi",
+      "topicIds": [
+        "tyt.history.modern-europe.enlightenment-revolutions",
+        "tyt.history.modern-europe.industry-and-imperialism"
+      ]
+    },
+    {
+      "id": "tyt.history.ottoman-search-years",
+      "subjectId": "tyt.history",
+      "title": "Osmanlı Devleti’nde Arayış Yılları",
+      "topicIds": [
+        "tyt.history.ottoman-search-years.seventeenth-century-change",
+        "tyt.history.ottoman-search-years.reform-and-reports"
+      ]
+    },
+    {
+      "id": "tyt.history.eighteenth-century-change-diplomacy",
+      "subjectId": "tyt.history",
+      "title": "18. Yüzyılda Değişim ve Diplomasi",
+      "topicIds": [
+        "tyt.history.eighteenth-century-change-diplomacy.tulip-era",
+        "tyt.history.eighteenth-century-change-diplomacy.balance-diplomacy"
+      ]
+    },
+    {
+      "id": "tyt.history.longest-century",
+      "subjectId": "tyt.history",
+      "title": "En Uzun Yüzyıl",
+      "topicIds": [
+        "tyt.history.longest-century.reform-edicts",
+        "tyt.history.longest-century.nationalism-and-economy"
+      ]
+    },
+    {
+      "id": "tyt.history.ottoman-culture-civilization",
+      "subjectId": "tyt.history",
+      "title": "Osmanlı Kültür ve Medeniyeti",
+      "topicIds": [
+        "tyt.history.ottoman-culture-civilization.state-society",
+        "tyt.history.ottoman-culture-civilization.land-economy-education"
+      ]
+    },
+    {
+      "id": "tyt.history.ottoman-twentieth-century",
+      "subjectId": "tyt.history",
+      "title": "20. Yüzyılda Osmanlı Devleti",
+      "topicIds": [
+        "tyt.history.ottoman-twentieth-century.tripoli-balkan-wars",
+        "tyt.history.ottoman-twentieth-century.second-constitutional-era"
+      ]
+    },
+    {
+      "id": "tyt.history.world-war-one",
+      "subjectId": "tyt.history",
+      "title": "I. Dünya Savaşı",
+      "topicIds": [
+        "tyt.history.world-war-one.causes-and-entry",
+        "tyt.history.world-war-one.fronts-and-results"
+      ]
+    },
+    {
+      "id": "tyt.history.armistice-occupations-societies",
+      "subjectId": "tyt.history",
+      "title": "Mondros Ateşkesi, İşgaller ve Cemiyetler",
+      "topicIds": [
+        "tyt.history.armistice-occupations-societies.mondros-occupations",
+        "tyt.history.armistice-occupations-societies.national-and-hostile-societies"
+      ]
+    },
+    {
+      "id": "tyt.history.preparation-for-independence-war",
+      "subjectId": "tyt.history",
+      "title": "Kurtuluş Savaşı’na Hazırlık Dönemi",
+      "topicIds": [
+        "tyt.history.preparation-for-independence-war.circulars-congresses",
+        "tyt.history.preparation-for-independence-war.representation-and-misak"
+      ]
+    },
+    {
+      "id": "tyt.history.first-grand-national-assembly",
+      "subjectId": "tyt.history",
+      "title": "I. TBMM Dönemi",
+      "topicIds": [
+        "tyt.history.first-grand-national-assembly.assembly-authority",
+        "tyt.history.first-grand-national-assembly.rebellions-and-army"
+      ]
+    },
+    {
+      "id": "tyt.history.independence-war-treaties",
+      "subjectId": "tyt.history",
+      "title": "Kurtuluş Savaşı ve Antlaşmalar",
+      "topicIds": [
+        "tyt.history.independence-war-treaties.fronts",
+        "tyt.history.independence-war-treaties.armistice-and-peace"
+      ]
+    },
+    {
+      "id": "tyt.history.second-assembly-multiparty",
+      "subjectId": "tyt.history",
+      "title": "II. TBMM Dönemi ve Çok Partili Hayata Geçiş",
+      "topicIds": [
+        "tyt.history.second-assembly-multiparty.second-assembly-republic",
+        "tyt.history.second-assembly-multiparty.multiparty-attempts"
+      ]
+    },
+    {
+      "id": "tyt.history.turkish-revolution",
+      "subjectId": "tyt.history",
+      "title": "Türk İnkılabı",
+      "topicIds": [
+        "tyt.history.turkish-revolution.political-legal",
+        "tyt.history.turkish-revolution.education-society-economy"
+      ]
+    },
+    {
+      "id": "tyt.history.ataturk-principles",
+      "subjectId": "tyt.history",
+      "title": "Atatürk İlkeleri",
+      "topicIds": [
+        "tyt.history.ataturk-principles.republican-national-populist",
+        "tyt.history.ataturk-principles.secular-statist-reformist"
+      ]
+    },
+    {
+      "id": "tyt.history.ataturk-foreign-policy",
+      "subjectId": "tyt.history",
+      "title": "Atatürk Dönemi Türk Dış Politikası",
+      "topicIds": [
+        "tyt.history.ataturk-foreign-policy.principles-and-problems",
+        "tyt.history.ataturk-foreign-policy.regional-pacts-straits-hatay"
+      ]
+    },
+    {
+      "id": "tyt.geography.nature-human",
+      "subjectId": "tyt.geography",
+      "title": "Doğa ve İnsan",
+      "topicIds": [
+        "tyt.geography.nature-human.interaction",
+        "tyt.geography.nature-human.spatial-thinking"
+      ]
+    },
+    {
+      "id": "tyt.geography.earth-shape-motions",
+      "subjectId": "tyt.geography",
+      "title": "Dünya’nın Şekli ve Hareketleri",
+      "topicIds": [
+        "tyt.geography.earth-shape-motions.shape-daily",
+        "tyt.geography.earth-shape-motions.annual-seasons"
+      ]
+    },
+    {
+      "id": "tyt.geography.geographic-location",
+      "subjectId": "tyt.geography",
+      "title": "Coğrafi Konum",
+      "topicIds": [
+        "tyt.geography.geographic-location.latitude-longitude",
+        "tyt.geography.geographic-location.turkey-location"
+      ]
+    },
+    {
+      "id": "tyt.geography.map-knowledge",
+      "subjectId": "tyt.geography",
+      "title": "Harita Bilgisi",
+      "topicIds": [
+        "tyt.geography.map-knowledge.scale",
+        "tyt.geography.map-knowledge.contours"
+      ]
+    },
+    {
+      "id": "tyt.geography.atmosphere-temperature",
+      "subjectId": "tyt.geography",
+      "title": "Atmosfer ve Sıcaklık",
+      "topicIds": [
+        "tyt.geography.atmosphere-temperature.atmosphere",
+        "tyt.geography.atmosphere-temperature.temperature-factors"
+      ]
+    },
+    {
+      "id": "tyt.geography.climates",
+      "subjectId": "tyt.geography",
+      "title": "İklimler",
+      "topicIds": [
+        "tyt.geography.climates.climate-data",
+        "tyt.geography.climates.climate-vegetation"
+      ]
+    },
+    {
+      "id": "tyt.geography.pressure-winds",
+      "subjectId": "tyt.geography",
+      "title": "Basınç ve Rüzgarlar",
+      "topicIds": [
+        "tyt.geography.pressure-winds.pressure",
+        "tyt.geography.pressure-winds.winds"
+      ]
+    },
+    {
+      "id": "tyt.geography.humidity-precipitation",
+      "subjectId": "tyt.geography",
+      "title": "Nem, Yağış ve Buharlaşma",
+      "topicIds": [
+        "tyt.geography.humidity-precipitation.humidity",
+        "tyt.geography.humidity-precipitation.precipitation"
+      ]
+    },
+    {
+      "id": "tyt.geography.internal-external-forces",
+      "subjectId": "tyt.geography",
+      "title": "İç Kuvvetler / Dış Kuvvetler",
+      "topicIds": [
+        "tyt.geography.internal-external-forces.internal-forces",
+        "tyt.geography.internal-external-forces.external-forces"
+      ]
+    },
+    {
+      "id": "tyt.geography.water-soil-plants",
+      "subjectId": "tyt.geography",
+      "title": "Su – Toprak ve Bitkiler",
+      "topicIds": [
+        "tyt.geography.water-soil-plants.water",
+        "tyt.geography.water-soil-plants.soil-plants"
+      ]
+    },
+    {
+      "id": "tyt.geography.population",
+      "subjectId": "tyt.geography",
+      "title": "Nüfus",
+      "topicIds": [
+        "tyt.geography.population.distribution-density",
+        "tyt.geography.population.structure-policy"
+      ]
+    },
+    {
+      "id": "tyt.geography.migration",
+      "subjectId": "tyt.geography",
+      "title": "Göç",
+      "topicIds": [
+        "tyt.geography.migration.types",
+        "tyt.geography.migration.causes-effects"
+      ]
+    },
+    {
+      "id": "tyt.geography.settlement",
+      "subjectId": "tyt.geography",
+      "title": "Yerleşme",
+      "topicIds": [
+        "tyt.geography.settlement.patterns",
+        "tyt.geography.settlement.factors"
+      ]
+    },
+    {
+      "id": "tyt.geography.turkey-landforms",
+      "subjectId": "tyt.geography",
+      "title": "Türkiye’nin Yer Şekilleri",
+      "topicIds": [
+        "tyt.geography.turkey-landforms.relief",
+        "tyt.geography.turkey-landforms.plains-rivers"
+      ]
+    },
+    {
+      "id": "tyt.geography.economic-activities",
+      "subjectId": "tyt.geography",
+      "title": "Ekonomik Faaliyetler",
+      "topicIds": [
+        "tyt.geography.economic-activities.primary",
+        "tyt.geography.economic-activities.industry-services"
+      ]
+    },
+    {
+      "id": "tyt.geography.regions",
+      "subjectId": "tyt.geography",
+      "title": "Bölgeler",
+      "topicIds": [
+        "tyt.geography.regions.region-concept",
+        "tyt.geography.regions.boundaries"
+      ]
+    },
+    {
+      "id": "tyt.geography.international-routes",
+      "subjectId": "tyt.geography",
+      "title": "Uluslararası Ulaşım Hatları",
+      "topicIds": [
+        "tyt.geography.international-routes.straits-canals",
+        "tyt.geography.international-routes.trade-strategy"
+      ]
+    },
+    {
+      "id": "tyt.geography.environment-society",
+      "subjectId": "tyt.geography",
+      "title": "Çevre ve Toplum",
+      "topicIds": [
+        "tyt.geography.environment-society.problems",
+        "tyt.geography.environment-society.sustainability"
+      ]
+    },
+    {
+      "id": "tyt.geography.natural-disasters",
+      "subjectId": "tyt.geography",
+      "title": "Doğal Afetler",
+      "topicIds": [
+        "tyt.geography.natural-disasters.hazard-risk",
+        "tyt.geography.natural-disasters.turkey-risks"
+      ]
+    },
+    {
+      "id": "tyt.philosophy.subject-matter",
+      "subjectId": "tyt.philosophy",
+      "title": "Felsefenin Konusu",
+      "topicIds": [
+        "tyt.philosophy.subject-matter.meaning-inquiry",
+        "tyt.philosophy.subject-matter.thinking-features",
+        "tyt.philosophy.subject-matter.functions-relations"
+      ]
+    },
+    {
+      "id": "tyt.philosophy.epistemology",
+      "subjectId": "tyt.philosophy",
+      "title": "Bilgi Felsefesi",
+      "topicIds": [
+        "tyt.philosophy.epistemology.knowledge-truth",
+        "tyt.philosophy.epistemology.sources",
+        "tyt.philosophy.epistemology.possibility-limits"
+      ]
+    },
+    {
+      "id": "tyt.philosophy.ontology",
+      "subjectId": "tyt.philosophy",
+      "title": "Varlık Felsefesi",
+      "topicIds": [
+        "tyt.philosophy.ontology.being-kinds",
+        "tyt.philosophy.ontology.substance",
+        "tyt.philosophy.ontology.unity-change"
+      ]
+    },
+    {
+      "id": "tyt.philosophy.religion-culture-civilization",
+      "subjectId": "tyt.philosophy",
+      "title": "Din, Kültür ve Medeniyet",
+      "topicIds": [
+        "tyt.philosophy.religion-culture-civilization.culture-values",
+        "tyt.philosophy.religion-culture-civilization.religion-culture",
+        "tyt.philosophy.religion-culture-civilization.civilization-society"
+      ]
+    },
+    {
+      "id": "tyt.philosophy.ethics",
+      "subjectId": "tyt.philosophy",
+      "title": "Ahlak Felsefesi",
+      "topicIds": [
+        "tyt.philosophy.ethics.action-freedom",
+        "tyt.philosophy.ethics.moral-law",
+        "tyt.philosophy.ethics.aim-good"
+      ]
+    },
+    {
+      "id": "tyt.philosophy.aesthetics",
+      "subjectId": "tyt.philosophy",
+      "title": "Sanat Felsefesi",
+      "topicIds": [
+        "tyt.philosophy.aesthetics.aesthetic-structure",
+        "tyt.philosophy.aesthetics.beauty-art",
+        "tyt.philosophy.aesthetics.art-theories"
+      ]
+    },
+    {
+      "id": "tyt.philosophy.philosophy-of-religion",
+      "subjectId": "tyt.philosophy",
+      "title": "Din Felsefesi",
+      "topicIds": [
+        "tyt.philosophy.philosophy-of-religion.scope-reason",
+        "tyt.philosophy.philosophy-of-religion.god-universe",
+        "tyt.philosophy.philosophy-of-religion.critique-problems"
+      ]
+    },
+    {
+      "id": "tyt.philosophy.political-philosophy",
+      "subjectId": "tyt.philosophy",
+      "title": "Siyaset Felsefesi",
+      "topicIds": [
+        "tyt.philosophy.political-philosophy.power-legitimacy",
+        "tyt.philosophy.political-philosophy.rights-justice",
+        "tyt.philosophy.political-philosophy.state-ideal-order"
+      ]
+    },
+    {
+      "id": "tyt.philosophy.philosophy-of-science",
+      "subjectId": "tyt.philosophy",
+      "title": "Bilim Felsefesi",
+      "topicIds": [
+        "tyt.philosophy.philosophy-of-science.science-method",
+        "tyt.philosophy.philosophy-of-science.theory-testing",
+        "tyt.philosophy.philosophy-of-science.development-values"
+      ]
+    },
+    {
+      "id": "tyt.religion.faith",
+      "subjectId": "tyt.religion",
+      "title": "İnanç",
+      "topicIds": [
+        "tyt.religion.faith.faith-basics",
+        "tyt.religion.faith.belief-principles",
+        "tyt.religion.faith.destiny-will"
+      ]
+    },
+    {
+      "id": "tyt.religion.worship",
+      "subjectId": "tyt.religion",
+      "title": "İbadet",
+      "topicIds": [
+        "tyt.religion.worship.meaning-intention",
+        "tyt.religion.worship.basic-worship",
+        "tyt.religion.worship.individual-social"
+      ]
+    },
+    {
+      "id": "tyt.religion.morality-values",
+      "subjectId": "tyt.religion",
+      "title": "Ahlak ve Değerler",
+      "topicIds": [
+        "tyt.religion.morality-values.moral-agency",
+        "tyt.religion.morality-values.justice-trust",
+        "tyt.religion.morality-values.mercy-rights"
+      ]
+    },
+    {
+      "id": "tyt.religion.religion-culture-civilization",
+      "subjectId": "tyt.religion",
+      "title": "Din, Kültür ve Medeniyet",
+      "topicIds": [
+        "tyt.religion.religion-culture-civilization.religion-culture",
+        "tyt.religion.religion-culture-civilization.family-society",
+        "tyt.religion.religion-culture-civilization.art-civilization"
+      ]
+    },
+    {
+      "id": "tyt.religion.prophet-life",
+      "subjectId": "tyt.religion",
+      "title": "Hz. Muhammed (S.A.V.)",
+      "topicIds": [
+        "tyt.religion.prophet-life.periods-message",
+        "tyt.religion.prophet-life.social-relations",
+        "tyt.religion.prophet-life.exemplary-character"
+      ]
+    },
+    {
+      "id": "tyt.religion.revelation-reason",
+      "subjectId": "tyt.religion",
+      "title": "Vahiy ve Akıl",
+      "topicIds": [
+        "tyt.religion.revelation-reason.sources-knowledge",
+        "tyt.religion.revelation-reason.thinking-questioning",
+        "tyt.religion.revelation-reason.reason-responsibility"
+      ]
+    },
+    {
+      "id": "tyt.religion.world-afterlife",
+      "subjectId": "tyt.religion",
+      "title": "Dünya ve Ahiret",
+      "topicIds": [
+        "tyt.religion.world-afterlife.world-purpose",
+        "tyt.religion.world-afterlife.death-afterlife",
+        "tyt.religion.world-afterlife.balance-account"
+      ]
+    },
+    {
+      "id": "tyt.religion.prophet-in-quran",
+      "subjectId": "tyt.religion",
+      "title": "Kur’an’a Göre Hz. Muhammed (S.A.V.)",
+      "topicIds": [
+        "tyt.religion.prophet-in-quran.messenger-human",
+        "tyt.religion.prophet-in-quran.explanation-example",
+        "tyt.religion.prophet-in-quran.mercy-warning"
+      ]
+    },
+    {
+      "id": "tyt.religion.belief-issues",
+      "subjectId": "tyt.religion",
+      "title": "İnançla İlgili Meseleler",
+      "topicIds": [
+        "tyt.religion.belief-issues.freedom-evil",
+        "tyt.religion.belief-issues.belief-life",
+        "tyt.religion.belief-issues.superstition"
+      ]
+    },
+    {
+      "id": "tyt.religion.judaism-christianity",
+      "subjectId": "tyt.religion",
+      "title": "Yahudilik ve Hristiyanlık",
+      "topicIds": [
+        "tyt.religion.judaism-christianity.judaism",
+        "tyt.religion.judaism-christianity.christianity",
+        "tyt.religion.judaism-christianity.respectful-comparison"
+      ]
+    },
+    {
+      "id": "tyt.religion.islam-science",
+      "subjectId": "tyt.religion",
+      "title": "İslam ve Bilim",
+      "topicIds": [
+        "tyt.religion.islam-science.knowledge-research",
+        "tyt.religion.islam-science.scientific-heritage",
+        "tyt.religion.islam-science.scholars-institutions"
+      ]
+    },
+    {
+      "id": "tyt.religion.islam-anatolia",
+      "subjectId": "tyt.religion",
+      "title": "Anadolu’da İslam",
+      "topicIds": [
+        "tyt.religion.islam-anatolia.historical-process",
+        "tyt.religion.islam-anatolia.solidarity-institutions",
+        "tyt.religion.islam-anatolia.figures-culture"
+      ]
+    },
+    {
+      "id": "tyt.religion.sufi-interpretations",
+      "subjectId": "tyt.religion",
+      "title": "İslam Düşüncesinde Tasavvufi Yorumlar",
+      "topicIds": [
+        "tyt.religion.sufi-interpretations.sufism-ethics",
+        "tyt.religion.sufi-interpretations.concepts-orders",
+        "tyt.religion.sufi-interpretations.love-tolerance"
+      ]
+    },
+    {
+      "id": "tyt.religion.contemporary-issues",
+      "subjectId": "tyt.religion",
+      "title": "Güncel Dinî Meseleler",
+      "topicIds": [
+        "tyt.religion.contemporary-issues.technology-privacy",
+        "tyt.religion.contemporary-issues.environment-consumption",
+        "tyt.religion.contemporary-issues.social-problems"
+      ]
+    },
+    {
+      "id": "tyt.religion.indian-chinese-religions",
+      "subjectId": "tyt.religion",
+      "title": "Hint ve Çin Dinleri",
+      "topicIds": [
+        "tyt.religion.indian-chinese-religions.hinduism",
+        "tyt.religion.indian-chinese-religions.buddhism",
+        "tyt.religion.indian-chinese-religions.confucianism-taoism"
       ]
     }
   ]

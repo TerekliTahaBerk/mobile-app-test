@@ -22,6 +22,7 @@ import type {
   PathProgress,
   ReviewItem,
   StoredAttempt,
+  StoredSession,
 } from '@/modules/progress/domain/progress-types';
 import {
   buildMistakeNotebook,
@@ -68,6 +69,8 @@ export type ProgressDashboard = {
   correctAnswers: number;
   /** Today's mixed, explainable question set. */
   dailyPlan: DailyPlan;
+  /** The learner's completed qualifying rounds on the observed local day. */
+  dailyProgress: { completed: number; goal: number };
   level: LevelStatus;
   /** Every mistake ever opened, with the evidence behind it. */
   mistakeNotebook: MistakeNotebook;
@@ -85,6 +88,8 @@ export type ProgressDashboard = {
   reportedExerciseIds: ReadonlySet<string>;
   /** The attributable answer log behind every performance read model. */
   scoredAttempts: readonly StoredAttempt[];
+  /** The resumable round, kept separate from recommendation priority. */
+  activeSession: StoredSession | null;
   streak: { current: number; todayQualified: boolean };
   subjects: ReadonlyMap<SubjectId, SubjectProgress>;
   totalXp: number;
@@ -218,6 +223,7 @@ export function useProgressDashboard(clock: Clock = systemClock): ProgressDashbo
 
             setState({
               data: {
+                activeSession,
                 bestStreak: longestRun(dates),
                 byExam,
                 completedNodes: progressRows.filter((row) => row.status === 'completed').length,
@@ -233,6 +239,12 @@ export function useProgressDashboard(clock: Clock = systemClock): ProgressDashbo
                   reportedExerciseIds,
                   topics: topicPerformance.topics,
                 }),
+                dailyProgress: {
+                  completed:
+                    activityDays.find((activity) => activity.localDate === today)
+                      ?.qualifyingSessions ?? 0,
+                  goal: profile?.dailyGoal ?? 3,
+                },
                 level: levelForXp(totalXp),
                 mistakeNotebook: buildMistakeNotebook(allMistakes, attempts, index),
                 nextStep,

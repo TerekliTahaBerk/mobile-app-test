@@ -35,6 +35,11 @@ alter or seed production progression.
 
 ## Open
 
-The authoritative curriculum source, versioning cadence, and educator approval
-workflow remain unresolved. The current multi-unit Tarih catalogue is still an
-engineering draft and must not be described as academically reviewed.
+The 25-unit 2027 TYT Tarih scope is represented in the authored bundle, but the
+authoritative external curriculum source, versioning cadence, and educator
+approval workflow remain unresolved. The current catalogue is an AI-assisted
+and engineering draft and must not be described as academically reviewed.
+
+The supplied 15-unit 2027 TYT Din Kültürü ve Ahlak Bilgisi scope is represented
+under `tyt.religion`. Its lessons and exercises are AI-assisted drafts; academic
+scope verification, source review, and human approval remain release blockers.

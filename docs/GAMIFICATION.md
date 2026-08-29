@@ -78,8 +78,10 @@ a decision.
 ## Lig (the league)
 
 Weekly standings with a promotion zone. It needs a real leaderboard service and
-is **disabled in `productionPilot`** — the tab stays in place and explains
-itself rather than ranking the learner against people who do not exist.
+its standings are **disabled in `productionPilot`**. The destination stays in
+Home and the bottom navigation and explains itself rather than ranking the
+learner against people who do not exist. The production delivery sequence is
+owned by [EXECUTION/LEAGUE.md](EXECUTION/LEAGUE.md).
 
 ## Current state
 

@@ -1,0 +1,862 @@
+{
+  "unitId": "tyt.religion.world-afterlife",
+  "topics": [
+    {
+      "id": "tyt.religion.world-afterlife.world-purpose",
+      "unitId": "tyt.religion.world-afterlife",
+      "title": "Dünya Hayatı ve Amaç",
+      "skillIds": [
+        "skill.religion.world-afterlife.world-purpose.interpret",
+        "skill.religion.world-afterlife.world-purpose.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.world-afterlife.world-purpose.dunya-hayati"
+      ]
+    },
+    {
+      "id": "tyt.religion.world-afterlife.death-afterlife",
+      "unitId": "tyt.religion.world-afterlife",
+      "title": "Ölüm ve Ahiret İnancı",
+      "skillIds": [
+        "skill.religion.world-afterlife.death-afterlife.interpret",
+        "skill.religion.world-afterlife.death-afterlife.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.world-afterlife.death-afterlife.ahiret"
+      ]
+    },
+    {
+      "id": "tyt.religion.world-afterlife.balance-account",
+      "unitId": "tyt.religion.world-afterlife",
+      "title": "Dünya-Ahiret Dengesi ve Hesap",
+      "skillIds": [
+        "skill.religion.world-afterlife.balance-account.interpret",
+        "skill.religion.world-afterlife.balance-account.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.world-afterlife.balance-account.hesap-bilinci"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "skill.religion.world-afterlife.world-purpose.interpret",
+      "title": "Dünya hayatını sorumluluk bilinciyle yorumlar.",
+      "description": "Dünya hayatını sorumluluk bilinciyle yorumlar.",
+      "topicId": "tyt.religion.world-afterlife.world-purpose"
+    },
+    {
+      "id": "skill.religion.world-afterlife.world-purpose.distinguish",
+      "title": "Dünyevî imkânları amaç ve araç bakımından ayırt eder.",
+      "description": "Dünyevî imkânları amaç ve araç bakımından ayırt eder.",
+      "topicId": "tyt.religion.world-afterlife.world-purpose"
+    },
+    {
+      "id": "skill.religion.world-afterlife.death-afterlife.interpret",
+      "title": "Ahiret inancının davranışlara etkisini yorumlar.",
+      "description": "Ahiret inancının davranışlara etkisini yorumlar.",
+      "topicId": "tyt.religion.world-afterlife.death-afterlife"
+    },
+    {
+      "id": "skill.religion.world-afterlife.death-afterlife.distinguish",
+      "title": "Ölümü eğitsel ve ölçülü bir dille açıklayan yaklaşımı seçer.",
+      "description": "Ölümü eğitsel ve ölçülü bir dille açıklayan yaklaşımı seçer.",
+      "topicId": "tyt.religion.world-afterlife.death-afterlife"
+    },
+    {
+      "id": "skill.religion.world-afterlife.balance-account.interpret",
+      "title": "Dünya ve ahiret sorumlulukları arasında denge kurar.",
+      "description": "Dünya ve ahiret sorumlulukları arasında denge kurar.",
+      "topicId": "tyt.religion.world-afterlife.balance-account"
+    },
+    {
+      "id": "skill.religion.world-afterlife.balance-account.distinguish",
+      "title": "Hesap bilinci ile ahlaki öz denetim ilişkisini çıkarır.",
+      "description": "Hesap bilinci ile ahlaki öz denetim ilişkisini çıkarır.",
+      "topicId": "tyt.religion.world-afterlife.balance-account"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "concept.religion.world-afterlife.world-purpose.dunya-hayati",
+      "term": "dünya hayatı",
+      "definition": "İslam inancında insanın seçim ve sorumluluklarla geçirdiği sınırlı yaşam alanı",
+      "topicId": "tyt.religion.world-afterlife.world-purpose"
+    },
+    {
+      "id": "concept.religion.world-afterlife.death-afterlife.ahiret",
+      "term": "ahiret",
+      "definition": "İslam inancına göre ölümden sonra başlayan ve hesap düşüncesini içeren hayat",
+      "topicId": "tyt.religion.world-afterlife.death-afterlife"
+    },
+    {
+      "id": "concept.religion.world-afterlife.balance-account.hesap-bilinci",
+      "term": "hesap bilinci",
+      "definition": "insanın yaptıklarının sonuçlarıyla karşılaşacağını gözetmesi",
+      "topicId": "tyt.religion.world-afterlife.balance-account"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "lesson.religion.world-afterlife.world-purpose.001",
+      "topicId": "tyt.religion.world-afterlife.world-purpose",
+      "title": "Dünya Hayatı ve Amaç",
+      "subtitle": "Dünya hayatını sorumluluk bilinciyle yorumlar. Dünyevî imkânları amaç ve araç bakımından ayırt eder.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.world-afterlife.world-purpose.001.card01",
+        "exercise.religion.world-afterlife.world-purpose.001.mcq01",
+        "exercise.religion.world-afterlife.world-purpose.001.mcq02",
+        "exercise.religion.world-afterlife.world-purpose.001.mcq03",
+        "exercise.religion.world-afterlife.world-purpose.001.mcq04",
+        "exercise.religion.world-afterlife.world-purpose.001.tf01",
+        "exercise.religion.world-afterlife.world-purpose.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.religion.world-afterlife.death-afterlife.001",
+      "topicId": "tyt.religion.world-afterlife.death-afterlife",
+      "title": "Ölüm ve Ahiret İnancı",
+      "subtitle": "Ahiret inancının davranışlara etkisini yorumlar. Ölümü eğitsel ve ölçülü bir dille açıklayan yaklaşımı seçer.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.world-afterlife.death-afterlife.001.card01",
+        "exercise.religion.world-afterlife.death-afterlife.001.mcq01",
+        "exercise.religion.world-afterlife.death-afterlife.001.mcq02",
+        "exercise.religion.world-afterlife.death-afterlife.001.mcq03",
+        "exercise.religion.world-afterlife.death-afterlife.001.mcq04",
+        "exercise.religion.world-afterlife.death-afterlife.001.tf01",
+        "exercise.religion.world-afterlife.death-afterlife.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.religion.world-afterlife.balance-account.001",
+      "topicId": "tyt.religion.world-afterlife.balance-account",
+      "title": "Dünya-Ahiret Dengesi ve Hesap",
+      "subtitle": "Dünya ve ahiret sorumlulukları arasında denge kurar. Hesap bilinci ile ahlaki öz denetim ilişkisini çıkarır.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.world-afterlife.balance-account.001.card01",
+        "exercise.religion.world-afterlife.balance-account.001.mcq01",
+        "exercise.religion.world-afterlife.balance-account.001.mcq02",
+        "exercise.religion.world-afterlife.balance-account.001.mcq03",
+        "exercise.religion.world-afterlife.balance-account.001.mcq04",
+        "exercise.religion.world-afterlife.balance-account.001.tf01",
+        "exercise.religion.world-afterlife.balance-account.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "id": "exercise.religion.world-afterlife.world-purpose.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "dünya hayatı, İslam inancında insanın seçim ve sorumluluklarla geçirdiği sınırlı yaşam alanı.",
+      "skillIds": [
+        "skill.religion.world-afterlife.world-purpose.interpret",
+        "skill.religion.world-afterlife.world-purpose.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · DÜNYA HAYATI VE AMAÇ",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "dünya hayatı",
+          "back": "İslam inancında insanın seçim ve sorumluluklarla geçirdiği sınırlı yaşam alanı",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.world-afterlife.world-purpose.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "dünya hayatı, İslam inancında insanın seçim ve sorumluluklarla geçirdiği sınırlı yaşam alanı.",
+      "skillIds": [
+        "skill.religion.world-afterlife.world-purpose.interpret",
+        "skill.religion.world-afterlife.world-purpose.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · DÜNYA HAYATI VE AMAÇ",
+      "prompt": "“İslam inancında insanın seçim ve sorumluluklarla geçirdiği sınırlı yaşam alanı” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "dünya hayatı"
+        },
+        {
+          "id": "b",
+          "label": "ahiret"
+        },
+        {
+          "id": "c",
+          "label": "hesap bilinci"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.world-afterlife.world-purpose.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada dünya hayatı kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.world-afterlife.world-purpose.interpret",
+        "skill.religion.world-afterlife.world-purpose.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · DÜNYA HAYATI VE AMAÇ",
+      "prompt": "Bir öğrenci dünya hayatı konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.world-afterlife.world-purpose.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Dünya hayatını sorumluluk bilinciyle yorumlar. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.world-afterlife.world-purpose.interpret",
+        "skill.religion.world-afterlife.world-purpose.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · DÜNYA HAYATI VE AMAÇ",
+      "prompt": "Dünya hayatını sorumluluk bilinciyle yorumlar. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.world-afterlife.world-purpose.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "Dünyevî imkânları amaç ve araç bakımından ayırt eder. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.world-afterlife.world-purpose.interpret",
+        "skill.religion.world-afterlife.world-purpose.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · DÜNYA HAYATI VE AMAÇ",
+      "prompt": "Bir açıklama, dünya hayatı kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.world-afterlife.world-purpose.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. dünya hayatı, İslam inancında insanın seçim ve sorumluluklarla geçirdiği sınırlı yaşam alanı; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.world-afterlife.world-purpose.interpret",
+        "skill.religion.world-afterlife.world-purpose.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · DÜNYA HAYATI VE AMAÇ",
+      "statement": "dünya hayatı kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.world-afterlife.world-purpose.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.world-afterlife.world-purpose.interpret",
+        "skill.religion.world-afterlife.world-purpose.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · DÜNYA HAYATI VE AMAÇ",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "dünya hayatı",
+          "right": "İslam inancında insanın seçim ve sorumluluklarla geçirdiği sınırlı yaşam alanı"
+        },
+        {
+          "id": "p2",
+          "left": "ahiret",
+          "right": "İslam inancına göre ölümden sonra başlayan ve hesap düşüncesini içeren hayat"
+        },
+        {
+          "id": "p3",
+          "left": "hesap bilinci",
+          "right": "insanın yaptıklarının sonuçlarıyla karşılaşacağını gözetmesi"
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.world-afterlife.death-afterlife.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "ahiret, İslam inancına göre ölümden sonra başlayan ve hesap düşüncesini içeren hayat.",
+      "skillIds": [
+        "skill.religion.world-afterlife.death-afterlife.interpret",
+        "skill.religion.world-afterlife.death-afterlife.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ÖLÜM VE AHİRET İNANCI",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "ahiret",
+          "back": "İslam inancına göre ölümden sonra başlayan ve hesap düşüncesini içeren hayat",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.world-afterlife.death-afterlife.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "ahiret, İslam inancına göre ölümden sonra başlayan ve hesap düşüncesini içeren hayat.",
+      "skillIds": [
+        "skill.religion.world-afterlife.death-afterlife.interpret",
+        "skill.religion.world-afterlife.death-afterlife.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ÖLÜM VE AHİRET İNANCI",
+      "prompt": "“İslam inancına göre ölümden sonra başlayan ve hesap düşüncesini içeren hayat” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "dünya hayatı"
+        },
+        {
+          "id": "b",
+          "label": "ahiret"
+        },
+        {
+          "id": "c",
+          "label": "hesap bilinci"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "b"
+    },
+    {
+      "id": "exercise.religion.world-afterlife.death-afterlife.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada ahiret kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.world-afterlife.death-afterlife.interpret",
+        "skill.religion.world-afterlife.death-afterlife.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ÖLÜM VE AHİRET İNANCI",
+      "prompt": "Bir öğrenci ahiret konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.world-afterlife.death-afterlife.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Ahiret inancının davranışlara etkisini yorumlar. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.world-afterlife.death-afterlife.interpret",
+        "skill.religion.world-afterlife.death-afterlife.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ÖLÜM VE AHİRET İNANCI",
+      "prompt": "Ahiret inancının davranışlara etkisini yorumlar. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.world-afterlife.death-afterlife.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "Ölümü eğitsel ve ölçülü bir dille açıklayan yaklaşımı seçer. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.world-afterlife.death-afterlife.interpret",
+        "skill.religion.world-afterlife.death-afterlife.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ÖLÜM VE AHİRET İNANCI",
+      "prompt": "Bir açıklama, ahiret kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.world-afterlife.death-afterlife.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. ahiret, İslam inancına göre ölümden sonra başlayan ve hesap düşüncesini içeren hayat; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.world-afterlife.death-afterlife.interpret",
+        "skill.religion.world-afterlife.death-afterlife.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ÖLÜM VE AHİRET İNANCI",
+      "statement": "ahiret kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.world-afterlife.death-afterlife.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.world-afterlife.death-afterlife.interpret",
+        "skill.religion.world-afterlife.death-afterlife.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ÖLÜM VE AHİRET İNANCI",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "dünya hayatı",
+          "right": "İslam inancında insanın seçim ve sorumluluklarla geçirdiği sınırlı yaşam alanı"
+        },
+        {
+          "id": "p2",
+          "left": "ahiret",
+          "right": "İslam inancına göre ölümden sonra başlayan ve hesap düşüncesini içeren hayat"
+        },
+        {
+          "id": "p3",
+          "left": "hesap bilinci",
+          "right": "insanın yaptıklarının sonuçlarıyla karşılaşacağını gözetmesi"
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.world-afterlife.balance-account.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "hesap bilinci, insanın yaptıklarının sonuçlarıyla karşılaşacağını gözetmesi.",
+      "skillIds": [
+        "skill.religion.world-afterlife.balance-account.interpret",
+        "skill.religion.world-afterlife.balance-account.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · DÜNYA-AHİRET DENGESİ VE HESAP",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "hesap bilinci",
+          "back": "insanın yaptıklarının sonuçlarıyla karşılaşacağını gözetmesi",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.world-afterlife.balance-account.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "hesap bilinci, insanın yaptıklarının sonuçlarıyla karşılaşacağını gözetmesi.",
+      "skillIds": [
+        "skill.religion.world-afterlife.balance-account.interpret",
+        "skill.religion.world-afterlife.balance-account.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · DÜNYA-AHİRET DENGESİ VE HESAP",
+      "prompt": "“Insanın yaptıklarının sonuçlarıyla karşılaşacağını gözetmesi” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "dünya hayatı"
+        },
+        {
+          "id": "b",
+          "label": "ahiret"
+        },
+        {
+          "id": "c",
+          "label": "hesap bilinci"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "c"
+    },
+    {
+      "id": "exercise.religion.world-afterlife.balance-account.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada hesap bilinci kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.world-afterlife.balance-account.interpret",
+        "skill.religion.world-afterlife.balance-account.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · DÜNYA-AHİRET DENGESİ VE HESAP",
+      "prompt": "Bir öğrenci hesap bilinci konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.world-afterlife.balance-account.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Dünya ve ahiret sorumlulukları arasında denge kurar. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.world-afterlife.balance-account.interpret",
+        "skill.religion.world-afterlife.balance-account.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · DÜNYA-AHİRET DENGESİ VE HESAP",
+      "prompt": "Dünya ve ahiret sorumlulukları arasında denge kurar. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.world-afterlife.balance-account.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "Hesap bilinci ile ahlaki öz denetim ilişkisini çıkarır. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.world-afterlife.balance-account.interpret",
+        "skill.religion.world-afterlife.balance-account.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · DÜNYA-AHİRET DENGESİ VE HESAP",
+      "prompt": "Bir açıklama, hesap bilinci kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.world-afterlife.balance-account.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. hesap bilinci, insanın yaptıklarının sonuçlarıyla karşılaşacağını gözetmesi; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.world-afterlife.balance-account.interpret",
+        "skill.religion.world-afterlife.balance-account.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · DÜNYA-AHİRET DENGESİ VE HESAP",
+      "statement": "hesap bilinci kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.world-afterlife.balance-account.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.world-afterlife.balance-account.interpret",
+        "skill.religion.world-afterlife.balance-account.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · DÜNYA-AHİRET DENGESİ VE HESAP",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "dünya hayatı",
+          "right": "İslam inancında insanın seçim ve sorumluluklarla geçirdiği sınırlı yaşam alanı"
+        },
+        {
+          "id": "p2",
+          "left": "ahiret",
+          "right": "İslam inancına göre ölümden sonra başlayan ve hesap düşüncesini içeren hayat"
+        },
+        {
+          "id": "p3",
+          "left": "hesap bilinci",
+          "right": "insanın yaptıklarının sonuçlarıyla karşılaşacağını gözetmesi"
+        }
+      ]
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.religion.world-afterlife.01",
+      "unitId": "tyt.religion.world-afterlife",
+      "kind": "lesson",
+      "title": "Dünya Hayatı ve Amaç",
+      "order": 1,
+      "lessonId": "lesson.religion.world-afterlife.world-purpose.001",
+      "prerequisiteIds": []
+    },
+    {
+      "id": "path.religion.world-afterlife.02",
+      "unitId": "tyt.religion.world-afterlife",
+      "kind": "lesson",
+      "title": "Ölüm ve Ahiret İnancı",
+      "order": 2,
+      "lessonId": "lesson.religion.world-afterlife.death-afterlife.001",
+      "prerequisiteIds": [
+        "path.religion.world-afterlife.01"
+      ]
+    },
+    {
+      "id": "path.religion.world-afterlife.03",
+      "unitId": "tyt.religion.world-afterlife",
+      "kind": "lesson",
+      "title": "Dünya-Ahiret Dengesi ve Hesap",
+      "order": 3,
+      "lessonId": "lesson.religion.world-afterlife.balance-account.001",
+      "prerequisiteIds": [
+        "path.religion.world-afterlife.02"
+      ]
+    }
+  ]
+}

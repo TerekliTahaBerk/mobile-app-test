@@ -1,0 +1,535 @@
+{
+  "concepts": [
+    {
+      "definition": "Antik birikime dayalı sorgulayıcı düşüncenin canlanması",
+      "id": "concept.history.early-modern-europe.renaissance-context",
+      "term": "Antik birikime dayalı sorgulayıcı düşüncenin canlanması",
+      "topicId": "tyt.history.early-modern-europe.renaissance-reformation"
+    },
+    {
+      "definition": "Hristiyan mezhep birliğinin bozulması",
+      "id": "concept.history.early-modern-europe.reformation-result",
+      "term": "Hristiyan mezhep birliğinin bozulması",
+      "topicId": "tyt.history.early-modern-europe.renaissance-reformation"
+    },
+    {
+      "definition": "Akdeniz limanları görece önem kaybetmiştir",
+      "id": "concept.history.early-modern-europe.discoveries-economy",
+      "term": "Akdeniz limanları görece önem kaybetmiştir",
+      "topicId": "tyt.history.early-modern-europe.discoveries-and-power"
+    },
+    {
+      "definition": "Derebeylerin zayıflaması ve kralların güçlenmesi",
+      "id": "concept.history.early-modern-europe.central-monarchies",
+      "term": "Derebeylerin zayıflaması ve kralların güçlenmesi",
+      "topicId": "tyt.history.early-modern-europe.discoveries-and-power"
+    }
+  ],
+  "exercises": [
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Antik birikime dayalı sorgulayıcı düşüncenin canlanması, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.early-modern-europe.renaissance-reformation.renaissance-context.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Antik birikime dayalı sorgulayıcı düşüncenin canlanması"
+        },
+        {
+          "id": "d1",
+          "label": "Feodalitenin aynı anda bütünüyle kalkması"
+        },
+        {
+          "id": "d2",
+          "label": "Mezhep birliğinin kesin olarak kurulması"
+        },
+        {
+          "id": "d3",
+          "label": "Skolastik düşüncenin daha da güçlenmesi"
+        }
+      ],
+      "prompt": "Rönesans’ın Avrupa’daki temel etkisi hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.early-modern-europe.renaissance-context"
+      ],
+      "tag": "TARİH · RÖNESANS VE REFORM"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Rönesans’ın Avrupa’daki temel etkisi hangisidir sorusunun doğru karşılığı “Antik birikime dayalı sorgulayıcı düşüncenin canlanması” olmalıdır.",
+      "id": "exercise.history.early-modern-europe.renaissance-reformation.renaissance-context.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.early-modern-europe.renaissance-context"
+      ],
+      "statement": "Feodalitenin aynı anda bütünüyle kalkması, Rönesans’ın düşünce ve sanat hayatına etkisini açıklar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · RÖNESANS VE REFORM"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "Antik birikime dayalı sorgulayıcı düşüncenin canlanması"
+        },
+        {
+          "id": "d1",
+          "label": "Feodalitenin aynı anda bütünüyle kalkması"
+        },
+        {
+          "id": "d2",
+          "label": "Mezhep birliğinin kesin olarak kurulması"
+        },
+        {
+          "id": "d3",
+          "label": "Skolastik düşüncenin daha da güçlenmesi"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “Antik birikime dayalı sorgulayıcı düşüncenin canlanması” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.early-modern-europe.renaissance-reformation.renaissance-context.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.early-modern-europe.renaissance-context"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: Rönesans’ın Avrupa’daki temel etkisi hangisidir?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Hristiyan mezhep birliğinin bozulması, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.early-modern-europe.renaissance-reformation.reformation-result.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Hristiyan mezhep birliğinin bozulması"
+        },
+        {
+          "id": "d1",
+          "label": "Katolik Kilisesi’nin tek otorite olarak güçlenmesi"
+        },
+        {
+          "id": "d2",
+          "label": "Merkezî krallıkların ortadan kalkması"
+        },
+        {
+          "id": "d3",
+          "label": "Coğrafi Keşiflerin sona ermesi"
+        }
+      ],
+      "prompt": "Reform hareketlerinin Avrupa’daki doğrudan sonucu hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.early-modern-europe.reformation-result"
+      ],
+      "tag": "TARİH · RÖNESANS VE REFORM"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Reform hareketlerinin Avrupa’daki doğrudan sonucu hangisidir sorusunun doğru karşılığı “Hristiyan mezhep birliğinin bozulması” olmalıdır.",
+      "id": "exercise.history.early-modern-europe.renaissance-reformation.reformation-result.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.early-modern-europe.reformation-result"
+      ],
+      "statement": "Katolik Kilisesi’nin tek otorite olarak güçlenmesi, Reform hareketlerinin dinî ve siyasi sonuçlarını yorumlar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · RÖNESANS VE REFORM"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, Rönesans ve Reform başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.early-modern-europe.renaissance-reformation.reformation-result.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Rönesans’ın Avrupa’daki temel etkisi hangisidir?",
+          "right": "Antik birikime dayalı sorgulayıcı düşüncenin canlanması"
+        },
+        {
+          "id": "pair-2",
+          "left": "Reform hareketlerinin Avrupa’daki doğrudan sonucu hangisidir?",
+          "right": "Hristiyan mezhep birliğinin bozulması"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.early-modern-europe.renaissance-context",
+        "skill.history.early-modern-europe.reformation-result"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · RÖNESANS VE REFORM",
+      "title": "Bilgi bağlarını eşleştir"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Akdeniz limanları görece önem kaybetmiştir, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.early-modern-europe.discoveries-and-power.discoveries-economy.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Akdeniz limanları görece önem kaybetmiştir"
+        },
+        {
+          "id": "d1",
+          "label": "İpek Yolu tek ticaret hattı olmuştur"
+        },
+        {
+          "id": "d2",
+          "label": "Atlas Okyanusu limanları kapanmıştır"
+        },
+        {
+          "id": "d3",
+          "label": "Avrupa’da sermaye birikimi durmuştur"
+        }
+      ],
+      "prompt": "Coğrafi Keşifler sonrasında ticaret yollarında hangi değişim yaşanmıştır?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.early-modern-europe.discoveries-economy"
+      ],
+      "tag": "TARİH · COĞRAFİ KEŞİFLER VE MERKEZÎ KRALLIKLAR"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Coğrafi Keşifler sonrasında ticaret yollarında hangi değişim yaşanmıştır sorusunun doğru karşılığı “Akdeniz limanları görece önem kaybetmiştir” olmalıdır.",
+      "id": "exercise.history.early-modern-europe.discoveries-and-power.discoveries-economy.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.early-modern-europe.discoveries-economy"
+      ],
+      "statement": "İpek Yolu tek ticaret hattı olmuştur, Coğrafi Keşiflerin ekonomik sonuçlarını açıklar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · COĞRAFİ KEŞİFLER VE MERKEZÎ KRALLIKLAR"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "Akdeniz limanları görece önem kaybetmiştir"
+        },
+        {
+          "id": "d1",
+          "label": "İpek Yolu tek ticaret hattı olmuştur"
+        },
+        {
+          "id": "d2",
+          "label": "Atlas Okyanusu limanları kapanmıştır"
+        },
+        {
+          "id": "d3",
+          "label": "Avrupa’da sermaye birikimi durmuştur"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “Akdeniz limanları görece önem kaybetmiştir” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.early-modern-europe.discoveries-and-power.discoveries-economy.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.early-modern-europe.discoveries-economy"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: Coğrafi Keşifler sonrasında ticaret yollarında hangi değişim yaşanmıştır?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Derebeylerin zayıflaması ve kralların güçlenmesi, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.early-modern-europe.discoveries-and-power.central-monarchies.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Derebeylerin zayıflaması ve kralların güçlenmesi"
+        },
+        {
+          "id": "d1",
+          "label": "Feodal kalelerin dokunulmazlaşması"
+        },
+        {
+          "id": "d2",
+          "label": "Kilisenin vergi toplama tekelini kurması"
+        },
+        {
+          "id": "d3",
+          "label": "Kentlerin tamamen boşalması"
+        }
+      ],
+      "prompt": "Ateşli silahların yaygınlaşması Avrupa’da hangi siyasi süreci desteklemiştir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.early-modern-europe.central-monarchies"
+      ],
+      "tag": "TARİH · COĞRAFİ KEŞİFLER VE MERKEZÎ KRALLIKLAR"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Ateşli silahların yaygınlaşması Avrupa’da hangi siyasi süreci desteklemiştir sorusunun doğru karşılığı “Derebeylerin zayıflaması ve kralların güçlenmesi” olmalıdır.",
+      "id": "exercise.history.early-modern-europe.discoveries-and-power.central-monarchies.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.early-modern-europe.central-monarchies"
+      ],
+      "statement": "Feodal kalelerin dokunulmazlaşması, Ateşli silahlar ve merkezî krallıklar arasındaki ilişkiyi yorumlar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · COĞRAFİ KEŞİFLER VE MERKEZÎ KRALLIKLAR"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, Coğrafi Keşifler ve Merkezî Krallıklar başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.early-modern-europe.discoveries-and-power.central-monarchies.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Coğrafi Keşifler sonrasında ticaret yollarında hangi değişim yaşanmıştır?",
+          "right": "Akdeniz limanları görece önem kaybetmiştir"
+        },
+        {
+          "id": "pair-2",
+          "left": "Ateşli silahların yaygınlaşması Avrupa’da hangi siyasi süreci desteklemiştir?",
+          "right": "Derebeylerin zayıflaması ve kralların güçlenmesi"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.early-modern-europe.discoveries-economy",
+        "skill.history.early-modern-europe.central-monarchies"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · COĞRAFİ KEŞİFLER VE MERKEZÎ KRALLIKLAR",
+      "title": "Bilgi bağlarını eşleştir"
+    },
+    {
+      "correctOrder": [
+        "event-1",
+        "event-2",
+        "event-3",
+        "event-4"
+      ],
+      "difficulty": 4,
+      "explanation": "Olaylar tarihleri dikkate alınarak eskiden yeniye sıralanır. Kronoloji, gelişmeler arasındaki neden-sonuç ilişkisini kurmak için temel bir çerçeve sunar.",
+      "id": "exercise.history.early-modern-europe.discoveries-and-power.order01",
+      "items": [
+        {
+          "id": "event-1",
+          "label": "İstanbul’un fethi (1453)"
+        },
+        {
+          "id": "event-2",
+          "label": "Amerika’ya ulaşılması (1492)"
+        },
+        {
+          "id": "event-3",
+          "label": "Reform hareketinin başlaması (1517)"
+        },
+        {
+          "id": "event-4",
+          "label": "Westphalia Antlaşmaları (1648)"
+        }
+      ],
+      "kind": "ordering",
+      "prompt": "Gelişmeleri eskiden yeniye doğru sırala.",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.early-modern-europe.discoveries-economy",
+        "skill.history.early-modern-europe.central-monarchies"
+      ],
+      "tag": "TARİH · COĞRAFİ KEŞİFLER VE MERKEZÎ KRALLIKLAR"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.early-modern-europe.renaissance-reformation.renaissance-context.mcq01",
+        "exercise.history.early-modern-europe.renaissance-reformation.renaissance-context.tf01",
+        "exercise.history.early-modern-europe.renaissance-reformation.renaissance-context.fill01",
+        "exercise.history.early-modern-europe.renaissance-reformation.reformation-result.mcq01",
+        "exercise.history.early-modern-europe.renaissance-reformation.reformation-result.tf01",
+        "exercise.history.early-modern-europe.renaissance-reformation.reformation-result.match01"
+      ],
+      "id": "lesson.history.early-modern-europe.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "Rönesans ve Reform",
+      "topicId": "tyt.history.early-modern-europe.renaissance-reformation"
+    },
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.early-modern-europe.discoveries-and-power.discoveries-economy.mcq01",
+        "exercise.history.early-modern-europe.discoveries-and-power.discoveries-economy.tf01",
+        "exercise.history.early-modern-europe.discoveries-and-power.discoveries-economy.fill01",
+        "exercise.history.early-modern-europe.discoveries-and-power.central-monarchies.mcq01",
+        "exercise.history.early-modern-europe.discoveries-and-power.central-monarchies.tf01",
+        "exercise.history.early-modern-europe.discoveries-and-power.central-monarchies.match01",
+        "exercise.history.early-modern-europe.discoveries-and-power.order01"
+      ],
+      "id": "lesson.history.early-modern-europe.002",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "Coğrafi Keşifler ve Merkezî Krallıklar",
+      "topicId": "tyt.history.early-modern-europe.discoveries-and-power"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.history.early-modern-europe.01",
+      "kind": "lesson",
+      "lessonId": "lesson.history.early-modern-europe.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.history.ottoman-world-power.02"
+      ],
+      "title": "Rönesans ve Reform",
+      "unitId": "tyt.history.early-modern-europe"
+    },
+    {
+      "id": "path.history.early-modern-europe.02",
+      "kind": "checkpoint",
+      "lessonId": "lesson.history.early-modern-europe.002",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.history.early-modern-europe.01"
+      ],
+      "title": "Yeni Çağ Avrupa Tarihi Kontrolü",
+      "unitId": "tyt.history.early-modern-europe"
+    }
+  ],
+  "skills": [
+    {
+      "description": "Rönesans’ın düşünce ve sanat hayatına etkisini açıklar.",
+      "id": "skill.history.early-modern-europe.renaissance-context",
+      "title": "Rönesans’ın düşünce ve sanat hayatına etkisini açıklar",
+      "topicId": "tyt.history.early-modern-europe.renaissance-reformation"
+    },
+    {
+      "description": "Reform hareketlerinin dinî ve siyasi sonuçlarını yorumlar.",
+      "id": "skill.history.early-modern-europe.reformation-result",
+      "title": "Reform hareketlerinin dinî ve siyasi sonuçlarını yorumlar",
+      "topicId": "tyt.history.early-modern-europe.renaissance-reformation"
+    },
+    {
+      "description": "Coğrafi Keşiflerin ekonomik sonuçlarını açıklar.",
+      "id": "skill.history.early-modern-europe.discoveries-economy",
+      "title": "Coğrafi Keşiflerin ekonomik sonuçlarını açıklar",
+      "topicId": "tyt.history.early-modern-europe.discoveries-and-power"
+    },
+    {
+      "description": "Ateşli silahlar ve merkezî krallıklar arasındaki ilişkiyi yorumlar.",
+      "id": "skill.history.early-modern-europe.central-monarchies",
+      "title": "Ateşli silahlar ve merkezî krallıklar arasındaki ilişkiyi yorumlar",
+      "topicId": "tyt.history.early-modern-europe.discoveries-and-power"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.history.early-modern-europe.renaissance-context",
+        "concept.history.early-modern-europe.reformation-result"
+      ],
+      "id": "tyt.history.early-modern-europe.renaissance-reformation",
+      "skillIds": [
+        "skill.history.early-modern-europe.renaissance-context",
+        "skill.history.early-modern-europe.reformation-result"
+      ],
+      "title": "Rönesans ve Reform",
+      "unitId": "tyt.history.early-modern-europe"
+    },
+    {
+      "conceptIds": [
+        "concept.history.early-modern-europe.discoveries-economy",
+        "concept.history.early-modern-europe.central-monarchies"
+      ],
+      "id": "tyt.history.early-modern-europe.discoveries-and-power",
+      "skillIds": [
+        "skill.history.early-modern-europe.discoveries-economy",
+        "skill.history.early-modern-europe.central-monarchies"
+      ],
+      "title": "Coğrafi Keşifler ve Merkezî Krallıklar",
+      "unitId": "tyt.history.early-modern-europe"
+    }
+  ],
+  "unitId": "tyt.history.early-modern-europe"
+}

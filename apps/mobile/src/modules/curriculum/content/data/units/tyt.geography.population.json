@@ -1,0 +1,531 @@
+{
+  "concepts": [
+    {
+      "definition": "İş olanakları nüfus yoğunluğunu artırabilir",
+      "id": "concept.geography.population.distribution-density",
+      "term": "Sanayi ve hizmetler gelişir",
+      "topicId": "tyt.geography.population.distribution-density"
+    },
+    {
+      "definition": "Doğum oranı yüksek olabilir",
+      "id": "concept.geography.population.structure-policy",
+      "term": "0–14 yaş oranı yüksektir",
+      "topicId": "tyt.geography.population.structure-policy"
+    }
+  ],
+  "exercises": [
+    {
+      "correctOptionId": "opt-1",
+      "difficulty": 2,
+      "explanation": "Sanayi ve hizmetler gelişir durumunda iş olanakları nüfus yoğunluğunu artırabilir. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.population.distribution-density.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "İş olanakları nüfus yoğunluğunu artırabilir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Nüfus seyrek olabilir"
+        },
+        {
+          "id": "opt-3",
+          "label": "Toplam nüfus yüz ölçümüne bölünür"
+        },
+        {
+          "id": "opt-4",
+          "label": "Yerleşme için çekicilik artabilir"
+        }
+      ],
+      "prompt": "Sanayi ve hizmetler gelişir. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.population.distribution-density.interpret"
+      ],
+      "tag": "COĞRAFYA · NÜFUS DAĞILIŞI VE YOĞUNLUK"
+    },
+    {
+      "correctOptionId": "opt-2",
+      "difficulty": 4,
+      "explanation": "Engebeli ve sert iklimli alan incelenir durumunda nüfus seyrek olabilir. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.population.distribution-density.001.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "İş olanakları nüfus yoğunluğunu artırabilir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Nüfus seyrek olabilir"
+        },
+        {
+          "id": "opt-3",
+          "label": "Toplam nüfus yüz ölçümüne bölünür"
+        },
+        {
+          "id": "opt-4",
+          "label": "Yerleşme için çekicilik artabilir"
+        }
+      ],
+      "prompt": "Engebeli ve sert iklimli alan incelenir. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.population.distribution-density.interpret"
+      ],
+      "tag": "COĞRAFYA · NÜFUS DAĞILIŞI VE YOĞUNLUK"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 3,
+      "explanation": "Aritmetik yoğunluk hesaplanır ile toplam nüfus yüz ölçümüne bölünür arasında doğrudan bir coğrafi ilişki vardır.",
+      "id": "exercise.geography.population.distribution-density.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.population.distribution-density.interpret"
+      ],
+      "statement": "Aritmetik yoğunluk hesaplanır; bunun sonucunda toplam nüfus yüz ölçümüne bölünür.",
+      "tag": "COĞRAFYA · NÜFUS DAĞILIŞI VE YOĞUNLUK"
+    },
+    {
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "İş olanakları nüfus yoğunluğunu artırabilir"
+        },
+        {
+          "id": "w-2",
+          "label": "Nüfus seyrek olabilir"
+        },
+        {
+          "id": "w-3",
+          "label": "Toplam nüfus yüz ölçümüne bölünür"
+        },
+        {
+          "id": "w-4",
+          "label": "Yerleşme için çekicilik artabilir"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "Verimli ova ve su kaynakları bulunur koşulunun beklenen sonucu “Yerleşme için çekicilik artabilir” ilişkisidir.",
+      "hint": "Verimli ova ve su kaynakları bulunur",
+      "id": "exercise.geography.population.distribution-density.001.blank01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.population.distribution-density.interpret"
+      ],
+      "solutionTokenIds": [
+        "w-4"
+      ],
+      "title": "Verimli ova ve su kaynakları bulunur durumunda sonuç"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Her koşul, kendisinden beklenen özgün coğrafi sonuçla eşleştirilir; aynı sonuç iki kez kullanılmaz.",
+      "id": "exercise.geography.population.distribution-density.001.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Sanayi ve hizmetler gelişir",
+          "right": "İş olanakları nüfus yoğunluğunu artırabilir"
+        },
+        {
+          "id": "pair-2",
+          "left": "Engebeli ve sert iklimli alan incelenir",
+          "right": "Nüfus seyrek olabilir"
+        },
+        {
+          "id": "pair-3",
+          "left": "Aritmetik yoğunluk hesaplanır",
+          "right": "Toplam nüfus yüz ölçümüne bölünür"
+        },
+        {
+          "id": "pair-4",
+          "left": "Verimli ova ve su kaynakları bulunur",
+          "right": "Yerleşme için çekicilik artabilir"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.population.distribution-density.interpret"
+      ],
+      "subtitle": "Koşulu doğru coğrafi sonuçla birleştir.",
+      "tag": "COĞRAFYA · NÜFUS DAĞILIŞI VE YOĞUNLUK",
+      "title": "İlişkiyi eşleştir"
+    },
+    {
+      "cards": [
+        {
+          "back": "İş olanakları nüfus yoğunluğunu artırabilir",
+          "front": "Sanayi ve hizmetler gelişir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-1"
+        },
+        {
+          "back": "Nüfus seyrek olabilir",
+          "front": "Engebeli ve sert iklimli alan incelenir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-2"
+        },
+        {
+          "back": "Toplam nüfus yüz ölçümüne bölünür",
+          "front": "Aritmetik yoğunluk hesaplanır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-3"
+        },
+        {
+          "back": "Yerleşme için çekicilik artabilir",
+          "front": "Verimli ova ve su kaynakları bulunur",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-4"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Kartlar temel ilişkileri kısa tekrar için özetler; puanlanan skill coverage hesabına katılmaz.",
+      "id": "exercise.geography.population.distribution-density.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.population.distribution-density.interpret"
+      ],
+      "tag": "COĞRAFYA · NÜFUS DAĞILIŞI VE YOĞUNLUK"
+    },
+    {
+      "correctOptionId": "opt-1",
+      "difficulty": 2,
+      "explanation": "0–14 yaş oranı yüksektir durumunda doğum oranı yüksek olabilir. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.population.structure-policy.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Doğum oranı yüksek olabilir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Sağlık ve sosyal güvenlik yükü artabilir"
+        },
+        {
+          "id": "opt-3",
+          "label": "Artırıcı politika gündeme gelebilir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Doğru istihdamla demografik fırsat oluşabilir"
+        }
+      ],
+      "prompt": "0–14 yaş oranı yüksektir. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.population.structure-policy.interpret"
+      ],
+      "tag": "COĞRAFYA · NÜFUS YAPISI VE POLİTİKALAR"
+    },
+    {
+      "correctOptionId": "opt-2",
+      "difficulty": 4,
+      "explanation": "Yaşlı nüfus oranı artar durumunda sağlık ve sosyal güvenlik yükü artabilir. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.population.structure-policy.001.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Doğum oranı yüksek olabilir"
+        },
+        {
+          "id": "opt-2",
+          "label": "Sağlık ve sosyal güvenlik yükü artabilir"
+        },
+        {
+          "id": "opt-3",
+          "label": "Artırıcı politika gündeme gelebilir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Doğru istihdamla demografik fırsat oluşabilir"
+        }
+      ],
+      "prompt": "Yaşlı nüfus oranı artar. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.population.structure-policy.interpret"
+      ],
+      "tag": "COĞRAFYA · NÜFUS YAPISI VE POLİTİKALAR"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 3,
+      "explanation": "Nüfus artış hızı çok düşüktür ile artırıcı politika gündeme gelebilir arasında doğrudan bir coğrafi ilişki vardır.",
+      "id": "exercise.geography.population.structure-policy.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.population.structure-policy.interpret"
+      ],
+      "statement": "Nüfus artış hızı çok düşüktür; bunun sonucunda artırıcı politika gündeme gelebilir.",
+      "tag": "COĞRAFYA · NÜFUS YAPISI VE POLİTİKALAR"
+    },
+    {
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "Doğum oranı yüksek olabilir"
+        },
+        {
+          "id": "w-2",
+          "label": "Sağlık ve sosyal güvenlik yükü artabilir"
+        },
+        {
+          "id": "w-3",
+          "label": "Artırıcı politika gündeme gelebilir"
+        },
+        {
+          "id": "w-4",
+          "label": "Doğru istihdamla demografik fırsat oluşabilir"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "Çalışma çağındaki nüfus payı yüksektir koşulunun beklenen sonucu “Doğru istihdamla demografik fırsat oluşabilir” ilişkisidir.",
+      "hint": "Çalışma çağındaki nüfus payı yüksektir",
+      "id": "exercise.geography.population.structure-policy.001.blank01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.population.structure-policy.interpret"
+      ],
+      "solutionTokenIds": [
+        "w-4"
+      ],
+      "title": "Çalışma çağındaki nüfus payı yüksektir durumunda sonuç"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Her koşul, kendisinden beklenen özgün coğrafi sonuçla eşleştirilir; aynı sonuç iki kez kullanılmaz.",
+      "id": "exercise.geography.population.structure-policy.001.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "0–14 yaş oranı yüksektir",
+          "right": "Doğum oranı yüksek olabilir"
+        },
+        {
+          "id": "pair-2",
+          "left": "Yaşlı nüfus oranı artar",
+          "right": "Sağlık ve sosyal güvenlik yükü artabilir"
+        },
+        {
+          "id": "pair-3",
+          "left": "Nüfus artış hızı çok düşüktür",
+          "right": "Artırıcı politika gündeme gelebilir"
+        },
+        {
+          "id": "pair-4",
+          "left": "Çalışma çağındaki nüfus payı yüksektir",
+          "right": "Doğru istihdamla demografik fırsat oluşabilir"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.population.structure-policy.interpret"
+      ],
+      "subtitle": "Koşulu doğru coğrafi sonuçla birleştir.",
+      "tag": "COĞRAFYA · NÜFUS YAPISI VE POLİTİKALAR",
+      "title": "İlişkiyi eşleştir"
+    },
+    {
+      "cards": [
+        {
+          "back": "Doğum oranı yüksek olabilir",
+          "front": "0–14 yaş oranı yüksektir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-1"
+        },
+        {
+          "back": "Sağlık ve sosyal güvenlik yükü artabilir",
+          "front": "Yaşlı nüfus oranı artar",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-2"
+        },
+        {
+          "back": "Artırıcı politika gündeme gelebilir",
+          "front": "Nüfus artış hızı çok düşüktür",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-3"
+        },
+        {
+          "back": "Doğru istihdamla demografik fırsat oluşabilir",
+          "front": "Çalışma çağındaki nüfus payı yüksektir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-4"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Kartlar temel ilişkileri kısa tekrar için özetler; puanlanan skill coverage hesabına katılmaz.",
+      "id": "exercise.geography.population.structure-policy.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.population.structure-policy.interpret"
+      ],
+      "tag": "COĞRAFYA · NÜFUS YAPISI VE POLİTİKALAR"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.geography.population.distribution-density.001.mcq01",
+        "exercise.geography.population.distribution-density.001.mcq02",
+        "exercise.geography.population.distribution-density.001.tf01",
+        "exercise.geography.population.distribution-density.001.blank01",
+        "exercise.geography.population.distribution-density.001.match01",
+        "exercise.geography.population.distribution-density.001.card01"
+      ],
+      "id": "lesson.geography.population.distribution-density.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Nüfusun dağılışını etkileyen doğal ve beşerî faktörleri ayırt eder.",
+      "title": "Nüfus Dağılışı ve Yoğunluk",
+      "topicId": "tyt.geography.population.distribution-density"
+    },
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.geography.population.structure-policy.001.mcq01",
+        "exercise.geography.population.structure-policy.001.mcq02",
+        "exercise.geography.population.structure-policy.001.tf01",
+        "exercise.geography.population.structure-policy.001.blank01",
+        "exercise.geography.population.structure-policy.001.match01",
+        "exercise.geography.population.structure-policy.001.card01"
+      ],
+      "id": "lesson.geography.population.structure-policy.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Yaş yapısı, artış hızı ve nüfus politikalarını metinsel verilerden yorumlar.",
+      "title": "Nüfus Yapısı ve Politikalar",
+      "topicId": "tyt.geography.population.structure-policy"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.geography.population.01",
+      "kind": "lesson",
+      "lessonId": "lesson.geography.population.distribution-density.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.geography.water-soil-plants.02"
+      ],
+      "title": "Nüfus Dağılışı ve Yoğunluk",
+      "unitId": "tyt.geography.population"
+    },
+    {
+      "id": "path.geography.population.02",
+      "kind": "practice",
+      "lessonId": "lesson.geography.population.structure-policy.001",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.geography.population.01"
+      ],
+      "title": "Nüfus Yapısı ve Politikalar Uygulaması",
+      "unitId": "tyt.geography.population"
+    }
+  ],
+  "skills": [
+    {
+      "description": "Nüfusun dağılışını etkileyen doğal ve beşerî faktörleri ayırt eder.",
+      "id": "skill.geography.population.distribution-density.interpret",
+      "title": "Nüfusun dağılışını etkileyen doğal ve beşerî faktörleri ayırt eder.",
+      "topicId": "tyt.geography.population.distribution-density"
+    },
+    {
+      "description": "Yaş yapısı, artış hızı ve nüfus politikalarını metinsel verilerden yorumlar.",
+      "id": "skill.geography.population.structure-policy.interpret",
+      "title": "Yaş yapısı, artış hızı ve nüfus politikalarını metinsel verilerden yorumlar.",
+      "topicId": "tyt.geography.population.structure-policy"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.geography.population.distribution-density"
+      ],
+      "id": "tyt.geography.population.distribution-density",
+      "skillIds": [
+        "skill.geography.population.distribution-density.interpret"
+      ],
+      "title": "Nüfus Dağılışı ve Yoğunluk",
+      "unitId": "tyt.geography.population"
+    },
+    {
+      "conceptIds": [
+        "concept.geography.population.structure-policy"
+      ],
+      "id": "tyt.geography.population.structure-policy",
+      "skillIds": [
+        "skill.geography.population.structure-policy.interpret"
+      ],
+      "title": "Nüfus Yapısı ve Politikalar",
+      "unitId": "tyt.geography.population"
+    }
+  ],
+  "unitId": "tyt.geography.population"
+}

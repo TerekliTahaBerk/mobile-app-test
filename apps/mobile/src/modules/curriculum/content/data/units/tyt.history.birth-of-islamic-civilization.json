@@ -1,0 +1,493 @@
+{
+  "concepts": [
+    {
+      "definition": "Kabilecilik",
+      "id": "concept.history.birth-of-islamic-civilization.jahiliyya-structure",
+      "term": "Kabilecilik",
+      "topicId": "tyt.history.birth-of-islamic-civilization.arabia-and-revelation"
+    },
+    {
+      "definition": "Medine’de siyasi bir topluluk oluşması",
+      "id": "concept.history.birth-of-islamic-civilization.hijra-meaning",
+      "term": "Medine’de siyasi bir topluluk oluşması",
+      "topicId": "tyt.history.birth-of-islamic-civilization.arabia-and-revelation"
+    },
+    {
+      "definition": "Halifelerin istişare ve seçimle belirlenmesi",
+      "id": "concept.history.birth-of-islamic-civilization.rashidun-consultation",
+      "term": "Halifelerin istişare ve seçimle belirlenmesi",
+      "topicId": "tyt.history.birth-of-islamic-civilization.caliphates-and-expansion"
+    },
+    {
+      "definition": "Arap olmayan Müslümanlara daha kapsayıcı yaklaşmak",
+      "id": "concept.history.birth-of-islamic-civilization.umayyad-abbasid",
+      "term": "Arap olmayan Müslümanlara daha kapsayıcı yaklaşmak",
+      "topicId": "tyt.history.birth-of-islamic-civilization.caliphates-and-expansion"
+    }
+  ],
+  "exercises": [
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Kabilecilik, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.birth-of-islamic-civilization.arabia-and-revelation.jahiliyya-structure.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Kabilecilik"
+        },
+        {
+          "id": "d1",
+          "label": "Merkezî bürokrasi"
+        },
+        {
+          "id": "d2",
+          "label": "Feodal senyörlük"
+        },
+        {
+          "id": "d3",
+          "label": "Lonca teşkilatı"
+        }
+      ],
+      "prompt": "İslamiyet öncesi Arabistan’da siyasi birliğin zayıf olmasında hangi yapı etkiliydi?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.birth-of-islamic-civilization.jahiliyya-structure"
+      ],
+      "tag": "TARİH · İSLAMİYET ÖNCESİ ARABİSTAN VE TEBLİĞ"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. İslamiyet öncesi Arabistan’da siyasi birliğin zayıf olmasında hangi yapı etkiliydi sorusunun doğru karşılığı “Kabilecilik” olmalıdır.",
+      "id": "exercise.history.birth-of-islamic-civilization.arabia-and-revelation.jahiliyya-structure.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.birth-of-islamic-civilization.jahiliyya-structure"
+      ],
+      "statement": "Merkezî bürokrasi, Cahiliye Dönemi Arabistan’ın toplumsal yapısını açıklar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · İSLAMİYET ÖNCESİ ARABİSTAN VE TEBLİĞ"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "Kabilecilik"
+        },
+        {
+          "id": "d1",
+          "label": "Merkezî bürokrasi"
+        },
+        {
+          "id": "d2",
+          "label": "Feodal senyörlük"
+        },
+        {
+          "id": "d3",
+          "label": "Lonca teşkilatı"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “Kabilecilik” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.birth-of-islamic-civilization.arabia-and-revelation.jahiliyya-structure.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.birth-of-islamic-civilization.jahiliyya-structure"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: İslamiyet öncesi Arabistan’da siyasi birliğin zayıf olmasında hangi yapı etkiliydi?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Medine’de siyasi bir topluluk oluşması, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.birth-of-islamic-civilization.arabia-and-revelation.hijra-meaning.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Medine’de siyasi bir topluluk oluşması"
+        },
+        {
+          "id": "d1",
+          "label": "Mekke’nin hemen fethedilmesi"
+        },
+        {
+          "id": "d2",
+          "label": "Emevi Devleti’nin kurulması"
+        },
+        {
+          "id": "d3",
+          "label": "Halifeliğin saltanata dönüşmesi"
+        }
+      ],
+      "prompt": "622 Hicreti’nin İslam tarihi açısından temel sonucu hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.birth-of-islamic-civilization.hijra-meaning"
+      ],
+      "tag": "TARİH · İSLAMİYET ÖNCESİ ARABİSTAN VE TEBLİĞ"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. 622 Hicreti’nin İslam tarihi açısından temel sonucu hangisidir sorusunun doğru karşılığı “Medine’de siyasi bir topluluk oluşması” olmalıdır.",
+      "id": "exercise.history.birth-of-islamic-civilization.arabia-and-revelation.hijra-meaning.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.birth-of-islamic-civilization.hijra-meaning"
+      ],
+      "statement": "Mekke’nin hemen fethedilmesi, Hicret’in siyasi ve toplumsal sonuçlarını yorumlar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · İSLAMİYET ÖNCESİ ARABİSTAN VE TEBLİĞ"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, İslamiyet Öncesi Arabistan ve Tebliğ başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.birth-of-islamic-civilization.arabia-and-revelation.hijra-meaning.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "İslamiyet öncesi Arabistan’da siyasi birliğin zayıf olmasında hangi yapı etkiliydi?",
+          "right": "Kabilecilik"
+        },
+        {
+          "id": "pair-2",
+          "left": "622 Hicreti’nin İslam tarihi açısından temel sonucu hangisidir?",
+          "right": "Medine’de siyasi bir topluluk oluşması"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.birth-of-islamic-civilization.jahiliyya-structure",
+        "skill.history.birth-of-islamic-civilization.hijra-meaning"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · İSLAMİYET ÖNCESİ ARABİSTAN VE TEBLİĞ",
+      "title": "Bilgi bağlarını eşleştir"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Halifelerin istişare ve seçimle belirlenmesi, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.birth-of-islamic-civilization.caliphates-and-expansion.rashidun-consultation.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Halifelerin istişare ve seçimle belirlenmesi"
+        },
+        {
+          "id": "d1",
+          "label": "Halifeliğin babadan oğula geçmesi"
+        },
+        {
+          "id": "d2",
+          "label": "Başkentin Bağdat olması"
+        },
+        {
+          "id": "d3",
+          "label": "Türklerin yönetimi ele geçirmesi"
+        }
+      ],
+      "prompt": "Dört Halife Dönemi’nin yönetim bakımından ayırt edici özelliği hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.birth-of-islamic-civilization.rashidun-consultation"
+      ],
+      "tag": "TARİH · DÖRT HALİFE VE İSLAM DEVLETİNİN GENİŞLEMESİ"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Dört Halife Dönemi’nin yönetim bakımından ayırt edici özelliği hangisidir sorusunun doğru karşılığı “Halifelerin istişare ve seçimle belirlenmesi” olmalıdır.",
+      "id": "exercise.history.birth-of-islamic-civilization.caliphates-and-expansion.rashidun-consultation.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.birth-of-islamic-civilization.rashidun-consultation"
+      ],
+      "statement": "Halifeliğin babadan oğula geçmesi, Dört Halife Dönemi’ndeki yönetim anlayışını ayırt eder kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · DÖRT HALİFE VE İSLAM DEVLETİNİN GENİŞLEMESİ"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "Halifelerin istişare ve seçimle belirlenmesi"
+        },
+        {
+          "id": "d1",
+          "label": "Halifeliğin babadan oğula geçmesi"
+        },
+        {
+          "id": "d2",
+          "label": "Başkentin Bağdat olması"
+        },
+        {
+          "id": "d3",
+          "label": "Türklerin yönetimi ele geçirmesi"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “Halifelerin istişare ve seçimle belirlenmesi” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.birth-of-islamic-civilization.caliphates-and-expansion.rashidun-consultation.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.birth-of-islamic-civilization.rashidun-consultation"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: Dört Halife Dönemi’nin yönetim bakımından ayırt edici özelliği hangisidir?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Arap olmayan Müslümanlara daha kapsayıcı yaklaşmak, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.birth-of-islamic-civilization.caliphates-and-expansion.umayyad-abbasid.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Arap olmayan Müslümanlara daha kapsayıcı yaklaşmak"
+        },
+        {
+          "id": "d1",
+          "label": "Arap milliyetçiliğini devlet politikası yapmak"
+        },
+        {
+          "id": "d2",
+          "label": "Başkenti Şam’da tutmak"
+        },
+        {
+          "id": "d3",
+          "label": "Halifeliği sona erdirmek"
+        }
+      ],
+      "prompt": "Abbasilerin Emevilerden farklı olarak izlediği politika hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.birth-of-islamic-civilization.umayyad-abbasid"
+      ],
+      "tag": "TARİH · DÖRT HALİFE VE İSLAM DEVLETİNİN GENİŞLEMESİ"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Abbasilerin Emevilerden farklı olarak izlediği politika hangisidir sorusunun doğru karşılığı “Arap olmayan Müslümanlara daha kapsayıcı yaklaşmak” olmalıdır.",
+      "id": "exercise.history.birth-of-islamic-civilization.caliphates-and-expansion.umayyad-abbasid.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.birth-of-islamic-civilization.umayyad-abbasid"
+      ],
+      "statement": "Arap milliyetçiliğini devlet politikası yapmak, Emevi ve Abbasi yönetimlerinin farklarını karşılaştırır kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · DÖRT HALİFE VE İSLAM DEVLETİNİN GENİŞLEMESİ"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, Dört Halife ve İslam Devletinin Genişlemesi başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.birth-of-islamic-civilization.caliphates-and-expansion.umayyad-abbasid.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Dört Halife Dönemi’nin yönetim bakımından ayırt edici özelliği hangisidir?",
+          "right": "Halifelerin istişare ve seçimle belirlenmesi"
+        },
+        {
+          "id": "pair-2",
+          "left": "Abbasilerin Emevilerden farklı olarak izlediği politika hangisidir?",
+          "right": "Arap olmayan Müslümanlara daha kapsayıcı yaklaşmak"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.birth-of-islamic-civilization.rashidun-consultation",
+        "skill.history.birth-of-islamic-civilization.umayyad-abbasid"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · DÖRT HALİFE VE İSLAM DEVLETİNİN GENİŞLEMESİ",
+      "title": "Bilgi bağlarını eşleştir"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.birth-of-islamic-civilization.arabia-and-revelation.jahiliyya-structure.mcq01",
+        "exercise.history.birth-of-islamic-civilization.arabia-and-revelation.jahiliyya-structure.tf01",
+        "exercise.history.birth-of-islamic-civilization.arabia-and-revelation.jahiliyya-structure.fill01",
+        "exercise.history.birth-of-islamic-civilization.arabia-and-revelation.hijra-meaning.mcq01",
+        "exercise.history.birth-of-islamic-civilization.arabia-and-revelation.hijra-meaning.tf01",
+        "exercise.history.birth-of-islamic-civilization.arabia-and-revelation.hijra-meaning.match01"
+      ],
+      "id": "lesson.history.birth-of-islamic-civilization.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "İslamiyet Öncesi Arabistan ve Tebliğ",
+      "topicId": "tyt.history.birth-of-islamic-civilization.arabia-and-revelation"
+    },
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.birth-of-islamic-civilization.caliphates-and-expansion.rashidun-consultation.mcq01",
+        "exercise.history.birth-of-islamic-civilization.caliphates-and-expansion.rashidun-consultation.tf01",
+        "exercise.history.birth-of-islamic-civilization.caliphates-and-expansion.rashidun-consultation.fill01",
+        "exercise.history.birth-of-islamic-civilization.caliphates-and-expansion.umayyad-abbasid.mcq01",
+        "exercise.history.birth-of-islamic-civilization.caliphates-and-expansion.umayyad-abbasid.tf01",
+        "exercise.history.birth-of-islamic-civilization.caliphates-and-expansion.umayyad-abbasid.match01"
+      ],
+      "id": "lesson.history.birth-of-islamic-civilization.002",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "Dört Halife ve İslam Devletinin Genişlemesi",
+      "topicId": "tyt.history.birth-of-islamic-civilization.caliphates-and-expansion"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.history.birth-of-islamic-civilization.01",
+      "kind": "lesson",
+      "lessonId": "lesson.history.birth-of-islamic-civilization.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.history.first-turkish-states.06"
+      ],
+      "title": "İslamiyet Öncesi Arabistan ve Tebliğ",
+      "unitId": "tyt.history.birth-of-islamic-civilization"
+    },
+    {
+      "id": "path.history.birth-of-islamic-civilization.02",
+      "kind": "checkpoint",
+      "lessonId": "lesson.history.birth-of-islamic-civilization.002",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.history.birth-of-islamic-civilization.01"
+      ],
+      "title": "İslam Medeniyetinin Doğuşu Kontrolü",
+      "unitId": "tyt.history.birth-of-islamic-civilization"
+    }
+  ],
+  "skills": [
+    {
+      "description": "Cahiliye Dönemi Arabistan’ın toplumsal yapısını açıklar.",
+      "id": "skill.history.birth-of-islamic-civilization.jahiliyya-structure",
+      "title": "Cahiliye Dönemi Arabistan’ın toplumsal yapısını açıklar",
+      "topicId": "tyt.history.birth-of-islamic-civilization.arabia-and-revelation"
+    },
+    {
+      "description": "Hicret’in siyasi ve toplumsal sonuçlarını yorumlar.",
+      "id": "skill.history.birth-of-islamic-civilization.hijra-meaning",
+      "title": "Hicret’in siyasi ve toplumsal sonuçlarını yorumlar",
+      "topicId": "tyt.history.birth-of-islamic-civilization.arabia-and-revelation"
+    },
+    {
+      "description": "Dört Halife Dönemi’ndeki yönetim anlayışını ayırt eder.",
+      "id": "skill.history.birth-of-islamic-civilization.rashidun-consultation",
+      "title": "Dört Halife Dönemi’ndeki yönetim anlayışını ayırt eder",
+      "topicId": "tyt.history.birth-of-islamic-civilization.caliphates-and-expansion"
+    },
+    {
+      "description": "Emevi ve Abbasi yönetimlerinin farklarını karşılaştırır.",
+      "id": "skill.history.birth-of-islamic-civilization.umayyad-abbasid",
+      "title": "Emevi ve Abbasi yönetimlerinin farklarını karşılaştırır",
+      "topicId": "tyt.history.birth-of-islamic-civilization.caliphates-and-expansion"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.history.birth-of-islamic-civilization.jahiliyya-structure",
+        "concept.history.birth-of-islamic-civilization.hijra-meaning"
+      ],
+      "id": "tyt.history.birth-of-islamic-civilization.arabia-and-revelation",
+      "skillIds": [
+        "skill.history.birth-of-islamic-civilization.jahiliyya-structure",
+        "skill.history.birth-of-islamic-civilization.hijra-meaning"
+      ],
+      "title": "İslamiyet Öncesi Arabistan ve Tebliğ",
+      "unitId": "tyt.history.birth-of-islamic-civilization"
+    },
+    {
+      "conceptIds": [
+        "concept.history.birth-of-islamic-civilization.rashidun-consultation",
+        "concept.history.birth-of-islamic-civilization.umayyad-abbasid"
+      ],
+      "id": "tyt.history.birth-of-islamic-civilization.caliphates-and-expansion",
+      "skillIds": [
+        "skill.history.birth-of-islamic-civilization.rashidun-consultation",
+        "skill.history.birth-of-islamic-civilization.umayyad-abbasid"
+      ],
+      "title": "Dört Halife ve İslam Devletinin Genişlemesi",
+      "unitId": "tyt.history.birth-of-islamic-civilization"
+    }
+  ],
+  "unitId": "tyt.history.birth-of-islamic-civilization"
+}

@@ -1,0 +1,535 @@
+{
+  "concepts": [
+    {
+      "definition": "Can, mal ve namus güvenliği",
+      "id": "concept.history.longest-century.tanzimat-law",
+      "term": "Can, mal ve namus güvenliği",
+      "topicId": "tyt.history.longest-century.reform-edicts"
+    },
+    {
+      "definition": "Parlamentolu meşruti yönetime geçilmesi",
+      "id": "concept.history.longest-century.constitution-parliament",
+      "term": "Parlamentolu meşruti yönetime geçilmesi",
+      "topicId": "tyt.history.longest-century.reform-edicts"
+    },
+    {
+      "definition": "Balkanlarda ayrılıkçı isyanları destekleyerek",
+      "id": "concept.history.longest-century.nationalism-balkans",
+      "term": "Balkanlarda ayrılıkçı isyanları destekleyerek",
+      "topicId": "tyt.history.longest-century.nationalism-and-economy"
+    },
+    {
+      "definition": "Osmanlı maliyesi üzerinde yabancı denetiminin artmasının",
+      "id": "concept.history.longest-century.duyun-u-umumiye",
+      "term": "Osmanlı maliyesi üzerinde yabancı denetiminin artmasının",
+      "topicId": "tyt.history.longest-century.nationalism-and-economy"
+    }
+  ],
+  "exercises": [
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Can, mal ve namus güvenliği, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.longest-century.reform-edicts.tanzimat-law.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Can, mal ve namus güvenliği"
+        },
+        {
+          "id": "d1",
+          "label": "Saltanatın kaldırılması"
+        },
+        {
+          "id": "d2",
+          "label": "Kadınlara milletvekili seçme hakkı"
+        },
+        {
+          "id": "d3",
+          "label": "Cumhuriyetin ilanı"
+        }
+      ],
+      "prompt": "Tanzimat Fermanı’nda güvence altına alınması hedeflenen alan hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.longest-century.tanzimat-law"
+      ],
+      "tag": "TARİH · TANZİMAT, ISLAHAT VE MEŞRUTİYET"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Tanzimat Fermanı’nda güvence altına alınması hedeflenen alan hangisidir sorusunun doğru karşılığı “Can, mal ve namus güvenliği” olmalıdır.",
+      "id": "exercise.history.longest-century.reform-edicts.tanzimat-law.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.longest-century.tanzimat-law"
+      ],
+      "statement": "Saltanatın kaldırılması, Tanzimat Fermanı’nın hukuk ve yönetim anlayışını yorumlar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · TANZİMAT, ISLAHAT VE MEŞRUTİYET"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "Can, mal ve namus güvenliği"
+        },
+        {
+          "id": "d1",
+          "label": "Saltanatın kaldırılması"
+        },
+        {
+          "id": "d2",
+          "label": "Kadınlara milletvekili seçme hakkı"
+        },
+        {
+          "id": "d3",
+          "label": "Cumhuriyetin ilanı"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “Can, mal ve namus güvenliği” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.longest-century.reform-edicts.tanzimat-law.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.longest-century.tanzimat-law"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: Tanzimat Fermanı’nda güvence altına alınması hedeflenen alan hangisidir?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Parlamentolu meşruti yönetime geçilmesi, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.longest-century.reform-edicts.constitution-parliament.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Parlamentolu meşruti yönetime geçilmesi"
+        },
+        {
+          "id": "d1",
+          "label": "Saltanatın kaldırılması"
+        },
+        {
+          "id": "d2",
+          "label": "Cumhuriyetin kurulması"
+        },
+        {
+          "id": "d3",
+          "label": "Halifeliğin sona ermesi"
+        }
+      ],
+      "prompt": "1876 Kanun-ı Esasi’nin ilanının siyasi sonucu hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.longest-century.constitution-parliament"
+      ],
+      "tag": "TARİH · TANZİMAT, ISLAHAT VE MEŞRUTİYET"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. 1876 Kanun-ı Esasi’nin ilanının siyasi sonucu hangisidir sorusunun doğru karşılığı “Parlamentolu meşruti yönetime geçilmesi” olmalıdır.",
+      "id": "exercise.history.longest-century.reform-edicts.constitution-parliament.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.longest-century.constitution-parliament"
+      ],
+      "statement": "Saltanatın kaldırılması, Kanun-ı Esasi ile meşruti yönetim arasındaki ilişkiyi açıklar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · TANZİMAT, ISLAHAT VE MEŞRUTİYET"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, Tanzimat, Islahat ve Meşrutiyet başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.longest-century.reform-edicts.constitution-parliament.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Tanzimat Fermanı’nda güvence altına alınması hedeflenen alan hangisidir?",
+          "right": "Can, mal ve namus güvenliği"
+        },
+        {
+          "id": "pair-2",
+          "left": "1876 Kanun-ı Esasi’nin ilanının siyasi sonucu hangisidir?",
+          "right": "Parlamentolu meşruti yönetime geçilmesi"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.longest-century.tanzimat-law",
+        "skill.history.longest-century.constitution-parliament"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · TANZİMAT, ISLAHAT VE MEŞRUTİYET",
+      "title": "Bilgi bağlarını eşleştir"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Balkanlarda ayrılıkçı isyanları destekleyerek, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.longest-century.nationalism-and-economy.nationalism-balkans.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Balkanlarda ayrılıkçı isyanları destekleyerek"
+        },
+        {
+          "id": "d1",
+          "label": "Merkezî otoriteyi kendiliğinden güçlendirerek"
+        },
+        {
+          "id": "d2",
+          "label": "Kapitülasyonları sona erdirerek"
+        },
+        {
+          "id": "d3",
+          "label": "Sanayi Devrimi’ni Osmanlı’da başlatarak"
+        }
+      ],
+      "prompt": "XIX. yüzyılda milliyetçilik akımı Osmanlı Devleti’ni en doğrudan nasıl etkilemiştir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.longest-century.nationalism-balkans"
+      ],
+      "tag": "TARİH · MİLLİYETÇİLİK, TOPRAK KAYIPLARI VE EKONOMİ"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. XIX. yüzyılda milliyetçilik akımı Osmanlı Devleti’ni en doğrudan nasıl etkilemiştir sorusunun doğru karşılığı “Balkanlarda ayrılıkçı isyanları destekleyerek” olmalıdır.",
+      "id": "exercise.history.longest-century.nationalism-and-economy.nationalism-balkans.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.longest-century.nationalism-balkans"
+      ],
+      "statement": "Merkezî otoriteyi kendiliğinden güçlendirerek, Milliyetçiliğin Balkanlardaki siyasi etkisini yorumlar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · MİLLİYETÇİLİK, TOPRAK KAYIPLARI VE EKONOMİ"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "Balkanlarda ayrılıkçı isyanları destekleyerek"
+        },
+        {
+          "id": "d1",
+          "label": "Merkezî otoriteyi kendiliğinden güçlendirerek"
+        },
+        {
+          "id": "d2",
+          "label": "Kapitülasyonları sona erdirerek"
+        },
+        {
+          "id": "d3",
+          "label": "Sanayi Devrimi’ni Osmanlı’da başlatarak"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “Balkanlarda ayrılıkçı isyanları destekleyerek” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.longest-century.nationalism-and-economy.nationalism-balkans.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.longest-century.nationalism-balkans"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: XIX. yüzyılda milliyetçilik akımı Osmanlı Devleti’ni en doğrudan nasıl etkilemiştir?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Osmanlı maliyesi üzerinde yabancı denetiminin artmasının, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.longest-century.nationalism-and-economy.duyun-u-umumiye.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Osmanlı maliyesi üzerinde yabancı denetiminin artmasının"
+        },
+        {
+          "id": "d1",
+          "label": "Dış borçların tamamen sona ermesinin"
+        },
+        {
+          "id": "d2",
+          "label": "Millî bankacılığın tamamlanmasının"
+        },
+        {
+          "id": "d3",
+          "label": "Kapitülasyonların kaldırılmasının"
+        }
+      ],
+      "prompt": "Düyun-u Umumiye İdaresinin kurulması neyin göstergesidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.longest-century.duyun-u-umumiye"
+      ],
+      "tag": "TARİH · MİLLİYETÇİLİK, TOPRAK KAYIPLARI VE EKONOMİ"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Düyun-u Umumiye İdaresinin kurulması neyin göstergesidir sorusunun doğru karşılığı “Osmanlı maliyesi üzerinde yabancı denetiminin artmasının” olmalıdır.",
+      "id": "exercise.history.longest-century.nationalism-and-economy.duyun-u-umumiye.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.longest-century.duyun-u-umumiye"
+      ],
+      "statement": "Dış borçların tamamen sona ermesinin, Düyun-u Umumiye’nin ekonomik egemenliğe etkisini açıklar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · MİLLİYETÇİLİK, TOPRAK KAYIPLARI VE EKONOMİ"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, Milliyetçilik, Toprak Kayıpları ve Ekonomi başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.longest-century.nationalism-and-economy.duyun-u-umumiye.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "XIX. yüzyılda milliyetçilik akımı Osmanlı Devleti’ni en doğrudan nasıl etkilemiştir?",
+          "right": "Balkanlarda ayrılıkçı isyanları destekleyerek"
+        },
+        {
+          "id": "pair-2",
+          "left": "Düyun-u Umumiye İdaresinin kurulması neyin göstergesidir?",
+          "right": "Osmanlı maliyesi üzerinde yabancı denetiminin artmasının"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.longest-century.nationalism-balkans",
+        "skill.history.longest-century.duyun-u-umumiye"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · MİLLİYETÇİLİK, TOPRAK KAYIPLARI VE EKONOMİ",
+      "title": "Bilgi bağlarını eşleştir"
+    },
+    {
+      "correctOrder": [
+        "event-1",
+        "event-2",
+        "event-3",
+        "event-4"
+      ],
+      "difficulty": 4,
+      "explanation": "Olaylar tarihleri dikkate alınarak eskiden yeniye sıralanır. Kronoloji, gelişmeler arasındaki neden-sonuç ilişkisini kurmak için temel bir çerçeve sunar.",
+      "id": "exercise.history.longest-century.reform-edicts.order01",
+      "items": [
+        {
+          "id": "event-1",
+          "label": "Tanzimat Fermanı (1839)"
+        },
+        {
+          "id": "event-2",
+          "label": "Islahat Fermanı (1856)"
+        },
+        {
+          "id": "event-3",
+          "label": "Kanun-ı Esasi (1876)"
+        },
+        {
+          "id": "event-4",
+          "label": "Düyun-u Umumiye (1881)"
+        }
+      ],
+      "kind": "ordering",
+      "prompt": "Gelişmeleri eskiden yeniye doğru sırala.",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.longest-century.tanzimat-law",
+        "skill.history.longest-century.constitution-parliament"
+      ],
+      "tag": "TARİH · TANZİMAT, ISLAHAT VE MEŞRUTİYET"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.longest-century.reform-edicts.tanzimat-law.mcq01",
+        "exercise.history.longest-century.reform-edicts.tanzimat-law.tf01",
+        "exercise.history.longest-century.reform-edicts.tanzimat-law.fill01",
+        "exercise.history.longest-century.reform-edicts.constitution-parliament.mcq01",
+        "exercise.history.longest-century.reform-edicts.constitution-parliament.tf01",
+        "exercise.history.longest-century.reform-edicts.constitution-parliament.match01",
+        "exercise.history.longest-century.reform-edicts.order01"
+      ],
+      "id": "lesson.history.longest-century.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "Tanzimat, Islahat ve Meşrutiyet",
+      "topicId": "tyt.history.longest-century.reform-edicts"
+    },
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.longest-century.nationalism-and-economy.nationalism-balkans.mcq01",
+        "exercise.history.longest-century.nationalism-and-economy.nationalism-balkans.tf01",
+        "exercise.history.longest-century.nationalism-and-economy.nationalism-balkans.fill01",
+        "exercise.history.longest-century.nationalism-and-economy.duyun-u-umumiye.mcq01",
+        "exercise.history.longest-century.nationalism-and-economy.duyun-u-umumiye.tf01",
+        "exercise.history.longest-century.nationalism-and-economy.duyun-u-umumiye.match01"
+      ],
+      "id": "lesson.history.longest-century.002",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "Milliyetçilik, Toprak Kayıpları ve Ekonomi",
+      "topicId": "tyt.history.longest-century.nationalism-and-economy"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.history.longest-century.01",
+      "kind": "lesson",
+      "lessonId": "lesson.history.longest-century.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.history.eighteenth-century-change-diplomacy.02"
+      ],
+      "title": "Tanzimat, Islahat ve Meşrutiyet",
+      "unitId": "tyt.history.longest-century"
+    },
+    {
+      "id": "path.history.longest-century.02",
+      "kind": "checkpoint",
+      "lessonId": "lesson.history.longest-century.002",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.history.longest-century.01"
+      ],
+      "title": "En Uzun Yüzyıl Kontrolü",
+      "unitId": "tyt.history.longest-century"
+    }
+  ],
+  "skills": [
+    {
+      "description": "Tanzimat Fermanı’nın hukuk ve yönetim anlayışını yorumlar.",
+      "id": "skill.history.longest-century.tanzimat-law",
+      "title": "Tanzimat Fermanı’nın hukuk ve yönetim anlayışını yorumlar",
+      "topicId": "tyt.history.longest-century.reform-edicts"
+    },
+    {
+      "description": "Kanun-ı Esasi ile meşruti yönetim arasındaki ilişkiyi açıklar.",
+      "id": "skill.history.longest-century.constitution-parliament",
+      "title": "Kanun-ı Esasi ile meşruti yönetim arasındaki ilişkiyi açıklar",
+      "topicId": "tyt.history.longest-century.reform-edicts"
+    },
+    {
+      "description": "Milliyetçiliğin Balkanlardaki siyasi etkisini yorumlar.",
+      "id": "skill.history.longest-century.nationalism-balkans",
+      "title": "Milliyetçiliğin Balkanlardaki siyasi etkisini yorumlar",
+      "topicId": "tyt.history.longest-century.nationalism-and-economy"
+    },
+    {
+      "description": "Düyun-u Umumiye’nin ekonomik egemenliğe etkisini açıklar.",
+      "id": "skill.history.longest-century.duyun-u-umumiye",
+      "title": "Düyun-u Umumiye’nin ekonomik egemenliğe etkisini açıklar",
+      "topicId": "tyt.history.longest-century.nationalism-and-economy"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.history.longest-century.tanzimat-law",
+        "concept.history.longest-century.constitution-parliament"
+      ],
+      "id": "tyt.history.longest-century.reform-edicts",
+      "skillIds": [
+        "skill.history.longest-century.tanzimat-law",
+        "skill.history.longest-century.constitution-parliament"
+      ],
+      "title": "Tanzimat, Islahat ve Meşrutiyet",
+      "unitId": "tyt.history.longest-century"
+    },
+    {
+      "conceptIds": [
+        "concept.history.longest-century.nationalism-balkans",
+        "concept.history.longest-century.duyun-u-umumiye"
+      ],
+      "id": "tyt.history.longest-century.nationalism-and-economy",
+      "skillIds": [
+        "skill.history.longest-century.nationalism-balkans",
+        "skill.history.longest-century.duyun-u-umumiye"
+      ],
+      "title": "Milliyetçilik, Toprak Kayıpları ve Ekonomi",
+      "unitId": "tyt.history.longest-century"
+    }
+  ],
+  "unitId": "tyt.history.longest-century"
+}

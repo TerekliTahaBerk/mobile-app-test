@@ -17,7 +17,7 @@ type DinoSpeechProps = {
 export function DinoSpeech({ children, size = 72 }: DinoSpeechProps) {
   return (
     <View style={styles.row}>
-      <Dino size={size} style={styles.character} />
+      <Dino pose="writing" size={size} style={styles.character} />
       <View style={styles.bubble}>{children}</View>
     </View>
   );

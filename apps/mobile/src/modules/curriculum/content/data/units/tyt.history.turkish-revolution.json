@@ -1,0 +1,540 @@
+{
+  "concepts": [
+    {
+      "definition": "İstanbul Hükûmeti ile TBMM arasındaki otorite ikiliğini",
+      "id": "concept.history.turkish-revolution.abolition-sultanate",
+      "term": "İstanbul Hükûmeti ile TBMM arasındaki otorite ikiliğini",
+      "topicId": "tyt.history.turkish-revolution.political-legal"
+    },
+    {
+      "definition": "Evlenme, boşanma ve miras",
+      "id": "concept.history.turkish-revolution.civil-code",
+      "term": "Evlenme, boşanma ve miras",
+      "topicId": "tyt.history.turkish-revolution.political-legal"
+    },
+    {
+      "definition": "Eğitimi devlet denetiminde birleştirmek",
+      "id": "concept.history.turkish-revolution.education-unity",
+      "term": "Eğitimi devlet denetiminde birleştirmek",
+      "topicId": "tyt.history.turkish-revolution.education-society-economy"
+    },
+    {
+      "definition": "Millî ve bağımsız bir ekonomi kurmak",
+      "id": "concept.history.turkish-revolution.izmir-economy",
+      "term": "Millî ve bağımsız bir ekonomi kurmak",
+      "topicId": "tyt.history.turkish-revolution.education-society-economy"
+    }
+  ],
+  "exercises": [
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "İstanbul Hükûmeti ile TBMM arasındaki otorite ikiliğini, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.turkish-revolution.political-legal.abolition-sultanate.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "İstanbul Hükûmeti ile TBMM arasındaki otorite ikiliğini"
+        },
+        {
+          "id": "d1",
+          "label": "Yasama ile yürütme arasındaki güçler birliğini"
+        },
+        {
+          "id": "d2",
+          "label": "Eğitim kurumları arasındaki farkı"
+        },
+        {
+          "id": "d3",
+          "label": "Takvimler arasındaki ayrılığı"
+        }
+      ],
+      "prompt": "Saltanatın kaldırılması hangi ikiliği sona erdirmiştir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.turkish-revolution.abolition-sultanate"
+      ],
+      "tag": "TARİH · SİYASİ VE HUKUKİ İNKILAPLAR"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Saltanatın kaldırılması hangi ikiliği sona erdirmiştir sorusunun doğru karşılığı “İstanbul Hükûmeti ile TBMM arasındaki otorite ikiliğini” olmalıdır.",
+      "id": "exercise.history.turkish-revolution.political-legal.abolition-sultanate.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.turkish-revolution.abolition-sultanate"
+      ],
+      "statement": "Yasama ile yürütme arasındaki güçler birliğini, Saltanatın kaldırılmasının egemenlik anlayışına etkisini yorumlar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · SİYASİ VE HUKUKİ İNKILAPLAR"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "İstanbul Hükûmeti ile TBMM arasındaki otorite ikiliğini"
+        },
+        {
+          "id": "d1",
+          "label": "Yasama ile yürütme arasındaki güçler birliğini"
+        },
+        {
+          "id": "d2",
+          "label": "Eğitim kurumları arasındaki farkı"
+        },
+        {
+          "id": "d3",
+          "label": "Takvimler arasındaki ayrılığı"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “İstanbul Hükûmeti ile TBMM arasındaki otorite ikiliğini” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.turkish-revolution.political-legal.abolition-sultanate.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.turkish-revolution.abolition-sultanate"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: Saltanatın kaldırılması hangi ikiliği sona erdirmiştir?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Evlenme, boşanma ve miras, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.turkish-revolution.political-legal.civil-code.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Evlenme, boşanma ve miras"
+        },
+        {
+          "id": "d1",
+          "label": "Dış ticaret gümrükleri"
+        },
+        {
+          "id": "d2",
+          "label": "Askerlik süresi"
+        },
+        {
+          "id": "d3",
+          "label": "Boğazlardan geçiş"
+        }
+      ],
+      "prompt": "Türk Medeni Kanunu ile hangi alanda düzenleme yapılmıştır?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.turkish-revolution.civil-code"
+      ],
+      "tag": "TARİH · SİYASİ VE HUKUKİ İNKILAPLAR"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Türk Medeni Kanunu ile hangi alanda düzenleme yapılmıştır sorusunun doğru karşılığı “Evlenme, boşanma ve miras” olmalıdır.",
+      "id": "exercise.history.turkish-revolution.political-legal.civil-code.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.turkish-revolution.civil-code"
+      ],
+      "statement": "Dış ticaret gümrükleri, Türk Medeni Kanunu’nun toplumsal ve hukuki sonuçlarını açıklar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · SİYASİ VE HUKUKİ İNKILAPLAR"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, Siyasi ve Hukuki İnkılaplar başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.turkish-revolution.political-legal.civil-code.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Saltanatın kaldırılması hangi ikiliği sona erdirmiştir?",
+          "right": "İstanbul Hükûmeti ile TBMM arasındaki otorite ikiliğini"
+        },
+        {
+          "id": "pair-2",
+          "left": "Türk Medeni Kanunu ile hangi alanda düzenleme yapılmıştır?",
+          "right": "Evlenme, boşanma ve miras"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.turkish-revolution.abolition-sultanate",
+        "skill.history.turkish-revolution.civil-code"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · SİYASİ VE HUKUKİ İNKILAPLAR",
+      "title": "Bilgi bağlarını eşleştir"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Eğitimi devlet denetiminde birleştirmek, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.turkish-revolution.education-society-economy.education-unity.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Eğitimi devlet denetiminde birleştirmek"
+        },
+        {
+          "id": "d1",
+          "label": "Yabancı okulları tamamen serbest bırakmak"
+        },
+        {
+          "id": "d2",
+          "label": "Medreseleri ayrı bir bakanlığa bağlamak"
+        },
+        {
+          "id": "d3",
+          "label": "Eğitimi yerel cemiyetlere devretmek"
+        }
+      ],
+      "prompt": "Tevhid-i Tedrisat Kanunu’nun temel amacı hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.turkish-revolution.education-unity"
+      ],
+      "tag": "TARİH · EĞİTİM, TOPLUM VE EKONOMİ İNKILAPLARI"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Tevhid-i Tedrisat Kanunu’nun temel amacı hangisidir sorusunun doğru karşılığı “Eğitimi devlet denetiminde birleştirmek” olmalıdır.",
+      "id": "exercise.history.turkish-revolution.education-society-economy.education-unity.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.turkish-revolution.education-unity"
+      ],
+      "statement": "Yabancı okulları tamamen serbest bırakmak, Tevhid-i Tedrisat Kanunu’nun eğitim sistemine etkisini açıklar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · EĞİTİM, TOPLUM VE EKONOMİ İNKILAPLARI"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "Eğitimi devlet denetiminde birleştirmek"
+        },
+        {
+          "id": "d1",
+          "label": "Yabancı okulları tamamen serbest bırakmak"
+        },
+        {
+          "id": "d2",
+          "label": "Medreseleri ayrı bir bakanlığa bağlamak"
+        },
+        {
+          "id": "d3",
+          "label": "Eğitimi yerel cemiyetlere devretmek"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “Eğitimi devlet denetiminde birleştirmek” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.turkish-revolution.education-society-economy.education-unity.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.turkish-revolution.education-unity"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: Tevhid-i Tedrisat Kanunu’nun temel amacı hangisidir?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Millî ve bağımsız bir ekonomi kurmak, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.turkish-revolution.education-society-economy.izmir-economy.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Millî ve bağımsız bir ekonomi kurmak"
+        },
+        {
+          "id": "d1",
+          "label": "Kapitülasyonları genişletmek"
+        },
+        {
+          "id": "d2",
+          "label": "Tarımsal üretimi durdurmak"
+        },
+        {
+          "id": "d3",
+          "label": "Tüm işletmeleri yabancılara devretmek"
+        }
+      ],
+      "prompt": "İzmir İktisat Kongresi’nde vurgulanan temel hedef hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.turkish-revolution.izmir-economy"
+      ],
+      "tag": "TARİH · EĞİTİM, TOPLUM VE EKONOMİ İNKILAPLARI"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. İzmir İktisat Kongresi’nde vurgulanan temel hedef hangisidir sorusunun doğru karşılığı “Millî ve bağımsız bir ekonomi kurmak” olmalıdır.",
+      "id": "exercise.history.turkish-revolution.education-society-economy.izmir-economy.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.turkish-revolution.izmir-economy"
+      ],
+      "statement": "Kapitülasyonları genişletmek, İzmir İktisat Kongresi’nin ekonomik bağımsızlık hedefini yorumlar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · EĞİTİM, TOPLUM VE EKONOMİ İNKILAPLARI"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, Eğitim, Toplum ve Ekonomi İnkılapları başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.turkish-revolution.education-society-economy.izmir-economy.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Tevhid-i Tedrisat Kanunu’nun temel amacı hangisidir?",
+          "right": "Eğitimi devlet denetiminde birleştirmek"
+        },
+        {
+          "id": "pair-2",
+          "left": "İzmir İktisat Kongresi’nde vurgulanan temel hedef hangisidir?",
+          "right": "Millî ve bağımsız bir ekonomi kurmak"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.turkish-revolution.education-unity",
+        "skill.history.turkish-revolution.izmir-economy"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · EĞİTİM, TOPLUM VE EKONOMİ İNKILAPLARI",
+      "title": "Bilgi bağlarını eşleştir"
+    },
+    {
+      "correctOrder": [
+        "event-1",
+        "event-2",
+        "event-3",
+        "event-4",
+        "event-5"
+      ],
+      "difficulty": 4,
+      "explanation": "Olaylar tarihleri dikkate alınarak eskiden yeniye sıralanır. Kronoloji, gelişmeler arasındaki neden-sonuç ilişkisini kurmak için temel bir çerçeve sunar.",
+      "id": "exercise.history.turkish-revolution.political-legal.order01",
+      "items": [
+        {
+          "id": "event-1",
+          "label": "Saltanatın kaldırılması (1922)"
+        },
+        {
+          "id": "event-2",
+          "label": "Cumhuriyetin ilanı (1923)"
+        },
+        {
+          "id": "event-3",
+          "label": "Halifeliğin kaldırılması (1924)"
+        },
+        {
+          "id": "event-4",
+          "label": "Türk Medeni Kanunu (1926)"
+        },
+        {
+          "id": "event-5",
+          "label": "Yeni Türk harflerinin kabulü (1928)"
+        }
+      ],
+      "kind": "ordering",
+      "prompt": "Gelişmeleri eskiden yeniye doğru sırala.",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.turkish-revolution.abolition-sultanate",
+        "skill.history.turkish-revolution.civil-code"
+      ],
+      "tag": "TARİH · SİYASİ VE HUKUKİ İNKILAPLAR"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.turkish-revolution.political-legal.abolition-sultanate.mcq01",
+        "exercise.history.turkish-revolution.political-legal.abolition-sultanate.tf01",
+        "exercise.history.turkish-revolution.political-legal.abolition-sultanate.fill01",
+        "exercise.history.turkish-revolution.political-legal.civil-code.mcq01",
+        "exercise.history.turkish-revolution.political-legal.civil-code.tf01",
+        "exercise.history.turkish-revolution.political-legal.civil-code.match01",
+        "exercise.history.turkish-revolution.political-legal.order01"
+      ],
+      "id": "lesson.history.turkish-revolution.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "Siyasi ve Hukuki İnkılaplar",
+      "topicId": "tyt.history.turkish-revolution.political-legal"
+    },
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.turkish-revolution.education-society-economy.education-unity.mcq01",
+        "exercise.history.turkish-revolution.education-society-economy.education-unity.tf01",
+        "exercise.history.turkish-revolution.education-society-economy.education-unity.fill01",
+        "exercise.history.turkish-revolution.education-society-economy.izmir-economy.mcq01",
+        "exercise.history.turkish-revolution.education-society-economy.izmir-economy.tf01",
+        "exercise.history.turkish-revolution.education-society-economy.izmir-economy.match01"
+      ],
+      "id": "lesson.history.turkish-revolution.002",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "Eğitim, Toplum ve Ekonomi İnkılapları",
+      "topicId": "tyt.history.turkish-revolution.education-society-economy"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.history.turkish-revolution.01",
+      "kind": "lesson",
+      "lessonId": "lesson.history.turkish-revolution.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.history.second-assembly-multiparty.02"
+      ],
+      "title": "Siyasi ve Hukuki İnkılaplar",
+      "unitId": "tyt.history.turkish-revolution"
+    },
+    {
+      "id": "path.history.turkish-revolution.02",
+      "kind": "checkpoint",
+      "lessonId": "lesson.history.turkish-revolution.002",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.history.turkish-revolution.01"
+      ],
+      "title": "Türk İnkılabı Kontrolü",
+      "unitId": "tyt.history.turkish-revolution"
+    }
+  ],
+  "skills": [
+    {
+      "description": "Saltanatın kaldırılmasının egemenlik anlayışına etkisini yorumlar.",
+      "id": "skill.history.turkish-revolution.abolition-sultanate",
+      "title": "Saltanatın kaldırılmasının egemenlik anlayışına etkisini yorumlar",
+      "topicId": "tyt.history.turkish-revolution.political-legal"
+    },
+    {
+      "description": "Türk Medeni Kanunu’nun toplumsal ve hukuki sonuçlarını açıklar.",
+      "id": "skill.history.turkish-revolution.civil-code",
+      "title": "Türk Medeni Kanunu’nun toplumsal ve hukuki sonuçlarını açıklar",
+      "topicId": "tyt.history.turkish-revolution.political-legal"
+    },
+    {
+      "description": "Tevhid-i Tedrisat Kanunu’nun eğitim sistemine etkisini açıklar.",
+      "id": "skill.history.turkish-revolution.education-unity",
+      "title": "Tevhid-i Tedrisat Kanunu’nun eğitim sistemine etkisini açıklar",
+      "topicId": "tyt.history.turkish-revolution.education-society-economy"
+    },
+    {
+      "description": "İzmir İktisat Kongresi’nin ekonomik bağımsızlık hedefini yorumlar.",
+      "id": "skill.history.turkish-revolution.izmir-economy",
+      "title": "İzmir İktisat Kongresi’nin ekonomik bağımsızlık hedefini yorumlar",
+      "topicId": "tyt.history.turkish-revolution.education-society-economy"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.history.turkish-revolution.abolition-sultanate",
+        "concept.history.turkish-revolution.civil-code"
+      ],
+      "id": "tyt.history.turkish-revolution.political-legal",
+      "skillIds": [
+        "skill.history.turkish-revolution.abolition-sultanate",
+        "skill.history.turkish-revolution.civil-code"
+      ],
+      "title": "Siyasi ve Hukuki İnkılaplar",
+      "unitId": "tyt.history.turkish-revolution"
+    },
+    {
+      "conceptIds": [
+        "concept.history.turkish-revolution.education-unity",
+        "concept.history.turkish-revolution.izmir-economy"
+      ],
+      "id": "tyt.history.turkish-revolution.education-society-economy",
+      "skillIds": [
+        "skill.history.turkish-revolution.education-unity",
+        "skill.history.turkish-revolution.izmir-economy"
+      ],
+      "title": "Eğitim, Toplum ve Ekonomi İnkılapları",
+      "unitId": "tyt.history.turkish-revolution"
+    }
+  ],
+  "unitId": "tyt.history.turkish-revolution"
+}

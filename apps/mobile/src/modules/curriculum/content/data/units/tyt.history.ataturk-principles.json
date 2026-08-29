@@ -1,0 +1,493 @@
+{
+  "concepts": [
+    {
+      "definition": "Cumhuriyetçilik",
+      "id": "concept.history.ataturk-principles.republicanism",
+      "term": "Cumhuriyetçilik",
+      "topicId": "tyt.history.ataturk-principles.republican-national-populist"
+    },
+    {
+      "definition": "Halkçılık",
+      "id": "concept.history.ataturk-principles.populism-equality",
+      "term": "Halkçılık",
+      "topicId": "tyt.history.ataturk-principles.republican-national-populist"
+    },
+    {
+      "definition": "Laiklik",
+      "id": "concept.history.ataturk-principles.secularism",
+      "term": "Laiklik",
+      "topicId": "tyt.history.ataturk-principles.secular-statist-reformist"
+    },
+    {
+      "definition": "Devletçilik",
+      "id": "concept.history.ataturk-principles.statism-reformism",
+      "term": "Devletçilik",
+      "topicId": "tyt.history.ataturk-principles.secular-statist-reformist"
+    }
+  ],
+  "exercises": [
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Cumhuriyetçilik, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.ataturk-principles.republican-national-populist.republicanism.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Cumhuriyetçilik"
+        },
+        {
+          "id": "d1",
+          "label": "Devletçilik"
+        },
+        {
+          "id": "d2",
+          "label": "Laiklik"
+        },
+        {
+          "id": "d3",
+          "label": "İnkılapçılık"
+        }
+      ],
+      "prompt": "Millî egemenliğe dayalı seçimlerin yapılması en doğrudan hangi ilkeyle ilgilidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ataturk-principles.republicanism"
+      ],
+      "tag": "TARİH · CUMHURİYETÇİLİK, MİLLİYETÇİLİK VE HALKÇILIK"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Millî egemenliğe dayalı seçimlerin yapılması en doğrudan hangi ilkeyle ilgilidir sorusunun doğru karşılığı “Cumhuriyetçilik” olmalıdır.",
+      "id": "exercise.history.ataturk-principles.republican-national-populist.republicanism.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ataturk-principles.republicanism"
+      ],
+      "statement": "Devletçilik, Bir uygulamanın cumhuriyetçilik ilkesiyle ilişkisini kurar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · CUMHURİYETÇİLİK, MİLLİYETÇİLİK VE HALKÇILIK"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "Cumhuriyetçilik"
+        },
+        {
+          "id": "d1",
+          "label": "Devletçilik"
+        },
+        {
+          "id": "d2",
+          "label": "Laiklik"
+        },
+        {
+          "id": "d3",
+          "label": "İnkılapçılık"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “Cumhuriyetçilik” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.ataturk-principles.republican-national-populist.republicanism.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ataturk-principles.republicanism"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: Millî egemenliğe dayalı seçimlerin yapılması en doğrudan hangi ilkeyle ilgilidir?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Halkçılık, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.ataturk-principles.republican-national-populist.populism-equality.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Halkçılık"
+        },
+        {
+          "id": "d1",
+          "label": "Milliyetçilik"
+        },
+        {
+          "id": "d2",
+          "label": "Devletçilik"
+        },
+        {
+          "id": "d3",
+          "label": "Laiklik"
+        }
+      ],
+      "prompt": "Toplumda ayrıcalıklı sınıfların reddedilmesi hangi ilkeyle ilgilidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ataturk-principles.populism-equality"
+      ],
+      "tag": "TARİH · CUMHURİYETÇİLİK, MİLLİYETÇİLİK VE HALKÇILIK"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Toplumda ayrıcalıklı sınıfların reddedilmesi hangi ilkeyle ilgilidir sorusunun doğru karşılığı “Halkçılık” olmalıdır.",
+      "id": "exercise.history.ataturk-principles.republican-national-populist.populism-equality.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ataturk-principles.populism-equality"
+      ],
+      "statement": "Milliyetçilik, Halkçılık ilkesini kanun önünde eşitlik uygulamalarıyla ilişkilendirir kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · CUMHURİYETÇİLİK, MİLLİYETÇİLİK VE HALKÇILIK"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, Cumhuriyetçilik, Milliyetçilik ve Halkçılık başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.ataturk-principles.republican-national-populist.populism-equality.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Millî egemenliğe dayalı seçimlerin yapılması en doğrudan hangi ilkeyle ilgilidir?",
+          "right": "Cumhuriyetçilik"
+        },
+        {
+          "id": "pair-2",
+          "left": "Toplumda ayrıcalıklı sınıfların reddedilmesi hangi ilkeyle ilgilidir?",
+          "right": "Halkçılık"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ataturk-principles.republicanism",
+        "skill.history.ataturk-principles.populism-equality"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · CUMHURİYETÇİLİK, MİLLİYETÇİLİK VE HALKÇILIK",
+      "title": "Bilgi bağlarını eşleştir"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Laiklik, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.ataturk-principles.secular-statist-reformist.secularism.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Laiklik"
+        },
+        {
+          "id": "d1",
+          "label": "Halkçılık"
+        },
+        {
+          "id": "d2",
+          "label": "Milliyetçilik"
+        },
+        {
+          "id": "d3",
+          "label": "Devletçilik"
+        }
+      ],
+      "prompt": "Devlet ve hukuk düzeninin din kurallarından bağımsızlaştırılması hangi ilkeyle ilgilidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ataturk-principles.secularism"
+      ],
+      "tag": "TARİH · LAİKLİK, DEVLETÇİLİK VE İNKILAPÇILIK"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Devlet ve hukuk düzeninin din kurallarından bağımsızlaştırılması hangi ilkeyle ilgilidir sorusunun doğru karşılığı “Laiklik” olmalıdır.",
+      "id": "exercise.history.ataturk-principles.secular-statist-reformist.secularism.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ataturk-principles.secularism"
+      ],
+      "statement": "Halkçılık, Laiklik ilkesini hukuk ve yönetim uygulamalarıyla ilişkilendirir kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · LAİKLİK, DEVLETÇİLİK VE İNKILAPÇILIK"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "Laiklik"
+        },
+        {
+          "id": "d1",
+          "label": "Halkçılık"
+        },
+        {
+          "id": "d2",
+          "label": "Milliyetçilik"
+        },
+        {
+          "id": "d3",
+          "label": "Devletçilik"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “Laiklik” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.ataturk-principles.secular-statist-reformist.secularism.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ataturk-principles.secularism"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: Devlet ve hukuk düzeninin din kurallarından bağımsızlaştırılması hangi ilkeyle ilgilidir?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Devletçilik, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.ataturk-principles.secular-statist-reformist.statism-reformism.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Devletçilik"
+        },
+        {
+          "id": "d1",
+          "label": "Cumhuriyetçilik"
+        },
+        {
+          "id": "d2",
+          "label": "Laiklik"
+        },
+        {
+          "id": "d3",
+          "label": "Halkçılık"
+        }
+      ],
+      "prompt": "Özel girişimin yetersiz kaldığı alanlarda devletin yatırım yapması hangi ilkeyle ilgilidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ataturk-principles.statism-reformism"
+      ],
+      "tag": "TARİH · LAİKLİK, DEVLETÇİLİK VE İNKILAPÇILIK"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Özel girişimin yetersiz kaldığı alanlarda devletin yatırım yapması hangi ilkeyle ilgilidir sorusunun doğru karşılığı “Devletçilik” olmalıdır.",
+      "id": "exercise.history.ataturk-principles.secular-statist-reformist.statism-reformism.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ataturk-principles.statism-reformism"
+      ],
+      "statement": "Cumhuriyetçilik, Devletçilik ile inkılapçılık ilkelerini uygulamalarından ayırt eder kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · LAİKLİK, DEVLETÇİLİK VE İNKILAPÇILIK"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, Laiklik, Devletçilik ve İnkılapçılık başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.ataturk-principles.secular-statist-reformist.statism-reformism.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Devlet ve hukuk düzeninin din kurallarından bağımsızlaştırılması hangi ilkeyle ilgilidir?",
+          "right": "Laiklik"
+        },
+        {
+          "id": "pair-2",
+          "left": "Özel girişimin yetersiz kaldığı alanlarda devletin yatırım yapması hangi ilkeyle ilgilidir?",
+          "right": "Devletçilik"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.ataturk-principles.secularism",
+        "skill.history.ataturk-principles.statism-reformism"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · LAİKLİK, DEVLETÇİLİK VE İNKILAPÇILIK",
+      "title": "Bilgi bağlarını eşleştir"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.ataturk-principles.republican-national-populist.republicanism.mcq01",
+        "exercise.history.ataturk-principles.republican-national-populist.republicanism.tf01",
+        "exercise.history.ataturk-principles.republican-national-populist.republicanism.fill01",
+        "exercise.history.ataturk-principles.republican-national-populist.populism-equality.mcq01",
+        "exercise.history.ataturk-principles.republican-national-populist.populism-equality.tf01",
+        "exercise.history.ataturk-principles.republican-national-populist.populism-equality.match01"
+      ],
+      "id": "lesson.history.ataturk-principles.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "Cumhuriyetçilik, Milliyetçilik ve Halkçılık",
+      "topicId": "tyt.history.ataturk-principles.republican-national-populist"
+    },
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.ataturk-principles.secular-statist-reformist.secularism.mcq01",
+        "exercise.history.ataturk-principles.secular-statist-reformist.secularism.tf01",
+        "exercise.history.ataturk-principles.secular-statist-reformist.secularism.fill01",
+        "exercise.history.ataturk-principles.secular-statist-reformist.statism-reformism.mcq01",
+        "exercise.history.ataturk-principles.secular-statist-reformist.statism-reformism.tf01",
+        "exercise.history.ataturk-principles.secular-statist-reformist.statism-reformism.match01"
+      ],
+      "id": "lesson.history.ataturk-principles.002",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "Laiklik, Devletçilik ve İnkılapçılık",
+      "topicId": "tyt.history.ataturk-principles.secular-statist-reformist"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.history.ataturk-principles.01",
+      "kind": "lesson",
+      "lessonId": "lesson.history.ataturk-principles.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.history.turkish-revolution.02"
+      ],
+      "title": "Cumhuriyetçilik, Milliyetçilik ve Halkçılık",
+      "unitId": "tyt.history.ataturk-principles"
+    },
+    {
+      "id": "path.history.ataturk-principles.02",
+      "kind": "checkpoint",
+      "lessonId": "lesson.history.ataturk-principles.002",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.history.ataturk-principles.01"
+      ],
+      "title": "Atatürk İlkeleri Kontrolü",
+      "unitId": "tyt.history.ataturk-principles"
+    }
+  ],
+  "skills": [
+    {
+      "description": "Bir uygulamanın cumhuriyetçilik ilkesiyle ilişkisini kurar.",
+      "id": "skill.history.ataturk-principles.republicanism",
+      "title": "Bir uygulamanın cumhuriyetçilik ilkesiyle ilişkisini kurar",
+      "topicId": "tyt.history.ataturk-principles.republican-national-populist"
+    },
+    {
+      "description": "Halkçılık ilkesini kanun önünde eşitlik uygulamalarıyla ilişkilendirir.",
+      "id": "skill.history.ataturk-principles.populism-equality",
+      "title": "Halkçılık ilkesini kanun önünde eşitlik uygulamalarıyla ilişkilendirir",
+      "topicId": "tyt.history.ataturk-principles.republican-national-populist"
+    },
+    {
+      "description": "Laiklik ilkesini hukuk ve yönetim uygulamalarıyla ilişkilendirir.",
+      "id": "skill.history.ataturk-principles.secularism",
+      "title": "Laiklik ilkesini hukuk ve yönetim uygulamalarıyla ilişkilendirir",
+      "topicId": "tyt.history.ataturk-principles.secular-statist-reformist"
+    },
+    {
+      "description": "Devletçilik ile inkılapçılık ilkelerini uygulamalarından ayırt eder.",
+      "id": "skill.history.ataturk-principles.statism-reformism",
+      "title": "Devletçilik ile inkılapçılık ilkelerini uygulamalarından ayırt eder",
+      "topicId": "tyt.history.ataturk-principles.secular-statist-reformist"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.history.ataturk-principles.republicanism",
+        "concept.history.ataturk-principles.populism-equality"
+      ],
+      "id": "tyt.history.ataturk-principles.republican-national-populist",
+      "skillIds": [
+        "skill.history.ataturk-principles.republicanism",
+        "skill.history.ataturk-principles.populism-equality"
+      ],
+      "title": "Cumhuriyetçilik, Milliyetçilik ve Halkçılık",
+      "unitId": "tyt.history.ataturk-principles"
+    },
+    {
+      "conceptIds": [
+        "concept.history.ataturk-principles.secularism",
+        "concept.history.ataturk-principles.statism-reformism"
+      ],
+      "id": "tyt.history.ataturk-principles.secular-statist-reformist",
+      "skillIds": [
+        "skill.history.ataturk-principles.secularism",
+        "skill.history.ataturk-principles.statism-reformism"
+      ],
+      "title": "Laiklik, Devletçilik ve İnkılapçılık",
+      "unitId": "tyt.history.ataturk-principles"
+    }
+  ],
+  "unitId": "tyt.history.ataturk-principles"
+}

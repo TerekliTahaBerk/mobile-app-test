@@ -1,0 +1,531 @@
+{
+  "concepts": [
+    {
+      "definition": "Ayrıntı artar ve gösterilen alan daralır",
+      "id": "concept.geography.map-knowledge.scale",
+      "term": "Paydası küçük kesir ölçek kullanılır",
+      "topicId": "tyt.geography.map-knowledge.scale"
+    },
+    {
+      "definition": "Eğim artar",
+      "id": "concept.geography.map-knowledge.contours",
+      "term": "İzohipsler sıklaşır",
+      "topicId": "tyt.geography.map-knowledge.contours"
+    }
+  ],
+  "exercises": [
+    {
+      "correctOptionId": "opt-1",
+      "difficulty": 2,
+      "explanation": "Paydası küçük kesir ölçek kullanılır durumunda ayrıntı artar ve gösterilen alan daralır. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.map-knowledge.scale.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Ayrıntı artar ve gösterilen alan daralır"
+        },
+        {
+          "id": "opt-2",
+          "label": "Haritadaki kapladığı yer büyür"
+        },
+        {
+          "id": "opt-3",
+          "label": "Gerçek uzaklık 10 km olur"
+        },
+        {
+          "id": "opt-4",
+          "label": "Ölçek küçülür ve ayrıntı azalır"
+        }
+      ],
+      "prompt": "Paydası küçük kesir ölçek kullanılır. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.map-knowledge.scale.interpret"
+      ],
+      "tag": "COĞRAFYA · ÖLÇEK VE UZAKLIK"
+    },
+    {
+      "correctOptionId": "opt-2",
+      "difficulty": 4,
+      "explanation": "Aynı alan daha büyük ölçekle çizilir durumunda haritadaki kapladığı yer büyür. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.map-knowledge.scale.001.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Ayrıntı artar ve gösterilen alan daralır"
+        },
+        {
+          "id": "opt-2",
+          "label": "Haritadaki kapladığı yer büyür"
+        },
+        {
+          "id": "opt-3",
+          "label": "Gerçek uzaklık 10 km olur"
+        },
+        {
+          "id": "opt-4",
+          "label": "Ölçek küçülür ve ayrıntı azalır"
+        }
+      ],
+      "prompt": "Aynı alan daha büyük ölçekle çizilir. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.map-knowledge.scale.interpret"
+      ],
+      "tag": "COĞRAFYA · ÖLÇEK VE UZAKLIK"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 3,
+      "explanation": "1/500.000 ölçekte 2 cm ölçülür ile gerçek uzaklık 10 km olur arasında doğrudan bir coğrafi ilişki vardır.",
+      "id": "exercise.geography.map-knowledge.scale.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.map-knowledge.scale.interpret"
+      ],
+      "statement": "1/500.000 ölçekte 2 cm ölçülür; bunun sonucunda gerçek uzaklık 10 km olur.",
+      "tag": "COĞRAFYA · ÖLÇEK VE UZAKLIK"
+    },
+    {
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "Ayrıntı artar ve gösterilen alan daralır"
+        },
+        {
+          "id": "w-2",
+          "label": "Haritadaki kapladığı yer büyür"
+        },
+        {
+          "id": "w-3",
+          "label": "Gerçek uzaklık 10 km olur"
+        },
+        {
+          "id": "w-4",
+          "label": "Ölçek küçülür ve ayrıntı azalır"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "Harita küçültülür koşulunun beklenen sonucu “Ölçek küçülür ve ayrıntı azalır” ilişkisidir.",
+      "hint": "Harita küçültülür",
+      "id": "exercise.geography.map-knowledge.scale.001.blank01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.map-knowledge.scale.interpret"
+      ],
+      "solutionTokenIds": [
+        "w-4"
+      ],
+      "title": "Harita küçültülür durumunda sonuç"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Her koşul, kendisinden beklenen özgün coğrafi sonuçla eşleştirilir; aynı sonuç iki kez kullanılmaz.",
+      "id": "exercise.geography.map-knowledge.scale.001.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Paydası küçük kesir ölçek kullanılır",
+          "right": "Ayrıntı artar ve gösterilen alan daralır"
+        },
+        {
+          "id": "pair-2",
+          "left": "Aynı alan daha büyük ölçekle çizilir",
+          "right": "Haritadaki kapladığı yer büyür"
+        },
+        {
+          "id": "pair-3",
+          "left": "1/500.000 ölçekte 2 cm ölçülür",
+          "right": "Gerçek uzaklık 10 km olur"
+        },
+        {
+          "id": "pair-4",
+          "left": "Harita küçültülür",
+          "right": "Ölçek küçülür ve ayrıntı azalır"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.map-knowledge.scale.interpret"
+      ],
+      "subtitle": "Koşulu doğru coğrafi sonuçla birleştir.",
+      "tag": "COĞRAFYA · ÖLÇEK VE UZAKLIK",
+      "title": "İlişkiyi eşleştir"
+    },
+    {
+      "cards": [
+        {
+          "back": "Ayrıntı artar ve gösterilen alan daralır",
+          "front": "Paydası küçük kesir ölçek kullanılır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-1"
+        },
+        {
+          "back": "Haritadaki kapladığı yer büyür",
+          "front": "Aynı alan daha büyük ölçekle çizilir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-2"
+        },
+        {
+          "back": "Gerçek uzaklık 10 km olur",
+          "front": "1/500.000 ölçekte 2 cm ölçülür",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-3"
+        },
+        {
+          "back": "Ölçek küçülür ve ayrıntı azalır",
+          "front": "Harita küçültülür",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-4"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Kartlar temel ilişkileri kısa tekrar için özetler; puanlanan skill coverage hesabına katılmaz.",
+      "id": "exercise.geography.map-knowledge.scale.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.map-knowledge.scale.interpret"
+      ],
+      "tag": "COĞRAFYA · ÖLÇEK VE UZAKLIK"
+    },
+    {
+      "correctOptionId": "opt-1",
+      "difficulty": 2,
+      "explanation": "İzohipsler sıklaşır durumunda eğim artar. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.map-knowledge.contours.001.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Eğim artar"
+        },
+        {
+          "id": "opt-2",
+          "label": "Tepe gösterilir"
+        },
+        {
+          "id": "opt-3",
+          "label": "V’nin ucu kaynak yönünü gösterir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Yükseltileri eşittir"
+        }
+      ],
+      "prompt": "İzohipsler sıklaşır. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.map-knowledge.contours.interpret"
+      ],
+      "tag": "COĞRAFYA · İZOHİPS YORUMLAMA"
+    },
+    {
+      "correctOptionId": "opt-2",
+      "difficulty": 4,
+      "explanation": "Kapalı eğriler merkeze doğru yükselir durumunda tepe gösterilir. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "id": "exercise.geography.map-knowledge.contours.001.mcq02",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "opt-1",
+          "label": "Eğim artar"
+        },
+        {
+          "id": "opt-2",
+          "label": "Tepe gösterilir"
+        },
+        {
+          "id": "opt-3",
+          "label": "V’nin ucu kaynak yönünü gösterir"
+        },
+        {
+          "id": "opt-4",
+          "label": "Yükseltileri eşittir"
+        }
+      ],
+      "prompt": "Kapalı eğriler merkeze doğru yükselir. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.map-knowledge.contours.interpret"
+      ],
+      "tag": "COĞRAFYA · İZOHİPS YORUMLAMA"
+    },
+    {
+      "correctAnswer": true,
+      "difficulty": 3,
+      "explanation": "İzohipsler akarsu boyunca yükseltiye doğru V yapar ile v’nin ucu kaynak yönünü gösterir arasında doğrudan bir coğrafi ilişki vardır.",
+      "id": "exercise.geography.map-knowledge.contours.001.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.map-knowledge.contours.interpret"
+      ],
+      "statement": "İzohipsler akarsu boyunca yükseltiye doğru V yapar; bunun sonucunda v’nin ucu kaynak yönünü gösterir.",
+      "tag": "COĞRAFYA · İZOHİPS YORUMLAMA"
+    },
+    {
+      "bank": [
+        {
+          "id": "w-1",
+          "label": "Eğim artar"
+        },
+        {
+          "id": "w-2",
+          "label": "Tepe gösterilir"
+        },
+        {
+          "id": "w-3",
+          "label": "V’nin ucu kaynak yönünü gösterir"
+        },
+        {
+          "id": "w-4",
+          "label": "Yükseltileri eşittir"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "Aynı izohips üzerindeki noktalar karşılaştırılır koşulunun beklenen sonucu “Yükseltileri eşittir” ilişkisidir.",
+      "hint": "Aynı izohips üzerindeki noktalar karşılaştırılır",
+      "id": "exercise.geography.map-knowledge.contours.001.blank01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.map-knowledge.contours.interpret"
+      ],
+      "solutionTokenIds": [
+        "w-4"
+      ],
+      "title": "Aynı izohips üzerindeki noktalar karşılaştırılır durumunda sonuç"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Her koşul, kendisinden beklenen özgün coğrafi sonuçla eşleştirilir; aynı sonuç iki kez kullanılmaz.",
+      "id": "exercise.geography.map-knowledge.contours.001.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "İzohipsler sıklaşır",
+          "right": "Eğim artar"
+        },
+        {
+          "id": "pair-2",
+          "left": "Kapalı eğriler merkeze doğru yükselir",
+          "right": "Tepe gösterilir"
+        },
+        {
+          "id": "pair-3",
+          "left": "İzohipsler akarsu boyunca yükseltiye doğru V yapar",
+          "right": "V’nin ucu kaynak yönünü gösterir"
+        },
+        {
+          "id": "pair-4",
+          "left": "Aynı izohips üzerindeki noktalar karşılaştırılır",
+          "right": "Yükseltileri eşittir"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.map-knowledge.contours.interpret"
+      ],
+      "subtitle": "Koşulu doğru coğrafi sonuçla birleştir.",
+      "tag": "COĞRAFYA · İZOHİPS YORUMLAMA",
+      "title": "İlişkiyi eşleştir"
+    },
+    {
+      "cards": [
+        {
+          "back": "Eğim artar",
+          "front": "İzohipsler sıklaşır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-1"
+        },
+        {
+          "back": "Tepe gösterilir",
+          "front": "Kapalı eğriler merkeze doğru yükselir",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-2"
+        },
+        {
+          "back": "V’nin ucu kaynak yönünü gösterir",
+          "front": "İzohipsler akarsu boyunca yükseltiye doğru V yapar",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-3"
+        },
+        {
+          "back": "Yükseltileri eşittir",
+          "front": "Aynı izohips üzerindeki noktalar karşılaştırılır",
+          "hint": "Neden-sonuç bağlantısını düşün.",
+          "id": "card-4"
+        }
+      ],
+      "difficulty": 1,
+      "explanation": "Kartlar temel ilişkileri kısa tekrar için özetler; puanlanan skill coverage hesabına katılmaz.",
+      "id": "exercise.geography.map-knowledge.contours.001.card01",
+      "kind": "flashcard",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.geography.map-knowledge.contours.interpret"
+      ],
+      "tag": "COĞRAFYA · İZOHİPS YORUMLAMA"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.geography.map-knowledge.scale.001.mcq01",
+        "exercise.geography.map-knowledge.scale.001.mcq02",
+        "exercise.geography.map-knowledge.scale.001.tf01",
+        "exercise.geography.map-knowledge.scale.001.blank01",
+        "exercise.geography.map-knowledge.scale.001.match01",
+        "exercise.geography.map-knowledge.scale.001.card01"
+      ],
+      "id": "lesson.geography.map-knowledge.scale.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Harita ölçeği, ayrıntı, alan ve uzaklık ilişkilerini yorumlar.",
+      "title": "Ölçek ve Uzaklık",
+      "topicId": "tyt.geography.map-knowledge.scale"
+    },
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.geography.map-knowledge.contours.001.mcq01",
+        "exercise.geography.map-knowledge.contours.001.mcq02",
+        "exercise.geography.map-knowledge.contours.001.tf01",
+        "exercise.geography.map-knowledge.contours.001.blank01",
+        "exercise.geography.map-knowledge.contours.001.match01",
+        "exercise.geography.map-knowledge.contours.001.card01"
+      ],
+      "id": "lesson.geography.map-knowledge.contours.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Metinsel izohips verilerinden yükselti, eğim ve yer şekli çıkarımı yapar.",
+      "title": "İzohips Yorumlama",
+      "topicId": "tyt.geography.map-knowledge.contours"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.geography.map-knowledge.01",
+      "kind": "lesson",
+      "lessonId": "lesson.geography.map-knowledge.scale.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.geography.geographic-location.02"
+      ],
+      "title": "Ölçek ve Uzaklık",
+      "unitId": "tyt.geography.map-knowledge"
+    },
+    {
+      "id": "path.geography.map-knowledge.02",
+      "kind": "practice",
+      "lessonId": "lesson.geography.map-knowledge.contours.001",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.geography.map-knowledge.01"
+      ],
+      "title": "İzohips Yorumlama Uygulaması",
+      "unitId": "tyt.geography.map-knowledge"
+    }
+  ],
+  "skills": [
+    {
+      "description": "Harita ölçeği, ayrıntı, alan ve uzaklık ilişkilerini yorumlar.",
+      "id": "skill.geography.map-knowledge.scale.interpret",
+      "title": "Harita ölçeği, ayrıntı, alan ve uzaklık ilişkilerini yorumlar.",
+      "topicId": "tyt.geography.map-knowledge.scale"
+    },
+    {
+      "description": "Metinsel izohips verilerinden yükselti, eğim ve yer şekli çıkarımı yapar.",
+      "id": "skill.geography.map-knowledge.contours.interpret",
+      "title": "Metinsel izohips verilerinden yükselti, eğim ve yer şekli çıkarımı yapar.",
+      "topicId": "tyt.geography.map-knowledge.contours"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.geography.map-knowledge.scale"
+      ],
+      "id": "tyt.geography.map-knowledge.scale",
+      "skillIds": [
+        "skill.geography.map-knowledge.scale.interpret"
+      ],
+      "title": "Ölçek ve Uzaklık",
+      "unitId": "tyt.geography.map-knowledge"
+    },
+    {
+      "conceptIds": [
+        "concept.geography.map-knowledge.contours"
+      ],
+      "id": "tyt.geography.map-knowledge.contours",
+      "skillIds": [
+        "skill.geography.map-knowledge.contours.interpret"
+      ],
+      "title": "İzohips Yorumlama",
+      "unitId": "tyt.geography.map-knowledge"
+    }
+  ],
+  "unitId": "tyt.geography.map-knowledge"
+}

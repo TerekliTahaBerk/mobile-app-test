@@ -1,0 +1,493 @@
+{
+  "concepts": [
+    {
+      "definition": "Güvenliklerini tehdit eden yerleri işgal etme",
+      "id": "concept.history.armistice-occupations-societies.article-seven",
+      "term": "Güvenliklerini tehdit eden yerleri işgal etme",
+      "topicId": "tyt.history.armistice-occupations-societies.mondros-occupations"
+    },
+    {
+      "definition": "Batı Anadolu’da direniş hareketlerinin yayılmasını",
+      "id": "concept.history.armistice-occupations-societies.izmir-occupation",
+      "term": "Batı Anadolu’da direniş hareketlerinin yayılmasını",
+      "topicId": "tyt.history.armistice-occupations-societies.mondros-occupations"
+    },
+    {
+      "definition": "Bölgesel direnişle vatanın bütünlüğünü korumaya çalışmaları",
+      "id": "concept.history.armistice-occupations-societies.national-societies",
+      "term": "Bölgesel direnişle vatanın bütünlüğünü korumaya çalışmaları",
+      "topicId": "tyt.history.armistice-occupations-societies.national-and-hostile-societies"
+    },
+    {
+      "definition": "Direnişin tek merkezden yönetilmesini",
+      "id": "concept.history.armistice-occupations-societies.societies-unification",
+      "term": "Direnişin tek merkezden yönetilmesini",
+      "topicId": "tyt.history.armistice-occupations-societies.national-and-hostile-societies"
+    }
+  ],
+  "exercises": [
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Güvenliklerini tehdit eden yerleri işgal etme, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.armistice-occupations-societies.mondros-occupations.article-seven.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Güvenliklerini tehdit eden yerleri işgal etme"
+        },
+        {
+          "id": "d1",
+          "label": "Osmanlı ordusunu büyütme"
+        },
+        {
+          "id": "d2",
+          "label": "Kapitülasyonları kaldırma"
+        },
+        {
+          "id": "d3",
+          "label": "Mebusan Meclisini toplama"
+        }
+      ],
+      "prompt": "Mondros’un 7. maddesi İtilaf Devletlerine hangi imkânı vermiştir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.armistice-occupations-societies.article-seven"
+      ],
+      "tag": "TARİH · MONDROS HÜKÜMLERİ VE İŞGALLER"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Mondros’un 7. maddesi İtilaf Devletlerine hangi imkânı vermiştir sorusunun doğru karşılığı “Güvenliklerini tehdit eden yerleri işgal etme” olmalıdır.",
+      "id": "exercise.history.armistice-occupations-societies.mondros-occupations.article-seven.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.armistice-occupations-societies.article-seven"
+      ],
+      "statement": "Osmanlı ordusunu büyütme, Mondros Ateşkes Antlaşması’nın 7. maddesinin işgallere etkisini yorumlar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · MONDROS HÜKÜMLERİ VE İŞGALLER"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "Güvenliklerini tehdit eden yerleri işgal etme"
+        },
+        {
+          "id": "d1",
+          "label": "Osmanlı ordusunu büyütme"
+        },
+        {
+          "id": "d2",
+          "label": "Kapitülasyonları kaldırma"
+        },
+        {
+          "id": "d3",
+          "label": "Mebusan Meclisini toplama"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “Güvenliklerini tehdit eden yerleri işgal etme” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.armistice-occupations-societies.mondros-occupations.article-seven.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.armistice-occupations-societies.article-seven"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: Mondros’un 7. maddesi İtilaf Devletlerine hangi imkânı vermiştir?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Batı Anadolu’da direniş hareketlerinin yayılmasını, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.armistice-occupations-societies.mondros-occupations.izmir-occupation.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Batı Anadolu’da direniş hareketlerinin yayılmasını"
+        },
+        {
+          "id": "d1",
+          "label": "Saltanatın kaldırılmasını"
+        },
+        {
+          "id": "d2",
+          "label": "Lozan Konferansının toplanmasını"
+        },
+        {
+          "id": "d3",
+          "label": "Düzenli ordunun terhis edilmesini"
+        }
+      ],
+      "prompt": "15 Mayıs 1919’da İzmir’in işgali hangi gelişmeyi hızlandırmıştır?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.armistice-occupations-societies.izmir-occupation"
+      ],
+      "tag": "TARİH · MONDROS HÜKÜMLERİ VE İŞGALLER"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. 15 Mayıs 1919’da İzmir’in işgali hangi gelişmeyi hızlandırmıştır sorusunun doğru karşılığı “Batı Anadolu’da direniş hareketlerinin yayılmasını” olmalıdır.",
+      "id": "exercise.history.armistice-occupations-societies.mondros-occupations.izmir-occupation.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.armistice-occupations-societies.izmir-occupation"
+      ],
+      "statement": "Saltanatın kaldırılmasını, İzmir’in işgalinin Millî Mücadele’ye etkisini açıklar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · MONDROS HÜKÜMLERİ VE İŞGALLER"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, Mondros Hükümleri ve İşgaller başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.armistice-occupations-societies.mondros-occupations.izmir-occupation.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Mondros’un 7. maddesi İtilaf Devletlerine hangi imkânı vermiştir?",
+          "right": "Güvenliklerini tehdit eden yerleri işgal etme"
+        },
+        {
+          "id": "pair-2",
+          "left": "15 Mayıs 1919’da İzmir’in işgali hangi gelişmeyi hızlandırmıştır?",
+          "right": "Batı Anadolu’da direniş hareketlerinin yayılmasını"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.armistice-occupations-societies.article-seven",
+        "skill.history.armistice-occupations-societies.izmir-occupation"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · MONDROS HÜKÜMLERİ VE İŞGALLER",
+      "title": "Bilgi bağlarını eşleştir"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Bölgesel direnişle vatanın bütünlüğünü korumaya çalışmaları, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.armistice-occupations-societies.national-and-hostile-societies.national-societies.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Bölgesel direnişle vatanın bütünlüğünü korumaya çalışmaları"
+        },
+        {
+          "id": "d1",
+          "label": "Manda yönetimini tek çözüm saymaları"
+        },
+        {
+          "id": "d2",
+          "label": "İşgalleri kolaylaştırmaları"
+        },
+        {
+          "id": "d3",
+          "label": "Saltanatı hemen kaldırmaları"
+        }
+      ],
+      "prompt": "Millî cemiyetlerin ortak özelliği hangisidir?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.armistice-occupations-societies.national-societies"
+      ],
+      "tag": "TARİH · MİLLÎ VE ZARARLI CEMİYETLER"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Millî cemiyetlerin ortak özelliği hangisidir sorusunun doğru karşılığı “Bölgesel direnişle vatanın bütünlüğünü korumaya çalışmaları” olmalıdır.",
+      "id": "exercise.history.armistice-occupations-societies.national-and-hostile-societies.national-societies.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.armistice-occupations-societies.national-societies"
+      ],
+      "statement": "Manda yönetimini tek çözüm saymaları, Millî cemiyetlerin ortak amaçlarını açıklar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · MİLLÎ VE ZARARLI CEMİYETLER"
+    },
+    {
+      "bank": [
+        {
+          "id": "correct",
+          "label": "Bölgesel direnişle vatanın bütünlüğünü korumaya çalışmaları"
+        },
+        {
+          "id": "d1",
+          "label": "Manda yönetimini tek çözüm saymaları"
+        },
+        {
+          "id": "d2",
+          "label": "İşgalleri kolaylaştırmaları"
+        },
+        {
+          "id": "d3",
+          "label": "Saltanatı hemen kaldırmaları"
+        }
+      ],
+      "difficulty": 3,
+      "explanation": "Doğru tamamlayıcı “Bölgesel direnişle vatanın bütünlüğünü korumaya çalışmaları” ifadesidir. Bu seçim, kazanımın temel kavram veya neden-sonuç bağını kurar.",
+      "hint": "Tanımı ve tarihsel bağlamı birlikte düşün.",
+      "id": "exercise.history.armistice-occupations-societies.national-and-hostile-societies.national-societies.fill01",
+      "kind": "fillBlank",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.armistice-occupations-societies.national-societies"
+      ],
+      "solutionTokenIds": [
+        "correct"
+      ],
+      "title": "Boşluğu tamamla: Millî cemiyetlerin ortak özelliği hangisidir?"
+    },
+    {
+      "correctOptionId": "correct",
+      "difficulty": 2,
+      "explanation": "Direnişin tek merkezden yönetilmesini, soruda verilen kazanımla doğrudan ilişkilidir. Bu bağ, olayı yalnızca ezberlemek yerine tarihsel bağlamıyla ayırt etmeyi sağlar.",
+      "id": "exercise.history.armistice-occupations-societies.national-and-hostile-societies.societies-unification.mcq01",
+      "kind": "multipleChoice",
+      "options": [
+        {
+          "id": "correct",
+          "label": "Direnişin tek merkezden yönetilmesini"
+        },
+        {
+          "id": "d1",
+          "label": "Mebusan Meclisinin kapatılmasını"
+        },
+        {
+          "id": "d2",
+          "label": "Düzenli ordunun kaldırılmasını"
+        },
+        {
+          "id": "d3",
+          "label": "Mondros’un geçersiz sayılmasını"
+        }
+      ],
+      "prompt": "Sivas Kongresi’nde millî cemiyetlerin Anadolu ve Rumeli Müdafaa-i Hukuk Cemiyeti adıyla birleştirilmesi neyi sağlamıştır?",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.armistice-occupations-societies.societies-unification"
+      ],
+      "tag": "TARİH · MİLLÎ VE ZARARLI CEMİYETLER"
+    },
+    {
+      "correctAnswer": false,
+      "difficulty": 3,
+      "explanation": "Bu ifade yanlıştır. Sivas Kongresi’nde millî cemiyetlerin Anadolu ve Rumeli Müdafaa-i Hukuk Cemiyeti adıyla birleştirilmesi neyi sağlamıştır sorusunun doğru karşılığı “Direnişin tek merkezden yönetilmesini” olmalıdır.",
+      "id": "exercise.history.armistice-occupations-societies.national-and-hostile-societies.societies-unification.tf01",
+      "kind": "trueFalse",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.armistice-occupations-societies.societies-unification"
+      ],
+      "statement": "Mebusan Meclisinin kapatılmasını, Millî cemiyetlerin birleştirilmesinin sonucunu yorumlar kazanımının doğru karşılığıdır.",
+      "tag": "TARİH · MİLLÎ VE ZARARLI CEMİYETLER"
+    },
+    {
+      "difficulty": 3,
+      "explanation": "Bu eşleştirmeler, Millî ve Zararlı Cemiyetler başlığındaki iki temel bilgi bağını birlikte gösterir. Kavramı olayın nedeni veya sonucuyla eşleştirmek benzer seçenekleri ayırt etmeyi kolaylaştırır.",
+      "id": "exercise.history.armistice-occupations-societies.national-and-hostile-societies.societies-unification.match01",
+      "kind": "matching",
+      "pairs": [
+        {
+          "id": "pair-1",
+          "left": "Millî cemiyetlerin ortak özelliği hangisidir?",
+          "right": "Bölgesel direnişle vatanın bütünlüğünü korumaya çalışmaları"
+        },
+        {
+          "id": "pair-2",
+          "left": "Sivas Kongresi’nde millî cemiyetlerin Anadolu ve Rumeli Müdafaa-i Hukuk Cemiyeti adıyla birleştirilmesi neyi sağlamıştır?",
+          "right": "Direnişin tek merkezden yönetilmesini"
+        }
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "skillIds": [
+        "skill.history.armistice-occupations-societies.national-societies",
+        "skill.history.armistice-occupations-societies.societies-unification"
+      ],
+      "subtitle": "Soruları doğru tarihsel karşılıklarıyla eşleştir.",
+      "tag": "TARİH · MİLLÎ VE ZARARLI CEMİYETLER",
+      "title": "Bilgi bağlarını eşleştir"
+    }
+  ],
+  "lessons": [
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.armistice-occupations-societies.mondros-occupations.article-seven.mcq01",
+        "exercise.history.armistice-occupations-societies.mondros-occupations.article-seven.tf01",
+        "exercise.history.armistice-occupations-societies.mondros-occupations.article-seven.fill01",
+        "exercise.history.armistice-occupations-societies.mondros-occupations.izmir-occupation.mcq01",
+        "exercise.history.armistice-occupations-societies.mondros-occupations.izmir-occupation.tf01",
+        "exercise.history.armistice-occupations-societies.mondros-occupations.izmir-occupation.match01"
+      ],
+      "id": "lesson.history.armistice-occupations-societies.001",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "Mondros Hükümleri ve İşgaller",
+      "topicId": "tyt.history.armistice-occupations-societies.mondros-occupations"
+    },
+    {
+      "estimatedMinutes": 8,
+      "exerciseIds": [
+        "exercise.history.armistice-occupations-societies.national-and-hostile-societies.national-societies.mcq01",
+        "exercise.history.armistice-occupations-societies.national-and-hostile-societies.national-societies.tf01",
+        "exercise.history.armistice-occupations-societies.national-and-hostile-societies.national-societies.fill01",
+        "exercise.history.armistice-occupations-societies.national-and-hostile-societies.societies-unification.mcq01",
+        "exercise.history.armistice-occupations-societies.national-and-hostile-societies.societies-unification.tf01",
+        "exercise.history.armistice-occupations-societies.national-and-hostile-societies.societies-unification.match01"
+      ],
+      "id": "lesson.history.armistice-occupations-societies.002",
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Tarih kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "subtitle": "Temel bilgiyi neden-sonuç ve kavram ilişkileriyle pekiştir.",
+      "title": "Millî ve Zararlı Cemiyetler",
+      "topicId": "tyt.history.armistice-occupations-societies.national-and-hostile-societies"
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.history.armistice-occupations-societies.01",
+      "kind": "lesson",
+      "lessonId": "lesson.history.armistice-occupations-societies.001",
+      "order": 1,
+      "prerequisiteIds": [
+        "path.history.world-war-one.02"
+      ],
+      "title": "Mondros Hükümleri ve İşgaller",
+      "unitId": "tyt.history.armistice-occupations-societies"
+    },
+    {
+      "id": "path.history.armistice-occupations-societies.02",
+      "kind": "checkpoint",
+      "lessonId": "lesson.history.armistice-occupations-societies.002",
+      "order": 2,
+      "prerequisiteIds": [
+        "path.history.armistice-occupations-societies.01"
+      ],
+      "title": "Mondros Ateşkesi, İşgaller ve Cemiyetler Kontrolü",
+      "unitId": "tyt.history.armistice-occupations-societies"
+    }
+  ],
+  "skills": [
+    {
+      "description": "Mondros Ateşkes Antlaşması’nın 7. maddesinin işgallere etkisini yorumlar.",
+      "id": "skill.history.armistice-occupations-societies.article-seven",
+      "title": "Mondros Ateşkes Antlaşması’nın 7. maddesinin işgallere etkisini yorumlar",
+      "topicId": "tyt.history.armistice-occupations-societies.mondros-occupations"
+    },
+    {
+      "description": "İzmir’in işgalinin Millî Mücadele’ye etkisini açıklar.",
+      "id": "skill.history.armistice-occupations-societies.izmir-occupation",
+      "title": "İzmir’in işgalinin Millî Mücadele’ye etkisini açıklar",
+      "topicId": "tyt.history.armistice-occupations-societies.mondros-occupations"
+    },
+    {
+      "description": "Millî cemiyetlerin ortak amaçlarını açıklar.",
+      "id": "skill.history.armistice-occupations-societies.national-societies",
+      "title": "Millî cemiyetlerin ortak amaçlarını açıklar",
+      "topicId": "tyt.history.armistice-occupations-societies.national-and-hostile-societies"
+    },
+    {
+      "description": "Millî cemiyetlerin birleştirilmesinin sonucunu yorumlar.",
+      "id": "skill.history.armistice-occupations-societies.societies-unification",
+      "title": "Millî cemiyetlerin birleştirilmesinin sonucunu yorumlar",
+      "topicId": "tyt.history.armistice-occupations-societies.national-and-hostile-societies"
+    }
+  ],
+  "topics": [
+    {
+      "conceptIds": [
+        "concept.history.armistice-occupations-societies.article-seven",
+        "concept.history.armistice-occupations-societies.izmir-occupation"
+      ],
+      "id": "tyt.history.armistice-occupations-societies.mondros-occupations",
+      "skillIds": [
+        "skill.history.armistice-occupations-societies.article-seven",
+        "skill.history.armistice-occupations-societies.izmir-occupation"
+      ],
+      "title": "Mondros Hükümleri ve İşgaller",
+      "unitId": "tyt.history.armistice-occupations-societies"
+    },
+    {
+      "conceptIds": [
+        "concept.history.armistice-occupations-societies.national-societies",
+        "concept.history.armistice-occupations-societies.societies-unification"
+      ],
+      "id": "tyt.history.armistice-occupations-societies.national-and-hostile-societies",
+      "skillIds": [
+        "skill.history.armistice-occupations-societies.national-societies",
+        "skill.history.armistice-occupations-societies.societies-unification"
+      ],
+      "title": "Millî ve Zararlı Cemiyetler",
+      "unitId": "tyt.history.armistice-occupations-societies"
+    }
+  ],
+  "unitId": "tyt.history.armistice-occupations-societies"
+}

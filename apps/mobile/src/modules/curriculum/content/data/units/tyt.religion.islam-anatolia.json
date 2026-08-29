@@ -1,0 +1,862 @@
+{
+  "unitId": "tyt.religion.islam-anatolia",
+  "topics": [
+    {
+      "id": "tyt.religion.islam-anatolia.historical-process",
+      "unitId": "tyt.religion.islam-anatolia",
+      "title": "Anadolu’nun İslamlaşma Süreci",
+      "skillIds": [
+        "skill.religion.islam-anatolia.historical-process.interpret",
+        "skill.religion.islam-anatolia.historical-process.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.islam-anatolia.historical-process.islamlasma"
+      ]
+    },
+    {
+      "id": "tyt.religion.islam-anatolia.solidarity-institutions",
+      "unitId": "tyt.religion.islam-anatolia",
+      "title": "Ahilik, Vakıf ve Dayanışma",
+      "skillIds": [
+        "skill.religion.islam-anatolia.solidarity-institutions.interpret",
+        "skill.religion.islam-anatolia.solidarity-institutions.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.islam-anatolia.solidarity-institutions.ahilik"
+      ]
+    },
+    {
+      "id": "tyt.religion.islam-anatolia.figures-culture",
+      "unitId": "tyt.religion.islam-anatolia",
+      "title": "Şahsiyetler ve Kültürel Hayat",
+      "skillIds": [
+        "skill.religion.islam-anatolia.figures-culture.interpret",
+        "skill.religion.islam-anatolia.figures-culture.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.islam-anatolia.figures-culture.kulturel-etki"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "skill.religion.islam-anatolia.historical-process.interpret",
+      "title": "Anadolu’nun İslamlaşmasını çok boyutlu bir süreç olarak yorumlar.",
+      "description": "Anadolu’nun İslamlaşmasını çok boyutlu bir süreç olarak yorumlar.",
+      "topicId": "tyt.religion.islam-anatolia.historical-process"
+    },
+    {
+      "id": "skill.religion.islam-anatolia.historical-process.distinguish",
+      "title": "Tarihsel dönüşümü tek olaya indirgeyen açıklamayı ayırt eder.",
+      "description": "Tarihsel dönüşümü tek olaya indirgeyen açıklamayı ayırt eder.",
+      "topicId": "tyt.religion.islam-anatolia.historical-process"
+    },
+    {
+      "id": "skill.religion.islam-anatolia.solidarity-institutions.interpret",
+      "title": "Ahilik ile meslek ahlakı arasındaki ilişkiyi kurar.",
+      "description": "Ahilik ile meslek ahlakı arasındaki ilişkiyi kurar.",
+      "topicId": "tyt.religion.islam-anatolia.solidarity-institutions"
+    },
+    {
+      "id": "skill.religion.islam-anatolia.solidarity-institutions.distinguish",
+      "title": "Vakıf kültürünün toplumsal dayanışmaya katkısını yorumlar.",
+      "description": "Vakıf kültürünün toplumsal dayanışmaya katkısını yorumlar.",
+      "topicId": "tyt.religion.islam-anatolia.solidarity-institutions"
+    },
+    {
+      "id": "skill.religion.islam-anatolia.figures-culture.interpret",
+      "title": "Anadolu’daki önemli şahsiyetleri temel katkılarıyla ayırt eder.",
+      "description": "Anadolu’daki önemli şahsiyetleri temel katkılarıyla ayırt eder.",
+      "topicId": "tyt.religion.islam-anatolia.figures-culture"
+    },
+    {
+      "id": "skill.religion.islam-anatolia.figures-culture.distinguish",
+      "title": "Bir şahsiyete doğrulanmamış söz atfetmenin sakıncasını fark eder.",
+      "description": "Bir şahsiyete doğrulanmamış söz atfetmenin sakıncasını fark eder.",
+      "topicId": "tyt.religion.islam-anatolia.figures-culture"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "concept.religion.islam-anatolia.historical-process.islamlasma",
+      "term": "İslamlaşma",
+      "definition": "bir bölgede İslam’ın benimsenmesiyle oluşan uzun süreli tarihsel ve toplumsal dönüşüm",
+      "topicId": "tyt.religion.islam-anatolia.historical-process"
+    },
+    {
+      "id": "concept.religion.islam-anatolia.solidarity-institutions.ahilik",
+      "term": "ahilik",
+      "definition": "meslek ahlakı, eğitim ve dayanışmayı birleştiren tarihsel esnaf örgütlenmesi",
+      "topicId": "tyt.religion.islam-anatolia.solidarity-institutions"
+    },
+    {
+      "id": "concept.religion.islam-anatolia.figures-culture.kulturel-etki",
+      "term": "kültürel etki",
+      "definition": "düşünce ve eserlerin toplumun dil, değer ve dayanışma biçimlerine katkısı",
+      "topicId": "tyt.religion.islam-anatolia.figures-culture"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "lesson.religion.islam-anatolia.historical-process.001",
+      "topicId": "tyt.religion.islam-anatolia.historical-process",
+      "title": "Anadolu’nun İslamlaşma Süreci",
+      "subtitle": "Anadolu’nun İslamlaşmasını çok boyutlu bir süreç olarak yorumlar. Tarihsel dönüşümü tek olaya indirgeyen açıklamayı ayırt eder.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.islam-anatolia.historical-process.001.card01",
+        "exercise.religion.islam-anatolia.historical-process.001.mcq01",
+        "exercise.religion.islam-anatolia.historical-process.001.mcq02",
+        "exercise.religion.islam-anatolia.historical-process.001.mcq03",
+        "exercise.religion.islam-anatolia.historical-process.001.mcq04",
+        "exercise.religion.islam-anatolia.historical-process.001.tf01",
+        "exercise.religion.islam-anatolia.historical-process.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.religion.islam-anatolia.solidarity-institutions.001",
+      "topicId": "tyt.religion.islam-anatolia.solidarity-institutions",
+      "title": "Ahilik, Vakıf ve Dayanışma",
+      "subtitle": "Ahilik ile meslek ahlakı arasındaki ilişkiyi kurar. Vakıf kültürünün toplumsal dayanışmaya katkısını yorumlar.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.islam-anatolia.solidarity-institutions.001.card01",
+        "exercise.religion.islam-anatolia.solidarity-institutions.001.mcq01",
+        "exercise.religion.islam-anatolia.solidarity-institutions.001.mcq02",
+        "exercise.religion.islam-anatolia.solidarity-institutions.001.mcq03",
+        "exercise.religion.islam-anatolia.solidarity-institutions.001.mcq04",
+        "exercise.religion.islam-anatolia.solidarity-institutions.001.tf01",
+        "exercise.religion.islam-anatolia.solidarity-institutions.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.religion.islam-anatolia.figures-culture.001",
+      "topicId": "tyt.religion.islam-anatolia.figures-culture",
+      "title": "Şahsiyetler ve Kültürel Hayat",
+      "subtitle": "Anadolu’daki önemli şahsiyetleri temel katkılarıyla ayırt eder. Bir şahsiyete doğrulanmamış söz atfetmenin sakıncasını fark eder.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.islam-anatolia.figures-culture.001.card01",
+        "exercise.religion.islam-anatolia.figures-culture.001.mcq01",
+        "exercise.religion.islam-anatolia.figures-culture.001.mcq02",
+        "exercise.religion.islam-anatolia.figures-culture.001.mcq03",
+        "exercise.religion.islam-anatolia.figures-culture.001.mcq04",
+        "exercise.religion.islam-anatolia.figures-culture.001.tf01",
+        "exercise.religion.islam-anatolia.figures-culture.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "id": "exercise.religion.islam-anatolia.historical-process.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "İslamlaşma, bir bölgede İslam’ın benimsenmesiyle oluşan uzun süreli tarihsel ve toplumsal dönüşüm.",
+      "skillIds": [
+        "skill.religion.islam-anatolia.historical-process.interpret",
+        "skill.religion.islam-anatolia.historical-process.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ANADOLU’NUN İSLAMLAŞMA SÜRECİ",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "İslamlaşma",
+          "back": "bir bölgede İslam’ın benimsenmesiyle oluşan uzun süreli tarihsel ve toplumsal dönüşüm",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.islam-anatolia.historical-process.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "İslamlaşma, bir bölgede İslam’ın benimsenmesiyle oluşan uzun süreli tarihsel ve toplumsal dönüşüm.",
+      "skillIds": [
+        "skill.religion.islam-anatolia.historical-process.interpret",
+        "skill.religion.islam-anatolia.historical-process.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ANADOLU’NUN İSLAMLAŞMA SÜRECİ",
+      "prompt": "“Bir bölgede İslam’ın benimsenmesiyle oluşan uzun süreli tarihsel ve toplumsal dönüşüm” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "İslamlaşma"
+        },
+        {
+          "id": "b",
+          "label": "ahilik"
+        },
+        {
+          "id": "c",
+          "label": "kültürel etki"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.islam-anatolia.historical-process.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada İslamlaşma kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.islam-anatolia.historical-process.interpret",
+        "skill.religion.islam-anatolia.historical-process.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ANADOLU’NUN İSLAMLAŞMA SÜRECİ",
+      "prompt": "Bir öğrenci İslamlaşma konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.islam-anatolia.historical-process.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Anadolu’nun İslamlaşmasını çok boyutlu bir süreç olarak yorumlar. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.islam-anatolia.historical-process.interpret",
+        "skill.religion.islam-anatolia.historical-process.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ANADOLU’NUN İSLAMLAŞMA SÜRECİ",
+      "prompt": "Anadolu’nun İslamlaşmasını çok boyutlu bir süreç olarak yorumlar. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.islam-anatolia.historical-process.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "Tarihsel dönüşümü tek olaya indirgeyen açıklamayı ayırt eder. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.islam-anatolia.historical-process.interpret",
+        "skill.religion.islam-anatolia.historical-process.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ANADOLU’NUN İSLAMLAŞMA SÜRECİ",
+      "prompt": "Bir açıklama, İslamlaşma kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.islam-anatolia.historical-process.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. İslamlaşma, bir bölgede İslam’ın benimsenmesiyle oluşan uzun süreli tarihsel ve toplumsal dönüşüm; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.islam-anatolia.historical-process.interpret",
+        "skill.religion.islam-anatolia.historical-process.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ANADOLU’NUN İSLAMLAŞMA SÜRECİ",
+      "statement": "İslamlaşma kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.islam-anatolia.historical-process.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.islam-anatolia.historical-process.interpret",
+        "skill.religion.islam-anatolia.historical-process.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ANADOLU’NUN İSLAMLAŞMA SÜRECİ",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "İslamlaşma",
+          "right": "bir bölgede İslam’ın benimsenmesiyle oluşan uzun süreli tarihsel ve toplumsal dönüşüm"
+        },
+        {
+          "id": "p2",
+          "left": "ahilik",
+          "right": "meslek ahlakı, eğitim ve dayanışmayı birleştiren tarihsel esnaf örgütlenmesi"
+        },
+        {
+          "id": "p3",
+          "left": "kültürel etki",
+          "right": "düşünce ve eserlerin toplumun dil, değer ve dayanışma biçimlerine katkısı"
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.islam-anatolia.solidarity-institutions.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "ahilik, meslek ahlakı, eğitim ve dayanışmayı birleştiren tarihsel esnaf örgütlenmesi.",
+      "skillIds": [
+        "skill.religion.islam-anatolia.solidarity-institutions.interpret",
+        "skill.religion.islam-anatolia.solidarity-institutions.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · AHİLİK, VAKIF VE DAYANIŞMA",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "ahilik",
+          "back": "meslek ahlakı, eğitim ve dayanışmayı birleştiren tarihsel esnaf örgütlenmesi",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.islam-anatolia.solidarity-institutions.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "ahilik, meslek ahlakı, eğitim ve dayanışmayı birleştiren tarihsel esnaf örgütlenmesi.",
+      "skillIds": [
+        "skill.religion.islam-anatolia.solidarity-institutions.interpret",
+        "skill.religion.islam-anatolia.solidarity-institutions.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · AHİLİK, VAKIF VE DAYANIŞMA",
+      "prompt": "“Meslek ahlakı, eğitim ve dayanışmayı birleştiren tarihsel esnaf örgütlenmesi” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "İslamlaşma"
+        },
+        {
+          "id": "b",
+          "label": "ahilik"
+        },
+        {
+          "id": "c",
+          "label": "kültürel etki"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "b"
+    },
+    {
+      "id": "exercise.religion.islam-anatolia.solidarity-institutions.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada ahilik kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.islam-anatolia.solidarity-institutions.interpret",
+        "skill.religion.islam-anatolia.solidarity-institutions.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · AHİLİK, VAKIF VE DAYANIŞMA",
+      "prompt": "Bir öğrenci ahilik konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.islam-anatolia.solidarity-institutions.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Ahilik ile meslek ahlakı arasındaki ilişkiyi kurar. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.islam-anatolia.solidarity-institutions.interpret",
+        "skill.religion.islam-anatolia.solidarity-institutions.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · AHİLİK, VAKIF VE DAYANIŞMA",
+      "prompt": "Ahilik ile meslek ahlakı arasındaki ilişkiyi kurar. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.islam-anatolia.solidarity-institutions.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "Vakıf kültürünün toplumsal dayanışmaya katkısını yorumlar. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.islam-anatolia.solidarity-institutions.interpret",
+        "skill.religion.islam-anatolia.solidarity-institutions.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · AHİLİK, VAKIF VE DAYANIŞMA",
+      "prompt": "Bir açıklama, ahilik kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.islam-anatolia.solidarity-institutions.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. ahilik, meslek ahlakı, eğitim ve dayanışmayı birleştiren tarihsel esnaf örgütlenmesi; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.islam-anatolia.solidarity-institutions.interpret",
+        "skill.religion.islam-anatolia.solidarity-institutions.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · AHİLİK, VAKIF VE DAYANIŞMA",
+      "statement": "ahilik kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.islam-anatolia.solidarity-institutions.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.islam-anatolia.solidarity-institutions.interpret",
+        "skill.religion.islam-anatolia.solidarity-institutions.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · AHİLİK, VAKIF VE DAYANIŞMA",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "İslamlaşma",
+          "right": "bir bölgede İslam’ın benimsenmesiyle oluşan uzun süreli tarihsel ve toplumsal dönüşüm"
+        },
+        {
+          "id": "p2",
+          "left": "ahilik",
+          "right": "meslek ahlakı, eğitim ve dayanışmayı birleştiren tarihsel esnaf örgütlenmesi"
+        },
+        {
+          "id": "p3",
+          "left": "kültürel etki",
+          "right": "düşünce ve eserlerin toplumun dil, değer ve dayanışma biçimlerine katkısı"
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.islam-anatolia.figures-culture.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "kültürel etki, düşünce ve eserlerin toplumun dil, değer ve dayanışma biçimlerine katkısı.",
+      "skillIds": [
+        "skill.religion.islam-anatolia.figures-culture.interpret",
+        "skill.religion.islam-anatolia.figures-culture.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ŞAHSİYETLER VE KÜLTÜREL HAYAT",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "kültürel etki",
+          "back": "düşünce ve eserlerin toplumun dil, değer ve dayanışma biçimlerine katkısı",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.islam-anatolia.figures-culture.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "kültürel etki, düşünce ve eserlerin toplumun dil, değer ve dayanışma biçimlerine katkısı.",
+      "skillIds": [
+        "skill.religion.islam-anatolia.figures-culture.interpret",
+        "skill.religion.islam-anatolia.figures-culture.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ŞAHSİYETLER VE KÜLTÜREL HAYAT",
+      "prompt": "“Düşünce ve eserlerin toplumun dil, değer ve dayanışma biçimlerine katkısı” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "İslamlaşma"
+        },
+        {
+          "id": "b",
+          "label": "ahilik"
+        },
+        {
+          "id": "c",
+          "label": "kültürel etki"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "c"
+    },
+    {
+      "id": "exercise.religion.islam-anatolia.figures-culture.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada kültürel etki kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.islam-anatolia.figures-culture.interpret",
+        "skill.religion.islam-anatolia.figures-culture.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ŞAHSİYETLER VE KÜLTÜREL HAYAT",
+      "prompt": "Bir öğrenci kültürel etki konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.islam-anatolia.figures-culture.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Anadolu’daki önemli şahsiyetleri temel katkılarıyla ayırt eder. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.islam-anatolia.figures-culture.interpret",
+        "skill.religion.islam-anatolia.figures-culture.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ŞAHSİYETLER VE KÜLTÜREL HAYAT",
+      "prompt": "Anadolu’daki önemli şahsiyetleri temel katkılarıyla ayırt eder. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.islam-anatolia.figures-culture.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "Bir şahsiyete doğrulanmamış söz atfetmenin sakıncasını fark eder. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.islam-anatolia.figures-culture.interpret",
+        "skill.religion.islam-anatolia.figures-culture.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ŞAHSİYETLER VE KÜLTÜREL HAYAT",
+      "prompt": "Bir açıklama, kültürel etki kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.islam-anatolia.figures-culture.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. kültürel etki, düşünce ve eserlerin toplumun dil, değer ve dayanışma biçimlerine katkısı; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.islam-anatolia.figures-culture.interpret",
+        "skill.religion.islam-anatolia.figures-culture.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ŞAHSİYETLER VE KÜLTÜREL HAYAT",
+      "statement": "kültürel etki kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.islam-anatolia.figures-culture.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.islam-anatolia.figures-culture.interpret",
+        "skill.religion.islam-anatolia.figures-culture.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · ŞAHSİYETLER VE KÜLTÜREL HAYAT",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "İslamlaşma",
+          "right": "bir bölgede İslam’ın benimsenmesiyle oluşan uzun süreli tarihsel ve toplumsal dönüşüm"
+        },
+        {
+          "id": "p2",
+          "left": "ahilik",
+          "right": "meslek ahlakı, eğitim ve dayanışmayı birleştiren tarihsel esnaf örgütlenmesi"
+        },
+        {
+          "id": "p3",
+          "left": "kültürel etki",
+          "right": "düşünce ve eserlerin toplumun dil, değer ve dayanışma biçimlerine katkısı"
+        }
+      ]
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.religion.islam-anatolia.01",
+      "unitId": "tyt.religion.islam-anatolia",
+      "kind": "lesson",
+      "title": "Anadolu’nun İslamlaşma Süreci",
+      "order": 1,
+      "lessonId": "lesson.religion.islam-anatolia.historical-process.001",
+      "prerequisiteIds": []
+    },
+    {
+      "id": "path.religion.islam-anatolia.02",
+      "unitId": "tyt.religion.islam-anatolia",
+      "kind": "lesson",
+      "title": "Ahilik, Vakıf ve Dayanışma",
+      "order": 2,
+      "lessonId": "lesson.religion.islam-anatolia.solidarity-institutions.001",
+      "prerequisiteIds": [
+        "path.religion.islam-anatolia.01"
+      ]
+    },
+    {
+      "id": "path.religion.islam-anatolia.03",
+      "unitId": "tyt.religion.islam-anatolia",
+      "kind": "lesson",
+      "title": "Şahsiyetler ve Kültürel Hayat",
+      "order": 3,
+      "lessonId": "lesson.religion.islam-anatolia.figures-culture.001",
+      "prerequisiteIds": [
+        "path.religion.islam-anatolia.02"
+      ]
+    }
+  ]
+}

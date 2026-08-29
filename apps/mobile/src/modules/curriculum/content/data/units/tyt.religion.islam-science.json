@@ -1,0 +1,862 @@
+{
+  "unitId": "tyt.religion.islam-science",
+  "topics": [
+    {
+      "id": "tyt.religion.islam-science.knowledge-research",
+      "unitId": "tyt.religion.islam-science",
+      "title": "Bilgi, Akıl ve Araştırma",
+      "skillIds": [
+        "skill.religion.islam-science.knowledge-research.interpret",
+        "skill.religion.islam-science.knowledge-research.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.islam-science.knowledge-research.arastirma"
+      ]
+    },
+    {
+      "id": "tyt.religion.islam-science.scientific-heritage",
+      "unitId": "tyt.religion.islam-science",
+      "title": "İslam Medeniyetinde Bilimsel Birikim",
+      "skillIds": [
+        "skill.religion.islam-science.scientific-heritage.interpret",
+        "skill.religion.islam-science.scientific-heritage.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.islam-science.scientific-heritage.bilimsel-birikim"
+      ]
+    },
+    {
+      "id": "tyt.religion.islam-science.scholars-institutions",
+      "unitId": "tyt.religion.islam-science",
+      "title": "Bilginler ve Eğitim Kurumları",
+      "skillIds": [
+        "skill.religion.islam-science.scholars-institutions.interpret",
+        "skill.religion.islam-science.scholars-institutions.distinguish"
+      ],
+      "conceptIds": [
+        "concept.religion.islam-science.scholars-institutions.egitim-kurumu"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "skill.religion.islam-science.knowledge-research.interpret",
+      "title": "İslam medeniyetinde bilgiye verilen önemi yorumlar.",
+      "description": "İslam medeniyetinde bilgiye verilen önemi yorumlar.",
+      "topicId": "tyt.religion.islam-science.knowledge-research"
+    },
+    {
+      "id": "skill.religion.islam-science.knowledge-research.distinguish",
+      "title": "Akıl yürütme ile araştırma arasındaki ilişkiyi kurar.",
+      "description": "Akıl yürütme ile araştırma arasındaki ilişkiyi kurar.",
+      "topicId": "tyt.religion.islam-science.knowledge-research"
+    },
+    {
+      "id": "skill.religion.islam-science.scientific-heritage.interpret",
+      "title": "Bilimsel gelişmeyi tek kişiye bağlayan abartılı iddiayı ayırt eder.",
+      "description": "Bilimsel gelişmeyi tek kişiye bağlayan abartılı iddiayı ayırt eder.",
+      "topicId": "tyt.religion.islam-science.scientific-heritage"
+    },
+    {
+      "id": "skill.religion.islam-science.scientific-heritage.distinguish",
+      "title": "Çeviri, gözlem ve eleştirinin bilgi üretimindeki rolünü yorumlar.",
+      "description": "Çeviri, gözlem ve eleştirinin bilgi üretimindeki rolünü yorumlar.",
+      "topicId": "tyt.religion.islam-science.scientific-heritage"
+    },
+    {
+      "id": "skill.religion.islam-science.scholars-institutions.interpret",
+      "title": "Bilim insanlarını katkı alanlarıyla genel hatlarıyla eşleştirir.",
+      "description": "Bilim insanlarını katkı alanlarıyla genel hatlarıyla eşleştirir.",
+      "topicId": "tyt.religion.islam-science.scholars-institutions"
+    },
+    {
+      "id": "skill.religion.islam-science.scholars-institutions.distinguish",
+      "title": "Eğitim kurumlarının bilimsel sürekliliğe katkısını çıkarır.",
+      "description": "Eğitim kurumlarının bilimsel sürekliliğe katkısını çıkarır.",
+      "topicId": "tyt.religion.islam-science.scholars-institutions"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "concept.religion.islam-science.knowledge-research.arastirma",
+      "term": "araştırma",
+      "definition": "soru sorma, kanıt toplama ve sonuçları eleştirel biçimde değerlendirme süreci",
+      "topicId": "tyt.religion.islam-science.knowledge-research"
+    },
+    {
+      "id": "concept.religion.islam-science.scientific-heritage.bilimsel-birikim",
+      "term": "bilimsel birikim",
+      "definition": "farklı dönem ve toplumların katkılarıyla gelişen ortak bilgi mirası",
+      "topicId": "tyt.religion.islam-science.scientific-heritage"
+    },
+    {
+      "id": "concept.religion.islam-science.scholars-institutions.egitim-kurumu",
+      "term": "eğitim kurumu",
+      "definition": "bilginin üretilmesi, öğretilmesi ve aktarılmasını düzenleyen yapı",
+      "topicId": "tyt.religion.islam-science.scholars-institutions"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "lesson.religion.islam-science.knowledge-research.001",
+      "topicId": "tyt.religion.islam-science.knowledge-research",
+      "title": "Bilgi, Akıl ve Araştırma",
+      "subtitle": "İslam medeniyetinde bilgiye verilen önemi yorumlar. Akıl yürütme ile araştırma arasındaki ilişkiyi kurar.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.islam-science.knowledge-research.001.card01",
+        "exercise.religion.islam-science.knowledge-research.001.mcq01",
+        "exercise.religion.islam-science.knowledge-research.001.mcq02",
+        "exercise.religion.islam-science.knowledge-research.001.mcq03",
+        "exercise.religion.islam-science.knowledge-research.001.mcq04",
+        "exercise.religion.islam-science.knowledge-research.001.tf01",
+        "exercise.religion.islam-science.knowledge-research.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.religion.islam-science.scientific-heritage.001",
+      "topicId": "tyt.religion.islam-science.scientific-heritage",
+      "title": "İslam Medeniyetinde Bilimsel Birikim",
+      "subtitle": "Bilimsel gelişmeyi tek kişiye bağlayan abartılı iddiayı ayırt eder. Çeviri, gözlem ve eleştirinin bilgi üretimindeki rolünü yorumlar.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.islam-science.scientific-heritage.001.card01",
+        "exercise.religion.islam-science.scientific-heritage.001.mcq01",
+        "exercise.religion.islam-science.scientific-heritage.001.mcq02",
+        "exercise.religion.islam-science.scientific-heritage.001.mcq03",
+        "exercise.religion.islam-science.scientific-heritage.001.mcq04",
+        "exercise.religion.islam-science.scientific-heritage.001.tf01",
+        "exercise.religion.islam-science.scientific-heritage.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    },
+    {
+      "id": "lesson.religion.islam-science.scholars-institutions.001",
+      "topicId": "tyt.religion.islam-science.scholars-institutions",
+      "title": "Bilginler ve Eğitim Kurumları",
+      "subtitle": "Bilim insanlarını katkı alanlarıyla genel hatlarıyla eşleştirir. Eğitim kurumlarının bilimsel sürekliliğe katkısını çıkarır.",
+      "estimatedMinutes": 9,
+      "exerciseIds": [
+        "exercise.religion.islam-science.scholars-institutions.001.card01",
+        "exercise.religion.islam-science.scholars-institutions.001.mcq01",
+        "exercise.religion.islam-science.scholars-institutions.001.mcq02",
+        "exercise.religion.islam-science.scholars-institutions.001.mcq03",
+        "exercise.religion.islam-science.scholars-institutions.001.mcq04",
+        "exercise.religion.islam-science.scholars-institutions.001.tf01",
+        "exercise.religion.islam-science.scholars-institutions.001.match01"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      }
+    }
+  ],
+  "exercises": [
+    {
+      "id": "exercise.religion.islam-science.knowledge-research.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "araştırma, soru sorma, kanıt toplama ve sonuçları eleştirel biçimde değerlendirme süreci.",
+      "skillIds": [
+        "skill.religion.islam-science.knowledge-research.interpret",
+        "skill.religion.islam-science.knowledge-research.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · BİLGİ, AKIL VE ARAŞTIRMA",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "araştırma",
+          "back": "soru sorma, kanıt toplama ve sonuçları eleştirel biçimde değerlendirme süreci",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.islam-science.knowledge-research.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "araştırma, soru sorma, kanıt toplama ve sonuçları eleştirel biçimde değerlendirme süreci.",
+      "skillIds": [
+        "skill.religion.islam-science.knowledge-research.interpret",
+        "skill.religion.islam-science.knowledge-research.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · BİLGİ, AKIL VE ARAŞTIRMA",
+      "prompt": "“Soru sorma, kanıt toplama ve sonuçları eleştirel biçimde değerlendirme süreci” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "araştırma"
+        },
+        {
+          "id": "b",
+          "label": "bilimsel birikim"
+        },
+        {
+          "id": "c",
+          "label": "eğitim kurumu"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.islam-science.knowledge-research.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada araştırma kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.islam-science.knowledge-research.interpret",
+        "skill.religion.islam-science.knowledge-research.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · BİLGİ, AKIL VE ARAŞTIRMA",
+      "prompt": "Bir öğrenci araştırma konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.islam-science.knowledge-research.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "İslam medeniyetinde bilgiye verilen önemi yorumlar. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.islam-science.knowledge-research.interpret",
+        "skill.religion.islam-science.knowledge-research.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · BİLGİ, AKIL VE ARAŞTIRMA",
+      "prompt": "İslam medeniyetinde bilgiye verilen önemi yorumlar. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.islam-science.knowledge-research.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "Akıl yürütme ile araştırma arasındaki ilişkiyi kurar. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.islam-science.knowledge-research.interpret",
+        "skill.religion.islam-science.knowledge-research.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · BİLGİ, AKIL VE ARAŞTIRMA",
+      "prompt": "Bir açıklama, araştırma kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.islam-science.knowledge-research.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. araştırma, soru sorma, kanıt toplama ve sonuçları eleştirel biçimde değerlendirme süreci; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.islam-science.knowledge-research.interpret",
+        "skill.religion.islam-science.knowledge-research.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · BİLGİ, AKIL VE ARAŞTIRMA",
+      "statement": "araştırma kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.islam-science.knowledge-research.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.islam-science.knowledge-research.interpret",
+        "skill.religion.islam-science.knowledge-research.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · BİLGİ, AKIL VE ARAŞTIRMA",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "araştırma",
+          "right": "soru sorma, kanıt toplama ve sonuçları eleştirel biçimde değerlendirme süreci"
+        },
+        {
+          "id": "p2",
+          "left": "bilimsel birikim",
+          "right": "farklı dönem ve toplumların katkılarıyla gelişen ortak bilgi mirası"
+        },
+        {
+          "id": "p3",
+          "left": "eğitim kurumu",
+          "right": "bilginin üretilmesi, öğretilmesi ve aktarılmasını düzenleyen yapı"
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.islam-science.scientific-heritage.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "bilimsel birikim, farklı dönem ve toplumların katkılarıyla gelişen ortak bilgi mirası.",
+      "skillIds": [
+        "skill.religion.islam-science.scientific-heritage.interpret",
+        "skill.religion.islam-science.scientific-heritage.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İSLAM MEDENİYETİNDE BİLİMSEL BİRİKİM",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "bilimsel birikim",
+          "back": "farklı dönem ve toplumların katkılarıyla gelişen ortak bilgi mirası",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.islam-science.scientific-heritage.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "bilimsel birikim, farklı dönem ve toplumların katkılarıyla gelişen ortak bilgi mirası.",
+      "skillIds": [
+        "skill.religion.islam-science.scientific-heritage.interpret",
+        "skill.religion.islam-science.scientific-heritage.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İSLAM MEDENİYETİNDE BİLİMSEL BİRİKİM",
+      "prompt": "“Farklı dönem ve toplumların katkılarıyla gelişen ortak bilgi mirası” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "araştırma"
+        },
+        {
+          "id": "b",
+          "label": "bilimsel birikim"
+        },
+        {
+          "id": "c",
+          "label": "eğitim kurumu"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "b"
+    },
+    {
+      "id": "exercise.religion.islam-science.scientific-heritage.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada bilimsel birikim kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.islam-science.scientific-heritage.interpret",
+        "skill.religion.islam-science.scientific-heritage.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İSLAM MEDENİYETİNDE BİLİMSEL BİRİKİM",
+      "prompt": "Bir öğrenci bilimsel birikim konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.islam-science.scientific-heritage.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bilimsel gelişmeyi tek kişiye bağlayan abartılı iddiayı ayırt eder. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.islam-science.scientific-heritage.interpret",
+        "skill.religion.islam-science.scientific-heritage.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İSLAM MEDENİYETİNDE BİLİMSEL BİRİKİM",
+      "prompt": "Bilimsel gelişmeyi tek kişiye bağlayan abartılı iddiayı ayırt eder. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.islam-science.scientific-heritage.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "Çeviri, gözlem ve eleştirinin bilgi üretimindeki rolünü yorumlar. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.islam-science.scientific-heritage.interpret",
+        "skill.religion.islam-science.scientific-heritage.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İSLAM MEDENİYETİNDE BİLİMSEL BİRİKİM",
+      "prompt": "Bir açıklama, bilimsel birikim kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.islam-science.scientific-heritage.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. bilimsel birikim, farklı dönem ve toplumların katkılarıyla gelişen ortak bilgi mirası; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.islam-science.scientific-heritage.interpret",
+        "skill.religion.islam-science.scientific-heritage.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İSLAM MEDENİYETİNDE BİLİMSEL BİRİKİM",
+      "statement": "bilimsel birikim kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.islam-science.scientific-heritage.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.islam-science.scientific-heritage.interpret",
+        "skill.religion.islam-science.scientific-heritage.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · İSLAM MEDENİYETİNDE BİLİMSEL BİRİKİM",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "araştırma",
+          "right": "soru sorma, kanıt toplama ve sonuçları eleştirel biçimde değerlendirme süreci"
+        },
+        {
+          "id": "p2",
+          "left": "bilimsel birikim",
+          "right": "farklı dönem ve toplumların katkılarıyla gelişen ortak bilgi mirası"
+        },
+        {
+          "id": "p3",
+          "left": "eğitim kurumu",
+          "right": "bilginin üretilmesi, öğretilmesi ve aktarılmasını düzenleyen yapı"
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.islam-science.scholars-institutions.001.card01",
+      "kind": "flashcard",
+      "difficulty": 1,
+      "explanation": "eğitim kurumu, bilginin üretilmesi, öğretilmesi ve aktarılmasını düzenleyen yapı.",
+      "skillIds": [
+        "skill.religion.islam-science.scholars-institutions.interpret",
+        "skill.religion.islam-science.scholars-institutions.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · BİLGİNLER VE EĞİTİM KURUMLARI",
+      "cards": [
+        {
+          "id": "c1",
+          "front": "eğitim kurumu",
+          "back": "bilginin üretilmesi, öğretilmesi ve aktarılmasını düzenleyen yapı",
+          "hint": "Kavramı kendi cümlenle açıklamayı dene."
+        }
+      ]
+    },
+    {
+      "id": "exercise.religion.islam-science.scholars-institutions.001.mcq01",
+      "kind": "multipleChoice",
+      "difficulty": 2,
+      "explanation": "eğitim kurumu, bilginin üretilmesi, öğretilmesi ve aktarılmasını düzenleyen yapı.",
+      "skillIds": [
+        "skill.religion.islam-science.scholars-institutions.interpret",
+        "skill.religion.islam-science.scholars-institutions.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · BİLGİNLER VE EĞİTİM KURUMLARI",
+      "prompt": "“Bilginin üretilmesi, öğretilmesi ve aktarılmasını düzenleyen yapı” açıklaması aşağıdaki kavramlardan hangisine aittir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "araştırma"
+        },
+        {
+          "id": "b",
+          "label": "bilimsel birikim"
+        },
+        {
+          "id": "c",
+          "label": "eğitim kurumu"
+        },
+        {
+          "id": "d",
+          "label": "bağlamdan kopuk ezber"
+        }
+      ],
+      "correctOptionId": "c"
+    },
+    {
+      "id": "exercise.religion.islam-science.scholars-institutions.001.mcq02",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bu parçada eğitim kurumu kavramının ezberden çok anlam ve davranış boyutu öne çıkarılmıştır.",
+      "skillIds": [
+        "skill.religion.islam-science.scholars-institutions.interpret",
+        "skill.religion.islam-science.scholars-institutions.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · BİLGİNLER VE EĞİTİM KURUMLARI",
+      "prompt": "Bir öğrenci eğitim kurumu konusunu çalışırken kavramın günlük kararları nasıl etkilediğini ve benzer kavramlardan hangi yönüyle ayrıldığını araştırıyor. Öğrencinin yaklaşımı için aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramı bağlamı içinde yorumlamaktadır."
+        },
+        {
+          "id": "b",
+          "label": "Kavramı yalnız biçimsel ayrıntılara indirgemektedir."
+        },
+        {
+          "id": "c",
+          "label": "Bütün dinî ve kültürel kavramları özdeş saymaktadır."
+        },
+        {
+          "id": "d",
+          "label": "Sorumluluk ile davranış arasındaki bağı reddetmektedir."
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.islam-science.scholars-institutions.001.mcq03",
+      "kind": "multipleChoice",
+      "difficulty": 3,
+      "explanation": "Bilim insanlarını katkı alanlarıyla genel hatlarıyla eşleştirir. Bu nedenle kavram, verili durumun gerekçesi ve sonucu birlikte düşünülerek değerlendirilmelidir.",
+      "skillIds": [
+        "skill.religion.islam-science.scholars-institutions.interpret",
+        "skill.religion.islam-science.scholars-institutions.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · BİLGİNLER VE EĞİTİM KURUMLARI",
+      "prompt": "Bilim insanlarını katkı alanlarıyla genel hatlarıyla eşleştirir. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Metindeki ilişkiyi ve gerekçeyi belirlemesi"
+        },
+        {
+          "id": "b",
+          "label": "Kaynağı belirtilmeyen bir sözü ezberlemesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı bütün görüşleri tek görüş sayması"
+        },
+        {
+          "id": "d",
+          "label": "Yalnız başlıktaki kelimeyi tekrar etmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.islam-science.scholars-institutions.001.mcq04",
+      "kind": "multipleChoice",
+      "difficulty": 4,
+      "explanation": "Eğitim kurumlarının bilimsel sürekliliğe katkısını çıkarır. Doğru ayrım, kavramların bağlamını ve sınırlarını korur.",
+      "skillIds": [
+        "skill.religion.islam-science.scholars-institutions.interpret",
+        "skill.religion.islam-science.scholars-institutions.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · BİLGİNLER VE EĞİTİM KURUMLARI",
+      "prompt": "Bir açıklama, eğitim kurumu kavramını bağlamından koparıp her durumu tek başına açıklayan değişmez bir etiket gibi kullanmaktadır. Bu açıklamadaki temel sorun nedir?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Kavramın kapsamını aşırı genellemesi"
+        },
+        {
+          "id": "b",
+          "label": "Gerekçe ile sonucu birlikte değerlendirmesi"
+        },
+        {
+          "id": "c",
+          "label": "Farklı perspektifleri açıkça işaretlemesi"
+        },
+        {
+          "id": "d",
+          "label": "Davranış örneğini kavramla ilişkilendirmesi"
+        }
+      ],
+      "correctOptionId": "a"
+    },
+    {
+      "id": "exercise.religion.islam-science.scholars-institutions.001.tf01",
+      "kind": "trueFalse",
+      "difficulty": 3,
+      "explanation": "Yanlıştır. eğitim kurumu, bilginin üretilmesi, öğretilmesi ve aktarılmasını düzenleyen yapı; konu yalnız terimi hatırlamakla kavranmış olmaz.",
+      "skillIds": [
+        "skill.religion.islam-science.scholars-institutions.interpret",
+        "skill.religion.islam-science.scholars-institutions.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · BİLGİNLER VE EĞİTİM KURUMLARI",
+      "statement": "eğitim kurumu kavramını öğrenmek için terimin adını bilmek yeterlidir; bağlamını ve davranışlarla ilişkisini değerlendirmeye gerek yoktur.",
+      "correctAnswer": false
+    },
+    {
+      "id": "exercise.religion.islam-science.scholars-institutions.001.match01",
+      "kind": "matching",
+      "difficulty": 3,
+      "explanation": "Eşleştirmeler, ünitedeki kavramları kendi bağlamları ve ölçülebilir yorum becerileriyle ilişkilendirir.",
+      "skillIds": [
+        "skill.religion.islam-science.scholars-institutions.interpret",
+        "skill.religion.islam-science.scholars-institutions.distinguish"
+      ],
+      "provenance": {
+        "author": "Online Dershanem AI-assisted draft",
+        "note": "2027 TYT Din Kültürü ve Ahlak Bilgisi kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",
+        "reviewStatus": "draft"
+      },
+      "tag": "DİN KÜLTÜRÜ · BİLGİNLER VE EĞİTİM KURUMLARI",
+      "title": "Kavram ve açıklama",
+      "subtitle": "Her kavramı uygun açıklamayla eşleştir.",
+      "pairs": [
+        {
+          "id": "p1",
+          "left": "araştırma",
+          "right": "soru sorma, kanıt toplama ve sonuçları eleştirel biçimde değerlendirme süreci"
+        },
+        {
+          "id": "p2",
+          "left": "bilimsel birikim",
+          "right": "farklı dönem ve toplumların katkılarıyla gelişen ortak bilgi mirası"
+        },
+        {
+          "id": "p3",
+          "left": "eğitim kurumu",
+          "right": "bilginin üretilmesi, öğretilmesi ve aktarılmasını düzenleyen yapı"
+        }
+      ]
+    }
+  ],
+  "pathNodes": [
+    {
+      "id": "path.religion.islam-science.01",
+      "unitId": "tyt.religion.islam-science",
+      "kind": "lesson",
+      "title": "Bilgi, Akıl ve Araştırma",
+      "order": 1,
+      "lessonId": "lesson.religion.islam-science.knowledge-research.001",
+      "prerequisiteIds": []
+    },
+    {
+      "id": "path.religion.islam-science.02",
+      "unitId": "tyt.religion.islam-science",
+      "kind": "lesson",
+      "title": "İslam Medeniyetinde Bilimsel Birikim",
+      "order": 2,
+      "lessonId": "lesson.religion.islam-science.scientific-heritage.001",
+      "prerequisiteIds": [
+        "path.religion.islam-science.01"
+      ]
+    },
+    {
+      "id": "path.religion.islam-science.03",
+      "unitId": "tyt.religion.islam-science",
+      "kind": "lesson",
+      "title": "Bilginler ve Eğitim Kurumları",
+      "order": 3,
+      "lessonId": "lesson.religion.islam-science.scholars-institutions.001",
+      "prerequisiteIds": [
+        "path.religion.islam-science.02"
+      ]
+    }
+  ]
+}
