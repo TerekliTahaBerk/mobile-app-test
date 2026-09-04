@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Pressable, StyleSheet, View } from 'react-native';
+import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 
 import type { MatchingExercise as Exercise } from '@/modules/curriculum/domain/content-types';
 import type { ExerciseViewProps } from '@/modules/learning/ui/exercise-view';
@@ -60,7 +60,7 @@ export function MatchingExercise({ evaluation, exercise, onSubmit }: ExerciseVie
 
   return (
     <>
-      <View style={styles.body}>
+      <ScrollView contentContainerStyle={styles.body} showsVerticalScrollIndicator={false}>
         <AppText accessibilityRole="header" variant="question">
           {exercise.title}
         </AppText>
@@ -114,7 +114,7 @@ export function MatchingExercise({ evaluation, exercise, onSubmit }: ExerciseVie
             {resolved.length} / {total} eşleşti
           </AppText>
         </View>
-      </View>
+      </ScrollView>
 
       {checked ? null : (
         <BottomAction>
@@ -166,7 +166,8 @@ function buildTiles(exercise: Exercise): readonly Tile[] {
 
 const styles = StyleSheet.create({
   body: {
-    flex: 1,
+    flexGrow: 1,
+    paddingBottom: theme.spacing.xxl,
     paddingHorizontal: theme.spacing.xl,
     paddingTop: theme.spacing.sm,
   },

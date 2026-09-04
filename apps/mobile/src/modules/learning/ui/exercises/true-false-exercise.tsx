@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { StyleSheet, View } from 'react-native';
+import { ScrollView, StyleSheet, View } from 'react-native';
 
 import type { TrueFalseExercise as Exercise } from '@/modules/curriculum/domain/content-types';
 import type { ExerciseViewProps } from '@/modules/learning/ui/exercise-view';
@@ -20,7 +20,7 @@ export function TrueFalseExercise({ evaluation, exercise, onSubmit }: ExerciseVi
 
   return (
     <>
-      <View style={styles.body}>
+      <ScrollView contentContainerStyle={styles.body} showsVerticalScrollIndicator={false}>
         <AppText color="muted" variant="mono">
           {exercise.tag.toLocaleLowerCase('tr-TR')} · doğru–yanlış
         </AppText>
@@ -65,7 +65,7 @@ export function TrueFalseExercise({ evaluation, exercise, onSubmit }: ExerciseVi
             );
           })}
         </View>
-      </View>
+      </ScrollView>
 
       {checked ? null : (
         <BottomAction>
@@ -144,7 +144,8 @@ function toneFor({
 
 const styles = StyleSheet.create({
   body: {
-    flex: 1,
+    flexGrow: 1,
+    paddingBottom: theme.spacing.xxl,
     paddingHorizontal: theme.spacing.xl,
     paddingTop: theme.spacing.sm,
   },

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Pressable, StyleSheet, View } from 'react-native';
+import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 
 import type { FillBlankExercise as Exercise } from '@/modules/curriculum/domain/content-types';
 import type { ExerciseViewProps } from '@/modules/learning/ui/exercise-view';
@@ -22,7 +22,7 @@ export function FillBlankExercise({ evaluation, exercise, onSubmit }: ExerciseVi
 
   return (
     <>
-      <View style={styles.body}>
+      <ScrollView contentContainerStyle={styles.body} showsVerticalScrollIndicator={false}>
         <AppText color="muted" variant="mono">
           boşluk doldur
         </AppText>
@@ -87,7 +87,7 @@ export function FillBlankExercise({ evaluation, exercise, onSubmit }: ExerciseVi
             );
           })}
         </View>
-      </View>
+      </ScrollView>
 
       {checked ? null : (
         <BottomAction>
@@ -122,7 +122,8 @@ const styles = StyleSheet.create({
     marginTop: theme.spacing.xxl,
   },
   body: {
-    flex: 1,
+    flexGrow: 1,
+    paddingBottom: theme.spacing.xxl,
     paddingHorizontal: theme.spacing.xl,
     paddingTop: theme.spacing.sm,
   },

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Pressable, StyleSheet, View } from 'react-native';
+import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 
 import type { OrderingExercise as Exercise } from '@/modules/curriculum/domain/content-types';
 import type { ExerciseViewProps } from '@/modules/learning/ui/exercise-view';
@@ -25,7 +25,7 @@ export function OrderingExercise({ evaluation, exercise, onSubmit }: ExerciseVie
 
   return (
     <>
-      <View style={styles.body}>
+      <ScrollView contentContainerStyle={styles.body} showsVerticalScrollIndicator={false}>
         <AppText accessibilityRole="header" variant="question">
           {exercise.prompt}
         </AppText>
@@ -98,7 +98,7 @@ export function OrderingExercise({ evaluation, exercise, onSubmit }: ExerciseVie
             </View>
           </>
         )}
-      </View>
+      </ScrollView>
 
       {checked ? null : (
         <BottomAction>
@@ -125,7 +125,8 @@ const styles = StyleSheet.create({
     marginTop: theme.spacing.xxl,
   },
   body: {
-    flex: 1,
+    flexGrow: 1,
+    paddingBottom: theme.spacing.xxl,
     paddingHorizontal: theme.spacing.xl,
     paddingTop: theme.spacing.sm,
   },

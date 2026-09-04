@@ -17,7 +17,7 @@ export function ExitConfirmSheet({ onCancel, onConfirm, visible }: ExitConfirmSh
   return (
     <Modal animationType="slide" onRequestClose={onCancel} transparent visible={visible}>
       <View style={styles.scrim}>
-        <View style={styles.sheet} testID="exit-confirm-sheet">
+        <View accessibilityViewIsModal style={styles.sheet} testID="exit-confirm-sheet">
           <View style={styles.grabber} />
           <Dino size={92} tone="muted" />
           <AppText accessibilityRole="header" align="center" variant="headingM">

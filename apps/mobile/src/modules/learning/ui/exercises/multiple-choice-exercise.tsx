@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { StyleSheet, View } from 'react-native';
+import { ScrollView, StyleSheet, View } from 'react-native';
 
 import type { MultipleChoiceExercise as Exercise } from '@/modules/curriculum/domain/content-types';
 import { AnswerCard, type AnswerCardState } from '@/modules/learning/ui/answer-card';
@@ -20,7 +20,7 @@ export function MultipleChoiceExercise({
 
   return (
     <>
-      <View style={styles.body}>
+      <ScrollView contentContainerStyle={styles.body} showsVerticalScrollIndicator={false}>
         <View style={styles.tagRow}>
           <EyebrowPill
             ink={theme.colors.subject.history.ink}
@@ -56,7 +56,7 @@ export function MultipleChoiceExercise({
             />
           ))}
         </View>
-      </View>
+      </ScrollView>
 
       {checked ? null : (
         <BottomAction style={styles.action}>
@@ -103,7 +103,8 @@ const styles = StyleSheet.create({
     borderTopWidth: 1,
   },
   body: {
-    flex: 1,
+    flexGrow: 1,
+    paddingBottom: theme.spacing.xxl,
     paddingHorizontal: theme.spacing.xl,
     paddingTop: theme.spacing.sm,
   },

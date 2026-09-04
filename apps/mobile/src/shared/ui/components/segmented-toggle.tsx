@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
     borderRadius: theme.radii.pill,
     flex: 1,
     justifyContent: 'center',
-    minHeight: theme.hitTarget - 4,
+    minHeight: theme.hitTarget,
     paddingVertical: theme.spacing.md,
   },
   segmentActive: {
