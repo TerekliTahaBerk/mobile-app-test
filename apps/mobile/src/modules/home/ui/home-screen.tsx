@@ -22,6 +22,7 @@ import {
 } from '@/shared/ui/components/icons';
 import { ProgressBar } from '@/shared/ui/components/progress-bar';
 import { Screen } from '@/shared/ui/components/screen';
+import { Dino } from '@/shared/ui/dino/dino';
 import { BottomTabBar, type AppTabKey } from '@/shared/ui/navigation/bottom-tab-bar';
 import { theme } from '@/shared/ui/theme/tokens';
 
@@ -47,10 +48,10 @@ export function HomeScreen({
     <Screen includeBottomInset={false} testID="home-screen">
       <ScrollView contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
         <View style={styles.header}>
-          <View style={styles.avatar}>
-            <AppText color="accentStrong" variant="headingXS">
-              {viewModel.initial}
-            </AppText>
+          <View style={[styles.avatar, avatarSurface(viewModel.avatarId)]}>
+            {viewModel.avatarId === 'initial' ? (
+              <AppText color="accentStrong" variant="headingXS">{viewModel.initial}</AppText>
+            ) : viewModel.avatarId === 'dino' ? <Dino size={38} /> : null}
           </View>
           <AppText accessibilityRole="header" style={styles.greeting} variant="headingS">
             {viewModel.greeting}
@@ -124,6 +125,13 @@ export function HomeScreen({
       <BottomTabBar activeTab="anasayfa" onSelectTab={onSelectTab} />
     </Screen>
   );
+}
+
+function avatarSurface(avatarId: HomeViewModel['avatarId']) {
+  if (avatarId === 'sky') return { backgroundColor: theme.colors.subject.physics.soft };
+  if (avatarId === 'violet') return { backgroundColor: theme.colors.subject.chemistry.soft };
+  if (avatarId === 'dino') return { backgroundColor: theme.colors.subject.history.soft };
+  return null;
 }
 
 function LeagueBanner({ card, onPress }: { card: LeagueCard; onPress: () => void }) {

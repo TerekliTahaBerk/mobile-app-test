@@ -30,7 +30,7 @@ describe('learner profile', () => {
       targetYear: 2027,
       track: 'quantitative',
     });
-    expect(describeProfile(profile)).toBe('YKS · Sayısal');
+    expect(describeProfile(profile)).toBe('TYT Sosyal · 2027');
   });
 
   it('names the missing answer rather than producing a half profile', () => {

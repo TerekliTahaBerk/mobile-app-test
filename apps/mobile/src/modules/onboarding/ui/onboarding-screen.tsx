@@ -17,11 +17,8 @@ import {
   isSkippable,
   GOAL_CHOICES,
   GRADE_CHOICES,
-  REFERRAL_CHOICES,
   REMINDER_CHOICES,
   START_CHOICES,
-  TRACK_CHOICES,
-  targetYearChoices,
   type OnboardingStepId,
 } from '@/modules/onboarding/model/onboarding-steps';
 import { ChoiceRow } from '@/modules/onboarding/ui/choice-row';
@@ -58,7 +55,10 @@ type Stage = { kind: 'question'; index: number } | { kind: 'summary' } | { kind:
  * the app, and the answers only shape what they see first.
  */
 export function OnboardingScreen({ currentYear, onFinish, onRequestReminderPermission, onSignIn, showLgsOption = true }: OnboardingScreenProps) {
-  const [draft, setDraft] = useState<OnboardingDraft>({ remindersEnabled: false });
+  const [draft, setDraft] = useState<OnboardingDraft>({
+    remindersEnabled: false,
+    targetYear: currentYear + 1,
+  });
   const [reminderPermissionDenied, setReminderPermissionDenied] = useState(false);
   const [finishError, setFinishError] = useState<Error | null>(null);
   const [isFinishing, setIsFinishing] = useState(false);
@@ -137,7 +137,7 @@ export function OnboardingScreen({ currentYear, onFinish, onRequestReminderPermi
             Hazırsın, {name}.
           </AppText>
           <AppText align="center" color="secondary" style={styles.summaryDetail} variant="prose">
-            {summaryLine(draft, currentYear)}
+            {summaryLine(draft)}
           </AppText>
           <View style={styles.summaryChips}>
             <View style={[styles.summaryChip, styles.summaryChipStreak]}>
@@ -301,32 +301,6 @@ function StepQuestion({ currentYear, draft, onPatch, onToggleReminders, reminder
         </>
       );
 
-    case 'track':
-      return (
-        <>
-          <DinoSpeech size={76}>
-            <AppText accessibilityRole="header" color="success" variant="headingM">
-              Hangi bölümdesin?
-            </AppText>
-            <AppText color="accentSoft" style={styles.bubbleDetail} variant="proseS">
-              Derslerini buna göre sıralayacağım.
-            </AppText>
-          </DinoSpeech>
-          <View style={styles.choices}>
-            {TRACK_CHOICES.map((choice) => (
-              <ChoiceRow
-                detail={choice.detail}
-                key={choice.value}
-                label={choice.label}
-                onPress={() => onPatch({ track: choice.value })}
-                selected={draft.track === choice.value}
-                testID={`onboarding-track-${choice.value}`}
-              />
-            ))}
-          </View>
-        </>
-      );
-
     case 'grade':
       return (
         <>
@@ -335,7 +309,7 @@ function StepQuestion({ currentYear, draft, onPatch, onToggleReminders, reminder
               Kaçıncı sınıftasın?
             </AppText>
             <AppText color="accentSoft" style={styles.bubbleDetail} variant="proseS">
-              Hedef yılına göre konuları sıralayacağım.
+              Bu pilotta herkes aynı TYT Sosyal yolunda ilerler.
             </AppText>
           </DinoSpeech>
           <View style={styles.grid}>
@@ -347,22 +321,6 @@ function StepQuestion({ currentYear, draft, onPatch, onToggleReminders, reminder
                 selected={draft.grade === choice.value}
                 style={index === GRADE_CHOICES.length - 1 ? styles.gridFull : styles.gridHalf}
                 testID={`onboarding-grade-${choice.value}`}
-              />
-            ))}
-          </View>
-          <AppText color="muted" style={styles.subLabel} variant="labelS">
-            HEDEF SINAV
-          </AppText>
-          <View style={styles.yearRow}>
-            {targetYearChoices(currentYear).map((year) => (
-              <PillChoice
-                detail="Haziran"
-                key={year}
-                label={String(year)}
-                onPress={() => onPatch({ targetYear: year })}
-                selected={draft.targetYear === year}
-                style={styles.yearChoice}
-                testID={`onboarding-year-${year}`}
               />
             ))}
           </View>
@@ -417,31 +375,6 @@ function StepQuestion({ currentYear, draft, onPatch, onToggleReminders, reminder
         </>
       );
 
-    case 'referral':
-      return (
-        <>
-          <DinoSpeech>
-            <AppText accessibilityRole="header" color="success" variant="headingS">
-              Bizi nereden duydun?
-            </AppText>
-            <AppText color="accentSoft" style={styles.bubbleDetail} variant="proseS">
-              Tek dokunuş, sonra geçiyoruz.
-            </AppText>
-          </DinoSpeech>
-          <View style={styles.choices}>
-            {REFERRAL_CHOICES.map((choice) => (
-              <ChoiceRow
-                key={choice.value}
-                label={choice.label}
-                onPress={() => onPatch({ referralSource: choice.value })}
-                selected={draft.referralSource === choice.value}
-                testID={`onboarding-referral-${choice.value}`}
-              />
-            ))}
-          </View>
-        </>
-      );
-
     case 'start':
       return (
         <>
@@ -484,7 +417,7 @@ function StepQuestion({ currentYear, draft, onPatch, onToggleReminders, reminder
               Günde kaç tur?
             </AppText>
             <AppText color="accentSoft" style={styles.bubbleDetail} variant="proseS">
-              Seriyi korumak için bir tur yeter.
+              Günlük hedefin ilerleme çubuğunu belirler. Seri için bir tur yeter.
             </AppText>
           </DinoSpeech>
           <View style={styles.choices}>
@@ -652,16 +585,14 @@ const AVATAR_SURFACES: Record<AvatarId, string> = {
   violet: theme.colors.subject.chemistry.soft,
 };
 
-function summaryLine(draft: OnboardingDraft, currentYear: number): string {
-  const exam = draft.exam === 'lgs' ? 'LGS' : 'YKS';
-  const track =
-    draft.track === undefined
-      ? null
-      : TRACK_CHOICES.find((choice) => choice.value === draft.track)?.label ?? null;
-  const year = draft.targetYear ?? currentYear + 1;
+function summaryLine(draft: OnboardingDraft): string {
+  const exam = draft.exam === 'lgs' ? 'LGS' : 'TYT Sosyal';
+  const year = draft.targetYear;
   const goal = draft.dailyGoal ?? 3;
 
-  return [exam, track, String(year), `günde ${goal} tur`].filter(Boolean).join(' · ');
+  return [exam, year === undefined ? null : String(year), `günde ${goal} tur`]
+    .filter(Boolean)
+    .join(' · ');
 }
 
 const styles = StyleSheet.create({

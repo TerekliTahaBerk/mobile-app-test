@@ -71,6 +71,10 @@ export default function SettingsRoute() {
   return (
     <>
       <ReminderSettingsScreen
+      avatarId={profile.avatarId}
+      currentYear={new Date().getFullYear()}
+      dailyGoal={profile.dailyGoal}
+      displayName={profile.displayName}
       enabled={profile.remindersEnabled}
       onBack={goBack}
       onChangeTime={(reminderTime) => save({ reminderTime })}
@@ -97,9 +101,15 @@ export default function SettingsRoute() {
         setConfirmation('');
         setShowReset(true);
       }}
+      onSaveProfile={(preferences) =>
+        store.save({ ...profile, ...preferences }).catch((cause: unknown) => {
+          setError(cause instanceof Error ? cause : new Error(String(cause)));
+        })
+      }
       permissionStatus={permissionStatus}
       showPermissionWarning={profile.remindersEnabled || permissionRequestFailed}
       time={profile.reminderTime ?? '20:00'}
+      targetYear={profile.targetYear}
       />
       <ResetProgressConfirmSheet
         confirmation={confirmation}

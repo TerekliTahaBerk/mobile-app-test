@@ -1,5 +1,6 @@
 import type { LessonId, PathNodeId } from '@/modules/curriculum/domain/content-types';
 import type { DailyPlanCard } from '@/modules/learning/model/daily-plan-card';
+import type { AvatarId } from '@/modules/learner/domain/learner-profile';
 
 /**
  * What the Ana Sayfa tab renders. The screen takes this whole model as a prop
@@ -33,6 +34,7 @@ export type LeagueCard =
   | { detail: string; kind: 'standing'; rank: number; title: string };
 
 export type HomeViewModel = {
+  avatarId: AvatarId;
   continueCard: ContinueCard | null;
   /** Today's real, evidence-backed mixed drill. */
   dailyPlan: DailyPlanCard | null;
@@ -52,6 +54,7 @@ export type HomeViewModel = {
 
 /** The Ana Sayfa fixture used by the design preview. */
 export const homePreviewData: HomeViewModel = {
+  avatarId: 'initial',
   dailyPlan: {
     actionLabel: 'Başla',
     detail: '4 farklı konudan karışık',

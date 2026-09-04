@@ -212,6 +212,7 @@ describe('Lig', () => {
 
 describe('Profil', () => {
   const viewModel = {
+    avatarId: 'initial' as const,
     badges: evaluateBadges({
       bestStreak: 12,
       completedUnits: 1,
@@ -221,7 +222,7 @@ describe('Profil', () => {
       perfectRounds: 0,
       totalXp: 2840,
     }),
-    description: 'YKS · Sayısal',
+    description: 'TYT Sosyal · 2027',
     displayName: 'Ege',
     initial: 'E',
     level: 8,
@@ -285,7 +286,7 @@ describe('Profil', () => {
     await renderProfile();
 
     expect(screen.getByText('Ege')).toBeTruthy();
-    expect(screen.getByText('YKS · Sayısal')).toBeTruthy();
+    expect(screen.getByText('TYT Sosyal · 2027')).toBeTruthy();
     expect(screen.getByText('2.840 XP')).toBeTruthy();
     expect(screen.getByText('Konu performansın')).toBeTruthy();
     expect(screen.getByText('Tekrar gerekli')).toBeTruthy();

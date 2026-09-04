@@ -2,10 +2,8 @@ import type {
   DailyGoal,
   GradeLevel,
   OnboardingDraft,
-  ReferralSource,
   ReminderTime,
   StartingPoint,
-  StudyTrack,
 } from '@/modules/learner/domain/learner-profile';
 
 /**
@@ -21,29 +19,19 @@ export type OnboardingStepId =
   | 'goal'
   | 'grade'
   | 'identity'
-  | 'referral'
-  | 'start'
-  | 'track';
+  | 'start';
 
-/** The seven answered steps, in order. The welcome and summary screens are not steps. */
+/** Milestone 1 questions, in order. Welcome and summary are not steps. */
 export const ONBOARDING_STEPS: readonly OnboardingStepId[] = [
   'exam',
-  'track',
   'grade',
   'identity',
-  'referral',
   'start',
   'goal',
 ];
 
-/**
- * The steps that actually apply to a draft. LGS has no track to choose, so the
- * rail shrinks rather than showing a step that will be skipped.
- */
-export function applicableSteps(draft: OnboardingDraft): readonly OnboardingStepId[] {
-  return draft.exam === 'lgs'
-    ? ONBOARDING_STEPS.filter((step) => step !== 'track')
-    : ONBOARDING_STEPS;
+export function applicableSteps(_draft: OnboardingDraft): readonly OnboardingStepId[] {
+  return ONBOARDING_STEPS;
 }
 
 /** Whether the learner has answered enough of this step to move on. */
@@ -51,14 +39,10 @@ export function canAdvance(step: OnboardingStepId, draft: OnboardingDraft): bool
   switch (step) {
     case 'exam':
       return draft.exam !== undefined;
-    case 'track':
-      return draft.track !== undefined;
     case 'grade':
-      return draft.grade !== undefined && draft.targetYear !== undefined;
+      return draft.grade !== undefined;
     case 'identity':
       return (draft.displayName ?? '').trim().length > 0;
-    case 'referral':
-      return draft.referralSource !== undefined;
     case 'start':
       return draft.startingPoint !== undefined;
     case 'goal':
@@ -68,19 +52,8 @@ export function canAdvance(step: OnboardingStepId, draft: OnboardingDraft): bool
 
 /** Steps a learner may pass without answering. */
 export function isSkippable(step: OnboardingStepId): boolean {
-  return step === 'referral' || step === 'start';
+  return step === 'start';
 }
-
-export const TRACK_CHOICES: readonly {
-  detail: string;
-  label: string;
-  value: StudyTrack;
-}[] = [
-  { detail: 'Matematik · Fizik · Kimya · Biyoloji', label: 'Sayısal', value: 'quantitative' },
-  { detail: 'Matematik · Türkçe · Tarih · Coğrafya', label: 'Eşit Ağırlık', value: 'equalWeight' },
-  { detail: 'Türkçe · Tarih · Coğrafya · Felsefe', label: 'Sözel', value: 'verbal' },
-  { detail: 'TYT dersleriyle başlarız', label: 'Henüz bilmiyorum', value: 'undecided' },
-];
 
 export const GRADE_CHOICES: readonly { label: string; value: GradeLevel }[] = [
   { label: '9. sınıf', value: 'grade9' },
@@ -88,15 +61,6 @@ export const GRADE_CHOICES: readonly { label: string; value: GradeLevel }[] = [
   { label: '11. sınıf', value: 'grade11' },
   { label: '12. sınıf', value: 'grade12' },
   { label: 'Mezun', value: 'graduate' },
-];
-
-export const REFERRAL_CHOICES: readonly { label: string; value: ReferralSource }[] = [
-  { label: 'Instagram / TikTok', value: 'social' },
-  { label: 'Arkadaşım söyledi', value: 'friend' },
-  { label: 'YouTube', value: 'youtube' },
-  { label: 'Okul / öğretmen', value: 'school' },
-  { label: 'App Store', value: 'appStore' },
-  { label: 'Başka bir yer', value: 'other' },
 ];
 
 export const START_CHOICES: readonly {
