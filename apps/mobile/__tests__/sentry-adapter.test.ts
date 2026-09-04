@@ -7,11 +7,18 @@ jest.mock('@sentry/react-native', () => ({
 }));
 
 import {
+  installProductionObservability,
   sanitizeSentryEvent,
   scrubPrivateData,
 } from '@/shared/observability/sentry-adapter';
+import * as Sentry from '@sentry/react-native';
 
 describe('Sentry observability adapter privacy', () => {
+  it('does not activate from a DSN or production environment without the versioned review gate', () => {
+    expect(installProductionObservability()).toBe(false);
+    expect(Sentry.init).not.toHaveBeenCalled();
+  });
+
   it('removes prohibited learner and device fields recursively', () => {
     expect(
       scrubPrivateData({

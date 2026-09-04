@@ -10,10 +10,12 @@ do not carry raw answers, free-form student text, names, email addresses, device
 identifiers, or account identity. `AppErrorBoundary`, non-critical splash work,
 and preview-only hearts persistence report through the same error seam.
 
-Sentry is the production crash/error provider. The adapter is installed only
+Sentry is the selected, production-gated crash/error provider. The adapter is installed only
 when the JavaScript bundle is not a development build,
 `EXPO_PUBLIC_OBSERVABILITY_ENVIRONMENT=production`, and `EXPO_PUBLIC_SENTRY_DSN`
-is present. Development, Expo Go, tests, and EAS preview therefore keep the
+is present. It also requires the versioned release acknowledgement
+`EXPO_PUBLIC_SENTRY_PRIVACY_REVIEW=approved-2026-09-04`; this must not be set
+until the approval gate below passes. Development, Expo Go, tests, and EAS preview therefore keep the
 no-op adapter and cannot pollute production data. Provider initialization and
 delivery failure are non-critical and never block a lesson or persistence retry.
 
@@ -60,5 +62,9 @@ environment. `SENTRY_AUTH_TOKEN` is a sensitive build-time credential used only
 for source-map upload; never expose it with an `EXPO_PUBLIC_` prefix. Configure
 Sentry organization/project build variables in EAS, create a release build, and
 verify one deliberate test exception in the Sentry project before store release.
-Retention, deletion, alerting, and provider-side privacy settings still require
-product/legal review.
+The provider must remain disabled in store builds until retention, deletion,
+alerting, processor/subprocessor, cross-border transfer and minor-user review
+passes the gate in [`PRIVACY_RELEASE_PACKAGE.md`](PRIVACY_RELEASE_PACKAGE.md).
+Activation also requires an updated privacy notice and store declarations.
+Each later material privacy review must replace the acknowledgement value in
+code so an old build setting cannot approve a new data flow.
