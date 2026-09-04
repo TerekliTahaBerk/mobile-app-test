@@ -17,8 +17,10 @@ const palette = {
 
   ink: '#14201C',
   inkMuted: '#5C6B65',
-  inkFaint: '#98A5A0',
-  inkGhost: '#B4BEBA',
+  // Small secondary labels must remain legible on both white and canvas.
+  // These clear WCAG AA's 4.5:1 threshold on the light surfaces.
+  inkFaint: '#64736D',
+  inkGhost: '#64736D',
 
   white: '#FFFFFF',
   canvas: '#FBFCFA',

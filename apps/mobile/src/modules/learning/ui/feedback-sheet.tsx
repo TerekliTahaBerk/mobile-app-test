@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Pressable, StyleSheet, View } from 'react-native';
+import { useEffect, useState } from 'react';
+import { AccessibilityInfo, Pressable, StyleSheet, View } from 'react-native';
 
 import type { ReportReason } from '@/modules/progress/domain/progress-types';
 import { AppButton } from '@/shared/ui/components/app-button';
@@ -43,6 +43,13 @@ export function FeedbackSheet({
 }: FeedbackSheetProps) {
   const [reporting, setReporting] = useState(false);
   const [reported, setReported] = useState(false);
+
+  useEffect(() => {
+    const verdict = correct
+      ? `Doğru. ${explanation}`
+      : `Olmadı. Doğru cevap: ${correctAnswerSummary}. ${explanation}`;
+    AccessibilityInfo.announceForAccessibility(verdict);
+  }, [correct, correctAnswerSummary, explanation]);
 
   return (
     <Pop
@@ -109,6 +116,9 @@ export function FeedbackSheet({
                     onReport(reason.value);
                     setReported(true);
                     setReporting(false);
+                    AccessibilityInfo.announceForAccessibility(
+                      'Bildirimin kaydedildi. Teşekkürler.',
+                    );
                   }}
                   style={styles.reason}
                   testID={`report-${reason.value}`}
@@ -121,8 +131,10 @@ export function FeedbackSheet({
             </View>
           ) : (
             <Pressable
+              accessibilityLabel="Bu soruyu bildir"
               accessibilityRole="button"
               onPress={() => setReporting(true)}
+              style={styles.reportButton}
               testID="report-question"
             >
               <AppText align="center" color="muted" variant="caption">
@@ -151,10 +163,13 @@ const styles = StyleSheet.create({
     paddingVertical: theme.spacing.md + 2,
   },
   reason: {
+    alignItems: 'center',
     backgroundColor: theme.colors.surface.default,
     borderColor: theme.colors.border.subtle,
     borderRadius: theme.radii.pill,
     borderWidth: 1,
+    justifyContent: 'center',
+    minHeight: theme.hitTarget,
     paddingHorizontal: theme.spacing.md,
     paddingVertical: theme.spacing.sm,
   },
@@ -166,7 +181,12 @@ const styles = StyleSheet.create({
   },
   report: {
     marginTop: theme.spacing.md,
-    minHeight: theme.hitTarget - 12,
+    minHeight: theme.hitTarget,
+  },
+  reportButton: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    minHeight: theme.hitTarget,
   },
   row: {
     alignItems: 'center',

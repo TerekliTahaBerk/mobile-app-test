@@ -28,7 +28,7 @@ export function ResetProgressConfirmSheet({
   return (
     <Modal animationType="slide" onRequestClose={onCancel} transparent visible={visible}>
       <View style={styles.scrim}>
-        <View style={styles.sheet} testID="reset-progress-confirm-sheet">
+        <View accessibilityViewIsModal style={styles.sheet} testID="reset-progress-confirm-sheet">
           <View style={styles.grabber} />
           <AppText accessibilityRole="header" align="center" variant="headingM">
             Tüm ilerlemen silinecek

@@ -7,8 +7,34 @@ import { ProgressBar } from '@/shared/ui/components/progress-bar';
 import { SegmentedToggle } from '@/shared/ui/components/segmented-toggle';
 import { StepProgress } from '@/shared/ui/components/step-progress';
 import { Dino } from '@/shared/ui/dino/dino';
+import { theme } from '@/shared/ui/theme/tokens';
+
+function relativeLuminance(hex: string): number {
+  const channels = hex
+    .slice(1)
+    .match(/.{2}/g)!
+    .map((channel) => Number.parseInt(channel, 16) / 255)
+    .map((channel) =>
+      channel <= 0.04045 ? channel / 12.92 : ((channel + 0.055) / 1.055) ** 2.4,
+    );
+
+  return 0.2126 * channels[0]! + 0.7152 * channels[1]! + 0.0722 * channels[2]!;
+}
+
+function contrastRatio(foreground: string, background: string): number {
+  const light = Math.max(relativeLuminance(foreground), relativeLuminance(background));
+  const dark = Math.min(relativeLuminance(foreground), relativeLuminance(background));
+  return (light + 0.05) / (dark + 0.05);
+}
 
 describe('design primitives', () => {
+  it('keeps small muted semantic text at AA contrast on light surfaces', () => {
+    for (const ink of [theme.colors.text.muted, theme.colors.text.faint]) {
+      expect(contrastRatio(ink, theme.colors.background.app)).toBeGreaterThanOrEqual(4.5);
+      expect(contrastRatio(ink, theme.colors.surface.default)).toBeGreaterThanOrEqual(4.5);
+    }
+  });
+
   it('prevents disabled button interaction and exposes its state', async () => {
     const onPress = jest.fn();
 
