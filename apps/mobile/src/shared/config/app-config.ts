@@ -5,9 +5,9 @@
  * league preview ranks invented people, Premium shows benefits with no billing behind
  * them, and the hearts limit has no way for a learner to lift it. All three
  * stay in the codebase and stay reachable while designing, but their fictional
- * or unusable behaviour may not reach a pilot build. Lig itself remains a
- * stable destination with an honest pending state; only its preview standings
- * are gated.
+ * or unusable behaviour may not reach a pilot build. Unsupported product
+ * choices and destinations are absent in production rather than advertised as
+ * pending.
  *
  * This is deliberately a compile-time constant rather than a flag service.
  * Remote configuration is a later milestone.
@@ -20,6 +20,8 @@ export type FeatureFlags = {
   heartsEconomy: boolean;
   /** Weekly league standings. Needs a real leaderboard service. */
   league: boolean;
+  /** LGS product path. The pilot only supports YKS -> TYT Sosyal. */
+  lgs: boolean;
   /** Premium. Needs real in-app purchases. */
   plus: boolean;
 };
@@ -28,11 +30,13 @@ const FLAGS_BY_MODE: Record<AppMode, FeatureFlags> = {
   designPreview: {
     heartsEconomy: true,
     league: true,
+    lgs: true,
     plus: true,
   },
   productionPilot: {
     heartsEconomy: false,
     league: false,
+    lgs: false,
     plus: false,
   },
 };

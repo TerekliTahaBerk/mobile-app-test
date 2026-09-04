@@ -43,6 +43,8 @@ type OnboardingScreenProps = {
   onFinish: (profile: LearnerProfile) => Promise<void> | void;
   /** There is no account system yet; the sign-in affordance is not offered. */
   onSignIn?: (() => void) | undefined;
+  /** Keeps the unsupported LGS choice available only in design previews. */
+  showLgsOption?: boolean;
 };
 
 type Stage = { kind: 'question'; index: number } | { kind: 'summary' } | { kind: 'welcome' };
@@ -52,7 +54,7 @@ type Stage = { kind: 'question'; index: number } | { kind: 'summary' } | { kind:
  * account form anywhere — the learner is studying within a minute of opening
  * the app, and the answers only shape what they see first.
  */
-export function OnboardingScreen({ currentYear, onFinish, onSignIn }: OnboardingScreenProps) {
+export function OnboardingScreen({ currentYear, onFinish, onSignIn, showLgsOption = true }: OnboardingScreenProps) {
   const [draft, setDraft] = useState<OnboardingDraft>({ remindersEnabled: true });
   const [finishError, setFinishError] = useState<Error | null>(null);
   const [isFinishing, setIsFinishing] = useState(false);
@@ -205,7 +207,13 @@ export function OnboardingScreen({ currentYear, onFinish, onSignIn }: Onboarding
       </View>
 
       <ScrollView contentContainerStyle={styles.questionBody} showsVerticalScrollIndicator={false}>
-        <StepQuestion currentYear={currentYear} draft={draft} onPatch={patch} step={step} />
+        <StepQuestion
+          currentYear={currentYear}
+          draft={draft}
+          onPatch={patch}
+          showLgsOption={showLgsOption}
+          step={step}
+        />
       </ScrollView>
 
       <BottomAction>
@@ -232,10 +240,11 @@ type StepQuestionProps = {
   currentYear: number;
   draft: OnboardingDraft;
   onPatch: (next: Partial<OnboardingDraft>) => void;
+  showLgsOption: boolean;
   step: OnboardingStepId;
 };
 
-function StepQuestion({ currentYear, draft, onPatch, step }: StepQuestionProps) {
+function StepQuestion({ currentYear, draft, onPatch, showLgsOption, step }: StepQuestionProps) {
   switch (step) {
     case 'exam':
       return (
@@ -254,15 +263,17 @@ function StepQuestion({ currentYear, draft, onPatch, step }: StepQuestionProps) 
               selected={draft.exam === 'yks'}
               testID="onboarding-exam-yks"
             />
-            <ChoiceRow
-              badge={<AppText color="secondary" variant="labelS">LGS</AppText>}
-              detail="Bu pilotta henüz yok"
-              disabled
-              label="LGS"
-              onPress={() => undefined}
-              selected={draft.exam === 'lgs'}
-              testID="onboarding-exam-lgs"
-            />
+            {showLgsOption ? (
+              <ChoiceRow
+                badge={<AppText color="secondary" variant="labelS">LGS</AppText>}
+                detail="Bu pilotta henüz yok"
+                disabled
+                label="LGS"
+                onPress={() => undefined}
+                selected={draft.exam === 'lgs'}
+                testID="onboarding-exam-lgs"
+              />
+            ) : null}
           </View>
         </>
       );
@@ -360,9 +371,11 @@ function StepQuestion({ currentYear, draft, onPatch, step }: StepQuestionProps) 
               {(draft.displayName ?? '').length} / {DISPLAY_NAME_MAX_LENGTH}
             </AppText>
           </View>
-          <AppText color="muted" style={styles.fieldHint} variant="proseXS">
-            Lig sıralamasında bu isim görünür.
-          </AppText>
+          {showLgsOption ? (
+            <AppText color="muted" style={styles.fieldHint} variant="proseXS">
+              Lig sıralamasında bu isim görünür.
+            </AppText>
+          ) : null}
 
           <AppText color="muted" style={styles.subLabel} variant="labelS">
             AVATAR

@@ -9,6 +9,7 @@ import {
   ProfileIcon,
 } from '@/shared/ui/components/icons';
 import { theme } from '@/shared/ui/theme/tokens';
+import { FEATURES } from '@/shared/config/app-config';
 
 export type AppTabKey = 'anasayfa' | 'lig' | 'ogren' | 'profil';
 
@@ -25,14 +26,14 @@ const TABS: readonly { key: AppTabKey; label: string }[] = [
 ];
 
 /**
- * The persistent shell navigation. Lig stays in place in every build so the
- * information architecture does not move; the route owns its readiness state.
+ * The persistent shell navigation. Preview-only destinations are removed from
+ * the production information architecture.
  */
 export function BottomTabBar({ activeTab, onSelectTab }: BottomTabBarProps) {
   const insets = useSafeAreaInsets();
   return (
     <View style={[styles.bar, { paddingBottom: Math.max(insets.bottom, theme.spacing.xxl) }]}>
-      {TABS.map((tab) => {
+      {TABS.filter((tab) => tab.key !== 'lig' || FEATURES.league).map((tab) => {
         const isActive = tab.key === activeTab;
         const tint = isActive ? theme.colors.navigation.active : theme.colors.navigation.inactive;
 

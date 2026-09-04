@@ -9,7 +9,7 @@ import type { DailyPlan } from '@/modules/learning/domain/daily-plan';
 import { buildHomeViewModel } from '@/modules/home/model/build-home-view-model';
 import { useProgressDashboard } from '@/modules/progress/application/use-progress-dashboard';
 import { useReminders } from '@/modules/reminders/application/use-reminders';
-import { APP_MODE } from '@/shared/config/app-config';
+import { APP_MODE, FEATURES } from '@/shared/config/app-config';
 import { useTabNavigation } from '@/shared/navigation/use-tab-navigation';
 import { MessageScreen } from '@/shared/ui/feedback/message-screen';
 
@@ -98,7 +98,7 @@ function HomeShell({ plan, viewModel }: { plan: DailyPlan | null; viewModel: Hom
           setActionError(cause instanceof Error ? cause : new Error(String(cause)));
         });
       }}
-      onOpenLeague={() => router.replace('/lig')}
+      onOpenLeague={FEATURES.league ? () => router.replace('/lig') : undefined}
       onSelectTab={onSelectTab}
       onStartDailyPlan={() => {
         try {
