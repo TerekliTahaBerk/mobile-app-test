@@ -17,10 +17,12 @@ const COMPLETED_AT = '2026-08-27T18:00:00.000Z';
 function session(sessionId: string, overrides: Partial<StoredSession> = {}): StoredSession {
   return {
     contentVersion: '1',
+    context: {},
     currentExerciseIndex: 3,
     kind: 'lesson',
     lessonId: LESSON_ID,
     pathNodeId: PATH_NODE_ID,
+    purpose: 'lesson',
     sessionId,
     snapshot: '{}',
     snapshotVersion: SESSION_SNAPSHOT_VERSION,

@@ -27,9 +27,11 @@ function mistake(skillId: SkillId, id = 'm1'): Mistake {
 
 const ACTIVE_SESSION: StoredSession = {
   contentVersion: '1',
+  context: {},
   currentExerciseIndex: 2,
   kind: 'lesson',
   lessonId: 'lesson.test.001' as LessonId,
+  purpose: 'lesson',
   sessionId: 's1',
   snapshot: '{}',
   snapshotVersion: SESSION_SNAPSHOT_VERSION,

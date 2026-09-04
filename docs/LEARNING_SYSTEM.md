@@ -83,11 +83,15 @@ analytics vendor.
 
 ## Durable sessions
 
-Active lesson and review sessions are stored as versioned JSON snapshots plus
-queryable metadata. Every answer/advance is serialized behind the previous
-write. On launch, a compatible active snapshot restores its exercise index,
-attempts, XP, and phase. A content-version or snapshot-version mismatch is
-marked stale and never guessed at or allowed to crash the app.
+Active sessions are stored as versioned JSON snapshots plus queryable metadata.
+Their durable purpose distinguishes lessons, reviews, daily plans, placement,
+and topic practice even when several of them share review scoring. Purpose
+context also keeps a topic practice's topic and pre-practice accuracy, so a
+restored round can finish into the same result flow that started it. Every
+answer/advance is serialized behind the previous write. On launch, a compatible
+active snapshot restores its exercise index, attempts, XP, phase, purpose, and
+context. A content-version or snapshot-version mismatch is marked stale and
+never guessed at or allowed to crash the app.
 
 ## Mastery v1
 

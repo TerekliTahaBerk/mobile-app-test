@@ -96,9 +96,11 @@ type SessionRow = {
   completed_at: string | null;
   content_version: string;
   current_exercise_index: number;
+  context: string;
   kind: string;
   lesson_id: string;
   path_node_id: string | null;
+  purpose: string;
   session_id: string;
   snapshot: string;
   snapshot_version: number;
@@ -111,10 +113,12 @@ function toSession(row: SessionRow): StoredSession {
   return {
     ...(row.completed_at === null ? {} : { completedAt: row.completed_at }),
     contentVersion: row.content_version,
+    context: JSON.parse(row.context) as StoredSession['context'],
     currentExerciseIndex: row.current_exercise_index,
     kind: row.kind as StoredSession['kind'],
     lessonId: row.lesson_id as LessonId,
     ...(row.path_node_id === null ? {} : { pathNodeId: row.path_node_id as PathNodeId }),
+    purpose: row.purpose as StoredSession['purpose'],
     sessionId: row.session_id,
     snapshot: row.snapshot,
     snapshotVersion: row.snapshot_version,
@@ -263,11 +267,13 @@ function toDailyActivity(row: DailyActivityRow): DailyActivity {
 async function upsertSession(txn: Queryable, session: StoredSession): Promise<void> {
   await txn.runAsync(
     `INSERT INTO sessions (
-       session_id, kind, lesson_id, path_node_id, content_version, status,
+       session_id, kind, purpose, context, lesson_id, path_node_id, content_version, status,
        current_exercise_index, snapshot, snapshot_version, started_at, updated_at, completed_at
-     ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+     ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
      ON CONFLICT (session_id) DO UPDATE SET
        status = excluded.status,
+       purpose = excluded.purpose,
+       context = excluded.context,
        current_exercise_index = excluded.current_exercise_index,
        snapshot = excluded.snapshot,
        snapshot_version = excluded.snapshot_version,
@@ -276,6 +282,8 @@ async function upsertSession(txn: Queryable, session: StoredSession): Promise<vo
     [
       session.sessionId,
       session.kind,
+      session.purpose,
+      JSON.stringify(session.context),
       session.lessonId,
       session.pathNodeId ?? null,
       session.contentVersion,

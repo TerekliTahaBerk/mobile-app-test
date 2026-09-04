@@ -186,6 +186,22 @@ const MIGRATIONS: readonly Migration[] = [
       `);
     },
   },
+  {
+    name: 'durable-session-purpose',
+    version: 5,
+    up: async (db) => {
+      await db.execAsync(`
+        ALTER TABLE sessions
+          ADD COLUMN purpose TEXT NOT NULL DEFAULT 'lesson';
+        ALTER TABLE sessions
+          ADD COLUMN context TEXT NOT NULL DEFAULT '{}';
+
+        -- Old snapshots only distinguished ordinary lessons from reviews.
+        -- Preserve that known meaning; more specific intent cannot be guessed.
+        UPDATE sessions SET purpose = kind;
+      `);
+    },
+  },
 ];
 
 export const LATEST_SCHEMA_VERSION = MIGRATIONS.length;
