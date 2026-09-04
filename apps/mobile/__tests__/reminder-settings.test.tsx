@@ -6,14 +6,20 @@ import { ResetProgressConfirmSheet } from '@/modules/reminders/ui/reset-progress
 function renderSettings(overrides: Partial<Parameters<typeof ReminderSettingsScreen>[0]> = {}) {
   return render(
     <ReminderSettingsScreen
+      avatarId="initial"
+      currentYear={2026}
+      dailyGoal={3}
+      displayName="Ege"
       enabled
       onBack={jest.fn()}
       onChangeTime={jest.fn()}
       onRequestReset={jest.fn()}
+      onSaveProfile={jest.fn()}
       onToggle={jest.fn()}
       permissionStatus="granted"
       showPermissionWarning
       time="20:00"
+      targetYear={2027}
       {...overrides}
     />,
   );
@@ -27,6 +33,25 @@ describe('reminder settings', () => {
     await fireEvent.press(screen.getByTestId('reminder-toggle'));
 
     expect(onToggle).toHaveBeenCalledWith(false);
+  });
+
+  it('edits and saves core profile preferences without resetting progress', async () => {
+    const onSaveProfile = jest.fn();
+    await renderSettings({ onSaveProfile });
+
+    await fireEvent.changeText(screen.getByTestId('settings-display-name'), '  Ege Can  ');
+    await fireEvent.press(screen.getByTestId('settings-avatar-dino'));
+    await fireEvent.press(screen.getByTestId('settings-goal-6'));
+    await fireEvent.press(screen.getByTestId('settings-year-2028'));
+    await fireEvent.press(screen.getByTestId('settings-profile-save'));
+
+    expect(onSaveProfile).toHaveBeenCalledWith({
+      avatarId: 'dino',
+      dailyGoal: 6,
+      displayName: 'Ege Can',
+      targetYear: 2028,
+    });
+    expect(screen.getByText(/çalışma kayıtlarını sıfırlamaz/)).toBeTruthy();
   });
 
   it('offers the hour only while the reminder is on', async () => {

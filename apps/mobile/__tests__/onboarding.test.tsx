@@ -12,14 +12,10 @@ async function renderOnboarding(onFinish = jest.fn()) {
 async function reachSummary() {
   await fireEvent.press(screen.getByTestId('onboarding-exam-yks'));
   await fireEvent.press(screen.getByTestId('onboarding-next'));
-  await fireEvent.press(screen.getByTestId('onboarding-track-quantitative'));
-  await fireEvent.press(screen.getByTestId('onboarding-next'));
   await fireEvent.press(screen.getByTestId('onboarding-grade-grade12'));
-  await fireEvent.press(screen.getByTestId('onboarding-year-2027'));
   await fireEvent.press(screen.getByTestId('onboarding-next'));
   await fireEvent.changeText(screen.getByTestId('onboarding-name'), 'Ege');
   await fireEvent.press(screen.getByTestId('onboarding-next'));
-  await fireEvent.press(screen.getByTestId('onboarding-skip'));
   await fireEvent.press(screen.getByTestId('onboarding-skip'));
   await fireEvent.press(screen.getByTestId('onboarding-goal-3'));
   await fireEvent.press(screen.getByTestId('onboarding-next'));
@@ -78,7 +74,7 @@ describe('onboarding', () => {
     await reachSummary();
 
     expect(screen.getByText('Hazırsın, Ege.')).toBeTruthy();
-    expect(screen.getByText('YKS · Sayısal · 2027 · günde 3 tur')).toBeTruthy();
+    expect(screen.getByText('TYT Sosyal · 2027 · günde 3 tur')).toBeTruthy();
 
     await fireEvent.press(screen.getByTestId('onboarding-finish'));
 
@@ -89,7 +85,7 @@ describe('onboarding', () => {
       exam: 'yks',
       remindersEnabled: false,
       targetYear: 2027,
-      track: 'quantitative',
+      track: 'undecided',
     });
   });
 
@@ -108,14 +104,10 @@ describe('onboarding', () => {
 
     await fireEvent.press(screen.getByTestId('onboarding-exam-yks'));
     await fireEvent.press(screen.getByTestId('onboarding-next'));
-    await fireEvent.press(screen.getByTestId('onboarding-track-quantitative'));
-    await fireEvent.press(screen.getByTestId('onboarding-next'));
     await fireEvent.press(screen.getByTestId('onboarding-grade-grade12'));
-    await fireEvent.press(screen.getByTestId('onboarding-year-2027'));
     await fireEvent.press(screen.getByTestId('onboarding-next'));
     await fireEvent.changeText(screen.getByTestId('onboarding-name'), 'Ege');
     await fireEvent.press(screen.getByTestId('onboarding-next'));
-    await fireEvent.press(screen.getByTestId('onboarding-skip'));
     await fireEvent.press(screen.getByTestId('onboarding-skip'));
     await fireEvent.press(screen.getByTestId('onboarding-goal-3'));
     await fireEvent.press(screen.getByTestId('onboarding-reminder-switch'));
@@ -139,14 +131,10 @@ describe('onboarding', () => {
     await fireEvent.press(screen.getByTestId('onboarding-start'));
     await fireEvent.press(screen.getByTestId('onboarding-exam-yks'));
     await fireEvent.press(screen.getByTestId('onboarding-next'));
-    await fireEvent.press(screen.getByTestId('onboarding-track-quantitative'));
-    await fireEvent.press(screen.getByTestId('onboarding-next'));
     await fireEvent.press(screen.getByTestId('onboarding-grade-grade12'));
-    await fireEvent.press(screen.getByTestId('onboarding-year-2027'));
     await fireEvent.press(screen.getByTestId('onboarding-next'));
     await fireEvent.changeText(screen.getByTestId('onboarding-name'), 'Ege');
     await fireEvent.press(screen.getByTestId('onboarding-next'));
-    await fireEvent.press(screen.getByTestId('onboarding-skip'));
     await fireEvent.press(screen.getByTestId('onboarding-skip'));
     await fireEvent.press(screen.getByTestId('onboarding-goal-3'));
     await fireEvent.press(screen.getByTestId('onboarding-reminder-switch'));

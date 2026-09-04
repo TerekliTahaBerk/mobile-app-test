@@ -19,6 +19,7 @@ export function buildHomeViewModel(
   const name = dashboard.profile?.displayName ?? null;
 
   return {
+    avatarId: dashboard.profile?.avatarId ?? 'initial',
     continueCard: buildContinueCard(dashboard),
     dailyPlan: buildDailyPlanCard(dashboard.dailyPlan),
     dailyProgress: dashboard.dailyProgress,

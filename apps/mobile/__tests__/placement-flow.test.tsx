@@ -37,14 +37,10 @@ async function completeOnboarding(startingPoint: 'placement' | 'scratch') {
   await fireEvent.press(screen.getByTestId('onboarding-start'));
   await fireEvent.press(screen.getByTestId('onboarding-exam-yks'));
   await fireEvent.press(screen.getByTestId('onboarding-next'));
-  await fireEvent.press(screen.getByTestId('onboarding-track-verbal'));
-  await fireEvent.press(screen.getByTestId('onboarding-next'));
   await fireEvent.press(screen.getByTestId('onboarding-grade-grade12'));
-  await fireEvent.press(screen.getByTestId('onboarding-year-2027'));
   await fireEvent.press(screen.getByTestId('onboarding-next'));
   await fireEvent.changeText(screen.getByTestId('onboarding-name'), 'Ege');
   await fireEvent.press(screen.getByTestId('onboarding-next'));
-  await fireEvent.press(screen.getByTestId('onboarding-skip'));
   await fireEvent.press(screen.getByTestId(`onboarding-start-${startingPoint}`));
   await fireEvent.press(screen.getByTestId('onboarding-next'));
   await fireEvent.press(screen.getByTestId('onboarding-goal-3'));
@@ -84,14 +80,10 @@ describe('starting diagnostic flow', () => {
     await fireEvent.press(screen.getByTestId('onboarding-start'));
     await fireEvent.press(screen.getByTestId('onboarding-exam-yks'));
     await fireEvent.press(screen.getByTestId('onboarding-next'));
-    await fireEvent.press(screen.getByTestId('onboarding-track-verbal'));
-    await fireEvent.press(screen.getByTestId('onboarding-next'));
     await fireEvent.press(screen.getByTestId('onboarding-grade-grade12'));
-    await fireEvent.press(screen.getByTestId('onboarding-year-2027'));
     await fireEvent.press(screen.getByTestId('onboarding-next'));
     await fireEvent.changeText(screen.getByTestId('onboarding-name'), 'Ege');
     await fireEvent.press(screen.getByTestId('onboarding-next'));
-    await fireEvent.press(screen.getByTestId('onboarding-skip'));
 
     expect(screen.getByText('Kısa tur · konu haritanı çıkarayım')).toBeTruthy();
     expect(screen.queryByText(/doğru üniteden başla/)).toBeNull();

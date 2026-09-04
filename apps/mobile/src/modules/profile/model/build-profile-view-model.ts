@@ -15,6 +15,7 @@ export function buildProfileViewModel(dashboard: ProgressDashboard): ProfileView
   );
 
   return {
+    avatarId: profile?.avatarId ?? 'initial',
     badges: evaluateBadges({
       bestStreak: dashboard.bestStreak,
       completedUnits: [...dashboard.subjects.values()].reduce(

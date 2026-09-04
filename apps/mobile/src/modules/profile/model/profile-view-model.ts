@@ -1,4 +1,5 @@
 import type { Badge } from '@/modules/progress/domain/badge-policy';
+import type { AvatarId } from '@/modules/learner/domain/learner-profile';
 import type { TopicPerformanceBand } from '@/modules/progress/domain/topic-performance';
 
 export type ProfileStat = {
@@ -8,8 +9,9 @@ export type ProfileStat = {
 };
 
 export type ProfileViewModel = {
+  avatarId: AvatarId;
   badges: readonly Badge[];
-  /** "YKS · Sayısal" */
+  /** The real curriculum scope and target year. */
   description: string;
   displayName: string;
   initial: string;

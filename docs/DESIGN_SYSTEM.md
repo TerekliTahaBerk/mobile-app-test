@@ -77,7 +77,7 @@ Motion (`shared/ui/motion`): `Bob`, `Pulse`, `Pop`, `Shake`, all on React Native
 
 ## Screen inventory
 
-Onboarding (welcome, 7 questions, summary) · Ana Sayfa · Öğren · ünite yolu · six exercise renderers (multipleChoice, trueFalse, fillBlank, matching, ordering, flashcard) · feedback sheet · çalışma tamamlandı · canlar bitti · premium · seri milestone · lig · profil · konu performansı · settings and not-found fallbacks.
+Onboarding (welcome, 5 Milestone 1 questions, summary) · Ana Sayfa · Öğren · ünite yolu · six exercise renderers (multipleChoice, trueFalse, fillBlank, matching, ordering, flashcard) · feedback sheet · çalışma tamamlandı · canlar bitti · premium · seri milestone · lig · profil · konu performansı · settings and not-found fallbacks.
 
 Konu performansı is a first-class drill-down reached from Profile. Its overview
 shows overall answer accuracy and durable correct/wrong totals; its sections

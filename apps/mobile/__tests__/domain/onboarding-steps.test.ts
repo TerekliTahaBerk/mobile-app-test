@@ -2,15 +2,14 @@ import {
   applicableSteps,
   canAdvance,
   isSkippable,
-  targetYearChoices,
   ONBOARDING_STEPS,
 } from '@/modules/onboarding/model/onboarding-steps';
 
 describe('onboarding flow shape', () => {
-  it('drops the track question for an exam that has no track', () => {
+  it('asks only questions that affect the Milestone 1 experience', () => {
     expect(applicableSteps({ exam: 'yks' })).toEqual(ONBOARDING_STEPS);
-    expect(applicableSteps({ exam: 'lgs' })).not.toContain('track');
-    expect(applicableSteps({ exam: 'lgs' })).toHaveLength(ONBOARDING_STEPS.length - 1);
+    expect(ONBOARDING_STEPS).not.toContain('track');
+    expect(ONBOARDING_STEPS).not.toContain('referral');
   });
 
   it('holds a step until it has been answered', () => {
@@ -18,9 +17,9 @@ describe('onboarding flow shape', () => {
     expect(canAdvance('exam', { exam: 'yks' })).toBe(true);
   });
 
-  it('requires both halves of the grade step', () => {
-    expect(canAdvance('grade', { grade: 'grade12' })).toBe(false);
-    expect(canAdvance('grade', { grade: 'grade12', targetYear: 2027 })).toBe(true);
+  it('requires only the grade on the grade step', () => {
+    expect(canAdvance('grade', {})).toBe(false);
+    expect(canAdvance('grade', { grade: 'grade12' })).toBe(true);
   });
 
   it('does not accept a blank name', () => {
@@ -29,12 +28,7 @@ describe('onboarding flow shape', () => {
   });
 
   it('lets the optional steps be passed without an answer', () => {
-    expect(isSkippable('referral')).toBe(true);
     expect(isSkippable('start')).toBe(true);
     expect(isSkippable('exam')).toBe(false);
-  });
-
-  it('offers the next three exam years', () => {
-    expect(targetYearChoices(2026)).toEqual([2027, 2028, 2029]);
   });
 });

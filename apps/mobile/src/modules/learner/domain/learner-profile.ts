@@ -125,12 +125,9 @@ export function initialFor(displayName: string): string {
   return [...normalizeDisplayName(displayName)][0]?.toLocaleUpperCase('tr-TR') ?? '?';
 }
 
-/** "YKS · Sayısal", or just "LGS" where there is no track. */
+/** The curriculum scope the profile actually receives in the current pilot. */
 export function describeProfile(profile: LearnerProfile): string {
-  const exam = profile.exam === 'yks' ? 'YKS' : 'LGS';
-  const track = profile.track === undefined ? null : TRACK_LABELS[profile.track];
-
-  return track === null ? exam : `${exam} · ${track}`;
+  return profile.exam === 'yks' ? `TYT Sosyal · ${profile.targetYear}` : 'LGS';
 }
 
 export const TRACK_LABELS: Record<StudyTrack, string> = {

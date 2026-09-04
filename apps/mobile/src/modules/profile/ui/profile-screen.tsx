@@ -2,6 +2,7 @@ import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 
 import type { Badge } from '@/modules/progress/domain/badge-policy';
 import type { ProfileViewModel } from '@/modules/profile/model/profile-view-model';
+import { Dino } from '@/shared/ui/dino/dino';
 import { AppText } from '@/shared/ui/components/app-text';
 import { Card } from '@/shared/ui/components/card';
 import { ChevronIcon, LockIcon, StarIcon, StreakIcon, TargetIcon } from '@/shared/ui/components/icons';
@@ -45,10 +46,13 @@ export function ProfileScreen({
     <Screen includeBottomInset={false} testID="profile-screen">
       <ScrollView contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
         <View style={styles.identity}>
-          <View style={styles.avatar}>
-            <AppText color="accentStrong" variant="headingXL">
-              {viewModel.initial}
-            </AppText>
+          <View
+            accessibilityLabel={viewModel.avatarId === 'initial' ? `${viewModel.displayName} avatarı` : 'Seçili avatar'}
+            style={[styles.avatar, avatarSurface(viewModel.avatarId)]}
+          >
+            {viewModel.avatarId === 'initial' ? (
+              <AppText color="accentStrong" variant="headingXL">{viewModel.initial}</AppText>
+            ) : viewModel.avatarId === 'dino' ? <Dino size={68} /> : null}
           </View>
           <AppText accessibilityRole="header" align="center" style={styles.name} variant="headingL">
             {viewModel.displayName}
@@ -170,6 +174,13 @@ export function ProfileScreen({
       <BottomTabBar activeTab="profil" onSelectTab={onSelectTab} />
     </Screen>
   );
+}
+
+function avatarSurface(avatarId: ProfileViewModel['avatarId']) {
+  if (avatarId === 'sky') return { backgroundColor: theme.colors.subject.physics.soft };
+  if (avatarId === 'violet') return { backgroundColor: theme.colors.subject.chemistry.soft };
+  if (avatarId === 'dino') return { backgroundColor: theme.colors.subject.history.soft };
+  return null;
 }
 
 function BadgeTile({ badge }: { badge: Badge }) {
