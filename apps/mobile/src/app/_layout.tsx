@@ -1,3 +1,6 @@
+import '@/shared/observability/bootstrap';
+
+import * as Sentry from '@sentry/react-native';
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
@@ -17,13 +20,17 @@ import {
 } from '@/modules/progress/application/progress-store';
 import { LATEST_SCHEMA_VERSION } from '@/modules/progress/infrastructure/migrations';
 import { APP_MODE, FEATURES } from '@/shared/config/app-config';
+import {
+  OBSERVABILITY_ENVIRONMENT,
+  OBSERVABILITY_RELEASE,
+} from '@/shared/observability/sentry-adapter';
 import { recordDiagnostics } from '@/shared/observability/observability';
 import { AppErrorBoundary } from '@/shared/ui/feedback/app-error-boundary';
 import { SplashGate } from '@/shared/ui/theme/splash-gate';
 import { theme } from '@/shared/ui/theme/tokens';
 import { AppTypographyProvider } from '@/shared/ui/theme/typography-provider';
 
-export default function RootLayout() {
+function RootLayout() {
   return (
     <SafeAreaProvider>
       <AppTypographyProvider>
@@ -49,6 +56,8 @@ function ReadyApplication() {
     recordDiagnostics({
       appMode: APP_MODE,
       contentVersion: getContentIndex().bundle.contentVersion,
+      environment: OBSERVABILITY_ENVIRONMENT,
+      release: OBSERVABILITY_RELEASE,
       schemaVersion: LATEST_SCHEMA_VERSION,
     });
   }, []);
@@ -74,3 +83,5 @@ function ReadyApplication() {
     </LearnerProfileProvider>
   );
 }
+
+export default Sentry.wrap(RootLayout);

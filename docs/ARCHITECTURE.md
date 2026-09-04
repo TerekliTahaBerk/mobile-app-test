@@ -58,8 +58,9 @@ lesson starts cleanly, while already committed history is preserved.
 Typed analytics, error-reporting, diagnostics, and build configuration seams
 live under `shared/observability` and `shared/config`. Application/UI boundaries
 emit stable curriculum identifiers only; domain modules do not import them.
-The shipped adapter is intentionally no-op until a production provider and
-privacy policy are selected.
+The production composition root installs a Sentry crash/error adapter behind
+environment and DSN gates. Development and preview retain the no-op adapter;
+provider failures remain outside the learning and persistence control flow.
 
 See [DECISIONS/0001-mobile-foundation.md](DECISIONS/0001-mobile-foundation.md) for the accepted foundation decision and [SECURITY.md](SECURITY.md) for trust boundaries.
 See [DECISIONS/0003-local-first-sqlite-progress.md](DECISIONS/0003-local-first-sqlite-progress.md) for the persistence decision.

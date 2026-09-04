@@ -43,11 +43,12 @@ This is the largest release blocker.
 
 ### 2. Production observability — engineering + product
 
-Typed analytics, error-reporting, diagnostics, and build configuration seams
-exist, and key onboarding/lesson/review/path events are instrumented. The active
-adapter is deliberately no-op: no crash/analytics provider, credentials,
-consent policy, retention policy, or remote configuration is deployed. Do not
-claim production monitoring until those external decisions are complete.
+The Sentry crash/error adapter, privacy scrub, production-only environment gate,
+and source-map configuration exist. Release operations must still configure the
+production DSN, organization/project values, sensitive source-map token,
+retention/deletion/access policy and alerts, then verify a symbolicated iOS and
+Android release-build exception. Do not claim production monitoring until that
+recorded end-to-end check and privacy review are complete.
 
 ### 3. Native acceptance and accessibility hardening — engineering
 
@@ -93,6 +94,7 @@ release blockers while they remain hidden.
 
 ## Next hardening work
 
-Select and privacy-review the production observability provider, then perform
-recorded iOS/Android restart, accessibility, and store-build acceptance passes.
+Configure and privacy-review the production observability project, verify a
+symbolicated release event, then perform recorded iOS/Android restart,
+accessibility, and store-build acceptance passes.
 None of that replaces the independent academic-content and store/legal blockers.

@@ -7,11 +7,17 @@
     "development": {
       "developmentClient": true,
       "distribution": "internal",
-      "channel": "development"
+      "channel": "development",
+      "env": {
+        "EXPO_PUBLIC_OBSERVABILITY_ENVIRONMENT": "development"
+      }
     },
     "preview": {
       "distribution": "internal",
       "channel": "preview",
+      "env": {
+        "EXPO_PUBLIC_OBSERVABILITY_ENVIRONMENT": "preview"
+      },
       "ios": { "simulator": false },
       "android": { "buildType": "apk" }
     },
@@ -19,7 +25,8 @@
       "channel": "production",
       "autoIncrement": true,
       "env": {
-        "EXPO_PUBLIC_APP_MODE": "productionPilot"
+        "EXPO_PUBLIC_APP_MODE": "productionPilot",
+        "EXPO_PUBLIC_OBSERVABILITY_ENVIRONMENT": "production"
       },
       "android": { "buildType": "app-bundle" }
     }

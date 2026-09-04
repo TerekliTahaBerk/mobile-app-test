@@ -37,6 +37,8 @@ export type ErrorContext = {
 export type DiagnosticSnapshot = {
   appMode: AppMode;
   contentVersion: string;
+  environment: string;
+  release: string;
   schemaVersion: number;
 };
 
@@ -72,7 +74,7 @@ export function recordDiagnostics(snapshot: DiagnosticSnapshot): void {
   safely(() => adapter.recordDiagnostics(snapshot));
 }
 
-/** Composition/test seam. Production currently leaves the no-op adapter active. */
+/** Composition/test seam. The production bootstrap installs the Sentry adapter. */
 export function setObservabilityAdapter(next: ObservabilityAdapter | null): void {
   adapter = next ?? noopAdapter;
 }
