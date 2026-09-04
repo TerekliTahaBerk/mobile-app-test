@@ -1,7 +1,7 @@
 node_modules/
 .expo/
 dist/
+dist-production-smoke/
 coverage/
 .DS_Store
 *.log
-

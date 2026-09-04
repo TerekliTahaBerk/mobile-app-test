@@ -17,4 +17,8 @@ jobs:
       - run: npm run lint
       - run: npm run typecheck
       - run: npm run content:production:check
-      - run: npm test
+      - run: npm run content:stats:check
+      - run: npm run test:coverage
+      - run: npm run doctor
+      - run: npm run audit:production
+      - run: npm run build:production:smoke

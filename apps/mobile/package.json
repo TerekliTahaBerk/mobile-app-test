@@ -7,13 +7,13 @@
     "@expo-google-fonts/jetbrains-mono": "^0.4.1",
     "@expo-google-fonts/manrope": "^0.4.2",
     "@expo-google-fonts/nunito": "^0.4.2",
-    "@sentry/react-native": "^8.25.0",
-    "expo": "~57.0.17",
-    "expo-constants": "~57.0.14",
-    "expo-font": "~57.0.1",
-    "expo-linking": "~57.0.8",
-    "expo-notifications": "~57.0.15",
-    "expo-router": "~57.0.17",
+    "@sentry/react-native": "~7.11.0",
+    "expo": "~57.0.20",
+    "expo-constants": "~57.0.17",
+    "expo-font": "~57.0.3",
+    "expo-linking": "~57.0.9",
+    "expo-notifications": "~57.0.17",
+    "expo-router": "~57.0.19",
     "expo-splash-screen": "~57.0.8",
     "expo-sqlite": "~57.0.2",
     "expo-status-bar": "~57.0.1",
@@ -39,6 +39,7 @@
   },
   "scripts": {
     "build": "expo export --platform web",
+    "build:production:smoke": "EXPO_PUBLIC_APP_MODE=productionPilot EXPO_PUBLIC_OBSERVABILITY_ENVIRONMENT=production expo export --platform web --output-dir dist-production-smoke",
     "start": "expo start",
     "android": "expo start --android",
     "content:production:check": "jest --runInBand __tests__/domain/production-content.test.ts",
@@ -46,7 +47,8 @@
     "web": "expo start --web",
     "lint": "expo lint",
     "typecheck": "tsc --noEmit",
-    "test": "jest --runInBand"
+    "test": "jest --runInBand",
+    "test:coverage": "jest --runInBand --coverage"
   },
   "private": true
 }
