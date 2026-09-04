@@ -25,6 +25,10 @@ platform adapter --------------------> implementation
 - Domain code cannot import React, React Native, Expo Router, Supabase, or UI components.
 - Content and curriculum data cannot be embedded in screens.
 
+ESLint enforces the domain boundary for every `src/modules/*/domain` file. It
+rejects React, React Native, Expo, SQLite, application, infrastructure, platform,
+and UI imports before tests or a release build can proceed.
+
 State is device-local and accountless in the production pilot. An active lesson uses a deterministic
 feature-scoped reducer in `modules/learning/domain`, bridged to React by a
 single provider in `modules/learning/application`. Narrow application-owned

@@ -38,6 +38,18 @@ npm run typecheck
 npm test
 ```
 
+Before cutting a release, run the same deterministic gate as CI:
+
+```sh
+npm run quality:release
+```
+
+That command adds full-source Jest coverage thresholds, production-content
+approval validation, generated content-statistics drift detection, Expo Doctor,
+the production dependency vulnerability policy, and a production-mode static
+export smoke test. When authored content changes, refresh the tracked statistics
+with `npm run content:stats:update`.
+
 `npm run dev` starts Expo for `apps/mobile`. Pass Expo arguments after `--`, for example `npm run dev -- --offline`.
 
 `npm run build` creates the static Expo web export in `apps/mobile/dist`. Vercel

@@ -29,8 +29,8 @@ production observability has no deployed provider, and store/legal work is incom
 | Account model | Explicit device-local/accountless pilot; no fake account infrastructure |
 | Fake-feature gating | League, Plus, quests, hearts, and gems off in production pilot |
 | Observability foundation | Typed privacy-conscious events, error/diagnostic seams, no-op adapter |
-| Automated quality | Lint, strict typecheck, domain/UI/SQLite contract tests |
-| CI | GitHub Actions runs install, lint, strict typecheck, and tests on pushes/PRs |
+| Automated quality | Lint with architecture boundaries, strict typecheck, full-source coverage thresholds, domain/UI/SQLite contract tests |
+| CI | Reproducible release gate covers content approval/stats, tests/coverage, Expo Doctor, production dependency audit, and production export smoke |
 
 ## Blockers
 
@@ -82,11 +82,11 @@ release blockers while they remain hidden.
 
 ## Smaller submission items
 
-- Track the current npm audit result: 11 moderate, 0 high, 0 critical findings,
-  all in the Expo config/build-tool chain through `xcode`/`uuid`. Expo Doctor
-  passes 21/21 checks; npm's offered remediation is an incompatible Expo 57 →
-  46 downgrade, so resolution must come through an Expo-compatible upstream
-  update rather than a forced audit fix.
+- Track the current npm audit result: 15 moderate, 0 high, 0 critical findings,
+  in Expo Router's query parser and the Expo config/build-tool chain. npm's
+  offered remediations cross the pinned Expo compatibility boundary, so
+  resolution must come through compatible upstream updates rather than a
+  forced audit fix. CI fails on any high or critical production advisory.
 - Replace the placeholder with production-resolution Dino art for large 3× placements.
 - Confirm launch art, final app icon, and naming.
 - Define offline/support copy and local-data reset/support procedures.

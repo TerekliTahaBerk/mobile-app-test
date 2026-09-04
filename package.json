@@ -7,11 +7,21 @@
   ],
   "scripts": {
     "build": "npm --workspace @tyt-social/mobile run build",
+    "build:production:smoke": "npm --workspace @tyt-social/mobile run build:production:smoke",
+    "content:stats:check": "node scripts/check-content-stats.mjs",
+    "content:stats:update": "node scripts/check-content-stats.mjs --write",
     "content:production:check": "npm --workspace @tyt-social/mobile run content:production:check",
     "dev": "npm --workspace @tyt-social/mobile run start --",
+    "doctor": "expo-doctor apps/mobile",
     "studio": "npm --workspace @tyt-social/studio run dev",
     "lint": "npm run lint --workspaces --if-present",
+    "quality:release": "npm run lint && npm run typecheck && npm run content:production:check && npm run content:stats:check && npm run test:coverage && npm run doctor && npm run audit:production && npm run build:production:smoke",
+    "audit:production": "npm audit --omit=dev --audit-level=high",
+    "test:coverage": "npm --workspace @tyt-social/mobile run test:coverage",
     "typecheck": "npm run typecheck --workspaces --if-present",
     "test": "npm run test --workspaces --if-present"
+  },
+  "devDependencies": {
+    "expo-doctor": "1.20.4"
   }
 }

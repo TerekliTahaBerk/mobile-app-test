@@ -1,4 +1,5 @@
 const preset = require('jest-expo/jest-preset');
+const path = require('node:path');
 
 /**
  * The preset derives `@/*` and `@/assets/*` from tsconfig, but emits `@/*`
@@ -11,6 +12,14 @@ const { '^@/(.*)$': srcAlias, '^@/assets/(.*)$': assetAlias, ...rest } = preset.
 module.exports = {
   preset: 'jest-expo',
   moduleNameMapper: {
+    '^expo-modules-core$': path.join(
+      path.dirname(require.resolve('expo/package.json')),
+      'node_modules/expo-modules-core/src/index.ts',
+    ),
+    '^expo-modules-core/(.*)$': path.join(
+      path.dirname(require.resolve('expo/package.json')),
+      'node_modules/expo-modules-core/$1',
+    ),
     '^@/assets/(.*)$': assetAlias,
     '^@/(.*)$': srcAlias,
     ...rest,
@@ -19,4 +28,13 @@ module.exports = {
   // Only *.test.* files are suites, so __tests__/support can hold helpers.
   testMatch: ['**/?(*.)+(test).[jt]s?(x)'],
   testPathIgnorePatterns: ['/node_modules/', '/dist/'],
+  collectCoverageFrom: ['src/**/*.{ts,tsx}', '!src/**/*.d.ts'],
+  coverageThreshold: {
+    global: {
+      branches: 58,
+      functions: 69,
+      lines: 68,
+      statements: 68,
+    },
+  },
 };
