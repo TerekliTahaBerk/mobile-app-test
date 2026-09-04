@@ -4,24 +4,29 @@ import { useEffect, useState } from 'react';
 import { useLearnerProfile } from '@/modules/learner/application/learner-profile-store';
 import type { ReminderTime } from '@/modules/learner/domain/learner-profile';
 import { ReminderSettingsScreen } from '@/modules/reminders/ui/reminder-settings-screen';
-import { deviceScheduler } from '@/shared/notifications/notifications';
+import {
+  deviceScheduler,
+  type NotificationPermissionStatus,
+} from '@/shared/notifications/notifications';
 import { MessageScreen } from '@/shared/ui/feedback/message-screen';
 
 export default function SettingsRoute() {
   const router = useRouter();
   const store = useLearnerProfile();
-  const [permitted, setPermitted] = useState(true);
+  const [permissionStatus, setPermissionStatus] =
+    useState<NotificationPermissionStatus>('undetermined');
+  const [permissionRequestFailed, setPermissionRequestFailed] = useState(false);
   const [error, setError] = useState<Error | null>(null);
   const profile = store.status === 'ready' ? store.profile : null;
   const goBack = () => (router.canGoBack() ? router.back() : router.replace('/profil'));
 
-  // Permission can be revoked from the phone at any time, so the screen asks
-  // the system rather than trusting what the learner once agreed to.
+  // Permission can be revoked from the phone at any time. This is deliberately
+  // a read-only check: opening Settings must never display the OS prompt.
   useEffect(() => {
     void deviceScheduler
-      .ensurePermission()
-      .then(setPermitted)
-      .catch(() => setPermitted(false));
+      .getPermissionStatus()
+      .then(setPermissionStatus)
+      .catch(() => setPermissionStatus('denied'));
   }, []);
 
   if (profile === null) {
@@ -62,8 +67,27 @@ export default function SettingsRoute() {
       enabled={profile.remindersEnabled}
       onBack={goBack}
       onChangeTime={(reminderTime) => save({ reminderTime })}
-      onToggle={(remindersEnabled) => save({ remindersEnabled })}
-      permitted={permitted}
+      onToggle={(remindersEnabled) => {
+        if (!remindersEnabled) {
+          setPermissionRequestFailed(false);
+          save({ remindersEnabled: false });
+          return;
+        }
+
+        void deviceScheduler
+          .requestPermission()
+          .then((status) => {
+            setPermissionStatus(status);
+            setPermissionRequestFailed(status !== 'granted');
+            save({ remindersEnabled: status === 'granted' });
+          })
+          .catch(() => {
+            setPermissionStatus('denied');
+            setPermissionRequestFailed(true);
+          });
+      }}
+      permissionStatus={permissionStatus}
+      showPermissionWarning={profile.remindersEnabled || permissionRequestFailed}
       time={profile.reminderTime ?? '20:00'}
     />
   );

@@ -48,7 +48,13 @@ export function useReminders(
     lastPlan.current = fingerprint;
 
     void (async () => {
-      if (reminders.length > 0 && !(await scheduler.ensurePermission())) {
+      if (
+        reminders.length > 0 &&
+        (await scheduler.getPermissionStatus()) !== 'granted'
+      ) {
+        // Permission may have been revoked outside the app. Remove any stale
+        // requests and never turn a background reconciliation into a prompt.
+        await scheduler.reconcile([]);
         return;
       }
       await scheduler.reconcile(reminders);

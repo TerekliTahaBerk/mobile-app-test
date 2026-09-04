@@ -2,6 +2,7 @@ import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 
 import type { ReminderTime } from '@/modules/learner/domain/learner-profile';
 import { REMINDER_CHOICES } from '@/modules/onboarding/model/onboarding-steps';
+import type { NotificationPermissionStatus } from '@/shared/notifications/notifications';
 import { AppText } from '@/shared/ui/components/app-text';
 import { Card } from '@/shared/ui/components/card';
 import { BackIcon } from '@/shared/ui/components/icons';
@@ -14,8 +15,8 @@ type ReminderSettingsScreenProps = {
   onBack: () => void;
   onChangeTime: (time: ReminderTime) => void;
   onToggle: (enabled: boolean) => void;
-  /** False once the learner has refused the system permission. */
-  permitted: boolean;
+  permissionStatus: NotificationPermissionStatus;
+  showPermissionWarning: boolean;
   time: ReminderTime;
 };
 
@@ -29,7 +30,8 @@ export function ReminderSettingsScreen({
   onBack,
   onChangeTime,
   onToggle,
-  permitted,
+  permissionStatus,
+  showPermissionWarning,
   time,
 }: ReminderSettingsScreenProps) {
   return (
@@ -100,7 +102,7 @@ export function ReminderSettingsScreen({
           ) : null}
         </Card>
 
-        {enabled && !permitted ? (
+        {showPermissionWarning && permissionStatus === 'denied' ? (
           <Card
             borderColor={theme.colors.status.dangerBorder}
             style={styles.card}
@@ -111,8 +113,8 @@ export function ReminderSettingsScreen({
               Bildirim izni verilmedi
             </AppText>
             <AppText color="secondary" style={styles.detail} variant="proseS">
-              Hatırlatma açık görünüyor ama telefonun bildirim izni kapalı olduğu için
-              gönderilemiyor. İzni cihaz ayarlarından açabilirsin.
+              Telefonun bildirim izni kapalı. Hatırlatmaları kullanmak istersen izni cihaz
+              ayarlarından açabilirsin.
             </AppText>
           </Card>
         ) : null}

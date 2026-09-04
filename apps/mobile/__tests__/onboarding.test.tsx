@@ -87,8 +87,73 @@ describe('onboarding', () => {
       dailyGoal: 3,
       displayName: 'Ege',
       exam: 'yks',
+      remindersEnabled: false,
       targetYear: 2027,
       track: 'quantitative',
+    });
+  });
+
+  it('requests permission only after the learner explicitly enables reminders', async () => {
+    const requestPermission = jest.fn().mockResolvedValue('granted');
+    await render(
+      <OnboardingScreen
+        currentYear={2026}
+        onFinish={jest.fn()}
+        onRequestReminderPermission={requestPermission}
+      />,
+    );
+    await fireEvent.press(screen.getByTestId('onboarding-start'));
+
+    expect(requestPermission).not.toHaveBeenCalled();
+
+    await fireEvent.press(screen.getByTestId('onboarding-exam-yks'));
+    await fireEvent.press(screen.getByTestId('onboarding-next'));
+    await fireEvent.press(screen.getByTestId('onboarding-track-quantitative'));
+    await fireEvent.press(screen.getByTestId('onboarding-next'));
+    await fireEvent.press(screen.getByTestId('onboarding-grade-grade12'));
+    await fireEvent.press(screen.getByTestId('onboarding-year-2027'));
+    await fireEvent.press(screen.getByTestId('onboarding-next'));
+    await fireEvent.changeText(screen.getByTestId('onboarding-name'), 'Ege');
+    await fireEvent.press(screen.getByTestId('onboarding-next'));
+    await fireEvent.press(screen.getByTestId('onboarding-skip'));
+    await fireEvent.press(screen.getByTestId('onboarding-skip'));
+    await fireEvent.press(screen.getByTestId('onboarding-goal-3'));
+    await fireEvent.press(screen.getByTestId('onboarding-reminder-switch'));
+
+    await waitFor(() => expect(requestPermission).toHaveBeenCalledTimes(1));
+    await waitFor(() =>
+      expect(
+        screen.getByTestId('onboarding-reminder-switch').props.accessibilityState,
+      ).toMatchObject({ checked: true }),
+    );
+  });
+
+  it('stays safely off when reminder permission is denied', async () => {
+    await render(
+      <OnboardingScreen
+        currentYear={2026}
+        onFinish={jest.fn()}
+        onRequestReminderPermission={jest.fn().mockResolvedValue('denied')}
+      />,
+    );
+    await fireEvent.press(screen.getByTestId('onboarding-start'));
+    await fireEvent.press(screen.getByTestId('onboarding-exam-yks'));
+    await fireEvent.press(screen.getByTestId('onboarding-next'));
+    await fireEvent.press(screen.getByTestId('onboarding-track-quantitative'));
+    await fireEvent.press(screen.getByTestId('onboarding-next'));
+    await fireEvent.press(screen.getByTestId('onboarding-grade-grade12'));
+    await fireEvent.press(screen.getByTestId('onboarding-year-2027'));
+    await fireEvent.press(screen.getByTestId('onboarding-next'));
+    await fireEvent.changeText(screen.getByTestId('onboarding-name'), 'Ege');
+    await fireEvent.press(screen.getByTestId('onboarding-next'));
+    await fireEvent.press(screen.getByTestId('onboarding-skip'));
+    await fireEvent.press(screen.getByTestId('onboarding-skip'));
+    await fireEvent.press(screen.getByTestId('onboarding-goal-3'));
+    await fireEvent.press(screen.getByTestId('onboarding-reminder-switch'));
+
+    await waitFor(() => expect(screen.getByTestId('onboarding-reminder-denied')).toBeTruthy());
+    expect(screen.getByTestId('onboarding-reminder-switch').props.accessibilityState).toMatchObject({
+      checked: false,
     });
   });
 

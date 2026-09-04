@@ -9,7 +9,8 @@ function renderSettings(overrides: Partial<Parameters<typeof ReminderSettingsScr
       onBack={jest.fn()}
       onChangeTime={jest.fn()}
       onToggle={jest.fn()}
-      permitted
+      permissionStatus="granted"
+      showPermissionWarning
       time="20:00"
       {...overrides}
     />,
@@ -39,13 +40,17 @@ describe('reminder settings', () => {
   });
 
   it('says so when the phone will not deliver what the switch promises', async () => {
-    await renderSettings({ permitted: false });
+    await renderSettings({ permissionStatus: 'denied' });
 
     expect(screen.getByTestId('reminder-permission-warning')).toBeTruthy();
   });
 
   it('keeps quiet about permission while the reminder is off', async () => {
-    await renderSettings({ enabled: false, permitted: false });
+    await renderSettings({
+      enabled: false,
+      permissionStatus: 'denied',
+      showPermissionWarning: false,
+    });
 
     expect(screen.queryByTestId('reminder-permission-warning')).toBeNull();
   });
