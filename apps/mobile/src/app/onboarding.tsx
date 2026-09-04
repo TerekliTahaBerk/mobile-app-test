@@ -5,6 +5,7 @@ import { useLessonSession } from '@/modules/learning/application/lesson-session-
 import { OnboardingScreen } from '@/modules/onboarding/ui/onboarding-screen';
 import { trackEvent } from '@/shared/observability/observability';
 import { FEATURES } from '@/shared/config/app-config';
+import { deviceScheduler } from '@/shared/notifications/notifications';
 
 export default function OnboardingRoute() {
   const router = useRouter();
@@ -14,6 +15,7 @@ export default function OnboardingRoute() {
   return (
     <OnboardingScreen
       currentYear={new Date().getFullYear()}
+      onRequestReminderPermission={() => deviceScheduler.requestPermission()}
       showLgsOption={FEATURES.lgs}
       onFinish={async (profile) => {
         await profileStore.save(profile);

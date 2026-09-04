@@ -36,11 +36,14 @@ import { Dino } from '@/shared/ui/dino/dino';
 import { DinoSpeech } from '@/shared/ui/dino/dino-speech';
 import { theme } from '@/shared/ui/theme/tokens';
 import { trackEvent } from '@/shared/observability/observability';
+import type { NotificationPermissionStatus } from '@/shared/notifications/notifications';
 
 type OnboardingScreenProps = {
   /** Injected so the year choices do not depend on a clock inside the view. */
   currentYear: number;
   onFinish: (profile: LearnerProfile) => Promise<void> | void;
+  /** Called only when the learner explicitly turns reminders on. */
+  onRequestReminderPermission?: () => Promise<NotificationPermissionStatus>;
   /** There is no account system yet; the sign-in affordance is not offered. */
   onSignIn?: (() => void) | undefined;
   /** Keeps the unsupported LGS choice available only in design previews. */
@@ -54,8 +57,9 @@ type Stage = { kind: 'question'; index: number } | { kind: 'summary' } | { kind:
  * account form anywhere — the learner is studying within a minute of opening
  * the app, and the answers only shape what they see first.
  */
-export function OnboardingScreen({ currentYear, onFinish, onSignIn, showLgsOption = true }: OnboardingScreenProps) {
-  const [draft, setDraft] = useState<OnboardingDraft>({ remindersEnabled: true });
+export function OnboardingScreen({ currentYear, onFinish, onRequestReminderPermission, onSignIn, showLgsOption = true }: OnboardingScreenProps) {
+  const [draft, setDraft] = useState<OnboardingDraft>({ remindersEnabled: false });
+  const [reminderPermissionDenied, setReminderPermissionDenied] = useState(false);
   const [finishError, setFinishError] = useState<Error | null>(null);
   const [isFinishing, setIsFinishing] = useState(false);
   const [stage, setStage] = useState<Stage>({ kind: 'welcome' });
@@ -63,6 +67,21 @@ export function OnboardingScreen({ currentYear, onFinish, onSignIn, showLgsOptio
   const steps = useMemo(() => applicableSteps(draft), [draft]);
   const patch = (next: Partial<OnboardingDraft>) =>
     setDraft((current) => ({ ...current, ...next }));
+  const toggleReminders = () => {
+    if (draft.remindersEnabled === true) {
+      patch({ remindersEnabled: false });
+      return;
+    }
+
+    setReminderPermissionDenied(false);
+    void (onRequestReminderPermission?.() ?? Promise.resolve('granted'))
+      .then((status) => {
+        const granted = status === 'granted';
+        patch({ remindersEnabled: granted });
+        setReminderPermissionDenied(!granted);
+      })
+      .catch(() => setReminderPermissionDenied(true));
+  };
 
   if (stage.kind === 'welcome') {
     return (
@@ -211,6 +230,8 @@ export function OnboardingScreen({ currentYear, onFinish, onSignIn, showLgsOptio
           currentYear={currentYear}
           draft={draft}
           onPatch={patch}
+          onToggleReminders={toggleReminders}
+          reminderPermissionDenied={reminderPermissionDenied}
           showLgsOption={showLgsOption}
           step={step}
         />
@@ -240,11 +261,13 @@ type StepQuestionProps = {
   currentYear: number;
   draft: OnboardingDraft;
   onPatch: (next: Partial<OnboardingDraft>) => void;
+  onToggleReminders: () => void;
+  reminderPermissionDenied: boolean;
   showLgsOption: boolean;
   step: OnboardingStepId;
 };
 
-function StepQuestion({ currentYear, draft, onPatch, showLgsOption, step }: StepQuestionProps) {
+function StepQuestion({ currentYear, draft, onPatch, onToggleReminders, reminderPermissionDenied, showLgsOption, step }: StepQuestionProps) {
   switch (step) {
     case 'exam':
       return (
@@ -501,7 +524,7 @@ function StepQuestion({ currentYear, draft, onPatch, showLgsOption, step }: Step
                 accessibilityLabel="Seri hatırlatması"
                 accessibilityRole="switch"
                 accessibilityState={{ checked: draft.remindersEnabled === true }}
-                onPress={() => onPatch({ remindersEnabled: draft.remindersEnabled !== true })}
+                onPress={onToggleReminders}
                 style={[
                   styles.switch,
                   draft.remindersEnabled === true ? styles.switchOn : styles.switchOff,
@@ -526,6 +549,11 @@ function StepQuestion({ currentYear, draft, onPatch, showLgsOption, step }: Step
                   />
                 ))}
               </View>
+            ) : null}
+            {reminderPermissionDenied ? (
+              <AppText color="danger" style={styles.reminderDetail} testID="onboarding-reminder-denied" variant="proseXS">
+                Bildirim izni verilmedi. Sorun değil; hatırlatmaları daha sonra Ayarlar’dan açabilirsin.
+              </AppText>
             ) : null}
           </View>
         </>
