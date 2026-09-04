@@ -52,7 +52,7 @@
       "id": "exercise.history.time.001.card01",
       "kind": "flashcard",
       "provenance": {
-        "author": "Online Dershanem engineering",
+        "author": "Tekrarla engineering",
         "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
         "reviewStatus": "draft"
       },
@@ -87,7 +87,7 @@
       ],
       "prompt": "Hicri takvimi miladi takvimden ayıran temel özellik nedir?",
       "provenance": {
-        "author": "Online Dershanem engineering",
+        "author": "Tekrarla engineering",
         "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
         "reviewStatus": "draft"
       },
@@ -103,7 +103,7 @@
       "id": "exercise.history.time.001.tf01",
       "kind": "trueFalse",
       "provenance": {
-        "author": "Online Dershanem engineering",
+        "author": "Tekrarla engineering",
         "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
         "reviewStatus": "draft"
       },
@@ -139,7 +139,7 @@
       ],
       "prompt": "Tarih öncesi çağlar ile tarihî çağları ayıran ölçüt aşağıdakilerden hangisidir?",
       "provenance": {
-        "author": "Online Dershanem engineering",
+        "author": "Tekrarla engineering",
         "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
         "reviewStatus": "draft"
       },
@@ -179,7 +179,7 @@
       "kind": "ordering",
       "prompt": "Çağları eskiden yeniye sırala.",
       "provenance": {
-        "author": "Online Dershanem engineering",
+        "author": "Tekrarla engineering",
         "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
         "reviewStatus": "draft"
       },
@@ -229,7 +229,7 @@
       "id": "exercise.history.eras.002.blank01",
       "kind": "fillBlank",
       "provenance": {
-        "author": "Online Dershanem engineering",
+        "author": "Tekrarla engineering",
         "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
         "reviewStatus": "draft"
       },
@@ -272,7 +272,7 @@
       ],
       "prompt": "Hicri takvimin başlangıç olayı hangisidir?",
       "provenance": {
-        "author": "Online Dershanem engineering",
+        "author": "Tekrarla engineering",
         "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
         "reviewStatus": "draft"
       },
@@ -288,7 +288,7 @@
       "id": "exercise.history.time.003.tf01",
       "kind": "trueFalse",
       "provenance": {
-        "author": "Online Dershanem engineering",
+        "author": "Tekrarla engineering",
         "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
         "reviewStatus": "draft"
       },
@@ -324,7 +324,7 @@
       ],
       "prompt": "Miladi takvimin başlangıç olarak kabul ettiği olay nedir?",
       "provenance": {
-        "author": "Online Dershanem engineering",
+        "author": "Tekrarla engineering",
         "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
         "reviewStatus": "draft"
       },
@@ -340,7 +340,7 @@
       "id": "exercise.history.time.004.tf01",
       "kind": "trueFalse",
       "provenance": {
-        "author": "Online Dershanem engineering",
+        "author": "Tekrarla engineering",
         "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
         "reviewStatus": "draft"
       },
@@ -376,7 +376,7 @@
       ],
       "prompt": "1453 yılı hangi yüzyılda yer alır?",
       "provenance": {
-        "author": "Online Dershanem engineering",
+        "author": "Tekrarla engineering",
         "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
         "reviewStatus": "draft"
       },
@@ -411,7 +411,7 @@
       ],
       "prompt": "Hicri takvimde bir yıl yaklaşık kaç gündür?",
       "provenance": {
-        "author": "Online Dershanem engineering",
+        "author": "Tekrarla engineering",
         "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
         "reviewStatus": "draft"
       },
@@ -446,7 +446,7 @@
       ],
       "prompt": "Türkiye'de miladi takvim hangi yılın başında yürürlüğe girmiştir?",
       "provenance": {
-        "author": "Online Dershanem engineering",
+        "author": "Tekrarla engineering",
         "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
         "reviewStatus": "draft"
       },
@@ -481,7 +481,7 @@
       ],
       "prompt": "Orta Çağ'ın başlangıcı olarak kabul edilen olay nedir?",
       "provenance": {
-        "author": "Online Dershanem engineering",
+        "author": "Tekrarla engineering",
         "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
         "reviewStatus": "draft"
       },
@@ -516,7 +516,7 @@
       ],
       "prompt": "Yeni Çağ'ı başlatan olay nedir?",
       "provenance": {
-        "author": "Online Dershanem engineering",
+        "author": "Tekrarla engineering",
         "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
         "reviewStatus": "draft"
       },
@@ -532,7 +532,7 @@
       "id": "exercise.history.eras.003.tf01",
       "kind": "trueFalse",
       "provenance": {
-        "author": "Online Dershanem engineering",
+        "author": "Tekrarla engineering",
         "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
         "reviewStatus": "draft"
       },
@@ -555,7 +555,7 @@
       ],
       "id": "lesson.history.time.001",
       "provenance": {
-        "author": "Online Dershanem engineering",
+        "author": "Tekrarla engineering",
         "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
         "reviewStatus": "draft"
       },
@@ -575,7 +575,7 @@
       ],
       "id": "lesson.history.eras.002",
       "provenance": {
-        "author": "Online Dershanem engineering",
+        "author": "Tekrarla engineering",
         "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
         "reviewStatus": "draft"
       },
@@ -594,7 +594,7 @@
       ],
       "id": "lesson.history.time.003",
       "provenance": {
-        "author": "Online Dershanem engineering",
+        "author": "Tekrarla engineering",
         "note": "Dikey dilim doğrulaması için yazılmış özgün taslak içerik. Akademik incelemeden geçmedi.",
         "reviewStatus": "draft"
       },

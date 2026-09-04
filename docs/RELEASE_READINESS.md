@@ -64,15 +64,15 @@ manual scenario has linked evidence.
 
 ### 4. Store, privacy, and legal — product + legal
 
-- Confirm a controlled bundle identifier/domain; `com.tekrarla.app` is a placeholder.
+- App name settled as **Tekrarla**; bundle/package ID `com.tekrarla.app` confirmed as
+  production identifier in config. Trademark clearance is an external human step.
 - Publish the implemented `/gizlilik` privacy route on a controlled HTTPS origin
   and complete the drafted App Privacy/Data safety declarations in
   [`PRIVACY_RELEASE_PACKAGE.md`](PRIVACY_RELEASE_PACKAGE.md).
 - Obtain legal and release approval for the documented 13+ minor-user strategy.
 - Produce store descriptions, screenshots, keywords, and support URLs.
-- Confirm trademark clearance for the Online Dershanem working name; `tekrarla`
-  remains a technical identifier, not the cleared commercial name.
 - Confirm commercial ownership/licensing and production-resolution Dino art.
+- See `docs/STORE_SUBMISSION_CHECKLIST.md` for the full asset/legal/metadata checklist.
 
 ### 5. Device-only progress disclosure — product
 

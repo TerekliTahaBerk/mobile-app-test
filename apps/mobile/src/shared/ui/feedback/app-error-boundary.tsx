@@ -32,7 +32,7 @@ export class AppErrorBoundary extends Component<AppErrorBoundaryProps, AppErrorB
   }
 
   componentDidCatch(error: Error, info: ErrorInfo) {
-    console.error('[Online Dershanem] Beklenmeyen bir hata yakalandı:', error, info.componentStack);
+    console.error('[Tekrarla] Beklenmeyen bir hata yakalandı:', error, info.componentStack);
     reportError(error, { componentStack: info.componentStack });
     this.props.onError?.(error, info);
   }

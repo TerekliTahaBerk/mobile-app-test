@@ -1,8 +1,13 @@
 # Brand identity
 
-## Working name
+## App name
 
-**Online Dershanem** — the learner's own online cram school, in their pocket. The name is a working one: `slug`, `scheme`, and the store bundle identifiers still carry the earlier `tekrarla` name and are deliberately unchanged, because renaming an identifier orphans the EAS project and the store listing. Settle the name commercially before touching those.
+**Tekrarla** — the learner repeats, the streak holds. The app name is settled;
+`slug`, `scheme`, bundle identifier (`com.tekrarla.app`), and Android package
+name intentionally match the name and are not subject to further rename.
+
+> Trademark clearance and App Store / Google Play name-registration are external
+> human steps — see `docs/STORE_SUBMISSION_CHECKLIST.md`.
 
 ## What the product is
 
@@ -53,7 +58,7 @@ Green is the only action colour. Rose is only ever a setback. Amber is only ever
 
 ## Open identity decisions
 
-- The commercial name, and whether the `tekrarla` identifiers get migrated with it.
-- App icon and splash artwork, which still carry the previous brand.
+- Trademark clearance for **Tekrarla** — external human step; see `docs/STORE_SUBMISSION_CHECKLIST.md`.
+- App icon and splash artwork (final production-resolution versions not yet in repo).
 - Whether a dedicated setback pose is needed; current setback moments reuse the
   general pose with a subdued tone.

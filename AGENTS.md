@@ -1,6 +1,6 @@
 # Repository guide
 
-This repository is the system of record for the Online Dershanem working product; `tekrarla` remains the transitional technical identifier. Read [README.md](README.md) for commands and [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) before changing application boundaries. Read [docs/BRAND_IDENTITY.md](docs/BRAND_IDENTITY.md) and [docs/DESIGN_SYSTEM.md](docs/DESIGN_SYSTEM.md) before changing user-facing visuals or copy.
+This repository is the system of record for **Tekrarla**; `tekrarla` is the technical identifier used in slug, scheme, bundle ID, and package name. Read [README.md](README.md) for commands and [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) before changing application boundaries. Read [docs/BRAND_IDENTITY.md](docs/BRAND_IDENTITY.md) and [docs/DESIGN_SYSTEM.md](docs/DESIGN_SYSTEM.md) before changing user-facing visuals or copy.
 
 ## Permanent instructions
 

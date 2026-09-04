@@ -94,7 +94,7 @@ export function pathNodeIdFor(unitId: string, order: number): string {
 }
 
 const DRAFT = {
-  author: 'Online Dershanem engineering',
+  author: 'Tekrarla engineering',
   note: 'Stüdyoda yazıldı. Akademik incelemeden geçmedi.',
   reviewStatus: 'draft',
 };

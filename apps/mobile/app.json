@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Online Dershanem",
+    "name": "Tekrarla",
     "slug": "tekrarla",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -14,7 +14,7 @@
       "buildNumber": "1",
       "supportsTablet": false,
       "infoPlist": {
-        "CFBundleDisplayName": "Online Dershanem",
+        "CFBundleDisplayName": "Tekrarla",
         "ITSAppUsesNonExemptEncryption": false
       }
     },

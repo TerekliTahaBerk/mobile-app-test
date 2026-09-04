@@ -85,7 +85,7 @@ function safely(operation: () => void): void {
     operation();
   } catch (cause) {
     if (__DEV__) {
-      console.warn('[Online Dershanem] Gözlemlenebilirlik adaptörü başarısız:', cause);
+      console.warn('[Tekrarla] Gözlemlenebilirlik adaptörü başarısız:', cause);
     }
   }
 }

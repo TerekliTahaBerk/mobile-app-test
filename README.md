@@ -1,8 +1,8 @@
-# Online Dershanem
+# Tekrarla
 
-Mobile-first, gamified exam preparation for Turkish students. Online Dershanem
-is the working product name; `tekrarla` remains in technical identifiers until
-commercial name and trademark clearance are complete.
+Mobile-first, gamified exam preparation for Turkish students. The app name is
+**Tekrarla**; `tekrarla` is also used as the slug, scheme, bundle identifier
+(`com.tekrarla.app`), and Android package name.
 
 The production pilot is limited to TYT Sosyal Bilimler. The compiled 2027 draft
 bundle currently makes only Tarih usable: 55 lessons across 25 units, 55 path
