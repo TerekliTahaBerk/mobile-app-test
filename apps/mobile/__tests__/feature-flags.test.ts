@@ -29,6 +29,7 @@ describe('production pilot feature gates', () => {
     expect(featuresForMode('productionPilot')).toEqual({
       heartsEconomy: false,
       league: false,
+      lgs: false,
       plus: false,
     });
   });
@@ -37,6 +38,7 @@ describe('production pilot feature gates', () => {
     expect(featuresForMode('designPreview')).toEqual({
       heartsEconomy: true,
       league: true,
+      lgs: true,
       plus: true,
     });
   });

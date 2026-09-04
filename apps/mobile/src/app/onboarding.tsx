@@ -4,6 +4,7 @@ import { useLearnerProfile } from '@/modules/learner/application/learner-profile
 import { useLessonSession } from '@/modules/learning/application/lesson-session-store';
 import { OnboardingScreen } from '@/modules/onboarding/ui/onboarding-screen';
 import { trackEvent } from '@/shared/observability/observability';
+import { FEATURES } from '@/shared/config/app-config';
 
 export default function OnboardingRoute() {
   const router = useRouter();
@@ -13,6 +14,7 @@ export default function OnboardingRoute() {
   return (
     <OnboardingScreen
       currentYear={new Date().getFullYear()}
+      showLgsOption={FEATURES.lgs}
       onFinish={async (profile) => {
         await profileStore.save(profile);
         trackEvent('onboarding_completed', { exam: 'yks' });

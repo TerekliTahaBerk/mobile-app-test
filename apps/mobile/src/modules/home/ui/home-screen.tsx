@@ -27,7 +27,7 @@ import { theme } from '@/shared/ui/theme/tokens';
 
 type HomeScreenProps = {
   onContinue: (card: ContinueCard) => void;
-  onOpenLeague: () => void;
+  onOpenLeague?: (() => void) | undefined;
   onSelectTab: (tab: AppTabKey) => void;
   onStartDailyPlan: () => void;
   viewModel: HomeViewModel;
@@ -116,7 +116,9 @@ export function HomeScreen({
           />
         )}
 
-        <LeagueBanner card={viewModel.leagueCard} onPress={onOpenLeague} />
+        {onOpenLeague === undefined ? null : (
+          <LeagueBanner card={viewModel.leagueCard} onPress={onOpenLeague} />
+        )}
       </ScrollView>
 
       <BottomTabBar activeTab="anasayfa" onSelectTab={onSelectTab} />

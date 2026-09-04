@@ -62,6 +62,16 @@ describe('onboarding', () => {
     });
   });
 
+  it('removes LGS from production onboarding', async () => {
+    await render(
+      <OnboardingScreen currentYear={2026} onFinish={jest.fn()} showLgsOption={false} />,
+    );
+    await fireEvent.press(screen.getByTestId('onboarding-start'));
+
+    expect(screen.queryByTestId('onboarding-exam-lgs')).toBeNull();
+    expect(screen.queryByText('LGS')).toBeNull();
+  });
+
   it('walks the whole YKS flow and hands back a complete profile', async () => {
     const onFinish = await renderOnboarding();
 

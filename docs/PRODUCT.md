@@ -17,9 +17,9 @@ That list is the intended pilot curriculum, not a claim that all four subjects
 are authored. The current compiled bundle contains a usable multi-unit Tarih
 draft path only. Other records in the bundle are catalogue/design entries with
 no units; production learner screens omit them until authored content exists.
-AYT and LGS are not supported product paths in this pilot. Onboarding stores a
-YKS preference but starts the learner in the available TYT content; LGS is
-visibly unavailable before profile completion.
+AYT and LGS are not supported product paths in this pilot. Production
+onboarding offers only YKS and starts the learner in the available TYT content;
+the LGS choice remains reviewable only in `designPreview`.
 
 Typical daily sessions are 5–15 minutes; a micro-lesson is expected to take 3–7 minutes. The product is not a generic LMS, video course, or question bank.
 

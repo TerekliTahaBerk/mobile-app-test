@@ -9,13 +9,20 @@ import { homePreviewData } from '@/modules/home/model/home-view-model';
 import { HomeScreen } from '@/modules/home/ui/home-screen';
 import { APP_MODE } from '@/shared/config/app-config';
 
-jest.mock('expo-router', () => ({
-  useRouter: () => ({
-    back: jest.fn(),
-    canGoBack: () => true,
-    replace: jest.fn(),
-  }),
-}));
+jest.mock('expo-router', () => {
+  const React = jest.requireActual<typeof import('react')>('react');
+  const { View } = jest.requireActual<typeof import('react-native')>('react-native');
+
+  return {
+    Redirect: ({ href }: { href: string }) =>
+      React.createElement(View, { testID: `redirect-${href === '/' ? 'home' : href}` }),
+    useRouter: () => ({
+      back: jest.fn(),
+      canGoBack: () => true,
+      replace: jest.fn(),
+    }),
+  };
+});
 
 describe('build-mode route gates', () => {
   it('keeps the hearts economy preview-only at its deep-link boundary', async () => {
@@ -27,30 +34,43 @@ describe('build-mode route gates', () => {
 
   it('keeps Premium preview-only at its deep-link boundary', async () => {
     await render(<PremiumRoute />);
-    expect(
-      screen.getByTestId(APP_MODE === 'productionPilot' ? 'premium-disabled' : 'premium-screen'),
-    ).toBeTruthy();
+    if (APP_MODE === 'productionPilot') {
+      expect(screen.getByTestId('redirect-home')).toBeTruthy();
+      expect(screen.queryByTestId('premium-disabled')).toBeNull();
+      expect(screen.queryByTestId('premium-screen')).toBeNull();
+    } else {
+      expect(screen.getByTestId('premium-screen')).toBeTruthy();
+    }
   });
 
   it('never exposes fictional league data through a production deep link', async () => {
     await render(<LeagueRoute />);
-    expect(
-      screen.getByTestId(APP_MODE === 'productionPilot' ? 'league-pending' : 'league-screen'),
-    ).toBeTruthy();
+    if (APP_MODE === 'productionPilot') {
+      expect(screen.getByTestId('redirect-home')).toBeTruthy();
+      expect(screen.queryByTestId('league-pending')).toBeNull();
+      expect(screen.queryByTestId('league-screen')).toBeNull();
+    } else {
+      expect(screen.getByTestId('league-screen')).toBeTruthy();
+    }
   });
 
-  it('keeps the league destination stable without exposing fictional standings', async () => {
+  it('shows league navigation only in design preview', async () => {
     await render(
       <HomeScreen
         onContinue={jest.fn()}
-        onOpenLeague={jest.fn()}
+        onOpenLeague={APP_MODE === 'designPreview' ? jest.fn() : undefined}
         onSelectTab={jest.fn()}
         onStartDailyPlan={jest.fn()}
         viewModel={homePreviewData}
       />,
     );
 
-    expect(screen.getByTestId('tab-lig')).toBeTruthy();
-    expect(screen.getByTestId('home-league-row')).toBeTruthy();
+    if (APP_MODE === 'productionPilot') {
+      expect(screen.queryByTestId('tab-lig')).toBeNull();
+      expect(screen.queryByTestId('home-league-row')).toBeNull();
+    } else {
+      expect(screen.getByTestId('tab-lig')).toBeTruthy();
+      expect(screen.getByTestId('home-league-row')).toBeTruthy();
+    }
   });
 });
