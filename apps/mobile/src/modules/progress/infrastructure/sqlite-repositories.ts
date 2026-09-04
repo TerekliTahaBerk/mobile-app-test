@@ -25,6 +25,7 @@ import type {
   DailyActivityRepository,
   HeartsRepository,
   LearnerProfileRepository,
+  LearnerDataRepository,
   LearnerStatisticsRepository,
   MasteryRepository,
   MistakeRepository,
@@ -904,6 +905,28 @@ export function createSqliteRepositories(db: SQLiteDatabase): ProgressRepositori
     },
   };
 
+  const learnerData: LearnerDataRepository = {
+    reset: async () => {
+      // Keep this list explicit. Adding a learner-owned table must be an
+      // intentional reset-policy decision, not an accidental omission.
+      await db.withExclusiveTransactionAsync(async (txn) => {
+        await txn.execAsync(`
+          DELETE FROM attempts;
+          DELETE FROM sessions;
+          DELETE FROM xp_transactions;
+          DELETE FROM path_progress;
+          DELETE FROM skill_mastery;
+          DELETE FROM review_items;
+          DELETE FROM mistakes;
+          DELETE FROM daily_activity;
+          DELETE FROM hearts;
+          DELETE FROM question_reports;
+          DELETE FROM learner_profile;
+        `);
+      });
+    },
+  };
+
   const completion: CompletionRepository = {
     completeSession: async (input) => {
       let result: SessionCompletionResult = {
@@ -926,6 +949,7 @@ export function createSqliteRepositories(db: SQLiteDatabase): ProgressRepositori
     completion,
     dailyActivity,
     hearts,
+    learnerData,
     mastery,
     mistakes,
     profile,

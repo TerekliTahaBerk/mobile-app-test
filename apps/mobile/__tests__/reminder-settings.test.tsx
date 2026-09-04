@@ -1,6 +1,7 @@
 import { fireEvent, render, screen } from '@testing-library/react-native';
 
 import { ReminderSettingsScreen } from '@/modules/reminders/ui/reminder-settings-screen';
+import { ResetProgressConfirmSheet } from '@/modules/reminders/ui/reset-progress-confirm-sheet';
 
 function renderSettings(overrides: Partial<Parameters<typeof ReminderSettingsScreen>[0]> = {}) {
   return render(
@@ -8,6 +9,7 @@ function renderSettings(overrides: Partial<Parameters<typeof ReminderSettingsScr
       enabled
       onBack={jest.fn()}
       onChangeTime={jest.fn()}
+      onRequestReset={jest.fn()}
       onToggle={jest.fn()}
       permissionStatus="granted"
       showPermissionWarning
@@ -59,5 +61,53 @@ describe('reminder settings', () => {
     await renderSettings();
 
     expect(screen.getByText('Hatırlatmalar cihazından çıkmaz')).toBeTruthy();
+    expect(screen.getByText('Verilerin yalnızca bu cihazda')).toBeTruthy();
+    expect(screen.getByText(/Cloud yedekleme yoktur/)).toBeTruthy();
+  });
+
+  it('requires a separate destructive confirmation flow', async () => {
+    const onRequestReset = jest.fn();
+    await renderSettings({ onRequestReset });
+
+    await fireEvent.press(screen.getByTestId('reset-progress-open'));
+    expect(onRequestReset).toHaveBeenCalledTimes(1);
+  });
+});
+
+describe('reset progress confirmation', () => {
+  it('does not allow a single tap or an incomplete confirmation to erase data', async () => {
+    const onConfirm = jest.fn();
+    const onChangeConfirmation = jest.fn();
+    const view = await render(
+      <ResetProgressConfirmSheet
+        confirmation=""
+        isResetting={false}
+        onCancel={jest.fn()}
+        onChangeConfirmation={onChangeConfirmation}
+        onConfirm={onConfirm}
+        visible
+      />,
+    );
+
+    const confirm = screen.getByTestId('reset-progress-confirm');
+    expect(confirm).toBeDisabled();
+    await fireEvent.press(confirm);
+    expect(onConfirm).not.toHaveBeenCalled();
+
+    await fireEvent.changeText(screen.getByTestId('reset-progress-confirmation-input'), 'SIFIR');
+    expect(onChangeConfirmation).toHaveBeenCalledWith('SIFIR');
+
+    await view.rerender(
+      <ResetProgressConfirmSheet
+        confirmation="SIFIRLA"
+        isResetting={false}
+        onCancel={jest.fn()}
+        onChangeConfirmation={onChangeConfirmation}
+        onConfirm={onConfirm}
+        visible
+      />,
+    );
+    await fireEvent.press(screen.getByTestId('reset-progress-confirm'));
+    expect(onConfirm).toHaveBeenCalledTimes(1);
   });
 });
