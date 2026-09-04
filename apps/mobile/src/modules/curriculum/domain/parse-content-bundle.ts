@@ -229,6 +229,9 @@ function provenance(value: unknown, at: string, c: Collector): void {
   text(record.author, `${at}.author`, c);
   if (typeof record.reviewStatus !== 'string' || !REVIEW_STATUSES.includes(record.reviewStatus)) {
     c.add(`${at}.reviewStatus`, `İnceleme durumu ${REVIEW_STATUSES.join(', ')} olmalı.`);
+  } else if (record.reviewStatus !== 'draft') {
+    text(record.reviewedBy, `${at}.reviewedBy`, c);
+    text(record.reviewedAt, `${at}.reviewedAt`, c);
   }
 }
 

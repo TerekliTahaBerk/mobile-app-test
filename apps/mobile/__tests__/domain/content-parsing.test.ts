@@ -66,6 +66,20 @@ describe('content shape parsing', () => {
     expect(issues).toContain('exercises[0].provenance.reviewStatus');
   });
 
+  it('requires reviewer attribution for reviewed and approved content', () => {
+    const issues = issuesOf((bundle) => {
+      const exercises = bundle.exercises as Record<string, unknown>[];
+      (exercises[0]!.provenance as Record<string, unknown>).reviewStatus = 'approved';
+    });
+
+    expect(issues).toEqual(
+      expect.arrayContaining([
+        'exercises[0].provenance.reviewedBy',
+        'exercises[0].provenance.reviewedAt',
+      ]),
+    );
+  });
+
   it('rejects an empty title rather than rendering a blank card', () => {
     const issues = issuesOf((bundle) => {
       const lessons = bundle.lessons as Record<string, unknown>[];

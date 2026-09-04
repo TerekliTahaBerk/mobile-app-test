@@ -76,6 +76,18 @@ Every lesson and exercise carries `provenance` with an author and a `reviewStatu
 
 **Production content requires `approved`, and `approved` means a human subject-matter reviewer signed it off.** Engineering demo content stays `draft` no matter how finished it looks. Marking AI-written or engineering-written material as reviewed or approved is prohibited.
 
+`reviewed` and `approved` records must also carry non-empty `reviewedBy` and
+`reviewedAt` metadata. The production-pilot bundle uses approved lessons as its
+roots, retains only their required exercises and taxonomy, and then validates
+the closed result with the production gate. A referenced draft exercise makes
+that gate fail; it is never silently removed from an otherwise approved lesson.
+Subjects and units with no approved lesson are absent from the production
+catalogue, so list screens and direct routes share the same visibility rule.
+
+CI runs `npm run content:production:check` before the full test suite. This is
+the release invariant that prevents a draft or unattributed review from being
+compiled into the learner-facing bundle.
+
 Copied ÖSYM questions are prohibited. Production material must be original and academically reviewed before publication.
 
 ## Validation

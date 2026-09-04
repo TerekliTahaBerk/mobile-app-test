@@ -40,6 +40,7 @@
     "build": "expo export --platform web",
     "start": "expo start",
     "android": "expo start --android",
+    "content:production:check": "jest --runInBand __tests__/domain/production-content.test.ts",
     "ios": "expo start --ios",
     "web": "expo start --web",
     "lint": "expo lint",
