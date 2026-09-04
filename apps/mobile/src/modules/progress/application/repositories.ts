@@ -110,6 +110,11 @@ export type LearnerProfileRepository = {
   write: (profile: LearnerProfile) => Promise<void>;
 };
 
+/** Clears every piece of learner-owned state while preserving the migrated schema. */
+export type LearnerDataRepository = {
+  reset: () => Promise<void>;
+};
+
 /**
  * The one write that must be all-or-nothing.
  *
@@ -155,6 +160,7 @@ export type ProgressRepositories = {
   completion: CompletionRepository;
   dailyActivity: DailyActivityRepository;
   hearts: HeartsRepository;
+  learnerData: LearnerDataRepository;
   mastery: MasteryRepository;
   profile: LearnerProfileRepository;
   mistakes: MistakeRepository;

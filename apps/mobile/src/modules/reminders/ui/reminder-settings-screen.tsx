@@ -4,6 +4,7 @@ import type { ReminderTime } from '@/modules/learner/domain/learner-profile';
 import { REMINDER_CHOICES } from '@/modules/onboarding/model/onboarding-steps';
 import type { NotificationPermissionStatus } from '@/shared/notifications/notifications';
 import { AppText } from '@/shared/ui/components/app-text';
+import { AppButton } from '@/shared/ui/components/app-button';
 import { Card } from '@/shared/ui/components/card';
 import { BackIcon } from '@/shared/ui/components/icons';
 import { Screen } from '@/shared/ui/components/screen';
@@ -15,6 +16,7 @@ type ReminderSettingsScreenProps = {
   onBack: () => void;
   onChangeTime: (time: ReminderTime) => void;
   onToggle: (enabled: boolean) => void;
+  onRequestReset: () => void;
   permissionStatus: NotificationPermissionStatus;
   showPermissionWarning: boolean;
   time: ReminderTime;
@@ -30,6 +32,7 @@ export function ReminderSettingsScreen({
   onBack,
   onChangeTime,
   onToggle,
+  onRequestReset,
   permissionStatus,
   showPermissionWarning,
   time,
@@ -124,10 +127,31 @@ export function ReminderSettingsScreen({
             Hatırlatmalar cihazından çıkmaz
           </AppText>
           <AppText color="accentSoft" style={styles.detail} variant="proseS">
-            Bildirimler bu telefonda planlanır. Hesabın yok, sunucuya hiçbir şey gönderilmez ve
-            ilerlemen yalnızca bu cihazda tutulur.
+            Bildirimler bu telefonda planlanır. Hesabın yok ve sunucuya hiçbir şey gönderilmez.
           </AppText>
         </Card>
+
+        <Card style={styles.card} variant="outlined" testID="local-data-disclosure">
+          <AppText variant="labelM">Verilerin yalnızca bu cihazda</AppText>
+          <AppText color="secondary" style={styles.detail} variant="proseS">
+            Cloud yedekleme yoktur. Uygulamayı silersen veya cihazını kaybedersen profilin,
+            ilerlemen ve çalışma geçmişin geri getirilemez.
+          </AppText>
+        </Card>
+
+        <View style={styles.dangerZone}>
+          <AppText color="danger" variant="labelM">Verileri sil</AppText>
+          <AppText color="secondary" style={styles.detail} variant="proseS">
+            Uygulamayı bu cihazda temiz başlangıç durumuna döndürür.
+          </AppText>
+          <AppButton
+            label="İlerlemeyi sıfırla"
+            onPress={onRequestReset}
+            style={styles.resetButton}
+            testID="reset-progress-open"
+            variant="neutral"
+          />
+        </View>
       </ScrollView>
     </Screen>
   );
@@ -142,6 +166,7 @@ const styles = StyleSheet.create({
   },
   card: { marginTop: theme.spacing.md, padding: theme.spacing.lg },
   detail: { marginTop: theme.spacing.xs },
+  dangerZone: { marginBottom: theme.spacing.xl, marginTop: theme.spacing.xl },
   header: {
     alignItems: 'center',
     borderBottomColor: theme.colors.border.hairline,
@@ -160,6 +185,7 @@ const styles = StyleSheet.create({
   knobOff: { marginLeft: 2 },
   knobOn: { marginLeft: 24 },
   scroll: { padding: theme.spacing.xl },
+  resetButton: { marginTop: theme.spacing.md },
   switch: {
     borderRadius: theme.radii.pill,
     height: 28,

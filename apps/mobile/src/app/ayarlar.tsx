@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react';
 import { useLearnerProfile } from '@/modules/learner/application/learner-profile-store';
 import type { ReminderTime } from '@/modules/learner/domain/learner-profile';
 import { ReminderSettingsScreen } from '@/modules/reminders/ui/reminder-settings-screen';
+import { ResetProgressConfirmSheet } from '@/modules/reminders/ui/reset-progress-confirm-sheet';
+import { useRepositories } from '@/modules/progress/application/progress-store';
 import {
   deviceScheduler,
   type NotificationPermissionStatus,
@@ -13,10 +15,14 @@ import { MessageScreen } from '@/shared/ui/feedback/message-screen';
 export default function SettingsRoute() {
   const router = useRouter();
   const store = useLearnerProfile();
+  const repositories = useRepositories();
   const [permissionStatus, setPermissionStatus] =
     useState<NotificationPermissionStatus>('undetermined');
   const [permissionRequestFailed, setPermissionRequestFailed] = useState(false);
   const [error, setError] = useState<Error | null>(null);
+  const [confirmation, setConfirmation] = useState('');
+  const [showReset, setShowReset] = useState(false);
+  const [isResetting, setIsResetting] = useState(false);
   const profile = store.status === 'ready' ? store.profile : null;
   const goBack = () => (router.canGoBack() ? router.back() : router.replace('/profil'));
 
@@ -63,7 +69,8 @@ export default function SettingsRoute() {
   };
 
   return (
-    <ReminderSettingsScreen
+    <>
+      <ReminderSettingsScreen
       enabled={profile.remindersEnabled}
       onBack={goBack}
       onChangeTime={(reminderTime) => save({ reminderTime })}
@@ -86,9 +93,38 @@ export default function SettingsRoute() {
             setPermissionRequestFailed(true);
           });
       }}
+      onRequestReset={() => {
+        setConfirmation('');
+        setShowReset(true);
+      }}
       permissionStatus={permissionStatus}
       showPermissionWarning={profile.remindersEnabled || permissionRequestFailed}
       time={profile.reminderTime ?? '20:00'}
-    />
+      />
+      <ResetProgressConfirmSheet
+        confirmation={confirmation}
+        isResetting={isResetting}
+        onCancel={() => {
+          setConfirmation('');
+          setShowReset(false);
+        }}
+        onChangeConfirmation={setConfirmation}
+        onConfirm={() => {
+          setIsResetting(true);
+          void deviceScheduler
+            .reconcile([])
+            .then(() => repositories.learnerData.reset())
+            .then(() => {
+              setShowReset(false);
+              store.refresh();
+            })
+            .catch((cause: unknown) => {
+              setIsResetting(false);
+              setError(cause instanceof Error ? cause : new Error(String(cause)));
+            });
+        }}
+        visible={showReset}
+      />
+    </>
   );
 }

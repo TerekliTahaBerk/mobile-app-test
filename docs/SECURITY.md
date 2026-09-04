@@ -12,4 +12,12 @@ access are absent, so no environment secrets are required. Legal and product
 review will be required for KVKK and other applicable obligations; this
 repository makes no compliance claim.
 
+The Settings screen states that there is no cloud backup and that deleting the
+app or losing the device makes this data unrecoverable. The learner can reset
+all local profile, progress, session, answer, XP, mastery, review, mistake,
+activity, hearts, question-report, and reminder-preference state. Reset requires
+opening a destructive confirmation sheet and typing `SIFIRLA`; the SQLite
+deletions commit in one transaction, scheduled device notifications are
+cancelled first, and the app returns to onboarding.
+
 Open decisions include data retention, parental/guardian flows where applicable, account deletion, analytics consent, incident response, and anonymous-progress migration.

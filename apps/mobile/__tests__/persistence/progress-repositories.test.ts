@@ -99,6 +99,51 @@ async function setup(): Promise<ProgressRepositories> {
 }
 
 describe('progress repositories', () => {
+  it('resets every learner-owned table to a clean-start state', async () => {
+    const repositories = await setup();
+    await repositories.profile.write({
+      avatarId: 'initial',
+      completedAtIso: COMPLETED_AT,
+      dailyGoal: 3,
+      displayName: 'Ege',
+      exam: 'yks',
+      grade: 'grade12',
+      reminderTime: '20:00',
+      remindersEnabled: true,
+      startingPoint: 'scratch',
+      targetYear: 2027,
+      track: 'verbal',
+      weeklyReportDay: 0,
+    });
+    await repositories.hearts.write({ hearts: 2, updatedAtMs: 1 });
+    await repositories.completion.completeSession(completion('reset-session'));
+    await repositories.reports.record({
+      createdAt: COMPLETED_AT,
+      exerciseId: 'ex.1' as ExerciseId,
+      id: 'reset-report',
+      reason: 'typo',
+      sessionId: 'reset-session',
+    });
+
+    await repositories.learnerData.reset();
+
+    await expect(repositories.profile.read()).resolves.toBeNull();
+    await expect(repositories.hearts.read()).resolves.toBeNull();
+    await expect(repositories.sessions.get('reset-session')).resolves.toBeNull();
+    await expect(repositories.attempts.listAllScored()).resolves.toEqual([]);
+    await expect(repositories.progress.getAll()).resolves.toEqual([]);
+    await expect(repositories.xp.list()).resolves.toEqual([]);
+    await expect(repositories.mastery.getMany([SKILL_ID])).resolves.toEqual([]);
+    await expect(repositories.review.listAll()).resolves.toEqual([]);
+    await expect(repositories.mistakes.listAll()).resolves.toEqual([]);
+    await expect(repositories.dailyActivity.list()).resolves.toEqual([]);
+    await expect(repositories.reports.listAll()).resolves.toEqual([]);
+    await expect(repositories.statistics.read()).resolves.toEqual({
+      correctAnswers: 0,
+      perfectRounds: 0,
+    });
+  });
+
   it('commits a completion across every table', async () => {
     const repositories = await setup();
 
