@@ -30,6 +30,7 @@ export type ConceptId = string;
 export type LessonId = string;
 export type ExerciseId = string;
 export type PathNodeId = string;
+export type ReviewerId = string;
 
 /** ISO-8601 instant. Domain code never reads the clock itself. */
 export type Timestamp = string;
@@ -45,6 +46,24 @@ export type Timestamp = string;
  */
 export type ReviewStatus = 'approved' | 'draft' | 'reviewed';
 
+export type Reviewer = {
+  readonly displayName: string;
+  readonly id: ReviewerId;
+  /** A reviewer may only sign records belonging to one of these subjects. */
+  readonly subjectIds: readonly SubjectId[];
+  readonly status: 'active' | 'inactive';
+  readonly type: 'humanSubjectMatterExpert';
+};
+
+export type ReviewAttestation = {
+  readonly reviewedAt: Timestamp;
+  /** Display-name snapshot; reviewerId remains the stable identity. */
+  readonly reviewedBy: string;
+  readonly reviewedContentVersion: string;
+  readonly reviewedCurriculumVersion: string;
+  readonly reviewerId: ReviewerId;
+};
+
 type AuthoredProvenance = {
   author: string;
   /** Free-text note about where the material came from. Never a copied source. */
@@ -56,13 +75,21 @@ export type Provenance = AuthoredProvenance &
     | {
         readonly reviewedAt?: never;
         readonly reviewedBy?: never;
+        readonly reviewedContentVersion?: never;
+        readonly reviewedCurriculumVersion?: never;
+        readonly reviewerId?: never;
+        readonly priorReview?: never;
         reviewStatus: 'draft';
       }
-    | {
-        readonly reviewedAt: Timestamp;
-        readonly reviewedBy: string;
-        reviewStatus: 'approved' | 'reviewed';
-      }
+    | (ReviewAttestation & {
+        readonly priorReview?: never;
+        reviewStatus: 'reviewed';
+      })
+    | (ReviewAttestation & {
+        /** Preserved evidence that approval followed a separate review step. */
+        readonly priorReview: ReviewAttestation;
+        reviewStatus: 'approved';
+      })
   );
 
 // ---------------------------------------------------------------------------
@@ -269,7 +296,7 @@ export type PathNode = {
 // ---------------------------------------------------------------------------
 
 /** Bumped when these contracts change shape. */
-export const CONTENT_SCHEMA_VERSION = 2;
+export const CONTENT_SCHEMA_VERSION = 3;
 
 export type ContentBundle = {
   concepts: readonly Concept[];
@@ -283,6 +310,7 @@ export type ContentBundle = {
   locale: string;
   pathNodes: readonly PathNode[];
   readonly publishedAt?: Timestamp;
+  reviewers: readonly Reviewer[];
   schemaVersion: number;
   skills: readonly Skill[];
   subjects: readonly Subject[];

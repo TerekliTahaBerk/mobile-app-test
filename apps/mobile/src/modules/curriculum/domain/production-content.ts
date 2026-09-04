@@ -8,10 +8,15 @@ import {
 function isApproved(provenance: Provenance): boolean {
   return (
     provenance.reviewStatus === 'approved' &&
+    typeof provenance.reviewerId === 'string' &&
+    provenance.reviewerId.trim().length > 0 &&
     typeof provenance.reviewedBy === 'string' &&
     provenance.reviewedBy.trim().length > 0 &&
     typeof provenance.reviewedAt === 'string' &&
-    provenance.reviewedAt.trim().length > 0
+    provenance.reviewedAt.trim().length > 0 &&
+    provenance.reviewedContentVersion.trim().length > 0 &&
+    provenance.reviewedCurriculumVersion.trim().length > 0 &&
+    provenance.priorReview !== undefined
   );
 }
 
@@ -80,7 +85,7 @@ export function validateProductionContentBundle(bundle: ContentBundle): readonly
       issues.push({
         at: `${kind}[${index}].provenance`,
         code: 'productionReviewRequired',
-        message: 'Production içeriği approved olmalı ve reviewedBy/reviewedAt içermeli.',
+        message: 'Production içeriği doğrulanabilir reviewer ve sürüm metadata’sıyla approved olmalı.',
       });
     }
   };

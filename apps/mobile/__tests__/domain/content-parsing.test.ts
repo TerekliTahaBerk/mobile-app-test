@@ -76,6 +76,10 @@ describe('content shape parsing', () => {
       expect.arrayContaining([
         'exercises[0].provenance.reviewedBy',
         'exercises[0].provenance.reviewedAt',
+        'exercises[0].provenance.reviewerId',
+        'exercises[0].provenance.reviewedContentVersion',
+        'exercises[0].provenance.reviewedCurriculumVersion',
+        'exercises[0].provenance.priorReview',
       ]),
     );
   });

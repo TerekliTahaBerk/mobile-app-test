@@ -12,6 +12,7 @@ import type { Plugin } from 'vite';
  */
 
 const DATA_DIR = resolve(import.meta.dirname, '..', 'mobile', 'src', 'modules', 'curriculum', 'content', 'data');
+const REVIEWERS_FILE = join(DATA_DIR, 'reviewers.json');
 const UNITS_DIR = join(DATA_DIR, 'units');
 const UNITS_INDEX = resolve(DATA_DIR, '..', 'units.ts');
 const CONTENT_ID = /^[a-z0-9][a-z0-9.-]{0,120}$/;
@@ -29,6 +30,7 @@ async function readBundle() {
 
   return {
     curriculum: await readJson(join(DATA_DIR, 'curriculum.json')),
+    reviewers: await readJson(REVIEWERS_FILE),
     units: await Promise.all(files.map((name) => readJson(join(UNITS_DIR, name)))),
   };
 }

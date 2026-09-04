@@ -31,6 +31,7 @@ export type ContentIssueCode =
   | 'duplicateId'
   | 'emptyCollection'
   | 'invalidAnswer'
+  | 'invalidReviewer'
   | 'invalidTaxonomy'
   | 'malformedRecord'
   | 'productionReviewRequired'
@@ -92,6 +93,7 @@ export function validateContentBundle(bundle: ContentBundle): readonly ContentIs
   bundle.lessons.forEach((lesson, i) => claim(lesson.id, `lessons[${i}]`));
   bundle.exercises.forEach((exercise, i) => claim(exercise.id, `exercises[${i}]`));
   bundle.pathNodes.forEach((node, i) => claim(node.id, `pathNodes[${i}]`));
+  bundle.reviewers.forEach((reviewer, i) => claim(reviewer.id, `reviewers[${i}]`));
 
   const ids = {
     concept: new Set(bundle.concepts.map((c) => c.id)),
@@ -108,6 +110,55 @@ export function validateContentBundle(bundle: ContentBundle): readonly ContentIs
   const ref = (set: ReadonlySet<string>, id: string, at: string, label: string) => {
     if (!set.has(id)) {
       add('brokenReference', at, `Bilinmeyen ${label}: "${id}".`);
+    }
+  };
+
+  const checkReview = (provenance: ContentBundle['lessons'][number]['provenance'], at: string, subjectId?: string) => {
+    if (provenance.reviewStatus === 'draft') {
+      return;
+    }
+    const reviewer = bundle.reviewers.find((candidate) => candidate.id === provenance.reviewerId);
+    if (reviewer === undefined) {
+      add('invalidReviewer', `${at}.reviewerId`, `İnceleyen kimliği registry içinde bulunamadı: "${provenance.reviewerId}".`);
+      return;
+    }
+    if (reviewer.status !== 'active' || reviewer.type !== 'humanSubjectMatterExpert') {
+      add('invalidReviewer', `${at}.reviewerId`, 'Yalnızca aktif insan alan uzmanı inceleme yapabilir.');
+    }
+    if (reviewer.displayName !== provenance.reviewedBy) {
+      add('invalidReviewer', `${at}.reviewedBy`, 'İnceleyen adı registry kaydıyla eşleşmiyor.');
+    }
+    if (subjectId !== undefined && !reviewer.subjectIds.includes(subjectId)) {
+      add('invalidReviewer', `${at}.reviewerId`, `İnceleyen kişi "${subjectId}" alanı için yetkili değil.`);
+    }
+    if (
+      provenance.reviewedContentVersion !== bundle.contentVersion ||
+      provenance.reviewedCurriculumVersion !== bundle.curriculumVersion
+    ) {
+      add('invalidReviewer', at, 'İnceleme kaydı mevcut content/curriculum sürümleriyle eşleşmiyor.');
+    }
+    if (Number.isNaN(Date.parse(provenance.reviewedAt))) {
+      add('invalidReviewer', `${at}.reviewedAt`, 'İnceleme zamanı geçerli bir ISO-8601 zaman damgası olmalı.');
+    }
+    if (provenance.reviewStatus === 'approved') {
+      const prior = provenance.priorReview;
+      const priorReviewer = bundle.reviewers.find((candidate) => candidate.id === prior.reviewerId);
+      if (
+        priorReviewer === undefined ||
+        priorReviewer.status !== 'active' ||
+        priorReviewer.type !== 'humanSubjectMatterExpert' ||
+        priorReviewer.displayName !== prior.reviewedBy ||
+        (subjectId !== undefined && !priorReviewer.subjectIds.includes(subjectId))
+      ) {
+        add('invalidReviewer', `${at}.priorReview`, 'Onay öncesi inceleme geçerli bir insan alan uzmanına ait değil.');
+      }
+      if (
+        prior.reviewedContentVersion !== bundle.contentVersion ||
+        prior.reviewedCurriculumVersion !== bundle.curriculumVersion ||
+        Number.isNaN(Date.parse(prior.reviewedAt))
+      ) {
+        add('invalidReviewer', `${at}.priorReview`, 'Onay öncesi inceleme zamanı veya sürümleri geçersiz.');
+      }
     }
   };
 
@@ -144,6 +195,9 @@ export function validateContentBundle(bundle: ContentBundle): readonly ContentIs
   // --- lessons ------------------------------------------------------------
   bundle.lessons.forEach((lesson, i) => {
     ref(ids.topic, lesson.topicId, `lessons[${i}].topicId`, 'konu');
+    const topic = bundle.topics.find((candidate) => candidate.id === lesson.topicId);
+    const unit = bundle.units.find((candidate) => candidate.id === topic?.unitId);
+    checkReview(lesson.provenance, `lessons[${i}].provenance`, unit?.subjectId);
 
     if (lesson.exerciseIds.length === 0) {
       add('emptyCollection', `lessons[${i}].exerciseIds`, 'Ders en az bir alıştırma içermeli.');
@@ -182,6 +236,9 @@ export function validateContentBundle(bundle: ContentBundle): readonly ContentIs
         return topic === undefined ? [] : [topic.unitId];
       }),
     );
+    const firstUnitId = unitIds.values().next().value as string | undefined;
+    const firstUnit = bundle.units.find((candidate) => candidate.id === firstUnitId);
+    checkReview(exercise.provenance, `${at}.provenance`, firstUnit?.subjectId);
     if (unitIds.size > 1) {
       add(
         'invalidTaxonomy',

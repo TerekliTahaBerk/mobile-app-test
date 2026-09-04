@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 
 import type { ExerciseKind } from '@/modules/curriculum/domain/content-types';
+import { transitionReview } from '@/modules/curriculum/domain/review-workflow';
 
 import {
   deleteUnit as deleteUnitFile,
@@ -37,6 +38,7 @@ import { ExerciseEditor } from './ui/exercise-editor';
 import { IssueList } from './ui/issue-list';
 import { PathOrder } from './ui/path-order';
 import { QuestionPreview } from './ui/question-preview';
+import { ReviewControl } from './ui/review-control';
 import { TreeNav } from './ui/tree-nav';
 
 type Row = Record<string, unknown>;
@@ -56,7 +58,7 @@ export function App() {
   const [snapshot, setSnapshot] = useState<ContentSnapshot | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [selected, setSelected] = useState<{ exerciseId: string; unitId: string } | null>(null);
-  const [reviewer, setReviewer] = useState('');
+  const [reviewerId, setReviewerId] = useState('');
   const [dirtyUnits, setDirtyUnits] = useState<ReadonlySet<string>>(new Set());
   const [curriculumDirty, setCurriculumDirty] = useState(false);
   const [saving, setSaving] = useState(false);
@@ -95,11 +97,18 @@ export function App() {
   const unit = snapshot.units.find((file) => file.unitId === selected?.unitId) ?? null;
   const exercises = (unit?.exercises ?? []) as Row[];
   const exercise = exercises.find((row) => String(row.id) === selected?.exerciseId) ?? null;
+  const owningLessonId = exercise === null || unit === null
+    ? ''
+    : lessonOf(snapshot, unit.unitId, String(exercise.id));
+  const owningLesson = ((unit?.lessons ?? []) as Row[]).find(
+    (row) => String(row.id) === owningLessonId,
+  ) ?? null;
   const skills = ((unit?.skills ?? []) as Row[]).map((skill) => ({
     id: String(skill.id),
     title: String(skill.title),
   }));
   const dirtyCount = dirtyUnits.size + removedUnits.size + (curriculumDirty ? 1 : 0);
+  const reviewer = snapshot.reviewers.find((candidate) => candidate.id === reviewerId) ?? null;
 
   /** Every id in the bundle, so a generated one can never collide with a real one. */
   const takenIds = new Set<string>([
@@ -164,6 +173,7 @@ export function App() {
           current === null
             ? current
             : {
+                ...current,
                 curriculum: {
                   ...current.curriculum,
                   subjects: (current.curriculum.subjects as Row[]).map((subject) =>
@@ -460,6 +470,7 @@ export function App() {
       snap === null
         ? snap
         : {
+            ...snap,
             curriculum: {
               ...snap.curriculum,
               subjects: (snap.curriculum.subjects as Row[]).map((subject) => ({
@@ -608,6 +619,7 @@ export function App() {
           snap === null
             ? snap
             : {
+                ...snap,
                 curriculum: {
                   ...snap.curriculum,
                   subjects: (snap.curriculum.subjects as Row[]).map((subject) => ({
@@ -686,12 +698,14 @@ export function App() {
         <h1>İçerik Stüdyosu</h1>
         <label className="field">
           <span className="field-label">İnceleyen</span>
-          <input
-            onChange={(event) => setReviewer(event.target.value)}
-            placeholder="Ad soyad"
-            type="text"
-            value={reviewer}
-          />
+          <select onChange={(event) => setReviewerId(event.target.value)} value={reviewerId}>
+            <option value="">— registry’den alan uzmanı seç —</option>
+            {snapshot.reviewers.map((candidate) => (
+              <option disabled={candidate.status !== 'active'} key={candidate.id} value={candidate.id}>
+                {candidate.displayName} · {candidate.id}
+              </option>
+            ))}
+          </select>
         </label>
 
         <TreeNav
@@ -765,18 +779,65 @@ export function App() {
             {panel === 'preview' ? (
               <QuestionPreview exercise={exercise} />
             ) : (
-              <ExerciseEditor
-                exercise={exercise}
-                lesson={{
-                  choices: lessonChoices(snapshot, unit?.unitId ?? '', exercise),
-                  onChange: (lessonId) =>
-                    moveQuestionToLesson(String(exercise.id), unit?.unitId ?? '', lessonId),
-                  selected: lessonOf(snapshot, unit?.unitId ?? '', String(exercise.id)),
-                }}
-                onChange={replaceExercise}
-                reviewer={reviewer}
-                skills={skills}
-              />
+              <>
+                {owningLesson === null ? null : (
+                  <section className="editor lesson-review">
+                    <h2>{String(owningLesson.title)}</h2>
+                    <p className="muted">Ders onayı, içindeki her sorunun onayından ayrıdır.</p>
+                    <ReviewControl
+                      onChange={(status) => {
+                        if (unit === null) return;
+                        const provenance = owningLesson.provenance as Parameters<typeof transitionReview>[0];
+                        const next = transitionReview(
+                          provenance,
+                          status,
+                          reviewer,
+                          new Date().toISOString(),
+                          {
+                            contentVersion: snapshot.curriculum.contentVersion,
+                            curriculumVersion: snapshot.curriculum.curriculumVersion,
+                            subjectId: String(
+                              snapshot.curriculum.units.find((entry) => entry.id === unit.unitId)
+                                ?.subjectId ?? '',
+                            ),
+                          },
+                        );
+                        touchUnit(unit.unitId, (file) => ({
+                          ...file,
+                          lessons: (file.lessons as Row[]).map((row) =>
+                            row.id === owningLesson.id ? { ...row, provenance: next } : row,
+                          ),
+                        }));
+                      }}
+                      provenance={owningLesson.provenance as Readonly<Record<string, unknown>>}
+                      reviewer={reviewer}
+                      subjectId={String(
+                        snapshot.curriculum.units.find((entry) => entry.id === unit?.unitId)
+                          ?.subjectId ?? '',
+                      )}
+                    />
+                  </section>
+                )}
+                <ExerciseEditor
+                  exercise={exercise}
+                  lesson={{
+                    choices: lessonChoices(snapshot, unit?.unitId ?? '', exercise),
+                    onChange: (lessonId) =>
+                      moveQuestionToLesson(String(exercise.id), unit?.unitId ?? '', lessonId),
+                    selected: owningLessonId,
+                  }}
+                  onChange={replaceExercise}
+                  reviewer={reviewer}
+                  skills={skills}
+                  version={{
+                    contentVersion: snapshot.curriculum.contentVersion,
+                  curriculumVersion: snapshot.curriculum.curriculumVersion,
+                  subjectId: String(
+                    snapshot.curriculum.units.find((entry) => entry.id === unit?.unitId)?.subjectId ?? '',
+                  ),
+                  }}
+                />
+              </>
             )}
           </>
         )}

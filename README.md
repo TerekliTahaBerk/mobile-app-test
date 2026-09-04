@@ -62,8 +62,9 @@ five; edits questions of
 every exercise kind; previews what the learner will be asked; and reports
 coverage per skill. It edits the
 content files in place and validates with the app's own two gates, so anything
-it saves is content the app will load. Review status changes are commits: git is
-the audit trail, and only a named human reviewer can move a record past draft.
+it saves is content the app will load. Reviewers come from the repository's
+stable human-expert registry; signed status changes include identity, time and
+content/curriculum versions in the diff, while Git/PR history is the audit trail.
 
 ## Repository map
 

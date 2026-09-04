@@ -1,7 +1,10 @@
+import type { Reviewer, ReviewStatus } from '@/modules/curriculum/domain/content-types';
+
 type ReviewControlProps = {
-  onChange: (status: string) => void;
+  onChange: (status: ReviewStatus) => void;
   provenance: Readonly<Record<string, unknown>>;
-  reviewer: string;
+  reviewer: Reviewer | null;
+  subjectId: string;
 };
 
 const STATUS_LABELS: Readonly<Record<string, string>> = {
@@ -13,14 +16,17 @@ const STATUS_LABELS: Readonly<Record<string, string>> = {
 /**
  * Review status, with the one rule the repository will not bend on: only a
  * human subject-matter review may move content past draft. The control refuses
- * to stamp a status without a named reviewer, and records who and when, because
+ * to stamp a status without a registry-backed reviewer, and records who and when, because
  * an unattributable approval is not a review.
  */
-export function ReviewControl({ onChange, provenance, reviewer }: ReviewControlProps) {
+export function ReviewControl({ onChange, provenance, reviewer, subjectId }: ReviewControlProps) {
   const status = String(provenance.reviewStatus ?? 'draft');
   const reviewedBy = provenance.reviewedBy;
   const reviewedAt = provenance.reviewedAt;
-  const named = reviewer.trim().length > 0;
+  const authorized =
+    reviewer?.status === 'active' &&
+    reviewer.type === 'humanSubjectMatterExpert' &&
+    reviewer.subjectIds.includes(subjectId);
 
   return (
     <section className="review">
@@ -29,7 +35,10 @@ export function ReviewControl({ onChange, provenance, reviewer }: ReviewControlP
         {(['draft', 'reviewed', 'approved'] as const).map((candidate) => (
           <button
             className={status === candidate ? 'status-active' : undefined}
-            disabled={candidate !== 'draft' && !named}
+            disabled={
+              candidate !== 'draft' &&
+              (!authorized || (candidate === 'approved' && status !== 'reviewed'))
+            }
             key={candidate}
             onClick={() => onChange(candidate)}
             type="button"
@@ -38,15 +47,19 @@ export function ReviewControl({ onChange, provenance, reviewer }: ReviewControlP
           </button>
         ))}
       </div>
-      {named ? null : (
+      {authorized ? null : (
         <p className="warning">
-          İncelendi ve onaylandı durumları için üstteki alana inceleyen kişinin adını yaz. Yalnızca
-          bir insan alan uzmanı içeriği taslağın ötesine taşıyabilir.
+          İncelendi ve onaylandı durumları için registry’de kayıtlı, aktif bir insan alan uzmanı
+          seç. Serbest metinle onay verilemez.
         </p>
       )}
+      {authorized && status === 'draft' ? (
+        <p className="muted">Taslak doğrudan onaylanamaz; önce “İncelendi” durumuna getir.</p>
+      ) : null}
       {typeof reviewedBy === 'string' && typeof reviewedAt === 'string' ? (
         <p className="muted">
-          {reviewedBy} · {new Date(reviewedAt).toLocaleString('tr-TR')}
+          {reviewedBy} · {String(provenance.reviewerId)} ·{' '}
+          {new Date(reviewedAt).toLocaleString('tr-TR')}
         </p>
       ) : (
         <p className="muted">Henüz incelenmedi.</p>

@@ -1,4 +1,4 @@
-import type { ContentBundle } from '@/modules/curriculum/domain/content-types';
+import type { ContentBundle, Reviewer } from '@/modules/curriculum/domain/content-types';
 import { assertParsedContentBundle } from '@/modules/curriculum/domain/parse-content-bundle';
 import {
   ContentValidationError,
@@ -29,6 +29,7 @@ export type Curriculum = {
 
 export type ContentSnapshot = {
   curriculum: Curriculum;
+  reviewers: Reviewer[];
   units: UnitFile[];
 };
 
@@ -84,6 +85,7 @@ export function assemble(snapshot: ContentSnapshot): unknown {
     exercises: collect('exercises'),
     lessons: collect('lessons'),
     pathNodes: collect('pathNodes'),
+    reviewers: snapshot.reviewers,
     skills: collect('skills'),
     topics: collect('topics'),
   };

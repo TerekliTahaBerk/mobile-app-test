@@ -1,4 +1,5 @@
 import curriculum from '@/modules/curriculum/content/data/curriculum.json';
+import reviewers from '@/modules/curriculum/content/data/reviewers.json';
 import { UNIT_FILES } from '@/modules/curriculum/content/units';
 import type { ContentBundle } from '@/modules/curriculum/domain/content-types';
 import { assertParsedContentBundle } from '@/modules/curriculum/domain/parse-content-bundle';
@@ -51,6 +52,7 @@ function assemble(): unknown {
     exercises: collect('exercises'),
     lessons: collect('lessons'),
     pathNodes: collect('pathNodes'),
+    reviewers,
     skills: collect('skills'),
     topics: collect('topics'),
   };

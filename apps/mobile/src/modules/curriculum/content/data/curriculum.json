@@ -30,7 +30,7 @@
     }
   ],
   "locale": "tr-TR",
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "subjects": [
     {
       "examId": "tyt",

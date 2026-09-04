@@ -24,9 +24,19 @@ provable: an approval is a commit, and the commit says who made it.
 app's own order. It therefore cannot approve content the app would refuse to
 load, and its issue list is literally what the app throws at startup.
 
-**The review guard is in the tool.** Moving a record past draft requires a named
-reviewer; the buttons are disabled without one and the tool stamps `reviewedBy`
-and `reviewedAt`. An unattributable approval is not a review.
+**The review guard uses a repository registry and the domain workflow.** A
+free-text name is not identity. Studio selects a reviewer from
+`content/data/reviewers.json`; every entry has a stable id, display name,
+active/inactive status and authorized subjects. The shared transition function
+requires an active human subject-matter expert, forbids `draft → approved`, and
+stamps reviewer id, display-name snapshot, time, content version and curriculum
+version. Lessons and exercises are signed independently. The app's validator
+rechecks the registry and metadata, so editing JSON cannot bypass the UI guard.
+
+The registry contains no placeholder people. Adding or changing a reviewer and
+every review transition are ordinary repository diffs, so PR review and Git
+history provide the external audit trail while the attestation in the content
+record identifies exactly which content/curriculum versions were signed.
 
 Editing is field-driven: each exercise kind declares its fields in
 `model/exercise-fields.ts` and one generic form renders them. A new exercise

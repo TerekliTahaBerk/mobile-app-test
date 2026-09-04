@@ -4,7 +4,11 @@
 
 The authored bundle remains the complete editorial workspace. The
 `productionPilot` bundle is a derived, closed subset rooted in lessons whose
-provenance is `approved` and attributed with `reviewedBy` and `reviewedAt`.
+provenance is `approved` and carries a complete versioned review attestation.
+The stable reviewer id must resolve to an active human subject-matter expert in
+the repository registry, and that expert must be authorized for the record's
+subject. The stored display name and content/curriculum versions must match the
+registry and current bundle.
 Every exercise referenced by such a lesson is retained and must independently
 pass the same approval rule. Required taxonomy and path records are derived
 from that set; empty subjects and units are omitted.

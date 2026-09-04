@@ -76,8 +76,20 @@ Every lesson and exercise carries `provenance` with an author and a `reviewStatu
 
 **Production content requires `approved`, and `approved` means a human subject-matter reviewer signed it off.** Engineering demo content stays `draft` no matter how finished it looks. Marking AI-written or engineering-written material as reviewed or approved is prohibited.
 
-`reviewed` and `approved` records must also carry non-empty `reviewedBy` and
-`reviewedAt` metadata. The production-pilot bundle uses approved lessons as its
+Reviewers are registered in `content/data/reviewers.json` with a stable id,
+display name, active/inactive status and the subjects they are qualified to
+review. The registry is intentionally empty until real human subject-matter
+experts are added; placeholder people must not be invented.
+
+`reviewed` and `approved` records must carry `reviewerId`, a `reviewedBy`
+display-name snapshot, `reviewedAt`, `reviewedContentVersion`, and
+`reviewedCurriculumVersion`. Validation resolves the stable id against the
+registry, requires an active human expert authorized for the record's subject,
+checks the display-name snapshot, timestamp and both current versions. A draft
+cannot move directly to approved: it must first receive a human `reviewed`
+attestation. An approved record also preserves the prior review attestation,
+making the required two-step transition visible in the content diff. The
+production-pilot bundle uses approved lessons as its
 roots, retains only their required exercises and taxonomy, and then validates
 the closed result with the production gate. A referenced draft exercise makes
 that gate fail; it is never silently removed from an otherwise approved lesson.
@@ -98,7 +110,7 @@ The project intentionally carries **no schema-validation dependency**. The bundl
 
 ## Current state
 
-The bundle contains the 25-unit 2027 TYT Tarih draft: 49 topics, 96 measurable
+The bundle uses schema version 3. It contains the 25-unit 2027 TYT Tarih draft: 49 topics, 96 measurable
 skills, 55 lessons, 55 chained path nodes and 331 exercises. Every lesson and
 exercise is `draft`; none is production academic content. The three original
 unit IDs and their authored records were retained, while the curriculum order

@@ -1,4 +1,5 @@
-import type { ExerciseKind } from '@/modules/curriculum/domain/content-types';
+import type { ExerciseKind, Reviewer } from '@/modules/curriculum/domain/content-types';
+import { transitionReview } from '@/modules/curriculum/domain/review-workflow';
 
 import {
   COMMON_FIELDS,
@@ -17,7 +18,8 @@ type ExerciseEditorProps = {
     selected: string;
   };
   onChange: (next: Readonly<Record<string, unknown>>) => void;
-  reviewer: string;
+  reviewer: Reviewer | null;
+  version: { contentVersion: string; curriculumVersion: string; subjectId: string };
   /** The unit's skills, so a question is mapped by picking rather than typing. */
   skills: readonly { id: string; title: string }[];
 };
@@ -28,6 +30,7 @@ export function ExerciseEditor({
   onChange,
   reviewer,
   skills,
+  version,
 }: ExerciseEditorProps) {
   const kind = String(exercise.kind) as ExerciseKind;
   const fields = FIELDS_BY_KIND[kind];
@@ -86,19 +89,18 @@ export function ExerciseEditor({
         onChange={(status) =>
           onChange({
             ...exercise,
-            provenance:
-              status === 'draft'
-                ? { author: provenance.author, note: provenance.note, reviewStatus: 'draft' }
-                : {
-                    ...provenance,
-                    reviewStatus: status,
-                    reviewedAt: new Date().toISOString(),
-                    reviewedBy: reviewer.trim(),
-                  },
+            provenance: transitionReview(
+              provenance as Parameters<typeof transitionReview>[0],
+              status,
+              reviewer,
+              new Date().toISOString(),
+              version,
+            ),
           })
         }
         provenance={provenance}
         reviewer={reviewer}
+        subjectId={version.subjectId}
       />
     </div>
   );

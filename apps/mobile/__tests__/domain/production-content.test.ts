@@ -8,11 +8,30 @@ import {
   validateProductionContentBundle,
 } from '@/modules/curriculum/domain/production-content';
 
+const reviewer = {
+  displayName: 'Test Alan Uzmanı',
+  id: 'reviewer.test.sme',
+  status: 'active' as const,
+  subjectIds: tytDraftBundle.subjects.map((subject) => subject.id),
+  type: 'humanSubjectMatterExpert' as const,
+};
+
 function approved(): Provenance {
+  const attestation = {
+    reviewedAt: '2026-09-04T08:00:00.000Z',
+    reviewedBy: reviewer.displayName,
+    reviewedContentVersion: tytDraftBundle.contentVersion,
+    reviewedCurriculumVersion: tytDraftBundle.curriculumVersion,
+    reviewerId: reviewer.id,
+  };
   return {
     author: 'test author',
     reviewedAt: '2026-09-04T09:00:00.000Z',
-    reviewedBy: 'Human reviewer',
+    reviewedBy: reviewer.displayName,
+    reviewedContentVersion: tytDraftBundle.contentVersion,
+    reviewedCurriculumVersion: tytDraftBundle.curriculumVersion,
+    reviewerId: reviewer.id,
+    priorReview: attestation,
     reviewStatus: 'approved',
   };
 }
@@ -22,6 +41,7 @@ function withOneApprovedLesson(): ContentBundle {
   const exerciseIds = new Set(lesson.exerciseIds);
   return {
     ...tytDraftBundle,
+    reviewers: [reviewer],
     exercises: tytDraftBundle.exercises.map((exercise) =>
       exerciseIds.has(exercise.id) ? { ...exercise, provenance: approved() } : exercise,
     ),

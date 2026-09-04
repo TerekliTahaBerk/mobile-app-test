@@ -71,6 +71,18 @@ function checkBundle(bundle: Readonly<Record<string, unknown>>, c: Collector): v
   text(bundle.curriculumVersion, 'curriculumVersion', c);
   text(bundle.locale, 'locale', c);
 
+  each(bundle.reviewers, 'reviewers', c, (reviewer, at) => {
+    text(reviewer.id, `${at}.id`, c);
+    text(reviewer.displayName, `${at}.displayName`, c);
+    texts(reviewer.subjectIds, `${at}.subjectIds`, c);
+    if (reviewer.type !== 'humanSubjectMatterExpert') {
+      c.add(`${at}.type`, 'İnceleyen kişi insan alan uzmanı olmalı.');
+    }
+    if (reviewer.status !== 'active' && reviewer.status !== 'inactive') {
+      c.add(`${at}.status`, 'İnceleyen durumu active veya inactive olmalı.');
+    }
+  });
+
   each(bundle.exams, 'exams', c, (exam, at) => {
     text(exam.id, `${at}.id`, c);
     text(exam.title, `${at}.title`, c);
@@ -230,9 +242,20 @@ function provenance(value: unknown, at: string, c: Collector): void {
   if (typeof record.reviewStatus !== 'string' || !REVIEW_STATUSES.includes(record.reviewStatus)) {
     c.add(`${at}.reviewStatus`, `İnceleme durumu ${REVIEW_STATUSES.join(', ')} olmalı.`);
   } else if (record.reviewStatus !== 'draft') {
-    text(record.reviewedBy, `${at}.reviewedBy`, c);
-    text(record.reviewedAt, `${at}.reviewedAt`, c);
+    reviewAttestation(record, at, c);
+    if (record.reviewStatus === 'approved') {
+      const prior = object(record.priorReview, `${at}.priorReview`, c);
+      if (prior !== null) reviewAttestation(prior, `${at}.priorReview`, c);
+    }
   }
+}
+
+function reviewAttestation(record: Readonly<Record<string, unknown>>, at: string, c: Collector): void {
+  text(record.reviewerId, `${at}.reviewerId`, c);
+  text(record.reviewedBy, `${at}.reviewedBy`, c);
+  text(record.reviewedAt, `${at}.reviewedAt`, c);
+  text(record.reviewedContentVersion, `${at}.reviewedContentVersion`, c);
+  text(record.reviewedCurriculumVersion, `${at}.reviewedCurriculumVersion`, c);
 }
 
 function object(value: unknown, at: string, c: Collector): Readonly<Record<string, unknown>> | null {
