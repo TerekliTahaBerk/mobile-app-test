@@ -1,0 +1,34 @@
+appId: com.tekrarla.app
+name: Mid-lesson process kill - durable resume
+tags:
+  - release
+  - ios
+  - android
+---
+- launchApp:
+    clearState: true
+    stopApp: true
+- runFlow: ../subflows/complete-scratch-onboarding.yaml
+- runFlow: ../subflows/open-first-lesson.yaml
+- tapOn:
+    id: flashcard-known
+- tapOn:
+    id: flashcard-known
+- tapOn:
+    id: flashcard-known
+- extendedWaitUntil:
+    visible:
+      id: option-opt-moon
+    timeout: 10000
+- stopApp
+- launchApp:
+    stopApp: true
+- extendedWaitUntil:
+    visible:
+      id: lesson-screen
+    timeout: 15000
+- assertVisible:
+    id: option-opt-moon
+- runFlow: ../subflows/finish-first-lesson-after-cards.yaml
+- assertVisible:
+    id: lesson-complete-screen

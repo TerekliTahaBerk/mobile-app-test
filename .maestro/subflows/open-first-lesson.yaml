@@ -1,0 +1,20 @@
+appId: com.tekrarla.app
+---
+- tapOn:
+    id: tab-ogren
+- extendedWaitUntil:
+    visible:
+      id: learn-screen
+    timeout: 10000
+- tapOn:
+    id: learn-subject-tyt.history
+- extendedWaitUntil:
+    visible:
+      id: unit-path-screen
+    timeout: 10000
+- tapOn:
+    id: path-node-path.history.time.01
+- extendedWaitUntil:
+    visible:
+      id: lesson-screen
+    timeout: 10000

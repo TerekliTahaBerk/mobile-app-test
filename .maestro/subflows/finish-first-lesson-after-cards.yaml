@@ -1,0 +1,32 @@
+appId: com.tekrarla.app
+---
+- tapOn:
+    id: option-opt-moon
+- tapOn:
+    id: check-answer
+- assertVisible:
+    id: feedback-sheet
+- tapOn:
+    id: feedback-continue
+- tapOn:
+    id: truefalse-false
+- tapOn:
+    id: check-answer
+- tapOn:
+    id: feedback-continue
+- tapOn:
+    id: option-opt-isa
+- tapOn:
+    id: check-answer
+- tapOn:
+    id: feedback-continue
+- tapOn:
+    id: truefalse-true
+- tapOn:
+    id: check-answer
+- tapOn:
+    id: feedback-continue
+- extendedWaitUntil:
+    visible:
+      id: lesson-complete-screen
+    timeout: 15000

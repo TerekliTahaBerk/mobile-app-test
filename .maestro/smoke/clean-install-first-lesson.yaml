@@ -1,0 +1,19 @@
+appId: com.tekrarla.app
+name: Clean install - onboarding - first lesson - completion
+tags:
+  - release
+  - ios
+  - android
+---
+- launchApp:
+    clearState: true
+    stopApp: true
+- runFlow: ../subflows/complete-scratch-onboarding.yaml
+- runFlow: ../subflows/open-first-lesson.yaml
+- runFlow: ../subflows/finish-first-lesson.yaml
+- tapOn:
+    id: lesson-complete-home
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 10000
