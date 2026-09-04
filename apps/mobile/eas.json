@@ -18,6 +18,9 @@
     "production": {
       "channel": "production",
       "autoIncrement": true,
+      "env": {
+        "EXPO_PUBLIC_APP_MODE": "productionPilot"
+      },
       "android": { "buildType": "app-bundle" }
     }
   },
