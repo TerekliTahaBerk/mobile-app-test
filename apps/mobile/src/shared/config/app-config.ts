@@ -40,15 +40,32 @@ const FLAGS_BY_MODE: Record<AppMode, FeatureFlags> = {
 /**
  * Development builds run in design-preview mode so the approved screens stay
  * reviewable. Anything else — including every release build — is a production
- * pilot.
+ * pilot. Explicit invalid configuration fails while the module is loading so a
+ * release cannot start with preview-only product behaviour.
  */
-const requestedMode = process.env.EXPO_PUBLIC_APP_MODE;
-export const APP_MODE: AppMode =
-  requestedMode === 'productionPilot' || requestedMode === 'designPreview'
-    ? requestedMode
-    : __DEV__
-      ? 'designPreview'
-      : 'productionPilot';
+export function resolveAppMode(requestedMode: string | undefined, isDev: boolean): AppMode {
+  if (requestedMode === undefined || requestedMode === '') {
+    return isDev ? 'designPreview' : 'productionPilot';
+  }
+
+  if (requestedMode === 'productionPilot') {
+    return requestedMode;
+  }
+
+  if (requestedMode === 'designPreview') {
+    if (!isDev) {
+      throw new Error(
+        'Invalid app configuration: designPreview is only available when __DEV__ is true.',
+      );
+    }
+
+    return requestedMode;
+  }
+
+  throw new Error(`Invalid EXPO_PUBLIC_APP_MODE: ${requestedMode}.`);
+}
+
+export const APP_MODE = resolveAppMode(process.env.EXPO_PUBLIC_APP_MODE, __DEV__);
 
 export const FEATURES: FeatureFlags = FLAGS_BY_MODE[APP_MODE];
 export const APP_CONFIG = Object.freeze({ features: FEATURES, mode: APP_MODE });
