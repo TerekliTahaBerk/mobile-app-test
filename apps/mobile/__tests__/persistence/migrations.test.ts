@@ -55,6 +55,16 @@ describe('migrations', () => {
     expect(row).toMatchObject({ display_name: 'Ege', weekly_report_day: 0 });
   });
 
+  it('adds durable purpose/context defaults without losing legacy sessions', async () => {
+    const db = createTestDatabase();
+    await migrateToLatest(db);
+
+    const columns = await db.getAllAsync<{ name: string }>('PRAGMA table_info(sessions);');
+    expect(columns.map((column) => column.name)).toEqual(
+      expect.arrayContaining(['purpose', 'context']),
+    );
+  });
+
   it('is idempotent: running again applies nothing and preserves data', async () => {
     const db = createTestDatabase();
     await migrateToLatest(db);

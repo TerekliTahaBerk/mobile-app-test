@@ -54,7 +54,10 @@ export default function MistakeNotebookRoute() {
     <MistakeNotebookScreen
       onBack={goBack}
       onStartPractice={(subtopicId) => {
-        void beginTopicPractice(subtopicId)
+        const topic = dashboard.data.topicPerformance.topics
+          .flatMap((mainTopic) => mainTopic.subtopics)
+          .find((candidate) => candidate.id === subtopicId);
+        void beginTopicPractice(subtopicId, topic?.accuracy ?? 0)
           .then(() => router.push('/lesson'))
           .catch((cause: unknown) => {
             setActionError(cause instanceof Error ? cause : new Error(String(cause)));

@@ -4,6 +4,7 @@ import type {
   PathNodeId,
   SkillId,
   Timestamp,
+  TopicId,
 } from '@/modules/curriculum/domain/content-types';
 import type { LocalDate } from '@/shared/time/local-date';
 
@@ -37,6 +38,17 @@ export type PathProgress = {
 /** Distinguishes a curriculum lesson from an assembled review drill. */
 export type SessionKind = 'lesson' | 'review';
 
+/** Why a lesson-engine session exists, independently of how it is scored. */
+export type SessionPurpose = 'dailyPlan' | 'lesson' | 'placement' | 'review' | 'topicPractice';
+
+/** Data needed to finish a purpose-specific flow after process death. */
+export type SessionContext =
+  | Record<string, never>
+  | {
+      beforeAccuracy: number;
+      topicId: TopicId;
+    };
+
 export type SessionStatus = 'abandoned' | 'active' | 'completed' | 'stale';
 
 /** Bumped when the serialized session snapshot changes shape. */
@@ -47,9 +59,11 @@ export type StoredSession = {
   /** Identifies the content the snapshot was recorded against. */
   contentVersion: string;
   currentExerciseIndex: number;
+  context: SessionContext;
   kind: SessionKind;
   lessonId: LessonId;
   readonly pathNodeId?: PathNodeId;
+  purpose: SessionPurpose;
   sessionId: string;
   /** JSON snapshot of the domain session, tagged with `snapshotVersion`. */
   snapshot: string;

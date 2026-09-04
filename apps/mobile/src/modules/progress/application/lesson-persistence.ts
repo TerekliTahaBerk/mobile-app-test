@@ -8,6 +8,8 @@ import type {
 import {
   SESSION_SNAPSHOT_VERSION,
   type SessionKind,
+  type SessionContext,
+  type SessionPurpose,
   type StoredAttempt,
   type StoredSession,
 } from '@/modules/progress/domain/progress-types';
@@ -38,6 +40,8 @@ export function toStoredSession(
   session: LessonSession,
   kind: SessionKind,
   atIso: string,
+  purpose: SessionPurpose = kind,
+  context: SessionContext = {},
 ): StoredSession {
   const status: StoredSession['status'] =
     session.status === 'completed'
@@ -49,10 +53,12 @@ export function toStoredSession(
   return {
     ...(session.completedAt === undefined ? {} : { completedAt: session.completedAt }),
     contentVersion: CONTENT_VERSION,
+    context,
     currentExerciseIndex: session.currentIndex,
     kind,
     lessonId: session.lessonId,
     ...(session.pathNodeId === undefined ? {} : { pathNodeId: session.pathNodeId }),
+    purpose,
     sessionId: sessionIdFor(session),
     snapshot: JSON.stringify(session),
     snapshotVersion: SESSION_SNAPSHOT_VERSION,
@@ -161,6 +167,8 @@ export function buildCompletionInput(
   session: LessonSession,
   kind: SessionKind,
   clock: Clock,
+  purpose: SessionPurpose = kind,
+  context: SessionContext = {},
 ): SessionCompletionInput {
   const atMs = clock.now();
   const completedAtIso = session.completedAt ?? new Date(atMs).toISOString();
@@ -174,14 +182,24 @@ export function buildCompletionInput(
     lessonId: session.lessonId,
     localDate: toLocalDate(Date.parse(completedAtIso), clock.timeZone()),
     ...(session.pathNodeId === undefined ? {} : { pathNodeId: session.pathNodeId }),
-    session: toStoredSession(session, kind, completedAtIso),
+    session: toStoredSession(session, kind, completedAtIso, purpose, context),
     timeZone: clock.timeZone(),
   };
 }
 
 export type LessonPersistence = {
-  complete: (session: LessonSession, kind: SessionKind) => Promise<SessionCompletionResult>;
-  saveProgress: (session: LessonSession, kind: SessionKind) => Promise<void>;
+  complete: (
+    session: LessonSession,
+    kind: SessionKind,
+    purpose: SessionPurpose,
+    context: SessionContext,
+  ) => Promise<SessionCompletionResult>;
+  saveProgress: (
+    session: LessonSession,
+    kind: SessionKind,
+    purpose: SessionPurpose,
+    context: SessionContext,
+  ) => Promise<void>;
 };
 
 export function createLessonPersistence(
@@ -189,11 +207,13 @@ export function createLessonPersistence(
   clock: Clock,
 ): LessonPersistence {
   return {
-    complete: (session, kind) =>
-      repositories.completion.completeSession(buildCompletionInput(session, kind, clock)),
-    saveProgress: async (session, kind) => {
+    complete: (session, kind, purpose, context) =>
+      repositories.completion.completeSession(
+        buildCompletionInput(session, kind, clock, purpose, context),
+      ),
+    saveProgress: async (session, kind, purpose, context) => {
       const atIso = new Date(clock.now()).toISOString();
-      const stored = toStoredSession(session, kind, atIso);
+      const stored = toStoredSession(session, kind, atIso, purpose, context);
       await repositories.sessionProgress.save(stored, toStoredAttempts(session));
     },
   };

@@ -56,6 +56,23 @@ describe('durable lesson snapshots', () => {
     });
   });
 
+  it('stores the durable purpose and topic-result context outside the engine snapshot', () => {
+    const stored = toStoredSession(
+      session,
+      'review',
+      '2026-08-27T10:03:00.000Z',
+      'topicPractice',
+      { beforeAccuracy: 0.4, topicId: 'topic.history.states' },
+    );
+
+    expect(stored).toMatchObject({
+      context: { beforeAccuracy: 0.4, topicId: 'topic.history.states' },
+      kind: 'review',
+      purpose: 'topicPractice',
+    });
+    expect(restoreSession(stored)).toEqual(session);
+  });
+
   it('refuses stale content and malformed snapshots without crashing', () => {
     const stored = toStoredSession(session, 'lesson', '2026-08-27T10:03:00.000Z');
 

@@ -11,6 +11,7 @@ import {
   LessonSessionProvider,
   useLessonSession,
 } from '@/modules/learning/application/lesson-session-store';
+import { lessonCompletionParams } from '@/modules/learning/application/lesson-navigation';
 import { XP_POLICY_V1 } from '@/modules/learning/domain/xp-policy';
 import { migrateToLatest } from '@/modules/progress/infrastructure/migrations';
 import { createSqliteRepositories } from '@/modules/progress/infrastructure/sqlite-repositories';
@@ -62,6 +63,10 @@ function SessionHarness() {
         {session === null ? 'none' : `${session.status}:${session.currentIndex}`}
       </Text>
       <Text testID="persistence-state">{store.persistenceStatus}</Text>
+      <Text testID="session-purpose">{store.lesson?.purpose ?? 'none'}</Text>
+      <Text testID="completion-params">
+        {store.lesson === null ? '{}' : JSON.stringify(lessonCompletionParams(store.lesson))}
+      </Text>
       <Text
         onPress={() =>
           store.begin('lesson.history.time.003', 'path.history.time.03')
@@ -80,6 +85,17 @@ function SessionHarness() {
       )}
       <Text onPress={store.continueAfterFeedback} testID="continue-session">
         Devam
+      </Text>
+      <Text onPress={() => void store.beginPlacement()} testID="start-placement">
+        Tespit
+      </Text>
+      <Text
+        onPress={() =>
+          void store.beginTopicPractice('tyt.history.time-and-history.measuring-time', 0.375)
+        }
+        testID="start-topic-practice"
+      >
+        Konu pratiği
       </Text>
     </View>
   );
@@ -138,5 +154,57 @@ describe('durable session recovery', () => {
         XP_POLICY_V1.lessonCompletion +
         XP_POLICY_V1.firstPathLevelCompletion,
     );
+  });
+
+  it.each([
+    {
+      button: 'start-placement',
+      expectedParams: '{"returnTo":"placement"}',
+      purpose: 'placement',
+    },
+    {
+      button: 'start-topic-practice',
+      expectedParams:
+        '{"beforeAccuracy":"0.375","returnTo":"topicPerformance","topicId":"tyt.history.time-and-history.measuring-time"}',
+      purpose: 'topicPractice',
+    },
+  ])('restores $purpose intent and its completion destination', async (testCase) => {
+    tick = 0;
+    const db = createTestDatabase();
+    await migrateToLatest(db);
+    const repositories = createSqliteRepositories(db);
+
+    const first = await render(
+      <LessonSessionProvider
+        clock={isoClock}
+        progressClock={progressClock}
+        repositories={repositories}
+      >
+        <SessionHarness />
+      </LessonSessionProvider>,
+    );
+    await waitFor(() => expect(screen.getByTestId(testCase.button)).toBeTruthy());
+    await fireEvent.press(screen.getByTestId(testCase.button));
+    await waitFor(async () =>
+      expect(await repositories.sessions.findActive()).toMatchObject({
+        purpose: testCase.purpose,
+      }),
+    );
+
+    await first.rerender(
+      <LessonSessionProvider
+        clock={isoClock}
+        key={`relaunch-${testCase.purpose}`}
+        progressClock={progressClock}
+        repositories={repositories}
+      >
+        <SessionHarness />
+      </LessonSessionProvider>,
+    );
+
+    await waitFor(() =>
+      expect(screen.getByTestId('session-purpose')).toHaveTextContent(testCase.purpose),
+    );
+    expect(screen.getByTestId('completion-params')).toHaveTextContent(testCase.expectedParams);
   });
 });

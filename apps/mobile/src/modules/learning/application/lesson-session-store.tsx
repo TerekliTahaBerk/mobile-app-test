@@ -44,7 +44,9 @@ import type {
 } from '@/modules/progress/application/repositories';
 import type {
   ReportReason,
+  SessionContext,
   SessionKind,
+  SessionPurpose,
   StoredSession,
 } from '@/modules/progress/domain/progress-types';
 import { MessageScreen } from '@/shared/ui/feedback/message-screen';
@@ -53,8 +55,10 @@ import { systemClock, type Clock as ProgressClock } from '@/shared/time/clock';
 
 /** The bridge between the pure lesson engine, React, and durable storage. */
 export type ActiveLesson = {
+  context: SessionContext;
   deps: LessonEngineDeps;
   kind: SessionKind;
+  purpose: SessionPurpose;
   session: LessonSession;
 };
 
@@ -71,7 +75,7 @@ type LessonSessionStore = {
   beginDailyPlan: (plan: DailyPlan) => void;
   beginPlacement: () => Promise<number>;
   beginReview: (skillId: SkillId) => void;
-  beginTopicPractice: (topicId: TopicId) => Promise<number>;
+  beginTopicPractice: (topicId: TopicId, beforeAccuracy: number) => Promise<number>;
   continueAfterFeedback: () => void;
   discard: () => void;
   reportQuestion: (exerciseId: ExerciseId, reason: ReportReason) => Promise<void>;
@@ -153,8 +157,10 @@ export function LessonSessionProvider({
 
         if (!cancelled) {
           installLesson({
+            context: stored.context,
             deps: depsForStoredSession(stored, restored),
             kind: stored.kind,
+            purpose: stored.purpose,
             session: restored,
           });
         }
@@ -191,7 +197,12 @@ export function LessonSessionProvider({
       const run = async () => {
         setPersistenceError(null);
         if (active.session.status === 'completed') {
-          const result = await persistence.complete(active.session, active.kind);
+          const result = await persistence.complete(
+            active.session,
+            active.kind,
+            active.purpose,
+            active.context,
+          );
           setCompletionResult(result);
           if (result.firstCompletionAwarded && active.session.pathNodeId !== undefined) {
             const completed = new Set(
@@ -215,7 +226,12 @@ export function LessonSessionProvider({
           return;
         }
 
-        await persistence.saveProgress(active.session, active.kind);
+        await persistence.saveProgress(
+          active.session,
+          active.kind,
+          active.purpose,
+          active.context,
+        );
         setPersistenceStatus('idle');
       };
 
@@ -253,7 +269,7 @@ export function LessonSessionProvider({
         lesson: index.getLesson(lessonId),
         ...(pathNodeId === undefined ? {} : { pathNodeId }),
       };
-      start(deps, 'lesson', clock, installLesson, setEvents, enqueuePersistence);
+      start(deps, 'lesson', 'lesson', {}, clock, installLesson, setEvents, enqueuePersistence);
       setCompletionResult(null);
     },
     [clock, enqueuePersistence, installLesson],
@@ -288,7 +304,7 @@ export function LessonSessionProvider({
         },
         xpPolicy: REVIEW_XP_POLICY,
       };
-      start(deps, 'review', clock, installLesson, setEvents, enqueuePersistence);
+      start(deps, 'review', 'dailyPlan', {}, clock, installLesson, setEvents, enqueuePersistence);
       trackEvent('daily_plan_started', {
         partCount: plan.parts.length,
         questionCount: plan.exercises.length,
@@ -328,7 +344,7 @@ export function LessonSessionProvider({
       },
       xpPolicy: REVIEW_XP_POLICY,
     };
-    start(deps, 'review', clock, installLesson, setEvents, enqueuePersistence);
+    start(deps, 'review', 'placement', {}, clock, installLesson, setEvents, enqueuePersistence);
     trackEvent('placement_started', {
       questionCount: placement.exercises.length,
       topicCount: placement.topicIds.length,
@@ -358,7 +374,7 @@ export function LessonSessionProvider({
       }
 
       const deps: LessonEngineDeps = { exercises, lesson, xpPolicy: REVIEW_XP_POLICY };
-      start(deps, 'review', clock, installLesson, setEvents, enqueuePersistence);
+      start(deps, 'review', 'review', {}, clock, installLesson, setEvents, enqueuePersistence);
       trackEvent('review_started', { lessonId: lesson.id, skillId });
       setCompletionResult(null);
     },
@@ -366,7 +382,7 @@ export function LessonSessionProvider({
   );
 
   const beginTopicPractice = useCallback(
-    async (topicId: TopicId) => {
+    async (topicId: TopicId, beforeAccuracy: number) => {
       const attempts = (await repositories?.attempts.listAllScored()) ?? [];
       const reports = (await repositories?.reports.listAll()) ?? [];
       const practice = assembleTargetedPractice(
@@ -381,7 +397,16 @@ export function LessonSessionProvider({
         lesson: practice.lesson,
         xpPolicy: REVIEW_XP_POLICY,
       };
-      start(deps, 'review', clock, installLesson, setEvents, enqueuePersistence);
+      start(
+        deps,
+        'review',
+        'topicPractice',
+        { beforeAccuracy, topicId },
+        clock,
+        installLesson,
+        setEvents,
+        enqueuePersistence,
+      );
       trackEvent('topic_practice_started', {
         lessonId: practice.lesson.id,
         questionCount: practice.exercises.length,
@@ -448,8 +473,10 @@ export function LessonSessionProvider({
       }
 
       installLesson({
+        context: stored.context,
         deps: depsForStoredSession(stored, restored),
         kind: stored.kind,
+        purpose: stored.purpose,
         session: restored,
       });
       setEvents([]);
@@ -530,6 +557,8 @@ export function LessonSessionProvider({
 function start(
   deps: LessonEngineDeps,
   kind: SessionKind,
+  purpose: SessionPurpose,
+  context: SessionContext,
   clock: Clock,
   installLesson: (lesson: ActiveLesson) => void,
   setEvents: (events: readonly DomainEvent[]) => void,
@@ -540,7 +569,7 @@ function start(
     { at: clock(), type: 'startLesson' },
     deps,
   );
-  const active = { deps, kind, session: result.session };
+  const active = { context, deps, kind, purpose, session: result.session };
   trackEvent('lesson_started', {
     lessonId: deps.lesson.id,
     ...(deps.pathNodeId === undefined ? {} : { pathNodeId: deps.pathNodeId }),

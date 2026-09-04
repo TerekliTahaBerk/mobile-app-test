@@ -1,17 +1,13 @@
-import { useLocalSearchParams, useRouter } from 'expo-router';
+import { useRouter } from 'expo-router';
 
 import { useHearts } from '@/modules/hearts/application/hearts-store';
+import { lessonCompletionParams } from '@/modules/learning/application/lesson-navigation';
 import { useLessonSession } from '@/modules/learning/application/lesson-session-store';
 import { LessonScreen } from '@/modules/learning/ui/lesson-screen';
 import { MessageScreen } from '@/shared/ui/feedback/message-screen';
 
 export default function LessonRoute() {
   const router = useRouter();
-  const params = useLocalSearchParams<{
-    beforeAccuracy?: string;
-    returnTo?: string;
-    topicId?: string;
-  }>();
   const { lesson, persistenceError, persistenceStatus, retryPersistence } = useLessonSession();
   const hearts = useHearts();
 
@@ -46,16 +42,7 @@ export default function LessonRoute() {
       onComplete={() =>
         router.replace({
           pathname: '/lesson-complete',
-          params:
-            params.returnTo === 'topicPerformance'
-              ? {
-                  beforeAccuracy: params.beforeAccuracy ?? '',
-                  returnTo: params.returnTo,
-                  topicId: params.topicId ?? '',
-                }
-              : params.returnTo === 'placement'
-                ? { returnTo: params.returnTo }
-                : {},
+          params: lessonCompletionParams(lesson),
         })
       }
       onExit={() => {

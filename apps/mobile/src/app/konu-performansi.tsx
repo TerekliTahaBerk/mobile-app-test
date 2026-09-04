@@ -92,7 +92,7 @@ export default function TopicPerformanceRoute() {
       onBack={goBack}
       onChangeWindow={setWindow}
       onStartPractice={(topicId, currentAccuracy) => {
-        void beginTopicPractice(topicId)
+        void beginTopicPractice(topicId, currentAccuracy)
           .then(() => {
             router.push({
               pathname: '/lesson',
