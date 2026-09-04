@@ -33,6 +33,7 @@ type ReminderSettingsScreenProps = {
   displayName: string;
   onBack: () => void;
   onChangeTime: (time: ReminderTime) => void;
+  onOpenPrivacy: () => void;
   onToggle: (enabled: boolean) => void;
   onRequestReset: () => void;
   onSaveProfile: (preferences: ProfilePreferences) => Promise<void> | void;
@@ -62,6 +63,7 @@ export function ReminderSettingsScreen({
   enabled,
   onBack,
   onChangeTime,
+  onOpenPrivacy,
   onToggle,
   onRequestReset,
   onSaveProfile,
@@ -166,9 +168,18 @@ export function ReminderSettingsScreen({
             Hatırlatmalar cihazından çıkmaz
           </AppText>
           <AppText color="accentSoft" style={styles.detail} variant="proseS">
-            Bildirimler bu telefonda planlanır. Hesabın yok ve sunucuya hiçbir şey gönderilmez.
+            Bildirimler bu telefonda planlanır ve push anahtarı oluşturulmaz. Öğrenme kayıtların
+            sunucuya gönderilmez; teknik hata raporları için Gizlilik Politikası’nı inceleyebilirsin.
           </AppText>
         </Card>
+
+        <AppButton
+          label="Gizlilik Politikası"
+          onPress={onOpenPrivacy}
+          style={styles.privacyButton}
+          testID="settings-open-privacy"
+          variant="neutral"
+        />
 
         <Card style={styles.card} variant="outlined" testID="local-data-disclosure">
           <AppText variant="labelM">Verilerin yalnızca bu cihazda</AppText>
@@ -383,6 +394,7 @@ const styles = StyleSheet.create({
   optionRow: { flexDirection: 'row', gap: theme.spacing.sm, marginTop: theme.spacing.sm },
   optionSelected: { backgroundColor: theme.colors.action.primary, borderColor: theme.colors.action.primary },
   profileCard: { padding: theme.spacing.lg },
+  privacyButton: { marginTop: theme.spacing.md },
   saveButton: { marginTop: theme.spacing.lg },
   scroll: { padding: theme.spacing.xl },
   resetButton: { marginTop: theme.spacing.md },

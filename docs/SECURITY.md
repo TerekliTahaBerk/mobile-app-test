@@ -6,7 +6,8 @@ The future Supabase backend must use least privilege and reviewed Row Level Secu
 
 The pilot is accountless and stores learning activity locally in SQLite: lesson
 sessions, answers, progress, XP, mastery, reviews, mistakes, and qualifying
-local dates. It collects no name, email, phone, contacts, location, advertising
+local dates. It stores a learner-chosen display name as a local preference, but
+collects no verified legal name, email, phone, contacts, location, advertising
 identifier, or account identity. Production builds may send privacy-scrubbed
 crash/error telemetry to Sentry; they do not send raw answers, free text, names,
 contact details, request URLs, or device/installation identifiers. The public
@@ -23,7 +24,10 @@ opening a destructive confirmation sheet and typing `SIFIRLA`; the SQLite
 deletions commit in one transaction, scheduled device notifications are
 cancelled first, and the app returns to onboarding.
 
-Open decisions include data retention, parental/guardian flows where applicable, account deletion, analytics consent, incident response, and anonymous-progress migration.
+The 13+ minor-user boundary, provider activation gate, data inventory, store
+declaration draft, and remaining release approvals are recorded in
+[`PRIVACY_RELEASE_PACKAGE.md`](PRIVACY_RELEASE_PACKAGE.md) and
+[`DECISIONS/0016-privacy-and-minor-users.md`](DECISIONS/0016-privacy-and-minor-users.md).
 
 ## Dependency vulnerability policy
 

@@ -13,6 +13,7 @@ function renderSettings(overrides: Partial<Parameters<typeof ReminderSettingsScr
       enabled
       onBack={jest.fn()}
       onChangeTime={jest.fn()}
+      onOpenPrivacy={jest.fn()}
       onRequestReset={jest.fn()}
       onSaveProfile={jest.fn()}
       onToggle={jest.fn()}
@@ -82,12 +83,15 @@ describe('reminder settings', () => {
     expect(screen.queryByTestId('reminder-permission-warning')).toBeNull();
   });
 
-  it('states that nothing leaves the device', async () => {
-    await renderSettings();
+  it('explains local storage and opens the complete privacy notice', async () => {
+    const onOpenPrivacy = jest.fn();
+    await renderSettings({ onOpenPrivacy });
 
     expect(screen.getByText('Hatırlatmalar cihazından çıkmaz')).toBeTruthy();
     expect(screen.getByText('Verilerin yalnızca bu cihazda')).toBeTruthy();
     expect(screen.getByText(/Cloud yedekleme yoktur/)).toBeTruthy();
+    await fireEvent.press(screen.getByTestId('settings-open-privacy'));
+    expect(onOpenPrivacy).toHaveBeenCalledTimes(1);
   });
 
   it('requires a separate destructive confirmation flow', async () => {

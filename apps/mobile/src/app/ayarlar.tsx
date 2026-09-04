@@ -1,4 +1,4 @@
-import { useRouter } from 'expo-router';
+import { type Href, useRouter } from 'expo-router';
 import { useEffect, useState } from 'react';
 
 import { useLearnerProfile } from '@/modules/learner/application/learner-profile-store';
@@ -101,6 +101,7 @@ export default function SettingsRoute() {
         setConfirmation('');
         setShowReset(true);
       }}
+      onOpenPrivacy={() => router.push('/gizlilik' as Href)}
       onSaveProfile={(preferences) =>
         store.save({ ...profile, ...preferences }).catch((cause: unknown) => {
           setError(cause instanceof Error ? cause : new Error(String(cause)));

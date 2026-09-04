@@ -4,7 +4,7 @@ This is the honest checklist for App Store and Google Play release.
 
 **Current state: not releasable.** The local-first product loop is real and
 durable, but the 10-lesson Tarih path is engineering-written draft material,
-production observability has no deployed provider, and store/legal work is incomplete.
+production observability has no approved deployed provider, and final legal/store approvals are incomplete.
 
 ## Ready
 
@@ -65,8 +65,10 @@ manual scenario has linked evidence.
 ### 4. Store, privacy, and legal — product + legal
 
 - Confirm a controlled bundle identifier/domain; `com.tekrarla.app` is a placeholder.
-- Publish the privacy policy and complete App Privacy/data-safety declarations.
-- Decide age rating and the treatment of minors under KVKK and applicable law.
+- Publish the implemented `/gizlilik` privacy route on a controlled HTTPS origin
+  and complete the drafted App Privacy/Data safety declarations in
+  [`PRIVACY_RELEASE_PACKAGE.md`](PRIVACY_RELEASE_PACKAGE.md).
+- Obtain legal and release approval for the documented 13+ minor-user strategy.
 - Produce store descriptions, screenshots, keywords, and support URLs.
 - Confirm trademark clearance for the Online Dershanem working name; `tekrarla`
   remains a technical identifier, not the cleared commercial name.

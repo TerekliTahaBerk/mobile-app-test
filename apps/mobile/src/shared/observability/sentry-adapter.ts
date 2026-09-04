@@ -9,7 +9,9 @@ import {
 } from '@/shared/observability/observability';
 
 const PRODUCTION_ENVIRONMENT = 'production';
+const APPROVED_PRIVACY_REVIEW = 'approved-2026-09-04';
 const dsn = process.env.EXPO_PUBLIC_SENTRY_DSN?.trim();
+const privacyReview = process.env.EXPO_PUBLIC_SENTRY_PRIVACY_REVIEW?.trim();
 
 export const OBSERVABILITY_ENVIRONMENT =
   process.env.EXPO_PUBLIC_OBSERVABILITY_ENVIRONMENT?.trim() || 'local';
@@ -103,7 +105,12 @@ export function createSentryAdapter(): ObservabilityAdapter {
 }
 
 export function installProductionObservability(): boolean {
-  if (__DEV__ || OBSERVABILITY_ENVIRONMENT !== PRODUCTION_ENVIRONMENT || !dsn) {
+  if (
+    __DEV__ ||
+    OBSERVABILITY_ENVIRONMENT !== PRODUCTION_ENVIRONMENT ||
+    privacyReview !== APPROVED_PRIVACY_REVIEW ||
+    !dsn
+  ) {
     return false;
   }
 

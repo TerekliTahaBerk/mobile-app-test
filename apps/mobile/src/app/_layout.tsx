@@ -1,7 +1,7 @@
 import '@/shared/observability/bootstrap';
 
 import * as Sentry from '@sentry/react-native';
-import { Stack } from 'expo-router';
+import { Stack, usePathname } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
@@ -36,16 +36,30 @@ function RootLayout() {
       <AppTypographyProvider>
         <SplashGate>
           <AppErrorBoundary>
-            <ProgressProvider>
-              <ProgressStartupGate>
-                <ReadyApplication />
-              </ProgressStartupGate>
-            </ProgressProvider>
+            <ApplicationEntry />
           </AppErrorBoundary>
         </SplashGate>
         <StatusBar style="dark" />
       </AppTypographyProvider>
     </SafeAreaProvider>
+  );
+}
+
+function ApplicationEntry() {
+  const pathname = usePathname();
+
+  // The public notice must remain readable on a clean install and even if the
+  // learner database cannot open. It does not consume application state.
+  if (pathname === '/gizlilik') {
+    return <ApplicationStack />;
+  }
+
+  return (
+    <ProgressProvider>
+      <ProgressStartupGate>
+        <ReadyApplication />
+      </ProgressStartupGate>
+    </ProgressProvider>
   );
 }
 
@@ -71,16 +85,22 @@ function ReadyApplication() {
             the limit has no way for a learner to lift it.
           */}
           <HeartsProvider repository={repositories.hearts} unlimited={!FEATURES.heartsEconomy}>
-            <Stack
-              screenOptions={{
-                contentStyle: { backgroundColor: theme.colors.background.app },
-                headerShown: false,
-              }}
-            />
+            <ApplicationStack />
           </HeartsProvider>
         </LessonSessionProvider>
       </LearnerEntryGate>
     </LearnerProfileProvider>
+  );
+}
+
+function ApplicationStack() {
+  return (
+    <Stack
+      screenOptions={{
+        contentStyle: { backgroundColor: theme.colors.background.app },
+        headerShown: false,
+      }}
+    />
   );
 }
 
