@@ -33,6 +33,7 @@ export type ContentIssueCode =
   | 'invalidAnswer'
   | 'invalidTaxonomy'
   | 'malformedRecord'
+  | 'productionReviewRequired'
   | 'schemaVersionMismatch'
   | 'unsupportedExerciseKind';
 

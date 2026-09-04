@@ -1,6 +1,8 @@
 import { createContentIndex, type ContentIndex } from '@/modules/curriculum/domain/content-index';
 import { assertValidContentBundle } from '@/modules/curriculum/domain/validate-content-bundle';
 import { tytDraftBundle } from '@/modules/curriculum/content/tyt-draft-bundle';
+import { productionPilotBundle } from '@/modules/curriculum/content/production-pilot-bundle';
+import { APP_MODE } from '@/shared/config/app-config';
 
 let index: ContentIndex | null = null;
 
@@ -15,7 +17,8 @@ let index: ContentIndex | null = null;
  */
 export function getContentIndex(): ContentIndex {
   if (index === null) {
-    index = createContentIndex(assertValidContentBundle(tytDraftBundle));
+    const bundle = APP_MODE === 'productionPilot' ? productionPilotBundle : tytDraftBundle;
+    index = createContentIndex(assertValidContentBundle(bundle));
   }
 
   return index;

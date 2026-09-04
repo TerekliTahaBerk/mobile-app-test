@@ -45,14 +45,25 @@ export type Timestamp = string;
  */
 export type ReviewStatus = 'approved' | 'draft' | 'reviewed';
 
-export type Provenance = {
+type AuthoredProvenance = {
   author: string;
   /** Free-text note about where the material came from. Never a copied source. */
   readonly note?: string;
-  readonly reviewedAt?: Timestamp;
-  readonly reviewedBy?: string;
-  reviewStatus: ReviewStatus;
 };
+
+export type Provenance = AuthoredProvenance &
+  (
+    | {
+        readonly reviewedAt?: never;
+        readonly reviewedBy?: never;
+        reviewStatus: 'draft';
+      }
+    | {
+        readonly reviewedAt: Timestamp;
+        readonly reviewedBy: string;
+        reviewStatus: 'approved' | 'reviewed';
+      }
+  );
 
 // ---------------------------------------------------------------------------
 // Curriculum hierarchy
