@@ -7,10 +7,13 @@ The future Supabase backend must use least privilege and reviewed Row Level Secu
 The pilot is accountless and stores learning activity locally in SQLite: lesson
 sessions, answers, progress, XP, mastery, reviews, mistakes, and qualifying
 local dates. It collects no name, email, phone, contacts, location, advertising
-identifier, or analytics data. Authentication, analytics providers, and backend
-access are absent, so no environment secrets are required. Legal and product
-review will be required for KVKK and other applicable obligations; this
-repository makes no compliance claim.
+identifier, or account identity. Production builds may send privacy-scrubbed
+crash/error telemetry to Sentry; they do not send raw answers, free text, names,
+contact details, request URLs, or device/installation identifiers. The public
+DSN routes client events, while the source-map upload token remains a sensitive
+EAS build secret and must never be bundled. Legal and product review is required
+for KVKK and other applicable obligations; this repository makes no compliance
+claim.
 
 The Settings screen states that there is no cloud backup and that deleting the
 app or losing the device makes this data unrecoverable. The learner can reset

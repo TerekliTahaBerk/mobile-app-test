@@ -11,6 +11,7 @@ import {
 import type { ProgressRepositories } from '@/modules/progress/application/repositories';
 import { openDatabase } from '@/modules/progress/infrastructure/database';
 import { createSqliteRepositories } from '@/modules/progress/infrastructure/sqlite-repositories';
+import { reportError } from '@/shared/observability/observability';
 import { MessageScreen } from '@/shared/ui/feedback/message-screen';
 
 /**
@@ -60,8 +61,12 @@ export function ProgressProvider({ children, repositories }: ProgressProviderPro
       })
       .catch((cause: unknown) => {
         if (!cancelled) {
+          const error = cause instanceof Error ? cause : new Error(String(cause));
+          reportError(error, {
+            operation: error.name === 'MigrationError' ? 'sqlite.migration' : 'sqlite.startup',
+          });
           setState({
-            error: cause instanceof Error ? cause : new Error(String(cause)),
+            error,
             status: 'failed',
           });
         }

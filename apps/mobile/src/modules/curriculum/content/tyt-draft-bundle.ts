@@ -4,6 +4,7 @@ import { UNIT_FILES } from '@/modules/curriculum/content/units';
 import type { ContentBundle } from '@/modules/curriculum/domain/content-types';
 import { assertParsedContentBundle } from '@/modules/curriculum/domain/parse-content-bundle';
 import { assertValidContentBundle } from '@/modules/curriculum/domain/validate-content-bundle';
+import { reportError } from '@/shared/observability/observability';
 
 /**
  * TYT — engineering vertical slice, assembled from the authored data files.
@@ -58,6 +59,14 @@ function assemble(): unknown {
   };
 }
 
-export const tytDraftBundle: ContentBundle = assertValidContentBundle(
-  assertParsedContentBundle(assemble()),
-);
+export const tytDraftBundle: ContentBundle = validateDraftBundle();
+
+function validateDraftBundle(): ContentBundle {
+  try {
+    return assertValidContentBundle(assertParsedContentBundle(assemble()));
+  } catch (cause) {
+    const error = cause instanceof Error ? cause : new Error(String(cause));
+    reportError(error, { operation: 'content.validation' });
+    throw error;
+  }
+}

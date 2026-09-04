@@ -6,8 +6,8 @@ import { reportError } from '@/shared/observability/observability';
 type AppErrorBoundaryProps = {
   children: ReactNode;
   /**
-   * Hook for a crash reporter. Nothing is wired yet — the app has no analytics
-   * or reporting adapter — so by default the error only reaches the console.
+   * Optional secondary hook for callers and tests. The shared observability
+   * adapter always receives the exception first.
    */
   onError?: (error: Error, info: ErrorInfo) => void;
 };

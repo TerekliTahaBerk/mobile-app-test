@@ -50,7 +50,7 @@ import type {
   StoredSession,
 } from '@/modules/progress/domain/progress-types';
 import { MessageScreen } from '@/shared/ui/feedback/message-screen';
-import { trackEvent } from '@/shared/observability/observability';
+import { reportError, trackEvent } from '@/shared/observability/observability';
 import { systemClock, type Clock as ProgressClock } from '@/shared/time/clock';
 
 /** The bridge between the pure lesson engine, React, and durable storage. */
@@ -167,7 +167,9 @@ export function LessonSessionProvider({
       })
       .catch((cause: unknown) => {
         if (!cancelled) {
-          setPersistenceError(asError(cause));
+          const error = asError(cause);
+          reportError(error, { operation: 'session.restore' });
+          setPersistenceError(error);
           setPersistenceStatus('failed');
         }
       })
@@ -237,7 +239,9 @@ export function LessonSessionProvider({
 
       const operation = writeQueue.current.then(run);
       writeQueue.current = operation.catch((cause: unknown) => {
-        setPersistenceError(asError(cause));
+        const error = asError(cause);
+        reportError(error, { operation: 'session.persist' });
+        setPersistenceError(error);
         setPersistenceStatus('failed');
       });
     },
