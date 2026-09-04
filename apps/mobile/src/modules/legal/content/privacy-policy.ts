@@ -13,7 +13,7 @@ export const PRIVACY_POLICY_SECTIONS: readonly PrivacyPolicySection[] = [
   {
     heading: 'Veri sorumlusu',
     body:
-      'Online Dershanem, Taha Berk Terekli tarafından işletilir. Gizlilik ve kişisel veri taleplerin için terekli@tahaberk.com adresine yazabilirsin.',
+      'Tekrarla, Taha Berk Terekli tarafından işletilir. Gizlilik ve kişisel veri taleplerin için terekli@tahaberk.com adresine yazabilirsin.',
   },
   {
     heading: 'Bu cihazda tutulan veriler',

@@ -102,6 +102,7 @@ export default function SettingsRoute() {
         setShowReset(true);
       }}
       onOpenPrivacy={() => router.push('/gizlilik' as Href)}
+      onOpenSupport={() => router.push('/destek' as Href)}
       onSaveProfile={(preferences) =>
         store.save({ ...profile, ...preferences }).catch((cause: unknown) => {
           setError(cause instanceof Error ? cause : new Error(String(cause)));

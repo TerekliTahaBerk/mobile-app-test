@@ -130,7 +130,7 @@ export function installProductionObservability(): boolean {
     return true;
   } catch (cause) {
     if (__DEV__) {
-      console.warn('[Online Dershanem] Sentry başlatılamadı:', cause);
+      console.warn('[Tekrarla] Sentry başlatılamadı:', cause);
     }
     return false;
   }

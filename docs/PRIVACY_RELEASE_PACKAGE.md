@@ -9,18 +9,18 @@ route is available inside Settings and in the static web export.
 
 | Field | Release value |
 | --- | --- |
-| Product | Online Dershanem (working name) |
+| Product | Tekrarla |
 | Data controller/operator | Taha Berk Terekli |
 | Privacy contact | `terekli@tahaberk.com` |
 | Notice version | 2026-09-04 |
-| Public route | `/gizlilik` on the controlled production web origin |
+| Public route | `https://tekrarla.app/gizlilik` |
 | Account model | Accountless; no login, cloud sync, or recovery |
 | Target audience | TYT Social learners aged 13+; the audience can include minors |
 
-The production origin, postal/contact address required by counsel, final
-commercial name, and bundle identifier are release-owner confirmations. Do not
-submit a store build until the public route resolves on a controlled HTTPS
-origin and counsel has approved the controller notice.
+The production identity is `com.tekrarla.app` and the commercial name is
+Tekrarla. The postal/contact address required by counsel remains a release-owner
+confirmation. Do not submit a store build until release operations have opened
+the deployed notice in a signed-out browser and counsel has approved it.
 
 ## Data inventory
 
@@ -51,7 +51,7 @@ sync, payments, ads, or remote question reporting.
   the device is not collected for the App Privacy label.
 - Tracking: **No**.
 - Data linked to identity: **No account or identity exists**.
-- Privacy Policy URL: the controlled HTTPS origin plus `/gizlilik`.
+- Privacy Policy URL: `https://tekrarla.app/gizlilik`.
 
 If Sentry is enabled, declare Diagnostics (Crash Data and Other Diagnostic Data)
 as collected, not used for tracking, and not linked to a user, subject to a
