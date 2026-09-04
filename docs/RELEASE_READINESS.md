@@ -57,6 +57,11 @@ but the Expo native binding still requires recorded iOS restart/resume QA and
 Android coverage. VoiceOver, largest Dynamic Type, and release-build
 performance passes remain.
 
+The repeatable Maestro smoke flows and the evidence template live in
+[`NATIVE_RELEASE_ACCEPTANCE.md`](NATIVE_RELEASE_ACCEPTANCE.md). Keep this blocker
+open until both store-format candidates pass on physical devices and every
+manual scenario has linked evidence.
+
 ### 4. Store, privacy, and legal — product + legal
 
 - Confirm a controlled bundle identifier/domain; `com.tekrarla.app` is a placeholder.

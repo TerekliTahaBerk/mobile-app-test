@@ -1,0 +1,5 @@
+flows:
+  - "smoke/*"
+
+executionOrder:
+  continueOnFailure: false

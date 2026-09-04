@@ -1,0 +1,10 @@
+appId: com.tekrarla.app
+---
+# This flow addresses the authored Zamanı Ölçmek lesson by stable content IDs.
+- tapOn:
+    id: flashcard-known
+- tapOn:
+    id: flashcard-known
+- tapOn:
+    id: flashcard-known
+- runFlow: finish-first-lesson-after-cards.yaml

@@ -1,0 +1,36 @@
+appId: com.tekrarla.app
+---
+- assertVisible:
+    id: onboarding-welcome
+- tapOn:
+    id: onboarding-start
+- tapOn:
+    id: onboarding-exam-yks
+- tapOn:
+    id: onboarding-next
+- tapOn:
+    id: onboarding-grade-graduate
+- tapOn:
+    id: onboarding-next
+- tapOn:
+    id: onboarding-name
+- inputText: "Maestro"
+- hideKeyboard
+- tapOn:
+    id: onboarding-next
+- tapOn:
+    id: onboarding-start-scratch
+- tapOn:
+    id: onboarding-next
+- tapOn:
+    id: onboarding-goal-1
+- tapOn:
+    id: onboarding-next
+- assertVisible:
+    id: onboarding-summary
+- tapOn:
+    id: onboarding-finish
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 15000

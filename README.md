@@ -44,6 +44,11 @@ Before cutting a release, run the same deterministic gate as CI:
 npm run quality:release
 ```
 
+Native store candidates additionally require the physical-device Maestro smoke
+suite and recorded manual acceptance in
+[`docs/NATIVE_RELEASE_ACCEPTANCE.md`](docs/NATIVE_RELEASE_ACCEPTANCE.md). A
+passing static release gate does not authorize public submission.
+
 That command adds full-source Jest coverage thresholds, production-content
 approval validation, generated content-statistics drift detection, Expo Doctor,
 the production dependency vulnerability policy, and a production-mode static
