@@ -1,255 +1,170 @@
 # Store submission checklist
 
-Tekrarla — App Store (iOS) and Google Play (Android) release preparation.
+Tekrarla 1.0 — App Store and Google Play submission source of truth.
 
-This document separates **repo-side items** (engineering-owned, can be completed
-in this repository) from **external items** (require a human owner outside the
-repo: legal, design, product, App Store Connect / Play Console).
+## Production identity
 
----
-
-## Part 1 — Asset and legal inventory
-
-### App icon
-
-| Asset | Path | Status | Action required |
-| --- | --- | --- | --- |
-| iOS icon (1024 × 1024 px, no alpha) | `apps/mobile/assets/images/icon.png` | **TODO** — placeholder in repo | Owner: design. Replace with production-resolution artwork. Confirm ownership or license before submission. |
-| Android adaptive foreground | `apps/mobile/assets/images/android-icon-foreground.png` | **TODO** — placeholder | Owner: design. Must be 108 × 108 dp safe zone in 432 × 432 px canvas. |
-| Android adaptive background | `apps/mobile/assets/images/android-icon-background.png` | **TODO** — placeholder | Owner: design. Solid fill or texture; no text. |
-| Android monochrome | `apps/mobile/assets/images/android-icon-monochrome.png` | **TODO** — placeholder | Owner: design. Single-channel silhouette. |
-| Web favicon | `apps/mobile/assets/images/favicon.png` | Low-priority (web export only) | Can remain placeholder until web distribution is scoped. |
-
-### Splash screen
-
-| Asset | Path | Status | Action required |
-| --- | --- | --- | --- |
-| Splash icon (centred, 180 px wide, on `#FBFCFA`) | `apps/mobile/assets/images/splash-icon.png` | **TODO** — placeholder | Owner: design. Confirm final artwork matches settled Tekrarla identity. |
-
-### Dino mascot
-
-| Asset | Path | Status | Action required |
-| --- | --- | --- | --- |
-| Dino artwork | `apps/mobile/assets/dino/dino.png` | **Placeholder** — see `assets/dino/README.md` | The approved artwork is in the Claude Design project "Online Dershanem Oyun v2". Drop the real file at this path; no code changes needed. Owner: design. |
-
-> **Ownership / license note:** Dino is a custom character. Confirm that all
-> production-resolution renders are owned by the organisation (work-for-hire or
-> assignment) before App Store / Play submission. Document the design agreement
-> or internal creation record. Do not submit with the placeholder.
-
-### Typography
-
-| Font | Weight(s) used | Source | License status |
-| --- | --- | --- | --- |
-| Manrope | 400, 700, 800 | Google Fonts (OFL 1.1) | OFL is App Store / Play compatible. No attribution required in-app, but retain the license file. **TODO:** confirm the bundled font file version matches the OFL source and add the license to `apps/mobile/assets/fonts/` if not already present. |
-| JetBrains Mono | Medium (500) | JetBrains / Google Fonts (OFL 1.1) | Same as above. **TODO:** same confirmation. |
-
-### Third-party code and SDKs
-
-Expo SDK and all npm packages carry their own open-source licenses (MIT, BSD,
-Apache 2.0, ISC predominate). No additional in-app attribution is required by
-those licenses, but Apple and Google may ask for export-compliance declarations.
-
-- `ITSAppUsesNonExemptEncryption: false` is already set in `app.json`; confirm
-  this remains accurate for production (standard HTTPS does not trigger the
-  exemption, but verify if any custom crypto is added later).
-
----
-
-## Part 2 — Store metadata checklist
-
-### Identity (repo-side — COMPLETE)
-
-| Item | Value | Notes |
+| Field | Final value | State |
 | --- | --- | --- |
-| App name | `Tekrarla` | Set in `apps/mobile/app.json` (`name`, `CFBundleDisplayName`). |
-| Bundle identifier (iOS) | `com.tekrarla.app` | Set in `apps/mobile/app.json` `ios.bundleIdentifier`. |
-| Android package name | `com.tekrarla.app` | Set in `apps/mobile/app.json` `android.package`. |
-| Slug / URL scheme | `tekrarla` | Set in `apps/mobile/app.json`. Matches bundle name. |
-| Version | `1.0.0` | Increment before submission if builds have been distributed. |
-| Build number (iOS) | `1` | Set in `app.json`. Increment in EAS or manually before each TestFlight / store upload. |
-| Version code (Android) | `1` | Set in `app.json`. Increment for each Play release. |
+| Public app/display name | **Tekrarla** | In `app.json` (`name`, `CFBundleDisplayName`) |
+| iOS bundle identifier | `com.tekrarla.app` | Final; in production config |
+| Android application ID | `com.tekrarla.app` | Final; in production config |
+| Expo slug and URL scheme | `tekrarla` | Final |
+| Release/version | `1.0.0`; store build numbers managed by EAS | Configured |
+| Category | Education | Ready to enter |
+| Primary language | Turkish (`tr-TR`) | Ready to enter |
+| Copyright | `© 2026 Taha Berk Terekli` | Owner to confirm account/legal spelling |
 
-### Trademark and name registration — EXTERNAL HUMAN STEP
+`com.tekrarla.app` is intentionally retained. It matches the settled Tekrarla
+name, is already used by release/observability identity, and changing it would
+create a separate store application. The reverse-DNS string is an immutable
+technical identifier; it is not evidence that the registrable domain is owned.
+Release operations must verify control in both developer consoles before the
+first upload. Trademark clearance and store-name reservation remain external
+legal/product gates.
 
-- [ ] **TODO (owner: legal / product):** Confirm trademark clearance for
-  **Tekrarla** in Turkey (TÜRKPATENT) and any other target markets before
-  submitting to either store. The technical identifiers are set but trademark
-  status is unverified as of this commit.
-- [ ] **TODO (owner: product):** Register the app name in App Store Connect and
-  claim the package name in Google Play Console before a competitor can.
+## Public URLs
 
-### Age rating — EXTERNAL HUMAN STEP
+| Store field | Final URL | Repo route | Verification |
+| --- | --- | --- | --- |
+| Privacy Policy URL | `https://tekrarla.app/gizlilik` | `/gizlilik` | HTTP 200 observed 2026-09-04; re-check content after production deploy |
+| Support URL | `https://tekrarla.app/destek` | `/destek` | HTTP 200 observed 2026-09-04; support route and copy are in this repo |
+| Marketing URL | `https://tekrarla.app/` | `/` | Optional; use only after the landing experience is approved |
 
-Recommended starting point based on content:
+Both public routes work without an account or learner database. A 200 status
+alone is insufficient: release operations must open each URL in a signed-out
+browser after deploying the release commit and capture dated evidence.
 
-- **iOS:** 4+ (no objectionable content, no user-generated content, no
-  in-app purchases in pilot). Adjust if Hearts/League/Plus go live — gambling
-  simulation or in-app purchase ratings may apply.
-- **Android:** Everyone (ESRB) / 3+ (PEGI). Same caveat.
+## Store copy — Turkish
 
-- [ ] **TODO (owner: product):** Complete the age-rating questionnaire in App
-  Store Connect and the content-rating questionnaire in Play Console.
-  Answers must reflect the actual pilot feature set (no social, no purchases
-  in v1).
+### Subtitle (App Store, maximum 30 characters)
 
-### Store descriptions — EXTERNAL HUMAN STEP
+`TYT Sosyal'i kısa turlarla çöz`
 
-Fields are listed in Turkish (the product language) with English field names.
+### Short description (Google Play, maximum 80 characters)
 
-#### Short description (Google Play — max 80 characters)
+`TYT Sosyal Tarih sorularını kısa turlarla çöz, tekrar et ve ilerlemeni izle.`
 
-```
-TODO: YKS, LGS ve KPSS sorularını tekrar et. Serinle, arkadaşlarınla yarış.
-```
+### Promotional text (App Store, maximum 170 characters)
 
-> Replace with owner-approved copy. Keep under 80 characters.
+`Kısa Tarih turlarıyla çalış, yanlışlarını tekrar et ve günlük İz'ini koru. Hesap açmadan, kendi cihazında ilerle.`
 
-#### Long description (App Store / Google Play — max 4000 characters)
+### Keywords (App Store, maximum 100 characters)
 
-```
-TODO
+`TYT,sosyal,tarih,YKS,soru,tekrar,ders,çalışma,sınav,yanlış defteri`
 
-Owner: product / marketing.
+### Full description
 
-Suggested outline (fill in approved copy):
-- What Tekrarla is: soru tekrar uygulaması, kısa oyun döngüsü, YKS / LGS / KPSS
-- How it works: dersler → ünite yolu → interaktif çalışma → can / XP / seri
-- Pilot scope disclosure: şu an sadece TYT Sosyal Bilimler / Tarih
-- Data and privacy: cihaz yerel depolama, hesap gerekmez, uygulama silinirse
-  ilerleme kaybolur
-- Legal footer if required by store
-```
+> TYT Sosyal Bilimler Tarih konularına kısa ve etkileşimli turlarla çalış.
+>
+> Tekrarla, sıradaki çalışmanı doğrudan gösterir. Çoktan seçmeli, doğru-yanlış,
+> boşluk doldurma, eşleştirme, sıralama ve bilgi kartı etkinliklerini tamamla;
+> açıklamayı gör ve yanlışlarını tekrar planına al.
+>
+> • Ünite yolunda adım adım ilerle
+>
+> • XP ve konu hâkimiyetini takip et
+>
+> • Yanlış defteriyle zorlandığın noktalara dön
+>
+> • Günlük İz ve haftalık özetle çalışma düzenini gör
+>
+> • İstersen cihazında çalışma hatırlatması planla
+>
+> Hesap gerekmez. Profilin ve öğrenme kayıtların yalnızca cihazında saklanır;
+> buluta yedeklenmez. Uygulamayı silersen veya cihazını kaybedersen ilerlemen
+> geri getirilemez. Temel öğrenme deneyimi çevrimdışı çalışır.
+>
+> İlk sürüm TYT Sosyal Bilimler kapsamındaki Tarih içeriğine odaklanır.
 
-#### Keywords (App Store — max 100 characters total)
+Copy must not mention LGS, KPSS, social competition, score improvement, paid
+features, or unavailable subjects. Revalidate character limits in the store UI.
 
-```
-TODO: sınav hazırlık, YKS, TYT, AYT, LGS, KPSS, tarih, soru bankası, tekrar, seri
-```
+### Release notes
 
-> Owner: product / ASO. Confirm keyword strategy and character count.
+`İlk Tekrarla sürümü: TYT Sosyal Bilimler Tarih turları, yanlış defteri, tekrar planı, XP, İz ve haftalık çalışma özeti.`
 
-#### Promotional text (App Store — max 170 characters, updatable without re-review)
+## Age and content-rating answers
 
-```
-TODO
-```
+The intended audience is 13+. The app has no account, chat, user-generated
+content, advertising, purchases, unrestricted web access, location, gambling,
+violence, sexual content, profanity, drugs, or horror in the production pilot.
 
-### Screenshots — EXTERNAL HUMAN STEP
+- Apple: answer every content descriptor as none and select the store-generated
+  rating; do not manually promise a rating before App Store Connect calculates it.
+- Google Play: Education category; declare target age 13+ and answer the IARC
+  questionnaire from the actual production feature set.
+- Do not select children under 13. If League, Plus, external links, remote
+  reporting, or other gated features ship, reassess before upload.
 
-Required sizes vary by store and device; minimum set:
+## Screenshot production brief
 
-| Store | Required | Status |
-| --- | --- | --- |
-| App Store — iPhone 6.9" (1320 × 2868 px) | 3–10 screenshots | **TODO** |
-| App Store — iPhone 6.7" (1290 × 2796 px) | 3–10 screenshots | **TODO** |
-| App Store — iPad Pro 13" (2064 × 2752 px) | Optional (supportsTablet is false) | Skip unless tablet support added |
-| Google Play — Phone (9:16 or 16:9, min 320 px) | 2–8 screenshots | **TODO** |
-| Google Play — Feature graphic (1024 × 500 px) | 1 | **TODO** |
+Capture in Turkish, `productionPilot` mode, with production-approved icon/Dino
+art and plausible non-identifying sample data. Do not show preview-only League,
+Plus, hearts economy, draft labels, notifications, status-bar personal data, or
+claims absent from the build.
 
-- [ ] **TODO (owner: design / product):** Capture screenshots in production-pilot
-  mode (`EXPO_PUBLIC_APP_MODE=productionPilot`) on a real device or high-fidelity
-  simulator. Screens to cover: home/path, lesson question, completion, İz/streak,
-  profile. Dino must appear in production-resolution artwork, not the placeholder.
+1. Home — one obvious daily action: “Bugünkü çalışmana başla.”
+2. Unit path — visible progression: “Tarih yolunda adım adım ilerle.”
+3. Exercise and explanation — “Çöz, geri bildirimi hemen gör.”
+4. Completion — earned XP: “Kısa turu tamamla.”
+5. Mistake/review surface — “Yanlışlarına doğru zamanda dön.”
+6. Profile/weekly summary — “İlerlemeni cihazında takip et.”
 
-### App preview / promo video — EXTERNAL HUMAN STEP
+Required deliverables: current App Store Connect iPhone display classes (3–10
+images per required class), Google Play phone screenshots (2–8), and a 1024×500
+Play feature graphic. `supportsTablet` is false, so no iPad set. Store size rules
+change; confirm current console requirements at capture time.
 
-- [ ] **TODO (owner: product):** Optional but recommended for App Store. 15–30 s
-  screen capture of the core game loop. Not required for initial submission.
+## Support and review copy
 
----
+Support contact: `terekli@tahaberk.com`. The public support page explains local
+storage, irreversible reset, notifications, offline use, and safe bug-report
+details. The privacy notice uses the settled Tekrarla name and remains the
+canonical disclosure for data handling.
 
-## Part 3 — Support and privacy URLs
+App Review / Play reviewer note:
 
-### Privacy policy — EXTERNAL HUMAN STEP
+> Tekrarla is a Turkish, device-local exam-preparation app. No account, login,
+> purchase, ad, or network connection is required for the core flow. Start the
+> app, complete onboarding, tap the home action, answer a lesson, and finish the
+> round. This build exposes TYT Sosyal Bilimler Tarih only. League, Plus, and
+> limited-hearts experiences are disabled in the production pilot. Learner data
+> remains on device and can be erased from Profil → Ayarlar → İlerlemeyi sıfırla.
 
-- [ ] **TODO (owner: legal / product):** Draft and publish the KVKK-compliant
-  privacy policy. See Y-123 for the KVKK / minor-user package.
-  - Privacy URL must be publicly accessible (no login required).
-  - Must disclose: device-local storage only, no account, no cloud sync,
-    data lost on app deletion, no third-party analytics in pilot v1
-    (update when observability provider is selected).
-  - **Placeholder privacy URL:** `https://tekrarla.app/gizlilik` — **DO NOT**
-    submit until the page is live.
+## Asset and legal gates
 
-### Support URL — EXTERNAL HUMAN STEP
+The exact inventory and checksums are in `docs/ASSET_RIGHTS.md`.
 
-- [ ] **TODO (owner: product):** Publish a support page or email-based support
-  address reachable from outside the app.
-  - Must explain how to reset local progress (delete and reinstall).
-  - Must disclose that progress cannot be recovered after app deletion.
-  - **Placeholder support URL:** `https://tekrarla.app/destek` — **DO NOT**
-    submit until the page is live.
+- [x] All bundled custom visuals and fonts inventoried.
+- [x] Font license evidence identified (OFL 1.1 in exact installed packages).
+- [ ] App icon/splash creation or assignment evidence approved by legal/product.
+- [ ] Dino creation or assignment evidence approved by legal/product.
+- [ ] Tekrarla trademark clearance and store-name reservation recorded.
+- [ ] Final visual approval confirms no legacy “Online Dershanem” mark remains.
 
-### Marketing URL — OPTIONAL
+The unchecked rows require evidence that cannot be inferred from files. They
+block submission but do not block merging this repo-side preparation.
 
-- [ ] **TODO (owner: product):** Landing page or App Store preview page.
-  Not required for submission.
+## Submission runbook
 
----
+- [ ] Deploy the release commit; verify the Privacy and Support URLs signed out.
+- [x] Run `npm run lint`, `npm run typecheck`, and `npm test` (2026-09-04).
+- [x] Produce a production-mode static export and verify `/gizlilik` and
+  `/destek` contain their server-rendered copy (2026-09-04).
+- [ ] Run `npm run quality:release` and resolve every release gate.
+- [ ] Build both `eas build --profile production` targets and record build URLs.
+- [ ] Complete `docs/NATIVE_RELEASE_ACCEPTANCE.md` on physical iOS and Android devices.
+- [ ] Reconcile Apple App Privacy and Play Data safety answers with
+  `docs/PRIVACY_RELEASE_PACKAGE.md` and the actual Sentry gate.
+- [ ] Upload approved screenshots and copy; complete ratings in both consoles.
+- [ ] Attach trademark, custom-asset rights, privacy/legal, and release approvals.
+- [ ] Record reviewer account as “not required” and paste the review note above.
 
-## Part 4 — App Review notes (App Store) / Release notes
+## Completion state
 
-### App Review notes
-
-```
-TODO (owner: product)
-
-Suggested content:
-- This is a device-local exam-preparation app for Turkish students.
-- No account, login, or network connection is required to use the app.
-- The pilot covers TYT Sosyal Bilimler (History lessons only).
-- Features shown as locked or disabled (League, Plus, Hearts) are
-  gated behind feature flags and intentionally inactive in this build.
-- No in-app purchases, advertising, or data collection occur in this build.
-- Test device: [iPhone model, iOS version] — no special setup needed.
-```
-
-### What's new / Release notes (first release)
-
-```
-TODO (owner: product — Turkish copy)
-
-Example:
-İlk sürüm. TYT Sosyal Bilimler Tarih dersleriyle başlıyor.
-Soru çöz, serinle, ilerlemeni takip et.
-```
-
----
-
-## Part 5 — Pre-submission technical checks
-
-These can be run by engineering before submitting to the store.
-
-- [ ] `npm run lint` — passes with zero errors
-- [ ] `npm run typecheck` — passes with zero errors
-- [ ] `npm test` — all tests pass
-- [ ] `eas build --platform ios --profile production` (or `preview`) — builds without error
-- [ ] `eas build --platform android --profile production` — builds without error
-- [ ] TestFlight internal test on a physical iPhone (iOS 17+) — smoke test: onboarding → lesson → completion → İz
-- [ ] Android internal test track on a physical device (Android 13+) — same smoke test
-- [ ] VoiceOver pass (iOS) — home, lesson, completion screens navigable without sight
-- [ ] Dynamic Type XL pass — no text truncation or layout overflow
-- [ ] App icon renders correctly at 60 × 60 pt and in App Store listing at 1024 px
-- [ ] Splash screen background matches `#FBFCFA` on all tested devices
-
----
-
-## Summary: who does what
-
-| Item | Owner | Blocking submission |
-| --- | --- | --- |
-| App name, bundle ID, version in config | Engineering — DONE | — |
-| Production-resolution app icon / splash | Design | Yes |
-| Production Dino artwork | Design | Yes |
-| Font license confirmation | Engineering | Yes |
-| Trademark clearance (Tekrarla) | Legal / product | Yes |
-| App Store Connect / Play Console name claim | Product | Yes |
-| Age rating questionnaire | Product | Yes |
-| Store descriptions, keywords | Product / marketing | Yes |
-| Screenshots | Design / product | Yes |
-| Privacy policy published | Legal / product | Yes |
-| Support URL published | Product | Yes |
-| App Review notes | Product | Yes |
-| EAS production builds passing | Engineering | Yes |
-| Device smoke tests and accessibility QA | Engineering | Yes |
+Repo-side identity, metadata copy, rating inputs, screenshot brief, support
+copy, privacy copy, and route implementation are complete. Submission remains
+blocked by custom-asset ownership evidence, trademark/legal approval, deployment
+content verification, current-console forms, screenshots, and physical-device
+release acceptance.

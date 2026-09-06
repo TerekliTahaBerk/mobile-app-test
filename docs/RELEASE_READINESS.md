@@ -70,8 +70,10 @@ manual scenario has linked evidence.
   and complete the drafted App Privacy/Data safety declarations in
   [`PRIVACY_RELEASE_PACKAGE.md`](PRIVACY_RELEASE_PACKAGE.md).
 - Obtain legal and release approval for the documented 13+ minor-user strategy.
-- Produce store descriptions, screenshots, keywords, and support URLs.
-- Confirm commercial ownership/licensing and production-resolution Dino art.
+- Store copy, rating inputs, screenshot brief, and public support route are
+  prepared in [`STORE_SUBMISSION_CHECKLIST.md`](STORE_SUBMISSION_CHECKLIST.md).
+- Confirm commercial ownership/licensing for the inventoried custom icon,
+  splash, and Dino artwork in [`ASSET_RIGHTS.md`](ASSET_RIGHTS.md).
 - See `docs/STORE_SUBMISSION_CHECKLIST.md` for the full asset/legal/metadata checklist.
 
 ### 5. Device-only progress disclosure — product

@@ -59,6 +59,7 @@ Green is the only action colour. Rose is only ever a setback. Amber is only ever
 ## Open identity decisions
 
 - Trademark clearance for **Tekrarla** — external human step; see `docs/STORE_SUBMISSION_CHECKLIST.md`.
-- App icon and splash artwork (final production-resolution versions not yet in repo).
+- Commercial-rights approval for app icon, splash and Dino artwork; exact files
+  and current evidence state are recorded in `ASSET_RIGHTS.md`.
 - Whether a dedicated setback pose is needed; current setback moments reuse the
   general pose with a subdued tone.

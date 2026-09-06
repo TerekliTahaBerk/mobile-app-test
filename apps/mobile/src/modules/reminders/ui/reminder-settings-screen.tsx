@@ -34,6 +34,7 @@ type ReminderSettingsScreenProps = {
   onBack: () => void;
   onChangeTime: (time: ReminderTime) => void;
   onOpenPrivacy: () => void;
+  onOpenSupport: () => void;
   onToggle: (enabled: boolean) => void;
   onRequestReset: () => void;
   onSaveProfile: (preferences: ProfilePreferences) => Promise<void> | void;
@@ -64,6 +65,7 @@ export function ReminderSettingsScreen({
   onBack,
   onChangeTime,
   onOpenPrivacy,
+  onOpenSupport,
   onToggle,
   onRequestReset,
   onSaveProfile,
@@ -178,6 +180,13 @@ export function ReminderSettingsScreen({
           onPress={onOpenPrivacy}
           style={styles.privacyButton}
           testID="settings-open-privacy"
+          variant="neutral"
+        />
+        <AppButton
+          label="Destek"
+          onPress={onOpenSupport}
+          style={styles.supportButton}
+          testID="settings-open-support"
           variant="neutral"
         />
 
@@ -395,6 +404,7 @@ const styles = StyleSheet.create({
   optionSelected: { backgroundColor: theme.colors.action.primary, borderColor: theme.colors.action.primary },
   profileCard: { padding: theme.spacing.lg },
   privacyButton: { marginTop: theme.spacing.md },
+  supportButton: { marginTop: theme.spacing.sm },
   saveButton: { marginTop: theme.spacing.lg },
   scroll: { padding: theme.spacing.xl },
   resetButton: { marginTop: theme.spacing.md },

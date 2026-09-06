@@ -50,7 +50,7 @@ function ApplicationEntry() {
 
   // The public notice must remain readable on a clean install and even if the
   // learner database cannot open. It does not consume application state.
-  if (pathname === '/gizlilik') {
+  if (pathname === '/gizlilik' || pathname === '/destek') {
     return <ApplicationStack />;
   }
 

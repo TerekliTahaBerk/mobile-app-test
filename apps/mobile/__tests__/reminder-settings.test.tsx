@@ -14,6 +14,7 @@ function renderSettings(overrides: Partial<Parameters<typeof ReminderSettingsScr
       onBack={jest.fn()}
       onChangeTime={jest.fn()}
       onOpenPrivacy={jest.fn()}
+      onOpenSupport={jest.fn()}
       onRequestReset={jest.fn()}
       onSaveProfile={jest.fn()}
       onToggle={jest.fn()}
@@ -92,6 +93,14 @@ describe('reminder settings', () => {
     expect(screen.getByText(/Cloud yedekleme yoktur/)).toBeTruthy();
     await fireEvent.press(screen.getByTestId('settings-open-privacy'));
     expect(onOpenPrivacy).toHaveBeenCalledTimes(1);
+  });
+
+  it('opens the public support guidance', async () => {
+    const onOpenSupport = jest.fn();
+    await renderSettings({ onOpenSupport });
+
+    await fireEvent.press(screen.getByTestId('settings-open-support'));
+    expect(onOpenSupport).toHaveBeenCalledTimes(1);
   });
 
   it('requires a separate destructive confirmation flow', async () => {
