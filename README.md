@@ -83,6 +83,12 @@ it saves is content the app will load. Reviewers come from the repository's
 stable human-expert registry; signed status changes include identity, time and
 content/curriculum versions in the diff, while Git/PR history is the audit trail.
 
+Generate or verify the TYT Tarih human-review packet with
+`npm run content:history:review:update` and
+`npm run content:history:review:check`. The generated packet is an inventory and
+triage aid; it never replaces the two-step human `reviewed` → `approved`
+attestation in Studio.
+
 ## Repository map
 
 - `apps/mobile`: Expo Router application

@@ -81,6 +81,14 @@ display name, active/inactive status and the subjects they are qualified to
 review. The registry is intentionally empty until real human subject-matter
 experts are added; placeholder people must not be invented.
 
+For TYT Tarih, `npm run content:history:review:update` generates the unit-by-unit
+human review packet at `docs/CONTENT_REVIEWS/TYT_HISTORY_REVIEW_PACKET.md`.
+The packet inventories every lesson and scored exercise, highlights deterministic
+triage findings, and states the sign-off boundary explicitly. It is not an
+academic approval. `npm run content:history:review:check` fails when content has
+changed without refreshing the packet, and the release-quality command includes
+that drift check.
+
 `reviewed` and `approved` records must carry `reviewerId`, a `reviewedBy`
 display-name snapshot, `reviewedAt`, `reviewedContentVersion`, and
 `reviewedCurriculumVersion`. Validation resolves the stable id against the
