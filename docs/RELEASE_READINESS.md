@@ -3,7 +3,7 @@
 This is the honest checklist for App Store and Google Play release.
 
 **Current state: not releasable.** The local-first product loop is real and
-durable, but the 10-lesson Tarih path is engineering-written draft material,
+durable, but the 55-lesson Tarih curriculum is engineering-written draft material,
 production observability has no approved deployed provider, and final legal/store approvals are incomplete.
 
 ## Ready
@@ -40,6 +40,11 @@ The shipped Kurultay lesson is `draft`, written by engineering, and exists only
 to prove the pipeline. Production requires original material approved by a
 human subject-matter reviewer across Tarih, Coğrafya, Felsefe, and Din Kültürü.
 This is the largest release blocker.
+
+The generated [TYT Tarih review packet](CONTENT_REVIEWS/TYT_HISTORY_REVIEW_PACKET.md)
+provides the ordered, record-level checklist and automatic triage for the human
+review. It is not evidence of academic approval; the blocker remains until the
+registry-backed two-step attestations and open-item checks are complete.
 
 ### 2. Production observability — engineering + product
 
