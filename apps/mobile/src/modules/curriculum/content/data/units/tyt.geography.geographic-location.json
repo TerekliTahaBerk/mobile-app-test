@@ -52,7 +52,7 @@
     {
       "correctOptionId": "opt-2",
       "difficulty": 4,
-      "explanation": "Ekvator’dan kutuplara gidilir durumunda çizgisel hız azalır. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "explanation": "Dünya’nın ekseni çevresindeki dönüşünde alınan yol, Ekvator’dan kutuplara gidildikçe azaldığı için çizgisel hız da azalır.",
       "id": "exercise.geography.geographic-location.latitude-longitude.001.mcq02",
       "kind": "multipleChoice",
       "options": [
@@ -73,7 +73,7 @@
           "label": "Yerel saat farkı 60 dakikadır"
         }
       ],
-      "prompt": "Ekvator’dan kutuplara gidilir. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "prompt": "Ekvator’dan kutuplara gidildikçe Dünya’nın günlük hareketine bağlı çizgisel hız nasıl değişir?",
       "provenance": {
         "author": "Online Dershanem AI-assisted draft",
         "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",

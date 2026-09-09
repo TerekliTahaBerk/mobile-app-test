@@ -17,7 +17,7 @@
     {
       "correctOptionId": "opt-1",
       "difficulty": 2,
-      "explanation": "Ekvator’dan kutuplara gidilir durumunda paralellerin çevresi kısalır. Diğer seçenekler farklı coğrafi koşulların sonuçlarıdır.",
+      "explanation": "Dünya’nın küresel şekli nedeniyle paralel dairelerinin çevresi Ekvator’dan kutuplara gidildikçe kısalır.",
       "id": "exercise.geography.earth-shape-motions.shape-daily.001.mcq01",
       "kind": "multipleChoice",
       "options": [
@@ -38,7 +38,7 @@
           "label": "Dünya’nın küresel şekli etkilidir"
         }
       ],
-      "prompt": "Ekvator’dan kutuplara gidilir. Bu durumda aşağıdakilerden hangisi beklenir?",
+      "prompt": "Ekvator’dan kutuplara gidildikçe paralel dairelerinin çevresi nasıl değişir?",
       "provenance": {
         "author": "Online Dershanem AI-assisted draft",
         "note": "2027 TYT Coğrafya kapsamı için özgün taslak içerik. İnsan akademik incelemesi gerektirir.",

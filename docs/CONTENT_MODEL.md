@@ -89,6 +89,14 @@ academic approval. `npm run content:history:review:check` fails when content has
 changed without refreshing the packet, and the release-quality command includes
 that drift check.
 
+TYT Coğrafya uses the same source-of-truth generator via
+`npm run content:geography:review:update`; its packet lives at
+`docs/CONTENT_REVIEWS/TYT_GEOGRAPHY_REVIEW_PACKET.md`. Alongside each record's
+answer/payload and explanation, deterministic triage highlights map, contour,
+coordinate, profile, distribution, and explicit visual references for human
+context review. `npm run content:geography:review:check` is part of the
+release-quality gate. This packet is not an academic approval.
+
 `reviewed` and `approved` records must carry `reviewerId`, a `reviewedBy`
 display-name snapshot, `reviewedAt`, `reviewedContentVersion`, and
 `reviewedCurriculumVersion`. Validation resolves the stable id against the
@@ -132,3 +140,6 @@ measurable skills, 45 lessons, 45 chained path nodes and 315 exercises. Direct
 verse/hadith quotations and numbered source references are intentionally absent
 from this first draft. Every lesson and exercise remains `draft` until a DKAB
 teacher or theology subject-matter reviewer approves it.
+
+The 19-unit TYT Coğrafya draft contains 38 lessons and 228 exercises (190
+scored). Every record remains `draft`; no human Coğrafya reviewer is registered.
