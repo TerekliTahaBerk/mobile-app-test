@@ -25,13 +25,16 @@ const profile: LearnerProfile = {
   completedAtIso: '2026-08-28T10:00:00.000Z',
   dailyGoal: 3,
   displayName: 'Ege',
-  exam: 'yks',
-  grade: 'grade12',
+  examProfile: {
+    family: 'yks',
+    grade: 'grade12',
+    program: 'tyt',
+    targetYear: 2027,
+    track: 'verbal',
+  },
   remindersEnabled: false,
   startingPoint: 'scratch',
-  targetYear: 2027,
   weeklyReportDay: 0,
-  track: 'verbal',
 };
 
 function SaveProfile() {
@@ -94,19 +97,11 @@ describe('first-launch entry', () => {
   });
 
   it('treats unsupported legacy LGS profiles as needing onboarding', () => {
-    const legacyProfile: LearnerProfile = {
-      avatarId: profile.avatarId,
-      completedAtIso: profile.completedAtIso,
-      dailyGoal: profile.dailyGoal,
-      displayName: profile.displayName,
-      exam: 'lgs',
-      grade: profile.grade,
-      remindersEnabled: profile.remindersEnabled,
-      startingPoint: profile.startingPoint,
-      targetYear: profile.targetYear,
-      weeklyReportDay: profile.weeklyReportDay,
+    const unsupportedProfile: LearnerProfile = {
+      ...profile,
+      examProfile: { family: 'lgs', grade: 'grade8', program: 'lgs', targetYear: 2027 },
     };
-    expect(needsOnboarding(legacyProfile)).toBe(true);
+    expect(needsOnboarding(unsupportedProfile)).toBe(true);
     expect(needsOnboarding(profile)).toBe(false);
   });
 });

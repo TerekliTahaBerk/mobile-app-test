@@ -9,15 +9,16 @@ import type {
 import type {
   AvatarId,
   DailyGoal,
-  ExamTarget,
-  GradeLevel,
   LearnerProfile,
   ReferralSource,
   ReminderTime,
   StartingPoint,
-  StudyTrack,
   WeeklyReportDay,
 } from '@/modules/learner/domain/learner-profile';
+import {
+  parseExamProfile,
+  type ExamProfile,
+} from '@/modules/learner/domain/exam-profile';
 import { XP_POLICY_V1 } from '@/modules/learning/domain/xp-policy';
 import type {
   AttemptRepository,
@@ -866,18 +867,27 @@ export function createSqliteRepositories(db: SQLiteDatabase): ProgressRepositori
       return row === null ? null : toLearnerProfile(row);
     },
     write: async (value) => {
+      assertValidLearnerProfile(value);
+      const exam = toExamColumns(value.examProfile);
       await db.runAsync(
         `INSERT INTO learner_profile (
-           id, display_name, avatar_id, exam, track, grade, target_year,
+           id, schema_version, migration_status, display_name, avatar_id,
+           exam_family, exam_program, exam_grade, exam_track, exam_language,
+           exam_variants, target_year,
            referral_source, daily_goal, starting_point, reminders_enabled,
            reminder_time, weekly_report_day, completed_at
-         ) VALUES (1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+         ) VALUES (1, 2, 'ready', ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
          ON CONFLICT (id) DO UPDATE SET
+           schema_version    = excluded.schema_version,
+           migration_status  = excluded.migration_status,
            display_name      = excluded.display_name,
            avatar_id         = excluded.avatar_id,
-           exam              = excluded.exam,
-           track             = excluded.track,
-           grade             = excluded.grade,
+           exam_family       = excluded.exam_family,
+           exam_program      = excluded.exam_program,
+           exam_grade        = excluded.exam_grade,
+           exam_track        = excluded.exam_track,
+           exam_language     = excluded.exam_language,
+           exam_variants     = excluded.exam_variants,
            target_year       = excluded.target_year,
            referral_source   = excluded.referral_source,
            daily_goal        = excluded.daily_goal,
@@ -889,10 +899,13 @@ export function createSqliteRepositories(db: SQLiteDatabase): ProgressRepositori
         [
           value.displayName,
           value.avatarId,
-          value.exam,
-          value.track ?? null,
-          value.grade,
-          value.targetYear,
+          exam.family,
+          exam.program,
+          exam.grade,
+          exam.track,
+          exam.language,
+          exam.variants,
+          value.examProfile.targetYear,
           value.referralSource ?? null,
           value.dailyGoal,
           value.startingPoint,
@@ -922,6 +935,7 @@ export function createSqliteRepositories(db: SQLiteDatabase): ProgressRepositori
           DELETE FROM hearts;
           DELETE FROM question_reports;
           DELETE FROM learner_profile;
+          DELETE FROM learner_profile_v1_backup;
         `);
       });
     },
@@ -978,30 +992,66 @@ type HeartsRow = {
 };
 
 type LearnerProfileRow = {
-  avatar_id: string;
-  completed_at: string;
-  daily_goal: number;
-  display_name: string;
-  exam: string;
-  grade: string;
+  avatar_id: string | null;
+  completed_at: string | null;
+  daily_goal: number | null;
+  display_name: string | null;
+  exam_family: string | null;
+  exam_grade: string | null;
+  exam_language: string | null;
+  exam_program: string | null;
+  exam_track: string | null;
+  exam_variants: string | null;
   id: number;
+  migration_status: string;
   referral_source: string | null;
   reminder_time: string | null;
-  reminders_enabled: number;
-  starting_point: string;
-  target_year: number;
-  track: string | null;
-  weekly_report_day: number;
+  reminders_enabled: number | null;
+  schema_version: number;
+  starting_point: string | null;
+  target_year: number | null;
+  weekly_report_day: number | null;
 };
 
-function toLearnerProfile(row: LearnerProfileRow): LearnerProfile {
+function toLearnerProfile(row: LearnerProfileRow): LearnerProfile | null {
+  if (row.schema_version !== 2 || row.migration_status !== 'ready') {
+    return null;
+  }
+
+  const examProfile = parseExamProfile({
+    family: row.exam_family,
+    program: row.exam_program,
+    targetYear: row.target_year,
+    ...(row.exam_grade === null ? {} : { grade: row.exam_grade }),
+    ...(row.exam_language === null ? {} : { language: row.exam_language }),
+    ...(row.exam_track === null ? {} : { track: row.exam_track }),
+    ...(row.exam_variants === null ? {} : { variants: parseVariants(row.exam_variants) }),
+  });
+  if (
+    examProfile === null ||
+    typeof row.display_name !== 'string' ||
+    row.display_name.trim().length === 0 ||
+    !isOneOf(row.avatar_id, ['initial', 'dino', 'sky', 'violet']) ||
+    !isOneOf(row.daily_goal, [1, 3, 6]) ||
+    !isOneOf(row.starting_point, ['placement', 'scratch']) ||
+    !isOneOf(row.reminders_enabled, [0, 1]) ||
+    !isOneOf(row.weekly_report_day, [0, 1, 2, 3, 4, 5, 6]) ||
+    typeof row.completed_at !== 'string' ||
+    row.completed_at.length === 0 ||
+    (row.referral_source !== null &&
+      !isOneOf(row.referral_source, ['appStore', 'friend', 'other', 'school', 'social', 'youtube'])) ||
+    (row.reminder_time !== null &&
+      !isOneOf(row.reminder_time, ['17:00', '20:00', '22:00']))
+  ) {
+    return null;
+  }
+
   return {
     avatarId: row.avatar_id as AvatarId,
     completedAtIso: row.completed_at,
     dailyGoal: row.daily_goal as DailyGoal,
     displayName: row.display_name,
-    exam: row.exam as ExamTarget,
-    grade: row.grade as GradeLevel,
+    examProfile,
     ...(row.referral_source === null
       ? {}
       : { referralSource: row.referral_source as ReferralSource }),
@@ -1010,8 +1060,54 @@ function toLearnerProfile(row: LearnerProfileRow): LearnerProfile {
       : { reminderTime: row.reminder_time as ReminderTime }),
     remindersEnabled: row.reminders_enabled === 1,
     startingPoint: row.starting_point as StartingPoint,
-    targetYear: row.target_year,
     weeklyReportDay: row.weekly_report_day as WeeklyReportDay,
-    ...(row.track === null ? {} : { track: row.track as StudyTrack }),
   };
+}
+
+function parseVariants(value: string | null): unknown {
+  if (value === null) {
+    return undefined;
+  }
+  try {
+    return JSON.parse(value) as unknown;
+  } catch {
+    return undefined;
+  }
+}
+
+function toExamColumns(profile: ExamProfile) {
+  return {
+    family: profile.family,
+    grade: profile.family === 'kpss' ? null : profile.grade,
+    language: profile.family === 'yks' && profile.program === 'ydt' ? profile.language : null,
+    program: profile.program,
+    track:
+      profile.family === 'yks' && profile.program !== 'ydt' ? (profile.track ?? null) : null,
+    variants: profile.family === 'kpss' ? JSON.stringify(profile.variants) : null,
+  };
+}
+
+function assertValidLearnerProfile(profile: LearnerProfile): void {
+  if (
+    parseExamProfile(profile.examProfile) === null ||
+    typeof profile.displayName !== 'string' ||
+    profile.displayName.trim().length === 0 ||
+    !isOneOf(profile.avatarId, ['initial', 'dino', 'sky', 'violet']) ||
+    !isOneOf(profile.dailyGoal, [1, 3, 6]) ||
+    !isOneOf(profile.startingPoint, ['placement', 'scratch']) ||
+    !isOneOf(profile.weeklyReportDay, [0, 1, 2, 3, 4, 5, 6]) ||
+    typeof profile.remindersEnabled !== 'boolean' ||
+    typeof profile.completedAtIso !== 'string' ||
+    profile.completedAtIso.length === 0 ||
+    (profile.referralSource !== undefined &&
+      !isOneOf(profile.referralSource, ['appStore', 'friend', 'other', 'school', 'social', 'youtube'])) ||
+    (profile.reminderTime !== undefined &&
+      !isOneOf(profile.reminderTime, ['17:00', '20:00', '22:00']))
+  ) {
+    throw new TypeError('Learner profile is invalid and was not persisted.');
+  }
+}
+
+function isOneOf<TValue>(value: unknown, choices: readonly TValue[]): value is TValue {
+  return choices.includes(value as TValue);
 }

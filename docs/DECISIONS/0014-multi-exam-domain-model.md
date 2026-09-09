@@ -38,8 +38,8 @@ production screens or content. YKS program-specific fields cannot leak into LGS
 or KPSS branches, and KPSS expansion does not require a new TypeScript union for
 every variant.
 
-Y-138 must introduce learner-profile schema v2, persist `ExamProfile`, validate
-open identifiers at the repository boundary, and decide how unsupported legacy
-LGS rows re-enter onboarding. Y-139 must migrate curriculum identity from the
+Y-138 introduces learner-profile schema v2, persists `ExamProfile`, validates
+open identifiers at the repository boundary, and sends unsupported legacy LGS
+rows through onboarding without guessing a grade. Y-139 must migrate curriculum identity from the
 current `ExamId` hierarchy to its manifest v2 model. Until those tasks land,
-production continues to read and write profile v1 and serves only TYT Sosyal.
+production continues to serve only TYT Sosyal.

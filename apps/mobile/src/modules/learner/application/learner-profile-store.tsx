@@ -9,6 +9,7 @@ import {
   type ReactNode,
 } from 'react';
 
+import { isMilestoneOneExamProfile } from '@/modules/learner/domain/exam-profile';
 import type { LearnerProfile } from '@/modules/learner/domain/learner-profile';
 import type { LearnerProfileRepository } from '@/modules/progress/application/repositories';
 import { MessageScreen } from '@/shared/ui/feedback/message-screen';
@@ -121,7 +122,7 @@ export function LearnerEntryGate({ children }: { children: ReactNode }) {
 }
 
 export function needsOnboarding(profile: LearnerProfile | null): boolean {
-  return profile === null || profile.exam !== 'yks';
+  return profile === null || !isMilestoneOneExamProfile(profile.examProfile);
 }
 
 export function useLearnerProfile(): LearnerProfileStore {

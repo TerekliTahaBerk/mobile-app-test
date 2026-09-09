@@ -202,6 +202,91 @@ const MIGRATIONS: readonly Migration[] = [
       `);
     },
   },
+  {
+    name: 'learner-profile-v2',
+    version: 6,
+    up: async (db) => {
+      await db.execAsync(`
+        -- Retain the source row verbatim. Ambiguous LGS and unknown values must
+        -- be recoverable for support/debugging instead of being coerced into a
+        -- plausible-looking exam choice.
+        ALTER TABLE learner_profile RENAME TO learner_profile_v1_backup;
+
+        CREATE TABLE learner_profile (
+          id                  INTEGER PRIMARY KEY CHECK (id = 1),
+          schema_version      INTEGER NOT NULL DEFAULT 2 CHECK (schema_version = 2),
+          migration_status    TEXT NOT NULL DEFAULT 'ready'
+                                CHECK (migration_status IN ('ready', 'needsOnboarding')),
+          display_name        TEXT,
+          avatar_id           TEXT,
+          exam_family         TEXT,
+          exam_program        TEXT,
+          exam_grade          TEXT,
+          exam_track          TEXT,
+          exam_language       TEXT,
+          exam_variants       TEXT,
+          target_year         INTEGER,
+          referral_source     TEXT,
+          daily_goal          INTEGER,
+          starting_point      TEXT,
+          reminders_enabled   INTEGER,
+          reminder_time       TEXT,
+          weekly_report_day   INTEGER,
+          completed_at        TEXT
+        );
+
+        INSERT INTO learner_profile (
+          id, schema_version, migration_status, display_name, avatar_id,
+          exam_family, exam_program, exam_grade, exam_track, target_year,
+          referral_source, daily_goal, starting_point, reminders_enabled,
+          reminder_time, weekly_report_day, completed_at
+        )
+        SELECT
+          id,
+          2,
+          CASE
+            WHEN exam = 'yks'
+              AND grade IN ('grade9', 'grade10', 'grade11', 'grade12', 'graduate')
+              AND (track IS NULL OR track IN ('equalWeight', 'quantitative', 'undecided', 'verbal'))
+              AND typeof(target_year) = 'integer' AND target_year BETWEEN 2000 AND 3000
+              AND typeof(display_name) = 'text' AND length(trim(display_name)) > 0
+              AND avatar_id IN ('initial', 'dino', 'sky', 'violet')
+              AND daily_goal IN (1, 3, 6)
+              AND starting_point IN ('placement', 'scratch')
+              AND reminders_enabled IN (0, 1)
+              AND weekly_report_day BETWEEN 0 AND 6
+              AND typeof(completed_at) = 'text' AND length(completed_at) > 0
+              AND (referral_source IS NULL OR referral_source IN ('appStore', 'friend', 'other', 'school', 'social', 'youtube'))
+              AND (reminder_time IS NULL OR reminder_time IN ('17:00', '20:00', '22:00'))
+            THEN 'ready'
+            ELSE 'needsOnboarding'
+          END,
+          display_name,
+          avatar_id,
+          CASE WHEN exam IN ('yks', 'lgs') THEN exam ELSE NULL END,
+          CASE WHEN exam = 'yks' THEN 'tyt' WHEN exam = 'lgs' THEN 'lgs' ELSE NULL END,
+          CASE
+            WHEN exam = 'yks' AND grade IN ('grade9', 'grade10', 'grade11', 'grade12', 'graduate')
+            THEN grade
+            ELSE NULL
+          END,
+          CASE
+            WHEN exam = 'yks' AND track IN ('equalWeight', 'quantitative', 'undecided', 'verbal')
+            THEN track
+            ELSE NULL
+          END,
+          target_year,
+          referral_source,
+          daily_goal,
+          starting_point,
+          reminders_enabled,
+          reminder_time,
+          weekly_report_day,
+          completed_at
+        FROM learner_profile_v1_backup;
+      `);
+    },
+  },
 ];
 
 export const LATEST_SCHEMA_VERSION = MIGRATIONS.length;
