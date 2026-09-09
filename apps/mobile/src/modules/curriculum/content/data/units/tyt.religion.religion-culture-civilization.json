@@ -273,7 +273,7 @@
         "reviewStatus": "draft"
       },
       "tag": "DİN KÜLTÜRÜ · DİN VE KÜLTÜR ETKİLEŞİMİ",
-      "prompt": "Din ile kültürü özdeşleştirmeden ilişkilerini yorumlar. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "prompt": "“Din ile kültürü özdeşleştirmeden ilişkilerini yorumlar” kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
       "options": [
         {
           "id": "a",
@@ -494,7 +494,7 @@
         "reviewStatus": "draft"
       },
       "tag": "DİN KÜLTÜRÜ · AİLE, TOPLUM VE ORTAK DEĞERLER",
-      "prompt": "Ailenin değer aktarımındaki rolünü yorumlar. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "prompt": "“Ailenin değer aktarımındaki rolünü yorumlar” kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
       "options": [
         {
           "id": "a",
@@ -715,7 +715,7 @@
         "reviewStatus": "draft"
       },
       "tag": "DİN KÜLTÜRÜ · SANAT, MİMARİ VE MEDENİYET",
-      "prompt": "Dinin sanat ve mimariye etkisini örnekten yorumlar. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "prompt": "“Dinin sanat ve mimariye etkisini örnekten yorumlar” kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
       "options": [
         {
           "id": "a",

@@ -51,6 +51,12 @@ adds full answer/payload and explanation visibility plus deterministic
 map/visual/context triage across all 19 units. It likewise remains a review aid,
 not an approval; no Coğrafya reviewer is currently registered.
 
+The generated [TYT Din Kültürü review packet](CONTENT_REVIEWS/TYT_RELIGION_REVIEW_PACKET.md)
+inventories every lesson and scored exercise and routes terminology,
+interpretation, source/quotation, originality and curriculum-order decisions to
+a human DKAB reviewer. No qualified reviewer is currently registered, so all
+Din Kültürü records remain draft and outside production.
+
 ### 2. Production observability — engineering + product
 
 The Sentry crash/error adapter, privacy scrub, production-only environment gate,

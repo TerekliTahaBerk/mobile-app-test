@@ -273,7 +273,7 @@
         "reviewStatus": "draft"
       },
       "tag": "DİN KÜLTÜRÜ · ANADOLU’NUN İSLAMLAŞMA SÜRECİ",
-      "prompt": "Anadolu’nun İslamlaşmasını çok boyutlu bir süreç olarak yorumlar. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "prompt": "“Anadolu’nun İslamlaşmasını çok boyutlu bir süreç olarak yorumlar” kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
       "options": [
         {
           "id": "a",
@@ -494,7 +494,7 @@
         "reviewStatus": "draft"
       },
       "tag": "DİN KÜLTÜRÜ · AHİLİK, VAKIF VE DAYANIŞMA",
-      "prompt": "Ahilik ile meslek ahlakı arasındaki ilişkiyi kurar. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "prompt": "“Ahilik ile meslek ahlakı arasındaki ilişkiyi kurar” kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
       "options": [
         {
           "id": "a",
@@ -715,7 +715,7 @@
         "reviewStatus": "draft"
       },
       "tag": "DİN KÜLTÜRÜ · ŞAHSİYETLER VE KÜLTÜREL HAYAT",
-      "prompt": "Anadolu’daki önemli şahsiyetleri temel katkılarıyla ayırt eder. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "prompt": "“Anadolu’daki önemli şahsiyetleri temel katkılarıyla ayırt eder” kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
       "options": [
         {
           "id": "a",

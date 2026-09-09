@@ -273,7 +273,7 @@
         "reviewStatus": "draft"
       },
       "tag": "DİN KÜLTÜRÜ · İBADET, NİYET VE SAMİMİYET",
-      "prompt": "Niyet ve samimiyetin ibadetteki yerini yorumlar. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "prompt": "“Niyet ve samimiyetin ibadetteki yerini yorumlar” kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
       "options": [
         {
           "id": "a",
@@ -494,7 +494,7 @@
         "reviewStatus": "draft"
       },
       "tag": "DİN KÜLTÜRÜ · TEMEL İBADETLER VE SORUMLULUK",
-      "prompt": "Temel ibadetleri amaç ve özellikleri bakımından ayırt eder. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "prompt": "“Temel ibadetleri amaç ve özellikleri bakımından ayırt eder” kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
       "options": [
         {
           "id": "a",
@@ -715,7 +715,7 @@
         "reviewStatus": "draft"
       },
       "tag": "DİN KÜLTÜRÜ · İBADETİN BİREYSEL VE TOPLUMSAL ETKİLERİ",
-      "prompt": "İbadetin bireysel etkilerini örnek üzerinden yorumlar. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "prompt": "“İbadetin bireysel etkilerini örnek üzerinden yorumlar” kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
       "options": [
         {
           "id": "a",

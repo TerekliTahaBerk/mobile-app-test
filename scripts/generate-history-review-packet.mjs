@@ -15,6 +15,12 @@ const configs = {
     subjectId: 'tyt.philosophy',
     skillRepeatThreshold: 4,
   },
+  religion: {
+    label: 'Din Kültürü ve Ahlak Bilgisi',
+    output: 'TYT_RELIGION_REVIEW_PACKET.md',
+    subjectId: 'tyt.religion',
+    skillRepeatThreshold: 4,
+  },
 };
 const config = configs[subjectKey];
 if (!config) throw new Error(`Unsupported review subject: ${subjectKey}`);
@@ -25,6 +31,10 @@ const philosopherNames = [
   'aristoteles', 'bergson', 'bentham', 'comte', 'demokritos', 'descartes', 'farabi', 'gazali',
   'hegel', 'herakleitos', 'hobbes', 'hume', 'kant', 'kuhn', 'leibniz', 'locke', 'marx', 'mill',
   'nietzsche', 'parmenides', 'platon', 'popper', 'protagoras', 'rousseau', 'sartre', 'sokrates', 'spinoza',
+];
+const religionNamesAndTraditions = [
+  'ahi evran', 'ahilik', 'budizm', 'konfucyanizm', 'haci bektas', 'hinduizm', 'hristiyanlik',
+  'ibn sina', 'islam', 'mevlana', 'muhammed', 'taoizm', 'tasavvuf', 'yunus emre', 'yahudilik',
 ];
 
 const curriculum = JSON.parse(await readFile(path.join(dataDir, 'curriculum.json'), 'utf8'));
@@ -112,7 +122,7 @@ function reportFor(unit, index) {
     measuredSkills: measured.size,
     records: unit.lessons.flatMap((lesson) => [
       { id: lesson.id, kind: 'lesson', label: [lesson.title, lesson.subtitle].filter(Boolean).join(' — '), skills: lesson.skillIds ?? [], status: statusOf(lesson) },
-      ...lesson.exerciseIds.map((id) => exerciseById.get(id)).filter((exercise) => exercise && scoredKinds.has(exercise.kind)).map((exercise) => ({
+      ...lesson.exerciseIds.map((id) => exerciseById.get(id)).filter((exercise) => exercise && (subjectKey === 'religion' || scoredKinds.has(exercise.kind))).map((exercise) => ({
         attention: attentionFor(exercise), difficulty: exercise.difficulty, id: exercise.id,
         answer: answerText(exercise), explanation: text(exercise.explanation),
         kind: exercise.kind, label: questionText(exercise), skills: exercise.skillIds, status: statusOf(exercise),
@@ -141,17 +151,30 @@ function attentionFor(exercise) {
   if (explanation.length < 45) reasons.push('Kısa açıklama (<45 karakter)');
   if (normalize(explanation) === normalize(questionText(exercise))) reasons.push('Açıklama soru metnini tekrarlıyor');
   const combinedText = normalize(`${questionText(exercise)} ${exercise.hint ?? ''} ${exercise.subtitle ?? ''} ${answerText(exercise)}`);
-  if (subjectKey === 'philosophy') {
+  if (subjectKey === 'philosophy' || subjectKey === 'religion') {
     if (promptExplanationOverlap(exercise) >= 0.8) reasons.push('Açıklama soru kökünü büyük ölçüde tekrarlıyor');
     if (count(explanation, '“') !== count(explanation, '”')) reasons.push('Açıklamada eşleşmeyen akıllı tırnak');
     if (exercise.kind === 'fillBlank') reasons.push('Kavram tanımı/doğrudan kavram karşılığı insan reviewer tarafından doğrulanmalı');
-    if (exercise.kind === 'matching') reasons.push('Kavram veya görüş eşleştirmeleri insan reviewer tarafından tek tek doğrulanmalı');
+    if (exercise.kind === 'matching') reasons.push(subjectKey === 'religion'
+      ? 'Dinî kavram, gelenek veya şahsiyet eşleştirmesi insan reviewer tarafından tek tek doğrulanmalı'
+      : 'Kavram veya görüş eşleştirmeleri insan reviewer tarafından tek tek doğrulanmalı');
     if (exercise.kind === 'trueFalse' && /ayni kavram degildir|ayirt/u.test(combinedText)) {
       reasons.push('Benzer kavramların ayrımı ve ifadenin doğruluk kapsamı doğrulanmalı');
     }
-    if (containsPhilosopherName(combinedText)) reasons.push('Filozof/görüş eşleştirmesi insan reviewer tarafından doğrulanmalı');
+    if (subjectKey === 'philosophy' && containsPhilosopherName(combinedText)) reasons.push('Filozof/görüş eşleştirmesi insan reviewer tarafından doğrulanmalı');
     if (/\b(her zaman|hicbir zaman|asla|daima|tamamen|yalnizca|kesinlikle|tek basina|degismez|zorunlu olarak)\b/u.test(combinedText)) {
       reasons.push('Mutlak ifade veya kolay elenen mutlak çeldirici; kapsamı ve ayırt ediciliği doğrulanmalı');
+    }
+  }
+  if (subjectKey === 'religion') {
+    if (containsReligionNameOrTradition(combinedText)) {
+      reasons.push('Din, gelenek veya şahsiyet terminolojisi alan uzmanı tarafından doğrulanmalı');
+    }
+    if (hasDirectReligiousSourceReference(exercise)) {
+      reasons.push('Doğrudan ayet/hadis veya numaralı kaynak referansı; kaynak metni ve konumu doğrulanmalı');
+    }
+    if (hasLongQuotation(exercise)) {
+      reasons.push('Uzun tırnaklı ifade; alıntı/parafraz durumu ile telif ve özgünlük riski doğrulanmalı');
     }
   }
   if (/\b(asagidaki|yukaridaki|verilen)\s+(harita|gorsel|sekil|grafik|tablo|profil)\p{L}*\b/u.test(combinedText)) {
@@ -195,12 +218,24 @@ function render() {
       'Philosophy-specific triage covers concept definitions, concept/view matching, closely related concepts, absolute wording, prompt–explanation overlap, repeated skill coverage and shared-stem question candidates. A signal is a request for human judgment, not an academic finding.', '',
       `Named philosopher terms detected by the deterministic vocabulary scan: ${countPhilosopherMentions(subjectExercises)}. A zero count must be reviewed as a possible curriculum-completeness gap; the scan does not prove names are required or absent from every pedagogically acceptable treatment.`, '',
     ] : []),
+    ...(subjectKey === 'religion' ? [
+      'Religion-specific triage covers concept definitions, religious terminology, named religions/traditions/figures, absolute wording, source or quotation signals, prompt–explanation overlap, repeated skill coverage and shared-stem question candidates. A signal routes work to a human DKAB reviewer; it is not an academic finding.', '',
+      `Records with a direct verse/hadith attribution or numbered source locator: ${countDirectReligiousSourceReferences(subjectExercises)}. Any non-zero result must be source-verified before review can close.`, '',
+      `Records with a long quoted-looking passage but no proven source status: ${countLongQuotations(subjectExercises)}. The scan cannot determine quotation versus original example text, and it cannot prove that unsignalled prose is original, so the reviewer must still perform the source and originality check for every record.`, '',
+      `Records containing a named religion, tradition or figure from the deterministic vocabulary: ${countReligionNameOrTraditionMentions(subjectExercises)}. Each detected treatment must be checked for accurate, respectful and curriculum-appropriate terminology.`, '',
+    ] : []),
     '## Human reviewer workflow', '',
     '- [ ] Confirm each unit/topic order and TYT curriculum scope.',
     '- [ ] Check every lesson for factual accuracy, missing context and misleading simplification.',
     '- [ ] Solve every scored exercise independently; confirm keyed answers and distractors.',
     '- [ ] Confirm explanations teach why the answer is correct and introduce no new error.',
     '- [ ] Confirm skill mappings match what each exercise measures.',
+    ...(subjectKey === 'religion' ? [
+      '- [ ] Verify every religious concept, interpretation, tradition and named figure against authoritative curriculum/subject sources.',
+      '- [ ] Record the curriculum/source baseline used for each unit and resolve every quotation, paraphrase and source-locator signal.',
+      '- [ ] Confirm prose and questions are original and are not copied or lightly adapted from ÖSYM, MEB or third-party material.',
+      '- [ ] Check comparative-religion wording for accuracy, neutrality and respectful scope.',
+    ] : []),
     '- [ ] Resolve or explicitly accept every automatic attention item.',
     '- [ ] In Studio, select the registered reviewer and attest records as `reviewed`.',
     '- [ ] In a subsequent signed pass, move reviewed records to `approved` and inspect the Git diff.', '',
@@ -220,7 +255,7 @@ function renderUnit(unit) {
   ].filter(Boolean);
   return [
     `## ${String(unit.index).padStart(2, '0')} — ${unit.title}`, '', `\`${unit.unitId}\``, '',
-    `Topics: ${unit.topics} · Skills: ${unit.skills} (${unit.measuredSkills} measured) · Lessons: ${unit.lessons} · Exercises: ${unit.exercises} (${unit.scored} scored) · Difficulty 1–5: ${unit.difficulty.join(' / ')}${subjectKey === 'philosophy' ? ` (scored: ${unit.scoredDifficulty.join(' / ')})` : ''} · Approved lessons/exercises: ${unit.approvedLessons}/${unit.approvedExercises}`, '',
+    `Topics: ${unit.topics} · Skills: ${unit.skills} (${unit.measuredSkills} measured) · Lessons: ${unit.lessons} · Exercises: ${unit.exercises} (${unit.scored} scored) · Difficulty 1–5: ${unit.difficulty.join(' / ')}${subjectKey === 'philosophy' || subjectKey === 'religion' ? ` (scored: ${unit.scoredDifficulty.join(' / ')})` : ''} · Approved lessons/exercises: ${unit.approvedLessons}/${unit.approvedExercises}`, '',
     structural.length ? `Automated structural triage: **${structural.join(' ')}**` : 'Automated structural triage: clear.', '',
     unit.attention.length ? `Automatic attention items:\n\n${unit.attention.map((item) => `- [ ] \`${item.id}\`: ${item.reason}`).join('\n')}` : 'Automatic attention items: none.', '',
     ...(subjectKey === 'philosophy' ? [
@@ -237,13 +272,40 @@ function renderUnit(unit) {
       unit.similarQuestionGroups.length
         ? `Shared-stem / very-similar question candidates (confirm that each measures a distinct judgment):\n\n${unit.similarQuestionGroups.map((ids) => `- [ ] ${ids.map((id) => `\`${id}\``).join(' ↔ ')}`).join('\n')}`
         : 'Shared-stem / very-similar question candidates: none.', '',
+      '### Lesson and exercise sign-off', '',
+    ] : []),
+    ...(subjectKey === 'religion' ? [
+      '### Curriculum topic order', '',
+      ...unit.topicOrder.map((topic, index) => `${index + 1}. ${topic.title} — \`${topic.id}\``), '',
+      '### Concept and terminology sign-off', '',
+      '| Sign-off | Concept | Topic | Term | Definition |',
+      '| --- | --- | --- | --- | --- |',
+      ...unit.concepts.map((concept) => `| [ ] | \`${concept.id}\` | \`${concept.topicId}\` | ${escapeCell(concept.term)} | ${escapeCell(concept.definition)} |`), '',
+      '### Source, originality, repetition and similarity triage', '',
+      '- [ ] Reviewer recorded the authoritative curriculum and subject-source baseline used for this unit.',
+      '- [ ] Every quotation/paraphrase/source signal was traced; no copied or lightly adapted ÖSYM/MEB/third-party question remains.',
+      '- [ ] Comparative-religion, interpretation, tradition and named-figure wording is accurate, neutral and respectful.', '',
+      unit.repeatedSkills.length
+        ? `Skills mapped by more than ${config.skillRepeatThreshold ?? 6} scored exercises (review for excessive repetition):\n\n${unit.repeatedSkills.map((skill) => `- [ ] \`${skill.id}\`: ${skill.count} scored exercises`).join('\n')}`
+        : `No skill exceeds the automatic repetition threshold of ${config.skillRepeatThreshold ?? 6} scored exercises.`, '',
+      unit.similarQuestionGroups.length
+        ? `Shared-stem / very-similar question candidates (confirm distinct judgment and original wording):\n\n${unit.similarQuestionGroups.map((ids) => `- [ ] ${ids.map((id) => `\`${id}\``).join(' ↔ ')}`).join('\n')}`
+        : 'Shared-stem / very-similar question candidates: none.', '',
       '### Lesson and scored-exercise sign-off', '',
     ] : []),
-    '| Sign-off | Record | Type | Diff. | Status | Skills | Prompt/title | Key/payload | Explanation | Attention |',
-    '| --- | --- | --- | ---: | --- | --- | --- | --- | --- | --- |',
-    ...unit.records.map((r) => `| [ ] | \`${r.id}\` | ${r.kind} | ${r.difficulty ?? '—'} | ${r.status} | ${r.skills.map((s) => `\`${s}\``).join('<br>') || '—'} | ${escapeCell(r.label)} | ${escapeCell(r.answer ?? '—')} | ${escapeCell(r.explanation ?? '—')} | ${r.attention?.join('; ') || '—'} |`), '',
+    ...(subjectKey === 'religion' ? [
+      '| Academic sign-off | Source/originality sign-off | Record | Type | Diff. | Status | Skills | Prompt/title | Key/payload | Explanation | Attention |',
+      '| --- | --- | --- | --- | ---: | --- | --- | --- | --- | --- | --- |',
+      ...unit.records.map((r) => `| [ ] | [ ] | \`${r.id}\` | ${r.kind} | ${r.difficulty ?? '—'} | ${r.status} | ${r.skills.map((s) => `\`${s}\``).join('<br>') || '—'} | ${escapeCell(r.label)} | ${escapeCell(r.answer ?? '—')} | ${escapeCell(r.explanation ?? '—')} | ${r.attention?.join('; ') || '—'} |`), '',
+    ] : [
+      '| Sign-off | Record | Type | Diff. | Status | Skills | Prompt/title | Key/payload | Explanation | Attention |',
+      '| --- | --- | --- | ---: | --- | --- | --- | --- | --- | --- |',
+      ...unit.records.map((r) => `| [ ] | \`${r.id}\` | ${r.kind} | ${r.difficulty ?? '—'} | ${r.status} | ${r.skills.map((s) => `\`${s}\``).join('<br>') || '—'} | ${escapeCell(r.label)} | ${escapeCell(r.answer ?? '—')} | ${escapeCell(r.explanation ?? '—')} | ${r.attention?.join('; ') || '—'} |`), '',
+    ]),
     '- [ ] Unit scope/order approved by human reviewer.',
-    '- [ ] Every lesson and scored exercise above checked and signed off.',
+    subjectKey === 'religion'
+      ? '- [ ] Every lesson and exercise above checked and signed off; scored answer keys were solved independently.'
+      : '- [ ] Every lesson and scored exercise above checked and signed off.',
     '- [ ] No unresolved critical academic question/report remains.', '',
   ];
 }
@@ -270,7 +332,7 @@ function duplicateFingerprint(exercise) {
     ? exercise.pairs.flatMap((pair) => [pair.left, pair.right])
     : exercise.kind === 'ordering'
       ? exercise.items.map((item) => item.label)
-      : subjectKey === 'philosophy' && exercise.kind === 'fillBlank'
+      : (subjectKey === 'philosophy' || subjectKey === 'religion') && exercise.kind === 'fillBlank'
         ? [exercise.hint, ...exercise.bank.map((token) => token.label)]
       : [];
   return normalize([exercise.kind, questionText(exercise), ...payload].join(' | '));
@@ -290,6 +352,30 @@ function containsPhilosopherName(value) {
 }
 function countPhilosopherMentions(exercises) {
   return exercises.filter((exercise) => containsPhilosopherName(normalize(`${questionText(exercise)} ${answerText(exercise)} ${exercise.explanation ?? ''}`))).length;
+}
+function containsReligionNameOrTradition(value) {
+  return religionNamesAndTraditions.some((name) => new RegExp(`\\b${name}\\b`, 'u').test(value));
+}
+function hasDirectReligiousSourceReference(exercise) {
+  const raw = `${questionText(exercise)} ${answerText(exercise)} ${exercise.explanation ?? ''}`;
+  const value = normalize(raw);
+  const sourceTerm = /\b(ayet|hadis|incil|kuran|rivayet|sure|tevrat|zebur)\p{L}*\b/u.test(value);
+  const sourceLocator = /\b\d{1,3}\s*[:/]\s*\d{1,3}\b/u.test(raw);
+  const attribution = /\b(buyur\p{L}*|nakled\p{L}*|rivayet\p{L}*)\b/u.test(value);
+  return sourceLocator || (sourceTerm && attribution);
+}
+function hasLongQuotation(exercise) {
+  const raw = `${questionText(exercise)} ${answerText(exercise)} ${exercise.explanation ?? ''}`;
+  return /[“"]([^”"]{80,})[”"]/u.test(raw);
+}
+function countDirectReligiousSourceReferences(exercises) {
+  return exercises.filter(hasDirectReligiousSourceReference).length;
+}
+function countLongQuotations(exercises) {
+  return exercises.filter(hasLongQuotation).length;
+}
+function countReligionNameOrTraditionMentions(exercises) {
+  return exercises.filter((exercise) => containsReligionNameOrTradition(normalize(`${questionText(exercise)} ${answerText(exercise)} ${exercise.explanation ?? ''}`))).length;
 }
 function statusOf(record) { return record.provenance?.reviewStatus ?? 'missing'; }
 function text(value) { return typeof value === 'string' ? value.trim() : ''; }

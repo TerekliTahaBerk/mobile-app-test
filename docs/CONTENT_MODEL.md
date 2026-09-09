@@ -109,6 +109,19 @@ only a routing aid for a human philosophy reviewer and never an approval.
 exercises; both it and `npm run content:philosophy:review:check` are part of the
 release-quality gate.
 
+TYT Din Kültürü ve Ahlak Bilgisi uses the same review boundary via
+`npm run content:religion:review:update`; its packet lives at
+`docs/CONTENT_REVIEWS/TYT_RELIGION_REVIEW_PACKET.md`. Its deterministic triage
+adds concept and terminology sign-off, named religion/tradition/figure signals,
+sacred-text and hadith attribution or quotation signals, comparative-religion
+wording, absolute wording, prompt–explanation overlap, repeated skill coverage,
+and shared-stem candidates. These signals cannot prove doctrinal accuracy,
+source correctness, neutrality, or originality; a registered human DKAB teacher
+or theology subject-matter reviewer must verify those properties record by
+record. `npm run content:religion:audit` checks scored-skill coverage and
+orphaned exercises; both it and `npm run content:religion:review:check` are part
+of the release-quality gate.
+
 `reviewed` and `approved` records must carry `reviewerId`, a `reviewedBy`
 display-name snapshot, `reviewedAt`, `reviewedContentVersion`, and
 `reviewedCurriculumVersion`. Validation resolves the stable id against the

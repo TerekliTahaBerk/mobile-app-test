@@ -273,7 +273,7 @@
         "reviewStatus": "draft"
       },
       "tag": "DİN KÜLTÜRÜ · TEKNOLOJİ, MAHREMİYET VE ETİK",
-      "prompt": "Teknoloji kullanımını mahremiyet ve etik sorumlulukla değerlendirir. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "prompt": "“Teknoloji kullanımını mahremiyet ve etik sorumlulukla değerlendirir” kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
       "options": [
         {
           "id": "a",
@@ -494,7 +494,7 @@
         "reviewStatus": "draft"
       },
       "tag": "DİN KÜLTÜRÜ · ÇEVRE, TÜKETİM VE SORUMLULUK",
-      "prompt": "Tüketim alışkanlıklarını ölçülülük açısından yorumlar. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "prompt": "“Tüketim alışkanlıklarını ölçülülük açısından yorumlar” kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
       "options": [
         {
           "id": "a",
@@ -715,7 +715,7 @@
         "reviewStatus": "draft"
       },
       "tag": "DİN KÜLTÜRÜ · BAĞIMLILIK VE TOPLUMSAL SORUNLAR",
-      "prompt": "Bağımlılığı yalnız irade zayıflığına indirgeyen yaklaşımı ayırt eder. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "prompt": "“Bağımlılığı yalnız irade zayıflığına indirgeyen yaklaşımı ayırt eder” kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
       "options": [
         {
           "id": "a",

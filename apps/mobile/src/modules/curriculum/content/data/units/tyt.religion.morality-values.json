@@ -273,7 +273,7 @@
         "reviewStatus": "draft"
       },
       "tag": "DİN KÜLTÜRÜ · AHLAK, DEĞER VE SORUMLULUK",
-      "prompt": "Ahlaki değer ile davranış arasındaki ilişkiyi kurar. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "prompt": "“Ahlaki değer ile davranış arasındaki ilişkiyi kurar” kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
       "options": [
         {
           "id": "a",
@@ -494,7 +494,7 @@
         "reviewStatus": "draft"
       },
       "tag": "DİN KÜLTÜRÜ · ADALET, DOĞRULUK VE GÜVEN",
-      "prompt": "Adalet ile eşit davranmayı bağlama göre ayırt eder. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "prompt": "“Adalet ile eşit davranmayı bağlama göre ayırt eder” kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
       "options": [
         {
           "id": "a",
@@ -715,7 +715,7 @@
         "reviewStatus": "draft"
       },
       "tag": "DİN KÜLTÜRÜ · MERHAMET, YARDIMLAŞMA VE KUL HAKKI",
-      "prompt": "Merhamet ile yardım davranışını ilişkilendirir. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "prompt": "“Merhamet ile yardım davranışını ilişkilendirir” kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
       "options": [
         {
           "id": "a",
