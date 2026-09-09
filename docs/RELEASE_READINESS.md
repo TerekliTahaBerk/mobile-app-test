@@ -46,6 +46,11 @@ provides the ordered, record-level checklist and automatic triage for the human
 review. It is not evidence of academic approval; the blocker remains until the
 registry-backed two-step attestations and open-item checks are complete.
 
+The generated [TYT Coğrafya review packet](CONTENT_REVIEWS/TYT_GEOGRAPHY_REVIEW_PACKET.md)
+adds full answer/payload and explanation visibility plus deterministic
+map/visual/context triage across all 19 units. It likewise remains a review aid,
+not an approval; no Coğrafya reviewer is currently registered.
+
 ### 2. Production observability — engineering + product
 
 The Sentry crash/error adapter, privacy scrub, production-only environment gate,
