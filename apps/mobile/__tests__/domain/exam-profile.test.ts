@@ -1,6 +1,7 @@
 import {
   examProgramKey,
   isMilestoneOneExamProfile,
+  parseExamProfile,
   type ExamProfile,
   type KpssExamProfile,
   type LgsExamProfile,
@@ -8,7 +9,7 @@ import {
 } from '@/modules/learner/domain/exam-profile';
 import {
   examProfileFromLegacy,
-  type LearnerProfile,
+  type LegacyLearnerProfile,
 } from '@/modules/learner/domain/learner-profile';
 
 describe('multi-exam profile', () => {
@@ -78,8 +79,39 @@ describe('multi-exam profile', () => {
     expect(profiles.filter(isMilestoneOneExamProfile).map(examProgramKey)).toEqual(['yks:tyt']);
   });
 
+  it('validates persisted open identifiers and family-specific requirements', () => {
+    expect(
+      parseExamProfile({
+        family: 'kpss',
+        program: 'general-culture',
+        targetYear: 2028,
+        variants: [{ dimension: 'educationLevel', value: 'lisans' }],
+      }),
+    ).toEqual({
+      family: 'kpss',
+      program: 'general-culture',
+      targetYear: 2028,
+      variants: [{ dimension: 'educationLevel', value: 'lisans' }],
+    });
+    expect(
+      parseExamProfile({ family: 'kpss', program: '../unsafe', targetYear: 2028, variants: [] }),
+    ).toBeNull();
+    expect(
+      parseExamProfile({ family: 'yks', grade: 'grade12', program: 'ayt', targetYear: 2028 }),
+    ).toBeNull();
+    expect(
+      parseExamProfile({
+        family: 'yks',
+        grade: 'grade12',
+        language: 'not a tag',
+        program: 'ydt',
+        targetYear: 2028,
+      }),
+    ).toBeNull();
+  });
+
   it('projects the persisted YKS profile and flags ambiguous LGS rows for migration', () => {
-    const legacyYks: LearnerProfile = {
+    const legacyYks: LegacyLearnerProfile = {
       avatarId: 'initial',
       completedAtIso: '2026-08-28T09:00:00.000Z',
       dailyGoal: 3,

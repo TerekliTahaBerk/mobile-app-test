@@ -103,15 +103,21 @@ export default function SettingsRoute() {
       }}
       onOpenPrivacy={() => router.push('/gizlilik' as Href)}
       onOpenSupport={() => router.push('/destek' as Href)}
-      onSaveProfile={(preferences) =>
-        store.save({ ...profile, ...preferences }).catch((cause: unknown) => {
-          setError(cause instanceof Error ? cause : new Error(String(cause)));
-        })
+      onSaveProfile={({ targetYear, ...preferences }) =>
+        store
+          .save({
+            ...profile,
+            ...preferences,
+            examProfile: { ...profile.examProfile, targetYear },
+          })
+          .catch((cause: unknown) => {
+            setError(cause instanceof Error ? cause : new Error(String(cause)));
+          })
       }
       permissionStatus={permissionStatus}
       showPermissionWarning={profile.remindersEnabled || permissionRequestFailed}
       time={profile.reminderTime ?? '20:00'}
-      targetYear={profile.targetYear}
+      targetYear={profile.examProfile.targetYear}
       />
       <ResetProgressConfirmSheet
         confirmation={confirmation}

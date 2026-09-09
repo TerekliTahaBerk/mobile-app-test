@@ -82,10 +82,13 @@ describe('onboarding', () => {
     expect(onFinish.mock.calls[0]?.[0]).toMatchObject({
       dailyGoal: 3,
       displayName: 'Ege',
-      exam: 'yks',
+      examProfile: {
+        family: 'yks',
+        program: 'tyt',
+        targetYear: 2027,
+        track: 'undecided',
+      },
       remindersEnabled: false,
-      targetYear: 2027,
-      track: 'undecided',
     });
   });
 

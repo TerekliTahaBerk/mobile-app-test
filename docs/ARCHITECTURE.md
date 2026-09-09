@@ -45,8 +45,11 @@ SQLite (`tekrarla.db`) is the authoritative local learner store. Explicit,
 ordered migrations use `PRAGMA user_version`; foreign keys and WAL are enabled
 at open. The app renders learner-state screens only after migration and active
 session recovery complete. A profile startup gate reads SQLite before routing:
-missing or unsupported legacy profiles enter onboarding, while a persisted YKS
-profile enters the normal app without a Home-screen flash. A later sync adapter may implement the same inward
+missing or unsupported profiles enter onboarding, while a persisted YKS/TYT
+profile enters the normal app without a Home-screen flash. Learner-profile
+schema v2 persists the family-discriminated `ExamProfile`. Its migration maps
+only unambiguous legacy YKS rows to TYT; ambiguous or invalid rows retain their
+verbatim v1 source and safely re-enter onboarding. A later sync adapter may implement the same inward
 repository contracts, but authentication, Supabase, and cloud sync are not part
 of this pilot.
 
@@ -71,9 +74,10 @@ persistence schemas. `ExamProfile` is a family-discriminated contract for YKS,
 LGS and KPSS: YKS programs carry their applicable grade, track or language
 context; LGS carries grade 8; KPSS programs and variants use stable,
 data-defined identifiers. The production capability gate remains limited to
-YKS/TYT, and the persisted profile v1 shape remains behind an explicit
-compatibility projection until its separate schema migration.
+YKS/TYT. SQLite profile schema v2 stores that contract and validates
+family-specific and open identifiers at the repository boundary.
 
 See [DECISIONS/0001-mobile-foundation.md](DECISIONS/0001-mobile-foundation.md) for the accepted foundation decision and [SECURITY.md](SECURITY.md) for trust boundaries.
 See [DECISIONS/0003-local-first-sqlite-progress.md](DECISIONS/0003-local-first-sqlite-progress.md) for the persistence decision.
 See [DECISIONS/0014-multi-exam-domain-model.md](DECISIONS/0014-multi-exam-domain-model.md) for the multi-exam learner contract and migration boundary.
+See [DECISIONS/0017-learner-profile-schema-v2.md](DECISIONS/0017-learner-profile-schema-v2.md) for profile migration and downgrade policy.

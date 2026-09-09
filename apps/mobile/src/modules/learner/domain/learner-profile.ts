@@ -52,17 +52,20 @@ export type LearnerProfile = {
   completedAtIso: string;
   dailyGoal: DailyGoal;
   displayName: string;
-  exam: ExamTarget;
-  grade: GradeLevel;
+  examProfile: ExamProfile;
   readonly referralSource?: ReferralSource;
   readonly reminderTime?: ReminderTime;
   remindersEnabled: boolean;
   startingPoint: StartingPoint;
   /** The day the weekly report closes on. */
   weeklyReportDay: WeeklyReportDay;
-  /** Absent for LGS, where there is no track to choose. */
+};
+
+/** The exact application shape stored by SQLite schema v1. */
+export type LegacyLearnerProfile = Omit<LearnerProfile, 'examProfile'> & {
+  exam: ExamTarget;
+  grade: GradeLevel;
   readonly track?: StudyTrack;
-  /** Calendar year of the exam being prepared for. */
   targetYear: number;
 };
 
@@ -82,9 +85,10 @@ export type LegacyProfileCompatibility =
  *
  * The current YKS profile is unambiguously the TYT pilot. Historical LGS rows
  * used the YKS-only grade enum, so they must be migrated rather than silently
- * claiming that the learner is in grade 8. Schema migration belongs to Y-138.
+ * claiming that the learner is in grade 8. Schema migration v2 applies the
+ * same rule at the SQLite boundary.
  */
-export function examProfileFromLegacy(profile: LearnerProfile): LegacyProfileCompatibility {
+export function examProfileFromLegacy(profile: LegacyLearnerProfile): LegacyProfileCompatibility {
   if (profile.exam === 'lgs') {
     return { examFamily: 'lgs', reason: 'legacyLgsGrade', status: 'migrationRequired' };
   }
@@ -146,15 +150,26 @@ export function completeOnboarding(
     completedAtIso,
     dailyGoal: draft.dailyGoal ?? 3,
     displayName,
-    exam,
-    grade: required(draft.grade, 'grade'),
+    examProfile:
+      exam === 'lgs'
+        ? {
+            family: 'lgs',
+            grade: 'grade8',
+            program: 'lgs',
+            targetYear: required(draft.targetYear, 'targetYear'),
+          }
+        : {
+            family: 'yks',
+            grade: required(draft.grade, 'grade'),
+            program: 'tyt',
+            targetYear: required(draft.targetYear, 'targetYear'),
+            track: draft.track ?? 'undecided',
+          },
     ...(draft.referralSource === undefined ? {} : { referralSource: draft.referralSource }),
     ...(draft.reminderTime === undefined ? {} : { reminderTime: draft.reminderTime }),
     remindersEnabled: draft.remindersEnabled ?? false,
     startingPoint: draft.startingPoint ?? 'scratch',
     weeklyReportDay: 0,
-    targetYear: required(draft.targetYear, 'targetYear'),
-    ...(exam === 'lgs' ? {} : { track: draft.track ?? 'undecided' }),
   };
 }
 
@@ -170,7 +185,15 @@ export function initialFor(displayName: string): string {
 
 /** The curriculum scope the profile actually receives in the current pilot. */
 export function describeProfile(profile: LearnerProfile): string {
-  return profile.exam === 'yks' ? `TYT Sosyal · ${profile.targetYear}` : 'LGS';
+  const exam = profile.examProfile;
+  if (exam.family === 'yks' && exam.program === 'tyt') {
+    return `TYT Sosyal · ${exam.targetYear}`;
+  }
+  return exam.family === 'lgs' ? 'LGS' : examProgramDescription(exam);
+}
+
+function examProgramDescription(profile: ExamProfile): string {
+  return `${profile.family.toLocaleUpperCase('tr-TR')} · ${profile.program} · ${profile.targetYear}`;
 }
 
 export const TRACK_LABELS: Record<StudyTrack, string> = {

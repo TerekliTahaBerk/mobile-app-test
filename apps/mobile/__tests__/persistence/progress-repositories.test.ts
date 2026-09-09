@@ -1,4 +1,5 @@
 import type { ExerciseId, LessonId, PathNodeId, SkillId } from '@/modules/curriculum/domain/content-types';
+import type { LearnerProfile } from '@/modules/learner/domain/learner-profile';
 import type {
   ProgressRepositories,
   SessionCompletionInput,
@@ -99,6 +100,45 @@ async function setup(): Promise<ProgressRepositories> {
 }
 
 describe('progress repositories', () => {
+  it('round-trips every v2 exam-specific profile shape', async () => {
+    const repositories = await setup();
+    const common = {
+      avatarId: 'initial',
+      completedAtIso: COMPLETED_AT,
+      dailyGoal: 3,
+      displayName: 'Ege',
+      remindersEnabled: false,
+      startingPoint: 'scratch',
+      weeklyReportDay: 0,
+    } as const;
+    const profiles: readonly LearnerProfile[] = [
+      {
+        ...common,
+        examProfile: {
+          family: 'yks',
+          grade: 'graduate',
+          language: 'en-GB',
+          program: 'ydt',
+          targetYear: 2028,
+        },
+      },
+      {
+        ...common,
+        examProfile: {
+          family: 'kpss',
+          program: 'general-culture',
+          targetYear: 2029,
+          variants: [{ dimension: 'educationLevel', value: 'lisans' }],
+        },
+      },
+    ];
+
+    for (const profile of profiles) {
+      await repositories.profile.write(profile);
+      await expect(repositories.profile.read()).resolves.toEqual(profile);
+    }
+  });
+
   it('resets every learner-owned table to a clean-start state', async () => {
     const repositories = await setup();
     await repositories.profile.write({
@@ -106,13 +146,16 @@ describe('progress repositories', () => {
       completedAtIso: COMPLETED_AT,
       dailyGoal: 3,
       displayName: 'Ege',
-      exam: 'yks',
-      grade: 'grade12',
+      examProfile: {
+        family: 'yks',
+        grade: 'grade12',
+        program: 'tyt',
+        targetYear: 2027,
+        track: 'verbal',
+      },
       reminderTime: '20:00',
       remindersEnabled: true,
       startingPoint: 'scratch',
-      targetYear: 2027,
-      track: 'verbal',
       weeklyReportDay: 0,
     });
     await repositories.hearts.write({ hearts: 2, updatedAtMs: 1 });

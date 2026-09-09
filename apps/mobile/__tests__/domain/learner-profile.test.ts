@@ -26,9 +26,12 @@ describe('learner profile', () => {
 
     expect(profile).toMatchObject({
       displayName: 'Ege',
-      exam: 'yks',
-      targetYear: 2027,
-      track: 'quantitative',
+      examProfile: {
+        family: 'yks',
+        program: 'tyt',
+        targetYear: 2027,
+        track: 'quantitative',
+      },
     });
     expect(describeProfile(profile)).toBe('TYT Sosyal · 2027');
   });
@@ -53,7 +56,12 @@ describe('learner profile', () => {
       '2026-08-28T09:00:00.000Z',
     );
 
-    expect(profile.track).toBeUndefined();
+    expect(profile.examProfile).toEqual({
+      family: 'lgs',
+      grade: 'grade8',
+      program: 'lgs',
+      targetYear: 2027,
+    });
     expect(describeProfile(profile)).toBe('LGS');
   });
 
