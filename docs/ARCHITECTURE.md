@@ -66,5 +66,14 @@ The production composition root installs a Sentry crash/error adapter behind
 environment and DSN gates. Development and preview retain the no-op adapter;
 provider failures remain outside the learning and persistence control flow.
 
+Exam identity is a learner-domain concern independent of curriculum and
+persistence schemas. `ExamProfile` is a family-discriminated contract for YKS,
+LGS and KPSS: YKS programs carry their applicable grade, track or language
+context; LGS carries grade 8; KPSS programs and variants use stable,
+data-defined identifiers. The production capability gate remains limited to
+YKS/TYT, and the persisted profile v1 shape remains behind an explicit
+compatibility projection until its separate schema migration.
+
 See [DECISIONS/0001-mobile-foundation.md](DECISIONS/0001-mobile-foundation.md) for the accepted foundation decision and [SECURITY.md](SECURITY.md) for trust boundaries.
 See [DECISIONS/0003-local-first-sqlite-progress.md](DECISIONS/0003-local-first-sqlite-progress.md) for the persistence decision.
+See [DECISIONS/0014-multi-exam-domain-model.md](DECISIONS/0014-multi-exam-domain-model.md) for the multi-exam learner contract and migration boundary.

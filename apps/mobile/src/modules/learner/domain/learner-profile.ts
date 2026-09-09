@@ -7,12 +7,21 @@
  * docs/SECURITY.md.
  */
 
+import type {
+  ExamProfile,
+  YksExamProfile,
+  YksGradeLevel,
+  YksStudyTrack,
+} from '@/modules/learner/domain/exam-profile';
+
+/** @deprecated Persistence schema v1. Use `ExamProfile['family']` in new domain code. */
 export type ExamTarget = 'lgs' | 'yks';
 
-/** The YKS track. `undecided` is a real answer, not a missing one. */
-export type StudyTrack = 'equalWeight' | 'quantitative' | 'undecided' | 'verbal';
+/** @deprecated Persistence schema v1. Use `YksStudyTrack` in new domain code. */
+export type StudyTrack = YksStudyTrack;
 
-export type GradeLevel = 'grade10' | 'grade11' | 'grade12' | 'grade9' | 'graduate';
+/** @deprecated Persistence schema v1. Use the family-specific grade type from `ExamProfile`. */
+export type GradeLevel = YksGradeLevel;
 
 export type ReferralSource =
   | 'appStore'
@@ -56,6 +65,40 @@ export type LearnerProfile = {
   /** Calendar year of the exam being prepared for. */
   targetYear: number;
 };
+
+export type LegacyProfileCompatibility =
+  | {
+      readonly examProfile: ExamProfile;
+      readonly status: 'compatible';
+    }
+  | {
+      readonly examFamily: 'lgs';
+      readonly reason: 'legacyLgsGrade';
+      readonly status: 'migrationRequired';
+    };
+
+/**
+ * Projects the persisted v1 profile into the multi-exam domain contract.
+ *
+ * The current YKS profile is unambiguously the TYT pilot. Historical LGS rows
+ * used the YKS-only grade enum, so they must be migrated rather than silently
+ * claiming that the learner is in grade 8. Schema migration belongs to Y-138.
+ */
+export function examProfileFromLegacy(profile: LearnerProfile): LegacyProfileCompatibility {
+  if (profile.exam === 'lgs') {
+    return { examFamily: 'lgs', reason: 'legacyLgsGrade', status: 'migrationRequired' };
+  }
+
+  const examProfile: YksExamProfile = {
+    family: 'yks',
+    grade: profile.grade,
+    program: 'tyt',
+    targetYear: profile.targetYear,
+    ...(profile.track === undefined ? {} : { track: profile.track }),
+  };
+
+  return { examProfile, status: 'compatible' };
+}
 
 /**
  * The in-progress answers, before the last step is confirmed.
