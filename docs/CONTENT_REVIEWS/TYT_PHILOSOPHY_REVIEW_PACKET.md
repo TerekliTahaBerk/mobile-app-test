@@ -109,7 +109,7 @@ Shared-stem / very-similar question candidates (confirm that each measures a dis
 - [ ] `exercise.philosophy.subject-matter.functions-relations.001.mcq1` ↔ `exercise.philosophy.subject-matter.functions-relations.001.mcq2`
 - [ ] `exercise.philosophy.subject-matter.functions-relations.001.mcq3` ↔ `exercise.philosophy.subject-matter.functions-relations.001.mcq4`
 
-### Lesson and scored-exercise sign-off
+### Lesson and exercise sign-off
 
 | Sign-off | Record | Type | Diff. | Status | Skills | Prompt/title | Key/payload | Explanation | Attention |
 | --- | --- | --- | ---: | --- | --- | --- | --- | --- | --- |
@@ -197,7 +197,7 @@ Shared-stem / very-similar question candidates (confirm that each measures a dis
 - [ ] `exercise.philosophy.epistemology.possibility-limits.001.mcq1` ↔ `exercise.philosophy.epistemology.possibility-limits.001.mcq2`
 - [ ] `exercise.philosophy.epistemology.possibility-limits.001.mcq3` ↔ `exercise.philosophy.epistemology.possibility-limits.001.mcq4`
 
-### Lesson and scored-exercise sign-off
+### Lesson and exercise sign-off
 
 | Sign-off | Record | Type | Diff. | Status | Skills | Prompt/title | Key/payload | Explanation | Attention |
 | --- | --- | --- | ---: | --- | --- | --- | --- | --- | --- |
@@ -288,7 +288,7 @@ Shared-stem / very-similar question candidates (confirm that each measures a dis
 - [ ] `exercise.philosophy.ontology.unity-change.001.mcq1` ↔ `exercise.philosophy.ontology.unity-change.001.mcq2`
 - [ ] `exercise.philosophy.ontology.unity-change.001.mcq3` ↔ `exercise.philosophy.ontology.unity-change.001.mcq4`
 
-### Lesson and scored-exercise sign-off
+### Lesson and exercise sign-off
 
 | Sign-off | Record | Type | Diff. | Status | Skills | Prompt/title | Key/payload | Explanation | Attention |
 | --- | --- | --- | ---: | --- | --- | --- | --- | --- | --- |
@@ -380,7 +380,7 @@ Shared-stem / very-similar question candidates (confirm that each measures a dis
 - [ ] `exercise.philosophy.religion-culture-civilization.civilization-society.001.mcq1` ↔ `exercise.philosophy.religion-culture-civilization.civilization-society.001.mcq2`
 - [ ] `exercise.philosophy.religion-culture-civilization.civilization-society.001.mcq3` ↔ `exercise.philosophy.religion-culture-civilization.civilization-society.001.mcq4`
 
-### Lesson and scored-exercise sign-off
+### Lesson and exercise sign-off
 
 | Sign-off | Record | Type | Diff. | Status | Skills | Prompt/title | Key/payload | Explanation | Attention |
 | --- | --- | --- | ---: | --- | --- | --- | --- | --- | --- |
@@ -469,7 +469,7 @@ Shared-stem / very-similar question candidates (confirm that each measures a dis
 - [ ] `exercise.philosophy.ethics.aim-good.001.mcq1` ↔ `exercise.philosophy.ethics.aim-good.001.mcq2`
 - [ ] `exercise.philosophy.ethics.aim-good.001.mcq3` ↔ `exercise.philosophy.ethics.aim-good.001.mcq4`
 
-### Lesson and scored-exercise sign-off
+### Lesson and exercise sign-off
 
 | Sign-off | Record | Type | Diff. | Status | Skills | Prompt/title | Key/payload | Explanation | Attention |
 | --- | --- | --- | ---: | --- | --- | --- | --- | --- | --- |
@@ -557,7 +557,7 @@ Shared-stem / very-similar question candidates (confirm that each measures a dis
 - [ ] `exercise.philosophy.aesthetics.art-theories.001.mcq1` ↔ `exercise.philosophy.aesthetics.art-theories.001.mcq2`
 - [ ] `exercise.philosophy.aesthetics.art-theories.001.mcq3` ↔ `exercise.philosophy.aesthetics.art-theories.001.mcq4`
 
-### Lesson and scored-exercise sign-off
+### Lesson and exercise sign-off
 
 | Sign-off | Record | Type | Diff. | Status | Skills | Prompt/title | Key/payload | Explanation | Attention |
 | --- | --- | --- | ---: | --- | --- | --- | --- | --- | --- |
@@ -646,7 +646,7 @@ Shared-stem / very-similar question candidates (confirm that each measures a dis
 - [ ] `exercise.philosophy.philosophy-of-religion.critique-problems.001.mcq1` ↔ `exercise.philosophy.philosophy-of-religion.critique-problems.001.mcq2`
 - [ ] `exercise.philosophy.philosophy-of-religion.critique-problems.001.mcq3` ↔ `exercise.philosophy.philosophy-of-religion.critique-problems.001.mcq4`
 
-### Lesson and scored-exercise sign-off
+### Lesson and exercise sign-off
 
 | Sign-off | Record | Type | Diff. | Status | Skills | Prompt/title | Key/payload | Explanation | Attention |
 | --- | --- | --- | ---: | --- | --- | --- | --- | --- | --- |
@@ -734,7 +734,7 @@ Shared-stem / very-similar question candidates (confirm that each measures a dis
 - [ ] `exercise.philosophy.political-philosophy.state-ideal-order.001.mcq1` ↔ `exercise.philosophy.political-philosophy.state-ideal-order.001.mcq2`
 - [ ] `exercise.philosophy.political-philosophy.state-ideal-order.001.mcq3` ↔ `exercise.philosophy.political-philosophy.state-ideal-order.001.mcq4`
 
-### Lesson and scored-exercise sign-off
+### Lesson and exercise sign-off
 
 | Sign-off | Record | Type | Diff. | Status | Skills | Prompt/title | Key/payload | Explanation | Attention |
 | --- | --- | --- | ---: | --- | --- | --- | --- | --- | --- |
@@ -822,7 +822,7 @@ Shared-stem / very-similar question candidates (confirm that each measures a dis
 - [ ] `exercise.philosophy.philosophy-of-science.development-values.001.mcq1` ↔ `exercise.philosophy.philosophy-of-science.development-values.001.mcq2`
 - [ ] `exercise.philosophy.philosophy-of-science.development-values.001.mcq3` ↔ `exercise.philosophy.philosophy-of-science.development-values.001.mcq4`
 
-### Lesson and scored-exercise sign-off
+### Lesson and exercise sign-off
 
 | Sign-off | Record | Type | Diff. | Status | Skills | Prompt/title | Key/payload | Explanation | Attention |
 | --- | --- | --- | ---: | --- | --- | --- | --- | --- | --- |
