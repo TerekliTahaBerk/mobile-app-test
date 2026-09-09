@@ -51,6 +51,7 @@ export function buildHomeViewModel(
     const topic = index.getTopic(lesson.topicId);
     const unit = index.getUnit(topic.unitId);
     const subject = index.getSubjectOfUnit(unit.id);
+    const program = index.getProgramOfSubject(subject.id);
     const path = source.subjects
       .get(subject.id)
       ?.paths.find((candidate) => candidate.unitId === unit.id);
@@ -62,7 +63,7 @@ export function buildHomeViewModel(
         actionLabel: 'Devam',
         detail: `${unit.title} · %${percent}`,
         eyebrow: 'KALDIĞIN YERDEN',
-        subjectTitle: `TYT ${subject.title}`,
+        subjectTitle: `${program.title} ${subject.title}`,
       };
     }
 
@@ -79,7 +80,7 @@ export function buildHomeViewModel(
       actionLabel: 'Başla',
       detail: `${unit.title} · %${percent}`,
       eyebrow: 'SIRADAKİ ÇALIŞMA',
-      subjectTitle: `${index.bundle.exams.find((exam) => exam.id === subject.examId)?.title ?? ''} ${subject.title}`.trim(),
+      subjectTitle: `${program.title} ${subject.title}`,
     };
   }
 }

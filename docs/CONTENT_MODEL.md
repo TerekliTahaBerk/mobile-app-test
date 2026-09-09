@@ -4,8 +4,8 @@ Curriculum and exercise content are versioned product assets, not screen constan
 
 ## Where content is authored
 
-Content is JSON under `src/modules/curriculum/content/data/`: `curriculum.json`
-for the exam/subject/unit skeleton, and one file per unit under `data/units/`
+Content is JSON under `src/modules/curriculum/content/data/`: the legacy
+`curriculum.json` for the exam/program/subject/unit skeleton, and one file per unit under `data/units/`
 holding that unit's topics, skills, concepts, lessons, exercises and path nodes.
 Every record carries its own `provenance`, so review status is recorded per
 question rather than shared by the whole bundle.
@@ -17,7 +17,8 @@ because it resolves modules at build time and cannot read a directory.
 Authored data passes two gates before it becomes a bundle, in this order:
 
 ```text
-JSON -> assertParsedContentBundle (shape) -> assertValidContentBundle (references)
+legacy curriculum JSON -> compatibility adapter -> manifest v2
+unit JSON + manifest v2 -> assertParsedContentBundle (shape) -> assertValidContentBundle (references)
 ```
 
 The first proves each record is the shape its kind claims — an unknown exercise
@@ -28,7 +29,11 @@ at once rather than throwing on the first.
 
 ## Bundle
 
-A published bundle identifies `schemaVersion`, `curriculumVersion`, `contentVersion`, `locale`, and optional `publishedAt`, and carries flat collections of exams, subjects, units, topics, skills, concepts, exercises, lessons, and path nodes. Records reference each other by stable string ID; nothing is identified by array position, so content can be reordered and versioned without touching UI.
+A published bundle identifies content `schemaVersion`, `contentVersion` and
+optional `publishedAt`. Its manifest separately identifies schema, stable
+manifest ID, curriculum version and locale, and carries exams, programs,
+subjects and units. Exam and program records have independent release versions;
+all content records remain flat and reference stable IDs.
 
 The learner-facing topic taxonomy reuses that hierarchy deliberately:
 
@@ -43,12 +48,16 @@ from those skills and their single main topic from the owning unit; authors do
 not duplicate topic IDs on every exercise. A question may measure multiple
 subtopics only when all of them belong to the same main topic.
 
-`schemaVersion` is bumped when the contracts change shape. The app refuses a bundle whose schema version it does not understand.
+Bundle and manifest schema versions are independent; the app refuses either
+one when it does not understand it. Release versions may change while stable
+IDs do not.
 
 ## Stable IDs
 
 ```text
-exam       tyt
+manifest   curriculum.tr
+exam       yks
+program    yks.tyt
 subject    tyt.social.history
 unit       tyt.social.history.first-turkish-states
 topic      tyt.social.history.first-turkish-states.kurultay
@@ -145,13 +154,19 @@ Copied ÖSYM questions are prohibited. Production material must be original and 
 
 ## Validation
 
-`validateContentBundle` runs over the bundle at load and throws a `ContentValidationError` listing every issue with a dotted path and an actionable message. It catches duplicate IDs, broken references in either direction, unsupported exercise kinds inside a lesson, scored exercises with no skill, exercises whose skills cross main-topic boundaries, unanswerable exercises (a correct option that is not among the options, a solution token missing from the bank, ambiguous matching pairs, an ordering that does not cover its items), self-referential prerequisites, duplicate path order within a unit, and schema-version mismatch.
+`validateContentBundle` runs over the bundle at load and throws a
+`ContentValidationError` listing every issue with a dotted path and an
+actionable message. It catches duplicate IDs, repeated ownership references,
+broken links and ownership disagreement, invalid availability, prerequisite
+cycles, unsupported exercise kinds, answerability errors, duplicate path order,
+and bundle or manifest schema-version mismatch.
 
 The project intentionally carries **no schema-validation dependency**. The bundle is authored in TypeScript and compiled with the app, so its shape is already proven by `tsc`; what the compiler cannot see is whether the strings that link records resolve, and whether an exercise is answerable. Those are exactly what the validator checks. When content later arrives from a server, a structural pass belongs *in front of* this function, not instead of it.
 
 ## Current state
 
-The bundle uses schema version 3. It contains the 25-unit 2027 TYT Tarih draft: 49 topics, 96 measurable
+The bundle uses content schema version 4 and manifest schema version 2. It
+contains the 25-unit 2027 TYT Tarih draft: 49 topics, 96 measurable
 skills, 55 lessons, 55 chained path nodes and 331 exercises. Every lesson and
 exercise is `draft`; none is production academic content. The three original
 unit IDs and their authored records were retained, while the curriculum order

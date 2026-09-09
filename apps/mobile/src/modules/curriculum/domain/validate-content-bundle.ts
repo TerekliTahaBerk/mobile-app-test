@@ -1,5 +1,6 @@
 import {
   CONTENT_SCHEMA_VERSION,
+  CURRICULUM_MANIFEST_SCHEMA_VERSION,
   isScoredKind,
   type ContentBundle,
   type ExerciseDefinition,
@@ -72,6 +73,13 @@ export function validateContentBundle(bundle: ContentBundle): readonly ContentIs
       `Paket şema sürümü ${bundle.schemaVersion}, uygulama ${CONTENT_SCHEMA_VERSION} bekliyor.`,
     );
   }
+  if (bundle.manifest.schemaVersion !== CURRICULUM_MANIFEST_SCHEMA_VERSION) {
+    add(
+      'schemaVersionMismatch',
+      'manifest.schemaVersion',
+      `Manifest şema sürümü ${bundle.manifest.schemaVersion}, uygulama ${CURRICULUM_MANIFEST_SCHEMA_VERSION} bekliyor.`,
+    );
+  }
 
   // --- identity -----------------------------------------------------------
   const seen = new Map<string, string>();
@@ -84,9 +92,15 @@ export function validateContentBundle(bundle: ContentBundle): readonly ContentIs
     seen.set(id, at);
   };
 
-  bundle.exams.forEach((exam, i) => claim(exam.id, `exams[${i}]`));
-  bundle.subjects.forEach((subject, i) => claim(subject.id, `subjects[${i}]`));
-  bundle.units.forEach((unit, i) => claim(unit.id, `units[${i}]`));
+  claim(bundle.manifest.id, 'manifest');
+  bundle.manifest.exams.forEach((exam, i) => claim(exam.id, `manifest.exams[${i}]`));
+  bundle.manifest.programs.forEach((program, i) =>
+    claim(program.id, `manifest.programs[${i}]`),
+  );
+  bundle.manifest.subjects.forEach((subject, i) =>
+    claim(subject.id, `manifest.subjects[${i}]`),
+  );
+  bundle.manifest.units.forEach((unit, i) => claim(unit.id, `manifest.units[${i}]`));
   bundle.topics.forEach((topic, i) => claim(topic.id, `topics[${i}]`));
   bundle.skills.forEach((skill, i) => claim(skill.id, `skills[${i}]`));
   bundle.concepts.forEach((concept, i) => claim(concept.id, `concepts[${i}]`));
@@ -97,14 +111,15 @@ export function validateContentBundle(bundle: ContentBundle): readonly ContentIs
 
   const ids = {
     concept: new Set(bundle.concepts.map((c) => c.id)),
-    exam: new Set(bundle.exams.map((e) => e.id)),
+    exam: new Set(bundle.manifest.exams.map((e) => e.id)),
     exercise: new Set(bundle.exercises.map((e) => e.id)),
     lesson: new Set(bundle.lessons.map((l) => l.id)),
     pathNode: new Set(bundle.pathNodes.map((n) => n.id)),
     skill: new Set(bundle.skills.map((s) => s.id)),
-    subject: new Set(bundle.subjects.map((s) => s.id)),
+    program: new Set(bundle.manifest.programs.map((p) => p.id)),
+    subject: new Set(bundle.manifest.subjects.map((s) => s.id)),
     topic: new Set(bundle.topics.map((t) => t.id)),
-    unit: new Set(bundle.units.map((u) => u.id)),
+    unit: new Set(bundle.manifest.units.map((u) => u.id)),
   };
 
   const ref = (set: ReadonlySet<string>, id: string, at: string, label: string) => {
@@ -133,7 +148,7 @@ export function validateContentBundle(bundle: ContentBundle): readonly ContentIs
     }
     if (
       provenance.reviewedContentVersion !== bundle.contentVersion ||
-      provenance.reviewedCurriculumVersion !== bundle.curriculumVersion
+      provenance.reviewedCurriculumVersion !== bundle.manifest.version
     ) {
       add('invalidReviewer', at, 'İnceleme kaydı mevcut content/curriculum sürümleriyle eşleşmiyor.');
     }
@@ -154,7 +169,7 @@ export function validateContentBundle(bundle: ContentBundle): readonly ContentIs
       }
       if (
         prior.reviewedContentVersion !== bundle.contentVersion ||
-        prior.reviewedCurriculumVersion !== bundle.curriculumVersion ||
+        prior.reviewedCurriculumVersion !== bundle.manifest.version ||
         Number.isNaN(Date.parse(prior.reviewedAt))
       ) {
         add('invalidReviewer', `${at}.priorReview`, 'Onay öncesi inceleme zamanı veya sürümleri geçersiz.');
@@ -163,20 +178,95 @@ export function validateContentBundle(bundle: ContentBundle): readonly ContentIs
   };
 
   // --- hierarchy ----------------------------------------------------------
-  bundle.exams.forEach((exam, i) =>
-    exam.subjectIds.forEach((id, j) =>
-      ref(ids.subject, id, `exams[${i}].subjectIds[${j}]`, 'ders'),
-    ),
-  );
-  bundle.subjects.forEach((subject, i) => {
-    ref(ids.exam, subject.examId, `subjects[${i}].examId`, 'sınav');
-    subject.unitIds.forEach((id, j) =>
-      ref(ids.unit, id, `subjects[${i}].unitIds[${j}]`, 'ünite'),
+  bundle.manifest.exams.forEach((exam, i) => {
+    checkRepeatedReferences(exam.programIds, `manifest.exams[${i}].programIds`, add);
+    exam.programIds.forEach((id, j) =>
+      ref(ids.program, id, `manifest.exams[${i}].programIds[${j}]`, 'program'),
     );
   });
-  bundle.units.forEach((unit, i) => {
-    ref(ids.subject, unit.subjectId, `units[${i}].subjectId`, 'ders');
-    unit.topicIds.forEach((id, j) => ref(ids.topic, id, `units[${i}].topicIds[${j}]`, 'konu'));
+  bundle.manifest.programs.forEach((program, i) => {
+    ref(ids.exam, program.examId, `manifest.programs[${i}].examId`, 'sınav');
+    checkRepeatedReferences(program.subjectIds, `manifest.programs[${i}].subjectIds`, add);
+    program.subjectIds.forEach((id, j) =>
+      ref(ids.subject, id, `manifest.programs[${i}].subjectIds[${j}]`, 'ders'),
+    );
+    const owner = bundle.manifest.exams.find((exam) => exam.programIds.includes(program.id));
+    if (owner === undefined && ids.exam.has(program.examId)) {
+      add(
+        'invalidTaxonomy',
+        `manifest.programs[${i}].examId`,
+        `Sahip sınav "${program.examId}" bu programı programIds içinde listelemiyor.`,
+      );
+    } else if (owner !== undefined && owner.id !== program.examId) {
+      add(
+        'invalidTaxonomy',
+        `manifest.programs[${i}].examId`,
+        `Program "${owner.id}" sınavında listeleniyor ancak "${program.examId}" sınavını sahip olarak gösteriyor.`,
+      );
+    }
+  });
+  bundle.manifest.subjects.forEach((subject, i) => {
+    const at = `manifest.subjects[${i}]`;
+    ref(ids.program, subject.programId, `${at}.programId`, 'program');
+    const owner = bundle.manifest.programs.find((program) =>
+      program.subjectIds.includes(subject.id),
+    );
+    if (owner === undefined && ids.program.has(subject.programId)) {
+      add(
+        'invalidTaxonomy',
+        `${at}.programId`,
+        `Sahip program "${subject.programId}" bu dersi subjectIds içinde listelemiyor.`,
+      );
+    } else if (owner !== undefined && owner.id !== subject.programId) {
+      add(
+        'invalidTaxonomy',
+        `${at}.programId`,
+        `Ders "${owner.id}" programında listeleniyor ancak "${subject.programId}" programını sahip olarak gösteriyor.`,
+      );
+    }
+    checkRepeatedReferences(subject.prerequisiteSubjectIds, `${at}.prerequisiteSubjectIds`, add);
+    subject.prerequisiteSubjectIds.forEach((id, j) => {
+      ref(ids.subject, id, `${at}.prerequisiteSubjectIds[${j}]`, 'ön koşul ders');
+      if (id === subject.id) {
+        add(
+          'brokenReference',
+          `${at}.prerequisiteSubjectIds[${j}]`,
+          'Bir ders kendisinin ön koşulu olamaz.',
+        );
+      }
+    });
+    if (subject.availability === 'available' && subject.unitIds.length === 0) {
+      add('invalidTaxonomy', `${at}.availability`, 'Kullanılabilir bir ders en az bir ünite içermeli.');
+    }
+    if (subject.availability === 'planned' && subject.unitIds.length > 0) {
+      add('invalidTaxonomy', `${at}.availability`, 'Planlanan bir ders yayımlanmış ünite içeremez.');
+    }
+    checkRepeatedReferences(subject.unitIds, `${at}.unitIds`, add);
+    subject.unitIds.forEach((id, j) =>
+      ref(ids.unit, id, `${at}.unitIds[${j}]`, 'ünite'),
+    );
+  });
+  validateSubjectPrerequisiteCycles(bundle, add);
+  bundle.manifest.units.forEach((unit, i) => {
+    ref(ids.subject, unit.subjectId, `manifest.units[${i}].subjectId`, 'ders');
+    const owner = bundle.manifest.subjects.find((subject) => subject.unitIds.includes(unit.id));
+    if (owner === undefined && ids.subject.has(unit.subjectId)) {
+      add(
+        'invalidTaxonomy',
+        `manifest.units[${i}].subjectId`,
+        `Sahip ders "${unit.subjectId}" bu üniteyi unitIds içinde listelemiyor.`,
+      );
+    } else if (owner !== undefined && owner.id !== unit.subjectId) {
+      add(
+        'invalidTaxonomy',
+        `manifest.units[${i}].subjectId`,
+        `Ünite "${owner.id}" dersinde listeleniyor ancak "${unit.subjectId}" dersini sahip olarak gösteriyor.`,
+      );
+    }
+    checkRepeatedReferences(unit.topicIds, `manifest.units[${i}].topicIds`, add);
+    unit.topicIds.forEach((id, j) =>
+      ref(ids.topic, id, `manifest.units[${i}].topicIds[${j}]`, 'konu'),
+    );
   });
   bundle.topics.forEach((topic, i) => {
     ref(ids.unit, topic.unitId, `topics[${i}].unitId`, 'ünite');
@@ -196,7 +286,7 @@ export function validateContentBundle(bundle: ContentBundle): readonly ContentIs
   bundle.lessons.forEach((lesson, i) => {
     ref(ids.topic, lesson.topicId, `lessons[${i}].topicId`, 'konu');
     const topic = bundle.topics.find((candidate) => candidate.id === lesson.topicId);
-    const unit = bundle.units.find((candidate) => candidate.id === topic?.unitId);
+    const unit = bundle.manifest.units.find((candidate) => candidate.id === topic?.unitId);
     checkReview(lesson.provenance, `lessons[${i}].provenance`, unit?.subjectId);
 
     if (lesson.exerciseIds.length === 0) {
@@ -237,7 +327,7 @@ export function validateContentBundle(bundle: ContentBundle): readonly ContentIs
       }),
     );
     const firstUnitId = unitIds.values().next().value as string | undefined;
-    const firstUnit = bundle.units.find((candidate) => candidate.id === firstUnitId);
+    const firstUnit = bundle.manifest.units.find((candidate) => candidate.id === firstUnitId);
     checkReview(exercise.provenance, `${at}.provenance`, firstUnit?.subjectId);
     if (unitIds.size > 1) {
       add(
@@ -279,6 +369,53 @@ export function validateContentBundle(bundle: ContentBundle): readonly ContentIs
   });
 
   return issues;
+}
+
+function checkRepeatedReferences(
+  references: readonly string[],
+  at: string,
+  add: (code: ContentIssueCode, at: string, message: string) => void,
+): void {
+  const seen = new Set<string>();
+  references.forEach((id, index) => {
+    if (seen.has(id)) {
+      add('duplicateId', `${at}[${index}]`, `"${id}" kimliği bu listede birden fazla kez kullanılıyor.`);
+    }
+    seen.add(id);
+  });
+}
+
+function validateSubjectPrerequisiteCycles(
+  bundle: ContentBundle,
+  add: (code: ContentIssueCode, at: string, message: string) => void,
+): void {
+  const subjects = new Map(bundle.manifest.subjects.map((subject) => [subject.id, subject]));
+  const indexes = new Map(bundle.manifest.subjects.map((subject, index) => [subject.id, index]));
+  const visiting = new Set<string>();
+  const visited = new Set<string>();
+
+  const visit = (id: string, trail: readonly string[]): void => {
+    if (visited.has(id)) return;
+    const subject = subjects.get(id);
+    if (subject === undefined) return;
+
+    visiting.add(id);
+    subject.prerequisiteSubjectIds.forEach((prerequisiteId, prerequisiteIndex) => {
+      if (visiting.has(prerequisiteId)) {
+        add(
+          'invalidTaxonomy',
+          `manifest.subjects[${indexes.get(id)!}].prerequisiteSubjectIds[${prerequisiteIndex}]`,
+          `Ders ön koşullarında döngü var: ${[...trail, id, prerequisiteId].join(' → ')}.`,
+        );
+        return;
+      }
+      visit(prerequisiteId, [...trail, id]);
+    });
+    visiting.delete(id);
+    visited.add(id);
+  };
+
+  bundle.manifest.subjects.forEach((subject) => visit(subject.id, []));
 }
 
 function validateExerciseAnswerability(

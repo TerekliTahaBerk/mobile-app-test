@@ -2,6 +2,7 @@ import curriculum from '@/modules/curriculum/content/data/curriculum.json';
 import reviewers from '@/modules/curriculum/content/data/reviewers.json';
 import { UNIT_FILES } from '@/modules/curriculum/content/units';
 import type { ContentBundle } from '@/modules/curriculum/domain/content-types';
+import { adaptLegacyCurriculum } from '@/modules/curriculum/domain/legacy-curriculum-adapter';
 import { assertParsedContentBundle } from '@/modules/curriculum/domain/parse-content-bundle';
 import { assertValidContentBundle } from '@/modules/curriculum/domain/validate-content-bundle';
 import { reportError } from '@/shared/observability/observability';
@@ -48,7 +49,7 @@ function assemble(): unknown {
   ) => UNIT_FILES.flatMap((unit) => unit[key]);
 
   return {
-    ...curriculum,
+    ...adaptLegacyCurriculum(curriculum),
     concepts: collect('concepts'),
     exercises: collect('exercises'),
     lessons: collect('lessons'),

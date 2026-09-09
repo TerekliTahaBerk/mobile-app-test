@@ -152,7 +152,7 @@ export function buildTopicPerformance(
     }
   }
 
-  const topics = index.bundle.units.flatMap((unit) => {
+  const topics = index.bundle.manifest.units.flatMap((unit) => {
     const samples = main.get(unit.id);
     if (samples === undefined) {
       return [];

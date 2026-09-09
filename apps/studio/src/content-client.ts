@@ -1,5 +1,6 @@
 import type { ContentBundle, Reviewer } from '@/modules/curriculum/domain/content-types';
 import { assertParsedContentBundle } from '@/modules/curriculum/domain/parse-content-bundle';
+import { adaptLegacyCurriculum } from '@/modules/curriculum/domain/legacy-curriculum-adapter';
 import {
   ContentValidationError,
   validateContentBundle,
@@ -80,7 +81,7 @@ export function assemble(snapshot: ContentSnapshot): unknown {
     snapshot.units.flatMap((unit) => unit[key]);
 
   return {
-    ...snapshot.curriculum,
+    ...adaptLegacyCurriculum(snapshot.curriculum),
     concepts: collect('concepts'),
     exercises: collect('exercises'),
     lessons: collect('lessons'),

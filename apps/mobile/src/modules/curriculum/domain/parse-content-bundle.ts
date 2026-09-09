@@ -1,5 +1,6 @@
 import {
   CONTENT_SCHEMA_VERSION,
+  CURRICULUM_MANIFEST_SCHEMA_VERSION,
   type ContentBundle,
   type ExerciseKind,
 } from '@/modules/curriculum/domain/content-types';
@@ -68,8 +69,11 @@ function checkBundle(bundle: Readonly<Record<string, unknown>>, c: Collector): v
     c.add('schemaVersion', `Şema sürümü ${CONTENT_SCHEMA_VERSION} olmalı.`);
   }
   text(bundle.contentVersion, 'contentVersion', c);
-  text(bundle.curriculumVersion, 'curriculumVersion', c);
-  text(bundle.locale, 'locale', c);
+
+  const manifest = object(bundle.manifest, 'manifest', c);
+  if (manifest !== null) {
+    checkManifest(manifest, c);
+  }
 
   each(bundle.reviewers, 'reviewers', c, (reviewer, at) => {
     text(reviewer.id, `${at}.id`, c);
@@ -81,49 +85,6 @@ function checkBundle(bundle: Readonly<Record<string, unknown>>, c: Collector): v
     if (reviewer.status !== 'active' && reviewer.status !== 'inactive') {
       c.add(`${at}.status`, 'İnceleyen durumu active veya inactive olmalı.');
     }
-  });
-
-  each(bundle.exams, 'exams', c, (exam, at) => {
-    text(exam.id, `${at}.id`, c);
-    text(exam.title, `${at}.title`, c);
-    texts(exam.subjectIds, `${at}.subjectIds`, c);
-  });
-
-  each(bundle.subjects, 'subjects', c, (subject, at) => {
-    text(subject.id, `${at}.id`, c);
-    text(subject.examId, `${at}.examId`, c);
-    text(subject.themeKey, `${at}.themeKey`, c);
-    text(subject.title, `${at}.title`, c);
-    texts(subject.unitIds, `${at}.unitIds`, c, { allowEmpty: true });
-  });
-
-  each(bundle.units, 'units', c, (unit, at) => {
-    text(unit.id, `${at}.id`, c);
-    text(unit.subjectId, `${at}.subjectId`, c);
-    text(unit.title, `${at}.title`, c);
-    texts(unit.topicIds, `${at}.topicIds`, c);
-  });
-
-  each(bundle.topics, 'topics', c, (topic, at) => {
-    text(topic.id, `${at}.id`, c);
-    text(topic.title, `${at}.title`, c);
-    text(topic.unitId, `${at}.unitId`, c);
-    texts(topic.skillIds, `${at}.skillIds`, c);
-    texts(topic.conceptIds, `${at}.conceptIds`, c, { allowEmpty: true });
-  });
-
-  each(bundle.skills, 'skills', c, (skill, at) => {
-    text(skill.id, `${at}.id`, c);
-    text(skill.title, `${at}.title`, c);
-    text(skill.description, `${at}.description`, c);
-    text(skill.topicId, `${at}.topicId`, c);
-  });
-
-  each(bundle.concepts, 'concepts', c, (concept, at) => {
-    text(concept.id, `${at}.id`, c);
-    text(concept.term, `${at}.term`, c);
-    text(concept.definition, `${at}.definition`, c);
-    text(concept.topicId, `${at}.topicId`, c);
   });
 
   each(bundle.lessons, 'lessons', c, (lesson, at) => {
@@ -163,6 +124,77 @@ function checkBundle(bundle: Readonly<Record<string, unknown>>, c: Collector): v
     }
     checkExerciseKind(exercise, at, c);
   });
+
+  each(bundle.topics, 'topics', c, (topic, at) => {
+    text(topic.id, `${at}.id`, c);
+    text(topic.title, `${at}.title`, c);
+    text(topic.unitId, `${at}.unitId`, c);
+    texts(topic.skillIds, `${at}.skillIds`, c);
+    texts(topic.conceptIds, `${at}.conceptIds`, c, { allowEmpty: true });
+  });
+
+  each(bundle.skills, 'skills', c, (skill, at) => {
+    text(skill.id, `${at}.id`, c);
+    text(skill.title, `${at}.title`, c);
+    text(skill.description, `${at}.description`, c);
+    text(skill.topicId, `${at}.topicId`, c);
+  });
+
+  each(bundle.concepts, 'concepts', c, (concept, at) => {
+    text(concept.id, `${at}.id`, c);
+    text(concept.term, `${at}.term`, c);
+    text(concept.definition, `${at}.definition`, c);
+    text(concept.topicId, `${at}.topicId`, c);
+  });
+}
+
+function checkManifest(manifest: Readonly<Record<string, unknown>>, c: Collector): void {
+  if (manifest.schemaVersion !== CURRICULUM_MANIFEST_SCHEMA_VERSION) {
+    c.add(
+      'manifest.schemaVersion',
+      `Manifest şema sürümü ${CURRICULUM_MANIFEST_SCHEMA_VERSION} olmalı.`,
+    );
+  }
+  text(manifest.id, 'manifest.id', c);
+  text(manifest.version, 'manifest.version', c);
+  text(manifest.locale, 'manifest.locale', c);
+
+  each(manifest.exams, 'manifest.exams', c, (exam, at) => {
+    text(exam.id, `${at}.id`, c);
+    text(exam.title, `${at}.title`, c);
+    text(exam.version, `${at}.version`, c);
+    texts(exam.programIds, `${at}.programIds`, c);
+  });
+
+  each(manifest.programs, 'manifest.programs', c, (program, at) => {
+    text(program.id, `${at}.id`, c);
+    text(program.examId, `${at}.examId`, c);
+    text(program.title, `${at}.title`, c);
+    text(program.version, `${at}.version`, c);
+    texts(program.subjectIds, `${at}.subjectIds`, c, { allowEmpty: true });
+  });
+
+  each(manifest.subjects, 'manifest.subjects', c, (subject, at) => {
+    text(subject.id, `${at}.id`, c);
+    text(subject.programId, `${at}.programId`, c);
+    text(subject.themeKey, `${at}.themeKey`, c);
+    text(subject.title, `${at}.title`, c);
+    if (!['available', 'planned', 'unavailable'].includes(String(subject.availability))) {
+      c.add(`${at}.availability`, 'Ders durumu available, planned veya unavailable olmalı.');
+    }
+    texts(subject.prerequisiteSubjectIds, `${at}.prerequisiteSubjectIds`, c, {
+      allowEmpty: true,
+    });
+    texts(subject.unitIds, `${at}.unitIds`, c, { allowEmpty: true });
+  });
+
+  each(manifest.units, 'manifest.units', c, (unit, at) => {
+    text(unit.id, `${at}.id`, c);
+    text(unit.subjectId, `${at}.subjectId`, c);
+    text(unit.title, `${at}.title`, c);
+    texts(unit.topicIds, `${at}.topicIds`, c);
+  });
+
 }
 
 function checkExerciseKind(

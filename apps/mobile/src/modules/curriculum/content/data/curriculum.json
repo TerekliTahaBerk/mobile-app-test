@@ -27,6 +27,11 @@
         "ayt.history"
       ],
       "title": "AYT"
+    },
+    {
+      "id": "ydt",
+      "subjectIds": [],
+      "title": "YDT"
     }
   ],
   "locale": "tr-TR",

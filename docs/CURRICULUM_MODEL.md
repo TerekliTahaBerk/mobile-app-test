@@ -3,8 +3,13 @@
 The conceptual hierarchy is:
 
 ```text
-Exam -> Subject -> Unit -> Topic -> Skill -> Concept -> Lesson -> Exercise
+Exam -> Program -> Subject -> Unit -> Topic -> Skill -> Concept -> Lesson -> Exercise
 ```
+
+YKS is an exam family whose programs are `yks.tyt`, `yks.ayt` and `yks.ydt`.
+The same contract can add `lgs.lgs` and data-defined KPSS programs later.
+Subjects explicitly declare `available`, `planned` or `unavailable` status and
+their prerequisite subject IDs.
 
 Screens do not encode it. Stable IDs and explicit relationships let content be reordered and versioned without rebuilding UI assumptions. Every scored exercise references at least one skill so the system can explain what was tested and where a student struggles.
 

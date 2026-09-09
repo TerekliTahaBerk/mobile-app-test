@@ -23,7 +23,7 @@ export function buildUnitPathViewModel({
   subject,
 }: BuildInput): UnitPathViewModel {
   const index = getContentIndex();
-  const exam = index.bundle.exams.find((candidate) => candidate.id === subject.subject.examId);
+  const program = index.getProgramOfSubject(subject.subject.id);
 
   return {
     hearts,
@@ -32,7 +32,7 @@ export function buildUnitPathViewModel({
     sections: subject.paths.map((path, order) => toSection(path, order)),
     streak,
     subjectTheme: subjectTheme(subject.subject.themeKey),
-    subjectTitle: `${exam?.title ?? ''} ${subject.subject.title}`.trim(),
+    subjectTitle: `${program.title} ${subject.subject.title}`,
     xp: subject.xp,
   };
 

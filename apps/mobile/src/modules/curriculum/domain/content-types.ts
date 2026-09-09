@@ -7,7 +7,9 @@
  * what they need through the content index and their own view models.
  *
  * ID convention (see docs/CONTENT_MODEL.md):
- *   exam      tyt
+ *   manifest  curriculum.tr
+ *   exam      yks
+ *   program   yks.tyt
  *   subject   tyt.social.history
  *   unit      tyt.social.history.first-turkish-states
  *   topic     tyt.social.history.first-turkish-states.kurultay
@@ -21,7 +23,9 @@
  * position in an array.
  */
 
+export type CurriculumManifestId = string;
 export type ExamId = string;
+export type ProgramId = string;
 export type SubjectId = string;
 export type UnitId = string;
 export type TopicId = string;
@@ -98,8 +102,19 @@ export type Provenance = AuthoredProvenance &
 
 export type Exam = {
   id: ExamId;
+  programIds: readonly ProgramId[];
+  title: string;
+  /** Changes only when this exam family's curriculum definition changes. */
+  version: string;
+};
+
+export type Program = {
+  examId: ExamId;
+  id: ProgramId;
   subjectIds: readonly SubjectId[];
   title: string;
+  /** Changes independently when this program's subject contract changes. */
+  version: string;
 };
 
 /**
@@ -119,8 +134,12 @@ export type SubjectThemeKey =
   | 'turkish';
 
 export type Subject = {
-  examId: ExamId;
+  /** Whether learners may enter this subject from the catalogue. */
+  availability: 'available' | 'planned' | 'unavailable';
   id: SubjectId;
+  /** Stable subject dependencies; they may cross program boundaries. */
+  prerequisiteSubjectIds: readonly SubjectId[];
+  programId: ProgramId;
   themeKey: SubjectThemeKey;
   title: string;
   /**
@@ -135,6 +154,25 @@ export type Unit = {
   subjectId: SubjectId;
   title: string;
   topicIds: readonly TopicId[];
+};
+
+/**
+ * Curriculum identity and hierarchy, versioned separately from lesson content.
+ * Exam, program and subject IDs are opaque stable keys; versions are mutable
+ * release identities and must never be embedded into an ID.
+ */
+export const CURRICULUM_MANIFEST_SCHEMA_VERSION = 2;
+
+export type CurriculumManifestV2 = {
+  exams: readonly Exam[];
+  id: CurriculumManifestId;
+  locale: string;
+  programs: readonly Program[];
+  schemaVersion: typeof CURRICULUM_MANIFEST_SCHEMA_VERSION;
+  subjects: readonly Subject[];
+  units: readonly Unit[];
+  /** Version of the complete curriculum structure. */
+  version: string;
 };
 
 export type Topic = {
@@ -296,24 +334,19 @@ export type PathNode = {
 // ---------------------------------------------------------------------------
 
 /** Bumped when these contracts change shape. */
-export const CONTENT_SCHEMA_VERSION = 3;
+export const CONTENT_SCHEMA_VERSION = 4;
 
 export type ContentBundle = {
   concepts: readonly Concept[];
   /** Editorial version of the material itself. */
   contentVersion: string;
-  /** Version of the curriculum structure the material is filed under. */
-  curriculumVersion: string;
-  exams: readonly Exam[];
   exercises: readonly ExerciseDefinition[];
   lessons: readonly Lesson[];
-  locale: string;
+  manifest: CurriculumManifestV2;
   pathNodes: readonly PathNode[];
   readonly publishedAt?: Timestamp;
   reviewers: readonly Reviewer[];
   schemaVersion: number;
   skills: readonly Skill[];
-  subjects: readonly Subject[];
   topics: readonly Topic[];
-  units: readonly Unit[];
 };

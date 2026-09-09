@@ -41,6 +41,12 @@ Curriculum content is a compiled-in versioned bundle validated at load
 (`modules/curriculum`). The loader is the seam that changes when content later
 arrives over the network.
 
+Curriculum manifest v2 separates exam families from programs and owns the
+`exam → program → subject → unit` hierarchy. Exam and program records carry
+stable IDs plus release versions; subjects explicitly declare availability and
+prerequisites. The legacy schema-3 `curriculum.json` crosses one compatibility
+adapter, and the production approval gate derives a closed manifest-v2 subset.
+
 SQLite (`tekrarla.db`) is the authoritative local learner store. Explicit,
 ordered migrations use `PRAGMA user_version`; foreign keys and WAL are enabled
 at open. The app renders learner-state screens only after migration and active
@@ -81,3 +87,4 @@ See [DECISIONS/0001-mobile-foundation.md](DECISIONS/0001-mobile-foundation.md) f
 See [DECISIONS/0003-local-first-sqlite-progress.md](DECISIONS/0003-local-first-sqlite-progress.md) for the persistence decision.
 See [DECISIONS/0014-multi-exam-domain-model.md](DECISIONS/0014-multi-exam-domain-model.md) for the multi-exam learner contract and migration boundary.
 See [DECISIONS/0017-learner-profile-schema-v2.md](DECISIONS/0017-learner-profile-schema-v2.md) for profile migration and downgrade policy.
+See [DECISIONS/0018-curriculum-manifest-v2.md](DECISIONS/0018-curriculum-manifest-v2.md) for curriculum identity and compatibility semantics.
