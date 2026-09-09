@@ -1,13 +1,17 @@
 import type {
   ContentBundle,
+  Exam,
   ExerciseDefinition,
   ExerciseId,
   Lesson,
   LessonId,
   PathNode,
+  Program,
+  ProgramId,
   Skill,
   SkillId,
   Subject,
+  SubjectId,
   Topic,
   TopicId,
   Unit,
@@ -26,8 +30,10 @@ export type ContentIndex = {
   readonly bundle: ContentBundle;
   getExercise: (id: ExerciseId) => ExerciseDefinition;
   getExerciseTaxonomy: (id: ExerciseId) => ExerciseTaxonomy;
+  getExamOfProgram: (id: ProgramId) => Exam;
   getLesson: (id: LessonId) => Lesson;
   getLessonExercises: (id: LessonId) => readonly ExerciseDefinition[];
+  getProgramOfSubject: (id: SubjectId) => Program;
   getSkill: (id: SkillId) => Skill;
   getSubjectOfUnit: (id: UnitId) => Subject;
   getTopic: (id: TopicId) => Topic;
@@ -50,11 +56,13 @@ export function createContentIndex(bundle: ContentBundle): ContentIndex {
     new Map(records.map((record) => [record.id, record]));
 
   const exercises = byId(bundle.exercises);
+  const exams = byId(bundle.manifest.exams);
   const lessons = byId(bundle.lessons);
+  const programs = byId(bundle.manifest.programs);
   const skills = byId(bundle.skills);
-  const subjects = byId(bundle.subjects);
+  const subjects = byId(bundle.manifest.subjects);
   const topics = byId(bundle.topics);
-  const units = byId(bundle.units);
+  const units = byId(bundle.manifest.units);
 
   const require = <T>(map: ReadonlyMap<string, T>, id: string, label: string): T => {
     const record = map.get(id);
@@ -103,8 +111,11 @@ export function createContentIndex(bundle: ContentBundle): ContentIndex {
         subtopics,
       };
     },
+    getExamOfProgram: (id) => require(exams, require(programs, id, 'program').examId, 'sınav'),
     getLesson,
     getLessonExercises: (id) => getLesson(id).exerciseIds.map(getExercise),
+    getProgramOfSubject: (id) =>
+      require(programs, require(subjects, id, 'ders').programId, 'program'),
     getSkill,
     getSubjectOfUnit: (id) => require(subjects, getUnit(id).subjectId, 'ders'),
     getTopic,

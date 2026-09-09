@@ -8,11 +8,11 @@ import { subjectTheme } from '@/shared/ui/theme/subject-theme';
 export function buildLearnViewModel(
   dashboard: ProgressDashboard,
   hearts: number | null,
-  examId = 'tyt',
+  programId = 'yks.tyt',
 ): LearnViewModel {
   return {
     hearts,
-    rows: (dashboard.byExam.get(examId) ?? [])
+    rows: (dashboard.byProgram.get(programId) ?? [])
       .filter((entry) => entry.totalUnits > 0)
       .map(toRow),
     streak: dashboard.streak.current,

@@ -70,7 +70,7 @@ describe('unit path progression', () => {
   });
 
   it('finds the first openable step across units in order', () => {
-    const paths = index.bundle.subjects
+    const paths = index.bundle.manifest.subjects
       .find((subject) => subject.unitIds.length > 0)!
       .unitIds.map((unitId) => buildUnitPath(unitId, index.getUnitPath(unitId), new Map()));
 
@@ -82,7 +82,9 @@ describe('unit path progression', () => {
   });
 
   it('unlocks the first node of a later unit only after the previous unit checkpoint', () => {
-    const subject = index.bundle.subjects.find((candidate) => candidate.id === 'tyt.history')!;
+    const subject = index.bundle.manifest.subjects.find(
+      (candidate) => candidate.id === 'tyt.history',
+    )!;
     const firstTwoUnits = subject.unitIds.slice(0, 2);
     const completedFirstUnit = index.getUnitPath(firstTwoUnits[0]!).map((node) => node.id);
     const paths = firstTwoUnits.map((unitId) =>

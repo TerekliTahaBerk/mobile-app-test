@@ -29,7 +29,15 @@ function isApproved(provenance: Provenance): boolean {
  * are removed as well.
  */
 export function buildProductionContentBundle(source: ContentBundle): ContentBundle {
-  const lessons = source.lessons.filter((lesson) => isApproved(lesson.provenance));
+  const lessons = source.lessons.filter((lesson) => {
+    if (!isApproved(lesson.provenance)) return false;
+    const topic = source.topics.find((candidate) => candidate.id === lesson.topicId);
+    const unit = source.manifest.units.find((candidate) => candidate.id === topic?.unitId);
+    const subject = source.manifest.subjects.find(
+      (candidate) => candidate.id === unit?.subjectId,
+    );
+    return subject?.availability === 'available';
+  });
   const lessonIds = new Set(lessons.map((lesson) => lesson.id));
   const exerciseIds = new Set(lessons.flatMap((lesson) => lesson.exerciseIds));
   const exercises = source.exercises.filter((exercise) => exerciseIds.has(exercise.id));
@@ -49,17 +57,27 @@ export function buildProductionContentBundle(source: ContentBundle): ContentBund
   const conceptIds = new Set(topics.flatMap((topic) => topic.conceptIds));
   const concepts = source.concepts.filter((concept) => conceptIds.has(concept.id));
   const unitIds = new Set(topics.map((topic) => topic.unitId));
-  const units = source.units
+  const units = source.manifest.units
     .filter((unit) => unitIds.has(unit.id))
     .map((unit) => ({ ...unit, topicIds: unit.topicIds.filter((id) => topicIds.has(id)) }));
   const subjectIds = new Set(units.map((unit) => unit.subjectId));
-  const subjects = source.subjects
+  const subjects = source.manifest.subjects
     .filter((subject) => subjectIds.has(subject.id))
     .map((subject) => ({ ...subject, unitIds: subject.unitIds.filter((id) => unitIds.has(id)) }));
-  const examIds = new Set(subjects.map((subject) => subject.examId));
-  const exams = source.exams
+  const programIds = new Set(subjects.map((subject) => subject.programId));
+  const programs = source.manifest.programs
+    .filter((program) => programIds.has(program.id))
+    .map((program) => ({
+      ...program,
+      subjectIds: program.subjectIds.filter((id) => subjectIds.has(id)),
+    }));
+  const examIds = new Set(programs.map((program) => program.examId));
+  const exams = source.manifest.exams
     .filter((exam) => examIds.has(exam.id))
-    .map((exam) => ({ ...exam, subjectIds: exam.subjectIds.filter((id) => subjectIds.has(id)) }));
+    .map((exam) => ({
+      ...exam,
+      programIds: exam.programIds.filter((id) => programIds.has(id)),
+    }));
   const pathNodes = source.pathNodes
     .filter((node) => node.lessonId !== undefined && lessonIds.has(node.lessonId))
     .map((node) => ({ ...node, prerequisiteIds: [] }));
@@ -67,14 +85,18 @@ export function buildProductionContentBundle(source: ContentBundle): ContentBund
   return {
     ...source,
     concepts,
-    exams,
     exercises,
     lessons,
+    manifest: {
+      ...source.manifest,
+      exams,
+      programs,
+      subjects,
+      units,
+    },
     pathNodes,
     skills,
-    subjects,
     topics,
-    units,
   };
 }
 
@@ -92,6 +114,15 @@ export function validateProductionContentBundle(bundle: ContentBundle): readonly
 
   bundle.lessons.forEach((lesson, index) => check('lessons', index, lesson.provenance));
   bundle.exercises.forEach((exercise, index) => check('exercises', index, exercise.provenance));
+  bundle.manifest.subjects.forEach((subject, index) => {
+    if (subject.availability !== 'available') {
+      issues.push({
+        at: `manifest.subjects[${index}].availability`,
+        code: 'productionReviewRequired',
+        message: 'Production manifestinde yalnızca available dersler yer alabilir.',
+      });
+    }
+  });
   return issues;
 }
 

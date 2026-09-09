@@ -12,7 +12,7 @@ const reviewer = {
   displayName: 'Test Alan Uzmanı',
   id: 'reviewer.test.sme',
   status: 'active' as const,
-  subjectIds: tytDraftBundle.subjects.map((subject) => subject.id),
+  subjectIds: tytDraftBundle.manifest.subjects.map((subject) => subject.id),
   type: 'humanSubjectMatterExpert' as const,
 };
 
@@ -21,7 +21,7 @@ function approved(): Provenance {
     reviewedAt: '2026-09-04T08:00:00.000Z',
     reviewedBy: reviewer.displayName,
     reviewedContentVersion: tytDraftBundle.contentVersion,
-    reviewedCurriculumVersion: tytDraftBundle.curriculumVersion,
+    reviewedCurriculumVersion: tytDraftBundle.manifest.version,
     reviewerId: reviewer.id,
   };
   return {
@@ -29,7 +29,7 @@ function approved(): Provenance {
     reviewedAt: '2026-09-04T09:00:00.000Z',
     reviewedBy: reviewer.displayName,
     reviewedContentVersion: tytDraftBundle.contentVersion,
-    reviewedCurriculumVersion: tytDraftBundle.curriculumVersion,
+    reviewedCurriculumVersion: tytDraftBundle.manifest.version,
     reviewerId: reviewer.id,
     priorReview: attestation,
     reviewStatus: 'approved',
@@ -58,9 +58,9 @@ describe('production content gate', () => {
     expect(bundle.exercises).toHaveLength(bundle.lessons[0]!.exerciseIds.length);
     expect(bundle.lessons.every((lesson) => lesson.provenance.reviewStatus === 'approved')).toBe(true);
     expect(bundle.exercises.every((exercise) => exercise.provenance.reviewStatus === 'approved')).toBe(true);
-    expect(bundle.units).toHaveLength(1);
-    expect(bundle.subjects).toHaveLength(1);
-    expect(bundle.subjects[0]!.unitIds).toEqual([bundle.units[0]!.id]);
+    expect(bundle.manifest.units).toHaveLength(1);
+    expect(bundle.manifest.subjects).toHaveLength(1);
+    expect(bundle.manifest.subjects[0]!.unitIds).toEqual([bundle.manifest.units[0]!.id]);
   });
 
   it('fails when a draft exercise enters a production bundle', () => {
@@ -91,7 +91,7 @@ describe('production content gate', () => {
     const draftLessonId = tytDraftBundle.lessons[0]!.id;
 
     expect(() => index.getLesson(draftLessonId)).toThrow('İçerik dizininde ders bulunamadı');
-    expect(index.bundle.subjects).toEqual([]);
-    expect(index.bundle.units).toEqual([]);
+    expect(index.bundle.manifest.subjects).toEqual([]);
+    expect(index.bundle.manifest.units).toEqual([]);
   });
 });

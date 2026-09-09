@@ -3,8 +3,8 @@ import { useFocusEffect } from 'expo-router';
 
 import { getContentIndex } from '@/modules/curriculum/content/content-source';
 import type {
-  ExamId,
   PathNodeId,
+  ProgramId,
   Subject,
   SubjectId,
 } from '@/modules/curriculum/domain/content-types';
@@ -61,8 +61,8 @@ export type SubjectProgress = {
 };
 
 export type ProgressDashboard = {
-  /** Subjects grouped by the exam they belong to, in authored order. */
-  byExam: ReadonlyMap<ExamId, readonly SubjectProgress[]>;
+  /** Subjects grouped by the program they belong to, in authored order. */
+  byProgram: ReadonlyMap<ProgramId, readonly SubjectProgress[]>;
   bestStreak: number;
   completedNodes: number;
   completedSessions: { lessons: number; reviews: number };
@@ -173,9 +173,9 @@ export function useProgressDashboard(clock: Clock = systemClock): ProgressDashbo
             const pathProgress = new Map(progressRows.map((row) => [row.pathNodeId, row]));
 
             const subjects = new Map<SubjectId, SubjectProgress>();
-            const byExam = new Map<ExamId, SubjectProgress[]>();
+            const byProgram = new Map<ProgramId, SubjectProgress[]>();
 
-            for (const subject of index.bundle.subjects) {
+            for (const subject of index.bundle.manifest.subjects) {
               const paths = subject.unitIds.map((unitId) =>
                 buildUnitPath(unitId, index.getUnitPath(unitId), pathProgress),
               );
@@ -196,9 +196,9 @@ export function useProgressDashboard(clock: Clock = systemClock): ProgressDashbo
               };
 
               subjects.set(subject.id, entry);
-              const examGroup = byExam.get(subject.examId) ?? [];
-              examGroup.push(entry);
-              byExam.set(subject.examId, examGroup);
+              const programGroup = byProgram.get(subject.programId) ?? [];
+              programGroup.push(entry);
+              byProgram.set(subject.programId, programGroup);
             }
 
             const allPaths = [...subjects.values()].flatMap((entry) => entry.paths);
@@ -225,7 +225,7 @@ export function useProgressDashboard(clock: Clock = systemClock): ProgressDashbo
               data: {
                 activeSession,
                 bestStreak: longestRun(dates),
-                byExam,
+                byProgram,
                 completedNodes: progressRows.filter((row) => row.status === 'completed').length,
                 completedSessions: counts,
                 correctAnswers: statistics.correctAnswers,

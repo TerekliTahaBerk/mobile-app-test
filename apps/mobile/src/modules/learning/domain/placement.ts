@@ -40,7 +40,7 @@ export function assemblePlacement(
   index: ContentIndex,
   reported: ReadonlySet<string> = new Set(),
 ): Placement {
-  const queues = index.bundle.units
+  const queues = index.bundle.manifest.units
     .flatMap((unit) => unit.topicIds)
     .map((topicId) => ({
       exercises: scoredFor(topicId, index)

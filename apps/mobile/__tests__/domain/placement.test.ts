@@ -25,7 +25,7 @@ describe('starting diagnostic', () => {
 
   it('samples measurable subtopics without exceeding the one-sitting cap', () => {
     const placement = assemblePlacement(index);
-    const measurable = index.bundle.units
+    const measurable = index.bundle.manifest.units
       .flatMap((unit) => unit.topicIds)
       .filter((topicId) => {
         const skillIds = new Set(index.getTopic(topicId).skillIds);
