@@ -5,6 +5,8 @@ This is the honest checklist for App Store and Google Play release.
 **Current state: not releasable.** The local-first product loop is real and
 durable, but the 55-lesson Tarih curriculum is engineering-written draft material,
 production observability has no approved deployed provider, and final legal/store approvals are incomplete.
+The dated Milestone 1 decision and gate evidence are recorded in
+[`RELEASE_GO_NO_GO.md`](RELEASE_GO_NO_GO.md): **NO-GO as of 2026-09-09**.
 
 ## Ready
 

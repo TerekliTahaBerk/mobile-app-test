@@ -14,11 +14,4 @@ jobs:
           cache: npm
           node-version: 22
       - run: npm ci
-      - run: npm run lint
-      - run: npm run typecheck
-      - run: npm run content:production:check
-      - run: npm run content:stats:check
-      - run: npm run test:coverage
-      - run: npm run doctor
-      - run: npm run audit:production
-      - run: npm run build:production:smoke
+      - run: npm run quality:release
