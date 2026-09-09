@@ -461,7 +461,7 @@
         }
       ],
       "correctOptionId": "opt-3",
-      "explanation": "Bir öğrenci “Yeterince kanıtlanan teori zamanla yasaya dönüşür. Bu nedenle doğru ayrım “Teori ve yasa bilimsel bilginin farklı türleridir”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "explanation": "Bir öğrenci “Yeterince kanıtlanan teori zamanla yasaya dönüşür.” der. Öğretmeni teori ve yasanın kanıt düzeyine göre sıralanan basamaklar olmadığını söyler. Bu nedenle doğru ayrım “Teori ve yasa bilimsel bilginin farklı türleridir”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
       "difficulty": 3,
       "provenance": {
         "author": "Online Dershanem AI-assisted draft",

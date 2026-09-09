@@ -97,6 +97,18 @@ coordinate, profile, distribution, and explicit visual references for human
 context review. `npm run content:geography:review:check` is part of the
 release-quality gate. This packet is not an academic approval.
 
+TYT Felsefe also uses the source-of-truth generator via
+`npm run content:philosophy:review:update`; its packet lives at
+`docs/CONTENT_REVIEWS/TYT_PHILOSOPHY_REVIEW_PACKET.md`. In addition to the
+record inventory, the deterministic triage calls out concept definitions,
+concept/view matching, closely related concepts, absolute wording,
+prompt–explanation overlap, repeated skill coverage, shared-stem question
+candidates, and the absence or presence of named philosopher terms. The scan is
+only a routing aid for a human philosophy reviewer and never an approval.
+`npm run content:philosophy:audit` checks scored-skill coverage and orphaned
+exercises; both it and `npm run content:philosophy:review:check` are part of the
+release-quality gate.
+
 `reviewed` and `approved` records must carry `reviewerId`, a `reviewedBy`
 display-name snapshot, `reviewedAt`, `reviewedContentVersion`, and
 `reviewedCurriculumVersion`. Validation resolves the stable id against the

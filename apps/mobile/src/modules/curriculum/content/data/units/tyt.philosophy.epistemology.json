@@ -279,7 +279,7 @@
         }
       ],
       "correctOptionId": "opt-2",
-      "explanation": "“Masada bir kitap vardır. Bu nedenle doğru ayrım “Yargının”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
+      "explanation": "“Masada bir kitap vardır.” cümlesi bir yargıdır; masadaki kitabın kendisi ise bu yargının yöneldiği durumdur. Bu nedenle doğru ayrım “Yargının”dır; diğer seçenekler aynı problem alanındaki farklı kavram veya yaklaşımlardır.",
       "difficulty": 3,
       "provenance": {
         "author": "Online Dershanem AI-assisted draft",
