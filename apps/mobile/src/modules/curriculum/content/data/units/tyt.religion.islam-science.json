@@ -273,7 +273,7 @@
         "reviewStatus": "draft"
       },
       "tag": "DİN KÜLTÜRÜ · BİLGİ, AKIL VE ARAŞTIRMA",
-      "prompt": "İslam medeniyetinde bilgiye verilen önemi yorumlar. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "prompt": "“İslam medeniyetinde bilgiye verilen önemi yorumlar” kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
       "options": [
         {
           "id": "a",
@@ -494,7 +494,7 @@
         "reviewStatus": "draft"
       },
       "tag": "DİN KÜLTÜRÜ · İSLAM MEDENİYETİNDE BİLİMSEL BİRİKİM",
-      "prompt": "Bilimsel gelişmeyi tek kişiye bağlayan abartılı iddiayı ayırt eder. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "prompt": "“Bilimsel gelişmeyi tek kişiye bağlayan abartılı iddiayı ayırt eder” kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
       "options": [
         {
           "id": "a",
@@ -715,7 +715,7 @@
         "reviewStatus": "draft"
       },
       "tag": "DİN KÜLTÜRÜ · BİLGİNLER VE EĞİTİM KURUMLARI",
-      "prompt": "Bilim insanlarını katkı alanlarıyla genel hatlarıyla eşleştirir. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "prompt": "“Bilim insanlarını katkı alanlarıyla genel hatlarıyla eşleştirir” kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
       "options": [
         {
           "id": "a",

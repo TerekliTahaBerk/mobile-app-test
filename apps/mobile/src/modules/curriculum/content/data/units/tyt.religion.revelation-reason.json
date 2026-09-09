@@ -273,7 +273,7 @@
         "reviewStatus": "draft"
       },
       "tag": "DİN KÜLTÜRÜ · VAHİY, AKIL VE BİLGİ",
-      "prompt": "Vahiy ve aklı bilgi kaynakları bakımından ayırt eder. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "prompt": "“Vahiy ve aklı bilgi kaynakları bakımından ayırt eder” kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
       "options": [
         {
           "id": "a",
@@ -494,7 +494,7 @@
         "reviewStatus": "draft"
       },
       "tag": "DİN KÜLTÜRÜ · DÜŞÜNME, SORGULAMA VE DELİL",
-      "prompt": "Bir iddianın gerekçesini sorgulamanın önemini yorumlar. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "prompt": "“Bir iddianın gerekçesini sorgulamanın önemini yorumlar” kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
       "options": [
         {
           "id": "a",
@@ -715,7 +715,7 @@
         "reviewStatus": "draft"
       },
       "tag": "DİN KÜLTÜRÜ · AKIL VE İNSAN SORUMLULUĞU",
-      "prompt": "Akıl sahibi olma ile sorumluluk arasındaki ilişkiyi kurar. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "prompt": "“Akıl sahibi olma ile sorumluluk arasındaki ilişkiyi kurar” kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
       "options": [
         {
           "id": "a",

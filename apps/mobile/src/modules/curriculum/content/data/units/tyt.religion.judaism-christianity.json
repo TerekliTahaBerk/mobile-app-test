@@ -273,7 +273,7 @@
         "reviewStatus": "draft"
       },
       "tag": "DİN KÜLTÜRÜ · YAHUDİLİĞİN TEMEL ÖZELLİKLERİ",
-      "prompt": "Yahudiliğin temel inanç ve ibadet özelliklerini genel hatlarıyla ayırt eder. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "prompt": "“Yahudiliğin temel inanç ve ibadet özelliklerini genel hatlarıyla ayırt eder” kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
       "options": [
         {
           "id": "a",
@@ -494,7 +494,7 @@
         "reviewStatus": "draft"
       },
       "tag": "DİN KÜLTÜRÜ · HRİSTİYANLIĞIN TEMEL ÖZELLİKLERİ",
-      "prompt": "Hristiyanlığın temel inanç ve ibadet özelliklerini genel hatlarıyla ayırt eder. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "prompt": "“Hristiyanlığın temel inanç ve ibadet özelliklerini genel hatlarıyla ayırt eder” kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
       "options": [
         {
           "id": "a",
@@ -715,7 +715,7 @@
         "reviewStatus": "draft"
       },
       "tag": "DİN KÜLTÜRÜ · TARAFSIZ KARŞILAŞTIRMA VE KAVRAMLAR",
-      "prompt": "Yahudilik ve Hristiyanlığı temel kavramları bakımından karşılaştırır. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "prompt": "“Yahudilik ve Hristiyanlığı temel kavramları bakımından karşılaştırır” kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
       "options": [
         {
           "id": "a",

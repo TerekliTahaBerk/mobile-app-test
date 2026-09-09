@@ -273,7 +273,7 @@
         "reviewStatus": "draft"
       },
       "tag": "DİN KÜLTÜRÜ · HAYATININ TEMEL DÖNEMLERİ VE TEBLİĞ",
-      "prompt": "Mekke ve Medine dönemlerinin temel özelliklerini ayırt eder. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "prompt": "“Mekke ve Medine dönemlerinin temel özelliklerini ayırt eder” kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
       "options": [
         {
           "id": "a",
@@ -494,7 +494,7 @@
         "reviewStatus": "draft"
       },
       "tag": "DİN KÜLTÜRÜ · TOPLUMSAL İLİŞKİLER VE İSTİŞARE",
-      "prompt": "İstişarenin ortak sorumluluğa katkısını yorumlar. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "prompt": "“İstişarenin ortak sorumluluğa katkısını yorumlar” kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
       "options": [
         {
           "id": "a",
@@ -715,7 +715,7 @@
         "reviewStatus": "draft"
       },
       "tag": "DİN KÜLTÜRÜ · GÜVENİLİRLİK, SABIR VE ÖRNEK KİŞİLİK",
-      "prompt": "Hz. Muhammed’in örnekliğini davranış ilkeleri üzerinden yorumlar. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "prompt": "“Hz. Muhammed’in örnekliğini davranış ilkeleri üzerinden yorumlar” kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
       "options": [
         {
           "id": "a",

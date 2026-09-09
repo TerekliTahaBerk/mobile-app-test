@@ -273,7 +273,7 @@
         "reviewStatus": "draft"
       },
       "tag": "DİN KÜLTÜRÜ · ÖZGÜR İRADE VE KÖTÜLÜK SORUSU",
-      "prompt": "Kötülük sorununu özgür irade ve sorumluluk bağlamında tartışır. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "prompt": "“Kötülük sorununu özgür irade ve sorumluluk bağlamında tartışır” kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
       "options": [
         {
           "id": "a",
@@ -494,7 +494,7 @@
         "reviewStatus": "draft"
       },
       "tag": "DİN KÜLTÜRÜ · İNANÇ VE HAYAT İLİŞKİSİ",
-      "prompt": "İnanç ile davranış arasındaki tutarlılığı örnekten yorumlar. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "prompt": "“İnanç ile davranış arasındaki tutarlılığı örnekten yorumlar” kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
       "options": [
         {
           "id": "a",
@@ -715,7 +715,7 @@
         "reviewStatus": "draft"
       },
       "tag": "DİN KÜLTÜRÜ · HURAFE VE BATIL İNANIŞ",
-      "prompt": "Hurafe ile dinî bilgiyi dayanak bakımından ayırt eder. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "prompt": "“Hurafe ile dinî bilgiyi dayanak bakımından ayırt eder” kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
       "options": [
         {
           "id": "a",

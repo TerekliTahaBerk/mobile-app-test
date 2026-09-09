@@ -273,7 +273,7 @@
         "reviewStatus": "draft"
       },
       "tag": "DİN KÜLTÜRÜ · TASAVVUF VE AHLAKİ OLGUNLAŞMA",
-      "prompt": "Tasavvufun ahlaki olgunlaşma amacını yorumlar. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "prompt": "“Tasavvufun ahlaki olgunlaşma amacını yorumlar” kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
       "options": [
         {
           "id": "a",
@@ -494,7 +494,7 @@
         "reviewStatus": "draft"
       },
       "tag": "DİN KÜLTÜRÜ · TARİKAT, MEZHEP VE YORUM",
-      "prompt": "Mezhep ile tarikat kavramlarını ayırt eder. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "prompt": "“Mezhep ile tarikat kavramlarını ayırt eder” kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
       "options": [
         {
           "id": "a",
@@ -715,7 +715,7 @@
         "reviewStatus": "draft"
       },
       "tag": "DİN KÜLTÜRÜ · SEVGİ, HOŞGÖRÜ VE ÇOĞUL YORUM",
-      "prompt": "Sevgi ve hoşgörünün tasavvufi yorumlardaki yerini yorumlar. kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
+      "prompt": "“Sevgi ve hoşgörünün tasavvufi yorumlardaki yerini yorumlar” kazanımını ölçmek isteyen bir soruda öğrenciden öncelikle hangi işlem beklenmelidir?",
       "options": [
         {
           "id": "a",
